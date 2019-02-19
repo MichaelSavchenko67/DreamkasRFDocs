@@ -1,0 +1,5 @@
+<map id="ReceiptsDb::resetTasksDb" name="ReceiptsDb::resetTasksDb">
+<area shape="rect" id="node1" title="resetTasksDb &#45; сброс таблицы тасок" alt="" coords="5,31,187,57"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a" title="makeTasksRequest &#45; запрос к таблице тасок" alt="" coords="235,5,451,32"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="249,56,437,83"/>
+</map>

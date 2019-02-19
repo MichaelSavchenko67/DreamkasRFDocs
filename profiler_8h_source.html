@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Исходный файл src/appl/include/profiler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">profiler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="profiler_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>std::chrono;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classLogDuration.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLogDuration.html">LogDuration</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classLogDuration.html#a24f57e5402e1197fbe8fec34bad7b050">   12</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classLogDuration.html#a24f57e5402e1197fbe8fec34bad7b050">LogDuration</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; msg = <span class="stringliteral">&quot;&quot;</span>)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    : message(msg + <span class="stringliteral">&quot; : &quot;</span>)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    , start(steady_clock::now()) {}</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classLogDuration.html#af7d80f780da8ad4ae5ae451b048446d7">   16</a></span>&#160;  <a class="code" href="classLogDuration.html#af7d80f780da8ad4ae5ae451b048446d7">~LogDuration</a>()</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> finish = steady_clock::now();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">auto</span> dur = finish - start;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">string</span> result = message + to_string(duration_cast&lt;milliseconds&gt;(dur).count()) + <span class="stringliteral">&quot; ms\n&quot;</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    cerr &lt;&lt; result &lt;&lt; endl;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">string</span> message;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  steady_clock::time_point start;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="profiler_8h.html#a6e7451efb96557525db35a7b86eac489">   30</a></span>&#160;<span class="preprocessor">#define UNIQ_ID_IMPL(lineno) _a_local_var_##lineno</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="profiler_8h.html#a621d8fc80a587e3af5d879b2adeefe09">   31</a></span>&#160;<span class="preprocessor">#define UNIQ_ID(lineno) UNIQ_ID_IMPL(lineno)</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="profiler_8h.html#ad60b99bf443eacdee7579b3142c80498">   33</a></span>&#160;<span class="preprocessor">#define LOG_DURATION(message) \</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">  LogDuration UNIQ_ID(__LINE__){message};</span></div><div class="ttc" id="classLogDuration_html_a24f57e5402e1197fbe8fec34bad7b050"><div class="ttname"><a href="classLogDuration.html#a24f57e5402e1197fbe8fec34bad7b050">LogDuration::LogDuration</a></div><div class="ttdeci">LogDuration(const string &amp;msg=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> profiler.h:12</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> jsonParser.h:18798</div></div>
+<div class="ttc" id="classLogDuration_html"><div class="ttname"><a href="classLogDuration.html">LogDuration</a></div><div class="ttdef"><b>Definition:</b> profiler.h:10</div></div>
+<div class="ttc" id="classLogDuration_html_af7d80f780da8ad4ae5ae451b048446d7"><div class="ttname"><a href="classLogDuration.html#af7d80f780da8ad4ae5ae451b048446d7">LogDuration::~LogDuration</a></div><div class="ttdeci">~LogDuration()</div><div class="ttdef"><b>Definition:</b> profiler.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

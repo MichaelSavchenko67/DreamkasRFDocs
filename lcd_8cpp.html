@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/lcd.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл lcd.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="lcd_8h_source.html">lcd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для lcd.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="lcd_8cpp__incl.png" border="0" usemap="#src_2appl_2lcd_8cpp" alt=""/></div>
+<map name="src_2appl_2lcd_8cpp" id="src_2appl_2lcd_8cpp">
+<area shape="rect"  title=" " alt="" coords="400,5,515,32"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="2081,80,2132,107"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="698,379,774,405"/>
+<area shape="rect"  href="bsp__aliases_8h.html" title=" " alt="" coords="135,80,238,107"/>
+<area shape="rect"  title=" " alt="" coords="1253,453,1325,480"/>
+<area shape="rect"  title=" " alt="" coords="537,453,594,480"/>
+<area shape="rect"  title=" " alt="" coords="2723,379,2791,405"/>
+<area shape="rect"  title=" " alt="" coords="2816,379,2875,405"/>
+<area shape="rect"  title=" " alt="" coords="2065,155,2148,181"/>
+<area shape="rect"  title=" " alt="" coords="1576,453,1637,480"/>
+<area shape="rect"  title=" " alt="" coords="2173,155,2233,181"/>
+<area shape="rect"  title=" " alt="" coords="311,453,380,480"/>
+<area shape="rect"  title=" " alt="" coords="2257,155,2303,181"/>
+<area shape="rect"  title=" " alt="" coords="2327,155,2390,181"/>
+<area shape="rect"  title=" " alt="" coords="2111,379,2169,405"/>
+<area shape="rect"  title=" " alt="" coords="2414,155,2541,181"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1997,453,2048,480"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="1408,229,1493,256"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="2216,304,2299,331"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1101,155,1203,181"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="2577,304,2703,331"/>
+<area shape="rect"  title=" " alt="" coords="199,155,318,181"/>
+<area shape="rect"  title=" " alt="" coords="2565,155,2683,181"/>
+<area shape="rect"  title=" " alt="" coords="2707,155,2821,181"/>
+<area shape="rect"  title=" " alt="" coords="2046,528,2109,555"/>
+<area shape="rect"  title=" " alt="" coords="2133,528,2203,555"/>
+<area shape="rect"  title=" " alt="" coords="785,528,855,555"/>
+<area shape="rect"  title=" " alt="" coords="1559,528,1625,555"/>
+<area shape="rect"  title=" " alt="" coords="1819,528,1890,555"/>
+<area shape="rect"  title=" " alt="" coords="1915,528,2021,555"/>
+<area shape="rect"  title=" " alt="" coords="1163,453,1224,480"/>
+<area shape="rect"  title=" " alt="" coords="474,453,513,480"/>
+<area shape="rect"  title=" " alt="" coords="2656,453,2715,480"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="1053,379,1153,405"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1481,304,1532,331"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="1329,379,1401,405"/>
+<area shape="rect"  title=" " alt="" coords="1577,379,1636,405"/>
+<area shape="rect"  title=" " alt="" coords="619,453,701,480"/>
+<area shape="rect"  title=" " alt="" coords="851,453,909,480"/>
+<area shape="rect"  title=" " alt="" coords="933,453,1000,480"/>
+<area shape="rect"  title=" " alt="" coords="1737,453,1812,480"/>
+<area shape="rect"  title=" " alt="" coords="1024,453,1139,480"/>
+<area shape="rect"  title=" " alt="" coords="725,453,827,480"/>
+<area shape="rect"  title=" " alt="" coords="2346,379,2401,405"/>
+<area shape="rect"  title=" " alt="" coords="2425,379,2495,405"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="1813,379,1934,405"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="869,304,926,331"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1301,229,1369,256"/>
+<area shape="rect"  href="bsp__printer__keypad_8h.html" title=" " alt="" coords="5,229,152,256"/>
+<area shape="rect"  href="bsp__lcd__drawer_8h.html" title=" " alt="" coords="51,155,175,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a1c6b0b1a1b4fd36b72b7b3312165720a"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8cpp.html#a1c6b0b1a1b4fd36b72b7b3312165720a">global_buf</a> [1024]</td></tr>
+<tr class="separator:a1c6b0b1a1b4fd36b72b7b3312165720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Переменные</h2>
+<a id="a1c6b0b1a1b4fd36b72b7b3312165720a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6b0b1a1b4fd36b72b7b3312165720a">&#9670;&nbsp;</a></span>global_buf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char global_buf[1024]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

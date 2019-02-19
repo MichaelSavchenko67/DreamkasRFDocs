@@ -1,0 +1,10 @@
+<map id="Menu::terminal_cab" name="Menu::terminal_cab">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,141,108"/>
+<area shape="rect" id="node2" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="195,5,369,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; обновить данные и отправить статистику" alt="" coords="209,107,355,133"/>
+<area shape="rect" id="node4" href="$classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="423,56,616,83"/>
+<area shape="rect" id="node8" href="$classMenu.html#a978572cb6498f20b20be4db9dcbe3966" title=" " alt="" coords="189,157,375,184"/>
+<area shape="rect" id="node6" href="$classMenu.html#a7fde71d6e01eae195621d6bf2f06bb52" title=" " alt="" coords="426,107,613,133"/>
+<area shape="rect" id="node5" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="879,81,1027,108"/>
+<area shape="rect" id="node7" href="$classBIOS.html#a7ce3cab079208f86115b2b1c213472b7" title=" " alt="" coords="664,107,831,133"/>
+</map>

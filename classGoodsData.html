@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс GoodsData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="classGoodsData-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс GoodsData</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="goods__data_8h_source.html">goods_data.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:GoodsData:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGoodsData__inherit__graph.png" border="0" usemap="#GoodsData_inherit__map" alt="Inheritance graph"/></div>
+<map name="GoodsData_inherit__map" id="GoodsData_inherit__map">
+<area shape="rect"  title=" " alt="" coords="33,5,176,347"/>
+<area shape="rect"  href="classPositions.html" title=" " alt="" coords="5,395,204,1279"/>
+<area shape="rect"  href="classMenuTest_1_1MockPositions.html" title=" " alt="" coords="17,1327,192,1419"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса GoodsData:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGoodsData__coll__graph.png" border="0" usemap="#GoodsData_coll__map" alt="Collaboration graph"/></div>
+<map name="GoodsData_coll__map" id="GoodsData_coll__map">
+<area shape="rect"  title=" " alt="" coords="5,5,148,347"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a455d1b07e5fe41057dce0a127b5d01f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5">GOODS_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ad4d37519ab46bd4ca7a25383b3b5f7be">NONE</a> = 0, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149">GOODS</a> = 1, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a93525f4d3320f9a068dc29a0c8229d7b">EXCISABLE</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a1c595a452e9ccdc594425f9c5225fec0">JOB</a>, 
+<br />
+&#160;&#160;<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ae3e335f824c5147592e0de269247685a">SERVICE</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a565c0759223d6f81a1bf4fb218e0a2b7">GAMBLING_RATE</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5af4844766889179a54f9d42bad7d16393">GAMBLING_WINNINGS</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ae6253f37a81851bc53ba617131c19f2b">LOTTERY_TICKET</a>, 
+<br />
+&#160;&#160;<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a84c878f58b0445f22db2a59e17965fd1">LOTTERY_WINNINGS</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a166cf06bbf4792ceb12affd2ffbcd1b0">RID</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a43213001e39434008e513e508fe2c8da">PAYMENT</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ae4e2de35811ecdeaca288e85f3e88fcb">AGENCY_REWARDS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ae6844aa7af48dbb81cf9e18098cb7e5d">COMPOSITE</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5ac56f2d714db55c3bd03a97a97eb4ebc4">ANOTHER</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5abe682820131ba3ae56310ae1a9fb3d6e">SHOES</a>, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4e387ee8fb9213fd20bdde64366f1132">CLOTHES</a>, 
+<br />
+&#160;&#160;<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a15e929d3f61f396f0850e2a86351837d">TOBACCO</a> = 32, 
+<a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a731b704bbff6000d44f38cfe84cd178d">UNKNOWN</a>
+<br />
+ }</td></tr>
+<tr class="separator:a455d1b07e5fe41057dce0a127b5d01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa53200c187dd73c086eb311d1adb8174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#aa53200c187dd73c086eb311d1adb8174">GoodsData</a> ()</td></tr>
+<tr class="separator:aa53200c187dd73c086eb311d1adb8174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e84331bb52288f33cc857f134a5df55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a8e84331bb52288f33cc857f134a5df55">~GoodsData</a> ()</td></tr>
+<tr class="separator:a8e84331bb52288f33cc857f134a5df55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6441dfad33d88d2b83602eeb7533ccd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a6441dfad33d88d2b83602eeb7533ccd1">GoodsData</a> (const <a class="el" href="classGoodsData.html">GoodsData</a> &amp;)</td></tr>
+<tr class="separator:a6441dfad33d88d2b83602eeb7533ccd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab043f711712296b3043007c6a30adaf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGoodsData.html">GoodsData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#ab043f711712296b3043007c6a30adaf2">operator=</a> (const <a class="el" href="classGoodsData.html">GoodsData</a> &amp;orig)</td></tr>
+<tr class="separator:ab043f711712296b3043007c6a30adaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a1819631227f976a67f2da842bb0785a8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8">isGoodsWeight</a> (uint32_t <a class="el" href="classGoodsData.html#a62d9402881213dc8fb32dd4143fd7e5a">goods_type</a>)</td></tr>
+<tr class="separator:a1819631227f976a67f2da842bb0785a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd431e0399d2141268faf5eab5cf8ca4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#afd431e0399d2141268faf5eab5cf8ca4">isGoodTobacco</a> (uint32_t <a class="el" href="classGoodsData.html#a62d9402881213dc8fb32dd4143fd7e5a">goods_type</a>)</td></tr>
+<tr class="separator:afd431e0399d2141268faf5eab5cf8ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a163e10238c52ed71a617f23897d5552d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a163e10238c52ed71a617f23897d5552d">goods_name</a></td></tr>
+<tr class="separator:a163e10238c52ed71a617f23897d5552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995a11adc6d46602a296eebc1e2eb7e5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a995a11adc6d46602a296eebc1e2eb7e5">unit_name</a></td></tr>
+<tr class="separator:a995a11adc6d46602a296eebc1e2eb7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1255b007f7e60a75ac54dd2b6c3054c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#ae1255b007f7e60a75ac54dd2b6c3054c">directory_code</a></td></tr>
+<tr class="separator:ae1255b007f7e60a75ac54dd2b6c3054c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab51ef3b681e4cfc2bb2dfd0ec4cb5fb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#aab51ef3b681e4cfc2bb2dfd0ec4cb5fb">goods_group_code</a></td></tr>
+<tr class="separator:aab51ef3b681e4cfc2bb2dfd0ec4cb5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21eb399f687826212aad5228530eb7a4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a21eb399f687826212aad5228530eb7a4">id_goods_group</a></td></tr>
+<tr class="separator:a21eb399f687826212aad5228530eb7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17fc236b07c990e883a41e5dc54bcb4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#ad17fc236b07c990e883a41e5dc54bcb4">goods_code</a></td></tr>
+<tr class="separator:ad17fc236b07c990e883a41e5dc54bcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12230310b2babe8fe5455a5788c01f5f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a12230310b2babe8fe5455a5788c01f5f">goods_id</a></td></tr>
+<tr class="separator:a12230310b2babe8fe5455a5788c01f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fcb2c86ee19f3aa05aa6ca5f56cce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#af4fcb2c86ee19f3aa05aa6ca5f56cce5">attributes</a> = 0</td></tr>
+<tr class="separator:af4fcb2c86ee19f3aa05aa6ca5f56cce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d9402881213dc8fb32dd4143fd7e5a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a62d9402881213dc8fb32dd4143fd7e5a">goods_type</a> = <a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149">GOODS</a></td></tr>
+<tr class="separator:a62d9402881213dc8fb32dd4143fd7e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11857d742ae4bb6fdcf462e0aa8c334e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a11857d742ae4bb6fdcf462e0aa8c334e">unit_price</a> = 0</td></tr>
+<tr class="separator:a11857d742ae4bb6fdcf462e0aa8c334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2408e9d6cdb1b701cdd9a1ea17f182d7"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a2408e9d6cdb1b701cdd9a1ea17f182d7">tax_number</a> = 0</td></tr>
+<tr class="separator:a2408e9d6cdb1b701cdd9a1ea17f182d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaf3c9ff19b5d208f62094abb26050f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#adfaf3c9ff19b5d208f62094abb26050f">nds_manual</a> = 0</td></tr>
+<tr class="separator:adfaf3c9ff19b5d208f62094abb26050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8f17efa8f7a7c03ee19b9498a34d28"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a4b8f17efa8f7a7c03ee19b9498a34d28">barcode</a></td></tr>
+<tr class="separator:a4b8f17efa8f7a7c03ee19b9498a34d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a9931440d0c99377ad6f2162512e6a0b8"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8">WEIGHT</a> = 16</td></tr>
+<tr class="separator:a9931440d0c99377ad6f2162512e6a0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a455d1b07e5fe41057dce0a127b5d01f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a455d1b07e5fe41057dce0a127b5d01f5">&#9670;&nbsp;</a></span>GOODS_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5">GoodsData::GOODS_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ad4d37519ab46bd4ca7a25383b3b5f7be"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149"></a>GOODS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a93525f4d3320f9a068dc29a0c8229d7b"></a>EXCISABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a1c595a452e9ccdc594425f9c5225fec0"></a>JOB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ae3e335f824c5147592e0de269247685a"></a>SERVICE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a565c0759223d6f81a1bf4fb218e0a2b7"></a>GAMBLING_RATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5af4844766889179a54f9d42bad7d16393"></a>GAMBLING_WINNINGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ae6253f37a81851bc53ba617131c19f2b"></a>LOTTERY_TICKET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a84c878f58b0445f22db2a59e17965fd1"></a>LOTTERY_WINNINGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a166cf06bbf4792ceb12affd2ffbcd1b0"></a>RID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a43213001e39434008e513e508fe2c8da"></a>PAYMENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ae4e2de35811ecdeaca288e85f3e88fcb"></a>AGENCY_REWARDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ae6844aa7af48dbb81cf9e18098cb7e5d"></a>COMPOSITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5ac56f2d714db55c3bd03a97a97eb4ebc4"></a>ANOTHER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5abe682820131ba3ae56310ae1a9fb3d6e"></a>SHOES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a4e387ee8fb9213fd20bdde64366f1132"></a>CLOTHES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a15e929d3f61f396f0850e2a86351837d"></a>TOBACCO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a455d1b07e5fe41057dce0a127b5d01f5a731b704bbff6000d44f38cfe84cd178d"></a>UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aa53200c187dd73c086eb311d1adb8174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53200c187dd73c086eb311d1adb8174">&#9670;&nbsp;</a></span>GoodsData() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GoodsData::GoodsData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e84331bb52288f33cc857f134a5df55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e84331bb52288f33cc857f134a5df55">&#9670;&nbsp;</a></span>~GoodsData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GoodsData::~GoodsData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6441dfad33d88d2b83602eeb7533ccd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6441dfad33d88d2b83602eeb7533ccd1">&#9670;&nbsp;</a></span>GoodsData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GoodsData::GoodsData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGoodsData.html">GoodsData</a> &amp;&#160;</td>
+          <td class="paramname"><em>orig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a1819631227f976a67f2da842bb0785a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1819631227f976a67f2da842bb0785a8">&#9670;&nbsp;</a></span>isGoodsWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GoodsData::isGoodsWeight </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>goods_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd431e0399d2141268faf5eab5cf8ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd431e0399d2141268faf5eab5cf8ca4">&#9670;&nbsp;</a></span>isGoodTobacco()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GoodsData::isGoodTobacco </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>goods_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab043f711712296b3043007c6a30adaf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab043f711712296b3043007c6a30adaf2">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGoodsData.html">GoodsData</a> &amp; GoodsData::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGoodsData.html">GoodsData</a> &amp;&#160;</td>
+          <td class="paramname"><em>orig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="af4fcb2c86ee19f3aa05aa6ca5f56cce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fcb2c86ee19f3aa05aa6ca5f56cce5">&#9670;&nbsp;</a></span>attributes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> GoodsData::attributes = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b8f17efa8f7a7c03ee19b9498a34d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8f17efa8f7a7c03ee19b9498a34d28">&#9670;&nbsp;</a></span>barcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::barcode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1255b007f7e60a75ac54dd2b6c3054c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1255b007f7e60a75ac54dd2b6c3054c">&#9670;&nbsp;</a></span>directory_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::directory_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad17fc236b07c990e883a41e5dc54bcb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17fc236b07c990e883a41e5dc54bcb4">&#9670;&nbsp;</a></span>goods_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::goods_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab51ef3b681e4cfc2bb2dfd0ec4cb5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab51ef3b681e4cfc2bb2dfd0ec4cb5fb">&#9670;&nbsp;</a></span>goods_group_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::goods_group_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12230310b2babe8fe5455a5788c01f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12230310b2babe8fe5455a5788c01f5f">&#9670;&nbsp;</a></span>goods_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::goods_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a163e10238c52ed71a617f23897d5552d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163e10238c52ed71a617f23897d5552d">&#9670;&nbsp;</a></span>goods_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::goods_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62d9402881213dc8fb32dd4143fd7e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d9402881213dc8fb32dd4143fd7e5a">&#9670;&nbsp;</a></span>goods_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t GoodsData::goods_type = <a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149">GOODS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21eb399f687826212aad5228530eb7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21eb399f687826212aad5228530eb7a4">&#9670;&nbsp;</a></span>id_goods_group</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::id_goods_group</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfaf3c9ff19b5d208f62094abb26050f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaf3c9ff19b5d208f62094abb26050f">&#9670;&nbsp;</a></span>nds_manual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GoodsData::nds_manual = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2408e9d6cdb1b701cdd9a1ea17f182d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2408e9d6cdb1b701cdd9a1ea17f182d7">&#9670;&nbsp;</a></span>tax_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char GoodsData::tax_number = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a995a11adc6d46602a296eebc1e2eb7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a995a11adc6d46602a296eebc1e2eb7e5">&#9670;&nbsp;</a></span>unit_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GoodsData::unit_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11857d742ae4bb6fdcf462e0aa8c334e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11857d742ae4bb6fdcf462e0aa8c334e">&#9670;&nbsp;</a></span>unit_price</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GoodsData::unit_price = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9931440d0c99377ad6f2162512e6a0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9931440d0c99377ad6f2162512e6a0b8">&#9670;&nbsp;</a></span>WEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t GoodsData::WEIGHT = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="goods__data_8h_source.html">goods_data.h</a></li>
+<li>src/appl/<a class="el" href="goods__data_8cpp.html">goods_data.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

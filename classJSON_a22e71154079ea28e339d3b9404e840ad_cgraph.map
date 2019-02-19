@@ -1,0 +1,19 @@
+<map id="JSON::parseUpsertProduct" name="JSON::parseUpsertProduct">
+<area shape="rect" id="node1" title=" " alt="" coords="5,371,188,398"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a0d74bfcf65662f1d66d14c34b0027098" title="returns the number of occurrences of a key in a JSON object" alt="" coords="513,5,661,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="269,364,417,405"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="260,313,427,339"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#a69b596a4a6683b362095c9a139637396" title="return whether value is a string" alt="" coords="269,429,417,471"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="269,495,417,536"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="269,211,417,252"/>
+<area shape="rect" id="node17" href="$classEncodeConvertor.html#a89ca427f61ab1cdcd15904e26c70fdfd" title=" " alt="" coords="236,561,451,587"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="741,64,889,105"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="499,501,676,543"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="513,436,661,477"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="516,371,659,412"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="512,305,663,347"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="513,240,661,281"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="724,337,905,379"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="513,123,661,164"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="726,159,903,186"/>
+</map>

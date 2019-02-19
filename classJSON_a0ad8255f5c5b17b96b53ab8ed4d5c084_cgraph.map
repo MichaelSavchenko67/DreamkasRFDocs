@@ -1,0 +1,12 @@
+<map id="JSON::parseDeleteDiscount" name="JSON::parseDeleteDiscount">
+<area shape="rect" id="node1" title="parseDeleteDiscount &#45; парс таски на удаление скидки" alt="" coords="5,78,193,105"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="241,5,389,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="241,71,389,112"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="241,136,389,177"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="653,33,801,75"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="439,77,587,119"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="638,114,815,141"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="437,195,588,236"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="439,260,587,301"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="636,195,817,236"/>
+</map>

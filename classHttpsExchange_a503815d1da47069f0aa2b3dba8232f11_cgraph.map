@@ -1,0 +1,52 @@
+<map id="HttpsExchange::sendCountersReport_bios" name="HttpsExchange::sendCountersReport_bios">
+<area shape="rect" id="node1" title=" " alt="" coords="5,985,207,1026"/>
+<area shape="rect" id="node2" href="$classHttpsExchange.html#a8b9059a9536a80b6880521df209177e1" title=" " alt="" coords="275,840,441,867"/>
+<area shape="rect" id="node3" href="$classHttpsExchange.html#ab636fd2cf90bed12490a902f4612f633" title=" " alt="" coords="267,891,449,917"/>
+<area shape="rect" id="node4" href="$classHttpsExchange.html#a2b57df081ebcf6c7ee070c3293fabd53" title=" " alt="" coords="255,941,461,968"/>
+<area shape="rect" id="node5" href="$classHttpsExchange.html#ac4780bb189333ce85e6862d72e1d2d16" title=" " alt="" coords="263,992,453,1019"/>
+<area shape="rect" id="node6" href="$classHttpsExchange.html#a4886006961cbfef881837111f7365843" title=" " alt="" coords="255,1043,461,1069"/>
+<area shape="rect" id="node7" href="$classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="259,1093,457,1120"/>
+<area shape="rect" id="node49" href="$classHttpsExchange.html#ac66b8736654f7598feb8c041023e9a95" title=" " alt="" coords="541,2163,724,2189"/>
+<area shape="rect" id="node8" href="$classHttpsExchange.html#a145cdf98aa0e70ac8622281ffd8bcbef" title=" " alt="" coords="545,157,721,184"/>
+<area shape="rect" id="node10" href="$classHttpsExchange.html#aa7e085534e25195872d39745078d012d" title=" " alt="" coords="807,201,997,242"/>
+<area shape="rect" id="node11" href="$classHttpsExchange.html#a979b6e7c320c686ce8936df639e08a37" title=" " alt="" coords="517,309,749,336"/>
+<area shape="rect" id="node12" href="$classHttpsExchange.html#a9d5efcab0cdc079a28c233d61ee1c0fa" title=" " alt="" coords="819,284,985,311"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="828,345,976,386"/>
+<area shape="rect" id="node14" href="$classHttpsExchange.html#a1e74893b69ee698dc1a910c63c066a43" title=" " alt="" coords="544,411,721,437"/>
+<area shape="rect" id="node15" href="$classHttpsExchange.html#a5e03a5c18e357f51554cef61da3d3f94" title=" " alt="" coords="544,461,721,488"/>
+<area shape="rect" id="node16" href="$classHttpsExchange.html#abe7eaa72d45938293da627ffc0f2b212" title=" " alt="" coords="541,512,724,539"/>
+<area shape="rect" id="node17" href="$classHttpsExchange.html#ae5693fd3c478a1055c9846a7757767c9" title=" " alt="" coords="529,563,736,589"/>
+<area shape="rect" id="node18" href="$classHttpsExchange.html#af7ad821b56374d37ecd12ddf306f0035" title=" " alt="" coords="537,613,728,640"/>
+<area shape="rect" id="node19" href="$classHttpsExchange.html#a6c760a2e1e881e6111da57959a13b4ef" title=" " alt="" coords="529,664,736,691"/>
+<area shape="rect" id="node20" href="$classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="567,715,698,757"/>
+<area shape="rect" id="node21" href="$classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="541,781,725,808"/>
+<area shape="rect" id="node22" href="$classConvert.html#a70c844c1a0324833c02ab6e118172127" title=" " alt="" coords="545,832,720,859"/>
+<area shape="rect" id="node23" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="525,883,740,909"/>
+<area shape="rect" id="node24" href="$classHttpsExchange.html#a4ae3aef040d97603a0cfe982939cc357" title=" " alt="" coords="541,933,724,960"/>
+<area shape="rect" id="node25" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="828,1025,976,1066"/>
+<area shape="rect" id="node26" href="$classHttpsExchange.html#a541a2b26e1922772166aa365647ee9af" title=" " alt="" coords="509,1203,756,1229"/>
+<area shape="rect" id="node27" href="$classHttpsExchange.html#af96350633a33e672763f4d9b874cf343" title=" " alt="" coords="547,1253,718,1280"/>
+<area shape="rect" id="node28" href="$classHttpsExchange.html#adb1dc02daf108c7e7b6e191664ab1efd" title=" " alt="" coords="539,1304,726,1331"/>
+<area shape="rect" id="node29" href="$classHttpsExchange.html#a61964c64f0506f5a89757f24d0cdf10c" title=" " alt="" coords="539,1355,726,1397"/>
+<area shape="rect" id="node30" href="$classHttpsExchange.html#ad047522f19094fb0b2d9515350eb4ada" title=" " alt="" coords="530,1035,735,1061"/>
+<area shape="rect" id="node31" href="$classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="828,1090,976,1131"/>
+<area shape="rect" id="node32" href="$classHttpsExchange.html#a1e4b1be90e5e92a75e54dc670a053651" title=" " alt="" coords="535,1421,730,1448"/>
+<area shape="rect" id="node33" href="$classHttpsExchange.html#abe5e5a318e271d1d8b36cbdf4657a47c" title=" " alt="" coords="534,1473,731,1514"/>
+<area shape="rect" id="node34" href="$classHttpsExchange.html#a3d016dd54ca1b6bcf6ccc2a018fec653" title=" " alt="" coords="522,1539,743,1565"/>
+<area shape="rect" id="node35" href="$classHttpsExchange.html#ad371852c113ec3bad329a5f407d4a090" title=" " alt="" coords="544,1589,721,1616"/>
+<area shape="rect" id="node36" href="$classHttpsExchange.html#a95df72fd62ec9a6b4148e4719acb4dd2" title=" " alt="" coords="525,1640,740,1667"/>
+<area shape="rect" id="node37" href="$classHttpsExchange.html#a5d9e567a272d6078f0959c89b54017a8" title=" " alt="" coords="532,1086,733,1127"/>
+<area shape="rect" id="node38" href="$classHttpsExchange.html#a772770150cfe9935afc2e7c0be4df621" title=" " alt="" coords="543,1691,722,1717"/>
+<area shape="rect" id="node39" href="$classHttpsExchange.html#a2ad0868cd3e028cd07e598a1a74146b3" title=" " alt="" coords="555,1741,711,1768"/>
+<area shape="rect" id="node40" href="$classHttpsExchange.html#acebd71778406bc34b869881cc3fc6fc9" title=" " alt="" coords="541,1793,724,1834"/>
+<area shape="rect" id="node41" href="$classHttpsExchange.html#ad6fa0fb2a4eb86bc8af1e97a66358871" title=" " alt="" coords="528,1859,737,1885"/>
+<area shape="rect" id="node42" href="$classHttpsExchange.html#aa086ca17b3ddf03ca7994c9e31c6242d" title=" " alt="" coords="544,1909,721,1936"/>
+<area shape="rect" id="node43" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="567,1960,698,1987"/>
+<area shape="rect" id="node44" href="$classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="565,2011,700,2037"/>
+<area shape="rect" id="node45" href="$classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="549,2061,716,2088"/>
+<area shape="rect" id="node46" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="545,2112,720,2139"/>
+<area shape="rect" id="node47" href="$classHttpsExchange.html#a4e3f578cd97481f71b325c66178ae9c1" title=" " alt="" coords="548,5,717,32"/>
+<area shape="rect" id="node48" href="$classJSON.html#afbe68a62e809d131ffbe68f11db2c3ea" title=" " alt="" coords="534,56,731,83"/>
+<area shape="rect" id="node50" href="$classHttpsExchange.html#a01aad52dd475b7b6b97982c619a5a496" title=" " alt="" coords="529,107,737,133"/>
+<area shape="rect" id="node9" href="$classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title="hubModeAddRealUrl &#45; добавление в json поля real_url" alt="" coords="804,135,1000,177"/>
+</map>

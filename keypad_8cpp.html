@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/keypad.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл keypad.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="keypad_8h_source.html">keypad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;semaphore.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &quot;unistd.h&quot;</code><br />
+<code>#include &lt;ratio&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;keyboard_API.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для keypad.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="keypad_8cpp__incl.png" border="0" usemap="#src_2appl_2keypad_8cpp" alt=""/></div>
+<map name="src_2appl_2keypad_8cpp" id="src_2appl_2keypad_8cpp">
+<area shape="rect"  title=" " alt="" coords="1661,5,1799,32"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="543,80,650,107"/>
+<area shape="rect"  title=" " alt="" coords="410,379,482,405"/>
+<area shape="rect"  title=" " alt="" coords="1534,379,1617,405"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1459,379,1510,405"/>
+<area shape="rect"  title=" " alt="" coords="172,379,240,405"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="1655,80,1730,107"/>
+<area shape="rect"  title=" " alt="" coords="1495,155,1571,181"/>
+<area shape="rect"  title=" " alt="" coords="1783,155,1880,181"/>
+<area shape="rect"  title=" " alt="" coords="1905,155,2019,181"/>
+<area shape="rect"  href="bsp__aliases_8h.html" title=" " alt="" coords="1856,80,1959,107"/>
+<area shape="rect"  title=" " alt="" coords="1983,80,2048,107"/>
+<area shape="rect"  title=" " alt="" coords="2072,80,2127,107"/>
+<area shape="rect"  title=" " alt="" coords="2151,80,2197,107"/>
+<area shape="rect"  title=" " alt="" coords="2222,80,2283,107"/>
+<area shape="rect"  title=" " alt="" coords="540,155,653,181"/>
+<area shape="rect"  title=" " alt="" coords="677,155,751,181"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="321,304,393,331"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1140,304,1216,331"/>
+<area shape="rect"  href="beeper_8h.html" title=" " alt="" coords="73,304,145,331"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="396,229,464,256"/>
+<area shape="rect"  href="requisites_8h.html" title=" " alt="" coords="823,304,912,331"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="863,155,965,181"/>
+<area shape="rect"  title=" " alt="" coords="283,155,342,181"/>
+<area shape="rect"  title=" " alt="" coords="367,155,413,181"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1190,229,1265,256"/>
+<area shape="rect"  href="barcodeScanner_8h.html" title=" " alt="" coords="620,304,747,331"/>
+<area shape="rect"  title=" " alt="" coords="216,453,281,480"/>
+<area shape="rect"  title=" " alt="" coords="514,379,575,405"/>
+<area shape="rect"  title=" " alt="" coords="265,379,326,405"/>
+<area shape="rect"  title=" " alt="" coords="1641,379,1699,405"/>
+<area shape="rect"  title=" " alt="" coords="1051,379,1121,405"/>
+<area shape="rect"  title=" " alt="" coords="966,379,1027,405"/>
+<area shape="rect"  title=" " alt="" coords="1145,379,1211,405"/>
+<area shape="rect"  title=" " alt="" coords="1235,379,1310,405"/>
+<area shape="rect"  title=" " alt="" coords="821,379,879,405"/>
+<area shape="rect"  title=" " alt="" coords="903,379,941,405"/>
+<area shape="rect"  title=" " alt="" coords="738,379,797,405"/>
+<area shape="rect"  title=" " alt="" coords="599,379,714,405"/>
+<area shape="rect"  title=" " alt="" coords="1334,379,1435,405"/>
+<area shape="rect"  title=" " alt="" coords="1508,453,1571,480"/>
+<area shape="rect"  title=" " alt="" coords="1595,453,1665,480"/>
+<area shape="rect"  title=" " alt="" coords="1817,453,1886,480"/>
+<area shape="rect"  title=" " alt="" coords="1281,453,1352,480"/>
+<area shape="rect"  title=" " alt="" coords="1377,453,1483,480"/>
+<area shape="rect"  title=" " alt="" coords="22,379,97,405"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="1697,155,1758,181"/>
+<area shape="rect"  href="bsp__printer__keypad_8h.html" title=" " alt="" coords="2043,155,2190,181"/>
+<area shape="rect"  href="bsp__lcd__drawer_8h.html" title=" " alt="" coords="2357,155,2481,181"/>
+<area shape="rect"  title=" " alt="" coords="2215,155,2333,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a65c6720565a01ec0981e13d39cdf9402"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a65c6720565a01ec0981e13d39cdf9402">NEW_KEYBOARD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a65c6720565a01ec0981e13d39cdf9402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ac85f201ccbbd56dc4118497264be0fe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#ac85f201ccbbd56dc4118497264be0fe3">set_keypad_mode</a> (unsigned char mode)</td></tr>
+<tr class="separator:ac85f201ccbbd56dc4118497264be0fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c29ed5f4052ac48bbb100dc31005cc"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a74c29ed5f4052ac48bbb100dc31005cc">get_keypad_mode</a> ()</td></tr>
+<tr class="separator:a74c29ed5f4052ac48bbb100dc31005cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b34910310800875174c4846e64a61bd"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a3b34910310800875174c4846e64a61bd">getCurrentTime</a> ()</td></tr>
+<tr class="separator:a3b34910310800875174c4846e64a61bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886f953457a1879ed82073f2a6fed00a"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a886f953457a1879ed82073f2a6fed00a">getCurrentTime_usec</a> ()</td></tr>
+<tr class="separator:a886f953457a1879ed82073f2a6fed00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ad937d880913781e30c74fd116d481650"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#ad937d880913781e30c74fd116d481650">old_key1</a> = 0</td></tr>
+<tr class="separator:ad937d880913781e30c74fd116d481650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7db2166b12c9c35a0cb0dc01f860d83"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#ae7db2166b12c9c35a0cb0dc01f860d83">key_count</a></td></tr>
+<tr class="separator:ae7db2166b12c9c35a0cb0dc01f860d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebdb315f4723fe4bced6d34115fd911"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a4ebdb315f4723fe4bced6d34115fd911">key_count_add</a></td></tr>
+<tr class="separator:a4ebdb315f4723fe4bced6d34115fd911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5795eb375ed07c156b4eedbc0af81a"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a7e5795eb375ed07c156b4eedbc0af81a">keyboard_timeout</a> = 1000000</td></tr>
+<tr class="separator:a7e5795eb375ed07c156b4eedbc0af81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a87659e107f2b8ce0b9fa1b998e0ea0"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a6a87659e107f2b8ce0b9fa1b998e0ea0">keypad_mode</a> = 0</td></tr>
+<tr class="separator:a6a87659e107f2b8ce0b9fa1b998e0ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d48561839053e0c3b793ae5b58fbcd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a2d48561839053e0c3b793ae5b58fbcd0">key_send</a></td></tr>
+<tr class="separator:a2d48561839053e0c3b793ae5b58fbcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fd0cee3b237b5d5e5611928d0ca514"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a37fd0cee3b237b5d5e5611928d0ca514">return_value</a> = 0</td></tr>
+<tr class="separator:a37fd0cee3b237b5d5e5611928d0ca514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915eedaaa4284d1bac812f5c73940f2c"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html#a915eedaaa4284d1bac812f5c73940f2c">timer</a> = 0</td></tr>
+<tr class="separator:a915eedaaa4284d1bac812f5c73940f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a65c6720565a01ec0981e13d39cdf9402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c6720565a01ec0981e13d39cdf9402">&#9670;&nbsp;</a></span>NEW_KEYBOARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEW_KEYBOARD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a74c29ed5f4052ac48bbb100dc31005cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c29ed5f4052ac48bbb100dc31005cc">&#9670;&nbsp;</a></span>get_keypad_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char get_keypad_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b34910310800875174c4846e64a61bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b34910310800875174c4846e64a61bd">&#9670;&nbsp;</a></span>getCurrentTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long getCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a886f953457a1879ed82073f2a6fed00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886f953457a1879ed82073f2a6fed00a">&#9670;&nbsp;</a></span>getCurrentTime_usec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long getCurrentTime_usec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac85f201ccbbd56dc4118497264be0fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85f201ccbbd56dc4118497264be0fe3">&#9670;&nbsp;</a></span>set_keypad_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_keypad_mode </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ae7db2166b12c9c35a0cb0dc01f860d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7db2166b12c9c35a0cb0dc01f860d83">&#9670;&nbsp;</a></span>key_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> key_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ebdb315f4723fe4bced6d34115fd911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebdb315f4723fe4bced6d34115fd911">&#9670;&nbsp;</a></span>key_count_add</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> key_count_add</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d48561839053e0c3b793ae5b58fbcd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d48561839053e0c3b793ae5b58fbcd0">&#9670;&nbsp;</a></span>key_send</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> key_send</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e5795eb375ed07c156b4eedbc0af81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5795eb375ed07c156b4eedbc0af81a">&#9670;&nbsp;</a></span>keyboard_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long keyboard_timeout = 1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a87659e107f2b8ce0b9fa1b998e0ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a87659e107f2b8ce0b9fa1b998e0ea0">&#9670;&nbsp;</a></span>keypad_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char keypad_mode = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad937d880913781e30c74fd116d481650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad937d880913781e30c74fd116d481650">&#9670;&nbsp;</a></span>old_key1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char old_key1 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37fd0cee3b237b5d5e5611928d0ca514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37fd0cee3b237b5d5e5611928d0ca514">&#9670;&nbsp;</a></span>return_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char return_value = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a915eedaaa4284d1bac812f5c73940f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a915eedaaa4284d1bac812f5c73940f2c">&#9670;&nbsp;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char timer = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

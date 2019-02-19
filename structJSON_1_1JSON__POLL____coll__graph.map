@@ -1,0 +1,11 @@
+<map id="JSON::JSON_POLL_" name="JSON::JSON_POLL_">
+<area shape="rect" id="node1" title=" " alt="" coords="85,1028,234,1105"/>
+<area shape="rect" id="node2" href="$structJSON_1_1JSON__POLL___1_1REQUEST.html" title=" " alt="" coords="5,873,228,965"/>
+<area shape="rect" id="node3" href="$structJSON_1_1JSON__POLL___1_1RESPONSE.html" title=" " alt="" coords="253,873,485,965"/>
+<area shape="rect" id="node4" href="$structJSON_1_1TASK__DATA.html" title=" " alt="" coords="295,631,442,811"/>
+<area shape="rect" id="node5" href="$structJSON_1_1JSON__KEY__ACTIVATION.html" title=" " alt="" coords="193,417,417,524"/>
+<area shape="rect" id="node6" href="$structJSON_1_1JSON__EXTERNAL__PURCHASE.html" title=" " alt="" coords="441,373,621,568"/>
+<area shape="rect" id="node7" href="$structJSON_1_1JSON__ATTRIBUTES.html" title=" " alt="" coords="361,219,555,311"/>
+<area shape="rect" id="node8" href="$structJSON_1_1JSON__TOTAL.html" title=" " alt="" coords="579,226,729,303"/>
+<area shape="rect" id="node9" href="$structJSON_1_1JSON__TAXES.html" title=" " alt="" coords="577,5,731,156"/>
+</map>

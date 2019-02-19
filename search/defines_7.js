@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['g_5fdrawer_5finit',['g_drawer_init',['../bsp__aliases_8h.html#abb24291b4f30920c2af65a89b28261d8',1,'bsp_aliases.h']]],
+  ['g_5flcd_5fbacklight',['g_lcd_backlight',['../bsp__aliases_8h.html#afa59a98a1ec0b6898f01ac8f3ae5e47d',1,'bsp_aliases.h']]],
+  ['g_5flcd_5finit_5fbuyer',['g_lcd_init_buyer',['../bsp__aliases_8h.html#a6b9d43cde5bfe0150d88e5592bd0f160',1,'bsp_aliases.h']]],
+  ['g_5flcd_5finit_5fseller',['g_lcd_init_seller',['../bsp__aliases_8h.html#a81f061a7c989a1b56de1a2655ac97011',1,'bsp_aliases.h']]],
+  ['g_5flcd_5fupdate',['g_lcd_update',['../bsp__aliases_8h.html#a9770fd32918deffda96f2be0d9b797d4',1,'bsp_aliases.h']]],
+  ['g_5fprinter_5fcancel',['g_printer_cancel',['../bsp__aliases_8h.html#a8900f88b990104ed2ce9a849d9353489',1,'bsp_aliases.h']]],
+  ['g_5fprinter_5ffont_5fset',['g_printer_font_set',['../bsp__aliases_8h.html#aa5f6736d2835324524b4b25914de8ce7',1,'bsp_aliases.h']]],
+  ['g_5fprinter_5finit',['g_printer_init',['../bsp__aliases_8h.html#a90e91917ac9d8b185c7556ffd693e4b1',1,'bsp_aliases.h']]],
+  ['g_5fprinter_5fprint',['g_printer_print',['../bsp__aliases_8h.html#a222a79c14cc32d32d2a773237ffd8978',1,'bsp_aliases.h']]],
+  ['get_5fbuf_5flen_5fmax_5ftries',['GET_BUF_LEN_MAX_TRIES',['../bsp__printer__keypad_8c.html#aa0a527b1f4f9781951be13fbe8137b7f',1,'bsp_printer_keypad.c']]],
+  ['getlogdblevel',['getLogDBLevel',['../log_8h.html#a8b950ee4689addc61e3c964347000e46',1,'log.h']]],
+  ['getlogdbmaxdbsize',['getLogDBMaxDBSize',['../log_8h.html#a61b5b8458b261a37352524be6b82c359',1,'log.h']]],
+  ['getlogdbmaxquerysize',['getLogDBMaxQuerySize',['../log_8h.html#afddb2e62ef3c0800734f1bcd3984347e',1,'log.h']]],
+  ['getlogdbwriteperiod',['getLogDBWritePeriod',['../log_8h.html#a292342366cef2e3adf573ef864169ebf',1,'log.h']]],
+  ['gpio_5fdirection_5ffile',['GPIO_DIRECTION_FILE',['../beeper_8h.html#ae34a01fad6dfd4bcd99023df7fd61cf2',1,'beeper.h']]],
+  ['gpio_5fexport_5ffile',['GPIO_EXPORT_FILE',['../beeper_8h.html#a8836d116c12b686cbf1213927c2b8050',1,'beeper.h']]],
+  ['gpio_5fvalue_5ffile',['GPIO_VALUE_FILE',['../beeper_8h.html#adff37a6d6384e3fde59e806e5ff125b9',1,'beeper.h']]]
+];

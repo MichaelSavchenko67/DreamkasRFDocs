@@ -1,0 +1,8 @@
+<map id="ScaleProtocolPos2::cmdGetScaleParam" name="ScaleProtocolPos2::cmdGetScaleParam">
+<area shape="rect" id="node1" title="getScaleParam &#45; чтение параметров весов" alt="" coords="5,71,147,112"/>
+<area shape="rect" id="node2" href="$classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0" title="packetCreate &#45; создание пакета данных" alt="" coords="195,5,349,47"/>
+<area shape="rect" id="node4" href="$classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59" title="writeCmd &#45; отправить команду на весы" alt="" coords="195,71,349,112"/>
+<area shape="rect" id="node6" href="$classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58" title="readAnswer &#45; прочитать ответ от весов" alt="" coords="195,136,349,177"/>
+<area shape="rect" id="node3" href="$classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; создание CRC для подготовленного пакета" alt="" coords="397,5,552,47"/>
+<area shape="rect" id="node5" href="$classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="397,71,552,112"/>
+</map>

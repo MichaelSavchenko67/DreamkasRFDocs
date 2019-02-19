@@ -1,0 +1,8 @@
+<map id="nlohmann::basic_json::sax_parse" name="nlohmann::basic_json::sax_parse">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,153,112"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="201,71,363,112"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="413,5,566,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="413,71,566,112"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="411,136,568,177"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="616,136,797,177"/>
+</map>

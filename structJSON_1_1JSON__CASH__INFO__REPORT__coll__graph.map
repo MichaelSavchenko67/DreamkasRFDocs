@@ -1,0 +1,9 @@
+<map id="JSON::JSON_CASH_INFO_REPORT" name="JSON::JSON_CASH_INFO_REPORT">
+<area shape="rect" id="node1" title=" " alt="" coords="53,616,240,708"/>
+<area shape="rect" id="node2" href="$structJSON_1_1JSON__CASH__INFO__REPORT_1_1RESPONSE.html" title=" " alt="" coords="5,432,192,524"/>
+<area shape="rect" id="node3" href="$structJSON_1_1JSON__CASH__INFO__REPORT_1_1REQUEST.html" title=" " alt="" coords="216,403,403,553"/>
+<area shape="rect" id="node4" href="$structJSON_1_1JSON__KKT__INFO.html" title=" " alt="" coords="17,204,191,340"/>
+<area shape="rect" id="node5" href="$structJSON_1_1JSON__SHOP__INFO.html" title=" " alt="" coords="216,204,403,340"/>
+<area shape="rect" id="node6" href="$structJSON_1_1JSON__KKT__REGISTRATION__INFO.html" title=" " alt="" coords="427,211,709,333"/>
+<area shape="rect" id="node7" href="$structJSON_1_1JSON__OFD__PROVIDER.html" title=" " alt="" coords="461,5,675,141"/>
+</map>

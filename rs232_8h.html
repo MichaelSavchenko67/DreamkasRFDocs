@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/rs232.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл rs232.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для rs232.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="rs232_8h__incl.png" border="0" usemap="#src_2appl_2include_2rs232_8h" alt=""/></div>
+<map name="src_2appl_2include_2rs232_8h" id="src_2appl_2include_2rs232_8h">
+<area shape="rect"  title=" " alt="" coords="44,5,204,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect"  title=" " alt="" coords="91,80,157,107"/>
+<area shape="rect"  title=" " alt="" coords="181,80,265,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="rs232_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2rs232_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2rs232_8hdep" id="src_2appl_2include_2rs232_8hdep">
+<area shape="rect"  title=" " alt="" coords="5,5,165,32"/>
+<area shape="rect"  href="rs232_8cpp.html" title=" " alt="" coords="21,80,150,107"/>
+</map>
+</div>
+</div>
+<p><a href="rs232_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad03a4a934e2760922e73cdb941aa5529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#ad03a4a934e2760922e73cdb941aa5529">RS232_SetZeroName</a> (const char *name)</td></tr>
+<tr class="separator:ad03a4a934e2760922e73cdb941aa5529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956013cd53ce97c8203609dc33b0ef62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a956013cd53ce97c8203609dc33b0ef62">RS232_OpenComport</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, const char *)</td></tr>
+<tr class="separator:a956013cd53ce97c8203609dc33b0ef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab204b323695fdcc87a0dd7f04e8adc97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#ab204b323695fdcc87a0dd7f04e8adc97">RS232_PollComport</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, unsigned char *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:ab204b323695fdcc87a0dd7f04e8adc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e29ede1c8d5ed5f32c67a097d5bbe9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#ad1e29ede1c8d5ed5f32c67a097d5bbe9">RS232_SendByte</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, unsigned char)</td></tr>
+<tr class="separator:ad1e29ede1c8d5ed5f32c67a097d5bbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99bd31714f630491bb87aa1130a191d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a99bd31714f630491bb87aa1130a191d0">RS232_SendBuf</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, unsigned char *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:a99bd31714f630491bb87aa1130a191d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14350395c99e718dc737eeabfd5ef325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a14350395c99e718dc737eeabfd5ef325">RS232_CloseComport</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:a14350395c99e718dc737eeabfd5ef325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083e54a3f0258596eddb1d4fe5456bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a083e54a3f0258596eddb1d4fe5456bbf">RS232_cputs</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, const char *)</td></tr>
+<tr class="separator:a083e54a3f0258596eddb1d4fe5456bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc99514ae679150d22b9104b762a2c5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#adc99514ae679150d22b9104b762a2c5d">RS232_IsDCDEnabled</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:adc99514ae679150d22b9104b762a2c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab159ebb8591bbb2662bb036bbd448318"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#ab159ebb8591bbb2662bb036bbd448318">RS232_IsCTSEnabled</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:ab159ebb8591bbb2662bb036bbd448318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a73a413a420cea0c9425be7129ed4a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a2a73a413a420cea0c9425be7129ed4a6">RS232_IsDSREnabled</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:a2a73a413a420cea0c9425be7129ed4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4db318f5581d66017847da784eb2f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#afc4db318f5581d66017847da784eb2f7">RS232_enableDTR</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:afc4db318f5581d66017847da784eb2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf74d394e7626cc9d15ceaf67a2b68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#afaf74d394e7626cc9d15ceaf67a2b68f">RS232_disableDTR</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:afaf74d394e7626cc9d15ceaf67a2b68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a89830b8df7e54ec21560ac0508eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#af9a89830b8df7e54ec21560ac0508eff">RS232_enableRTS</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:af9a89830b8df7e54ec21560ac0508eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f1cbab5139262c31a83372855284eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8h.html#a18f1cbab5139262c31a83372855284eb">RS232_disableRTS</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:a18f1cbab5139262c31a83372855284eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a14350395c99e718dc737eeabfd5ef325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14350395c99e718dc737eeabfd5ef325">&#9670;&nbsp;</a></span>RS232_CloseComport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_CloseComport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a083e54a3f0258596eddb1d4fe5456bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083e54a3f0258596eddb1d4fe5456bbf">&#9670;&nbsp;</a></span>RS232_cputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_cputs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph.png" border="0" usemap="#rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph" alt=""/></div>
+<map name="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph" id="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect"  href="rs232_8cpp.html#ad8d4dbe7691e53e178360403228d650b" title=" " alt="" coords="155,5,281,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afaf74d394e7626cc9d15ceaf67a2b68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaf74d394e7626cc9d15ceaf67a2b68f">&#9670;&nbsp;</a></span>RS232_disableDTR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_disableDTR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18f1cbab5139262c31a83372855284eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f1cbab5139262c31a83372855284eb">&#9670;&nbsp;</a></span>RS232_disableRTS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_disableRTS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc4db318f5581d66017847da784eb2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4db318f5581d66017847da784eb2f7">&#9670;&nbsp;</a></span>RS232_enableDTR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_enableDTR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a89830b8df7e54ec21560ac0508eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a89830b8df7e54ec21560ac0508eff">&#9670;&nbsp;</a></span>RS232_enableRTS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_enableRTS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab159ebb8591bbb2662bb036bbd448318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab159ebb8591bbb2662bb036bbd448318">&#9670;&nbsp;</a></span>RS232_IsCTSEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_IsCTSEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc99514ae679150d22b9104b762a2c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc99514ae679150d22b9104b762a2c5d">&#9670;&nbsp;</a></span>RS232_IsDCDEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_IsDCDEnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a73a413a420cea0c9425be7129ed4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a73a413a420cea0c9425be7129ed4a6">&#9670;&nbsp;</a></span>RS232_IsDSREnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_IsDSREnabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a956013cd53ce97c8203609dc33b0ef62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956013cd53ce97c8203609dc33b0ef62">&#9670;&nbsp;</a></span>RS232_OpenComport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_OpenComport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab204b323695fdcc87a0dd7f04e8adc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab204b323695fdcc87a0dd7f04e8adc97">&#9670;&nbsp;</a></span>RS232_PollComport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_PollComport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99bd31714f630491bb87aa1130a191d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99bd31714f630491bb87aa1130a191d0">&#9670;&nbsp;</a></span>RS232_SendBuf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_SendBuf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e29ede1c8d5ed5f32c67a097d5bbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e29ede1c8d5ed5f32c67a097d5bbe9">&#9670;&nbsp;</a></span>RS232_SendByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> RS232_SendByte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad03a4a934e2760922e73cdb941aa5529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03a4a934e2760922e73cdb941aa5529">&#9670;&nbsp;</a></span>RS232_SetZeroName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS232_SetZeroName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

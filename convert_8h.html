@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/convert.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл convert.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;boost/regex.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;pirit_structs.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для convert.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="convert_8h__incl.png" border="0" usemap="#src_2appl_2include_2convert_8h" alt=""/></div>
+<map name="src_2appl_2include_2convert_8h" id="src_2appl_2include_2convert_8h">
+<area shape="rect"  title=" " alt="" coords="557,5,728,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect"  title=" " alt="" coords="112,80,171,107"/>
+<area shape="rect"  title=" " alt="" coords="195,80,264,107"/>
+<area shape="rect"  title=" " alt="" coords="288,80,349,107"/>
+<area shape="rect"  title=" " alt="" coords="373,80,440,107"/>
+<area shape="rect"  title=" " alt="" coords="464,80,536,107"/>
+<area shape="rect"  title=" " alt="" coords="560,80,635,107"/>
+<area shape="rect"  title=" " alt="" coords="659,80,717,107"/>
+<area shape="rect"  title=" " alt="" coords="741,80,803,107"/>
+<area shape="rect"  title=" " alt="" coords="827,80,866,107"/>
+<area shape="rect"  title=" " alt="" coords="891,80,949,107"/>
+<area shape="rect"  title=" " alt="" coords="973,80,1088,107"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1112,80,1163,107"/>
+<area shape="rect"  title=" " alt="" coords="1187,80,1288,107"/>
+<area shape="rect"  title=" " alt="" coords="875,155,938,181"/>
+<area shape="rect"  title=" " alt="" coords="963,155,1032,181"/>
+<area shape="rect"  title=" " alt="" coords="1056,155,1125,181"/>
+<area shape="rect"  title=" " alt="" coords="1150,155,1215,181"/>
+<area shape="rect"  title=" " alt="" coords="1239,155,1310,181"/>
+<area shape="rect"  title=" " alt="" coords="1335,155,1441,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="convert_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2convert_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2convert_8hdep" id="src_2appl_2include_2convert_8hdep">
+<area shape="rect"  title=" " alt="" coords="2911,5,3081,32"/>
+<area shape="rect"  href="CabinetBase_8cpp.html" title=" " alt="" coords="33,490,205,517"/>
+<area shape="rect"  href="convert_8cpp.html" title=" " alt="" coords="1362,319,1502,345"/>
+<area shape="rect"  href="counters_8cpp.html" title=" " alt="" coords="3780,80,3927,107"/>
+<area shape="rect"  href="EncodeConvertor_8cpp.html" title=" " alt="" coords="3951,80,4150,107"/>
+<area shape="rect"  href="goods__new_8cpp.html" title=" " alt="" coords="3095,758,3257,785"/>
+<area shape="rect"  href="https__exchange_8cpp.html" title=" " alt="" coords="1412,758,1601,785"/>
+<area shape="rect"  href="CabinetBase_8h.html" title=" " alt="" coords="43,155,205,196"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="2099,244,2261,271"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="2613,483,2769,524"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="757,572,909,613"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="1939,751,2088,792"/>
+<area shape="rect"  href="printer_8cpp.html" title=" " alt="" coords="3031,1019,3164,1045"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="3309,937,3424,963"/>
+<area shape="rect"  href="testPiritLib_8h.html" title=" " alt="" coords="382,661,549,703"/>
+<area shape="rect"  href="json_8cpp.html" title=" " alt="" coords="1215,758,1337,785"/>
+<area shape="rect"  href="sqlWrapper_8cpp.html" title=" " alt="" coords="1028,758,1191,785"/>
+<area shape="rect"  href="ReceiptsDb_8cpp.html" title=" " alt="" coords="2842,669,3009,695"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="2923,162,3069,189"/>
+<area shape="rect"  href="positions_8cpp.html" title=" " alt="" coords="3151,490,3300,517"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1151,80,1321,107"/>
+<area shape="rect"  href="fiscal__doc__db_8h.html" title=" " alt="" coords="3481,840,3629,881"/>
+<area shape="rect"  href="slipsDB_8cpp.html" title=" " alt="" coords="4174,80,4317,107"/>
+<area shape="rect"  href="testConvert_8h.html" title=" " alt="" coords="4341,80,4542,107"/>
+<area shape="rect"  href="config_8cpp.html" title=" " alt="" coords="2010,319,2142,345"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1577,319,1740,345"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="1777,661,1924,703"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="2225,1019,2385,1045"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="2690,937,2854,963"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="2049,669,2244,695"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="1764,319,1911,345"/>
+<area shape="rect"  href="filesfg_8cpp.html" title=" " alt="" coords="1593,401,1725,427"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html" title=" " alt="" coords="888,669,1059,695"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1085,401,1237,427"/>
+<area shape="rect"  href="threads_8h.html" title=" " alt="" coords="1096,1093,1267,1120"/>
+<area shape="rect"  href="menu_8cpp.html" title=" " alt="" coords="1497,1093,1626,1120"/>
+<area shape="rect"  href="testsFilesFg_8h.html" title=" " alt="" coords="1363,401,1568,427"/>
+<area shape="rect"  href="goods_8cpp.html" title=" " alt="" coords="3085,669,3217,695"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="2741,847,2886,874"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="2985,579,3148,606"/>
+<area shape="rect"  href="ReceiptsDb_8h.html" title=" " alt="" coords="2420,579,2617,606"/>
+<area shape="rect"  href="receipt__new_8cpp.html" title=" " alt="" coords="2642,579,2809,606"/>
+<area shape="rect"  href="keypad_8cpp.html" title=" " alt="" coords="624,669,763,695"/>
+<area shape="rect"  href="Fisgo__Test__API_8cpp.html" title=" " alt="" coords="1945,840,2082,881"/>
+<area shape="rect"  href="net_8cpp.html" title=" " alt="" coords="1901,401,2016,427"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="2922,401,3102,427"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="2729,393,2898,435"/>
+<area shape="rect"  href="tax_8cpp.html" title=" " alt="" coords="2987,244,3101,271"/>
+<area shape="rect"  href="testLicense_8h.html" title=" " alt="" coords="1136,162,1336,189"/>
+<area shape="rect"  href="fiscal__doc__db_8cpp.html" title=" " alt="" coords="3499,929,3629,971"/>
+</map>
+</div>
+</div>
+<p><a href="convert_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConvert.html">Convert</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConvert_1_1Date.html">Convert::Date</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConvert_1_1DATE__ISO__8601.html">Convert::DATE_ISO_8601</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

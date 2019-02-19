@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testGlobalFuncMock.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testGlobalFuncMock.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &lt;gmock/gmock-global.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;PiritLib.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testGlobalFuncMock.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testGlobalFuncMock_8h__incl.png" border="0" usemap="#src_2tests_2include_2testGlobalFuncMock_8h" alt=""/></div>
+<map name="src_2tests_2include_2testGlobalFuncMock_8h" id="src_2tests_2include_2testGlobalFuncMock_8h">
+<area shape="rect"  title=" " alt="" coords="1315,5,1496,47"/>
+<area shape="rect"  title=" " alt="" coords="183,95,278,121"/>
+<area shape="rect"  title=" " alt="" coords="303,95,417,121"/>
+<area shape="rect"  title=" " alt="" coords="442,95,595,121"/>
+<area shape="rect"  title=" " alt="" coords="375,781,449,808"/>
+<area shape="rect"  title=" " alt="" coords="1927,781,1999,808"/>
+<area shape="rect"  title=" " alt="" coords="2793,557,2861,584"/>
+<area shape="rect"  title=" " alt="" coords="2715,95,2789,121"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="1864,95,1963,121"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="427,177,495,203"/>
+<area shape="rect"  title=" " alt="" coords="1771,707,1826,733"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="2431,483,2499,509"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="3139,557,3261,584"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="2049,632,2114,659"/>
+<area shape="rect"  title=" " alt="" coords="1625,169,1764,211"/>
+<area shape="rect"  title=" " alt="" coords="1789,177,1859,203"/>
+<area shape="rect"  title=" " alt="" coords="1884,177,1943,203"/>
+<area shape="rect"  title=" " alt="" coords="545,781,607,808"/>
+<area shape="rect"  title=" " alt="" coords="221,781,278,808"/>
+<area shape="rect"  title=" " alt="" coords="2764,781,2825,808"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="917,781,968,808"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="711,483,796,509"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="526,707,626,733"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1018,259,1121,285"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="859,483,975,509"/>
+<area shape="rect"  title=" " alt="" coords="1417,856,1479,883"/>
+<area shape="rect"  title=" " alt="" coords="861,856,931,883"/>
+<area shape="rect"  title=" " alt="" coords="955,856,1024,883"/>
+<area shape="rect"  title=" " alt="" coords="3015,856,3081,883"/>
+<area shape="rect"  title=" " alt="" coords="1049,856,1119,883"/>
+<area shape="rect"  title=" " alt="" coords="731,856,837,883"/>
+<area shape="rect"  title=" " alt="" coords="1502,781,1541,808"/>
+<area shape="rect"  title=" " alt="" coords="1091,781,1149,808"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1333,557,1384,584"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="2493,557,2565,584"/>
+<area shape="rect"  title=" " alt="" coords="1400,632,1459,659"/>
+<area shape="rect"  title=" " alt="" coords="1307,632,1376,659"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="2139,707,2215,733"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1208,632,1283,659"/>
+<area shape="rect"  title=" " alt="" coords="2644,781,2727,808"/>
+<area shape="rect"  title=" " alt="" coords="2148,781,2207,808"/>
+<area shape="rect"  title=" " alt="" coords="2231,781,2300,808"/>
+<area shape="rect"  title=" " alt="" coords="2324,781,2391,808"/>
+<area shape="rect"  title=" " alt="" coords="2415,781,2529,808"/>
+<area shape="rect"  title=" " alt="" coords="2023,781,2124,808"/>
+<area shape="rect"  title=" " alt="" coords="2392,632,2453,659"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1943,333,2001,360"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="1686,632,1821,659"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="2303,408,2353,435"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="2053,707,2115,733"/>
+</map>
+</div>
+</div>
+<p><a href="testGlobalFuncMock_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa1e7e301cfc09cff3c759d86017c4245"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#aa1e7e301cfc09cff3c759d86017c4245">MOCK_GLOBAL_FUNC1</a> (remove, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *))</td></tr>
+<tr class="separator:aa1e7e301cfc09cff3c759d86017c4245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2276b730590138933e53e17ec0977f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a2276b730590138933e53e17ec0977f05">MOCK_GLOBAL_FUNC2</a> (symlink, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *, const char *))</td></tr>
+<tr class="separator:a2276b730590138933e53e17ec0977f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee8c2f78cbecb1d835ed560d0594733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a1ee8c2f78cbecb1d835ed560d0594733">MOCK_GLOBAL_FUNC2</a> (access, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(__const char *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>))</td></tr>
+<tr class="separator:a1ee8c2f78cbecb1d835ed560d0594733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a5ea7ba6764e8d83cc1d7dce315512"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a36a5ea7ba6764e8d83cc1d7dce315512">MOCK_GLOBAL_FUNC0</a> (sync, void())</td></tr>
+<tr class="separator:a36a5ea7ba6764e8d83cc1d7dce315512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae549161dae4b428e87c21affa82ab7dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#ae549161dae4b428e87c21affa82ab7dc">MOCK_GLOBAL_FUNC1</a> (system, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *))</td></tr>
+<tr class="separator:ae549161dae4b428e87c21affa82ab7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934174a1042973cf8b782558763b0718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a934174a1042973cf8b782558763b0718">MOCK_GLOBAL_FUNC5</a> (sqlite3_exec, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(sqlite3 *, const char *sql, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(*callback)(void *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, char **, char **), void *, char **errmsg)) <a class="el" href="testGlobalFuncMock_8h.html#a0322ddcbdd4c7314412c7aad3b5952a4">MOCK_GLOBAL_FUNC1</a>(libDreamkasKeySet</td></tr>
+<tr class="separator:a934174a1042973cf8b782558763b0718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882197d618d1823462b68dc16270232c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> (string &amp;))</td></tr>
+<tr class="separator:a882197d618d1823462b68dc16270232c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00485d3e50d44f28eb819f3c2cced93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#ae00485d3e50d44f28eb819f3c2cced93">MOCK_GLOBAL_FUNC0</a> (libDreamkasKeyPrintAll, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>())</td></tr>
+<tr class="separator:ae00485d3e50d44f28eb819f3c2cced93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab179987656754801001b1dd0469a808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#aab179987656754801001b1dd0469a808">MOCK_GLOBAL_FUNC2</a> (libDreamkasKeyGetInfo, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const uint8_t &amp;, DreamkasKey &amp;))</td></tr>
+<tr class="separator:aab179987656754801001b1dd0469a808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0322ddcbdd4c7314412c7aad3b5952a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#a0322ddcbdd4c7314412c7aad3b5952a4">MOCK_GLOBAL_FUNC1</a> (libDreamkasKeyGetInfoList, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(vector&lt; DreamkasKey &gt; &amp;))</td></tr>
+<tr class="separator:a0322ddcbdd4c7314412c7aad3b5952a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13f117467283af9fd15cf83c39f22b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#ad13f117467283af9fd15cf83c39f22b7">MOCK_GLOBAL_FUNC3</a> (getStrFromInfoFN, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(uint8_t, int32_t, string &amp;))</td></tr>
+<tr class="separator:ad13f117467283af9fd15cf83c39f22b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e37e97958568e9ba190b74c269e200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testGlobalFuncMock_8h.html#ab7e37e97958568e9ba190b74c269e200">MOCK_GLOBAL_FUNC3</a> (libIsErrorCritical, bool(<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, FB_OPERATION_CRITICAL_LEVEL, string *))</td></tr>
+<tr class="separator:ab7e37e97958568e9ba190b74c269e200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a882197d618d1823462b68dc16270232c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a882197d618d1823462b68dc16270232c">&#9670;&nbsp;</a></span>int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36a5ea7ba6764e8d83cc1d7dce315512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36a5ea7ba6764e8d83cc1d7dce315512">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC0() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC0 </td>
+          <td>(</td>
+          <td class="paramtype">sync&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void()&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae00485d3e50d44f28eb819f3c2cced93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00485d3e50d44f28eb819f3c2cced93">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC0() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC0 </td>
+          <td>(</td>
+          <td class="paramtype">libDreamkasKeyPrintAll&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>()&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1e7e301cfc09cff3c759d86017c4245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e7e301cfc09cff3c759d86017c4245">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC1() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC1 </td>
+          <td>(</td>
+          <td class="paramtype">remove&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae549161dae4b428e87c21affa82ab7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae549161dae4b428e87c21affa82ab7dc">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC1() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC1 </td>
+          <td>(</td>
+          <td class="paramtype">system&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0322ddcbdd4c7314412c7aad3b5952a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0322ddcbdd4c7314412c7aad3b5952a4">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC1() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC1 </td>
+          <td>(</td>
+          <td class="paramtype">libDreamkasKeyGetInfoList&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(vector&lt; DreamkasKey &gt; &amp;)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2276b730590138933e53e17ec0977f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2276b730590138933e53e17ec0977f05">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC2() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC2 </td>
+          <td>(</td>
+          <td class="paramtype">symlink&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const char *, const char *)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee8c2f78cbecb1d835ed560d0594733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee8c2f78cbecb1d835ed560d0594733">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC2() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC2 </td>
+          <td>(</td>
+          <td class="paramtype">access&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(__const char *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab179987656754801001b1dd0469a808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab179987656754801001b1dd0469a808">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC2() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC2 </td>
+          <td>(</td>
+          <td class="paramtype">libDreamkasKeyGetInfo&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(const uint8_t &amp;, DreamkasKey &amp;)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad13f117467283af9fd15cf83c39f22b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13f117467283af9fd15cf83c39f22b7">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC3() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC3 </td>
+          <td>(</td>
+          <td class="paramtype">getStrFromInfoFN&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(uint8_t, int32_t, string &amp;)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7e37e97958568e9ba190b74c269e200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e37e97958568e9ba190b74c269e200">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC3() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC3 </td>
+          <td>(</td>
+          <td class="paramtype">libIsErrorCritical&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool(<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, FB_OPERATION_CRITICAL_LEVEL, string *)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a934174a1042973cf8b782558763b0718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a934174a1042973cf8b782558763b0718">&#9670;&nbsp;</a></span>MOCK_GLOBAL_FUNC5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MOCK_GLOBAL_FUNC5 </td>
+          <td>(</td>
+          <td class="paramtype">sqlite3_exec&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(sqlite3 *, const char *sql, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>(*callback)(void *, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, char **, char **), void *, char **errmsg)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

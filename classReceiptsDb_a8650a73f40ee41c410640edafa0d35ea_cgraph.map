@@ -1,0 +1,6 @@
+<map id="ReceiptsDb::readTasksDb" name="ReceiptsDb::readTasksDb">
+<area shape="rect" id="node1" title="readTasksDb &#45; прочитать таски из таблицы" alt="" coords="5,56,183,83"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a" title="makeTasksRequest &#45; запрос к таблице тасок" alt="" coords="231,5,447,32"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="245,56,433,83"/>
+<area shape="rect" id="node4" href="$classReceiptsDb.html#a74d97b444d94a55d8fc2a793e7b693de" title="parseTasks &#45; парс тасок из таблицы" alt="" coords="255,107,422,133"/>
+</map>

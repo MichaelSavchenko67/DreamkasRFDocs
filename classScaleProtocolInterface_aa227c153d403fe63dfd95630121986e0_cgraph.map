@@ -1,0 +1,4 @@
+<map id="ScaleProtocolInterface::packetCreate" name="ScaleProtocolInterface::packetCreate">
+<area shape="rect" id="node1" title="packetCreate &#45; создание пакета данных" alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; создание CRC для подготовленного пакета" alt="" coords="208,5,363,47"/>
+</map>

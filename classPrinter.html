@@ -1,0 +1,2179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс Printer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="classPrinter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Printer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="printer_8h_source.html">printer.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса Printer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter__coll__graph.png" border="0" usemap="#Printer_coll__map" alt="Collaboration graph"/></div>
+<map name="Printer_coll__map" id="Printer_coll__map">
+<area shape="rect"  title=" " alt="" coords="321,1583,515,2628"/>
+<area shape="rect"  href="classBIOS.html" title=" " alt="" coords="5,5,308,1520"/>
+<area shape="rect"  href="structPrinter_1_1technical__report.html" title=" " alt="" coords="333,577,503,948"/>
+<area shape="rect"  href="structReceipt_1_1Fiscal__data.html" title=" " alt="" coords="528,145,745,1381"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrinter_1_1technical__report.html">technical_report</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ab0c3ee05b78ecc8be36565ea1bbaaf46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46">TYPE_DOC</a> { <a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46a3e83a38cc4fc68d65eb95902486c3900">td_sale</a> = 1, 
+<a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46a642ba43770ecdb9f2056cefa8f7ce8b6">td_return</a>, 
+<a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46a409eaff00778ffc9b273d534c6c26032">td_purchase</a>, 
+<a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46ab1b982991fd7b1f762e075739668db2f">td_ret_purchase</a>
+ }</td></tr>
+<tr class="separator:ab0c3ee05b78ecc8be36565ea1bbaaf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7885f7d3a814cb10d8ecc3bcdc32f9a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">font_t</a> { <br />
+&#160;&#160;<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aa377a16c766648a64eeb2ea731646e67f">FONT_CHARACTER</a> = 0, 
+<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aa0a0630087ad44639f9de205f19c54724">FONT_SMALL</a> = 1, 
+<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aa96834214b46d3e6e0fb458e959296ff1">FONT_EMPHASIZED</a> = 1 &lt;&lt; 3, 
+<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aaf8649238ecc1fc89a37cc513b189ae96">FONT_DOUBLE_HEIGHT</a> = 1 &lt;&lt; 4, 
+<br />
+&#160;&#160;<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aa43c34234b1e1422ad080f618331cfe4d">FONT_DOUBLE_WIDTH</a> = 1 &lt;&lt; 5, 
+<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9aa9fcc57049d3c14ce2b60f628831ab8a7">FONT_UNDERLINE</a> = 1 &lt;&lt; 7
+<br />
+ }</td></tr>
+<tr class="separator:ab7885f7d3a814cb10d8ecc3bcdc32f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a588293c9f32ee616a1bd3735ba4e5014"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a588293c9f32ee616a1bd3735ba4e5014">Printer</a> (shared_ptr&lt; <a class="el" href="classFISGO__TEST__API.html">FISGO_TEST_API</a> &gt; FisGoTestApi=nullptr)</td></tr>
+<tr class="separator:a588293c9f32ee616a1bd3735ba4e5014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011da1d2aa31df5440071c0b6e80eb1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a011da1d2aa31df5440071c0b6e80eb1d">~Printer</a> ()</td></tr>
+<tr class="separator:a011da1d2aa31df5440071c0b6e80eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f92637fb23edc67d247b9953004da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a66f92637fb23edc67d247b9953004da9">print_buffer</a> (uint64_t fd=0)</td></tr>
+<tr class="memdesc:a66f92637fb23edc67d247b9953004da9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPrinter.html#a66f92637fb23edc67d247b9953004da9" title="Printer::print_buffer печать буфера">Printer::print_buffer</a> печать буфера  <a href="#a66f92637fb23edc67d247b9953004da9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a66f92637fb23edc67d247b9953004da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af867f595123a785a4fca2277c75f5a14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#af867f595123a785a4fca2277c75f5a14">setFont</a> (const <a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">font_t</a> font, bool isBlackMode=false)</td></tr>
+<tr class="separator:af867f595123a785a4fca2277c75f5a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0120ac9c11717a7de0a20e5eb9266f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a2d0120ac9c11717a7de0a20e5eb9266f">printer_buf_load</a> (const char *value)</td></tr>
+<tr class="separator:a2d0120ac9c11717a7de0a20e5eb9266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d65fb3917a7f30256a98d90268b45b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a6d65fb3917a7f30256a98d90268b45b3">printer_buf_load</a> (const char *fmt, const char *value)</td></tr>
+<tr class="separator:a6d65fb3917a7f30256a98d90268b45b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c4f847e9e2125a484956ed734446b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a03c4f847e9e2125a484956ed734446b7">printer_buf_load</a> (const char *value, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> maxLen)</td></tr>
+<tr class="separator:a03c4f847e9e2125a484956ed734446b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627bb40d5bb3d78a447480010268b663"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a627bb40d5bb3d78a447480010268b663">printer_buf_load</a> (unsigned char *value, unsigned short len)</td></tr>
+<tr class="separator:a627bb40d5bb3d78a447480010268b663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f54d86c4a1a018da8905ba1bb2f5a37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a8f54d86c4a1a018da8905ba1bb2f5a37">printer_buf_load</a> (unsigned char *value, unsigned short len, const char *format)</td></tr>
+<tr class="separator:a8f54d86c4a1a018da8905ba1bb2f5a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27944854c23268a80194d09b94ead2ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a27944854c23268a80194d09b94ead2ac">printer_buf_load</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> value, const char *format)</td></tr>
+<tr class="separator:a27944854c23268a80194d09b94ead2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe223f16605b294c2753f26a2fc63a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#afe223f16605b294c2753f26a2fc63a79">printer_buf_load</a> (uint32_t value, const char *format)</td></tr>
+<tr class="separator:afe223f16605b294c2753f26a2fc63a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eddc157aed837b51ec25f519ebecd31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a8eddc157aed837b51ec25f519ebecd31">printer_buf_load</a> (uint64_t value, const char *format)</td></tr>
+<tr class="separator:a8eddc157aed837b51ec25f519ebecd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57954f6d3f62211f319b7544cef4959a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a57954f6d3f62211f319b7544cef4959a">printer_buf_load</a> (int64_t value, const char *format)</td></tr>
+<tr class="separator:a57954f6d3f62211f319b7544cef4959a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab6f44423a6c342961ba2629e630f44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#acab6f44423a6c342961ba2629e630f44">printer_buf_load</a> (unsigned long value, const char *format)</td></tr>
+<tr class="separator:acab6f44423a6c342961ba2629e630f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e1457da706a3396af06e6977cd3159"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ae1e1457da706a3396af06e6977cd3159">str_to_uint64_convert</a> (string var)</td></tr>
+<tr class="separator:ae1e1457da706a3396af06e6977cd3159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4581641dde8ce56b766c7820ffcd6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a7f4581641dde8ce56b766c7820ffcd6e">printer_space</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> spaces_number)</td></tr>
+<tr class="separator:a7f4581641dde8ce56b766c7820ffcd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175772b250f32d8c39d14b8917982faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a175772b250f32d8c39d14b8917982faf">printer_line_feed</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> lines_number)</td></tr>
+<tr class="separator:a175772b250f32d8c39d14b8917982faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7b72db3409b39dae86c87de41b1a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a0d7b72db3409b39dae86c87de41b1a66">printer_push_doc_string</a> (char *text, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> len)</td></tr>
+<tr class="memdesc:a0d7b72db3409b39dae86c87de41b1a66"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPrinter.html#a0d7b72db3409b39dae86c87de41b1a66" title="Printer::printer_push_doc_string добавить строку к текущему шрифту">Printer::printer_push_doc_string</a> добавить строку к текущему шрифту  <a href="#a0d7b72db3409b39dae86c87de41b1a66">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d7b72db3409b39dae86c87de41b1a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ce7f053a5e1b964e63f7a1b9193ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a19ce7f053a5e1b964e63f7a1b9193ceb">printer_push_doc_qrcode</a> (char *code)</td></tr>
+<tr class="memdesc:a19ce7f053a5e1b964e63f7a1b9193ceb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classPrinter.html#a19ce7f053a5e1b964e63f7a1b9193ceb" title="Printer::printer_push_doc_qrcode добавить в список печати QR-код">Printer::printer_push_doc_qrcode</a> добавить в список печати QR-код  <a href="#a19ce7f053a5e1b964e63f7a1b9193ceb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a19ce7f053a5e1b964e63f7a1b9193ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8eb86ca6d566d1b935dde61414bd5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aab8eb86ca6d566d1b935dde61414bd5b">printer_set_doc_font</a> (<a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">font_t</a> font, bool black_mode)</td></tr>
+<tr class="memdesc:aab8eb86ca6d566d1b935dde61414bd5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printer::printer_push_doc_font установить шрифт для следующих строк  <a href="#aab8eb86ca6d566d1b935dde61414bd5b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aab8eb86ca6d566d1b935dde61414bd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41e3180c75a7bf12c89360eed71dd45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ae41e3180c75a7bf12c89360eed71dd45">shift_report_print</a> (<a class="el" href="classCounters.html">Counters</a> &amp;, <a class="el" href="structConfig.html">Config</a> *)</td></tr>
+<tr class="separator:ae41e3180c75a7bf12c89360eed71dd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c711f2a2bb56e956238ebdb510e553"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a04c711f2a2bb56e956238ebdb510e553">prepareTextForSMS</a> (<a class="el" href="classPositions.html">Positions</a> &amp;pos)</td></tr>
+<tr class="separator:a04c711f2a2bb56e956238ebdb510e553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082626f83b65b9441a901a965f44f9f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a082626f83b65b9441a901a965f44f9f8">fiscal_receipt_print</a> (<a class="el" href="structConfig.html">Config</a> *config, <a class="el" href="classPositions.html">Positions</a> &amp;pos, <a class="el" href="classLcd.html">Lcd</a> *lcd, Keypad *keypad, <a class="el" href="structAGENTS.html">AGENTS</a> &amp;agents)</td></tr>
+<tr class="separator:a082626f83b65b9441a901a965f44f9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091b4eb73634b2e786eb4de91f5b6328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a091b4eb73634b2e786eb4de91f5b6328">fiscal_receipt_print</a> (<a class="el" href="structConfig.html">Config</a> *config, <a class="el" href="classReceipt__new.html">Receipt_new</a> *receipt)</td></tr>
+<tr class="separator:a091b4eb73634b2e786eb4de91f5b6328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ded531c55e8cbe4054906f686768de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">sale_receipt_data_erase</a> (<a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a> &amp;data)</td></tr>
+<tr class="separator:a38ded531c55e8cbe4054906f686768de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6a6134ba48c1f99c135774d81b9dd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a3b6a6134ba48c1f99c135774d81b9dd8">test_receipt_print</a> (<a class="el" href="structConfig.html">Config</a> *config)</td></tr>
+<tr class="separator:a3b6a6134ba48c1f99c135774d81b9dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc84e9b28103d52ef5d47bcc42269c75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#acc84e9b28103d52ef5d47bcc42269c75">test_cloud_receipt_print</a> (<a class="el" href="structConfig.html">Config</a> *config)</td></tr>
+<tr class="separator:acc84e9b28103d52ef5d47bcc42269c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede5e62e48084a554d83553ea1e2297d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aede5e62e48084a554d83553ea1e2297d">print_qr_code</a> (const char *value)</td></tr>
+<tr class="separator:aede5e62e48084a554d83553ea1e2297d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8996599a2f5a707fabddb50fab6d687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aa8996599a2f5a707fabddb50fab6d687">print_barcode_39</a> (const char *value)</td></tr>
+<tr class="separator:aa8996599a2f5a707fabddb50fab6d687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab629e46ac0f88da678f2d6440b0dfecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ab629e46ac0f88da678f2d6440b0dfecd">waitkey</a> (<a class="el" href="keys_8h.html#a917cb2ad6b731b390f8c57aa48656211">KEYS</a> wait_key, Keypad *keypad)</td></tr>
+<tr class="separator:ab629e46ac0f88da678f2d6440b0dfecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc1aaec51d26299f405393fcd68703a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#adc1aaec51d26299f405393fcd68703a5">isPaperOut</a> (<a class="el" href="classLcd.html">Lcd</a> *lcd, Keypad *keypad)</td></tr>
+<tr class="separator:adc1aaec51d26299f405393fcd68703a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6b77e746570d67d61e6914d1241f44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a5e6b77e746570d67d61e6914d1241f44">isPaperOutSimple</a> ()</td></tr>
+<tr class="separator:a5e6b77e746570d67d61e6914d1241f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab4d7835b3c8d38fde6cef5e8f322e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a1ab4d7835b3c8d38fde6cef5e8f322e0">reg_data_change_print</a> ()</td></tr>
+<tr class="separator:a1ab4d7835b3c8d38fde6cef5e8f322e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3528196f89bf864437ef20a4c79b92a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a3528196f89bf864437ef20a4c79b92a7">ofd_data_change_print</a> ()</td></tr>
+<tr class="separator:a3528196f89bf864437ef20a4c79b92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04f06bb37ff915507613976e94f01da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ab04f06bb37ff915507613976e94f01da">fs_change_kkt_mode_print</a> (<a class="el" href="structConfig.html">Config</a> *config)</td></tr>
+<tr class="separator:ab04f06bb37ff915507613976e94f01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e9ce6e9b510626bb0ca14814642ee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ab6e9ce6e9b510626bb0ca14814642ee1">fs_offline_mode_print</a> ()</td></tr>
+<tr class="separator:ab6e9ce6e9b510626bb0ca14814642ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e46b02890e3363fc252d0688bd7e4b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">test_reciept_data_erase</a> (<a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a> &amp;data)</td></tr>
+<tr class="separator:a5e46b02890e3363fc252d0688bd7e4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71128d9942e620edc588c571a0bf9371"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a71128d9942e620edc588c571a0bf9371">uchar_le_to_int64_convert</a> (unsigned char *data, unsigned short len)</td></tr>
+<tr class="separator:a71128d9942e620edc588c571a0bf9371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03721a57bfe66668463918c7ef979c18"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a03721a57bfe66668463918c7ef979c18">uchar_to_int64_convert</a> (unsigned char *data, unsigned short len)</td></tr>
+<tr class="separator:a03721a57bfe66668463918c7ef979c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46eaa5b499037baeea5864c3cf455e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aa46eaa5b499037baeea5864c3cf455e8">message_print</a> (string error_message)</td></tr>
+<tr class="separator:aa46eaa5b499037baeea5864c3cf455e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede407bfe282ce0de0cc725abb9006a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aede407bfe282ce0de0cc725abb9006a1">tech_report_print</a> (<a class="el" href="structConfig.html">Config</a> *config, long numGoodsInDB)</td></tr>
+<tr class="separator:aede407bfe282ce0de0cc725abb9006a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0ed629ce1a6dbfad0a4bf2be7cf58c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#adb0ed629ce1a6dbfad0a4bf2be7cf58c">fabrication_receipt</a> (string uuid, string plant_num)</td></tr>
+<tr class="separator:adb0ed629ce1a6dbfad0a4bf2be7cf58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10e55a236d2e78081a9855b8643aa26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ad10e55a236d2e78081a9855b8643aa26">test_correction_print</a> (unsigned short max_step)</td></tr>
+<tr class="separator:ad10e55a236d2e78081a9855b8643aa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11714896c525e171a707ca7906263f00"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a11714896c525e171a707ca7906263f00">zero_left_complite</a> (string str, unsigned short len)</td></tr>
+<tr class="separator:a11714896c525e171a707ca7906263f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5424d1d017e6958ce949e3e8bc86164"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ac5424d1d017e6958ce949e3e8bc86164">symbol_left_complite</a> (string str, unsigned char symbol, unsigned short len)</td></tr>
+<tr class="separator:ac5424d1d017e6958ce949e3e8bc86164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdede34adc3e4b1f5ca1c223b9da552"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a7fdede34adc3e4b1f5ca1c223b9da552">symbol_right_complite</a> (string str, unsigned char symbol, unsigned short len)</td></tr>
+<tr class="separator:a7fdede34adc3e4b1f5ca1c223b9da552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a46b060cd40a85b6e14fd21eacf3f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a12a46b060cd40a85b6e14fd21eacf3f2">x_z_report_print</a> (bool rep_type, <a class="el" href="classCounters.html">Counters</a> &amp;counters)</td></tr>
+<tr class="separator:a12a46b060cd40a85b6e14fd21eacf3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ed1809f9a6227b0deec8470dbc5673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a57ed1809f9a6227b0deec8470dbc5673">insert_res_report</a> (<a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> &amp;operation, uint64_t summ, <a class="el" href="classCounters.html">Counters</a> *counters, <a class="el" href="structConfig.html">Config</a> *config)</td></tr>
+<tr class="separator:a57ed1809f9a6227b0deec8470dbc5673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8fde1f1aab349ed86e731478508998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a3e8fde1f1aab349ed86e731478508998">user_init</a> (<a class="el" href="structUsers_1_1User__.html">Users::User_</a> *user)</td></tr>
+<tr class="separator:a3e8fde1f1aab349ed86e731478508998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfa35d69b446cc93e92b16509600079"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a9cfa35d69b446cc93e92b16509600079">payment_name_get</a> ()</td></tr>
+<tr class="separator:a9cfa35d69b446cc93e92b16509600079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326924cc1792e36c89ee3a9d0dd6a8e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a326924cc1792e36c89ee3a9d0dd6a8e5">printMessage</a> (string)</td></tr>
+<tr class="separator:a326924cc1792e36c89ee3a9d0dd6a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca8d943f0850850e8209df2fab766e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a1ca8d943f0850850e8209df2fab766e2">setTaxes</a> (const shared_ptr&lt; <a class="el" href="classTaxes.html">Taxes</a> &gt; &amp;taxes)</td></tr>
+<tr class="separator:a1ca8d943f0850850e8209df2fab766e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc686e38e6f1d560dfd9d4bc42e1e803"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#adc686e38e6f1d560dfd9d4bc42e1e803">getCashlessName</a> (const bool capsLock=false) const</td></tr>
+<tr class="memdesc:adc686e38e6f1d560dfd9d4bc42e1e803"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCashlessName - получить наименование безналичного способа оплаты  <a href="#adc686e38e6f1d560dfd9d4bc42e1e803">Подробнее...</a><br /></td></tr>
+<tr class="separator:adc686e38e6f1d560dfd9d4bc42e1e803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0aee6ef3c9b1d96aae31c273f98908d"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ad0aee6ef3c9b1d96aae31c273f98908d">getPrinter_buf_size</a> () const</td></tr>
+<tr class="separator:ad0aee6ef3c9b1d96aae31c273f98908d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a229cf3c425461272bb63a70fd82891b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBIOS.html">BIOS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a229cf3c425461272bb63a70fd82891b0">pFB</a></td></tr>
+<tr class="separator:a229cf3c425461272bb63a70fd82891b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec508df6753c4a1da6adaa57224e7f2"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classFilesFG.html">FilesFG</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aeec508df6753c4a1da6adaa57224e7f2">Fg</a></td></tr>
+<tr class="separator:aeec508df6753c4a1da6adaa57224e7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26d2000d243fd9ed061fb853b2c8361"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classConvert.html">Convert</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aa26d2000d243fd9ed061fb853b2c8361">convert</a></td></tr>
+<tr class="separator:aa26d2000d243fd9ed061fb853b2c8361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937c4c43840de543fce6267d5d4c4f7b"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a937c4c43840de543fce6267d5d4c4f7b">mutex_printer</a></td></tr>
+<tr class="separator:a937c4c43840de543fce6267d5d4c4f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cc76ef52c8f0d2e854f1bfd198ffde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a40cc76ef52c8f0d2e854f1bfd198ffde">receipt_cancellation</a></td></tr>
+<tr class="separator:a40cc76ef52c8f0d2e854f1bfd198ffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f8168358ac8e8534e377ccf54a233e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a61f8168358ac8e8534e377ccf54a233e">print</a></td></tr>
+<tr class="separator:a61f8168358ac8e8534e377ccf54a233e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf25c3f4000e303e8119bfcb175cfd15"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aaf25c3f4000e303e8119bfcb175cfd15">external_print</a></td></tr>
+<tr class="separator:aaf25c3f4000e303e8119bfcb175cfd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da211832be6d62690eada4b5ce7033a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structPrinter_1_1technical__report.html">Printer::technical_report</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a6da211832be6d62690eada4b5ce7033a">tech_report</a></td></tr>
+<tr class="separator:a6da211832be6d62690eada4b5ce7033a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c06c3764b9e04352dc58358caaa32d"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structfiscal__doc.html">fiscal_doc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#ad5c06c3764b9e04352dc58358caaa32d">fiscal_doc_storage</a></td></tr>
+<tr class="separator:ad5c06c3764b9e04352dc58358caaa32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400f817003e7d4fa5e709090a2351050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a400f817003e7d4fa5e709090a2351050">Receipt_data</a></td></tr>
+<tr class="separator:a400f817003e7d4fa5e709090a2351050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44462f044c17ffb634845854a23c4563"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a44462f044c17ffb634845854a23c4563">registration_date</a></td></tr>
+<tr class="separator:a44462f044c17ffb634845854a23c4563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:aee7379120b42ed52a6fdf3e3865d1a22"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#aee7379120b42ed52a6fdf3e3865d1a22">SALE</a> = 0x01</td></tr>
+<tr class="separator:aee7379120b42ed52a6fdf3e3865d1a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee3cf8d46f36a910c945b5f6b2275cb"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#adee3cf8d46f36a910c945b5f6b2275cb">RET_SALE</a> = 0x02</td></tr>
+<tr class="separator:adee3cf8d46f36a910c945b5f6b2275cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e4e009d40a1e10cd1dfb8e97a6c082"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a24e4e009d40a1e10cd1dfb8e97a6c082">PURCHASE</a> = 0x03</td></tr>
+<tr class="separator:a24e4e009d40a1e10cd1dfb8e97a6c082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f49f6be0fbefed795fd527c090ed804"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPrinter.html#a3f49f6be0fbefed795fd527c090ed804">RET_PURCHASE</a> = 0x04</td></tr>
+<tr class="separator:a3f49f6be0fbefed795fd527c090ed804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="ab7885f7d3a814cb10d8ecc3bcdc32f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7885f7d3a814cb10d8ecc3bcdc32f9a">&#9670;&nbsp;</a></span>font_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">Printer::font_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aa377a16c766648a64eeb2ea731646e67f"></a>FONT_CHARACTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aa0a0630087ad44639f9de205f19c54724"></a>FONT_SMALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aa96834214b46d3e6e0fb458e959296ff1"></a>FONT_EMPHASIZED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aaf8649238ecc1fc89a37cc513b189ae96"></a>FONT_DOUBLE_HEIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aa43c34234b1e1422ad080f618331cfe4d"></a>FONT_DOUBLE_WIDTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab7885f7d3a814cb10d8ecc3bcdc32f9aa9fcc57049d3c14ce2b60f628831ab8a7"></a>FONT_UNDERLINE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab0c3ee05b78ecc8be36565ea1bbaaf46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c3ee05b78ecc8be36565ea1bbaaf46">&#9670;&nbsp;</a></span>TYPE_DOC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classPrinter.html#ab0c3ee05b78ecc8be36565ea1bbaaf46">Printer::TYPE_DOC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ab0c3ee05b78ecc8be36565ea1bbaaf46a3e83a38cc4fc68d65eb95902486c3900"></a>td_sale&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0c3ee05b78ecc8be36565ea1bbaaf46a642ba43770ecdb9f2056cefa8f7ce8b6"></a>td_return&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0c3ee05b78ecc8be36565ea1bbaaf46a409eaff00778ffc9b273d534c6c26032"></a>td_purchase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab0c3ee05b78ecc8be36565ea1bbaaf46ab1b982991fd7b1f762e075739668db2f"></a>td_ret_purchase&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a588293c9f32ee616a1bd3735ba4e5014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588293c9f32ee616a1bd3735ba4e5014">&#9670;&nbsp;</a></span>Printer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Printer::Printer </td>
+          <td>(</td>
+          <td class="paramtype">shared_ptr&lt; <a class="el" href="classFISGO__TEST__API.html">FISGO_TEST_API</a> &gt;&#160;</td>
+          <td class="paramname"><em>FisGoTestApi</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a588293c9f32ee616a1bd3735ba4e5014_cgraph.png" border="0" usemap="#classPrinter_a588293c9f32ee616a1bd3735ba4e5014_cgraph" alt=""/></div>
+<map name="classPrinter_a588293c9f32ee616a1bd3735ba4e5014_cgraph" id="classPrinter_a588293c9f32ee616a1bd3735ba4e5014_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,56,112,83"/>
+<area shape="rect"  href="printer_8h.html#a5ac7ce37c47565f343c2fc411acdd5dd" title=" " alt="" coords="196,5,279,32"/>
+<area shape="rect"  href="classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance ÐÐ¾Ð»ÑÑÐ¸ÑÑ ÑÐºÐ°Ð·Ð°ÑÐµÐ»Ñ Ð½Ð° ÑÐºÐ·ÐµÐ¼Ð¿Ð»ÑÑ" alt="" coords="160,56,315,83"/>
+<area shape="rect"  href="printer_8h.html#af096fe023ec6b33d2bdf212390e319fb" title=" " alt="" coords="183,107,292,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a011da1d2aa31df5440071c0b6e80eb1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011da1d2aa31df5440071c0b6e80eb1d">&#9670;&nbsp;</a></span>~Printer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Printer::~Printer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="adb0ed629ce1a6dbfad0a4bf2be7cf58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0ed629ce1a6dbfad0a4bf2be7cf58c">&#9670;&nbsp;</a></span>fabrication_receipt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::fabrication_receipt </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>plant_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a082626f83b65b9441a901a965f44f9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082626f83b65b9441a901a965f44f9f8">&#9670;&nbsp;</a></span>fiscal_receipt_print() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::fiscal_receipt_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPositions.html">Positions</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLcd.html">Lcd</a> *&#160;</td>
+          <td class="paramname"><em>lcd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Keypad *&#160;</td>
+          <td class="paramname"><em>keypad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAGENTS.html">AGENTS</a> &amp;&#160;</td>
+          <td class="paramname"><em>agents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a082626f83b65b9441a901a965f44f9f8_cgraph.png" border="0" usemap="#classPrinter_a082626f83b65b9441a901a965f44f9f8_cgraph" alt=""/></div>
+<map name="classPrinter_a082626f83b65b9441a901a965f44f9f8_cgraph" id="classPrinter_a082626f83b65b9441a901a965f44f9f8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,322,151,363"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="216,5,367,32"/>
+<area shape="rect"  href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="199,56,384,83"/>
+<area shape="rect"  href="classConvert.html#ab7971a59f8ca1b69c0c193498acb5251" title=" " alt="" coords="206,107,377,133"/>
+<area shape="rect"  href="classPositions.html#ae768f37b74c3c8509e7e0d128ad15b2e" title=" " alt="" coords="225,158,358,199"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="226,223,357,265"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="226,289,357,330"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="209,354,373,395"/>
+<area shape="rect"  href="classPositions_1_1Position.html#ab358132ed42818257152fb54880f6f69" title=" " alt="" coords="226,419,357,461"/>
+<area shape="rect"  href="classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="224,485,359,526"/>
+<area shape="rect"  href="classPositions.html#a104d403cfdd03ff3181994544ecbefd1" title=" " alt="" coords="224,550,359,591"/>
+<area shape="rect"  href="classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="203,616,379,643"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="207,667,375,693"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a091b4eb73634b2e786eb4de91f5b6328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091b4eb73634b2e786eb4de91f5b6328">&#9670;&nbsp;</a></span>fiscal_receipt_print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::fiscal_receipt_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classReceipt__new.html">Receipt_new</a> *&#160;</td>
+          <td class="paramname"><em>receipt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a091b4eb73634b2e786eb4de91f5b6328_cgraph.png" border="0" usemap="#classPrinter_a091b4eb73634b2e786eb4de91f5b6328_cgraph" alt=""/></div>
+<map name="classPrinter_a091b4eb73634b2e786eb4de91f5b6328_cgraph" id="classPrinter_a091b4eb73634b2e786eb4de91f5b6328_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,141,151,182"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="211,5,362,32"/>
+<area shape="rect"  href="classConvert.html#ab7971a59f8ca1b69c0c193498acb5251" title=" " alt="" coords="201,56,372,83"/>
+<area shape="rect"  href="classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="221,107,352,149"/>
+<area shape="rect"  href="classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="221,173,352,214"/>
+<area shape="rect"  href="classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="199,239,375,265"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="203,289,371,316"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab04f06bb37ff915507613976e94f01da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04f06bb37ff915507613976e94f01da">&#9670;&nbsp;</a></span>fs_change_kkt_mode_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::fs_change_kkt_mode_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_ab04f06bb37ff915507613976e94f01da_cgraph.png" border="0" usemap="#classPrinter_ab04f06bb37ff915507613976e94f01da_cgraph" alt=""/></div>
+<map name="classPrinter_ab04f06bb37ff915507613976e94f01da_cgraph" id="classPrinter_ab04f06bb37ff915507613976e94f01da_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,133,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="190,5,341,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="181,56,349,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6e9ce6e9b510626bb0ca14814642ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e9ce6e9b510626bb0ca14814642ee1">&#9670;&nbsp;</a></span>fs_offline_mode_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::fs_offline_mode_print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_ab6e9ce6e9b510626bb0ca14814642ee1_cgraph.png" border="0" usemap="#classPrinter_ab6e9ce6e9b510626bb0ca14814642ee1_cgraph" alt=""/></div>
+<map name="classPrinter_ab6e9ce6e9b510626bb0ca14814642ee1_cgraph" id="classPrinter_ab6e9ce6e9b510626bb0ca14814642ee1_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,127,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="183,5,334,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="175,56,343,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc686e38e6f1d560dfd9d4bc42e1e803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc686e38e6f1d560dfd9d4bc42e1e803">&#9670;&nbsp;</a></span>getCashlessName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::getCashlessName </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>capsLock</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getCashlessName - получить наименование безналичного способа оплаты </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capsLock</td><td>- Заглавные </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>наименование безналичного способа оплаты </dd></dl>
+
+</div>
+</div>
+<a id="ad0aee6ef3c9b1d96aae31c273f98908d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0aee6ef3c9b1d96aae31c273f98908d">&#9670;&nbsp;</a></span>getPrinter_buf_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::getPrinter_buf_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57ed1809f9a6227b0deec8470dbc5673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ed1809f9a6227b0deec8470dbc5673">&#9670;&nbsp;</a></span>insert_res_report()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::insert_res_report </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> &amp;&#160;</td>
+          <td class="paramname"><em>operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>summ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCounters.html">Counters</a> *&#160;</td>
+          <td class="paramname"><em>counters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a57ed1809f9a6227b0deec8470dbc5673_cgraph.png" border="0" usemap="#classPrinter_a57ed1809f9a6227b0deec8470dbc5673_cgraph" alt=""/></div>
+<map name="classPrinter_a57ed1809f9a6227b0deec8470dbc5673_cgraph" id="classPrinter_a57ed1809f9a6227b0deec8470dbc5673_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,99,131,141"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="187,5,338,32"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="657,56,753,83"/>
+<area shape="rect"  href="classCounters.html#a445befd237bf6a05274811e3a8aa4a66" title=" " alt="" coords="212,157,313,184"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46" title=" " alt="" coords="641,107,768,133"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="179,208,347,235"/>
+<area shape="rect"  href="classCounters.html#a1e10d9f1b55e2c09dc92d60f521d229b" title=" " alt="" coords="395,993,537,1020"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a1e9501a3a115e9d6a7bfb8fe1855c6f7" title=" " alt="" coords="644,461,765,488"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afe325fbd7cb74fd18fa759e766bc82e3" title=" " alt="" coords="666,512,743,539"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a04b1ea7997c5ad60d340774969964a1f" title=" " alt="" coords="649,563,761,589"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af9305f94a1980ba9185359db20889ca1" title=" " alt="" coords="643,613,766,640"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a56d5a114b75d7df11fa7041a7428d1e1" title=" " alt="" coords="625,664,784,691"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ae252e35d44c4b64bfb8e976c1d2e4e64" title=" " alt="" coords="620,715,789,741"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a048b078f68840f2f4410f6e08901f183" title=" " alt="" coords="603,765,807,792"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a3d361cbe400b305675d3f443ea5564f4" title=" " alt="" coords="603,816,806,843"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afb8cfbb087ec2096e8f17f89dda71184" title=" " alt="" coords="585,867,824,893"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a06c40fc08ae5c29a76b9fceb75387258" title=" " alt="" coords="634,917,775,944"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a36970e3d2b65f0aba867861ec7fecdea" title=" " alt="" coords="617,968,793,995"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a2ec9786124161bebcb16949ff09136b3" title=" " alt="" coords="611,1019,798,1045"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a665937ab277a36906eb12d923fc9419e" title=" " alt="" coords="593,1069,816,1096"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a46d19c6a6f67cc57d36eb67f86f0f2ae" title=" " alt="" coords="639,1120,770,1147"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="661,1171,748,1197"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af053bcb326e6a6288279381a5a0820d0" title=" " alt="" coords="643,1221,766,1248"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a6e40b360605f052b570c71f8ca2229da" title=" " alt="" coords="643,1272,766,1299"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aeb994cdf84f880a9d3c5dad68ce307a5" title=" " alt="" coords="625,1323,784,1349"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aa9970c5af5f4664dbef2ee0e886870d6" title=" " alt="" coords="611,1373,798,1400"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a2b6171581b5ab89944b4a44a079d5033" title=" " alt="" coords="593,1424,816,1451"/>
+<area shape="rect"  href="dynamic__mask_8h.html#adc7358205e5fefb896b129d0ef7d7f10" title=" " alt="" coords="641,1475,768,1501"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a0fe21631e28978892bf1b78a9e49c97f" title=" " alt="" coords="619,1525,791,1552"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afc579ac6a671c874eea4434e25e5c5aa" title=" " alt="" coords="609,1576,800,1603"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a544147e43a3a468433ba56037508ea5c" title=" " alt="" coords="611,1627,798,1669"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9ae074aefe9657f7003fa49fa6c4d42e" title=" " alt="" coords="625,1693,784,1720"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a69e86e8452c777d3c80fec4de109bb5f" title=" " alt="" coords="625,1744,785,1771"/>
+<area shape="rect"  href="dynamic__mask_8h.html#abcc540ec034ca4f96349d8e35fcd724a" title=" " alt="" coords="601,1795,808,1821"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a87640dbcb7115e120e1342d08945bb26" title=" " alt="" coords="593,1845,817,1872"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a109be3253b843a04920fe4d39370089a" title=" " alt="" coords="611,1897,798,1938"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a8a3bf848467e56bc1293983ef42ba668" title=" " alt="" coords="608,1963,801,1989"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a91f4991d08d22f09f7c9edc595e9e51a" title=" " alt="" coords="648,2013,761,2040"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a95819ffeff28e00c1286edc4059fd005" title=" " alt="" coords="675,157,735,184"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d" title=" " alt="" coords="674,208,735,235"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aa08e23161ccb772b20690cb764967cac" title=" " alt="" coords="657,259,752,285"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a0656bfbf5292d0d9a49afd9d08123623" title=" " alt="" coords="657,309,753,336"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a5e0d7e819cd26833f470ca1885d1e41b" title=" " alt="" coords="621,360,788,387"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="631,411,778,437"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc1aaec51d26299f405393fcd68703a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc1aaec51d26299f405393fcd68703a5">&#9670;&nbsp;</a></span>isPaperOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Printer::isPaperOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLcd.html">Lcd</a> *&#160;</td>
+          <td class="paramname"><em>lcd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Keypad *&#160;</td>
+          <td class="paramname"><em>keypad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_adc1aaec51d26299f405393fcd68703a5_cgraph.png" border="0" usemap="#classPrinter_adc1aaec51d26299f405393fcd68703a5_cgraph" alt=""/></div>
+<map name="classPrinter_adc1aaec51d26299f405393fcd68703a5_cgraph" id="classPrinter_adc1aaec51d26299f405393fcd68703a5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,81,139,108"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="187,52,343,79"/>
+<area shape="rect"  href="classLcd.html#abcd6a849f0c18fe33c90136de8055b79" title=" " alt="" coords="193,103,336,145"/>
+<area shape="rect"  href="classLcd.html#ae4fc3dba0eeab85a6431684cf0717b2b" title=" " alt="" coords="419,35,522,61"/>
+<area shape="rect"  href="classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="628,56,743,83"/>
+<area shape="rect"  href="classLcd.html#acd7cfb62db93982c64cdfa0b37dea1fd" title=" " alt="" coords="391,136,551,163"/>
+<area shape="rect"  href="classLcd.html#ab08d9ce003e55dfd3728fdc3e4d1b2c3" title=" " alt="" coords="411,187,530,213"/>
+<area shape="rect"  href="classLcd.html#a94308828134e6aa1c992f671ef788a41" title=" " alt="" coords="854,56,1001,83"/>
+<area shape="rect"  href="classLcd.html#a3ea6acaf7245c4a2bee97d57fc3c0fff" title=" " alt="" coords="1105,5,1238,32"/>
+<area shape="rect"  href="classFilesFG.html#a5bc3ef87559df994e73cf99ebe6e2429" title=" " alt="" coords="1099,56,1244,83"/>
+<area shape="rect"  href="classHttpsExchange.html#adb15ea1f255519add1a69f94c362e9b0" title="sendFile &#45; Ð¾ÑÐ¿ÑÐ°Ð²ÐºÐ° ÑÐ°Ð¹Ð»Ð° Ð¿Ð¾ url" alt="" coords="1087,107,1256,133"/>
+<area shape="rect"  href="classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="1308,107,1443,133"/>
+<area shape="rect"  href="bsp__lcd__drawer_8c.html#a6275ca1901245c8e9116ce8a8f8e2c43" title=" " alt="" coords="599,136,772,163"/>
+<area shape="rect"  href="classLcd.html#a8c77b187ff766163d823d7a7ca19c06e" title=" " alt="" coords="611,187,759,213"/>
+<area shape="rect"  href="classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="621,241,749,268"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="820,128,1035,155"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="853,179,1001,221"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="1083,179,1260,221"/>
+<area shape="rect"  href="classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="847,245,1008,272"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="1152,245,1191,272"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5e6b77e746570d67d61e6914d1241f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6b77e746570d67d61e6914d1241f44">&#9670;&nbsp;</a></span>isPaperOutSimple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Printer::isPaperOutSimple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a5e6b77e746570d67d61e6914d1241f44_cgraph.png" border="0" usemap="#classPrinter_a5e6b77e746570d67d61e6914d1241f44_cgraph" alt=""/></div>
+<map name="classPrinter_a5e6b77e746570d67d61e6914d1241f44_cgraph" id="classPrinter_a5e6b77e746570d67d61e6914d1241f44_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,179,32"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="227,5,383,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa46eaa5b499037baeea5864c3cf455e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46eaa5b499037baeea5864c3cf455e8">&#9670;&nbsp;</a></span>message_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::message_print </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>error_message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3528196f89bf864437ef20a4c79b92a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3528196f89bf864437ef20a4c79b92a7">&#9670;&nbsp;</a></span>ofd_data_change_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::ofd_data_change_print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a3528196f89bf864437ef20a4c79b92a7_cgraph.png" border="0" usemap="#classPrinter_a3528196f89bf864437ef20a4c79b92a7_cgraph" alt=""/></div>
+<map name="classPrinter_a3528196f89bf864437ef20a4c79b92a7_cgraph" id="classPrinter_a3528196f89bf864437ef20a4c79b92a7_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,172,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="229,5,379,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="220,56,388,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9cfa35d69b446cc93e92b16509600079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfa35d69b446cc93e92b16509600079">&#9670;&nbsp;</a></span>payment_name_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::payment_name_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04c711f2a2bb56e956238ebdb510e553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c711f2a2bb56e956238ebdb510e553">&#9670;&nbsp;</a></span>prepareTextForSMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::prepareTextForSMS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPositions.html">Positions</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a04c711f2a2bb56e956238ebdb510e553_cgraph.png" border="0" usemap="#classPrinter_a04c711f2a2bb56e956238ebdb510e553_cgraph" alt=""/></div>
+<map name="classPrinter_a04c711f2a2bb56e956238ebdb510e553_cgraph" id="classPrinter_a04c711f2a2bb56e956238ebdb510e553_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,122,191,149"/>
+<area shape="rect"  href="classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="247,5,381,47"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="239,71,389,98"/>
+<area shape="rect"  href="classConvert.html#a17ed0803767f5481cdd1eaecad57b402" title=" " alt="" coords="245,122,383,149"/>
+<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="239,173,389,199"/>
+<area shape="rect"  href="classConvert.html#a5a73e59daf74e160580cdcc4698010ec" title=" " alt="" coords="244,223,384,250"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8996599a2f5a707fabddb50fab6d687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8996599a2f5a707fabddb50fab6d687">&#9670;&nbsp;</a></span>print_barcode_39()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::print_barcode_39 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66f92637fb23edc67d247b9953004da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f92637fb23edc67d247b9953004da9">&#9670;&nbsp;</a></span>print_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::print_buffer </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>fd</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPrinter.html#a66f92637fb23edc67d247b9953004da9" title="Printer::print_buffer печать буфера">Printer::print_buffer</a> печать буфера </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>номер фискального документа или 0 если документ не фискальный </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a66f92637fb23edc67d247b9953004da9_cgraph.png" border="0" usemap="#classPrinter_a66f92637fb23edc67d247b9953004da9_cgraph" alt=""/></div>
+<map name="classPrinter_a66f92637fb23edc67d247b9953004da9_cgraph" id="classPrinter_a66f92637fb23edc67d247b9953004da9_cgraph">
+<area shape="rect"  title="Printer::print_buffer Ð¿ÐµÑÐ°ÑÑ Ð±ÑÑÐµÑÐ°" alt="" coords="5,173,139,199"/>
+<area shape="rect"  href="classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="227,85,361,111"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="220,136,368,177"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="187,202,401,229"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="220,260,368,301"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="464,5,612,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="464,71,612,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="463,136,613,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="464,201,612,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="675,136,856,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="449,267,627,308"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aede5e62e48084a554d83553ea1e2297d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede5e62e48084a554d83553ea1e2297d">&#9670;&nbsp;</a></span>print_qr_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::print_qr_code </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d0120ac9c11717a7de0a20e5eb9266f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0120ac9c11717a7de0a20e5eb9266f">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d65fb3917a7f30256a98d90268b45b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d65fb3917a7f30256a98d90268b45b3">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03c4f847e9e2125a484956ed734446b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c4f847e9e2125a484956ed734446b7">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>maxLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a627bb40d5bb3d78a447480010268b663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627bb40d5bb3d78a447480010268b663">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f54d86c4a1a018da8905ba1bb2f5a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f54d86c4a1a018da8905ba1bb2f5a37">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27944854c23268a80194d09b94ead2ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27944854c23268a80194d09b94ead2ac">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe223f16605b294c2753f26a2fc63a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe223f16605b294c2753f26a2fc63a79">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eddc157aed837b51ec25f519ebecd31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eddc157aed837b51ec25f519ebecd31">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57954f6d3f62211f319b7544cef4959a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57954f6d3f62211f319b7544cef4959a">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acab6f44423a6c342961ba2629e630f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab6f44423a6c342961ba2629e630f44">&#9670;&nbsp;</a></span>printer_buf_load() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_buf_load </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a175772b250f32d8c39d14b8917982faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175772b250f32d8c39d14b8917982faf">&#9670;&nbsp;</a></span>printer_line_feed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::printer_line_feed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>lines_number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19ce7f053a5e1b964e63f7a1b9193ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ce7f053a5e1b964e63f7a1b9193ceb">&#9670;&nbsp;</a></span>printer_push_doc_qrcode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::printer_push_doc_qrcode </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPrinter.html#a19ce7f053a5e1b964e63f7a1b9193ceb" title="Printer::printer_push_doc_qrcode добавить в список печати QR-код">Printer::printer_push_doc_qrcode</a> добавить в список печати QR-код </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>строка с QR-кодом </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d7b72db3409b39dae86c87de41b1a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7b72db3409b39dae86c87de41b1a66">&#9670;&nbsp;</a></span>printer_push_doc_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::printer_push_doc_string </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classPrinter.html#a0d7b72db3409b39dae86c87de41b1a66" title="Printer::printer_push_doc_string добавить строку к текущему шрифту">Printer::printer_push_doc_string</a> добавить строку к текущему шрифту </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>строка для печати </td></tr>
+    <tr><td class="paramname">len</td><td>длина строки для печати </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab8eb86ca6d566d1b935dde61414bd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8eb86ca6d566d1b935dde61414bd5b">&#9670;&nbsp;</a></span>printer_set_doc_font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::printer_set_doc_font </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">font_t</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>black_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Printer::printer_push_doc_font установить шрифт для следующих строк </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">font</td><td>шрифт из enum font_t </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7f4581641dde8ce56b766c7820ffcd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4581641dde8ce56b766c7820ffcd6e">&#9670;&nbsp;</a></span>printer_space()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::printer_space </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>spaces_number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a326924cc1792e36c89ee3a9d0dd6a8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326924cc1792e36c89ee3a9d0dd6a8e5">&#9670;&nbsp;</a></span>printMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::printMessage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ab4d7835b3c8d38fde6cef5e8f322e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab4d7835b3c8d38fde6cef5e8f322e0">&#9670;&nbsp;</a></span>reg_data_change_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::reg_data_change_print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a1ab4d7835b3c8d38fde6cef5e8f322e0_cgraph.png" border="0" usemap="#classPrinter_a1ab4d7835b3c8d38fde6cef5e8f322e0_cgraph" alt=""/></div>
+<map name="classPrinter_a1ab4d7835b3c8d38fde6cef5e8f322e0_cgraph" id="classPrinter_a1ab4d7835b3c8d38fde6cef5e8f322e0_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,172,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="229,5,379,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="220,56,388,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38ded531c55e8cbe4054906f686768de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ded531c55e8cbe4054906f686768de">&#9670;&nbsp;</a></span>sale_receipt_data_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::sale_receipt_data_erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af867f595123a785a4fca2277c75f5a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af867f595123a785a4fca2277c75f5a14">&#9670;&nbsp;</a></span>setFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::setFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPrinter.html#ab7885f7d3a814cb10d8ecc3bcdc32f9a">font_t</a>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isBlackMode</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ca8d943f0850850e8209df2fab766e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca8d943f0850850e8209df2fab766e2">&#9670;&nbsp;</a></span>setTaxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::setTaxes </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classTaxes.html">Taxes</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>taxes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae41e3180c75a7bf12c89360eed71dd45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41e3180c75a7bf12c89360eed71dd45">&#9670;&nbsp;</a></span>shift_report_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::shift_report_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCounters.html">Counters</a> &amp;&#160;</td>
+          <td class="paramname"><em>counters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_ae41e3180c75a7bf12c89360eed71dd45_cgraph.png" border="0" usemap="#classPrinter_ae41e3180c75a7bf12c89360eed71dd45_cgraph" alt=""/></div>
+<map name="classPrinter_ae41e3180c75a7bf12c89360eed71dd45_cgraph" id="classPrinter_ae41e3180c75a7bf12c89360eed71dd45_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,74,139,115"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="195,5,346,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="187,56,355,83"/>
+<area shape="rect"  href="classCounters.html#a9124d37fd8778ffe37a21ddef7de7f95" title=" " alt="" coords="209,107,332,133"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="220,157,321,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae1e1457da706a3396af06e6977cd3159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e1457da706a3396af06e6977cd3159">&#9670;&nbsp;</a></span>str_to_uint64_convert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Printer::str_to_uint64_convert </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>var</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5424d1d017e6958ce949e3e8bc86164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5424d1d017e6958ce949e3e8bc86164">&#9670;&nbsp;</a></span>symbol_left_complite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::symbol_left_complite </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>symbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fdede34adc3e4b1f5ca1c223b9da552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdede34adc3e4b1f5ca1c223b9da552">&#9670;&nbsp;</a></span>symbol_right_complite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::symbol_right_complite </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>symbol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aede407bfe282ce0de0cc725abb9006a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede407bfe282ce0de0cc725abb9006a1">&#9670;&nbsp;</a></span>tech_report_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::tech_report_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>numGoodsInDB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_aede407bfe282ce0de0cc725abb9006a1_cgraph.png" border="0" usemap="#classPrinter_aede407bfe282ce0de0cc725abb9006a1_cgraph" alt=""/></div>
+<map name="classPrinter_aede407bfe282ce0de0cc725abb9006a1_cgraph" id="classPrinter_aede407bfe282ce0de0cc725abb9006a1_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,139,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="206,5,357,32"/>
+<area shape="rect"  href="classConvert.html#adbe4d3b4cdaddce6681244243805b537" title=" " alt="" coords="187,56,376,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc84e9b28103d52ef5d47bcc42269c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc84e9b28103d52ef5d47bcc42269c75">&#9670;&nbsp;</a></span>test_cloud_receipt_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::test_cloud_receipt_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_acc84e9b28103d52ef5d47bcc42269c75_cgraph.png" border="0" usemap="#classPrinter_acc84e9b28103d52ef5d47bcc42269c75_cgraph" alt=""/></div>
+<map name="classPrinter_acc84e9b28103d52ef5d47bcc42269c75_cgraph" id="classPrinter_acc84e9b28103d52ef5d47bcc42269c75_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,133,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="190,5,341,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="181,56,349,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad10e55a236d2e78081a9855b8643aa26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10e55a236d2e78081a9855b8643aa26">&#9670;&nbsp;</a></span>test_correction_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::test_correction_print </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>max_step</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b6a6134ba48c1f99c135774d81b9dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6a6134ba48c1f99c135774d81b9dd8">&#9670;&nbsp;</a></span>test_receipt_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::test_receipt_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a3b6a6134ba48c1f99c135774d81b9dd8_cgraph.png" border="0" usemap="#classPrinter_a3b6a6134ba48c1f99c135774d81b9dd8_cgraph" alt=""/></div>
+<map name="classPrinter_a3b6a6134ba48c1f99c135774d81b9dd8_cgraph" id="classPrinter_a3b6a6134ba48c1f99c135774d81b9dd8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,141,65"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="198,5,349,32"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="189,56,357,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5e46b02890e3363fc252d0688bd7e4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e46b02890e3363fc252d0688bd7e4b7">&#9670;&nbsp;</a></span>test_reciept_data_erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::test_reciept_data_erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71128d9942e620edc588c571a0bf9371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71128d9942e620edc588c571a0bf9371">&#9670;&nbsp;</a></span>uchar_le_to_int64_convert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Printer::uchar_le_to_int64_convert </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03721a57bfe66668463918c7ef979c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03721a57bfe66668463918c7ef979c18">&#9670;&nbsp;</a></span>uchar_to_int64_convert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Printer::uchar_to_int64_convert </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e8fde1f1aab349ed86e731478508998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8fde1f1aab349ed86e731478508998">&#9670;&nbsp;</a></span>user_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::user_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUsers_1_1User__.html">Users::User_</a> *&#160;</td>
+          <td class="paramname"><em>user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab629e46ac0f88da678f2d6440b0dfecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab629e46ac0f88da678f2d6440b0dfecd">&#9670;&nbsp;</a></span>waitkey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Printer::waitkey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="keys_8h.html#a917cb2ad6b731b390f8c57aa48656211">KEYS</a>&#160;</td>
+          <td class="paramname"><em>wait_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Keypad *&#160;</td>
+          <td class="paramname"><em>keypad</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12a46b060cd40a85b6e14fd21eacf3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a46b060cd40a85b6e14fd21eacf3f2">&#9670;&nbsp;</a></span>x_z_report_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Printer::x_z_report_print </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rep_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classCounters.html">Counters</a> &amp;&#160;</td>
+          <td class="paramname"><em>counters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPrinter_a12a46b060cd40a85b6e14fd21eacf3f2_cgraph.png" border="0" usemap="#classPrinter_a12a46b060cd40a85b6e14fd21eacf3f2_cgraph" alt=""/></div>
+<map name="classPrinter_a12a46b060cd40a85b6e14fd21eacf3f2_cgraph" id="classPrinter_a12a46b060cd40a85b6e14fd21eacf3f2_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,1030,135,1071"/>
+<area shape="rect"  href="classCounters.html#aff1bf22b6379d4ea456e8d20c229383a" title=" " alt="" coords="216,987,317,1013"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a1e9501a3a115e9d6a7bfb8fe1855c6f7" title=" " alt="" coords="648,24,769,51"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afe325fbd7cb74fd18fa759e766bc82e3" title=" " alt="" coords="670,75,747,101"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a04b1ea7997c5ad60d340774969964a1f" title=" " alt="" coords="653,125,765,152"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af9305f94a1980ba9185359db20889ca1" title=" " alt="" coords="647,176,770,203"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a56d5a114b75d7df11fa7041a7428d1e1" title=" " alt="" coords="629,227,788,253"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ae252e35d44c4b64bfb8e976c1d2e4e64" title=" " alt="" coords="624,277,793,304"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a048b078f68840f2f4410f6e08901f183" title=" " alt="" coords="607,328,811,355"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a06c40fc08ae5c29a76b9fceb75387258" title=" " alt="" coords="638,379,779,405"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a36970e3d2b65f0aba867861ec7fecdea" title=" " alt="" coords="621,429,797,456"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a2ec9786124161bebcb16949ff09136b3" title=" " alt="" coords="615,480,802,507"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a665937ab277a36906eb12d923fc9419e" title=" " alt="" coords="597,531,820,557"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a1027b0d977ad14d7f6c8968cdcefcdb8" title=" " alt="" coords="661,581,757,608"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a46d19c6a6f67cc57d36eb67f86f0f2ae" title=" " alt="" coords="643,632,774,659"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="665,683,752,709"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af053bcb326e6a6288279381a5a0820d0" title=" " alt="" coords="647,733,770,760"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46" title=" " alt="" coords="645,784,772,811"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a6e40b360605f052b570c71f8ca2229da" title=" " alt="" coords="647,835,770,861"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aeb994cdf84f880a9d3c5dad68ce307a5" title=" " alt="" coords="629,885,788,912"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aa9970c5af5f4664dbef2ee0e886870d6" title=" " alt="" coords="615,936,802,963"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a2b6171581b5ab89944b4a44a079d5033" title=" " alt="" coords="597,1088,820,1115"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a3d361cbe400b305675d3f443ea5564f4" title=" " alt="" coords="607,1139,810,1165"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afb8cfbb087ec2096e8f17f89dda71184" title=" " alt="" coords="589,1189,828,1216"/>
+<area shape="rect"  href="dynamic__mask_8h.html#adc7358205e5fefb896b129d0ef7d7f10" title=" " alt="" coords="645,1240,772,1267"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a0fe21631e28978892bf1b78a9e49c97f" title=" " alt="" coords="623,1291,795,1317"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afc579ac6a671c874eea4434e25e5c5aa" title=" " alt="" coords="613,1341,804,1368"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a544147e43a3a468433ba56037508ea5c" title=" " alt="" coords="615,1393,802,1434"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9ae074aefe9657f7003fa49fa6c4d42e" title=" " alt="" coords="629,1459,788,1485"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a69e86e8452c777d3c80fec4de109bb5f" title=" " alt="" coords="629,1509,789,1536"/>
+<area shape="rect"  href="dynamic__mask_8h.html#abcc540ec034ca4f96349d8e35fcd724a" title=" " alt="" coords="605,1560,812,1587"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a87640dbcb7115e120e1342d08945bb26" title=" " alt="" coords="597,1611,821,1637"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a109be3253b843a04920fe4d39370089a" title=" " alt="" coords="615,1662,802,1703"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a8a3bf848467e56bc1293983ef42ba668" title=" " alt="" coords="612,1728,805,1755"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a91f4991d08d22f09f7c9edc595e9e51a" title=" " alt="" coords="652,1779,765,1805"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a95819ffeff28e00c1286edc4059fd005" title=" " alt="" coords="679,1829,739,1856"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d" title=" " alt="" coords="678,1880,739,1907"/>
+<area shape="rect"  href="dynamic__mask_8h.html#aa08e23161ccb772b20690cb764967cac" title=" " alt="" coords="661,1931,756,1957"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a0656bfbf5292d0d9a49afd9d08123623" title=" " alt="" coords="661,1981,757,2008"/>
+<area shape="rect"  href="classCounters.html#a445befd237bf6a05274811e3a8aa4a66" title=" " alt="" coords="216,1037,317,1064"/>
+<area shape="rect"  href="classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="191,2000,342,2027"/>
+<area shape="rect"  href="classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="183,2051,351,2077"/>
+<area shape="rect"  href="classCounters.html#af8e146e745077d991e72ff514d764690" title=" " alt="" coords="399,987,541,1013"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a5e0d7e819cd26833f470ca1885d1e41b" title=" " alt="" coords="625,1037,792,1064"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="635,987,782,1013"/>
+<area shape="rect"  href="classCounters.html#a1e10d9f1b55e2c09dc92d60f521d229b" title=" " alt="" coords="399,1037,541,1064"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a11714896c525e171a707ca7906263f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11714896c525e171a707ca7906263f00">&#9670;&nbsp;</a></span>zero_left_complite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::zero_left_complite </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="aa26d2000d243fd9ed061fb853b2c8361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26d2000d243fd9ed061fb853b2c8361">&#9670;&nbsp;</a></span>convert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;<a class="el" href="classConvert.html">Convert</a>&gt; Printer::convert</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf25c3f4000e303e8119bfcb175cfd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf25c3f4000e303e8119bfcb175cfd15">&#9670;&nbsp;</a></span>external_print</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool Printer::external_print</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec508df6753c4a1da6adaa57224e7f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec508df6753c4a1da6adaa57224e7f2">&#9670;&nbsp;</a></span>Fg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;<a class="el" href="classFilesFG.html">FilesFG</a>&gt; Printer::Fg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5c06c3764b9e04352dc58358caaa32d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c06c3764b9e04352dc58358caaa32d">&#9670;&nbsp;</a></span>fiscal_doc_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structfiscal__doc.html">fiscal_doc</a>&gt; Printer::fiscal_doc_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a937c4c43840de543fce6267d5d4c4f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937c4c43840de543fce6267d5d4c4f7b">&#9670;&nbsp;</a></span>mutex_printer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex Printer::mutex_printer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a229cf3c425461272bb63a70fd82891b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229cf3c425461272bb63a70fd82891b0">&#9670;&nbsp;</a></span>pFB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBIOS.html">BIOS</a>* Printer::pFB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61f8168358ac8e8534e377ccf54a233e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f8168358ac8e8534e377ccf54a233e">&#9670;&nbsp;</a></span>print</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Printer::print</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24e4e009d40a1e10cd1dfb8e97a6c082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e4e009d40a1e10cd1dfb8e97a6c082">&#9670;&nbsp;</a></span>PURCHASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Printer::PURCHASE = 0x03</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40cc76ef52c8f0d2e854f1bfd198ffde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cc76ef52c8f0d2e854f1bfd198ffde">&#9670;&nbsp;</a></span>receipt_cancellation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Printer::receipt_cancellation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a400f817003e7d4fa5e709090a2351050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400f817003e7d4fa5e709090a2351050">&#9670;&nbsp;</a></span>Receipt_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structReceipt_1_1Fiscal__data.html">Receipt::Fiscal_data</a> Printer::Receipt_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44462f044c17ffb634845854a23c4563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44462f044c17ffb634845854a23c4563">&#9670;&nbsp;</a></span>registration_date</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Printer::registration_date</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f49f6be0fbefed795fd527c090ed804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f49f6be0fbefed795fd527c090ed804">&#9670;&nbsp;</a></span>RET_PURCHASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Printer::RET_PURCHASE = 0x04</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adee3cf8d46f36a910c945b5f6b2275cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee3cf8d46f36a910c945b5f6b2275cb">&#9670;&nbsp;</a></span>RET_SALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Printer::RET_SALE = 0x02</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee7379120b42ed52a6fdf3e3865d1a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7379120b42ed52a6fdf3e3865d1a22">&#9670;&nbsp;</a></span>SALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Printer::SALE = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6da211832be6d62690eada4b5ce7033a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da211832be6d62690eada4b5ce7033a">&#9670;&nbsp;</a></span>tech_report</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structPrinter_1_1technical__report.html">Printer::technical_report</a>  Printer::tech_report</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="printer_8h_source.html">printer.h</a></li>
+<li>src/appl/<a class="el" href="printer_8cpp.html">printer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

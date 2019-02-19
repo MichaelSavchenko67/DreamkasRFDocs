@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/ReceiptsDb.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ReceiptsDb.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="ReceiptsDb_8h_source.html">ReceiptsDb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для ReceiptsDb.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="ReceiptsDb_8cpp__incl.png" border="0" usemap="#src_2appl_2ReceiptsDb_8cpp" alt=""/></div>
+<map name="src_2appl_2ReceiptsDb_8cpp" id="src_2appl_2ReceiptsDb_8cpp">
+<area shape="rect"  title=" " alt="" coords="1659,5,1826,32"/>
+<area shape="rect"  href="ReceiptsDb_8h.html" title=" " alt="" coords="1786,80,1889,107"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2201,752,2252,779"/>
+<area shape="rect"  title=" " alt="" coords="501,528,569,555"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1723,677,1799,704"/>
+<area shape="rect"  title=" " alt="" coords="1802,155,1873,181"/>
+<area shape="rect"  title=" " alt="" coords="354,677,409,704"/>
+<area shape="rect"  title=" " alt="" coords="2116,155,2175,181"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1989,155,2091,181"/>
+<area shape="rect"  title=" " alt="" coords="3045,752,3083,779"/>
+<area shape="rect"  title=" " alt="" coords="2963,752,3021,779"/>
+<area shape="rect"  title=" " alt="" coords="2087,752,2145,779"/>
+<area shape="rect"  title=" " alt="" coords="844,752,905,779"/>
+<area shape="rect"  title=" " alt="" coords="2415,752,2476,779"/>
+<area shape="rect"  title=" " alt="" coords="1345,752,1417,779"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="503,229,561,256"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="2281,603,2381,629"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="2189,453,2275,480"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="821,453,889,480"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="2514,453,2630,480"/>
+<area shape="rect"  title=" " alt="" coords="1311,827,1374,853"/>
+<area shape="rect"  title=" " alt="" coords="2360,827,2429,853"/>
+<area shape="rect"  title=" " alt="" coords="2040,827,2109,853"/>
+<area shape="rect"  title=" " alt="" coords="506,827,571,853"/>
+<area shape="rect"  title=" " alt="" coords="2134,827,2205,853"/>
+<area shape="rect"  title=" " alt="" coords="2229,827,2336,853"/>
+<area shape="rect"  title=" " alt="" coords="419,752,501,779"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="37,603,171,629"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="851,304,901,331"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1827,603,1901,629"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="494,379,562,405"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1606,603,1701,629"/>
+<area shape="rect"  title=" " alt="" coords="159,677,223,704"/>
+<area shape="rect"  title=" " alt="" coords="87,677,135,704"/>
+<area shape="rect"  title=" " alt="" coords="835,379,917,405"/>
+<area shape="rect"  title=" " alt="" coords="942,379,1039,405"/>
+<area shape="rect"  title=" " alt="" coords="1063,379,1129,405"/>
+<area shape="rect"  title=" " alt="" coords="963,603,1024,629"/>
+<area shape="rect"  title=" " alt="" coords="1153,379,1217,405"/>
+<area shape="rect"  title=" " alt="" coords="739,379,811,405"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="2289,379,2361,405"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1913,528,1964,555"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="892,528,964,555"/>
+<area shape="rect"  title=" " alt="" coords="1820,752,1879,779"/>
+<area shape="rect"  title=" " alt="" coords="1903,752,1972,779"/>
+<area shape="rect"  title=" " alt="" coords="1996,752,2063,779"/>
+<area shape="rect"  title=" " alt="" coords="1457,752,1532,779"/>
+<area shape="rect"  title=" " alt="" coords="1556,752,1671,779"/>
+<area shape="rect"  title=" " alt="" coords="1695,752,1796,779"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="695,528,817,555"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ae87b3cb1524f77c994298745d34ecba4"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#ae87b3cb1524f77c994298745d34ecba4">queryReceiptsRdy</a> = true</td></tr>
+<tr class="separator:ae87b3cb1524f77c994298745d34ecba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad282868903a4f88c7c93f1a3b127a76a"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#ad282868903a4f88c7c93f1a3b127a76a">opGetSize</a> = false</td></tr>
+<tr class="separator:ad282868903a4f88c7c93f1a3b127a76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980bf10f2543ac021d8f33fa0274f725"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a980bf10f2543ac021d8f33fa0274f725">opGetPosSize</a> = false</td></tr>
+<tr class="separator:a980bf10f2543ac021d8f33fa0274f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7fd30c37b0ccedd3a9ad1fdcabcfda"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#afc7fd30c37b0ccedd3a9ad1fdcabcfda">opGetLastReceiptId</a> = false</td></tr>
+<tr class="separator:afc7fd30c37b0ccedd3a9ad1fdcabcfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac405c9b8e81daa6bdbcd3047e339355"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#aac405c9b8e81daa6bdbcd3047e339355">opIsReceiptExists</a> = false</td></tr>
+<tr class="separator:aac405c9b8e81daa6bdbcd3047e339355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a34036d0bcda0e4ae0ffe254a44619b"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a7a34036d0bcda0e4ae0ffe254a44619b">opGetReceipt</a> = false</td></tr>
+<tr class="separator:a7a34036d0bcda0e4ae0ffe254a44619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32822a83898ecd3b5462366743d1a489"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a32822a83898ecd3b5462366743d1a489">opGetPositions</a> = false</td></tr>
+<tr class="separator:a32822a83898ecd3b5462366743d1a489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af413acc512a38052ca8dc132d8b8b094"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#af413acc512a38052ca8dc132d8b8b094">opShowAllDatabase</a> = false</td></tr>
+<tr class="separator:af413acc512a38052ca8dc132d8b8b094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12c088b2043ac9d8d1939526f4fc10a"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#af12c088b2043ac9d8d1939526f4fc10a">opGetTimeAndId</a> = false</td></tr>
+<tr class="separator:af12c088b2043ac9d8d1939526f4fc10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5735e7ffc19ab9393b2aea5d250761"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#ada5735e7ffc19ab9393b2aea5d250761">opFindId</a> = false</td></tr>
+<tr class="separator:ada5735e7ffc19ab9393b2aea5d250761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc1d6eb00639dcf306bb6ccb3886e28"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a9cc1d6eb00639dcf306bb6ccb3886e28">flagReceiptExists</a> = false</td></tr>
+<tr class="separator:a9cc1d6eb00639dcf306bb6ccb3886e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe1c408b0148e3f78b575a8c564792a"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a1fe1c408b0148e3f78b575a8c564792a">receiptsCnt</a> = 0</td></tr>
+<tr class="separator:a1fe1c408b0148e3f78b575a8c564792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25d489e2b3315a25ff7859c9d416a6f"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#aa25d489e2b3315a25ff7859c9d416a6f">positionsCnt</a> = 0</td></tr>
+<tr class="separator:aa25d489e2b3315a25ff7859c9d416a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347f36921e82bd4d9f37d977bd5f9fda"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a347f36921e82bd4d9f37d977bd5f9fda">lastAddedReceiptId</a> = 0</td></tr>
+<tr class="separator:a347f36921e82bd4d9f37d977bd5f9fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca314611804ab96a11dca512b478a31d"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#aca314611804ab96a11dca512b478a31d">idOfReceipt</a> = -1</td></tr>
+<tr class="separator:aca314611804ab96a11dca512b478a31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703ad36ab6d8e12f913e8a1879fd6622"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a703ad36ab6d8e12f913e8a1879fd6622">foundReceipt</a></td></tr>
+<tr class="separator:a703ad36ab6d8e12f913e8a1879fd6622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9685256a630456f7a1d800ac74972b92"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a9685256a630456f7a1d800ac74972b92">foundPositions</a></td></tr>
+<tr class="separator:a9685256a630456f7a1d800ac74972b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb6dac1f736ed808a1e58ef04ea821c"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a3eb6dac1f736ed808a1e58ef04ea821c">idReceiptTime</a></td></tr>
+<tr class="separator:a3eb6dac1f736ed808a1e58ef04ea821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7e316007e74a34c22acbbf26678f96"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html#a9e7e316007e74a34c22acbbf26678f96">foundTasks</a></td></tr>
+<tr class="separator:a9e7e316007e74a34c22acbbf26678f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Переменные</h2>
+<a id="a9cc1d6eb00639dcf306bb6ccb3886e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc1d6eb00639dcf306bb6ccb3886e28">&#9670;&nbsp;</a></span>flagReceiptExists</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool flagReceiptExists = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9685256a630456f7a1d800ac74972b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9685256a630456f7a1d800ac74972b92">&#9670;&nbsp;</a></span>foundPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; foundPositions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a703ad36ab6d8e12f913e8a1879fd6622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703ad36ab6d8e12f913e8a1879fd6622">&#9670;&nbsp;</a></span>foundReceipt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; foundReceipt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e7e316007e74a34c22acbbf26678f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e7e316007e74a34c22acbbf26678f96">&#9670;&nbsp;</a></span>foundTasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; foundTasks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca314611804ab96a11dca512b478a31d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca314611804ab96a11dca512b478a31d">&#9670;&nbsp;</a></span>idOfReceipt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> idOfReceipt = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eb6dac1f736ed808a1e58ef04ea821c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb6dac1f736ed808a1e58ef04ea821c">&#9670;&nbsp;</a></span>idReceiptTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;string&gt; idReceiptTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a347f36921e82bd4d9f37d977bd5f9fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347f36921e82bd4d9f37d977bd5f9fda">&#9670;&nbsp;</a></span>lastAddedReceiptId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> lastAddedReceiptId = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada5735e7ffc19ab9393b2aea5d250761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5735e7ffc19ab9393b2aea5d250761">&#9670;&nbsp;</a></span>opFindId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opFindId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc7fd30c37b0ccedd3a9ad1fdcabcfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7fd30c37b0ccedd3a9ad1fdcabcfda">&#9670;&nbsp;</a></span>opGetLastReceiptId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetLastReceiptId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32822a83898ecd3b5462366743d1a489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32822a83898ecd3b5462366743d1a489">&#9670;&nbsp;</a></span>opGetPositions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetPositions = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a980bf10f2543ac021d8f33fa0274f725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980bf10f2543ac021d8f33fa0274f725">&#9670;&nbsp;</a></span>opGetPosSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetPosSize = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a34036d0bcda0e4ae0ffe254a44619b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a34036d0bcda0e4ae0ffe254a44619b">&#9670;&nbsp;</a></span>opGetReceipt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetReceipt = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad282868903a4f88c7c93f1a3b127a76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad282868903a4f88c7c93f1a3b127a76a">&#9670;&nbsp;</a></span>opGetSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetSize = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af12c088b2043ac9d8d1939526f4fc10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af12c088b2043ac9d8d1939526f4fc10a">&#9670;&nbsp;</a></span>opGetTimeAndId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opGetTimeAndId = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac405c9b8e81daa6bdbcd3047e339355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac405c9b8e81daa6bdbcd3047e339355">&#9670;&nbsp;</a></span>opIsReceiptExists</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opIsReceiptExists = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af413acc512a38052ca8dc132d8b8b094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af413acc512a38052ca8dc132d8b8b094">&#9670;&nbsp;</a></span>opShowAllDatabase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool opShowAllDatabase = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa25d489e2b3315a25ff7859c9d416a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25d489e2b3315a25ff7859c9d416a6f">&#9670;&nbsp;</a></span>positionsCnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> positionsCnt = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae87b3cb1524f77c994298745d34ecba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae87b3cb1524f77c994298745d34ecba4">&#9670;&nbsp;</a></span>queryReceiptsRdy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool queryReceiptsRdy = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fe1c408b0148e3f78b575a8c564792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe1c408b0148e3f78b575a8c564792a">&#9670;&nbsp;</a></span>receiptsCnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> receiptsCnt = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

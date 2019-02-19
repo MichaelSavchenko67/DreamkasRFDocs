@@ -1,0 +1,52 @@
+<map id="FisGoTestServer_" name="FisGoTestServer_">
+<area shape="rect" id="node1" title=" " alt="" coords="5,879,133,905"/>
+<area shape="rect" id="node2" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="181,879,339,905"/>
+<area shape="rect" id="node3" href="$classMenu.html#a5b2c90b56a309012df0fca1d89697b07" title=" " alt="" coords="401,81,551,108"/>
+<area shape="rect" id="node7" href="$classMenu.html#aece481d9e2cf80d9d415b2a973c5cd53" title=" " alt="" coords="398,344,554,371"/>
+<area shape="rect" id="node9" href="$keypad_8h.html#a74c29ed5f4052ac48bbb100dc31005cc" title=" " alt="" coords="412,575,540,601"/>
+<area shape="rect" id="node10" href="$classMenu.html#a596b304af0d6db8bc830c9cb9862ad7b" title="getWiFiStatus &#45; получить расшифровку статуса модуля WIFI" alt="" coords="403,625,549,652"/>
+<area shape="rect" id="node11" href="$classMenu.html#a9f42c294fed78f3cf3adb85b4faac982" title=" " alt="" coords="411,676,541,703"/>
+<area shape="rect" id="node12" href="$classMenu.html#aa4abdfcdc0d99d2ae9348356f7e7e70c" title=" " alt="" coords="405,727,547,753"/>
+<area shape="rect" id="node13" href="$classPosition__new.html#aa6d4de2f6bd2e4834c511f4284124dfd" title=" " alt="" coords="651,224,800,251"/>
+<area shape="rect" id="node15" href="$classReceipt__new.html#a40bfb39e752b7d0b1d253adfec0b29f8" title=" " alt="" coords="387,828,565,855"/>
+<area shape="rect" id="node16" href="$classMenu.html#ab65257ae17b0fe84408ced72836754cf" title=" " alt="" coords="404,879,548,905"/>
+<area shape="rect" id="node19" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="407,929,545,956"/>
+<area shape="rect" id="node41" href="$classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae" title=" " alt="" coords="405,980,547,1007"/>
+<area shape="rect" id="node44" href="$classMenuItem.html#a396e20bb2e3053731fb00050b241ba9b" title=" " alt="" coords="404,1031,548,1057"/>
+<area shape="rect" id="node45" href="$classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="403,1081,549,1108"/>
+<area shape="rect" id="node46" href="$classMenu.html#a575c29fe812806522677f4a24c55c745" title=" " alt="" coords="407,1132,545,1159"/>
+<area shape="rect" id="node48" href="$classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; очистка списка услуг" alt="" coords="425,1183,527,1209"/>
+<area shape="rect" id="node49" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="411,1233,541,1260"/>
+<area shape="rect" id="node50" href="$classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; добавить тэг" alt="" coords="417,1284,535,1311"/>
+<area shape="rect" id="node4" href="$bsp__printer__keypad_8c.html#a93df587a3ecf20077b5ea824ff8e5d1c" title=" " alt="" coords="686,5,765,32"/>
+<area shape="rect" id="node5" href="$bsp__printer__keypad_8c.html#a4dc7db703212a2a88e64dc279e598527" title=" " alt="" coords="694,56,757,83"/>
+<area shape="rect" id="node6" href="$bsp__printer__keypad_8c.html#aaa7d088331dd265ec6dc010c2beade10" title=" " alt="" coords="689,107,761,133"/>
+<area shape="rect" id="node8" href="$classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; парс DataMatrix" alt="" coords="632,158,819,199"/>
+<area shape="rect" id="node14" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="885,224,924,251"/>
+<area shape="rect" id="node17" href="$classBIOS.html#a324cf6cc38e988e342df6aeed1908e19" title=" " alt="" coords="650,275,801,301"/>
+<area shape="rect" id="node18" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="650,325,801,352"/>
+<area shape="rect" id="node20" href="$classBIOS.html#a6db199a1975988fcb7b2bc64f88e3729" title=" " alt="" coords="617,376,833,403"/>
+<area shape="rect" id="node21" href="$classBIOS.html#a2c6e6de71f43d62fbac4a724e8218a44" title=" " alt="" coords="615,427,835,453"/>
+<area shape="rect" id="node22" href="$classBIOS.html#afb1eee8dab8735e1d9dda08a3728ff99" title=" " alt="" coords="629,478,822,519"/>
+<area shape="rect" id="node23" href="$classMenu.html#ad04795489a5a885437c6118d8a7d83a2" title=" " alt="" coords="622,544,829,571"/>
+<area shape="rect" id="node24" href="$classBIOS.html#a458b463ccdfcc6d57f09ddc4eb4db48e" title=" " alt="" coords="629,595,822,637"/>
+<area shape="rect" id="node25" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="651,661,799,702"/>
+<area shape="rect" id="node26" href="$classBIOS.html#a16fd0fe9fecc62875d6150fe3a069063" title=" " alt="" coords="632,726,819,767"/>
+<area shape="rect" id="node27" href="$classBIOS.html#a7471db143bc34722e4db067e8de6db0d" title=" " alt="" coords="631,791,819,833"/>
+<area shape="rect" id="node28" href="$classBIOS.html#a657de5b4fc33025cc5fdc930d576f21b" title=" " alt="" coords="632,857,819,898"/>
+<area shape="rect" id="node29" href="$classBIOS.html#a08abbb73dc975ce375d15d1320386104" title=" " alt="" coords="632,922,819,963"/>
+<area shape="rect" id="node30" href="$classBIOS.html#aa291417626f0023bb98242db6b8a4791" title=" " alt="" coords="629,987,821,1029"/>
+<area shape="rect" id="node31" href="$classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="651,1053,799,1094"/>
+<area shape="rect" id="node32" href="$classBIOS.html#a446812c973193b87f68e40a7c0f35bee" title=" " alt="" coords="626,1118,825,1159"/>
+<area shape="rect" id="node33" href="$classBIOS.html#ac14f905548a335ec0313d2e130db9e6e" title=" " alt="" coords="614,1184,837,1211"/>
+<area shape="rect" id="node34" href="$classBIOS.html#a79aad1f2f30a9b0fc7c9ff549d1e63be" title=" " alt="" coords="613,1235,837,1261"/>
+<area shape="rect" id="node35" href="$classBIOS.html#a863b43a3c51e47b99fd8dbb9be7ef1a9" title=" " alt="" coords="647,1285,804,1312"/>
+<area shape="rect" id="node36" href="$classBIOS.html#a60a6d1cef0856e48a63c6ec493e83568" title=" " alt="" coords="618,1336,833,1363"/>
+<area shape="rect" id="node37" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="651,1387,799,1429"/>
+<area shape="rect" id="node38" href="$classBIOS.html#a7724374670b27ead155ecdc7e54488ca" title=" " alt="" coords="621,1453,830,1480"/>
+<area shape="rect" id="node39" href="$classBIOS.html#a2642b8c4f47a8d8f915ea84f6f8fdda5" title=" " alt="" coords="626,1504,825,1531"/>
+<area shape="rect" id="node40" href="$classBIOS.html#aa4e4c8200140151033a14a70be963ec4" title=" " alt="" coords="631,1555,820,1581"/>
+<area shape="rect" id="node42" href="$classMenu.html#a1e6edcfdd727f37c821609a7b2e7a3c5" title=" " alt="" coords="659,1656,792,1683"/>
+<area shape="rect" id="node43" href="$classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="647,1605,804,1632"/>
+<area shape="rect" id="node47" href="$classMenuTree.html#ad1ca1629a3c625e66300c5660ccced96" title=" " alt="" coords="622,1707,829,1733"/>
+</map>

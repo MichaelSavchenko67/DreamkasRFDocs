@@ -1,0 +1,2451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testJSON.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testJSON.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &quot;gmock/gmock-global.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="goods__new_8h_source.html">goods_new.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testJSON.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h__incl.png" border="0" usemap="#src_2tests_2include_2testJSON_8h" alt=""/></div>
+<map name="src_2tests_2include_2testJSON_8h" id="src_2tests_2include_2testJSON_8h">
+<area shape="rect"  title=" " alt="" coords="2046,5,2237,32"/>
+<area shape="rect"  title=" " alt="" coords="1749,80,1843,107"/>
+<area shape="rect"  title=" " alt="" coords="1868,80,1983,107"/>
+<area shape="rect"  title=" " alt="" coords="2007,80,2161,107"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1477,155,1571,181"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="2237,80,2294,107"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="2888,80,2987,107"/>
+<area shape="rect"  title=" " alt="" coords="245,229,320,256"/>
+<area shape="rect"  title=" " alt="" coords="345,229,410,256"/>
+<area shape="rect"  title=" " alt="" coords="435,229,501,256"/>
+<area shape="rect"  title=" " alt="" coords="526,229,591,256"/>
+<area shape="rect"  title=" " alt="" coords="615,229,694,256"/>
+<area shape="rect"  title=" " alt="" coords="718,229,815,256"/>
+<area shape="rect"  title=" " alt="" coords="839,229,899,256"/>
+<area shape="rect"  title=" " alt="" coords="923,229,986,256"/>
+<area shape="rect"  title=" " alt="" coords="1010,229,1078,256"/>
+<area shape="rect"  title=" " alt="" coords="2571,229,2626,256"/>
+<area shape="rect"  title=" " alt="" coords="1103,229,1156,256"/>
+<area shape="rect"  title=" " alt="" coords="2651,229,2712,256"/>
+<area shape="rect"  title=" " alt="" coords="1181,229,1227,256"/>
+<area shape="rect"  title=" " alt="" coords="1252,229,1321,256"/>
+<area shape="rect"  title=" " alt="" coords="2488,229,2547,256"/>
+<area shape="rect"  title=" " alt="" coords="1345,229,1428,256"/>
+<area shape="rect"  title=" " alt="" coords="1452,229,1505,256"/>
+<area shape="rect"  title=" " alt="" coords="1530,229,1609,256"/>
+<area shape="rect"  title=" " alt="" coords="1633,229,1711,256"/>
+<area shape="rect"  title=" " alt="" coords="1736,229,1787,256"/>
+<area shape="rect"  title=" " alt="" coords="1811,229,1901,256"/>
+<area shape="rect"  title=" " alt="" coords="1925,229,1976,256"/>
+<area shape="rect"  title=" " alt="" coords="2001,229,2111,256"/>
+<area shape="rect"  title=" " alt="" coords="2135,229,2203,256"/>
+<area shape="rect"  title=" " alt="" coords="3143,229,3204,256"/>
+<area shape="rect"  title=" " alt="" coords="2227,229,2293,256"/>
+<area shape="rect"  title=" " alt="" coords="2317,229,2379,256"/>
+<area shape="rect"  title=" " alt="" coords="2403,229,2463,256"/>
+<area shape="rect"  title=" " alt="" coords="3229,229,3286,256"/>
+<area shape="rect"  title=" " alt="" coords="5,229,64,256"/>
+<area shape="rect"  title=" " alt="" coords="89,229,127,256"/>
+<area shape="rect"  title=" " alt="" coords="152,229,221,256"/>
+<area shape="rect"  title=" " alt="" coords="2133,155,2216,181"/>
+<area shape="rect"  title=" " alt="" coords="2803,229,2875,256"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="2339,155,2474,181"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="2240,155,2291,181"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="2601,155,2669,181"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1984,155,2059,181"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="3181,155,3249,181"/>
+<area shape="rect"  title=" " alt="" coords="2795,155,2866,181"/>
+<area shape="rect"  title=" " alt="" coords="2941,155,3000,181"/>
+<area shape="rect"  title=" " alt="" coords="3024,155,3085,181"/>
+<area shape="rect"  title=" " alt="" coords="3110,155,3157,181"/>
+</map>
+</div>
+</div>
+<p><a href="testJSON_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON.html">TestJSON</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON_1_1MockConvert.html">TestJSON::MockConvert</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON_1_1MockFg.html">TestJSON::MockFg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON_1_1MockNet.html">TestJSON::MockNet</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON_1_1MockLicense.html">TestJSON::MockLicense</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON_1_1MockJson.html">TestJSON::MockJson</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:af49606058cb80e0e28ff5fd4b8e8d997"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#af49606058cb80e0e28ff5fd4b8e8d997">JsonParser</a> = <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td></tr>
+<tr class="separator:af49606058cb80e0e28ff5fd4b8e8d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a23db3ee6d6a610fd493948dab893b347"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a23db3ee6d6a610fd493948dab893b347">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_SuccessOK)</td></tr>
+<tr class="separator:a23db3ee6d6a610fd493948dab893b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc64f7e6ad59d5302afd19267fed99b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aadc64f7e6ad59d5302afd19267fed99b">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_NoData)</td></tr>
+<tr class="separator:aadc64f7e6ad59d5302afd19267fed99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3378d22a1ee8a2829c4e6d0ba3b5e97a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a3378d22a1ee8a2829c4e6d0ba3b5e97a">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_NoTasks)</td></tr>
+<tr class="separator:a3378d22a1ee8a2829c4e6d0ba3b5e97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1526d41255df62114baddec08568fb26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a1526d41255df62114baddec08568fb26">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_NoDataInTask)</td></tr>
+<tr class="separator:a1526d41255df62114baddec08568fb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023ffab3083f9259f648d83b8cefc147"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a023ffab3083f9259f648d83b8cefc147">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_ErrBadJson)</td></tr>
+<tr class="separator:a023ffab3083f9259f648d83b8cefc147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f1c67d9681c84eda6317a343136cbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a64f1c67d9681c84eda6317a343136cbc">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_ErrBadResult)</td></tr>
+<tr class="separator:a64f1c67d9681c84eda6317a343136cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1183fe918511e1e170b016970da049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a2c1183fe918511e1e170b016970da049">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductSuccess)</td></tr>
+<tr class="separator:a2c1183fe918511e1e170b016970da049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d222f4bef744b2b3ad9121cc1d5859f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a2d222f4bef744b2b3ad9121cc1d5859f">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductTobaccoSuccess)</td></tr>
+<tr class="separator:a2d222f4bef744b2b3ad9121cc1d5859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addae4673943d2f2010ce815f0e967626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#addae4673943d2f2010ce815f0e967626">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductBadJsonName)</td></tr>
+<tr class="separator:addae4673943d2f2010ce815f0e967626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314ad45b2bc225a5511c1af0e3772af6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a314ad45b2bc225a5511c1af0e3772af6">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductBadJsonBarcodes)</td></tr>
+<tr class="separator:a314ad45b2bc225a5511c1af0e3772af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae88607c05e2e6dd5fe187eacffe674c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aae88607c05e2e6dd5fe187eacffe674c">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductBadPrice)</td></tr>
+<tr class="separator:aae88607c05e2e6dd5fe187eacffe674c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fd74a01563ab998aec0882faa84e05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aa4fd74a01563ab998aec0882faa84e05">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_UpsertProductNoReqField)</td></tr>
+<tr class="separator:aa4fd74a01563ab998aec0882faa84e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b5930bc4679a164481f8175da70c73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ab9b5930bc4679a164481f8175da70c73">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_DeleteProductSuccess)</td></tr>
+<tr class="separator:ab9b5930bc4679a164481f8175da70c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33c81ecba21525ca0f5540af64373d5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a33c81ecba21525ca0f5540af64373d5f">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_DeleteProductBadJson)</td></tr>
+<tr class="separator:a33c81ecba21525ca0f5540af64373d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b9703d6d9ff7bc4ca9d9719febea39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a72b9703d6d9ff7bc4ca9d9719febea39">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_DeleteProductBadRemId)</td></tr>
+<tr class="separator:a72b9703d6d9ff7bc4ca9d9719febea39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61cfa076ec907d27688e0b32287f50d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ae61cfa076ec907d27688e0b32287f50d">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateNullCfgPtrFailed)</td></tr>
+<tr class="separator:ae61cfa076ec907d27688e0b32287f50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62dbd6984d48f814d6a6712005ddff97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a62dbd6984d48f814d6a6712005ddff97">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateNullFgPtrFailed)</td></tr>
+<tr class="separator:a62dbd6984d48f814d6a6712005ddff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c2f27b5cc99c0acdf42a1dacd76038"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a22c2f27b5cc99c0acdf42a1dacd76038">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateNullConvertPtrFailed)</td></tr>
+<tr class="separator:a22c2f27b5cc99c0acdf42a1dacd76038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ddb975a8f58b0f2904caa3388546a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a9ddb975a8f58b0f2904caa3388546a59">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateEmptyUuidFailed)</td></tr>
+<tr class="separator:a9ddb975a8f58b0f2904caa3388546a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a57cf486a6765954fbe8a2e45344c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a75a57cf486a6765954fbe8a2e45344c1">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateNullNetPtrFailed)</td></tr>
+<tr class="separator:a75a57cf486a6765954fbe8a2e45344c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937e67a15400403d962da940dc859e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a937e67a15400403d962da940dc859e70">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonCfgCreateSuccess)</td></tr>
+<tr class="separator:a937e67a15400403d962da940dc859e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca2b61506b68389e05314a2df30cf9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a0ca2b61506b68389e05314a2df30cf9c">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_KeyActivationSuccess)</td></tr>
+<tr class="separator:a0ca2b61506b68389e05314a2df30cf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5ea68105f4a919124672b2761da94e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a3e5ea68105f4a919124672b2761da94e">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_KeyActivationNoData)</td></tr>
+<tr class="separator:a3e5ea68105f4a919124672b2761da94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6010048983016f60c10466b4240575e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a6010048983016f60c10466b4240575e8">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_KeyActivationNoKey)</td></tr>
+<tr class="separator:a6010048983016f60c10466b4240575e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4125c7e33fb1f0f4bf79fcbca912a302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a4125c7e33fb1f0f4bf79fcbca912a302">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_KeyActivationNoRemID)</td></tr>
+<tr class="separator:a4125c7e33fb1f0f4bf79fcbca912a302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee501c37933dff242603db75a0004c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a2ee501c37933dff242603db75a0004c8">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_KeyActivationBadResult)</td></tr>
+<tr class="separator:a2ee501c37933dff242603db75a0004c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e609029777505413bcbabcdc63a2fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aa3e609029777505413bcbabcdc63a2fe">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseSuccess)</td></tr>
+<tr class="separator:aa3e609029777505413bcbabcdc63a2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217407452c1fdbc434e9a33af7de03be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a217407452c1fdbc434e9a33af7de03be">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseRemIdMissing)</td></tr>
+<tr class="separator:a217407452c1fdbc434e9a33af7de03be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95cc9e1c493292901c46400765eafb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ae95cc9e1c493292901c46400765eafb7">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseTypeMissing)</td></tr>
+<tr class="separator:ae95cc9e1c493292901c46400765eafb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f03ce3a89f4e7d669e65641d16c9eb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a8f03ce3a89f4e7d669e65641d16c9eb9">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePositionsMissing)</td></tr>
+<tr class="separator:a8f03ce3a89f4e7d669e65641d16c9eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf788724244860714cefd01f86f81cb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aaf788724244860714cefd01f86f81cb5">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePaymentsMissing)</td></tr>
+<tr class="separator:aaf788724244860714cefd01f86f81cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900d860b642b356b4747cb3564483065"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a900d860b642b356b4747cb3564483065">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseTotalMissing)</td></tr>
+<tr class="separator:a900d860b642b356b4747cb3564483065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03960a781ea75bdd6c1c559785dc58f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ab03960a781ea75bdd6c1c559785dc58f">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseTotalSumMissing)</td></tr>
+<tr class="separator:ab03960a781ea75bdd6c1c559785dc58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab173ea752c37c0f50828a81d0764be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a0ab173ea752c37c0f50828a81d0764be">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePaymentsSumMissing)</td></tr>
+<tr class="separator:a0ab173ea752c37c0f50828a81d0764be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6c269c40b7cea31e61dca52bc29f07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#adf6c269c40b7cea31e61dca52bc29f07">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePositionsNameMissing)</td></tr>
+<tr class="separator:adf6c269c40b7cea31e61dca52bc29f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0f8dd96d62f4024810b6400ad0878b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#adb0f8dd96d62f4024810b6400ad0878b">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePositionsTypeMissing)</td></tr>
+<tr class="separator:adb0f8dd96d62f4024810b6400ad0878b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec954a2ce383b78167535759e4b0ff39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aec954a2ce383b78167535759e4b0ff39">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePositionsQuantityMissing)</td></tr>
+<tr class="separator:aec954a2ce383b78167535759e4b0ff39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c345360a2b1eb66c37d239a35ea3ab6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a6c345360a2b1eb66c37d239a35ea3ab6">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchasePositionsPriceMissing)</td></tr>
+<tr class="separator:a6c345360a2b1eb66c37d239a35ea3ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1d4e1127d02a3165332d50e78ac252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#abd1d4e1127d02a3165332d50e78ac252">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseDataEmpty)</td></tr>
+<tr class="separator:abd1d4e1127d02a3165332d50e78ac252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145df09571cef315273da7b11c6724b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a145df09571cef315273da7b11c6724b5">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, jsonPollParser_parseExternalPurchaseDataMissing)</td></tr>
+<tr class="separator:a145df09571cef315273da7b11c6724b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffa365adffde765ab4ed5e3319de45e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a5ffa365adffde765ab4ed5e3319de45e">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountSuccess)</td></tr>
+<tr class="separator:a5ffa365adffde765ab4ed5e3319de45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de2d49a1b1e13f1845f940fa6df894d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a1de2d49a1b1e13f1845f940fa6df894d">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountNullPtrFailed)</td></tr>
+<tr class="separator:a1de2d49a1b1e13f1845f940fa6df894d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d07c662db04de984fac87fbe16d414"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ae8d07c662db04de984fac87fbe16d414">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountInvalidJsonFailed)</td></tr>
+<tr class="separator:ae8d07c662db04de984fac87fbe16d414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f448712092397a2e9f0ec6e0b20c130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a9f448712092397a2e9f0ec6e0b20c130">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountDataEmptyFailed)</td></tr>
+<tr class="separator:a9f448712092397a2e9f0ec6e0b20c130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20c7339f7555d839529e82dfffba878"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#ac20c7339f7555d839529e82dfffba878">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountNameOrRemIdEmptyFailed)</td></tr>
+<tr class="separator:ac20c7339f7555d839529e82dfffba878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ebad9fe0210a0eb99fa02fb16fb240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a48ebad9fe0210a0eb99fa02fb16fb240">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountModeEmptyFailed)</td></tr>
+<tr class="separator:a48ebad9fe0210a0eb99fa02fb16fb240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af467ed040c2b17fc38b1e1540e2e6314"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#af467ed040c2b17fc38b1e1540e2e6314">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountResultEmptyFailed)</td></tr>
+<tr class="separator:af467ed040c2b17fc38b1e1540e2e6314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75e754023839df95db7a64fceb68ba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#af75e754023839df95db7a64fceb68ba3">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountTargetDataEmptyFailed)</td></tr>
+<tr class="separator:af75e754023839df95db7a64fceb68ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7be06a9fe3d2e7656a0f96cb15e5d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#afe7be06a9fe3d2e7656a0f96cb15e5d2">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseUpsertDiscountProductRemIdEmptyFailed)</td></tr>
+<tr class="separator:afe7be06a9fe3d2e7656a0f96cb15e5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736ddf472d592af5a75a12c730cdf54d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a736ddf472d592af5a75a12c730cdf54d">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseDeleteDiscountSuccess)</td></tr>
+<tr class="separator:a736ddf472d592af5a75a12c730cdf54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b53eec22727f560218dcb9be41cbbd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a3b53eec22727f560218dcb9be41cbbd6">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseDeleteDiscountEmptyJsonFailed)</td></tr>
+<tr class="separator:a3b53eec22727f560218dcb9be41cbbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7066d25b9ab682bb67ee63708c984636"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a7066d25b9ab682bb67ee63708c984636">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseDeleteDiscountEmptyDataFailed)</td></tr>
+<tr class="separator:a7066d25b9ab682bb67ee63708c984636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e09124032d8b7620afad14c221f6aef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a0e09124032d8b7620afad14c221f6aef">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseDeleteDiscountEmptyRemIdFailed)</td></tr>
+<tr class="separator:a0e09124032d8b7620afad14c221f6aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c67b097b85ec86d8889cb6b17f16225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a6c67b097b85ec86d8889cb6b17f16225">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseKktRegistrResultSuccess)</td></tr>
+<tr class="separator:a6c67b097b85ec86d8889cb6b17f16225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c61aaeb4bb726375fcf03b094ac5b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a92c61aaeb4bb726375fcf03b094ac5b9">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseKktRegistrAcceptFailed)</td></tr>
+<tr class="separator:a92c61aaeb4bb726375fcf03b094ac5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0e927e17977c4048c1d9dfd4f68871"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a9e0e927e17977c4048c1d9dfd4f68871">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseKktRegistrResultFailed)</td></tr>
+<tr class="separator:a9e0e927e17977c4048c1d9dfd4f68871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c2ddd2c650bdca9cace879bff2b26b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#aa9c2ddd2c650bdca9cace879bff2b26b">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, parseKktRegistrDataEmptyFailed)</td></tr>
+<tr class="separator:aa9c2ddd2c650bdca9cace879bff2b26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e38e6736507fd9e733ba34770c01ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testJSON_8h.html#a24e38e6736507fd9e733ba34770c01ea">TEST_F</a> (<a class="el" href="classTestJSON.html">TestJSON</a>, externalPurchaseParseDifferentPayments)</td></tr>
+<tr class="separator:a24e38e6736507fd9e733ba34770c01ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a id="af49606058cb80e0e28ff5fd4b8e8d997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49606058cb80e0e28ff5fd4b8e8d997">&#9670;&nbsp;</a></span>JsonParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a> =  <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a23db3ee6d6a610fd493948dab893b347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db3ee6d6a610fd493948dab893b347">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_SuccessOK&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadc64f7e6ad59d5302afd19267fed99b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc64f7e6ad59d5302afd19267fed99b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_NoData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3378d22a1ee8a2829c4e6d0ba3b5e97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3378d22a1ee8a2829c4e6d0ba3b5e97a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_NoTasks&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1526d41255df62114baddec08568fb26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1526d41255df62114baddec08568fb26">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_NoDataInTask&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a1526d41255df62114baddec08568fb26_cgraph.png" border="0" usemap="#testJSON_8h_a1526d41255df62114baddec08568fb26_cgraph" alt=""/></div>
+<map name="testJSON_8h_a1526d41255df62114baddec08568fb26_cgraph" id="testJSON_8h_a1526d41255df62114baddec08568fb26_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a023ffab3083f9259f648d83b8cefc147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a023ffab3083f9259f648d83b8cefc147">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_ErrBadJson&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64f1c67d9681c84eda6317a343136cbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f1c67d9681c84eda6317a343136cbc">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_ErrBadResult&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c1183fe918511e1e170b016970da049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c1183fe918511e1e170b016970da049">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d222f4bef744b2b3ad9121cc1d5859f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d222f4bef744b2b3ad9121cc1d5859f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductTobaccoSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a2d222f4bef744b2b3ad9121cc1d5859f_cgraph.png" border="0" usemap="#testJSON_8h_a2d222f4bef744b2b3ad9121cc1d5859f_cgraph" alt=""/></div>
+<map name="testJSON_8h_a2d222f4bef744b2b3ad9121cc1d5859f_cgraph" id="testJSON_8h_a2d222f4bef744b2b3ad9121cc1d5859f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addae4673943d2f2010ce815f0e967626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addae4673943d2f2010ce815f0e967626">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductBadJsonName&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a314ad45b2bc225a5511c1af0e3772af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314ad45b2bc225a5511c1af0e3772af6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductBadJsonBarcodes&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae88607c05e2e6dd5fe187eacffe674c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae88607c05e2e6dd5fe187eacffe674c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductBadPrice&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4fd74a01563ab998aec0882faa84e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4fd74a01563ab998aec0882faa84e05">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_UpsertProductNoReqField&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_aa4fd74a01563ab998aec0882faa84e05_cgraph.png" border="0" usemap="#testJSON_8h_aa4fd74a01563ab998aec0882faa84e05_cgraph" alt=""/></div>
+<map name="testJSON_8h_aa4fd74a01563ab998aec0882faa84e05_cgraph" id="testJSON_8h_aa4fd74a01563ab998aec0882faa84e05_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9b5930bc4679a164481f8175da70c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b5930bc4679a164481f8175da70c73">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_DeleteProductSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33c81ecba21525ca0f5540af64373d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33c81ecba21525ca0f5540af64373d5f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_DeleteProductBadJson&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72b9703d6d9ff7bc4ca9d9719febea39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b9703d6d9ff7bc4ca9d9719febea39">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_DeleteProductBadRemId&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a72b9703d6d9ff7bc4ca9d9719febea39_cgraph.png" border="0" usemap="#testJSON_8h_a72b9703d6d9ff7bc4ca9d9719febea39_cgraph" alt=""/></div>
+<map name="testJSON_8h_a72b9703d6d9ff7bc4ca9d9719febea39_cgraph" id="testJSON_8h_a72b9703d6d9ff7bc4ca9d9719febea39_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae61cfa076ec907d27688e0b32287f50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61cfa076ec907d27688e0b32287f50d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateNullCfgPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62dbd6984d48f814d6a6712005ddff97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62dbd6984d48f814d6a6712005ddff97">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[17/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateNullFgPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22c2f27b5cc99c0acdf42a1dacd76038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c2f27b5cc99c0acdf42a1dacd76038">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[18/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateNullConvertPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ddb975a8f58b0f2904caa3388546a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddb975a8f58b0f2904caa3388546a59">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[19/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateEmptyUuidFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75a57cf486a6765954fbe8a2e45344c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a57cf486a6765954fbe8a2e45344c1">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[20/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateNullNetPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a937e67a15400403d962da940dc859e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937e67a15400403d962da940dc859e70">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[21/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonCfgCreateSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a937e67a15400403d962da940dc859e70_cgraph.png" border="0" usemap="#testJSON_8h_a937e67a15400403d962da940dc859e70_cgraph" alt=""/></div>
+<map name="testJSON_8h_a937e67a15400403d962da940dc859e70_cgraph" id="testJSON_8h_a937e67a15400403d962da940dc859e70_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,195,76,221"/>
+<area shape="rect"  href="dynamic__mask_8h.html#acb81763325adcaf21a94f89a5ed351c7" title=" " alt="" coords="145,165,251,192"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ca2b61506b68389e05314a2df30cf9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ca2b61506b68389e05314a2df30cf9c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[22/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_KeyActivationSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e5ea68105f4a919124672b2761da94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5ea68105f4a919124672b2761da94e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[23/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_KeyActivationNoData&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a3e5ea68105f4a919124672b2761da94e_cgraph.png" border="0" usemap="#testJSON_8h_a3e5ea68105f4a919124672b2761da94e_cgraph" alt=""/></div>
+<map name="testJSON_8h_a3e5ea68105f4a919124672b2761da94e_cgraph" id="testJSON_8h_a3e5ea68105f4a919124672b2761da94e_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6010048983016f60c10466b4240575e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6010048983016f60c10466b4240575e8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[24/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_KeyActivationNoKey&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a6010048983016f60c10466b4240575e8_cgraph.png" border="0" usemap="#testJSON_8h_a6010048983016f60c10466b4240575e8_cgraph" alt=""/></div>
+<map name="testJSON_8h_a6010048983016f60c10466b4240575e8_cgraph" id="testJSON_8h_a6010048983016f60c10466b4240575e8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4125c7e33fb1f0f4bf79fcbca912a302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4125c7e33fb1f0f4bf79fcbca912a302">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[25/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_KeyActivationNoRemID&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a4125c7e33fb1f0f4bf79fcbca912a302_cgraph.png" border="0" usemap="#testJSON_8h_a4125c7e33fb1f0f4bf79fcbca912a302_cgraph" alt=""/></div>
+<map name="testJSON_8h_a4125c7e33fb1f0f4bf79fcbca912a302_cgraph" id="testJSON_8h_a4125c7e33fb1f0f4bf79fcbca912a302_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2ee501c37933dff242603db75a0004c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee501c37933dff242603db75a0004c8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[26/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_KeyActivationBadResult&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3e609029777505413bcbabcdc63a2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e609029777505413bcbabcdc63a2fe">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[27/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_aa3e609029777505413bcbabcdc63a2fe_cgraph.png" border="0" usemap="#testJSON_8h_aa3e609029777505413bcbabcdc63a2fe_cgraph" alt=""/></div>
+<map name="testJSON_8h_aa3e609029777505413bcbabcdc63a2fe_cgraph" id="testJSON_8h_aa3e609029777505413bcbabcdc63a2fe_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a217407452c1fdbc434e9a33af7de03be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217407452c1fdbc434e9a33af7de03be">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[28/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseRemIdMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a217407452c1fdbc434e9a33af7de03be_cgraph.png" border="0" usemap="#testJSON_8h_a217407452c1fdbc434e9a33af7de03be_cgraph" alt=""/></div>
+<map name="testJSON_8h_a217407452c1fdbc434e9a33af7de03be_cgraph" id="testJSON_8h_a217407452c1fdbc434e9a33af7de03be_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae95cc9e1c493292901c46400765eafb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95cc9e1c493292901c46400765eafb7">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[29/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseTypeMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_ae95cc9e1c493292901c46400765eafb7_cgraph.png" border="0" usemap="#testJSON_8h_ae95cc9e1c493292901c46400765eafb7_cgraph" alt=""/></div>
+<map name="testJSON_8h_ae95cc9e1c493292901c46400765eafb7_cgraph" id="testJSON_8h_ae95cc9e1c493292901c46400765eafb7_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8f03ce3a89f4e7d669e65641d16c9eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f03ce3a89f4e7d669e65641d16c9eb9">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[30/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePositionsMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a8f03ce3a89f4e7d669e65641d16c9eb9_cgraph.png" border="0" usemap="#testJSON_8h_a8f03ce3a89f4e7d669e65641d16c9eb9_cgraph" alt=""/></div>
+<map name="testJSON_8h_a8f03ce3a89f4e7d669e65641d16c9eb9_cgraph" id="testJSON_8h_a8f03ce3a89f4e7d669e65641d16c9eb9_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaf788724244860714cefd01f86f81cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf788724244860714cefd01f86f81cb5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[31/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePaymentsMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_aaf788724244860714cefd01f86f81cb5_cgraph.png" border="0" usemap="#testJSON_8h_aaf788724244860714cefd01f86f81cb5_cgraph" alt=""/></div>
+<map name="testJSON_8h_aaf788724244860714cefd01f86f81cb5_cgraph" id="testJSON_8h_aaf788724244860714cefd01f86f81cb5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a900d860b642b356b4747cb3564483065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900d860b642b356b4747cb3564483065">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[32/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseTotalMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a900d860b642b356b4747cb3564483065_cgraph.png" border="0" usemap="#testJSON_8h_a900d860b642b356b4747cb3564483065_cgraph" alt=""/></div>
+<map name="testJSON_8h_a900d860b642b356b4747cb3564483065_cgraph" id="testJSON_8h_a900d860b642b356b4747cb3564483065_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab03960a781ea75bdd6c1c559785dc58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03960a781ea75bdd6c1c559785dc58f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[33/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseTotalSumMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_ab03960a781ea75bdd6c1c559785dc58f_cgraph.png" border="0" usemap="#testJSON_8h_ab03960a781ea75bdd6c1c559785dc58f_cgraph" alt=""/></div>
+<map name="testJSON_8h_ab03960a781ea75bdd6c1c559785dc58f_cgraph" id="testJSON_8h_ab03960a781ea75bdd6c1c559785dc58f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ab173ea752c37c0f50828a81d0764be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab173ea752c37c0f50828a81d0764be">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[34/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePaymentsSumMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a0ab173ea752c37c0f50828a81d0764be_cgraph.png" border="0" usemap="#testJSON_8h_a0ab173ea752c37c0f50828a81d0764be_cgraph" alt=""/></div>
+<map name="testJSON_8h_a0ab173ea752c37c0f50828a81d0764be_cgraph" id="testJSON_8h_a0ab173ea752c37c0f50828a81d0764be_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf6c269c40b7cea31e61dca52bc29f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6c269c40b7cea31e61dca52bc29f07">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[35/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePositionsNameMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_adf6c269c40b7cea31e61dca52bc29f07_cgraph.png" border="0" usemap="#testJSON_8h_adf6c269c40b7cea31e61dca52bc29f07_cgraph" alt=""/></div>
+<map name="testJSON_8h_adf6c269c40b7cea31e61dca52bc29f07_cgraph" id="testJSON_8h_adf6c269c40b7cea31e61dca52bc29f07_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb0f8dd96d62f4024810b6400ad0878b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0f8dd96d62f4024810b6400ad0878b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[36/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePositionsTypeMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_adb0f8dd96d62f4024810b6400ad0878b_cgraph.png" border="0" usemap="#testJSON_8h_adb0f8dd96d62f4024810b6400ad0878b_cgraph" alt=""/></div>
+<map name="testJSON_8h_adb0f8dd96d62f4024810b6400ad0878b_cgraph" id="testJSON_8h_adb0f8dd96d62f4024810b6400ad0878b_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aec954a2ce383b78167535759e4b0ff39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec954a2ce383b78167535759e4b0ff39">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[37/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePositionsQuantityMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_aec954a2ce383b78167535759e4b0ff39_cgraph.png" border="0" usemap="#testJSON_8h_aec954a2ce383b78167535759e4b0ff39_cgraph" alt=""/></div>
+<map name="testJSON_8h_aec954a2ce383b78167535759e4b0ff39_cgraph" id="testJSON_8h_aec954a2ce383b78167535759e4b0ff39_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6c345360a2b1eb66c37d239a35ea3ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c345360a2b1eb66c37d239a35ea3ab6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[38/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchasePositionsPriceMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a6c345360a2b1eb66c37d239a35ea3ab6_cgraph.png" border="0" usemap="#testJSON_8h_a6c345360a2b1eb66c37d239a35ea3ab6_cgraph" alt=""/></div>
+<map name="testJSON_8h_a6c345360a2b1eb66c37d239a35ea3ab6_cgraph" id="testJSON_8h_a6c345360a2b1eb66c37d239a35ea3ab6_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd1d4e1127d02a3165332d50e78ac252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1d4e1127d02a3165332d50e78ac252">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[39/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseDataEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_abd1d4e1127d02a3165332d50e78ac252_cgraph.png" border="0" usemap="#testJSON_8h_abd1d4e1127d02a3165332d50e78ac252_cgraph" alt=""/></div>
+<map name="testJSON_8h_abd1d4e1127d02a3165332d50e78ac252_cgraph" id="testJSON_8h_abd1d4e1127d02a3165332d50e78ac252_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a145df09571cef315273da7b11c6724b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145df09571cef315273da7b11c6724b5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[40/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">jsonPollParser_parseExternalPurchaseDataMissing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a145df09571cef315273da7b11c6724b5_cgraph.png" border="0" usemap="#testJSON_8h_a145df09571cef315273da7b11c6724b5_cgraph" alt=""/></div>
+<map name="testJSON_8h_a145df09571cef315273da7b11c6724b5_cgraph" id="testJSON_8h_a145df09571cef315273da7b11c6724b5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,224,76,251"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="124,217,272,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="320,217,481,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="539,5,719,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="552,86,705,127"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="552,151,705,193"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="550,217,707,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="539,283,719,339"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="529,363,728,405"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="533,429,724,470"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="776,217,957,258"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5ffa365adffde765ab4ed5e3319de45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffa365adffde765ab4ed5e3319de45e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[41/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a5ffa365adffde765ab4ed5e3319de45e_cgraph.png" border="0" usemap="#testJSON_8h_a5ffa365adffde765ab4ed5e3319de45e_cgraph" alt=""/></div>
+<map name="testJSON_8h_a5ffa365adffde765ab4ed5e3319de45e_cgraph" id="testJSON_8h_a5ffa365adffde765ab4ed5e3319de45e_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,206,76,233"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,49,339,75"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="157,100,305,141"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="157,165,305,207"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="157,296,305,337"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="157,231,305,272"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#abfeba47810ca72f2176419942c4e1952" title="clears the contents" alt="" coords="157,361,305,403"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="401,5,549,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="401,71,549,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="400,136,551,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="401,201,549,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="612,136,793,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="387,436,564,477"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="629,348,777,389"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="401,319,549,360"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="614,297,791,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1de2d49a1b1e13f1845f940fa6df894d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de2d49a1b1e13f1845f940fa6df894d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[42/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountNullPtrFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8d07c662db04de984fac87fbe16d414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d07c662db04de984fac87fbe16d414">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[43/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountInvalidJsonFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f448712092397a2e9f0ec6e0b20c130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f448712092397a2e9f0ec6e0b20c130">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[44/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountDataEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a9f448712092397a2e9f0ec6e0b20c130_cgraph.png" border="0" usemap="#testJSON_8h_a9f448712092397a2e9f0ec6e0b20c130_cgraph" alt=""/></div>
+<map name="testJSON_8h_a9f448712092397a2e9f0ec6e0b20c130_cgraph" id="testJSON_8h_a9f448712092397a2e9f0ec6e0b20c130_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="124,5,272,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac20c7339f7555d839529e82dfffba878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20c7339f7555d839529e82dfffba878">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[45/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountNameOrRemIdEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48ebad9fe0210a0eb99fa02fb16fb240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ebad9fe0210a0eb99fa02fb16fb240">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[46/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountModeEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af467ed040c2b17fc38b1e1540e2e6314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af467ed040c2b17fc38b1e1540e2e6314">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[47/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountResultEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_af467ed040c2b17fc38b1e1540e2e6314_cgraph.png" border="0" usemap="#testJSON_8h_af467ed040c2b17fc38b1e1540e2e6314_cgraph" alt=""/></div>
+<map name="testJSON_8h_af467ed040c2b17fc38b1e1540e2e6314_cgraph" id="testJSON_8h_af467ed040c2b17fc38b1e1540e2e6314_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="124,5,272,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af75e754023839df95db7a64fceb68ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75e754023839df95db7a64fceb68ba3">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[48/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountTargetDataEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_af75e754023839df95db7a64fceb68ba3_cgraph.png" border="0" usemap="#testJSON_8h_af75e754023839df95db7a64fceb68ba3_cgraph" alt=""/></div>
+<map name="testJSON_8h_af75e754023839df95db7a64fceb68ba3_cgraph" id="testJSON_8h_af75e754023839df95db7a64fceb68ba3_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,79,76,106"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="124,39,272,80"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="124,104,272,145"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="321,5,469,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="321,71,469,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="320,136,471,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="321,201,469,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="519,136,700,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe7be06a9fe3d2e7656a0f96cb15e5d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7be06a9fe3d2e7656a0f96cb15e5d2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[49/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseUpsertDiscountProductRemIdEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_afe7be06a9fe3d2e7656a0f96cb15e5d2_cgraph.png" border="0" usemap="#testJSON_8h_afe7be06a9fe3d2e7656a0f96cb15e5d2_cgraph" alt=""/></div>
+<map name="testJSON_8h_afe7be06a9fe3d2e7656a0f96cb15e5d2_cgraph" id="testJSON_8h_afe7be06a9fe3d2e7656a0f96cb15e5d2_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,111,76,138"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="124,104,272,145"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="321,5,469,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="321,71,469,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="320,136,471,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="321,201,469,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="519,136,700,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a736ddf472d592af5a75a12c730cdf54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a736ddf472d592af5a75a12c730cdf54d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[50/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseDeleteDiscountSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a736ddf472d592af5a75a12c730cdf54d_cgraph.png" border="0" usemap="#testJSON_8h_a736ddf472d592af5a75a12c730cdf54d_cgraph" alt=""/></div>
+<map name="testJSON_8h_a736ddf472d592af5a75a12c730cdf54d_cgraph" id="testJSON_8h_a736ddf472d592af5a75a12c730cdf54d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,267,76,294"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="124,136,272,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="124,380,272,421"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="124,260,272,301"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="335,5,483,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="335,71,483,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="333,136,484,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="335,201,483,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="545,136,727,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="320,436,497,477"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="562,348,710,389"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="335,319,483,360"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="547,297,725,323"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3b53eec22727f560218dcb9be41cbbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b53eec22727f560218dcb9be41cbbd6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[51/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseDeleteDiscountEmptyJsonFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7066d25b9ab682bb67ee63708c984636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7066d25b9ab682bb67ee63708c984636">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[52/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseDeleteDiscountEmptyDataFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a7066d25b9ab682bb67ee63708c984636_cgraph.png" border="0" usemap="#testJSON_8h_a7066d25b9ab682bb67ee63708c984636_cgraph" alt=""/></div>
+<map name="testJSON_8h_a7066d25b9ab682bb67ee63708c984636_cgraph" id="testJSON_8h_a7066d25b9ab682bb67ee63708c984636_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,76,39"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="124,5,272,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e09124032d8b7620afad14c221f6aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e09124032d8b7620afad14c221f6aef">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[53/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseDeleteDiscountEmptyRemIdFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c67b097b85ec86d8889cb6b17f16225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c67b097b85ec86d8889cb6b17f16225">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[54/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseKktRegistrResultSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a6c67b097b85ec86d8889cb6b17f16225_cgraph.png" border="0" usemap="#testJSON_8h_a6c67b097b85ec86d8889cb6b17f16225_cgraph" alt=""/></div>
+<map name="testJSON_8h_a6c67b097b85ec86d8889cb6b17f16225_cgraph" id="testJSON_8h_a6c67b097b85ec86d8889cb6b17f16225_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,35,76,61"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="124,5,339,32"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="157,57,305,98"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="387,57,564,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a92c61aaeb4bb726375fcf03b094ac5b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c61aaeb4bb726375fcf03b094ac5b9">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[55/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseKktRegistrAcceptFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e0e927e17977c4048c1d9dfd4f68871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0e927e17977c4048c1d9dfd4f68871">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[56/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseKktRegistrResultFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9c2ddd2c650bdca9cace879bff2b26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c2ddd2c650bdca9cace879bff2b26b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[57/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parseKktRegistrDataEmptyFailed&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24e38e6736507fd9e733ba34770c01ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e38e6736507fd9e733ba34770c01ea">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[58/58]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestJSON.html">TestJSON</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">externalPurchaseParseDifferentPayments&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testJSON_8h_a24e38e6736507fd9e733ba34770c01ea_cgraph.png" border="0" usemap="#testJSON_8h_a24e38e6736507fd9e733ba34770c01ea_cgraph" alt=""/></div>
+<map name="testJSON_8h_a24e38e6736507fd9e733ba34770c01ea_cgraph" id="testJSON_8h_a24e38e6736507fd9e733ba34770c01ea_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,145,76,171"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="124,104,272,145"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#abfeba47810ca72f2176419942c4e1952" title="clears the contents" alt="" coords="124,169,272,211"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="321,5,469,47"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="321,71,469,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="320,136,471,177"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="321,201,469,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="519,136,700,177"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

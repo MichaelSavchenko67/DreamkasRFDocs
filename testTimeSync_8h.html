@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/tests/include/testTimeSync.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл testTimeSync.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;gmock/gmock.h&gt;</code><br />
+<code>#include &lt;gmock/gmock-global.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="time__sync_8h_source.html">time_sync.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для testTimeSync.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h__incl.png" border="0" usemap="#src_2tests_2include_2testTimeSync_8h" alt=""/></div>
+<map name="src_2tests_2include_2testTimeSync_8h" id="src_2tests_2include_2testTimeSync_8h">
+<area shape="rect"  title=" " alt="" coords="174,5,347,47"/>
+<area shape="rect"  title=" " alt="" coords="5,95,100,121"/>
+<area shape="rect"  title=" " alt="" coords="125,95,239,121"/>
+<area shape="rect"  title=" " alt="" coords="264,95,417,121"/>
+<area shape="rect"  href="time__sync_8h.html" title=" " alt="" coords="442,95,535,121"/>
+<area shape="rect"  title=" " alt="" coords="247,169,315,196"/>
+<area shape="rect"  title=" " alt="" coords="339,169,393,196"/>
+<area shape="rect"  title=" " alt="" coords="418,169,477,196"/>
+<area shape="rect"  title=" " alt="" coords="501,169,559,196"/>
+<area shape="rect"  title=" " alt="" coords="583,169,655,196"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="679,169,730,196"/>
+<area shape="rect"  title=" " alt="" coords="443,244,505,271"/>
+<area shape="rect"  title=" " alt="" coords="530,244,599,271"/>
+<area shape="rect"  title=" " alt="" coords="623,244,693,271"/>
+<area shape="rect"  title=" " alt="" coords="717,244,783,271"/>
+<area shape="rect"  title=" " alt="" coords="807,244,877,271"/>
+<area shape="rect"  title=" " alt="" coords="902,244,1009,271"/>
+</map>
+</div>
+</div>
+<p><a href="testTimeSync_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestTimeSync.html">TestTimeSync</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a38557e5461a42872e3403c4ecb6800a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#a38557e5461a42872e3403c4ecb6800a9">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZonePositive)</td></tr>
+<tr class="separator:a38557e5461a42872e3403c4ecb6800a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7371ad40a66807719533afde9c58d55e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#a7371ad40a66807719533afde9c58d55e">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneNegativeRemoveError)</td></tr>
+<tr class="separator:a7371ad40a66807719533afde9c58d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33d2bd87ad67597e67566230f756e11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#ac33d2bd87ad67597e67566230f756e11">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneNegativeSymlinkError)</td></tr>
+<tr class="separator:ac33d2bd87ad67597e67566230f756e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d480e393a7331413647bc57364fe52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#ae0d480e393a7331413647bc57364fe52">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneNegativeRemoveSymlinkError)</td></tr>
+<tr class="separator:ae0d480e393a7331413647bc57364fe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09f45cd6a6a5f11617971364eb7cc90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#af09f45cd6a6a5f11617971364eb7cc90">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneNegativeZoneIndexError)</td></tr>
+<tr class="separator:af09f45cd6a6a5f11617971364eb7cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93f12d3a06adb78a44b4a172681d7f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneByPositive)</td></tr>
+<tr class="separator:af93f12d3a06adb78a44b4a172681d7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2294388db48c4f1b339d5739e74d8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#a7b2294388db48c4f1b339d5739e74d8d">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneByNegativeRemoveError)</td></tr>
+<tr class="separator:a7b2294388db48c4f1b339d5739e74d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe53afbc86ff09f30c82189a22d2f611"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#abe53afbc86ff09f30c82189a22d2f611">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneByNegativeSymlinkError)</td></tr>
+<tr class="separator:abe53afbc86ff09f30c82189a22d2f611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6890f5a56eccf99bc63af127215b8817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testTimeSync_8h.html#a6890f5a56eccf99bc63af127215b8817">TEST</a> (<a class="el" href="classTestTimeSync.html">TestTimeSync</a>, changeTimeZoneByNegativeRemoveSymlinkError)</td></tr>
+<tr class="separator:a6890f5a56eccf99bc63af127215b8817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a38557e5461a42872e3403c4ecb6800a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38557e5461a42872e3403c4ecb6800a9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZonePositive&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_a38557e5461a42872e3403c4ecb6800a9_cgraph.png" border="0" usemap="#testTimeSync_8h_a38557e5461a42872e3403c4ecb6800a9_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_a38557e5461a42872e3403c4ecb6800a9_cgraph" id="testTimeSync_8h_a38557e5461a42872e3403c4ecb6800a9_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="109,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7371ad40a66807719533afde9c58d55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7371ad40a66807719533afde9c58d55e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneNegativeRemoveError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_a7371ad40a66807719533afde9c58d55e_cgraph.png" border="0" usemap="#testTimeSync_8h_a7371ad40a66807719533afde9c58d55e_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_a7371ad40a66807719533afde9c58d55e_cgraph" id="testTimeSync_8h_a7371ad40a66807719533afde9c58d55e_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="109,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac33d2bd87ad67597e67566230f756e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33d2bd87ad67597e67566230f756e11">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneNegativeSymlinkError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_ac33d2bd87ad67597e67566230f756e11_cgraph.png" border="0" usemap="#testTimeSync_8h_ac33d2bd87ad67597e67566230f756e11_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_ac33d2bd87ad67597e67566230f756e11_cgraph" id="testTimeSync_8h_ac33d2bd87ad67597e67566230f756e11_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="109,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0d480e393a7331413647bc57364fe52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0d480e393a7331413647bc57364fe52">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneNegativeRemoveSymlinkError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_ae0d480e393a7331413647bc57364fe52_cgraph.png" border="0" usemap="#testTimeSync_8h_ae0d480e393a7331413647bc57364fe52_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_ae0d480e393a7331413647bc57364fe52_cgraph" id="testTimeSync_8h_ae0d480e393a7331413647bc57364fe52_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="109,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af09f45cd6a6a5f11617971364eb7cc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09f45cd6a6a5f11617971364eb7cc90">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneNegativeZoneIndexError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_af09f45cd6a6a5f11617971364eb7cc90_cgraph.png" border="0" usemap="#testTimeSync_8h_af09f45cd6a6a5f11617971364eb7cc90_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_af09f45cd6a6a5f11617971364eb7cc90_cgraph" id="testTimeSync_8h_af09f45cd6a6a5f11617971364eb7cc90_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="109,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af93f12d3a06adb78a44b4a172681d7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93f12d3a06adb78a44b4a172681d7f8">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneByPositive&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_af93f12d3a06adb78a44b4a172681d7f8_cgraph.png" border="0" usemap="#testTimeSync_8h_af93f12d3a06adb78a44b4a172681d7f8_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_af93f12d3a06adb78a44b4a172681d7f8_cgraph" id="testTimeSync_8h_af93f12d3a06adb78a44b4a172681d7f8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="109,5,315,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b2294388db48c4f1b339d5739e74d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2294388db48c4f1b339d5739e74d8d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneByNegativeRemoveError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_a7b2294388db48c4f1b339d5739e74d8d_cgraph.png" border="0" usemap="#testTimeSync_8h_a7b2294388db48c4f1b339d5739e74d8d_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_a7b2294388db48c4f1b339d5739e74d8d_cgraph" id="testTimeSync_8h_a7b2294388db48c4f1b339d5739e74d8d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="109,5,315,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe53afbc86ff09f30c82189a22d2f611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe53afbc86ff09f30c82189a22d2f611">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneByNegativeSymlinkError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_abe53afbc86ff09f30c82189a22d2f611_cgraph.png" border="0" usemap="#testTimeSync_8h_abe53afbc86ff09f30c82189a22d2f611_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_abe53afbc86ff09f30c82189a22d2f611_cgraph" id="testTimeSync_8h_abe53afbc86ff09f30c82189a22d2f611_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="109,5,315,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6890f5a56eccf99bc63af127215b8817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6890f5a56eccf99bc63af127215b8817">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTestTimeSync.html">TestTimeSync</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">changeTimeZoneByNegativeRemoveSymlinkError&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="testTimeSync_8h_a6890f5a56eccf99bc63af127215b8817_cgraph.png" border="0" usemap="#testTimeSync_8h_a6890f5a56eccf99bc63af127215b8817_cgraph" alt=""/></div>
+<map name="testTimeSync_8h_a6890f5a56eccf99bc63af127215b8817_cgraph" id="testTimeSync_8h_a6890f5a56eccf99bc63af127215b8817_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,61,32"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="109,5,315,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

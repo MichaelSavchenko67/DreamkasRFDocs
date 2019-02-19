@@ -1,0 +1,13 @@
+<map id="sqlWrapper::copyImageToConfig" name="sqlWrapper::copyImageToConfig">
+<area shape="rect" id="node1" title="copyImageToConfig Копирование полей uuid, article, kkt_plant_num в CONFIG" alt="" coords="5,208,219,235"/>
+<area shape="rect" id="node2" href="$classsqlWrapper.html#a1ec3604d2b596e5afe1bfc09da794481" title="getImageTable Получение полей uuid, article, kkt_plant_num" alt="" coords="273,5,455,32"/>
+<area shape="rect" id="node3" href="$classsqlWrapper.html#a640efd257edce3f13d34fb5268606518" title="configDrop Удаление таблицы config" alt="" coords="285,56,443,83"/>
+<area shape="rect" id="node4" href="$classsqlWrapper.html#a263d39001854bdc6fdb64b282ec7cd81" title=" " alt="" coords="271,107,457,133"/>
+<area shape="rect" id="node6" href="$dynamic__mask_8h.html#a5b5d4ce22fa805ac6c1e2b884c175f8a" title=" " alt="" coords="334,157,394,184"/>
+<area shape="rect" id="node7" href="$dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a" title=" " alt="" coords="336,208,392,235"/>
+<area shape="rect" id="node8" href="$dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567" title=" " alt="" coords="325,259,403,285"/>
+<area shape="rect" id="node9" href="$dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1" title=" " alt="" coords="296,309,432,336"/>
+<area shape="rect" id="node10" href="$classsqlWrapper.html#af7cc18b966c2c270f49163ebe958e9d2" title=" " alt="" coords="267,360,461,387"/>
+<area shape="rect" id="node11" href="$classsqlWrapper.html#ac7810c2123e16d1aca739d6271388b9c" title="configImageDrop Удаление таблицы image_config" alt="" coords="267,411,461,437"/>
+<area shape="rect" id="node5" href="$classsqlWrapper.html#af4a754b8010581b85451c2c7a0bf89c0" title=" " alt="" coords="509,107,689,133"/>
+</map>

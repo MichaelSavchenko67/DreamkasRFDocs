@@ -1,0 +1,10 @@
+<map id="Lcd::lcd_need_draw_loader" name="Lcd::lcd_need_draw_loader">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,144,90"/>
+<area shape="rect" id="node2" href="$classLcd.html#ae4fc3dba0eeab85a6431684cf0717b2b" title=" " alt="" coords="192,56,295,83"/>
+<area shape="rect" id="node3" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="343,56,457,83"/>
+<area shape="rect" id="node4" href="$classLcd.html#a94308828134e6aa1c992f671ef788a41" title=" " alt="" coords="505,56,652,83"/>
+<area shape="rect" id="node5" href="$classLcd.html#a3ea6acaf7245c4a2bee97d57fc3c0fff" title=" " alt="" coords="718,5,851,32"/>
+<area shape="rect" id="node6" href="$classFilesFG.html#a5bc3ef87559df994e73cf99ebe6e2429" title=" " alt="" coords="712,56,857,83"/>
+<area shape="rect" id="node7" href="$classHttpsExchange.html#adb15ea1f255519add1a69f94c362e9b0" title="sendFile &#45; отправка файла по url" alt="" coords="700,107,869,133"/>
+<area shape="rect" id="node8" href="$classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="917,107,1052,133"/>
+</map>

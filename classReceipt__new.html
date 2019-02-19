@@ -1,0 +1,3704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс Receipt_new</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="classReceipt__new-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Receipt_new</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="receipt__new_8h_source.html">receipt_new.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса Receipt_new:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new__coll__graph.png" border="0" usemap="#Receipt__new_coll__map" alt="Collaboration graph"/></div>
+<map name="Receipt__new_coll__map" id="Receipt__new_coll__map">
+<area shape="rect"  title=" " alt="" coords="5,1847,227,4285"/>
+<area shape="rect"  href="classPosition__new.html" title=" " alt="" coords="16,5,216,1769"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a2f9a1600940ad1a40985f4421c1b7e72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72">REC_TYPE</a> { <a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72acaaddec3d587e332db0612442075f73c">SALE</a> = 1, 
+<a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72a024330f298648db96a5ef9194195b4b3">RETURN</a>, 
+<a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72a9e0be1f3005eb253b7bec3de6a98c856">PURHASE</a>, 
+<a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72ac28d281d100fcbde35731155727b9632">RETURN_PURHASE</a>
+ }</td></tr>
+<tr class="separator:a2f9a1600940ad1a40985f4421c1b7e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1751f267d04a5404de6f554fb65a2b46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46">PAYMENT_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46a55d850b6c6e196290a720cb9b64ba576">PAYMENT_NONE</a> = 0, 
+<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46a4a03738cde9f283b8d5d51ddad5f2353">PAYMENT_CASH</a>, 
+<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46a79573aec9cd0210328597857a7e0a332">PAYMENT_CASHLESS</a>, 
+<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46a0b9edbbdaa63f675fe2bc6c3a34b6e8c">PAYMENT_ADVANCE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46aaed161dcd76190c534e11283e1b93c68">PAYMENT_CREDIT</a>, 
+<a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46aad02bb5e11bac57430fd40b76450f245">PAYMENT_EXCHANGE</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1751f267d04a5404de6f554fb65a2b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5725a8f532604e690991ea619181672f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5725a8f532604e690991ea619181672f">Receipt_new</a> ()</td></tr>
+<tr class="separator:a5725a8f532604e690991ea619181672f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e842ce303bb16c5a598c12160f4f6b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a8e842ce303bb16c5a598c12160f4f6b3">Receipt_new</a> (const <a class="el" href="classReceipt__new.html">Receipt_new</a> &amp;recNew)</td></tr>
+<tr class="separator:a8e842ce303bb16c5a598c12160f4f6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d040f15326e5670a0de99b44662edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classReceipt__new.html">Receipt_new</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a24d040f15326e5670a0de99b44662edf">operator=</a> (const <a class="el" href="classReceipt__new.html">Receipt_new</a> &amp;recNew)</td></tr>
+<tr class="separator:a24d040f15326e5670a0de99b44662edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df6fd549829ff396feb26810152e295"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a2df6fd549829ff396feb26810152e295">~Receipt_new</a> ()</td></tr>
+<tr class="separator:a2df6fd549829ff396feb26810152e295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9dd056f7ca215e65c0372b5fcda043c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aa9dd056f7ca215e65c0372b5fcda043c">setTaxes</a> (const shared_ptr&lt; <a class="el" href="classTaxes.html">Taxes</a> &gt; &amp;taxes)</td></tr>
+<tr class="separator:aa9dd056f7ca215e65c0372b5fcda043c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8aeeafa2454a10269f43d8fe875dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7c8aeeafa2454a10269f43d8fe875dfb">is_receipt</a> (int32_t mthd)</td></tr>
+<tr class="separator:a7c8aeeafa2454a10269f43d8fe875dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e2f9ce19acc05b040aea01970d3698"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a51e2f9ce19acc05b040aea01970d3698">sum_get</a> (int32_t mthd)</td></tr>
+<tr class="separator:a51e2f9ce19acc05b040aea01970d3698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb21c179db2971859d421ca95126179a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aeb21c179db2971859d421ca95126179a">clear</a> (uint64_t what)</td></tr>
+<tr class="separator:aeb21c179db2971859d421ca95126179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75349ba0f42d64767ac4e24201c7994d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a75349ba0f42d64767ac4e24201c7994d">display</a> (uint64_t what)</td></tr>
+<tr class="separator:a75349ba0f42d64767ac4e24201c7994d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b431ce590ad4f2aa578286bef4da20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20">add_position</a> (<a class="el" href="classPosition__new.html">Position_new</a> *pos)</td></tr>
+<tr class="separator:af2b431ce590ad4f2aa578286bef4da20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bfb39e752b7d0b1d253adfec0b29f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPosition__new.html">Position_new</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a40bfb39e752b7d0b1d253adfec0b29f8">find_position</a> (unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> pos_num)</td></tr>
+<tr class="separator:a40bfb39e752b7d0b1d253adfec0b29f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9b0169ede65934448d81819eabf557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a9d9b0169ede65934448d81819eabf557">del_position</a> (unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> pos_num)</td></tr>
+<tr class="separator:a9d9b0169ede65934448d81819eabf557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de2e566cf02c47e1be106ebd6504f09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4de2e566cf02c47e1be106ebd6504f09">pos_auto_numbering</a> ()</td></tr>
+<tr class="separator:a4de2e566cf02c47e1be106ebd6504f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad539a8f270ccd7422c7c8a579f17fe5f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad539a8f270ccd7422c7c8a579f17fe5f">getCashierFullName</a> ()</td></tr>
+<tr class="separator:ad539a8f270ccd7422c7c8a579f17fe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7654b5c6558b8776c0fa3912115b2410"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7654b5c6558b8776c0fa3912115b2410">ExternalReceiptInit</a> (<a class="el" href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html">JSON::JSON_EXTERNAL_PURCHASE</a> *external_purchase, string &amp;message)</td></tr>
+<tr class="separator:a7654b5c6558b8776c0fa3912115b2410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9305650181a5f64f2b841213bc4c3b9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9">totalCashSumGet</a> () const</td></tr>
+<tr class="separator:ae9305650181a5f64f2b841213bc4c3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2eeb6d3075c752ecb27c60b8162dce6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6">totalCashlessSumGet</a> () const</td></tr>
+<tr class="separator:ad2eeb6d3075c752ecb27c60b8162dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46c87dff97a324b0a5849f04d949526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526">totalCashSumSet</a> (uint64_t cash)</td></tr>
+<tr class="separator:ab46c87dff97a324b0a5849f04d949526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352786c6d58cc009fac099dd3fc79c7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b">totalCashlessSumSet</a> (uint64_t cashless)</td></tr>
+<tr class="separator:a352786c6d58cc009fac099dd3fc79c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e21ad87bcfb62b969be9fabe95708c6"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6">total_sum_receipt_get</a> ()</td></tr>
+<tr class="separator:a4e21ad87bcfb62b969be9fabe95708c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f54ec75ef765fdc54e52cf47159400"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400">total_sum_display_get</a> ()</td></tr>
+<tr class="separator:ac0f54ec75ef765fdc54e52cf47159400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840a16b46003bbfdba84320a4cd50946"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946">total_tax_sum_get</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> num_tax) const</td></tr>
+<tr class="separator:a840a16b46003bbfdba84320a4cd50946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3af2150ca6ea50127be775887b6924"><td class="memItemLeft" align="right" valign="top">vector&lt; pair&lt; string, uint64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a6c3af2150ca6ea50127be775887b6924">getTaxes</a> ()</td></tr>
+<tr class="separator:a6c3af2150ca6ea50127be775887b6924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad73ea006bd33febb6d9163700d075b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4">total_sum_receipt_set</a> (uint64_t val)</td></tr>
+<tr class="separator:aad73ea006bd33febb6d9163700d075b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888391e56fc7e8beb347fcf62352e4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec">total_sum_display_set</a> (uint64_t val)</td></tr>
+<tr class="separator:a888391e56fc7e8beb347fcf62352e4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33a133347089525f51eae7b1ec1197b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b">total_tax_sum_set</a> (uint64_t *taxes_sum)</td></tr>
+<tr class="separator:ad33a133347089525f51eae7b1ec1197b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645bf3a52ef73c56b1ee8e8c7e928088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088">calc</a> (unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> cur_pos)</td></tr>
+<tr class="separator:a645bf3a52ef73c56b1ee8e8c7e928088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74bb0cf6b1fe801f06fdf70213ca978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978">clc_mthd_set</a> (int32_t mthd=<a class="el" href="classPosition__new.html#a3f792f67bfb906cbc1ebf3fafe6b0ebe">Position_new::CLEAR</a>, uint64_t sum=0)</td></tr>
+<tr class="separator:aa74bb0cf6b1fe801f06fdf70213ca978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15df8f0a589f65de87917644dfd6de2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a15df8f0a589f65de87917644dfd6de2d">clc_mthd_get</a> (int32_t mthd, uint64_t &amp;sum)</td></tr>
+<tr class="separator:a15df8f0a589f65de87917644dfd6de2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0655b5939fb0178fdd415820522f99b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0655b5939fb0178fdd415820522f99b4">requisites_update</a> (<a class="el" href="structConfig.html">Config</a> *config_data)</td></tr>
+<tr class="separator:a0655b5939fb0178fdd415820522f99b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47885abc3f3f096a53e8f1f91e86b051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a47885abc3f3f096a53e8f1f91e86b051">type_set</a> (<a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72">REC_TYPE</a> rec_type)</td></tr>
+<tr class="separator:a47885abc3f3f096a53e8f1f91e86b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac529bbd62eb0facda97b9b7cd5b4081a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac529bbd62eb0facda97b9b7cd5b4081a">getIsBuyer18yearsOld</a> () const</td></tr>
+<tr class="separator:ac529bbd62eb0facda97b9b7cd5b4081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d324917de5c8bf6c3beb67e42a536c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a10d324917de5c8bf6c3beb67e42a536c">setIsBuyer18yearsOld</a> (bool value)</td></tr>
+<tr class="separator:a10d324917de5c8bf6c3beb67e42a536c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a2755baf33a3fec7449f5ff238a728139"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a2755baf33a3fec7449f5ff238a728139">KKT_EMAIL_ADDRESS</a> = &quot;kassa@dreamkas.ru&quot;</td></tr>
+<tr class="separator:a2755baf33a3fec7449f5ff238a728139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0382e61f7f3da0d67415fa756a97fa99"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0382e61f7f3da0d67415fa756a97fa99">id</a></td></tr>
+<tr class="separator:a0382e61f7f3da0d67415fa756a97fa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532ecbadc095f03275620612b6d4905f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a532ecbadc095f03275620612b6d4905f">rem_id</a></td></tr>
+<tr class="separator:a532ecbadc095f03275620612b6d4905f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9f99404b202647a0e3f3a8ee3a8986"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classPosition__new.html">Position_new</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aef9f99404b202647a0e3f3a8ee3a8986">positions</a></td></tr>
+<tr class="separator:aef9f99404b202647a0e3f3a8ee3a8986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7cd613c001ea80dc78be98ca90642b"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4b7cd613c001ea80dc78be98ca90642b">pos_count</a></td></tr>
+<tr class="separator:a4b7cd613c001ea80dc78be98ca90642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a8511b2e07c3364c0dc4152558cd25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aa1a8511b2e07c3364c0dc4152558cd25">spec_clc_method</a></td></tr>
+<tr class="separator:aa1a8511b2e07c3364c0dc4152558cd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda791f69fb5eff8d82b5026f6241f1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#acda791f69fb5eff8d82b5026f6241f1a">clc_advance</a></td></tr>
+<tr class="separator:acda791f69fb5eff8d82b5026f6241f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75dad038c8b59c47ee664ae36fc6454"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac75dad038c8b59c47ee664ae36fc6454">clc_credit_pay</a></td></tr>
+<tr class="separator:ac75dad038c8b59c47ee664ae36fc6454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217693df9c1070c10bcb7a43905da76d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a217693df9c1070c10bcb7a43905da76d">advance</a></td></tr>
+<tr class="separator:a217693df9c1070c10bcb7a43905da76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a5226cdf08aec1d3d9d79ad26e2d39"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af5a5226cdf08aec1d3d9d79ad26e2d39">credit_pay</a></td></tr>
+<tr class="separator:af5a5226cdf08aec1d3d9d79ad26e2d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa085f3dc3366c162722c68822a193b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0aa085f3dc3366c162722c68822a193b">received</a></td></tr>
+<tr class="separator:a0aa085f3dc3366c162722c68822a193b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac73c61010d6668e2ca91a81b94278c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#afac73c61010d6668e2ca91a81b94278c">delivery</a></td></tr>
+<tr class="separator:afac73c61010d6668e2ca91a81b94278c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb39a8a1edd42276a3448438e83a0ec4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#adb39a8a1edd42276a3448438e83a0ec4">prepayment</a></td></tr>
+<tr class="separator:adb39a8a1edd42276a3448438e83a0ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827cffab7607a1f0a0435df135f891e3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a827cffab7607a1f0a0435df135f891e3">credit</a></td></tr>
+<tr class="separator:a827cffab7607a1f0a0435df135f891e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92daa01ef84cf8da424949b90548452"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ae92daa01ef84cf8da424949b90548452">shift_num</a></td></tr>
+<tr class="separator:ae92daa01ef84cf8da424949b90548452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191c31ad403ff94bbeecb61fafaa7029"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a191c31ad403ff94bbeecb61fafaa7029">fs_number</a></td></tr>
+<tr class="separator:a191c31ad403ff94bbeecb61fafaa7029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65557308df2d8fd6e447f15402cff0bb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a65557308df2d8fd6e447f15402cff0bb">cashier_name</a></td></tr>
+<tr class="separator:a65557308df2d8fd6e447f15402cff0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4c529a4270ab4b864148922786147a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a9e4c529a4270ab4b864148922786147a">cashier_sur_name</a></td></tr>
+<tr class="separator:a9e4c529a4270ab4b864148922786147a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5cf377b69e652059b9287fd1e4f5df"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0d5cf377b69e652059b9287fd1e4f5df">cashier_mid_name</a></td></tr>
+<tr class="separator:a0d5cf377b69e652059b9287fd1e4f5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1eaef3d4141d46f14f9c17d99e8d2f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0a1eaef3d4141d46f14f9c17d99e8d2f">cashier_inn_num</a></td></tr>
+<tr class="separator:a0a1eaef3d4141d46f14f9c17d99e8d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f20c2bbfbaa4a4d6c947dc17c8a5bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a04f20c2bbfbaa4a4d6c947dc17c8a5bd">isPaidCard</a></td></tr>
+<tr class="separator:a04f20c2bbfbaa4a4d6c947dc17c8a5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea512e88bc79feace57cbdbefd34994"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5ea512e88bc79feace57cbdbefd34994">isPaidCash</a></td></tr>
+<tr class="separator:a5ea512e88bc79feace57cbdbefd34994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda662f42e005fa3fe37392e7e7f82ab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#afda662f42e005fa3fe37392e7e7f82ab">organization_name</a></td></tr>
+<tr class="separator:afda662f42e005fa3fe37392e7e7f82ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e136e898c2d7ee6cab236e3f6712141"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0e136e898c2d7ee6cab236e3f6712141">calculation_address</a></td></tr>
+<tr class="separator:a0e136e898c2d7ee6cab236e3f6712141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a056aeffa31969d0f7889223550aea7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a6a056aeffa31969d0f7889223550aea7">calculation_place</a></td></tr>
+<tr class="separator:a6a056aeffa31969d0f7889223550aea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5031a4e4d8fe0c1044eaaf5ce339e247"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5031a4e4d8fe0c1044eaaf5ce339e247">organization_inn</a></td></tr>
+<tr class="separator:a5031a4e4d8fe0c1044eaaf5ce339e247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77610993cc459e94a27e0dcbae798120"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a77610993cc459e94a27e0dcbae798120">kkt_email</a></td></tr>
+<tr class="separator:a77610993cc459e94a27e0dcbae798120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704b4378b808305dc52ba43064fe0086"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a704b4378b808305dc52ba43064fe0086">kkt_reg_num</a></td></tr>
+<tr class="separator:a704b4378b808305dc52ba43064fe0086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6b35d58e53e37e83d820a447b64e10"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#acd6b35d58e53e37e83d820a447b64e10">kkt_plant_num</a></td></tr>
+<tr class="separator:acd6b35d58e53e37e83d820a447b64e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91118c42f236ee6bf06a7053c0e8d301"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a91118c42f236ee6bf06a7053c0e8d301">cur_tax_system</a></td></tr>
+<tr class="separator:a91118c42f236ee6bf06a7053c0e8d301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7de584fc696cc8e789695d651a51129"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af7de584fc696cc8e789695d651a51129">cur_agent</a></td></tr>
+<tr class="separator:af7de584fc696cc8e789695d651a51129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce9ccebfb19d4e30138363c4e723333"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0ce9ccebfb19d4e30138363c4e723333">offline_mode</a></td></tr>
+<tr class="separator:a0ce9ccebfb19d4e30138363c4e723333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b890f0b611783f5a69db05582518bf5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a1b890f0b611783f5a69db05582518bf5">ofd_name</a></td></tr>
+<tr class="separator:a1b890f0b611783f5a69db05582518bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc25a58211012f093f022f99ff4afbf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a8dc25a58211012f093f022f99ff4afbf">ofd_inn</a></td></tr>
+<tr class="separator:a8dc25a58211012f093f022f99ff4afbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905cf086d8ccc0757b9159f0c28daed4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a905cf086d8ccc0757b9159f0c28daed4">ofd_server_address</a></td></tr>
+<tr class="separator:a905cf086d8ccc0757b9159f0c28daed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73756cfe9a02f3c624dc3b763c25f91e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a73756cfe9a02f3c624dc3b763c25f91e">ofd_server_ip</a></td></tr>
+<tr class="separator:a73756cfe9a02f3c624dc3b763c25f91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf1138668c5859dba3686450994489e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#addf1138668c5859dba3686450994489e">check_reciept_address</a></td></tr>
+<tr class="separator:addf1138668c5859dba3686450994489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8c0eb24720608341f59443b71900d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7d8c0eb24720608341f59443b71900d8">ofd_server_port</a></td></tr>
+<tr class="separator:a7d8c0eb24720608341f59443b71900d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e90510c2a3eac19cc563e1798c2455f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a2e90510c2a3eac19cc563e1798c2455f">fd_number</a></td></tr>
+<tr class="separator:a2e90510c2a3eac19cc563e1798c2455f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9af10ee2d11cc0d80f116061d9d6774"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad9af10ee2d11cc0d80f116061d9d6774">fpd_number</a></td></tr>
+<tr class="separator:ad9af10ee2d11cc0d80f116061d9d6774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6264c41c1a9c6bfe2052d49fe34a149"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af6264c41c1a9c6bfe2052d49fe34a149">reciept_num</a></td></tr>
+<tr class="separator:af6264c41c1a9c6bfe2052d49fe34a149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92879103d87eee6ea8bf1406be4569ce"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a92879103d87eee6ea8bf1406be4569ce">type</a></td></tr>
+<tr class="separator:a92879103d87eee6ea8bf1406be4569ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15ba051b50ccf179b669e9eb5a60106"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af15ba051b50ccf179b669e9eb5a60106">tel_number</a></td></tr>
+<tr class="separator:af15ba051b50ccf179b669e9eb5a60106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb92e59ab9f3f404cfdec0af9ad2012"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5eb92e59ab9f3f404cfdec0af9ad2012">buyer_email</a></td></tr>
+<tr class="separator:a5eb92e59ab9f3f404cfdec0af9ad2012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6e4d4861a737446c8912a21751e6b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a9b6e4d4861a737446c8912a21751e6b0">date_sync</a></td></tr>
+<tr class="separator:a9b6e4d4861a737446c8912a21751e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699dca95aeddf44ffff6b0a4f48e3621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a699dca95aeddf44ffff6b0a4f48e3621">day</a></td></tr>
+<tr class="separator:a699dca95aeddf44ffff6b0a4f48e3621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff44c4a59fda77d3cf0c31c95185c61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5ff44c4a59fda77d3cf0c31c95185c61">month</a></td></tr>
+<tr class="separator:a5ff44c4a59fda77d3cf0c31c95185c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1836ea0d9b9d0a37cfa317cb8704dc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac1836ea0d9b9d0a37cfa317cb8704dc1">year</a></td></tr>
+<tr class="separator:ac1836ea0d9b9d0a37cfa317cb8704dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b42775a5dd65e33d7b961dca7fc3039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a2b42775a5dd65e33d7b961dca7fc3039">hours</a></td></tr>
+<tr class="separator:a2b42775a5dd65e33d7b961dca7fc3039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c40ca25a962f601a68cee7a873cf12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a51c40ca25a962f601a68cee7a873cf12">minutes</a></td></tr>
+<tr class="separator:a51c40ca25a962f601a68cee7a873cf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ea7f31b8079b82ce17cd0b86fe3610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a17ea7f31b8079b82ce17cd0b86fe3610">seconds</a></td></tr>
+<tr class="separator:a17ea7f31b8079b82ce17cd0b86fe3610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660eb7b9c1258313b2bf4c7ee73565d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a660eb7b9c1258313b2bf4c7ee73565d3">timezone</a></td></tr>
+<tr class="separator:a660eb7b9c1258313b2bf4c7ee73565d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99ce21f517610cdc5b0b3701dbbc0e9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab99ce21f517610cdc5b0b3701dbbc0e9">qr_code</a> [300]</td></tr>
+<tr class="separator:ab99ce21f517610cdc5b0b3701dbbc0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e3bd178e90b8ec79cd23b5ed1f2da5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a09e3bd178e90b8ec79cd23b5ed1f2da5">excess</a></td></tr>
+<tr class="separator:a09e3bd178e90b8ec79cd23b5ed1f2da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e8efb3a35f547df482491ad187bb52"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a56e8efb3a35f547df482491ad187bb52">excess_name</a> = &quot;Превышение номинальной стоимости аванса (предоплаты) над продажной ценой товара&quot;</td></tr>
+<tr class="separator:a56e8efb3a35f547df482491ad187bb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31429203b2e9e30de6f6091d58d44fc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPosition__new.html">Position_new</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a31429203b2e9e30de6f6091d58d44fc0">excess_of_cost</a></td></tr>
+<tr class="separator:a31429203b2e9e30de6f6091d58d44fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fde2eb67fb2ca65ae32547640756f9f"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a8fde2eb67fb2ca65ae32547640756f9f">credit_payment_name</a> = &quot;Оплата кредита&quot;</td></tr>
+<tr class="separator:a8fde2eb67fb2ca65ae32547640756f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c38cf5a3369b6bc2cdfb86cfd33471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPosition__new.html">Position_new</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af2c38cf5a3369b6bc2cdfb86cfd33471">credit_payment</a></td></tr>
+<tr class="separator:af2c38cf5a3369b6bc2cdfb86cfd33471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32301ace41f0bf93a12ac8e3f1785d6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af32301ace41f0bf93a12ac8e3f1785d6">discountName</a></td></tr>
+<tr class="separator:af32301ace41f0bf93a12ac8e3f1785d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512719a765ffe0282b65aa0d93d0f794"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a512719a765ffe0282b65aa0d93d0f794">discountValue</a> = 0</td></tr>
+<tr class="separator:a512719a765ffe0282b65aa0d93d0f794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0035195f2df4c03a568b6e69f3d48fc3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0035195f2df4c03a568b6e69f3d48fc3">discountType</a> = 0x00</td></tr>
+<tr class="separator:a0035195f2df4c03a568b6e69f3d48fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac895b39853ae0f2a5bd500b7dd638605"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac895b39853ae0f2a5bd500b7dd638605">marginName</a></td></tr>
+<tr class="separator:ac895b39853ae0f2a5bd500b7dd638605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c180611457097be9118bbf88d4be97"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a85c180611457097be9118bbf88d4be97">marginSumPubl</a> = 0</td></tr>
+<tr class="separator:a85c180611457097be9118bbf88d4be97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9eb64e3b75e56d8642c6c0e86a9384"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4b9eb64e3b75e56d8642c6c0e86a9384">isCabinetSend</a></td></tr>
+<tr class="separator:a4b9eb64e3b75e56d8642c6c0e86a9384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f7d6906a85e2515cbc7f72ab739601"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a87f7d6906a85e2515cbc7f72ab739601">payment_type</a></td></tr>
+<tr class="separator:a87f7d6906a85e2515cbc7f72ab739601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:a073603431c385f40d23b3038ba1af7ec"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a073603431c385f40d23b3038ba1af7ec">ERROR</a> = -1</td></tr>
+<tr class="separator:a073603431c385f40d23b3038ba1af7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a347e69bfc648f0b928151bc54a1f5"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a66a347e69bfc648f0b928151bc54a1f5">WARNING</a> = 1</td></tr>
+<tr class="separator:a66a347e69bfc648f0b928151bc54a1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4c31bcd8c919721cd61d20387c6641"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4d4c31bcd8c919721cd61d20387c6641">SUCCESS</a> = 0</td></tr>
+<tr class="separator:a4d4c31bcd8c919721cd61d20387c6641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246608451c078e980d07331abc582ab7"><td class="memItemLeft" align="right" valign="top">static const short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a246608451c078e980d07331abc582ab7">TLV_TYPE</a> = 3</td></tr>
+<tr class="separator:a246608451c078e980d07331abc582ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7fec06c99e6d8c6f9eb09fd7826395"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aeb7fec06c99e6d8c6f9eb09fd7826395">SAVE_RECEIPT</a> = 0x00</td></tr>
+<tr class="separator:aeb7fec06c99e6d8c6f9eb09fd7826395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a5cc4459efcece9166bd85eb50c59a"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a09a5cc4459efcece9166bd85eb50c59a">LOAD_RECEIPT</a> = 0x01</td></tr>
+<tr class="separator:a09a5cc4459efcece9166bd85eb50c59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406d76150dcac7ab824134e881cc6c76"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a406d76150dcac7ab824134e881cc6c76">POSITIONS</a> = 0x0000000000000001</td></tr>
+<tr class="separator:a406d76150dcac7ab824134e881cc6c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f113a5b238bd5fd40007f5963e8a1d7"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0f113a5b238bd5fd40007f5963e8a1d7">POS_COUNT</a> = 0x0000000000000002</td></tr>
+<tr class="separator:a0f113a5b238bd5fd40007f5963e8a1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2ebec9c26f47cdd148e703370de242"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7f2ebec9c26f47cdd148e703370de242">SPEC_CLC_METHOD</a> = 0x0000000000000004</td></tr>
+<tr class="separator:a7f2ebec9c26f47cdd148e703370de242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3256e10e8918a6f935179c3d8b88e9"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aba3256e10e8918a6f935179c3d8b88e9">CLC_ADVANE</a> = 0x0000000000000008</td></tr>
+<tr class="separator:aba3256e10e8918a6f935179c3d8b88e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67974ec07e7237f39acc98b9e307726"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af67974ec07e7237f39acc98b9e307726">CLC_CREDIT_PAY</a> = 0x0000000000000010</td></tr>
+<tr class="separator:af67974ec07e7237f39acc98b9e307726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44ef0fcb10e74c11e11b0a2c02aada0"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab44ef0fcb10e74c11e11b0a2c02aada0">ADVANCE_SUM</a> = 0x0000000000000020</td></tr>
+<tr class="separator:ab44ef0fcb10e74c11e11b0a2c02aada0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414ff644cd7ab3ca1d4390e1359a5932"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a414ff644cd7ab3ca1d4390e1359a5932">CREDIT_PAY_SUM</a> = 0x0000000000000040</td></tr>
+<tr class="separator:a414ff644cd7ab3ca1d4390e1359a5932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1e20bb6b83737e636f0f44384230a2"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a8b1e20bb6b83737e636f0f44384230a2">RECEIVED</a> = 0x0000000000000080</td></tr>
+<tr class="separator:a8b1e20bb6b83737e636f0f44384230a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0044c75065e3568c5aadedb381cef003"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0044c75065e3568c5aadedb381cef003">DELIVERY</a> = 0x000000000000100</td></tr>
+<tr class="separator:a0044c75065e3568c5aadedb381cef003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7360bcce3ff094e576931cb77e8a0902"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7360bcce3ff094e576931cb77e8a0902">SHIFT_NUM</a> = 0x0000000000000200</td></tr>
+<tr class="separator:a7360bcce3ff094e576931cb77e8a0902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b741d1743cdf1951afc368322bc646d"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4b741d1743cdf1951afc368322bc646d">FS_NUMBER</a> = 0x0000000000000400</td></tr>
+<tr class="separator:a4b741d1743cdf1951afc368322bc646d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c958677c57ad46c6cfcbeaba88c05b"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac4c958677c57ad46c6cfcbeaba88c05b">CASHIER_NAME</a> = 0x0000000000000800</td></tr>
+<tr class="separator:ac4c958677c57ad46c6cfcbeaba88c05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0619b4d7fe025e6b168d549475e12d6"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab0619b4d7fe025e6b168d549475e12d6">CASHIER_SUR_NAME</a> = 0x0000000000001000</td></tr>
+<tr class="separator:ab0619b4d7fe025e6b168d549475e12d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8dd1ce0fb5e53a40c48418a74f35c8"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ada8dd1ce0fb5e53a40c48418a74f35c8">CASHIER_MID_NAME</a> = 0x0000000000002000</td></tr>
+<tr class="separator:ada8dd1ce0fb5e53a40c48418a74f35c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72939c6eae2db1909f1d2255b09bf97a"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a72939c6eae2db1909f1d2255b09bf97a">CASHIER_INN</a> = 0x0000000000004000</td></tr>
+<tr class="separator:a72939c6eae2db1909f1d2255b09bf97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5167b5b481856a9da30086ef25233149"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5167b5b481856a9da30086ef25233149">IS_PAID_CARD</a> = 0x0000000000008000</td></tr>
+<tr class="separator:a5167b5b481856a9da30086ef25233149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ce0422355c989d83de8b0d017f4f6f"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab6ce0422355c989d83de8b0d017f4f6f">IS_PAID_CASH</a> = 0x0000000000010000</td></tr>
+<tr class="separator:ab6ce0422355c989d83de8b0d017f4f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8d3405ad0e693f4c539082d7e60f50"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a6b8d3405ad0e693f4c539082d7e60f50">ORGANIZATION_NAME</a> = 0x0000000000020000</td></tr>
+<tr class="separator:a6b8d3405ad0e693f4c539082d7e60f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75128f46cd5335b8d203a3e4246274fa"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a75128f46cd5335b8d203a3e4246274fa">CALULATION_ADRESS</a> = 0x0000000000040000</td></tr>
+<tr class="separator:a75128f46cd5335b8d203a3e4246274fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3c63d591e81de6e7ee2e54d3b2bcbf8"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab3c63d591e81de6e7ee2e54d3b2bcbf8">CALCULATION_PLACE</a> = 0x0000000000080000</td></tr>
+<tr class="separator:ab3c63d591e81de6e7ee2e54d3b2bcbf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fff632c3fc792a2870c32b00bd3ed2d"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a6fff632c3fc792a2870c32b00bd3ed2d">ORGANIZATION_INN</a> = 0x0000000000100000</td></tr>
+<tr class="separator:a6fff632c3fc792a2870c32b00bd3ed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8546e9b570168ed08acc00727e4e75ca"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a8546e9b570168ed08acc00727e4e75ca">KKT_EMAIL</a> = 0x0000000000200000</td></tr>
+<tr class="separator:a8546e9b570168ed08acc00727e4e75ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3f72b16cce62ee51f860afa0addd86"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0a3f72b16cce62ee51f860afa0addd86">KKT_REG_NUM</a> = 0x0000000000400000</td></tr>
+<tr class="separator:a0a3f72b16cce62ee51f860afa0addd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0ae39e6102835ea7de1b712e909b6a"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a9a0ae39e6102835ea7de1b712e909b6a">KKT_PLANT_NUM</a> = 0x0000000000800000</td></tr>
+<tr class="separator:a9a0ae39e6102835ea7de1b712e909b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfccafa6668cce11e7ccd6318776185"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aabfccafa6668cce11e7ccd6318776185">CUR_TAX_SYSTEM</a> = 0x0000000001000000</td></tr>
+<tr class="separator:aabfccafa6668cce11e7ccd6318776185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe99204629a04b9783c6f476ef8e7651"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#afe99204629a04b9783c6f476ef8e7651">CUR_AGENT</a> = 0x0000000002000000</td></tr>
+<tr class="separator:afe99204629a04b9783c6f476ef8e7651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd904407d0b60f0332a75606c9f6292"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0bd904407d0b60f0332a75606c9f6292">OFFLINE_MODE</a> = 0x0000000004000000</td></tr>
+<tr class="separator:a0bd904407d0b60f0332a75606c9f6292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1caa931ef3e10d3ee8184ef63705787"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#af1caa931ef3e10d3ee8184ef63705787">OFD_NAME</a> = 0x0000000008000000</td></tr>
+<tr class="separator:af1caa931ef3e10d3ee8184ef63705787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad869ea7b6c65edb5f0ee923b375084b8"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad869ea7b6c65edb5f0ee923b375084b8">OFD_INN</a> = 0x0000000010000000</td></tr>
+<tr class="separator:ad869ea7b6c65edb5f0ee923b375084b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f6f4ca5a41b151b6cf7bdc3faae8f5"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a88f6f4ca5a41b151b6cf7bdc3faae8f5">OFD_SERVER_ADDRESS</a> = 0x0000000020000000</td></tr>
+<tr class="separator:a88f6f4ca5a41b151b6cf7bdc3faae8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dece05995a0955148742e8f9c2686b3"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7dece05995a0955148742e8f9c2686b3">OFD_SERVER_IP</a> = 0x0000000040000000</td></tr>
+<tr class="separator:a7dece05995a0955148742e8f9c2686b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8deae488fb140d2f4d29c7fe059914f"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad8deae488fb140d2f4d29c7fe059914f">OFD_SERVER_PORT</a> = 0x0000000080000000</td></tr>
+<tr class="separator:ad8deae488fb140d2f4d29c7fe059914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4319dbbf24bb9c497a0a6f4d852e645f"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4319dbbf24bb9c497a0a6f4d852e645f">CHECK_RECEIPT_ADDRESS</a> = 0x0000000100000000</td></tr>
+<tr class="separator:a4319dbbf24bb9c497a0a6f4d852e645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9468ba213672a6baa75f2eb388cc82d6"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a9468ba213672a6baa75f2eb388cc82d6">FD_NUMBER</a> = 0x0000000200000000</td></tr>
+<tr class="separator:a9468ba213672a6baa75f2eb388cc82d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac974d3b9edf7cf99e7665b9e780bbdd9"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac974d3b9edf7cf99e7665b9e780bbdd9">FPD_NUMBER</a> = 0x0000000400000000</td></tr>
+<tr class="separator:ac974d3b9edf7cf99e7665b9e780bbdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d863a864d166fba3258a824821e48b"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac7d863a864d166fba3258a824821e48b">RECEIPT_NUM</a> = 0x00000000800000000</td></tr>
+<tr class="separator:ac7d863a864d166fba3258a824821e48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f697b62c97446530e9d6f75065fb266"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7f697b62c97446530e9d6f75065fb266">TYPE</a> = 0x0000001000000000</td></tr>
+<tr class="separator:a7f697b62c97446530e9d6f75065fb266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e62606bf940886605681ce029dee57"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a26e62606bf940886605681ce029dee57">TEL_NUMBER</a> = 0x0000002000000000</td></tr>
+<tr class="separator:a26e62606bf940886605681ce029dee57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206226dca6e9a51719ace58934074a40"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a206226dca6e9a51719ace58934074a40">BUYER_EMAIL</a> = 0x0000004000000000</td></tr>
+<tr class="separator:a206226dca6e9a51719ace58934074a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7218afaf962d55995986ac8aeadb3d5"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ae7218afaf962d55995986ac8aeadb3d5">DAY</a> = 0x0000008000000000</td></tr>
+<tr class="separator:ae7218afaf962d55995986ac8aeadb3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4157545346c1de39a18d6999395588e7"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a4157545346c1de39a18d6999395588e7">MONTH</a> = 0x0000010000000000</td></tr>
+<tr class="separator:a4157545346c1de39a18d6999395588e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f41229756b2ad495c6fb989887b4aa3"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a5f41229756b2ad495c6fb989887b4aa3">YEAR</a> = 0x0000020000000000</td></tr>
+<tr class="separator:a5f41229756b2ad495c6fb989887b4aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cfe24e9eb36a204e10a76c423b2e5e"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ad4cfe24e9eb36a204e10a76c423b2e5e">HOUR</a> = 0x0000040000000000</td></tr>
+<tr class="separator:ad4cfe24e9eb36a204e10a76c423b2e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e580a68907b78b01406272ff623143"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a54e580a68907b78b01406272ff623143">MINUTES</a> = 0x0000080000000000</td></tr>
+<tr class="separator:a54e580a68907b78b01406272ff623143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe6a8e1359e2472da3eac5ae36f4313"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#acbe6a8e1359e2472da3eac5ae36f4313">SECONDS</a> = 0x0000100000000000</td></tr>
+<tr class="separator:acbe6a8e1359e2472da3eac5ae36f4313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802ee1372b9c31e74fef57001ecda59a"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a802ee1372b9c31e74fef57001ecda59a">QR_CODE</a> = 0x0000200000000000</td></tr>
+<tr class="separator:a802ee1372b9c31e74fef57001ecda59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864c9a0e5cf4fa179f79d56e05ab4f79"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a864c9a0e5cf4fa179f79d56e05ab4f79">IS_CABINET_SEND</a> = 0x0000400000000000</td></tr>
+<tr class="separator:a864c9a0e5cf4fa179f79d56e05ab4f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97aaef8766f3e4130615db011a12ff1"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ac97aaef8766f3e4130615db011a12ff1">TOTAL_SUM_RECEIPT</a> = 0x0000800000000000</td></tr>
+<tr class="separator:ac97aaef8766f3e4130615db011a12ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72687e376c9a05aaff11a55dc740a951"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a72687e376c9a05aaff11a55dc740a951">TIMEZONE</a> = 0x0001000000000000</td></tr>
+<tr class="separator:a72687e376c9a05aaff11a55dc740a951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f731787292654b51f2c99186d493a4"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#ab3f731787292654b51f2c99186d493a4">EXCESS</a> = 0x0002000000000000</td></tr>
+<tr class="separator:ab3f731787292654b51f2c99186d493a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5d51948f054ada4fe2892b972cd36a"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a1e5d51948f054ada4fe2892b972cd36a">TOTAL_SUM_DISPLAY</a> = 0x0004000000000000</td></tr>
+<tr class="separator:a1e5d51948f054ada4fe2892b972cd36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa9b96a7f2e0e839893fcec84e069db"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#abfa9b96a7f2e0e839893fcec84e069db">TOTAL_TAX_SUM</a> = 0x0008000000000000</td></tr>
+<tr class="separator:abfa9b96a7f2e0e839893fcec84e069db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe46ea7d83699389c5768ff69a153b89"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#afe46ea7d83699389c5768ff69a153b89">PREPAYMENT</a> = 0x0010000000000000</td></tr>
+<tr class="separator:afe46ea7d83699389c5768ff69a153b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0436c73a5757395897659539f59de611"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0436c73a5757395897659539f59de611">CREDIT</a> = 0x0020000000000000</td></tr>
+<tr class="separator:a0436c73a5757395897659539f59de611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40be3557b2792bf3e57f527ba1746a8e"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a40be3557b2792bf3e57f527ba1746a8e">SPEC_CLC_MTHD</a> = 0x0040000000000000</td></tr>
+<tr class="separator:a40be3557b2792bf3e57f527ba1746a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c285562b91bdd3f62f6ea4263327af"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a40c285562b91bdd3f62f6ea4263327af">REM_ID</a> = 0x0080000000000000</td></tr>
+<tr class="separator:a40c285562b91bdd3f62f6ea4263327af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7afe2745153c966b6e9c402fe5750e11"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a7afe2745153c966b6e9c402fe5750e11">ID</a> = 0x0100000000000000</td></tr>
+<tr class="separator:a7afe2745153c966b6e9c402fe5750e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea02a298784e01eccc6e103235c45a42"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#aea02a298784e01eccc6e103235c45a42">CASH_SUM</a> = 0x0200000000000000</td></tr>
+<tr class="separator:aea02a298784e01eccc6e103235c45a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e79742f3207222200f55f0d64cfcca"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a13e79742f3207222200f55f0d64cfcca">CASHLESS_SUM</a> = 0x0400000000000000</td></tr>
+<tr class="separator:a13e79742f3207222200f55f0d64cfcca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b33aabddc1eab337496e9db3a8a4656"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a0b33aabddc1eab337496e9db3a8a4656">ALL</a> = 0x0fffffffffffffff</td></tr>
+<tr class="separator:a0b33aabddc1eab337496e9db3a8a4656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641620961cce03cec80ee0d9f967abf1"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceipt__new.html#a641620961cce03cec80ee0d9f967abf1">FIELDS_FOR_CABINET</a></td></tr>
+<tr class="separator:a641620961cce03cec80ee0d9f967abf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a1751f267d04a5404de6f554fb65a2b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1751f267d04a5404de6f554fb65a2b46">&#9670;&nbsp;</a></span>PAYMENT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46">Receipt_new::PAYMENT_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46a55d850b6c6e196290a720cb9b64ba576"></a>PAYMENT_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46a4a03738cde9f283b8d5d51ddad5f2353"></a>PAYMENT_CASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46a79573aec9cd0210328597857a7e0a332"></a>PAYMENT_CASHLESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46a0b9edbbdaa63f675fe2bc6c3a34b6e8c"></a>PAYMENT_ADVANCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46aaed161dcd76190c534e11283e1b93c68"></a>PAYMENT_CREDIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1751f267d04a5404de6f554fb65a2b46aad02bb5e11bac57430fd40b76450f245"></a>PAYMENT_EXCHANGE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2f9a1600940ad1a40985f4421c1b7e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9a1600940ad1a40985f4421c1b7e72">&#9670;&nbsp;</a></span>REC_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72">Receipt_new::REC_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a2f9a1600940ad1a40985f4421c1b7e72acaaddec3d587e332db0612442075f73c"></a>SALE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2f9a1600940ad1a40985f4421c1b7e72a024330f298648db96a5ef9194195b4b3"></a>RETURN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2f9a1600940ad1a40985f4421c1b7e72a9e0be1f3005eb253b7bec3de6a98c856"></a>PURHASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2f9a1600940ad1a40985f4421c1b7e72ac28d281d100fcbde35731155727b9632"></a>RETURN_PURHASE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5725a8f532604e690991ea619181672f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5725a8f532604e690991ea619181672f">&#9670;&nbsp;</a></span>Receipt_new() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Receipt_new::Receipt_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a5725a8f532604e690991ea619181672f_cgraph.png" border="0" usemap="#classReceipt__new_a5725a8f532604e690991ea619181672f_cgraph" alt=""/></div>
+<map name="classReceipt__new_a5725a8f532604e690991ea619181672f_cgraph" id="classReceipt__new_a5725a8f532604e690991ea619181672f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,56,188,83"/>
+<area shape="rect"  href="classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="236,56,371,83"/>
+<area shape="rect"  href="classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="419,5,628,32"/>
+<area shape="rect"  href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="430,107,617,149"/>
+<area shape="rect"  href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="431,56,615,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e842ce303bb16c5a598c12160f4f6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e842ce303bb16c5a598c12160f4f6b3">&#9670;&nbsp;</a></span>Receipt_new() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Receipt_new::Receipt_new </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classReceipt__new.html">Receipt_new</a> &amp;&#160;</td>
+          <td class="paramname"><em>recNew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a8e842ce303bb16c5a598c12160f4f6b3_cgraph.png" border="0" usemap="#classReceipt__new_a8e842ce303bb16c5a598c12160f4f6b3_cgraph" alt=""/></div>
+<map name="classReceipt__new_a8e842ce303bb16c5a598c12160f4f6b3_cgraph" id="classReceipt__new_a8e842ce303bb16c5a598c12160f4f6b3_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,64,188,91"/>
+<area shape="rect"  href="classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9" title=" " alt="" coords="248,5,459,32"/>
+<area shape="rect"  href="classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6" title=" " alt="" coords="260,57,447,98"/>
+<area shape="rect"  href="classReceipt__new.html#ac529bbd62eb0facda97b9b7cd5b4081a" title=" " alt="" coords="236,123,471,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2df6fd549829ff396feb26810152e295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df6fd549829ff396feb26810152e295">&#9670;&nbsp;</a></span>~Receipt_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Receipt_new::~Receipt_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a2df6fd549829ff396feb26810152e295_cgraph.png" border="0" usemap="#classReceipt__new_a2df6fd549829ff396feb26810152e295_cgraph" alt=""/></div>
+<map name="classReceipt__new_a2df6fd549829ff396feb26810152e295_cgraph" id="classReceipt__new_a2df6fd549829ff396feb26810152e295_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,64,196,91"/>
+<area shape="rect"  href="classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="244,64,379,91"/>
+<area shape="rect"  href="classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="427,5,636,32"/>
+<area shape="rect"  href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="438,57,625,98"/>
+<area shape="rect"  href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="439,123,623,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="af2b431ce590ad4f2aa578286bef4da20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b431ce590ad4f2aa578286bef4da20">&#9670;&nbsp;</a></span>add_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::add_position </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPosition__new.html">Position_new</a> *&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a645bf3a52ef73c56b1ee8e8c7e928088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645bf3a52ef73c56b1ee8e8c7e928088">&#9670;&nbsp;</a></span>calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::calc </td>
+          <td>(</td>
+          <td class="paramtype">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>cur_pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a645bf3a52ef73c56b1ee8e8c7e928088_cgraph.png" border="0" usemap="#classReceipt__new_a645bf3a52ef73c56b1ee8e8c7e928088_cgraph" alt=""/></div>
+<map name="classReceipt__new_a645bf3a52ef73c56b1ee8e8c7e928088_cgraph" id="classReceipt__new_a645bf3a52ef73c56b1ee8e8c7e928088_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,181,136,207"/>
+<area shape="rect"  href="classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; Ð¿ÐµÑÐµÐ²Ð¾Ð´ Ð¸Ð· double Ð² uint64_t Ñ Ð°ÑÐ¸ÑÐ¼ÐµÑÐ¸ÑÐµÑÐºÐ¸Ð¼ Ð¾ÐºÑÑÐ³Ð»ÐµÐ½Ð¸ÐµÐ¼" alt="" coords="184,5,411,47"/>
+<area shape="rect"  href="classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="229,71,365,98"/>
+<area shape="rect"  href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="204,122,391,149"/>
+<area shape="rect"  href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="231,173,364,215"/>
+<area shape="rect"  href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="232,239,363,280"/>
+<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="232,304,363,345"/>
+<area shape="rect"  href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="232,369,363,411"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15df8f0a589f65de87917644dfd6de2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15df8f0a589f65de87917644dfd6de2d">&#9670;&nbsp;</a></span>clc_mthd_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::clc_mthd_get </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mthd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>sum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa74bb0cf6b1fe801f06fdf70213ca978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74bb0cf6b1fe801f06fdf70213ca978">&#9670;&nbsp;</a></span>clc_mthd_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::clc_mthd_set </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mthd</em> = <code><a class="el" href="classPosition__new.html#a3f792f67bfb906cbc1ebf3fafe6b0ebe">Position_new::CLEAR</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>sum</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb21c179db2971859d421ca95126179a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb21c179db2971859d421ca95126179a">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::clear </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_aeb21c179db2971859d421ca95126179a_cgraph.png" border="0" usemap="#classReceipt__new_aeb21c179db2971859d421ca95126179a_cgraph" alt=""/></div>
+<map name="classReceipt__new_aeb21c179db2971859d421ca95126179a_cgraph" id="classReceipt__new_aeb21c179db2971859d421ca95126179a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,64,140,91"/>
+<area shape="rect"  href="classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="188,5,397,32"/>
+<area shape="rect"  href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="199,57,386,98"/>
+<area shape="rect"  href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="201,123,385,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9d9b0169ede65934448d81819eabf557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9b0169ede65934448d81819eabf557">&#9670;&nbsp;</a></span>del_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::del_position </td>
+          <td>(</td>
+          <td class="paramtype">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>pos_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a9d9b0169ede65934448d81819eabf557_cgraph.png" border="0" usemap="#classReceipt__new_a9d9b0169ede65934448d81819eabf557_cgraph" alt=""/></div>
+<map name="classReceipt__new_a9d9b0169ede65934448d81819eabf557_cgraph" id="classReceipt__new_a9d9b0169ede65934448d81819eabf557_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,180,39"/>
+<area shape="rect"  href="classReceipt__new.html#a4de2e566cf02c47e1be106ebd6504f09" title=" " alt="" coords="228,5,387,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75349ba0f42d64767ac4e24201c7994d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75349ba0f42d64767ac4e24201c7994d">&#9670;&nbsp;</a></span>display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::display </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a75349ba0f42d64767ac4e24201c7994d_cgraph.png" border="0" usemap="#classReceipt__new_a75349ba0f42d64767ac4e24201c7994d_cgraph" alt=""/></div>
+<map name="classReceipt__new_a75349ba0f42d64767ac4e24201c7994d_cgraph" id="classReceipt__new_a75349ba0f42d64767ac4e24201c7994d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,85,152,112"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="286,5,325,32"/>
+<area shape="rect"  href="classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9" title=" " alt="" coords="200,56,411,83"/>
+<area shape="rect"  href="classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6" title=" " alt="" coords="212,107,399,149"/>
+<area shape="rect"  href="classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="240,173,371,214"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7654b5c6558b8776c0fa3912115b2410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7654b5c6558b8776c0fa3912115b2410">&#9670;&nbsp;</a></span>ExternalReceiptInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::ExternalReceiptInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html">JSON::JSON_EXTERNAL_PURCHASE</a> *&#160;</td>
+          <td class="paramname"><em>external_purchase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a7654b5c6558b8776c0fa3912115b2410_cgraph.png" border="0" usemap="#classReceipt__new_a7654b5c6558b8776c0fa3912115b2410_cgraph" alt=""/></div>
+<map name="classReceipt__new_a7654b5c6558b8776c0fa3912115b2410_cgraph" id="classReceipt__new_a7654b5c6558b8776c0fa3912115b2410_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,368,223,395"/>
+<area shape="rect"  href="classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="551,5,687,32"/>
+<area shape="rect"  href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="525,56,712,83"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="525,437,712,464"/>
+<area shape="rect"  href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="552,238,685,279"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="297,495,431,537"/>
+<area shape="rect"  href="classPosition__new.html#a1ee5e75dc660ecdeea7f1add1f19c03e" title=" " alt="" coords="271,444,457,471"/>
+<area shape="rect"  href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="553,303,684,345"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="275,561,453,588"/>
+<area shape="rect"  href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="299,185,429,212"/>
+<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="553,369,684,410"/>
+<area shape="rect"  href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="272,612,456,639"/>
+<area shape="rect"  href="classReceipt__new.html#a4e21ad87bcfb62b969be9fabe95708c6" title=" " alt="" coords="299,663,429,705"/>
+<area shape="rect"  href="classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; Ð¿ÐµÑÐµÐ²Ð¾Ð´ Ð¸Ð· double Ð² uint64_t Ñ Ð°ÑÐ¸ÑÐ¼ÐµÑÐ¸ÑÐµÑÐºÐ¸Ð¼ Ð¾ÐºÑÑÐ³Ð»ÐµÐ½Ð¸ÐµÐ¼" alt="" coords="505,107,732,149"/>
+<area shape="rect"  href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="553,173,684,214"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40bfb39e752b7d0b1d253adfec0b29f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bfb39e752b7d0b1d253adfec0b29f8">&#9670;&nbsp;</a></span>find_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPosition__new.html">Position_new</a> * Receipt_new::find_position </td>
+          <td>(</td>
+          <td class="paramtype">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>pos_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad539a8f270ccd7422c7c8a579f17fe5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad539a8f270ccd7422c7c8a579f17fe5f">&#9670;&nbsp;</a></span>getCashierFullName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::getCashierFullName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac529bbd62eb0facda97b9b7cd5b4081a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac529bbd62eb0facda97b9b7cd5b4081a">&#9670;&nbsp;</a></span>getIsBuyer18yearsOld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::getIsBuyer18yearsOld </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c3af2150ca6ea50127be775887b6924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3af2150ca6ea50127be775887b6924">&#9670;&nbsp;</a></span>getTaxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; pair&lt; string, uint64_t &gt; &gt; Receipt_new::getTaxes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a6c3af2150ca6ea50127be775887b6924_cgraph.png" border="0" usemap="#classReceipt__new_a6c3af2150ca6ea50127be775887b6924_cgraph" alt=""/></div>
+<map name="classReceipt__new_a6c3af2150ca6ea50127be775887b6924_cgraph" id="classReceipt__new_a6c3af2150ca6ea50127be775887b6924_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,165,39"/>
+<area shape="rect"  href="classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="213,5,344,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c8aeeafa2454a10269f43d8fe875dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8aeeafa2454a10269f43d8fe875dfb">&#9670;&nbsp;</a></span>is_receipt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::is_receipt </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mthd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24d040f15326e5670a0de99b44662edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24d040f15326e5670a0de99b44662edf">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classReceipt__new.html">Receipt_new</a> &amp; Receipt_new::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classReceipt__new.html">Receipt_new</a> &amp;&#160;</td>
+          <td class="paramname"><em>recNew</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a24d040f15326e5670a0de99b44662edf_cgraph.png" border="0" usemap="#classReceipt__new_a24d040f15326e5670a0de99b44662edf_cgraph" alt=""/></div>
+<map name="classReceipt__new_a24d040f15326e5670a0de99b44662edf_cgraph" id="classReceipt__new_a24d040f15326e5670a0de99b44662edf_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect"  href="classReceipt__new.html#ac529bbd62eb0facda97b9b7cd5b4081a" title=" " alt="" coords="215,5,449,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4de2e566cf02c47e1be106ebd6504f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4de2e566cf02c47e1be106ebd6504f09">&#9670;&nbsp;</a></span>pos_auto_numbering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::pos_auto_numbering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0655b5939fb0178fdd415820522f99b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0655b5939fb0178fdd415820522f99b4">&#9670;&nbsp;</a></span>requisites_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::requisites_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>config_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classReceipt__new_a0655b5939fb0178fdd415820522f99b4_cgraph.png" border="0" usemap="#classReceipt__new_a0655b5939fb0178fdd415820522f99b4_cgraph" alt=""/></div>
+<map name="classReceipt__new_a0655b5939fb0178fdd415820522f99b4_cgraph" id="classReceipt__new_a0655b5939fb0178fdd415820522f99b4_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect"  href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0" title=" " alt="" coords="216,13,368,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10d324917de5c8bf6c3beb67e42a536c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d324917de5c8bf6c3beb67e42a536c">&#9670;&nbsp;</a></span>setIsBuyer18yearsOld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::setIsBuyer18yearsOld </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9dd056f7ca215e65c0372b5fcda043c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9dd056f7ca215e65c0372b5fcda043c">&#9670;&nbsp;</a></span>setTaxes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::setTaxes </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classTaxes.html">Taxes</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>taxes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51e2f9ce19acc05b040aea01970d3698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e2f9ce19acc05b040aea01970d3698">&#9670;&nbsp;</a></span>sum_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::sum_get </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mthd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0f54ec75ef765fdc54e52cf47159400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f54ec75ef765fdc54e52cf47159400">&#9670;&nbsp;</a></span>total_sum_display_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::total_sum_display_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a888391e56fc7e8beb347fcf62352e4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888391e56fc7e8beb347fcf62352e4ec">&#9670;&nbsp;</a></span>total_sum_display_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::total_sum_display_set </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e21ad87bcfb62b969be9fabe95708c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e21ad87bcfb62b969be9fabe95708c6">&#9670;&nbsp;</a></span>total_sum_receipt_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::total_sum_receipt_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad73ea006bd33febb6d9163700d075b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad73ea006bd33febb6d9163700d075b4">&#9670;&nbsp;</a></span>total_sum_receipt_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::total_sum_receipt_set </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a840a16b46003bbfdba84320a4cd50946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840a16b46003bbfdba84320a4cd50946">&#9670;&nbsp;</a></span>total_tax_sum_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::total_tax_sum_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>num_tax</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad33a133347089525f51eae7b1ec1197b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33a133347089525f51eae7b1ec1197b">&#9670;&nbsp;</a></span>total_tax_sum_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::total_tax_sum_set </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>taxes_sum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2eeb6d3075c752ecb27c60b8162dce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2eeb6d3075c752ecb27c60b8162dce6">&#9670;&nbsp;</a></span>totalCashlessSumGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::totalCashlessSumGet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a352786c6d58cc009fac099dd3fc79c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352786c6d58cc009fac099dd3fc79c7b">&#9670;&nbsp;</a></span>totalCashlessSumSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::totalCashlessSumSet </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>cashless</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9305650181a5f64f2b841213bc4c3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9305650181a5f64f2b841213bc4c3b9">&#9670;&nbsp;</a></span>totalCashSumGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::totalCashSumGet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab46c87dff97a324b0a5849f04d949526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46c87dff97a324b0a5849f04d949526">&#9670;&nbsp;</a></span>totalCashSumSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::totalCashSumSet </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>cash</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47885abc3f3f096a53e8f1f91e86b051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47885abc3f3f096a53e8f1f91e86b051">&#9670;&nbsp;</a></span>type_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Receipt_new::type_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72">REC_TYPE</a>&#160;</td>
+          <td class="paramname"><em>rec_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a217693df9c1070c10bcb7a43905da76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217693df9c1070c10bcb7a43905da76d">&#9670;&nbsp;</a></span>advance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::advance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab44ef0fcb10e74c11e11b0a2c02aada0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44ef0fcb10e74c11e11b0a2c02aada0">&#9670;&nbsp;</a></span>ADVANCE_SUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::ADVANCE_SUM = 0x0000000000000020</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b33aabddc1eab337496e9db3a8a4656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b33aabddc1eab337496e9db3a8a4656">&#9670;&nbsp;</a></span>ALL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::ALL = 0x0fffffffffffffff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5eb92e59ab9f3f404cfdec0af9ad2012"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb92e59ab9f3f404cfdec0af9ad2012">&#9670;&nbsp;</a></span>buyer_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::buyer_email</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a206226dca6e9a51719ace58934074a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206226dca6e9a51719ace58934074a40">&#9670;&nbsp;</a></span>BUYER_EMAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::BUYER_EMAIL = 0x0000004000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e136e898c2d7ee6cab236e3f6712141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e136e898c2d7ee6cab236e3f6712141">&#9670;&nbsp;</a></span>calculation_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::calculation_address</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a056aeffa31969d0f7889223550aea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a056aeffa31969d0f7889223550aea7">&#9670;&nbsp;</a></span>calculation_place</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::calculation_place</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3c63d591e81de6e7ee2e54d3b2bcbf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c63d591e81de6e7ee2e54d3b2bcbf8">&#9670;&nbsp;</a></span>CALCULATION_PLACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CALCULATION_PLACE = 0x0000000000080000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75128f46cd5335b8d203a3e4246274fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75128f46cd5335b8d203a3e4246274fa">&#9670;&nbsp;</a></span>CALULATION_ADRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CALULATION_ADRESS = 0x0000000000040000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea02a298784e01eccc6e103235c45a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea02a298784e01eccc6e103235c45a42">&#9670;&nbsp;</a></span>CASH_SUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASH_SUM = 0x0200000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72939c6eae2db1909f1d2255b09bf97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72939c6eae2db1909f1d2255b09bf97a">&#9670;&nbsp;</a></span>CASHIER_INN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASHIER_INN = 0x0000000000004000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a1eaef3d4141d46f14f9c17d99e8d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1eaef3d4141d46f14f9c17d99e8d2f">&#9670;&nbsp;</a></span>cashier_inn_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::cashier_inn_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d5cf377b69e652059b9287fd1e4f5df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5cf377b69e652059b9287fd1e4f5df">&#9670;&nbsp;</a></span>cashier_mid_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::cashier_mid_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada8dd1ce0fb5e53a40c48418a74f35c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8dd1ce0fb5e53a40c48418a74f35c8">&#9670;&nbsp;</a></span>CASHIER_MID_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASHIER_MID_NAME = 0x0000000000002000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65557308df2d8fd6e447f15402cff0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65557308df2d8fd6e447f15402cff0bb">&#9670;&nbsp;</a></span>cashier_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::cashier_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4c958677c57ad46c6cfcbeaba88c05b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c958677c57ad46c6cfcbeaba88c05b">&#9670;&nbsp;</a></span>CASHIER_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASHIER_NAME = 0x0000000000000800</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e4c529a4270ab4b864148922786147a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4c529a4270ab4b864148922786147a">&#9670;&nbsp;</a></span>cashier_sur_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::cashier_sur_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0619b4d7fe025e6b168d549475e12d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0619b4d7fe025e6b168d549475e12d6">&#9670;&nbsp;</a></span>CASHIER_SUR_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASHIER_SUR_NAME = 0x0000000000001000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13e79742f3207222200f55f0d64cfcca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e79742f3207222200f55f0d64cfcca">&#9670;&nbsp;</a></span>CASHLESS_SUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CASHLESS_SUM = 0x0400000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4319dbbf24bb9c497a0a6f4d852e645f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4319dbbf24bb9c497a0a6f4d852e645f">&#9670;&nbsp;</a></span>CHECK_RECEIPT_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CHECK_RECEIPT_ADDRESS = 0x0000000100000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addf1138668c5859dba3686450994489e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf1138668c5859dba3686450994489e">&#9670;&nbsp;</a></span>check_reciept_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::check_reciept_address</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda791f69fb5eff8d82b5026f6241f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda791f69fb5eff8d82b5026f6241f1a">&#9670;&nbsp;</a></span>clc_advance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::clc_advance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba3256e10e8918a6f935179c3d8b88e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3256e10e8918a6f935179c3d8b88e9">&#9670;&nbsp;</a></span>CLC_ADVANE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CLC_ADVANE = 0x0000000000000008</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac75dad038c8b59c47ee664ae36fc6454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75dad038c8b59c47ee664ae36fc6454">&#9670;&nbsp;</a></span>clc_credit_pay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::clc_credit_pay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af67974ec07e7237f39acc98b9e307726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67974ec07e7237f39acc98b9e307726">&#9670;&nbsp;</a></span>CLC_CREDIT_PAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CLC_CREDIT_PAY = 0x0000000000000010</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a827cffab7607a1f0a0435df135f891e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827cffab7607a1f0a0435df135f891e3">&#9670;&nbsp;</a></span>credit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::credit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0436c73a5757395897659539f59de611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0436c73a5757395897659539f59de611">&#9670;&nbsp;</a></span>CREDIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CREDIT = 0x0020000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5a5226cdf08aec1d3d9d79ad26e2d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a5226cdf08aec1d3d9d79ad26e2d39">&#9670;&nbsp;</a></span>credit_pay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::credit_pay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a414ff644cd7ab3ca1d4390e1359a5932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414ff644cd7ab3ca1d4390e1359a5932">&#9670;&nbsp;</a></span>CREDIT_PAY_SUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CREDIT_PAY_SUM = 0x0000000000000040</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2c38cf5a3369b6bc2cdfb86cfd33471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c38cf5a3369b6bc2cdfb86cfd33471">&#9670;&nbsp;</a></span>credit_payment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPosition__new.html">Position_new</a> Receipt_new::credit_payment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fde2eb67fb2ca65ae32547640756f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fde2eb67fb2ca65ae32547640756f9f">&#9670;&nbsp;</a></span>credit_payment_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string Receipt_new::credit_payment_name = &quot;Оплата кредита&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7de584fc696cc8e789695d651a51129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7de584fc696cc8e789695d651a51129">&#9670;&nbsp;</a></span>cur_agent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Receipt_new::cur_agent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe99204629a04b9783c6f476ef8e7651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe99204629a04b9783c6f476ef8e7651">&#9670;&nbsp;</a></span>CUR_AGENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CUR_AGENT = 0x0000000002000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91118c42f236ee6bf06a7053c0e8d301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91118c42f236ee6bf06a7053c0e8d301">&#9670;&nbsp;</a></span>cur_tax_system</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Receipt_new::cur_tax_system</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabfccafa6668cce11e7ccd6318776185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfccafa6668cce11e7ccd6318776185">&#9670;&nbsp;</a></span>CUR_TAX_SYSTEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::CUR_TAX_SYSTEM = 0x0000000001000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b6e4d4861a737446c8912a21751e6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6e4d4861a737446c8912a21751e6b0">&#9670;&nbsp;</a></span>date_sync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::date_sync</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699dca95aeddf44ffff6b0a4f48e3621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699dca95aeddf44ffff6b0a4f48e3621">&#9670;&nbsp;</a></span>day</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::day</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7218afaf962d55995986ac8aeadb3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7218afaf962d55995986ac8aeadb3d5">&#9670;&nbsp;</a></span>DAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::DAY = 0x0000008000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afac73c61010d6668e2ca91a81b94278c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac73c61010d6668e2ca91a81b94278c">&#9670;&nbsp;</a></span>delivery</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::delivery</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0044c75065e3568c5aadedb381cef003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0044c75065e3568c5aadedb381cef003">&#9670;&nbsp;</a></span>DELIVERY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::DELIVERY = 0x000000000000100</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af32301ace41f0bf93a12ac8e3f1785d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af32301ace41f0bf93a12ac8e3f1785d6">&#9670;&nbsp;</a></span>discountName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::discountName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0035195f2df4c03a568b6e69f3d48fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0035195f2df4c03a568b6e69f3d48fc3">&#9670;&nbsp;</a></span>discountType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Receipt_new::discountType = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a512719a765ffe0282b65aa0d93d0f794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512719a765ffe0282b65aa0d93d0f794">&#9670;&nbsp;</a></span>discountValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::discountValue = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a073603431c385f40d23b3038ba1af7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073603431c385f40d23b3038ba1af7ec">&#9670;&nbsp;</a></span>ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::ERROR = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09e3bd178e90b8ec79cd23b5ed1f2da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e3bd178e90b8ec79cd23b5ed1f2da5">&#9670;&nbsp;</a></span>excess</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::excess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3f731787292654b51f2c99186d493a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f731787292654b51f2c99186d493a4">&#9670;&nbsp;</a></span>EXCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::EXCESS = 0x0002000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56e8efb3a35f547df482491ad187bb52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e8efb3a35f547df482491ad187bb52">&#9670;&nbsp;</a></span>excess_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string Receipt_new::excess_name = &quot;Превышение номинальной стоимости аванса (предоплаты) над продажной ценой товара&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31429203b2e9e30de6f6091d58d44fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31429203b2e9e30de6f6091d58d44fc0">&#9670;&nbsp;</a></span>excess_of_cost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPosition__new.html">Position_new</a> Receipt_new::excess_of_cost</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e90510c2a3eac19cc563e1798c2455f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e90510c2a3eac19cc563e1798c2455f">&#9670;&nbsp;</a></span>fd_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Receipt_new::fd_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9468ba213672a6baa75f2eb388cc82d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9468ba213672a6baa75f2eb388cc82d6">&#9670;&nbsp;</a></span>FD_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::FD_NUMBER = 0x0000000200000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a641620961cce03cec80ee0d9f967abf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641620961cce03cec80ee0d9f967abf1">&#9670;&nbsp;</a></span>FIELDS_FOR_CABINET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::FIELDS_FOR_CABINET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="classReceipt__new.html#a7360bcce3ff094e576931cb77e8a0902">SHIFT_NUM</a>    | <a class="code" href="classReceipt__new.html#ac7d863a864d166fba3258a824821e48b">RECEIPT_NUM</a> | <a class="code" href="classReceipt__new.html#ae7218afaf962d55995986ac8aeadb3d5">DAY</a>     | <a class="code" href="classReceipt__new.html#a4157545346c1de39a18d6999395588e7">MONTH</a>   |</div><div class="line">                                                        <a class="code" href="classReceipt__new.html#a5f41229756b2ad495c6fb989887b4aa3">YEAR</a>         | <a class="code" href="classReceipt__new.html#ad4cfe24e9eb36a204e10a76c423b2e5e">HOUR</a>        | <a class="code" href="classReceipt__new.html#a54e580a68907b78b01406272ff623143">MINUTES</a> | <a class="code" href="classReceipt__new.html#acbe6a8e1359e2472da3eac5ae36f4313">SECONDS</a> |</div><div class="line">                                                        <a class="code" href="classReceipt__new.html#a72687e376c9a05aaff11a55dc740a951">TIMEZONE</a>     | <a class="code" href="classReceipt__new.html#a7f697b62c97446530e9d6f75065fb266">TYPE</a>        | <a class="code" href="classReceipt__new.html#ac4c958677c57ad46c6cfcbeaba88c05b">CASHIER_NAME</a>      |</div><div class="line">                                                        <a class="code" href="classReceipt__new.html#a72939c6eae2db1909f1d2255b09bf97a">CASHIER_INN</a>  | <a class="code" href="classReceipt__new.html#a8b1e20bb6b83737e636f0f44384230a2">RECEIVED</a>    | <a class="code" href="classReceipt__new.html#ab6ce0422355c989d83de8b0d017f4f6f">IS_PAID_CASH</a>      |</div><div class="line">                                                        <a class="code" href="classReceipt__new.html#a5167b5b481856a9da30086ef25233149">IS_PAID_CARD</a> | <a class="code" href="classReceipt__new.html#a406d76150dcac7ab824134e881cc6c76">POSITIONS</a> | <a class="code" href="classReceipt__new.html#aea02a298784e01eccc6e103235c45a42">CASH_SUM</a> | <a class="code" href="classReceipt__new.html#a13e79742f3207222200f55f0d64cfcca">CASHLESS_SUM</a></div></div><!-- fragment -->
+</div>
+</div>
+<a id="ad9af10ee2d11cc0d80f116061d9d6774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9af10ee2d11cc0d80f116061d9d6774">&#9670;&nbsp;</a></span>fpd_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Receipt_new::fpd_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac974d3b9edf7cf99e7665b9e780bbdd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac974d3b9edf7cf99e7665b9e780bbdd9">&#9670;&nbsp;</a></span>FPD_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::FPD_NUMBER = 0x0000000400000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a191c31ad403ff94bbeecb61fafaa7029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191c31ad403ff94bbeecb61fafaa7029">&#9670;&nbsp;</a></span>fs_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::fs_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b741d1743cdf1951afc368322bc646d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b741d1743cdf1951afc368322bc646d">&#9670;&nbsp;</a></span>FS_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::FS_NUMBER = 0x0000000000000400</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4cfe24e9eb36a204e10a76c423b2e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4cfe24e9eb36a204e10a76c423b2e5e">&#9670;&nbsp;</a></span>HOUR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::HOUR = 0x0000040000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b42775a5dd65e33d7b961dca7fc3039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b42775a5dd65e33d7b961dca7fc3039">&#9670;&nbsp;</a></span>hours</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::hours</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0382e61f7f3da0d67415fa756a97fa99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0382e61f7f3da0d67415fa756a97fa99">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7afe2745153c966b6e9c402fe5750e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7afe2745153c966b6e9c402fe5750e11">&#9670;&nbsp;</a></span>ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::ID = 0x0100000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a864c9a0e5cf4fa179f79d56e05ab4f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864c9a0e5cf4fa179f79d56e05ab4f79">&#9670;&nbsp;</a></span>IS_CABINET_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::IS_CABINET_SEND = 0x0000400000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5167b5b481856a9da30086ef25233149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5167b5b481856a9da30086ef25233149">&#9670;&nbsp;</a></span>IS_PAID_CARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::IS_PAID_CARD = 0x0000000000008000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6ce0422355c989d83de8b0d017f4f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ce0422355c989d83de8b0d017f4f6f">&#9670;&nbsp;</a></span>IS_PAID_CASH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::IS_PAID_CASH = 0x0000000000010000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b9eb64e3b75e56d8642c6c0e86a9384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9eb64e3b75e56d8642c6c0e86a9384">&#9670;&nbsp;</a></span>isCabinetSend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::isCabinetSend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04f20c2bbfbaa4a4d6c947dc17c8a5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f20c2bbfbaa4a4d6c947dc17c8a5bd">&#9670;&nbsp;</a></span>isPaidCard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::isPaidCard</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ea512e88bc79feace57cbdbefd34994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea512e88bc79feace57cbdbefd34994">&#9670;&nbsp;</a></span>isPaidCash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::isPaidCash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77610993cc459e94a27e0dcbae798120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77610993cc459e94a27e0dcbae798120">&#9670;&nbsp;</a></span>kkt_email</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::kkt_email</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8546e9b570168ed08acc00727e4e75ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8546e9b570168ed08acc00727e4e75ca">&#9670;&nbsp;</a></span>KKT_EMAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::KKT_EMAIL = 0x0000000000200000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2755baf33a3fec7449f5ff238a728139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2755baf33a3fec7449f5ff238a728139">&#9670;&nbsp;</a></span>KKT_EMAIL_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string Receipt_new::KKT_EMAIL_ADDRESS = &quot;kassa@dreamkas.ru&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd6b35d58e53e37e83d820a447b64e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6b35d58e53e37e83d820a447b64e10">&#9670;&nbsp;</a></span>kkt_plant_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::kkt_plant_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a0ae39e6102835ea7de1b712e909b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0ae39e6102835ea7de1b712e909b6a">&#9670;&nbsp;</a></span>KKT_PLANT_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::KKT_PLANT_NUM = 0x0000000000800000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a704b4378b808305dc52ba43064fe0086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704b4378b808305dc52ba43064fe0086">&#9670;&nbsp;</a></span>kkt_reg_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::kkt_reg_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a3f72b16cce62ee51f860afa0addd86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3f72b16cce62ee51f860afa0addd86">&#9670;&nbsp;</a></span>KKT_REG_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::KKT_REG_NUM = 0x0000000000400000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09a5cc4459efcece9166bd85eb50c59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a5cc4459efcece9166bd85eb50c59a">&#9670;&nbsp;</a></span>LOAD_RECEIPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Receipt_new::LOAD_RECEIPT = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac895b39853ae0f2a5bd500b7dd638605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac895b39853ae0f2a5bd500b7dd638605">&#9670;&nbsp;</a></span>marginName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::marginName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85c180611457097be9118bbf88d4be97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c180611457097be9118bbf88d4be97">&#9670;&nbsp;</a></span>marginSumPubl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::marginSumPubl = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51c40ca25a962f601a68cee7a873cf12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c40ca25a962f601a68cee7a873cf12">&#9670;&nbsp;</a></span>minutes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::minutes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54e580a68907b78b01406272ff623143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e580a68907b78b01406272ff623143">&#9670;&nbsp;</a></span>MINUTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::MINUTES = 0x0000080000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ff44c4a59fda77d3cf0c31c95185c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff44c4a59fda77d3cf0c31c95185c61">&#9670;&nbsp;</a></span>month</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::month</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4157545346c1de39a18d6999395588e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4157545346c1de39a18d6999395588e7">&#9670;&nbsp;</a></span>MONTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::MONTH = 0x0000010000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dc25a58211012f093f022f99ff4afbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc25a58211012f093f022f99ff4afbf">&#9670;&nbsp;</a></span>ofd_inn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::ofd_inn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad869ea7b6c65edb5f0ee923b375084b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad869ea7b6c65edb5f0ee923b375084b8">&#9670;&nbsp;</a></span>OFD_INN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFD_INN = 0x0000000010000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b890f0b611783f5a69db05582518bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b890f0b611783f5a69db05582518bf5">&#9670;&nbsp;</a></span>ofd_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::ofd_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1caa931ef3e10d3ee8184ef63705787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1caa931ef3e10d3ee8184ef63705787">&#9670;&nbsp;</a></span>OFD_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFD_NAME = 0x0000000008000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a905cf086d8ccc0757b9159f0c28daed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905cf086d8ccc0757b9159f0c28daed4">&#9670;&nbsp;</a></span>ofd_server_address</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::ofd_server_address</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88f6f4ca5a41b151b6cf7bdc3faae8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f6f4ca5a41b151b6cf7bdc3faae8f5">&#9670;&nbsp;</a></span>OFD_SERVER_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFD_SERVER_ADDRESS = 0x0000000020000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73756cfe9a02f3c624dc3b763c25f91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73756cfe9a02f3c624dc3b763c25f91e">&#9670;&nbsp;</a></span>ofd_server_ip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::ofd_server_ip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dece05995a0955148742e8f9c2686b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dece05995a0955148742e8f9c2686b3">&#9670;&nbsp;</a></span>OFD_SERVER_IP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFD_SERVER_IP = 0x0000000040000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d8c0eb24720608341f59443b71900d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8c0eb24720608341f59443b71900d8">&#9670;&nbsp;</a></span>ofd_server_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::ofd_server_port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8deae488fb140d2f4d29c7fe059914f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8deae488fb140d2f4d29c7fe059914f">&#9670;&nbsp;</a></span>OFD_SERVER_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFD_SERVER_PORT = 0x0000000080000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ce9ccebfb19d4e30138363c4e723333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce9ccebfb19d4e30138363c4e723333">&#9670;&nbsp;</a></span>offline_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::offline_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bd904407d0b60f0332a75606c9f6292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd904407d0b60f0332a75606c9f6292">&#9670;&nbsp;</a></span>OFFLINE_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::OFFLINE_MODE = 0x0000000004000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5031a4e4d8fe0c1044eaaf5ce339e247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5031a4e4d8fe0c1044eaaf5ce339e247">&#9670;&nbsp;</a></span>organization_inn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::organization_inn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fff632c3fc792a2870c32b00bd3ed2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fff632c3fc792a2870c32b00bd3ed2d">&#9670;&nbsp;</a></span>ORGANIZATION_INN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::ORGANIZATION_INN = 0x0000000000100000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afda662f42e005fa3fe37392e7e7f82ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda662f42e005fa3fe37392e7e7f82ab">&#9670;&nbsp;</a></span>organization_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::organization_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b8d3405ad0e693f4c539082d7e60f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8d3405ad0e693f4c539082d7e60f50">&#9670;&nbsp;</a></span>ORGANIZATION_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::ORGANIZATION_NAME = 0x0000000000020000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87f7d6906a85e2515cbc7f72ab739601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f7d6906a85e2515cbc7f72ab739601">&#9670;&nbsp;</a></span>payment_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Receipt_new::payment_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b7cd613c001ea80dc78be98ca90642b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7cd613c001ea80dc78be98ca90642b">&#9670;&nbsp;</a></span>pos_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::pos_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f113a5b238bd5fd40007f5963e8a1d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f113a5b238bd5fd40007f5963e8a1d7">&#9670;&nbsp;</a></span>POS_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::POS_COUNT = 0x0000000000000002</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef9f99404b202647a0e3f3a8ee3a8986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9f99404b202647a0e3f3a8ee3a8986">&#9670;&nbsp;</a></span>positions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="classPosition__new.html">Position_new</a>&gt; Receipt_new::positions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a406d76150dcac7ab824134e881cc6c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406d76150dcac7ab824134e881cc6c76">&#9670;&nbsp;</a></span>POSITIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::POSITIONS = 0x0000000000000001</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb39a8a1edd42276a3448438e83a0ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb39a8a1edd42276a3448438e83a0ec4">&#9670;&nbsp;</a></span>prepayment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::prepayment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe46ea7d83699389c5768ff69a153b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe46ea7d83699389c5768ff69a153b89">&#9670;&nbsp;</a></span>PREPAYMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::PREPAYMENT = 0x0010000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab99ce21f517610cdc5b0b3701dbbc0e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99ce21f517610cdc5b0b3701dbbc0e9">&#9670;&nbsp;</a></span>qr_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Receipt_new::qr_code[300]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a802ee1372b9c31e74fef57001ecda59a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802ee1372b9c31e74fef57001ecda59a">&#9670;&nbsp;</a></span>QR_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::QR_CODE = 0x0000200000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7d863a864d166fba3258a824821e48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d863a864d166fba3258a824821e48b">&#9670;&nbsp;</a></span>RECEIPT_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::RECEIPT_NUM = 0x00000000800000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aa085f3dc3366c162722c68822a193b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa085f3dc3366c162722c68822a193b">&#9670;&nbsp;</a></span>received</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t Receipt_new::received</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b1e20bb6b83737e636f0f44384230a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1e20bb6b83737e636f0f44384230a2">&#9670;&nbsp;</a></span>RECEIVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::RECEIVED = 0x0000000000000080</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6264c41c1a9c6bfe2052d49fe34a149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6264c41c1a9c6bfe2052d49fe34a149">&#9670;&nbsp;</a></span>reciept_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::reciept_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a532ecbadc095f03275620612b6d4905f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532ecbadc095f03275620612b6d4905f">&#9670;&nbsp;</a></span>rem_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::rem_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40c285562b91bdd3f62f6ea4263327af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c285562b91bdd3f62f6ea4263327af">&#9670;&nbsp;</a></span>REM_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::REM_ID = 0x0080000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb7fec06c99e6d8c6f9eb09fd7826395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb7fec06c99e6d8c6f9eb09fd7826395">&#9670;&nbsp;</a></span>SAVE_RECEIPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char Receipt_new::SAVE_RECEIPT = 0x00</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17ea7f31b8079b82ce17cd0b86fe3610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ea7f31b8079b82ce17cd0b86fe3610">&#9670;&nbsp;</a></span>seconds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::seconds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbe6a8e1359e2472da3eac5ae36f4313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe6a8e1359e2472da3eac5ae36f4313">&#9670;&nbsp;</a></span>SECONDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::SECONDS = 0x0000100000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae92daa01ef84cf8da424949b90548452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92daa01ef84cf8da424949b90548452">&#9670;&nbsp;</a></span>shift_num</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::shift_num</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7360bcce3ff094e576931cb77e8a0902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7360bcce3ff094e576931cb77e8a0902">&#9670;&nbsp;</a></span>SHIFT_NUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::SHIFT_NUM = 0x0000000000000200</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1a8511b2e07c3364c0dc4152558cd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a8511b2e07c3364c0dc4152558cd25">&#9670;&nbsp;</a></span>spec_clc_method</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Receipt_new::spec_clc_method</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f2ebec9c26f47cdd148e703370de242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2ebec9c26f47cdd148e703370de242">&#9670;&nbsp;</a></span>SPEC_CLC_METHOD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::SPEC_CLC_METHOD = 0x0000000000000004</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40be3557b2792bf3e57f527ba1746a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40be3557b2792bf3e57f527ba1746a8e">&#9670;&nbsp;</a></span>SPEC_CLC_MTHD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::SPEC_CLC_MTHD = 0x0040000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d4c31bcd8c919721cd61d20387c6641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d4c31bcd8c919721cd61d20387c6641">&#9670;&nbsp;</a></span>SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::SUCCESS = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af15ba051b50ccf179b669e9eb5a60106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15ba051b50ccf179b669e9eb5a60106">&#9670;&nbsp;</a></span>tel_number</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Receipt_new::tel_number</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26e62606bf940886605681ce029dee57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e62606bf940886605681ce029dee57">&#9670;&nbsp;</a></span>TEL_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TEL_NUMBER = 0x0000002000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a660eb7b9c1258313b2bf4c7ee73565d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660eb7b9c1258313b2bf4c7ee73565d3">&#9670;&nbsp;</a></span>timezone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::timezone</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72687e376c9a05aaff11a55dc740a951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72687e376c9a05aaff11a55dc740a951">&#9670;&nbsp;</a></span>TIMEZONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TIMEZONE = 0x0001000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a246608451c078e980d07331abc582ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246608451c078e980d07331abc582ab7">&#9670;&nbsp;</a></span>TLV_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const short Receipt_new::TLV_TYPE = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e5d51948f054ada4fe2892b972cd36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5d51948f054ada4fe2892b972cd36a">&#9670;&nbsp;</a></span>TOTAL_SUM_DISPLAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TOTAL_SUM_DISPLAY = 0x0004000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac97aaef8766f3e4130615db011a12ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97aaef8766f3e4130615db011a12ff1">&#9670;&nbsp;</a></span>TOTAL_SUM_RECEIPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TOTAL_SUM_RECEIPT = 0x0000800000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfa9b96a7f2e0e839893fcec84e069db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa9b96a7f2e0e839893fcec84e069db">&#9670;&nbsp;</a></span>TOTAL_TAX_SUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TOTAL_TAX_SUM = 0x0008000000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92879103d87eee6ea8bf1406be4569ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92879103d87eee6ea8bf1406be4569ce">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Receipt_new::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f697b62c97446530e9d6f75065fb266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f697b62c97446530e9d6f75065fb266">&#9670;&nbsp;</a></span>TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::TYPE = 0x0000001000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66a347e69bfc648f0b928151bc54a1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a347e69bfc648f0b928151bc54a1f5">&#9670;&nbsp;</a></span>WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::WARNING = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1836ea0d9b9d0a37cfa317cb8704dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1836ea0d9b9d0a37cfa317cb8704dc1">&#9670;&nbsp;</a></span>year</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> Receipt_new::year</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f41229756b2ad495c6fb989887b4aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f41229756b2ad495c6fb989887b4aa3">&#9670;&nbsp;</a></span>YEAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t Receipt_new::YEAR = 0x0000020000000000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="receipt__new_8h_source.html">receipt_new.h</a></li>
+<li>src/appl/<a class="el" href="receipt__new_8cpp.html">receipt_new.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

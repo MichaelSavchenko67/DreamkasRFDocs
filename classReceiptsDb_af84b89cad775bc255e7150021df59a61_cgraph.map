@@ -1,0 +1,6 @@
+<map id="ReceiptsDb::saveTaskDb" name="ReceiptsDb::saveTaskDb">
+<area shape="rect" id="node1" title="saveTaskDb &#45; сохранить таску в таблицу" alt="" coords="5,56,179,83"/>
+<area shape="rect" id="node2" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="259,5,410,32"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a" title="makeTasksRequest &#45; запрос к таблице тасок" alt="" coords="227,56,443,83"/>
+<area shape="rect" id="node4" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="241,107,429,133"/>
+</map>

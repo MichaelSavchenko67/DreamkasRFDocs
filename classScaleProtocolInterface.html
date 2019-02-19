@@ -1,0 +1,1509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс ScaleProtocolInterface</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classScaleProtocolInterface-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ScaleProtocolInterface<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The <a class="el" href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class - базовый класс протокола весов">ScaleProtocolInterface</a> class - базовый класс протокола весов  
+ <a href="classScaleProtocolInterface.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ScaleProtocolInterface:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolInterface__inherit__graph.png" border="0" usemap="#ScaleProtocolInterface_inherit__map" alt="Inheritance graph"/></div>
+<map name="ScaleProtocolInterface_inherit__map" id="ScaleProtocolInterface_inherit__map">
+<area shape="rect"  title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="95,5,285,728"/>
+<area shape="rect"  href="classScaleProtocolMassak.html" title=" " alt="" coords="5,776,183,1044"/>
+<area shape="rect"  href="classScaleProtocolPos2.html" title=" " alt="" coords="207,813,368,1007"/>
+<area shape="rect"  href="classTestMassaK.html" title=" " alt="" coords="29,1099,159,1250"/>
+<area shape="rect"  href="classScalePos2.html" title=" " alt="" coords="197,1092,349,1257"/>
+<area shape="rect"  href="classTestPos2.html" title=" " alt="" coords="373,1099,503,1250"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса ScaleProtocolInterface:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolInterface__coll__graph.png" border="0" usemap="#ScaleProtocolInterface_coll__map" alt="Collaboration graph"/></div>
+<map name="ScaleProtocolInterface_coll__map" id="ScaleProtocolInterface_coll__map">
+<area shape="rect"  title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="195,321,385,1000"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1Param.html" title="The Param struct &#45; Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,188,259"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct &#45; ÑÐ¾ÑÐ¼Ð°Ñ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="213,64,367,200"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1ScaleErr.html" title="The ScaleErr struct &#45; ÑÑÑÑÐºÑÑÑÐ° Ð¾ÑÐ¸Ð±ÐºÐ¸" alt="" coords="391,79,546,185"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html">PacketFormat</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct - формат пакета">PacketFormat</a> struct - формат пакета  <a href="structScaleProtocolInterface_1_1PacketFormat.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScaleProtocolInterface_1_1Param.html">Param</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structScaleProtocolInterface_1_1Param.html" title="The Param struct - параметры весов">Param</a> struct - параметры весов  <a href="structScaleProtocolInterface_1_1Param.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html" title="The ScaleErr struct - структура ошибки">ScaleErr</a> struct - структура ошибки  <a href="structScaleProtocolInterface_1_1ScaleErr.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a817ba8bf027929da0435a73516abfa8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8f">ERRORS</a> { <br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa425787bece795e5b08605247d0a51f16">ERRORS::CMD_NOT_SET</a> = 0x101, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fac1801354f23b9eb6e886650bac2cdf37">ERRORS::DATA_NOT_SET</a> = 0x102, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8faf69bc8b3fe2f3dcc171c16dccfcfddd2">ERRORS::HEAD_NOT_SET</a> = 0x103, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fae8dbfb1d07f358470b3cee8db2eb4a55">ERRORS::PACK_NOT_CREATED</a> = 0x104, 
+<br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58">ERRORS::PORT_NOT_OPENED</a> = 0x105, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456">ERRORS::PACK_NOT_SENT</a> = 0x106, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449">ERRORS::ANSW_NOT_READ</a> = 0x107, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa4eacaf6d276e51778dec30f433621307">ERRORS::TARE_NOT_PARSED</a> = 0x108, 
+<br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c">ERRORS::PORT_NOT_CLOSED</a> = 0x109
+<br />
+ }</td></tr>
+<tr class="separator:a817ba8bf027929da0435a73516abfa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a272a9095cf2b21f59963386506b04c21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a272a9095cf2b21f59963386506b04c21">ScaleProtocolInterface</a> (const string &amp;portName_)</td></tr>
+<tr class="separator:a272a9095cf2b21f59963386506b04c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4285ea3b1343c2505aa76105f4de375"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad4285ea3b1343c2505aa76105f4de375">~ScaleProtocolInterface</a> ()</td></tr>
+<tr class="separator:ad4285ea3b1343c2505aa76105f4de375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21c401c4904bdaa62399e8fdda6f369"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ac21c401c4904bdaa62399e8fdda6f369">getVersion</a> () const</td></tr>
+<tr class="memdesc:ac21c401c4904bdaa62399e8fdda6f369"><td class="mdescLeft">&#160;</td><td class="mdescRight">getVersion - получить версию протокола  <a href="#ac21c401c4904bdaa62399e8fdda6f369">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac21c401c4904bdaa62399e8fdda6f369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c26d1053890e1a52a45283d1cdbfbd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a8c26d1053890e1a52a45283d1cdbfbd9">getScaleErr</a> () const</td></tr>
+<tr class="memdesc:a8c26d1053890e1a52a45283d1cdbfbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScaleErr - получить ошибки  <a href="#a8c26d1053890e1a52a45283d1cdbfbd9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c26d1053890e1a52a45283d1cdbfbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad106f53286e120e2aecb7628fcb3acae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad106f53286e120e2aecb7628fcb3acae">cmdGetWeight</a> ()=0</td></tr>
+<tr class="memdesc:ad106f53286e120e2aecb7628fcb3acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetWeight - чтение веса  <a href="#ad106f53286e120e2aecb7628fcb3acae">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad106f53286e120e2aecb7628fcb3acae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f700846feb8420a757135d41d546719"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a9f700846feb8420a757135d41d546719">cmdSetTare</a> (int32_t tareWeight)=0</td></tr>
+<tr class="memdesc:a9f700846feb8420a757135d41d546719"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdSetTare - установка тары  <a href="#a9f700846feb8420a757135d41d546719">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9f700846feb8420a757135d41d546719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71f71cca19cbb03f7f4052f27ba2e2b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa71f71cca19cbb03f7f4052f27ba2e2b">cmdGetTare</a> (int32_t &amp;tareWeight)=0</td></tr>
+<tr class="memdesc:aa71f71cca19cbb03f7f4052f27ba2e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetTare - чтение тары  <a href="#aa71f71cca19cbb03f7f4052f27ba2e2b">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa71f71cca19cbb03f7f4052f27ba2e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f488d2e2a7b7d1febd0d52d0a2841c8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a3f488d2e2a7b7d1febd0d52d0a2841c8">cmdSetZero</a> ()=0</td></tr>
+<tr class="memdesc:a3f488d2e2a7b7d1febd0d52d0a2841c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdSetZero - чтение нуля  <a href="#a3f488d2e2a7b7d1febd0d52d0a2841c8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3f488d2e2a7b7d1febd0d52d0a2841c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98ba7efc5b2b8a0cf445c6ffd4b81fa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#af98ba7efc5b2b8a0cf445c6ffd4b81fa">cmdGetScaleParam</a> ()=0</td></tr>
+<tr class="memdesc:af98ba7efc5b2b8a0cf445c6ffd4b81fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScaleParam - чтение параметров весов  <a href="#af98ba7efc5b2b8a0cf445c6ffd4b81fa">Подробнее...</a><br /></td></tr>
+<tr class="separator:af98ba7efc5b2b8a0cf445c6ffd4b81fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626191302206211d1833f3e408d38623"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a626191302206211d1833f3e408d38623">cmdGetCalCode</a> (int32_t &amp;calCode)=0</td></tr>
+<tr class="memdesc:a626191302206211d1833f3e408d38623"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetCalCode - чтение кода юстировки  <a href="#a626191302206211d1833f3e408d38623">Подробнее...</a><br /></td></tr>
+<tr class="separator:a626191302206211d1833f3e408d38623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7926d925c49a3c4f9cc9e6eeb17efc2"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad7926d925c49a3c4f9cc9e6eeb17efc2">getWeight</a> () const</td></tr>
+<tr class="memdesc:ad7926d925c49a3c4f9cc9e6eeb17efc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWeight - выгрузить вес  <a href="#ad7926d925c49a3c4f9cc9e6eeb17efc2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7926d925c49a3c4f9cc9e6eeb17efc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45beceba44f715cf793b0dc6cb22587e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a45beceba44f715cf793b0dc6cb22587e">getWeightTare</a> () const</td></tr>
+<tr class="memdesc:a45beceba44f715cf793b0dc6cb22587e"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWeightTare - выгрузить вес тары (грамм)  <a href="#a45beceba44f715cf793b0dc6cb22587e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a45beceba44f715cf793b0dc6cb22587e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b695ef0dc60b3980a36facebc30625"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625">WriteInScale</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, const void *, size_t)</td></tr>
+<tr class="separator:a78b695ef0dc60b3980a36facebc30625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a19625d70c67e8d19f74f35986150549c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structScaleProtocolInterface_1_1Param.html">ScaleProtocolInterface::Param</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a19625d70c67e8d19f74f35986150549c">scaleParam</a></td></tr>
+<tr class="separator:a19625d70c67e8d19f74f35986150549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd2b09cf039748d40c0f1e23b211f0f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aebd2b09cf039748d40c0f1e23b211f0f">version</a></td></tr>
+<tr class="separator:aebd2b09cf039748d40c0f1e23b211f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c8854d5be99ddf9589b2fb226c3a8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ab6c8854d5be99ddf9589b2fb226c3a8b">speed</a> = 0</td></tr>
+<tr class="separator:ab6c8854d5be99ddf9589b2fb226c3a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fec1119f25b605ec99871c45ebc7fb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a89fec1119f25b605ec99871c45ebc7fb">portName</a></td></tr>
+<tr class="separator:a89fec1119f25b605ec99871c45ebc7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c466c5b4b045c1d6bbb8ab4fbeaa8e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a4c466c5b4b045c1d6bbb8ab4fbeaa8e1">scaleFd</a> = -1</td></tr>
+<tr class="separator:a4c466c5b4b045c1d6bbb8ab4fbeaa8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ef31f5bead7c8b3436e66db713c965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a63ef31f5bead7c8b3436e66db713c965">scaleErr</a></td></tr>
+<tr class="separator:a63ef31f5bead7c8b3436e66db713c965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a4a9cb8cb47b469f62f4c871a7f03e975"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a4a9cb8cb47b469f62f4c871a7f03e975">openPort</a> ()=0</td></tr>
+<tr class="memdesc:a4a9cb8cb47b469f62f4c871a7f03e975"><td class="mdescLeft">&#160;</td><td class="mdescRight">openPort - открыть порт  <a href="#a4a9cb8cb47b469f62f4c871a7f03e975">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4a9cb8cb47b469f62f4c871a7f03e975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a939017796440b049638db85aa8477fc3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a939017796440b049638db85aa8477fc3">closePort</a> ()=0</td></tr>
+<tr class="memdesc:a939017796440b049638db85aa8477fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">closePort - закрыть порт  <a href="#a939017796440b049638db85aa8477fc3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a939017796440b049638db85aa8477fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a713d971c496e367379b0f29775a0e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ac7a713d971c496e367379b0f29775a0e">setScaleErr</a> ()=0</td></tr>
+<tr class="memdesc:ac7a713d971c496e367379b0f29775a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">setScaleErr - установить коды ошибок  <a href="#ac7a713d971c496e367379b0f29775a0e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac7a713d971c496e367379b0f29775a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be9cd9db98bd23b44cb348cb31100de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">setPacketFormat</a> ()</td></tr>
+<tr class="memdesc:a4be9cd9db98bd23b44cb348cb31100de"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPacketFormat - установить формат пакета на основе packetFormat  <a href="#a4be9cd9db98bd23b44cb348cb31100de">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4be9cd9db98bd23b44cb348cb31100de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa227c153d403fe63dfd95630121986e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">packetCreate</a> ()</td></tr>
+<tr class="memdesc:aa227c153d403fe63dfd95630121986e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">packetCreate - создание пакета данных  <a href="#aa227c153d403fe63dfd95630121986e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa227c153d403fe63dfd95630121986e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc168b4863ed535f527c86cde480e9e3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#abc168b4863ed535f527c86cde480e9e3">dataCreate</a> (unique_ptr&lt; uint8_t[]&gt; &amp;dataPtr, uint8_t size)=0</td></tr>
+<tr class="memdesc:abc168b4863ed535f527c86cde480e9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">dataCreate - создание массива данных  <a href="#abc168b4863ed535f527c86cde480e9e3">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc168b4863ed535f527c86cde480e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d192954b938a295399335e3d43ca782"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782">crcPacketCreate</a> ()=0</td></tr>
+<tr class="memdesc:a7d192954b938a295399335e3d43ca782"><td class="mdescLeft">&#160;</td><td class="mdescRight">crcPacketCreate - создание CRC для подготовленного пакета  <a href="#a7d192954b938a295399335e3d43ca782">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7d192954b938a295399335e3d43ca782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa188c5de7a9bd9ff8da40d623558cf59"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59">writeCmd</a> ()</td></tr>
+<tr class="memdesc:aa188c5de7a9bd9ff8da40d623558cf59"><td class="mdescLeft">&#160;</td><td class="mdescRight">writeCmd - отправить команду на весы  <a href="#aa188c5de7a9bd9ff8da40d623558cf59">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa188c5de7a9bd9ff8da40d623558cf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadabdb0713427195224e4ad7e62ba58"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">readAnswer</a> ()</td></tr>
+<tr class="memdesc:aeadabdb0713427195224e4ad7e62ba58"><td class="mdescLeft">&#160;</td><td class="mdescRight">readAnswer - прочитать ответ от весов  <a href="#aeadabdb0713427195224e4ad7e62ba58">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeadabdb0713427195224e4ad7e62ba58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63568dc5d3479ad19f45677161fc1dfa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a63568dc5d3479ad19f45677161fc1dfa">makeHeader</a> ()=0</td></tr>
+<tr class="memdesc:a63568dc5d3479ad19f45677161fc1dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeHeader - заполнить заголовок пакета  <a href="#a63568dc5d3479ad19f45677161fc1dfa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a63568dc5d3479ad19f45677161fc1dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add128d8ba1370d36cadea79fe32c7144"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#add128d8ba1370d36cadea79fe32c7144">makeDataLen</a> (uint8_t len)=0</td></tr>
+<tr class="memdesc:add128d8ba1370d36cadea79fe32c7144"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeDataLen - заполнить длинну данных  <a href="#add128d8ba1370d36cadea79fe32c7144">Подробнее...</a><br /></td></tr>
+<tr class="separator:add128d8ba1370d36cadea79fe32c7144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73127f92c83cf9cef88be9df7bd9fea1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a73127f92c83cf9cef88be9df7bd9fea1">makeCmd</a> (uint8_t <a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a>)=0</td></tr>
+<tr class="memdesc:a73127f92c83cf9cef88be9df7bd9fea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeCmd - установить команду  <a href="#a73127f92c83cf9cef88be9df7bd9fea1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a73127f92c83cf9cef88be9df7bd9fea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e10a3b16ad32c41b46aa2b4778e9e03"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1e10a3b16ad32c41b46aa2b4778e9e03"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03">parseIntegerValue</a> (T &amp;value, uint8_t offset, uint8_t size=0)</td></tr>
+<tr class="memdesc:a1e10a3b16ad32c41b46aa2b4778e9e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">parseIntegerValue - парс целочисленного значения  <a href="#a1e10a3b16ad32c41b46aa2b4778e9e03">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e10a3b16ad32c41b46aa2b4778e9e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:aa32d847d1e9837fe1f1441e9e5f280ce"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa32d847d1e9837fe1f1441e9e5f280ce">dataSize</a> = 0</td></tr>
+<tr class="separator:aa32d847d1e9837fe1f1441e9e5f280ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66ff65c065ea9afdbec731a909843a7"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad66ff65c065ea9afdbec731a909843a7">packetSize</a> = 0</td></tr>
+<tr class="separator:ad66ff65c065ea9afdbec731a909843a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fac136ed0bc8cd05db7974e33c3001"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a> = 0</td></tr>
+<tr class="separator:a96fac136ed0bc8cd05db7974e33c3001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb8759cd430de1d5652d0e3aae8cb1e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e">weight</a> = 0</td></tr>
+<tr class="separator:abbb8759cd430de1d5652d0e3aae8cb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f01d527a22c98950e9399908fad7eb1"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a6f01d527a22c98950e9399908fad7eb1">weightTare</a> = 0</td></tr>
+<tr class="separator:a6f01d527a22c98950e9399908fad7eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce2af7c7b982798a16d64b8759e4edf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html">PacketFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#afce2af7c7b982798a16d64b8759e4edf">packetFormat</a></td></tr>
+<tr class="separator:afce2af7c7b982798a16d64b8759e4edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8277e9d9634cf8a9dfa62892789a48"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">header</a></td></tr>
+<tr class="separator:a6c8277e9d9634cf8a9dfa62892789a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad131c3472c0b49f723894061cf3b8f85"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a></td></tr>
+<tr class="separator:ad131c3472c0b49f723894061cf3b8f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0861970eb95cd63a71f1ef58d1708439"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a0861970eb95cd63a71f1ef58d1708439">dateLen</a></td></tr>
+<tr class="separator:a0861970eb95cd63a71f1ef58d1708439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29cb47c40a6750ff4cc152a10b79589"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#af29cb47c40a6750ff4cc152a10b79589">data</a></td></tr>
+<tr class="separator:af29cb47c40a6750ff4cc152a10b79589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18a0885e7ec7d26592d390c5c61a89e"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">crc</a></td></tr>
+<tr class="separator:ad18a0885e7ec7d26592d390c5c61a89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38cb01861f8d2a8f4c4a280f3bbf8b6"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ae38cb01861f8d2a8f4c4a280f3bbf8b6">packet</a></td></tr>
+<tr class="separator:ae38cb01861f8d2a8f4c4a280f3bbf8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd257f97ebffe52880a3c6c48032403"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">answer</a></td></tr>
+<tr class="separator:adcd257f97ebffe52880a3c6c48032403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1dbfa3696c2ca3ea088cc5757ae23f"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a0f1dbfa3696c2ca3ea088cc5757ae23f">MAX_PACKET_ANSWER</a> = 255</td></tr>
+<tr class="separator:a0f1dbfa3696c2ca3ea088cc5757ae23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>The <a class="el" href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class - базовый класс протокола весов">ScaleProtocolInterface</a> class - базовый класс протокола весов </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a817ba8bf027929da0435a73516abfa8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817ba8bf027929da0435a73516abfa8f">&#9670;&nbsp;</a></span>ERRORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8f">ScaleProtocolInterface::ERRORS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fa425787bece795e5b08605247d0a51f16"></a>CMD_NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fac1801354f23b9eb6e886650bac2cdf37"></a>DATA_NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8faf69bc8b3fe2f3dcc171c16dccfcfddd2"></a>HEAD_NOT_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fae8dbfb1d07f358470b3cee8db2eb4a55"></a>PACK_NOT_CREATED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58"></a>PORT_NOT_OPENED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456"></a>PACK_NOT_SENT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449"></a>ANSW_NOT_READ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fa4eacaf6d276e51778dec30f433621307"></a>TARE_NOT_PARSED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c"></a>PORT_NOT_CLOSED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a272a9095cf2b21f59963386506b04c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272a9095cf2b21f59963386506b04c21">&#9670;&nbsp;</a></span>ScaleProtocolInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScaleProtocolInterface::ScaleProtocolInterface </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>portName_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4285ea3b1343c2505aa76105f4de375"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4285ea3b1343c2505aa76105f4de375">&#9670;&nbsp;</a></span>~ScaleProtocolInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScaleProtocolInterface::~ScaleProtocolInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a939017796440b049638db85aa8477fc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a939017796440b049638db85aa8477fc3">&#9670;&nbsp;</a></span>closePort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::closePort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>closePort - закрыть порт </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+</div>
+</div>
+<a id="a626191302206211d1833f3e408d38623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626191302206211d1833f3e408d38623">&#9670;&nbsp;</a></span>cmdGetCalCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdGetCalCode </td>
+          <td>(</td>
+          <td class="paramtype">int32_t &amp;&#160;</td>
+          <td class="paramname"><em>calCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetCalCode - чтение кода юстировки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calCode</td><td>- код юстировки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#a458bde42985848f594f1bbc2b257ba85">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#ae1b5da320256c8928d065f5d6dbca7f2">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="af98ba7efc5b2b8a0cf445c6ffd4b81fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98ba7efc5b2b8a0cf445c6ffd4b81fa">&#9670;&nbsp;</a></span>cmdGetScaleParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdGetScaleParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getScaleParam - чтение параметров весов </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#acb2943146b56d8c3e87542e159c213eb">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="aa71f71cca19cbb03f7f4052f27ba2e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71f71cca19cbb03f7f4052f27ba2e2b">&#9670;&nbsp;</a></span>cmdGetTare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdGetTare </td>
+          <td>(</td>
+          <td class="paramtype">int32_t &amp;&#160;</td>
+          <td class="paramname"><em>tareWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetTare - чтение тары </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tareWeight</td><td>- вес тары (грамм) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#af42f1fcdedc09431b843324595adceb9">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#afdf9d77f55dec68d01982bd885da7f1e">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="ad106f53286e120e2aecb7628fcb3acae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad106f53286e120e2aecb7628fcb3acae">&#9670;&nbsp;</a></span>cmdGetWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdGetWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetWeight - чтение веса </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="a9f700846feb8420a757135d41d546719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f700846feb8420a757135d41d546719">&#9670;&nbsp;</a></span>cmdSetTare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdSetTare </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>tareWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdSetTare - установка тары </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#ad77b33f9510d215c3f050b3dd7015b2a">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#a7961fe556bc761e8fd01a44131afd4d8">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="a3f488d2e2a7b7d1febd0d52d0a2841c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f488d2e2a7b7d1febd0d52d0a2841c8">&#9670;&nbsp;</a></span>cmdSetZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::cmdSetZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdSetZero - чтение нуля </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещается в <a class="el" href="classScaleProtocolMassak.html#a44ccd473e550e7c61bf576fb00291310">ScaleProtocolMassak</a> и <a class="el" href="classScaleProtocolPos2.html#a2f1504b2d55876bc6a66dc35b637d1f8">ScaleProtocolPos2</a>.</p>
+
+</div>
+</div>
+<a id="a7d192954b938a295399335e3d43ca782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d192954b938a295399335e3d43ca782">&#9670;&nbsp;</a></span>crcPacketCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::crcPacketCreate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>crcPacketCreate - создание CRC для подготовленного пакета </p>
+
+</div>
+</div>
+<a id="abc168b4863ed535f527c86cde480e9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc168b4863ed535f527c86cde480e9e3">&#9670;&nbsp;</a></span>dataCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::dataCreate </td>
+          <td>(</td>
+          <td class="paramtype">unique_ptr&lt; uint8_t[]&gt; &amp;&#160;</td>
+          <td class="paramname"><em>dataPtr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dataCreate - создание массива данных </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataPtr</td><td>- указатель на данные </td></tr>
+    <tr><td class="paramname">size</td><td>- размер данных </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+</div>
+</div>
+<a id="a8c26d1053890e1a52a45283d1cdbfbd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c26d1053890e1a52a45283d1cdbfbd9">&#9670;&nbsp;</a></span>getScaleErr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleProtocolInterface::ScaleErr</a> ScaleProtocolInterface::getScaleErr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getScaleErr - получить ошибки </p>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ac21c401c4904bdaa62399e8fdda6f369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21c401c4904bdaa62399e8fdda6f369">&#9670;&nbsp;</a></span>getVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ScaleProtocolInterface::getVersion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getVersion - получить версию протокола </p>
+<dl class="section return"><dt>Возвращает</dt><dd>версия протокола </dd></dl>
+
+</div>
+</div>
+<a id="ad7926d925c49a3c4f9cc9e6eeb17efc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7926d925c49a3c4f9cc9e6eeb17efc2">&#9670;&nbsp;</a></span>getWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ScaleProtocolInterface::getWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getWeight - выгрузить вес </p>
+<dl class="section return"><dt>Возвращает</dt><dd>вес (грамм) </dd></dl>
+
+</div>
+</div>
+<a id="a45beceba44f715cf793b0dc6cb22587e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45beceba44f715cf793b0dc6cb22587e">&#9670;&nbsp;</a></span>getWeightTare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ScaleProtocolInterface::getWeightTare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getWeightTare - выгрузить вес тары (грамм) </p>
+<dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a73127f92c83cf9cef88be9df7bd9fea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73127f92c83cf9cef88be9df7bd9fea1">&#9670;&nbsp;</a></span>makeCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::makeCmd </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>makeCmd - установить команду </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>- команда </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="add128d8ba1370d36cadea79fe32c7144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add128d8ba1370d36cadea79fe32c7144">&#9670;&nbsp;</a></span>makeDataLen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::makeDataLen </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>makeDataLen - заполнить длинну данных </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="a63568dc5d3479ad19f45677161fc1dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63568dc5d3479ad19f45677161fc1dfa">&#9670;&nbsp;</a></span>makeHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::makeHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>makeHeader - заполнить заголовок пакета </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="a4a9cb8cb47b469f62f4c871a7f03e975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9cb8cb47b469f62f4c871a7f03e975">&#9670;&nbsp;</a></span>openPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::openPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>openPort - открыть порт </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+</div>
+</div>
+<a id="aa227c153d403fe63dfd95630121986e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa227c153d403fe63dfd95630121986e0">&#9670;&nbsp;</a></span>packetCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolInterface::packetCreate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>packetCreate - создание пакета данных </p>
+<dl class="section return"><dt>Возвращает</dt><dd>размер пакета </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolInterface_aa227c153d403fe63dfd95630121986e0_cgraph.png" border="0" usemap="#classScaleProtocolInterface_aa227c153d403fe63dfd95630121986e0_cgraph" alt=""/></div>
+<map name="classScaleProtocolInterface_aa227c153d403fe63dfd95630121986e0_cgraph" id="classScaleProtocolInterface_aa227c153d403fe63dfd95630121986e0_cgraph">
+<area shape="rect"  title="packetCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð°ÐºÐµÑÐ° Ð´Ð°Ð½Ð½ÑÑ" alt="" coords="5,5,160,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ CRC Ð´Ð»Ñ Ð¿Ð¾Ð´Ð³Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="208,5,363,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e10a3b16ad32c41b46aa2b4778e9e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e10a3b16ad32c41b46aa2b4778e9e03">&#9670;&nbsp;</a></span>parseIntegerValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolInterface::parseIntegerValue </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>parseIntegerValue - парс целочисленного значения </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>- ссылка на переменную значения </td></tr>
+    <tr><td class="paramname">offset</td><td>- смещение значения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - успех, false - в ином случае </dd></dl>
+
+</div>
+</div>
+<a id="aeadabdb0713427195224e4ad7e62ba58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeadabdb0713427195224e4ad7e62ba58">&#9670;&nbsp;</a></span>readAnswer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolInterface::readAnswer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>readAnswer - прочитать ответ от весов </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+</div>
+</div>
+<a id="a4be9cd9db98bd23b44cb348cb31100de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be9cd9db98bd23b44cb348cb31100de">&#9670;&nbsp;</a></span>setPacketFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScaleProtocolInterface::setPacketFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setPacketFormat - установить формат пакета на основе packetFormat </p>
+
+</div>
+</div>
+<a id="ac7a713d971c496e367379b0f29775a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a713d971c496e367379b0f29775a0e">&#9670;&nbsp;</a></span>setScaleErr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ScaleProtocolInterface::setScaleErr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setScaleErr - установить коды ошибок </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения </dd></dl>
+
+</div>
+</div>
+<a id="aa188c5de7a9bd9ff8da40d623558cf59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa188c5de7a9bd9ff8da40d623558cf59">&#9670;&nbsp;</a></span>writeCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolInterface::writeCmd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>writeCmd - отправить команду на весы </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolInterface_aa188c5de7a9bd9ff8da40d623558cf59_cgraph.png" border="0" usemap="#classScaleProtocolInterface_aa188c5de7a9bd9ff8da40d623558cf59_cgraph" alt=""/></div>
+<map name="classScaleProtocolInterface_aa188c5de7a9bd9ff8da40d623558cf59_cgraph" id="classScaleProtocolInterface_aa188c5de7a9bd9ff8da40d623558cf59_cgraph">
+<area shape="rect"  title="writeCmd &#45; Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ Ð½Ð° Ð²ÐµÑÑ" alt="" coords="5,5,160,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="208,5,363,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78b695ef0dc60b3980a36facebc30625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b695ef0dc60b3980a36facebc30625">&#9670;&nbsp;</a></span>WriteInScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ssize_t ScaleProtocolInterface::WriteInScale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переопределяется в <a class="el" href="classTestMassaK.html#af0fc00fbbb910ed8517e1352b0cac6f6">TestMassaK</a> и <a class="el" href="classTestPos2.html#a9bb615d675507eb9ce6bb0b6b7f47a90">TestPos2</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="adcd257f97ebffe52880a3c6c48032403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd257f97ebffe52880a3c6c48032403">&#9670;&nbsp;</a></span>answer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::answer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96fac136ed0bc8cd05db7974e33c3001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96fac136ed0bc8cd05db7974e33c3001">&#9670;&nbsp;</a></span>answerSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ScaleProtocolInterface::answerSize = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad131c3472c0b49f723894061cf3b8f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad131c3472c0b49f723894061cf3b8f85">&#9670;&nbsp;</a></span>cmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::cmd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad18a0885e7ec7d26592d390c5c61a89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18a0885e7ec7d26592d390c5c61a89e">&#9670;&nbsp;</a></span>crc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::crc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af29cb47c40a6750ff4cc152a10b79589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29cb47c40a6750ff4cc152a10b79589">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa32d847d1e9837fe1f1441e9e5f280ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32d847d1e9837fe1f1441e9e5f280ce">&#9670;&nbsp;</a></span>dataSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ScaleProtocolInterface::dataSize = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0861970eb95cd63a71f1ef58d1708439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0861970eb95cd63a71f1ef58d1708439">&#9670;&nbsp;</a></span>dateLen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::dateLen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c8277e9d9634cf8a9dfa62892789a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8277e9d9634cf8a9dfa62892789a48">&#9670;&nbsp;</a></span>header</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::header</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f1dbfa3696c2ca3ea088cc5757ae23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1dbfa3696c2ca3ea088cc5757ae23f">&#9670;&nbsp;</a></span>MAX_PACKET_ANSWER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t ScaleProtocolInterface::MAX_PACKET_ANSWER = 255</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae38cb01861f8d2a8f4c4a280f3bbf8b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae38cb01861f8d2a8f4c4a280f3bbf8b6">&#9670;&nbsp;</a></span>packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;uint8_t[]&gt; ScaleProtocolInterface::packet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afce2af7c7b982798a16d64b8759e4edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce2af7c7b982798a16d64b8759e4edf">&#9670;&nbsp;</a></span>packetFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html">PacketFormat</a> ScaleProtocolInterface::packetFormat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad66ff65c065ea9afdbec731a909843a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66ff65c065ea9afdbec731a909843a7">&#9670;&nbsp;</a></span>packetSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t ScaleProtocolInterface::packetSize = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89fec1119f25b605ec99871c45ebc7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89fec1119f25b605ec99871c45ebc7fb">&#9670;&nbsp;</a></span>portName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ScaleProtocolInterface::portName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63ef31f5bead7c8b3436e66db713c965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ef31f5bead7c8b3436e66db713c965">&#9670;&nbsp;</a></span>scaleErr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a> ScaleProtocolInterface::scaleErr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c466c5b4b045c1d6bbb8ab4fbeaa8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c466c5b4b045c1d6bbb8ab4fbeaa8e1">&#9670;&nbsp;</a></span>scaleFd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> ScaleProtocolInterface::scaleFd = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19625d70c67e8d19f74f35986150549c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19625d70c67e8d19f74f35986150549c">&#9670;&nbsp;</a></span>scaleParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structScaleProtocolInterface_1_1Param.html">ScaleProtocolInterface::Param</a> ScaleProtocolInterface::scaleParam</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6c8854d5be99ddf9589b2fb226c3a8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c8854d5be99ddf9589b2fb226c3a8b">&#9670;&nbsp;</a></span>speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ScaleProtocolInterface::speed = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebd2b09cf039748d40c0f1e23b211f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd2b09cf039748d40c0f1e23b211f0f">&#9670;&nbsp;</a></span>version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ScaleProtocolInterface::version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbb8759cd430de1d5652d0e3aae8cb1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb8759cd430de1d5652d0e3aae8cb1e">&#9670;&nbsp;</a></span>weight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ScaleProtocolInterface::weight = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f01d527a22c98950e9399908fad7eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f01d527a22c98950e9399908fad7eb1">&#9670;&nbsp;</a></span>weightTare</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ScaleProtocolInterface::weightTare = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a></li>
+<li>src/appl/<a class="el" href="scaleProtocol_8cpp.html">scaleProtocol.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

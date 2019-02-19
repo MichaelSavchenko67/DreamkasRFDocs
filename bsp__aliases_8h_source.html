@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Исходный файл src/bsp/include/bsp_aliases.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0937102de6aefa85ea195f3f88a55c7c.html">bsp</a></li><li class="navelem"><a class="el" href="dir_50beb8cb9e45d74f64e800a01a73d201.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bsp_aliases.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bsp__aliases_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *    bsp_aliases.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *    Copyright (C) 2016-2017, ООО &quot;Дримкас&quot;. Все права защищены.</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *    Программа может использоваться и/или копироваться только с письменного</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *    разрешения или в соответствии с условиями, предусмотренными в договоре</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *    соглашения, по которому программа была предоставлена.</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *    Уведомление об авторском праве приводится только с целью ознакомления и не</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *    подразумевает публикацию или разглашение.</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *    Артём Коротченко &lt;a.korotchenko@dreamkas.ru&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef bsp_aliasesH // Для предотвращения повторного включения</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//----------------------------- Заголовочные файлы -----------------------------</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Заголовки BSP</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bsp__printer__keypad_8h.html">bsp_printer_keypad.h</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="bsp__lcd__drawer_8h.html">bsp_lcd_drawer.h</a>&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;lcd_mono_API.h&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//------------------------ Глобальные макроопределения -------------------------</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Принтер</span></div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a90e91917ac9d8b185c7556ffd693e4b1">   28</a></span>&#160;<span class="preprocessor">#define g_printer_init()</span></div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a8900f88b990104ed2ce9a849d9353489">   29</a></span>&#160;<span class="preprocessor">#define g_printer_cancel   g_bsp_printer_keypad_cancel</span></div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a222a79c14cc32d32d2a773237ffd8978">   30</a></span>&#160;<span class="preprocessor">#define g_printer_print    printer_print//g_bsp_printer_keypad_print</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#aa5f6736d2835324524b4b25914de8ce7">   31</a></span>&#160;<span class="preprocessor">#define g_printer_font_set g_bsp_printer_keypad_font_set</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// ЖК</span></div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a81f061a7c989a1b56de1a2655ac97011">   34</a></span>&#160;<span class="preprocessor">#define g_lcd_init_seller                         LcdMonoInit()</span></div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a6b9d43cde5bfe0150d88e5592bd0f160">   35</a></span>&#160;<span class="preprocessor">#define g_lcd_init_buyer                          LcdBuyerInit()</span></div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#afa59a98a1ec0b6898f01ac8f3ae5e47d">   36</a></span>&#160;<span class="preprocessor">#define g_lcd_backlight                     cout &lt;&lt; &quot;lcd g_lcd_backlight!&quot; &lt;&lt;endl //g_bsp_lcd_drawer_backlight</span></div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#a9770fd32918deffda96f2be0d9b797d4">   37</a></span>&#160;<span class="preprocessor">#define g_lcd_update(custom, buffer)        custom==0 ? updateSaleScreen(buffer) : updateBuyerScreen(buffer);//{g_bsp_lcd_drawer_update(custom, buffer)}</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Денежный ящик</span></div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#abb24291b4f30920c2af65a89b28261d8">   40</a></span>&#160;<span class="preprocessor">#define g_drawer_init()</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="bsp__aliases_8h.html#aa8e75250111af014bea95a2081407ab4">   43</a></span>&#160;<span class="preprocessor">#define bsp_aliasesH // Предотвращает повторное включение</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//-------------------------------- Конец файла ---------------------------------</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="ttc" id="bsp__lcd__drawer_8h_html"><div class="ttname"><a href="bsp__lcd__drawer_8h.html">bsp_lcd_drawer.h</a></div></div>
+<div class="ttc" id="bsp__printer__keypad_8h_html"><div class="ttname"><a href="bsp__printer__keypad_8h.html">bsp_printer_keypad.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

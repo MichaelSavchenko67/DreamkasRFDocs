@@ -1,0 +1,4 @@
+<map id="Menu::scannerEmulate" name="Menu::scannerEmulate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,161,39"/>
+<area shape="rect" id="node2" href="$classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; парс DataMatrix" alt="" coords="209,5,396,47"/>
+</map>

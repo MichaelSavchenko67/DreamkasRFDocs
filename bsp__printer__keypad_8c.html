@@ -1,0 +1,754 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/bsp/bsp_printer_keypad.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0937102de6aefa85ea195f3f88a55c7c.html">bsp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл bsp_printer_keypad.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="keypad_8h_source.html">keypad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__cfg_8h_source.html">bsp_cfg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__printer__keypad_8h_source.html">bsp_printer_keypad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="bsp__lcd__drawer_8h_source.html">bsp_lcd_drawer.h</a>&quot;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;termios.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для bsp_printer_keypad.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__printer__keypad_8c__incl.png" border="0" usemap="#src_2bsp_2bsp__printer__keypad_8c" alt=""/></div>
+<map name="src_2bsp_2bsp__printer__keypad_8c" id="src_2bsp_2bsp__printer__keypad_8c">
+<area shape="rect"  title=" " alt="" coords="850,5,983,47"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="359,95,434,121"/>
+<area shape="rect"  title=" " alt="" coords="5,169,81,196"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="534,169,585,196"/>
+<area shape="rect"  title=" " alt="" coords="733,244,802,271"/>
+<area shape="rect"  href="bsp__printer__keypad_8h.html" title=" " alt="" coords="609,169,755,196"/>
+<area shape="rect"  href="bsp__cfg_8h.html" title=" " alt="" coords="815,95,893,121"/>
+<area shape="rect"  href="bsp__lcd__drawer_8h.html" title=" " alt="" coords="917,95,1041,121"/>
+<area shape="rect"  title=" " alt="" coords="1066,95,1125,121"/>
+<area shape="rect"  title=" " alt="" coords="1149,95,1225,121"/>
+<area shape="rect"  title=" " alt="" coords="1250,95,1333,121"/>
+<area shape="rect"  title=" " alt="" coords="1357,95,1425,121"/>
+<area shape="rect"  title=" " alt="" coords="1450,95,1511,121"/>
+<area shape="rect"  title=" " alt="" coords="105,169,203,196"/>
+<area shape="rect"  title=" " alt="" coords="227,169,286,196"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="310,169,371,196"/>
+<area shape="rect"  title=" " alt="" coords="395,169,510,196"/>
+<area shape="rect"  title=" " alt="" coords="461,244,524,271"/>
+<area shape="rect"  title=" " alt="" coords="549,244,618,271"/>
+<area shape="rect"  title=" " alt="" coords="643,244,708,271"/>
+<area shape="rect"  title=" " alt="" coords="235,244,305,271"/>
+<area shape="rect"  title=" " alt="" coords="330,244,437,271"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab7bdd925e5fd661550236f8e36cdfd5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#ab7bdd925e5fd661550236f8e36cdfd5d">__BSP_PRINTER_KEYPAD_C__</a></td></tr>
+<tr class="separator:ab7bdd925e5fd661550236f8e36cdfd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7458067bbf2c9ae81090486b4bd889b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a7458067bbf2c9ae81090486b4bd889b9">CMD_INITIALIZE_PRINTER</a>&#160;&#160;&#160;&quot;\x1B\x40&quot;</td></tr>
+<tr class="separator:a7458067bbf2c9ae81090486b4bd889b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560da7859950c44fc33678a0d91e10b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a560da7859950c44fc33678a0d91e10b3">CMD_CHARACTER</a>&#160;&#160;&#160;&quot;\x1B\x21&quot;</td></tr>
+<tr class="separator:a560da7859950c44fc33678a0d91e10b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3018c7600b7bb9866400596a56a57af7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a3018c7600b7bb9866400596a56a57af7">START</a>&#160;&#160;&#160;0xAA</td></tr>
+<tr class="separator:a3018c7600b7bb9866400596a56a57af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b6bb2940d2fbe0a79852b070eeafd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#ae19b6bb2940d2fbe0a79852b070eeafd">STOP</a>&#160;&#160;&#160;0x55</td></tr>
+<tr class="separator:ae19b6bb2940d2fbe0a79852b070eeafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd408e9227101fbddd2f373e810ceb87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#abd408e9227101fbddd2f373e810ceb87">CMD_KEYPAD</a>&#160;&#160;&#160;0x21</td></tr>
+<tr class="separator:abd408e9227101fbddd2f373e810ceb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095fe382f40042a01cc3136ad15e6f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a095fe382f40042a01cc3136ad15e6f16">CMD_STATE</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="separator:a095fe382f40042a01cc3136ad15e6f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203163bc0189184a1de6ca8d1e53c6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a203163bc0189184a1de6ca8d1e53c6bf">KEY_DOWN</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a203163bc0189184a1de6ca8d1e53c6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8039e46f20a56e8a4f216a26b288e2f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a8039e46f20a56e8a4f216a26b288e2f4">KEY_HOLD</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a8039e46f20a56e8a4f216a26b288e2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bccbd8df39525833be002e0a25a2d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#ab5bccbd8df39525833be002e0a25a2d7">KEY_DOWN_PAIR</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ab5bccbd8df39525833be002e0a25a2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa086fc916a81e7fd348ec00cf786916"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#afa086fc916a81e7fd348ec00cf786916">KEY_UP</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:afa086fc916a81e7fd348ec00cf786916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce68d4b672e0d62566d6ecaa297e624"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#acce68d4b672e0d62566d6ecaa297e624">KEY_UP_PAIR</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:acce68d4b672e0d62566d6ecaa297e624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6821bafc3c88dfb2e433a095df9940c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a6821bafc3c88dfb2e433a095df9940c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af581fc6c43a25ea83f474e69b41ddbf1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#af581fc6c43a25ea83f474e69b41ddbf1">IOCTL_CLR_BUF</a>&#160;&#160;&#160;0x547B</td></tr>
+<tr class="separator:af581fc6c43a25ea83f474e69b41ddbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b31ea7538c69507f948875cc20bfb72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a3b31ea7538c69507f948875cc20bfb72">IOCTL_GET_BUF_LEN</a>&#160;&#160;&#160;0x547C</td></tr>
+<tr class="separator:a3b31ea7538c69507f948875cc20bfb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a527b1f4f9781951be13fbe8137b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#aa0a527b1f4f9781951be13fbe8137b7f">GET_BUF_LEN_MAX_TRIES</a>&#160;&#160;&#160;(5 * 1000)</td></tr>
+<tr class="separator:aa0a527b1f4f9781951be13fbe8137b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96476e285028652f4de885ea2ef5c7f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a96476e285028652f4de885ea2ef5c7f2">BUF_POLLING_US</a>&#160;&#160;&#160;200</td></tr>
+<tr class="separator:a96476e285028652f4de885ea2ef5c7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514ad415fb6125ba296793df7d1a468a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a514ad415fb6125ba296793df7d1a468a">ENABLE</a>&#160;&#160;&#160;0x01;</td></tr>
+<tr class="separator:a514ad415fb6125ba296793df7d1a468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99496f7308834e8b220f7894efa0b6ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a99496f7308834e8b220f7894efa0b6ab">DISABLE</a>&#160;&#160;&#160;0x00;</td></tr>
+<tr class="separator:a99496f7308834e8b220f7894efa0b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a9ff450ec3abf5db85acef825f15a0317"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317">bsp_dev_status_check</a> ()</td></tr>
+<tr class="separator:a9ff450ec3abf5db85acef825f15a0317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85ee3cd1b6a3bf47d686162212824c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#af85ee3cd1b6a3bf47d686162212824c2">bsp_printer_power_get</a> ()</td></tr>
+<tr class="separator:af85ee3cd1b6a3bf47d686162212824c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93df587a3ecf20077b5ea824ff8e5d1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a93df587a3ecf20077b5ea824ff8e5d1c">KeyDown</a> (unsigned char key_)</td></tr>
+<tr class="separator:a93df587a3ecf20077b5ea824ff8e5d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7d088331dd265ec6dc010c2beade10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#aaa7d088331dd265ec6dc010c2beade10">KeyHold</a> (unsigned char key_)</td></tr>
+<tr class="separator:aaa7d088331dd265ec6dc010c2beade10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc7db703212a2a88e64dc279e598527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a4dc7db703212a2a88e64dc279e598527">KeyUp</a> (unsigned char key_)</td></tr>
+<tr class="separator:a4dc7db703212a2a88e64dc279e598527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfdb84dbe0f451304dc65af22c3e134a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#acfdb84dbe0f451304dc65af22c3e134a">enterKeyDown</a> ()</td></tr>
+<tr class="separator:acfdb84dbe0f451304dc65af22c3e134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6867ec15b0ef903d28e58d7fe3f239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a4b6867ec15b0ef903d28e58d7fe3f239">enterKeyUp</a> ()</td></tr>
+<tr class="separator:a4b6867ec15b0ef903d28e58d7fe3f239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a26529f8f180fb2ab193d50f6c62d1f76"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a26529f8f180fb2ab193d50f6c62d1f76">dev_status_value_is_ready</a></td></tr>
+<tr class="separator:a26529f8f180fb2ab193d50f6c62d1f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b02516b391cc47de0fb6d9bfda74fb"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#ae3b02516b391cc47de0fb6d9bfda74fb">dev_status_return_value</a></td></tr>
+<tr class="separator:ae3b02516b391cc47de0fb6d9bfda74fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10508f3f217911d5debcd8a146cad688"><td class="memItemLeft" align="right" valign="top">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a10508f3f217911d5debcd8a146cad688">printer_power_value</a></td></tr>
+<tr class="separator:a10508f3f217911d5debcd8a146cad688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e36ce6089b5e82f02e313112c2ace7e"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a6e36ce6089b5e82f02e313112c2ace7e">dev_error</a></td></tr>
+<tr class="separator:a6e36ce6089b5e82f02e313112c2ace7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1707aeabb70675e06c7a2f17c6d7b624"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a1707aeabb70675e06c7a2f17c6d7b624">flagButtonUp</a> = 0x00</td></tr>
+<tr class="separator:a1707aeabb70675e06c7a2f17c6d7b624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164f5fa2186bc0c3d8d094dd6710f648"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a164f5fa2186bc0c3d8d094dd6710f648">flagButtonHold</a> = 0x00</td></tr>
+<tr class="separator:a164f5fa2186bc0c3d8d094dd6710f648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9bd3670275eb5e347af16501013bc8"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a5a9bd3670275eb5e347af16501013bc8">flagButtonDown</a> = 0x00</td></tr>
+<tr class="separator:a5a9bd3670275eb5e347af16501013bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2d3e3fe9ee24d4896782890baaeee4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a9f2d3e3fe9ee24d4896782890baaeee4">flagKeyboardEn</a> = 0x00</td></tr>
+<tr class="separator:a9f2d3e3fe9ee24d4896782890baaeee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fa62d74e14be46ab3f16df48925e5e"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a75fa62d74e14be46ab3f16df48925e5e">bot_key</a> = 0</td></tr>
+<tr class="separator:a75fa62d74e14be46ab3f16df48925e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f5560441e15118d08d3bef4913bcfc"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#a81f5560441e15118d08d3bef4913bcfc">flagEntUp</a> = 0</td></tr>
+<tr class="separator:a81f5560441e15118d08d3bef4913bcfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2cc347dbed829f8852e2365e5c2b60"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__printer__keypad_8c.html#abd2cc347dbed829f8852e2365e5c2b60">flagEntDown</a> = 0</td></tr>
+<tr class="separator:abd2cc347dbed829f8852e2365e5c2b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ab7bdd925e5fd661550236f8e36cdfd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bdd925e5fd661550236f8e36cdfd5d">&#9670;&nbsp;</a></span>__BSP_PRINTER_KEYPAD_C__</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __BSP_PRINTER_KEYPAD_C__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96476e285028652f4de885ea2ef5c7f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96476e285028652f4de885ea2ef5c7f2">&#9670;&nbsp;</a></span>BUF_POLLING_US</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUF_POLLING_US&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6821bafc3c88dfb2e433a095df9940c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6821bafc3c88dfb2e433a095df9940c6">&#9670;&nbsp;</a></span>BUF_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUF_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a560da7859950c44fc33678a0d91e10b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560da7859950c44fc33678a0d91e10b3">&#9670;&nbsp;</a></span>CMD_CHARACTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_CHARACTER&#160;&#160;&#160;&quot;\x1B\x21&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7458067bbf2c9ae81090486b4bd889b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7458067bbf2c9ae81090486b4bd889b9">&#9670;&nbsp;</a></span>CMD_INITIALIZE_PRINTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_INITIALIZE_PRINTER&#160;&#160;&#160;&quot;\x1B\x40&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd408e9227101fbddd2f373e810ceb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd408e9227101fbddd2f373e810ceb87">&#9670;&nbsp;</a></span>CMD_KEYPAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_KEYPAD&#160;&#160;&#160;0x21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a095fe382f40042a01cc3136ad15e6f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095fe382f40042a01cc3136ad15e6f16">&#9670;&nbsp;</a></span>CMD_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_STATE&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99496f7308834e8b220f7894efa0b6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99496f7308834e8b220f7894efa0b6ab">&#9670;&nbsp;</a></span>DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISABLE&#160;&#160;&#160;0x00;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a514ad415fb6125ba296793df7d1a468a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514ad415fb6125ba296793df7d1a468a">&#9670;&nbsp;</a></span>ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENABLE&#160;&#160;&#160;0x01;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0a527b1f4f9781951be13fbe8137b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a527b1f4f9781951be13fbe8137b7f">&#9670;&nbsp;</a></span>GET_BUF_LEN_MAX_TRIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_BUF_LEN_MAX_TRIES&#160;&#160;&#160;(5 * 1000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af581fc6c43a25ea83f474e69b41ddbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af581fc6c43a25ea83f474e69b41ddbf1">&#9670;&nbsp;</a></span>IOCTL_CLR_BUF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_CLR_BUF&#160;&#160;&#160;0x547B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b31ea7538c69507f948875cc20bfb72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b31ea7538c69507f948875cc20bfb72">&#9670;&nbsp;</a></span>IOCTL_GET_BUF_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IOCTL_GET_BUF_LEN&#160;&#160;&#160;0x547C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a203163bc0189184a1de6ca8d1e53c6bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203163bc0189184a1de6ca8d1e53c6bf">&#9670;&nbsp;</a></span>KEY_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DOWN&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5bccbd8df39525833be002e0a25a2d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bccbd8df39525833be002e0a25a2d7">&#9670;&nbsp;</a></span>KEY_DOWN_PAIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_DOWN_PAIR&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8039e46f20a56e8a4f216a26b288e2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8039e46f20a56e8a4f216a26b288e2f4">&#9670;&nbsp;</a></span>KEY_HOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_HOLD&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa086fc916a81e7fd348ec00cf786916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa086fc916a81e7fd348ec00cf786916">&#9670;&nbsp;</a></span>KEY_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_UP&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acce68d4b672e0d62566d6ecaa297e624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce68d4b672e0d62566d6ecaa297e624">&#9670;&nbsp;</a></span>KEY_UP_PAIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_UP_PAIR&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3018c7600b7bb9866400596a56a57af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3018c7600b7bb9866400596a56a57af7">&#9670;&nbsp;</a></span>START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define START&#160;&#160;&#160;0xAA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae19b6bb2940d2fbe0a79852b070eeafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19b6bb2940d2fbe0a79852b070eeafd">&#9670;&nbsp;</a></span>STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STOP&#160;&#160;&#160;0x55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a9ff450ec3abf5db85acef825f15a0317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff450ec3abf5db85acef825f15a0317">&#9670;&nbsp;</a></span>bsp_dev_status_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char bsp_dev_status_check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af85ee3cd1b6a3bf47d686162212824c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af85ee3cd1b6a3bf47d686162212824c2">&#9670;&nbsp;</a></span>bsp_printer_power_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float bsp_printer_power_get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfdb84dbe0f451304dc65af22c3e134a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdb84dbe0f451304dc65af22c3e134a">&#9670;&nbsp;</a></span>enterKeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enterKeyDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b6867ec15b0ef903d28e58d7fe3f239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6867ec15b0ef903d28e58d7fe3f239">&#9670;&nbsp;</a></span>enterKeyUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void enterKeyUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93df587a3ecf20077b5ea824ff8e5d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93df587a3ecf20077b5ea824ff8e5d1c">&#9670;&nbsp;</a></span>KeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KeyDown </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa7d088331dd265ec6dc010c2beade10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7d088331dd265ec6dc010c2beade10">&#9670;&nbsp;</a></span>KeyHold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KeyHold </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4dc7db703212a2a88e64dc279e598527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc7db703212a2a88e64dc279e598527">&#9670;&nbsp;</a></span>KeyUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KeyUp </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>key_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a75fa62d74e14be46ab3f16df48925e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fa62d74e14be46ab3f16df48925e5e">&#9670;&nbsp;</a></span>bot_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char bot_key = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e36ce6089b5e82f02e313112c2ace7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e36ce6089b5e82f02e313112c2ace7e">&#9670;&nbsp;</a></span>dev_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char dev_error</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3b02516b391cc47de0fb6d9bfda74fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b02516b391cc47de0fb6d9bfda74fb">&#9670;&nbsp;</a></span>dev_status_return_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char dev_status_return_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26529f8f180fb2ab193d50f6c62d1f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26529f8f180fb2ab193d50f6c62d1f76">&#9670;&nbsp;</a></span>dev_status_value_is_ready</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char dev_status_value_is_ready</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a9bd3670275eb5e347af16501013bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9bd3670275eb5e347af16501013bc8">&#9670;&nbsp;</a></span>flagButtonDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagButtonDown = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a164f5fa2186bc0c3d8d094dd6710f648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164f5fa2186bc0c3d8d094dd6710f648">&#9670;&nbsp;</a></span>flagButtonHold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagButtonHold = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1707aeabb70675e06c7a2f17c6d7b624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1707aeabb70675e06c7a2f17c6d7b624">&#9670;&nbsp;</a></span>flagButtonUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagButtonUp = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd2cc347dbed829f8852e2365e5c2b60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2cc347dbed829f8852e2365e5c2b60">&#9670;&nbsp;</a></span>flagEntDown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagEntDown = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81f5560441e15118d08d3bef4913bcfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f5560441e15118d08d3bef4913bcfc">&#9670;&nbsp;</a></span>flagEntUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagEntUp = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f2d3e3fe9ee24d4896782890baaeee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2d3e3fe9ee24d4896782890baaeee4">&#9670;&nbsp;</a></span>flagKeyboardEn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char flagKeyboardEn = 0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10508f3f217911d5debcd8a146cad688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10508f3f217911d5debcd8a146cad688">&#9670;&nbsp;</a></span>printer_power_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> printer_power_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

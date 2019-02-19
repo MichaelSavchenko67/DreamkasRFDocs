@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/https_exchange.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл https_exchange.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="counters_8h_source.html">counters.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="goods_8h_source.html">goods.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="receipt__new_8h_source.html">receipt_new.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для https_exchange.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="https__exchange_8h__incl.png" border="0" usemap="#src_2appl_2include_2https__exchange_8h" alt=""/></div>
+<map name="src_2appl_2include_2https__exchange_8h" id="src_2appl_2include_2https__exchange_8h">
+<area shape="rect"  title=" " alt="" coords="771,5,918,47"/>
+<area shape="rect"  title=" " alt="" coords="5,95,92,121"/>
+<area shape="rect"  title=" " alt="" coords="583,393,666,420"/>
+<area shape="rect"  title=" " alt="" coords="691,393,788,420"/>
+<area shape="rect"  title=" " alt="" coords="812,393,877,420"/>
+<area shape="rect"  title=" " alt="" coords="1517,543,1578,569"/>
+<area shape="rect"  title=" " alt="" coords="167,617,226,644"/>
+<area shape="rect"  title=" " alt="" coords="1579,617,1633,644"/>
+<area shape="rect"  title=" " alt="" coords="1814,692,1875,719"/>
+<area shape="rect"  title=" " alt="" coords="1967,393,2034,420"/>
+<area shape="rect"  title=" " alt="" coords="3375,692,3447,719"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1195,244,1252,271"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1684,393,1752,420"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="985,543,1080,569"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="790,543,873,569"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="4000,95,4068,121"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="2988,169,3091,196"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="2050,95,2157,121"/>
+<area shape="rect"  title=" " alt="" coords="2299,692,2382,719"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="1156,468,1291,495"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="897,319,947,345"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="2711,543,2786,569"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1845,319,1913,345"/>
+<area shape="rect"  title=" " alt="" coords="1811,617,1879,644"/>
+<area shape="rect"  title=" " alt="" coords="479,767,544,793"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2829,692,2879,719"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="2816,617,2892,644"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="1619,468,1691,495"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="3071,468,3122,495"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="301,617,423,644"/>
+<area shape="rect"  title=" " alt="" coords="4115,692,4177,719"/>
+<area shape="rect"  title=" " alt="" coords="2406,692,2481,719"/>
+<area shape="rect"  title=" " alt="" coords="4447,692,4504,719"/>
+<area shape="rect"  title=" " alt="" coords="3873,692,3912,719"/>
+<area shape="rect"  title=" " alt="" coords="2505,692,2563,719"/>
+<area shape="rect"  title=" " alt="" coords="919,617,978,644"/>
+<area shape="rect"  title=" " alt="" coords="1195,617,1260,644"/>
+<area shape="rect"  title=" " alt="" coords="1285,617,1351,644"/>
+<area shape="rect"  title=" " alt="" coords="1003,617,1068,644"/>
+<area shape="rect"  title=" " alt="" coords="1092,617,1171,644"/>
+<area shape="rect"  title=" " alt="" coords="747,617,793,644"/>
+<area shape="rect"  title=" " alt="" coords="600,617,671,644"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="3519,393,3605,420"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="4128,468,4228,495"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="3923,393,4039,420"/>
+<area shape="rect"  title=" " alt="" coords="1929,169,2043,196"/>
+<area shape="rect"  title=" " alt="" coords="2067,169,2140,196"/>
+<area shape="rect"  href="beeper_8h.html" title=" " alt="" coords="2311,543,2383,569"/>
+<area shape="rect"  href="requisites_8h.html" title=" " alt="" coords="3435,319,3524,345"/>
+<area shape="rect"  href="barcodeScanner_8h.html" title=" " alt="" coords="2115,319,2241,345"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="https__exchange_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2https__exchange_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2https__exchange_8hdep" id="src_2appl_2include_2https__exchange_8hdep">
+<area shape="rect"  title=" " alt="" coords="1004,5,1151,47"/>
+<area shape="rect"  href="https__exchange_8cpp.html" title=" " alt="" coords="677,102,867,129"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="891,95,1040,136"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="880,348,1040,375"/>
+<area shape="rect"  href="menu_8cpp.html" title=" " alt="" coords="1078,423,1207,449"/>
+<area shape="rect"  href="testHttpsExchange_8h.html" title=" " alt="" coords="1165,95,1341,136"/>
+<area shape="rect"  href="Fisgo__Test__API_8cpp.html" title=" " alt="" coords="479,184,617,225"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="641,191,786,218"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="257,273,421,300"/>
+<area shape="rect"  href="printer_8cpp.html" title=" " alt="" coords="119,348,252,375"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="445,273,632,300"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="656,273,771,300"/>
+<area shape="rect"  href="lcd__test_8cpp.html" title=" " alt="" coords="795,273,938,300"/>
+<area shape="rect"  href="testLcd_8h.html" title=" " alt="" coords="5,273,181,300"/>
+<area shape="rect"  href="threads_8h.html" title=" " alt="" coords="435,423,605,449"/>
+<area shape="rect"  href="testExamples_8h.html" title=" " alt="" coords="629,423,843,449"/>
+<area shape="rect"  href="testMenu_8h.html" title=" " alt="" coords="867,423,1053,449"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="457,497,583,524"/>
+<area shape="rect"  href="testPrinter_8h.html" title=" " alt="" coords="277,348,470,375"/>
+<area shape="rect"  href="MenuTree_8cpp.html" title=" " alt="" coords="495,348,649,375"/>
+</map>
+</div>
+</div>
+<p><a href="https__exchange_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpsExchange.html">HttpsExchange</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structHttpsExchange_1_1EX__REG__RESULT.html">HttpsExchange::EX_REG_RESULT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:aa83916737a5ebe430a6e6842a0734c50"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a> = <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td></tr>
+<tr class="separator:aa83916737a5ebe430a6e6842a0734c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f2f43d2ec1d41f79845a0bfbbac47e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8h.html#a96f2f43d2ec1d41f79845a0bfbbac47e">RequestData</a> = pair&lt; string, string &gt;</td></tr>
+<tr class="separator:a96f2f43d2ec1d41f79845a0bfbbac47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114e200d48ceeccaf2fc867041187e46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8h.html#a114e200d48ceeccaf2fc867041187e46">JsonSnifferData</a> = pair&lt; string, <a class="el" href="https__exchange_8h.html#a96f2f43d2ec1d41f79845a0bfbbac47e">RequestData</a> &gt;</td></tr>
+<tr class="separator:a114e200d48ceeccaf2fc867041187e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa88ccb8d153d4760c798793209e13a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8h.html#aaaa88ccb8d153d4760c798793209e13a">JsonSniffer</a> = list&lt; <a class="el" href="https__exchange_8h.html#a114e200d48ceeccaf2fc867041187e46">JsonSnifferData</a> &gt;</td></tr>
+<tr class="separator:aaaa88ccb8d153d4760c798793209e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a id="aa83916737a5ebe430a6e6842a0734c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83916737a5ebe430a6e6842a0734c50">&#9670;&nbsp;</a></span>JsonParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a> <a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaa88ccb8d153d4760c798793209e13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa88ccb8d153d4760c798793209e13a">&#9670;&nbsp;</a></span>JsonSniffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="https__exchange_8h.html#aaaa88ccb8d153d4760c798793209e13a">JsonSniffer</a> =  list&lt;<a class="el" href="https__exchange_8h.html#a114e200d48ceeccaf2fc867041187e46">JsonSnifferData</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a114e200d48ceeccaf2fc867041187e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114e200d48ceeccaf2fc867041187e46">&#9670;&nbsp;</a></span>JsonSnifferData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="https__exchange_8h.html#a114e200d48ceeccaf2fc867041187e46">JsonSnifferData</a> =  pair&lt;string, <a class="el" href="https__exchange_8h.html#a96f2f43d2ec1d41f79845a0bfbbac47e">RequestData</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96f2f43d2ec1d41f79845a0bfbbac47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f2f43d2ec1d41f79845a0bfbbac47e">&#9670;&nbsp;</a></span>RequestData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="https__exchange_8h.html#a96f2f43d2ec1d41f79845a0bfbbac47e">RequestData</a> =  pair&lt;string, string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

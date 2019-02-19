@@ -1,0 +1,8 @@
+<map id="barcodeScannerThread_" name="barcodeScannerThread_">
+<area shape="rect" id="node1" title=" " alt="" coords="5,75,168,102"/>
+<area shape="rect" id="node2" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="217,75,401,102"/>
+<area shape="rect" id="node5" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="218,9,401,51"/>
+<area shape="rect" id="node6" href="$classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; парс DataMatrix" alt="" coords="216,127,403,168"/>
+<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="451,5,601,47"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="451,71,601,112"/>
+</map>

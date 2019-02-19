@@ -1,0 +1,890 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/json.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл json.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="net_8h_source.html">net.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="filesfg_8h_source.html">filesfg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="license_8h_source.html">license.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для json.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="json_8h__incl.png" border="0" usemap="#src_2appl_2include_2json_8h" alt=""/></div>
+<map name="src_2appl_2include_2json_8h" id="src_2appl_2include_2json_8h">
+<area shape="rect"  title=" " alt="" coords="1306,5,1458,32"/>
+<area shape="rect"  title=" " alt="" coords="231,80,314,107"/>
+<area shape="rect"  title=" " alt="" coords="1728,155,1783,181"/>
+<area shape="rect"  title=" " alt="" coords="1414,229,1475,256"/>
+<area shape="rect"  title=" " alt="" coords="1237,229,1309,256"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="339,80,473,107"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="751,80,802,107"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1348,80,1416,107"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="2801,80,2896,107"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1778,80,1853,107"/>
+<area shape="rect"  title=" " alt="" coords="165,155,229,181"/>
+<area shape="rect"  title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect"  title=" " alt="" coords="93,155,141,181"/>
+<area shape="rect"  title=" " alt="" coords="882,155,965,181"/>
+<area shape="rect"  title=" " alt="" coords="487,155,584,181"/>
+<area shape="rect"  title=" " alt="" coords="608,155,673,181"/>
+<area shape="rect"  title=" " alt="" coords="1013,229,1074,256"/>
+<area shape="rect"  title=" " alt="" coords="698,155,762,181"/>
+<area shape="rect"  title=" " alt="" coords="1099,229,1167,256"/>
+<area shape="rect"  title=" " alt="" coords="583,229,648,256"/>
+<area shape="rect"  title=" " alt="" coords="786,155,858,181"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="1335,155,1407,181"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1091,155,1159,181"/>
+<area shape="rect"  title=" " alt="" coords="355,155,463,181"/>
+<area shape="rect"  title=" " alt="" coords="1603,229,1665,256"/>
+<area shape="rect"  title=" " alt="" coords="1791,229,1850,256"/>
+<area shape="rect"  title=" " alt="" coords="1482,155,1549,181"/>
+<area shape="rect"  title=" " alt="" coords="1573,155,1653,181"/>
+<area shape="rect"  title=" " alt="" coords="2050,155,2125,181"/>
+<area shape="rect"  title=" " alt="" coords="2149,155,2215,181"/>
+<area shape="rect"  title=" " alt="" coords="2239,155,2306,181"/>
+<area shape="rect"  title=" " alt="" coords="2331,155,2396,181"/>
+<area shape="rect"  title=" " alt="" coords="2420,155,2499,181"/>
+<area shape="rect"  title=" " alt="" coords="2523,155,2620,181"/>
+<area shape="rect"  title=" " alt="" coords="2644,155,2704,181"/>
+<area shape="rect"  title=" " alt="" coords="2728,155,2791,181"/>
+<area shape="rect"  title=" " alt="" coords="2815,155,2883,181"/>
+<area shape="rect"  title=" " alt="" coords="2907,155,2961,181"/>
+<area shape="rect"  title=" " alt="" coords="2985,155,3032,181"/>
+<area shape="rect"  title=" " alt="" coords="3057,155,3126,181"/>
+<area shape="rect"  title=" " alt="" coords="3150,155,3233,181"/>
+<area shape="rect"  title=" " alt="" coords="3257,155,3310,181"/>
+<area shape="rect"  title=" " alt="" coords="3335,155,3413,181"/>
+<area shape="rect"  title=" " alt="" coords="3437,155,3516,181"/>
+<area shape="rect"  title=" " alt="" coords="3541,155,3591,181"/>
+<area shape="rect"  title=" " alt="" coords="3616,155,3705,181"/>
+<area shape="rect"  title=" " alt="" coords="3730,155,3781,181"/>
+<area shape="rect"  title=" " alt="" coords="3805,155,3916,181"/>
+<area shape="rect"  title=" " alt="" coords="3940,155,4008,181"/>
+<area shape="rect"  title=" " alt="" coords="1960,155,2025,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="json_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2json_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2json_8hdep" id="src_2appl_2include_2json_8hdep">
+<area shape="rect"  title=" " alt="" coords="2316,5,2468,32"/>
+<area shape="rect"  href="CabinetBase_8cpp.html" title=" " alt="" coords="1257,87,1429,114"/>
+<area shape="rect"  href="https__exchange_8cpp.html" title=" " alt="" coords="2032,355,2221,382"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1453,80,1609,121"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="1576,259,1723,300"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="1615,601,1775,628"/>
+<area shape="rect"  href="menu_8cpp.html" title=" " alt="" coords="2295,676,2425,703"/>
+<area shape="rect"  href="json_8cpp.html" title=" " alt="" coords="2511,355,2633,382"/>
+<area shape="rect"  href="testJSON_8h.html" title=" " alt="" coords="2297,355,2487,382"/>
+<area shape="rect"  href="sqlWrapper_8cpp.html" title=" " alt="" coords="3151,355,3313,382"/>
+<area shape="rect"  href="goods_8cpp.html" title=" " alt="" coords="1747,266,1879,293"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="961,169,1113,211"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="1239,445,1385,471"/>
+<area shape="rect"  href="threads_8h.html" title=" " alt="" coords="475,676,645,703"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="598,527,762,553"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="1851,177,2013,203"/>
+<area shape="rect"  href="ReceiptsDb_8h.html" title=" " alt="" coords="275,527,472,553"/>
+<area shape="rect"  href="receipt__new_8cpp.html" title=" " alt="" coords="1507,177,1674,203"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html" title=" " alt="" coords="1048,266,1219,293"/>
+<area shape="rect"  href="keypad_8cpp.html" title=" " alt="" coords="1243,266,1381,293"/>
+<area shape="rect"  href="testPiritLib_8h.html" title=" " alt="" coords="857,259,1023,300"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="1808,348,1957,389"/>
+<area shape="rect"  href="testHttpsExchange_8h.html" title=" " alt="" coords="1557,348,1733,389"/>
+<area shape="rect"  href="Fisgo__Test__API_8cpp.html" title=" " alt="" coords="1859,437,1997,479"/>
+<area shape="rect"  href="printer_8cpp.html" title=" " alt="" coords="816,601,949,628"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="888,527,1075,553"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="1349,527,1464,553"/>
+<area shape="rect"  href="lcd__test_8cpp.html" title=" " alt="" coords="1489,527,1631,553"/>
+<area shape="rect"  href="testLcd_8h.html" title=" " alt="" coords="1099,527,1275,553"/>
+<area shape="rect"  href="testExamples_8h.html" title=" " alt="" coords="1700,676,1913,703"/>
+<area shape="rect"  href="testMenu_8h.html" title=" " alt="" coords="1489,676,1676,703"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="497,751,623,777"/>
+<area shape="rect"  href="testPrinter_8h.html" title=" " alt="" coords="598,601,791,628"/>
+<area shape="rect"  href="MenuTree_8cpp.html" title=" " alt="" coords="973,601,1128,628"/>
+<area shape="rect"  href="goods__test_8cpp.html" title=" " alt="" coords="1955,266,2117,293"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="2200,259,2352,300"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="2701,266,2896,293"/>
+<area shape="rect"  href="goods__new_8cpp.html" title=" " alt="" coords="2657,355,2820,382"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html" title=" " alt="" coords="2895,348,3076,389"/>
+<area shape="rect"  href="ReceiptsDb_8cpp.html" title=" " alt="" coords="305,601,471,628"/>
+<area shape="rect"  href="testReceiptsDb_8h.html" title=" " alt="" coords="5,601,229,628"/>
+</map>
+</div>
+</div>
+<p><a href="json_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONUpdateStr.html">JSONUpdateStr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONUpdate.html">JSONUpdate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONResult.html">JSONResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONKKTRegInfoStr.html">JSONKKTRegInfoStr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONKKTRegInfo.html">JSONKKTRegInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJSON.html">JSON</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html">JSON::MONEY_DOCUMENT_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html">JSON::MONEY_DOCUMENT_REPORT_JSON</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1PAYMENTS.html">JSON::PAYMENTS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1COUNTERS.html">JSON::COUNTERS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1SHIFTS.html">JSON::SHIFTS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1SHIFT__DOCUMENT__REPORT__JSON.html">JSON::SHIFT_DOCUMENT_REPORT_JSON</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__VERSION.html">JSON::JSON_VERSION</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__METHOD.html">JSON::JSON_METHOD</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__CASHIER.html">JSON::JSON_CASHIER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__OFD__PROVIDER.html">JSON::JSON_OFD_PROVIDER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SHOP__INFO.html">JSON::JSON_SHOP_INFO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__REGISTRATION__INFO.html">JSON::JSON_KKT_REGISTRATION_INFO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__INFO.html">JSON::JSON_KKT_INFO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__ALCOHOL__META.html">JSON::JSON_ALCOHOL_META</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__WEAR__PARENT__META.html">JSON::JSON_WEAR_PARENT_META</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__META.html">JSON::JSON_META</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PRODUCT.html">JSON::JSON_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__POSITION.html">JSON::JSON_POSITION</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html">JSON::TAG_VALUE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__POSITION__EXTERNAL.html">JSON::JSON_POSITION_EXTERNAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PAYMENT.html">JSON::JSON_PAYMENT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PURCHASE.html">JSON::JSON_PURCHASE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__DOCUMENT.html">JSON::JSON_DOCUMENT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__COUNTERS.html">JSON::JSON_COUNTERS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SHIFT.html">JSON::JSON_SHIFT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__TASK__RESULTS.html">JSON::JSON_TASK_RESULTS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__TASK.html">JSON::JSON_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__BIND__PRODUCT.html">JSON::JSON_BIND_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__DELETE__PRODUCT.html">JSON::JSON_DELETE_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UPSERT__PRODUCT.html">JSON::JSON_UPSERT_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KEY__ACTIVATION.html">JSON::JSON_KEY_ACTIVATION</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__ATTRIBUTES.html">JSON::JSON_ATTRIBUTES</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__TAXES.html">JSON::JSON_TAXES</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__TOTAL.html">JSON::JSON_TOTAL</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html">JSON::JSON_EXTERNAL_PURCHASE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__REGISTRATION.html">JSON::JSON_REGISTRATION</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__LOGS.html">JSON::JSON_LOGS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UPSDISC__RESULT.html">JSON::JSON_UPSDISC_RESULT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UPSDISC__PRODUCT.html">JSON::JSON_UPSDISC_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UPSERT__DISCOUNT.html">JSON::JSON_UPSERT_DISCOUNT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__DELETE__DISCOUNT.html">JSON::JSON_DELETE_DISCOUNT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__HANDSHAKE.html">JSON::JSON_HANDSHAKE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__HANDSHAKE_1_1REQUEST.html">JSON::JSON_HANDSHAKE::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__HANDSHAKE_1_1RESPONSE.html">JSON::JSON_HANDSHAKE::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__REGISTER.html">JSON::JSON_REGISTER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__REGISTER_1_1REQUEST.html">JSON::JSON_REGISTER::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__REGISTER_1_1RESPONSE.html">JSON::JSON_REGISTER::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UNREGISTER.html">JSON::JSON_UNREGISTER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UNREGISTER_1_1REQUEST.html">JSON::JSON_UNREGISTER::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__UNREGISTER_1_1RESPONSE.html">JSON::JSON_UNREGISTER::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__REGISTER__INFO.html">JSON::JSON_KKT_REGISTER_INFO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__REGISTER__INFO_1_1REQUEST.html">JSON::JSON_KKT_REGISTER_INFO::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__REGISTER__INFO_1_1RESPONSE.html">JSON::JSON_KKT_REGISTER_INFO::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT.html">JSON::JSON_CASH_INFO_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT_1_1REQUEST.html">JSON::JSON_CASH_INFO_REPORT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT_1_1RESPONSE.html">JSON::JSON_CASH_INFO_REPORT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__COUNTERS__REPORT.html">JSON::JSON_COUNTERS_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__COUNTERS__REPORT_1_1REQUEST.html">JSON::JSON_COUNTERS_REPORT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__COUNTERS__REPORT_1_1RESPONSE.html">JSON::JSON_COUNTERS_REPORT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PURCHASE__DOCUMENT__REPORT.html">JSON::JSON_PURCHASE_DOCUMENT_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PURCHASE__DOCUMENT__REPORT_1_1REQUEST.html">JSON::JSON_PURCHASE_DOCUMENT_REPORT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__PURCHASE__DOCUMENT__REPORT_1_1RESPONSE.html">JSON::JSON_PURCHASE_DOCUMENT_REPORT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__MONEY__DOCUMENT__REPORT.html">JSON::JSON_MONEY_DOCUMENT_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__MONEY__DOCUMENT__REPORT_1_1REQUEST.html">JSON::JSON_MONEY_DOCUMENT_REPORT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__MONEY__DOCUMENT__REPORT_1_1RESPONSE.html">JSON::JSON_MONEY_DOCUMENT_REPORT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SHIFT__DOCUMENT__REPORT.html">JSON::JSON_SHIFT_DOCUMENT_REPORT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SHIFT__DOCUMENT__REPORT_1_1REQUEST.html">JSON::JSON_SHIFT_DOCUMENT_REPORT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SHIFT__DOCUMENT__REPORT_1_1RESPONSE.html">JSON::JSON_SHIFT_DOCUMENT_REPORT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SEARCH__PRODUCT.html">JSON::JSON_SEARCH_PRODUCT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SEARCH__PRODUCT_1_1REQUEST.html">JSON::JSON_SEARCH_PRODUCT::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__SEARCH__PRODUCT_1_1RESPONSE.html">JSON::JSON_SEARCH_PRODUCT::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html">JSON::JSON_OFD_REGISTER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__OFD__REGISTRATION__STATUS.html">JSON::JSON_OFD_REGISTRATION_STATUS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__OFD__SIGN.html">JSON::JSON_OFD_SIGN</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TASK__DATA.html">JSON::TASK_DATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__POLL__.html">JSON::JSON_POLL_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__POLL___1_1REQUEST.html">JSON::JSON_POLL_::REQUEST</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__POLL___1_1RESPONSE.html">JSON::JSON_POLL_::RESPONSE</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1UpdateInfo.html">JSON::UpdateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1POLL__PARSE__ERRORS.html">JSON::POLL_PARSE_ERRORS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a2f64b33d4b0d53b3d5682c9ad670ee5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a2f64b33d4b0d53b3d5682c9ad670ee5c">CAB_OK</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2f64b33d4b0d53b3d5682c9ad670ee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b068c101188fc806e744d9c17347a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#af8b068c101188fc806e744d9c17347a8">CAB_NEED_REGISTERED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:af8b068c101188fc806e744d9c17347a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbada98ee733b1e1370b324aaac92bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#acfbada98ee733b1e1370b324aaac92bf">CAB_NEED_HANDSHAKE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:acfbada98ee733b1e1370b324aaac92bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b61eeb93d7d11c90ec26c027ca7621"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a86b61eeb93d7d11c90ec26c027ca7621">CAB_NEED_UPDATE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a86b61eeb93d7d11c90ec26c027ca7621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c07e398ffa72614fa08c62b1f4e317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a67c07e398ffa72614fa08c62b1f4e317">CAB_USER_FAILURE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a67c07e398ffa72614fa08c62b1f4e317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4f3d2251670ba386dc0c42fe648db1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#aca4f3d2251670ba386dc0c42fe648db1">CAB_REQUEST_FAILURE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:aca4f3d2251670ba386dc0c42fe648db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050c1570b74166b8930ab2d32dc20434"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a050c1570b74166b8930ab2d32dc20434">NET_ERROR</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:a050c1570b74166b8930ab2d32dc20434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeec52d64d60583082da5a33a1bcee74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#aaeec52d64d60583082da5a33a1bcee74">FMT_STR</a>&#160;&#160;&#160;&quot; %-17s %15s &quot;</td></tr>
+<tr class="separator:aaeec52d64d60583082da5a33a1bcee74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2950ab0a1edb5beda5e63220c7e722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a9b2950ab0a1edb5beda5e63220c7e722">FMT_LLU</a>&#160;&#160;&#160;&quot; %-17s %15llu &quot;</td></tr>
+<tr class="separator:a9b2950ab0a1edb5beda5e63220c7e722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a29201158e9b795d1b0ee60bf0bfda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ac2a29201158e9b795d1b0ee60bf0bfda">FMT_FLOAT</a>&#160;&#160;&#160;&quot; %-17s %15f &quot;</td></tr>
+<tr class="separator:ac2a29201158e9b795d1b0ee60bf0bfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3ddc0de098c77c000ca6d9a71c65ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#aed3ddc0de098c77c000ca6d9a71c65ca">BIND_PRODUCT_TYPE</a>&#160;&#160;&#160;&quot;bind_product&quot;</td></tr>
+<tr class="separator:aed3ddc0de098c77c000ca6d9a71c65ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847af091649f66b48436366c6bccd228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a847af091649f66b48436366c6bccd228">DELETE_PRODUCT_TYPE</a>&#160;&#160;&#160;&quot;delete_product&quot;</td></tr>
+<tr class="separator:a847af091649f66b48436366c6bccd228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9180cf7aca4d313ec57d727ea4b5ffc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a9180cf7aca4d313ec57d727ea4b5ffc5">UPSERT_PRODUCT_TYPE</a>&#160;&#160;&#160;&quot;upsert_product&quot;</td></tr>
+<tr class="separator:a9180cf7aca4d313ec57d727ea4b5ffc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86fa465a7e5637ccfaa15e4a205fa21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ac86fa465a7e5637ccfaa15e4a205fa21">UPSERT_DISCOUNT_TYPE</a>&#160;&#160;&#160;&quot;upsert_discount&quot;</td></tr>
+<tr class="separator:ac86fa465a7e5637ccfaa15e4a205fa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca38cf64268b5db456d089d2902a676e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#aca38cf64268b5db456d089d2902a676e">DELETE_DISCOUNT_TYPE</a>&#160;&#160;&#160;&quot;delete_discount&quot;</td></tr>
+<tr class="separator:aca38cf64268b5db456d089d2902a676e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a6e3ce2f1d5e77f1548af544445e80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ac3a6e3ce2f1d5e77f1548af544445e80">EXTERNAL_PURCHASE_TYPE</a>&#160;&#160;&#160;&quot;external_purchase&quot;</td></tr>
+<tr class="separator:ac3a6e3ce2f1d5e77f1548af544445e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63380f748c6a35cddcfece6d6ddc2bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ae63380f748c6a35cddcfece6d6ddc2bd">KEY_ACTIVATION_TYPE</a>&#160;&#160;&#160;&quot;key_activation&quot;</td></tr>
+<tr class="separator:ae63380f748c6a35cddcfece6d6ddc2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6ce5215f1353a899cd3327b2a6d1f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#adc6ce5215f1353a899cd3327b2a6d1f0">REGISTRATION_TASK</a>&#160;&#160;&#160;&quot;registration&quot;</td></tr>
+<tr class="separator:adc6ce5215f1353a899cd3327b2a6d1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e549fb17e855dbd140eae566abf0389"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a8e549fb17e855dbd140eae566abf0389">_OK_</a>&#160;&#160;&#160;&quot;OK&quot;</td></tr>
+<tr class="separator:a8e549fb17e855dbd140eae566abf0389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd34cedb3847d908a117870bcfa0fe2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#afcd34cedb3847d908a117870bcfa0fe2">NO_CLOUD_SIGN</a>&#160;&#160;&#160;&quot;NO_CLOUD_SIGN&quot;</td></tr>
+<tr class="separator:afcd34cedb3847d908a117870bcfa0fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d178ec5f52534c3fcc7b775e0d45dca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a4d178ec5f52534c3fcc7b775e0d45dca">_ERROR_</a>&#160;&#160;&#160;&quot;ERROR&quot;</td></tr>
+<tr class="separator:a4d178ec5f52534c3fcc7b775e0d45dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13ee57d95da6b6509d43bb1b3f67bb02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a13ee57d95da6b6509d43bb1b3f67bb02">WAITING</a>&#160;&#160;&#160;&quot;WAITING&quot;</td></tr>
+<tr class="separator:a13ee57d95da6b6509d43bb1b3f67bb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b988cd042236329a1064f1d896998f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a7b988cd042236329a1064f1d896998f7">REGISTERED</a>&#160;&#160;&#160;&quot;REGISTERED&quot;</td></tr>
+<tr class="separator:a7b988cd042236329a1064f1d896998f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0841a554c24a691e74bd22540132d002"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a0841a554c24a691e74bd22540132d002">NEED_REPORT</a>&#160;&#160;&#160;&quot;NEED_REPORT&quot;</td></tr>
+<tr class="separator:a0841a554c24a691e74bd22540132d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308406fe89e2901f3edb77a8e3d40403"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a308406fe89e2901f3edb77a8e3d40403">NEED_CLOUD_SIGN</a>&#160;&#160;&#160;&quot;NEED_CLOUD_SIGN&quot;</td></tr>
+<tr class="separator:a308406fe89e2901f3edb77a8e3d40403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0635c06368a91741b5296f37229abec0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#a0635c06368a91741b5296f37229abec0">NOT_REGISTERED</a>&#160;&#160;&#160;&quot;NOT_REGISTERED&quot;</td></tr>
+<tr class="separator:a0635c06368a91741b5296f37229abec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec57c2daf5e38cc8cfcb9f6c789666a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#aeec57c2daf5e38cc8cfcb9f6c789666a">INVALID_CODE</a>&#160;&#160;&#160;&quot;INVALID_CODE&quot;</td></tr>
+<tr class="separator:aeec57c2daf5e38cc8cfcb9f6c789666a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84bd9667e172211497710f695b9539a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a>&#160;&#160;&#160;&quot;Пульс ФА&quot;</td></tr>
+<tr class="separator:ad84bd9667e172211497710f695b9539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:af49606058cb80e0e28ff5fd4b8e8d997"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#af49606058cb80e0e28ff5fd4b8e8d997">JsonParser</a> = <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td></tr>
+<tr class="separator:af49606058cb80e0e28ff5fd4b8e8d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:af8f9d177c2dc5f07f4eccb613b342e0f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0f">E_JSON</a> { <br />
+&#160;&#160;<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa8f88e60a7bfaccd99cf7d790610c6740">JSON_RESULT</a> = 1, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa536c4a28d9e1ec09f523ad8a8e9529e5">JSON_UPDATE</a> = 2, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa3f7c3ee1e858c2265751ad9d9a421953">JSON_RESULT_INT</a> = 3, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0faf0a7e29d1045b7262aded25a61408a6e">JSON_KKT_REGISTR</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa91d8bb1b8cbbe1d1b00a344274b4bc12">JSON_POLL</a> = 5, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa414399cd73e6811901f65a2810c7499d">JSON_OFD_REGISTER</a> = 6, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa73a43d559c804053c7792104f7d8b814">JSON_OFD_REGISTRATION_STATUS</a> = 7, 
+<a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0fa659a73422c1a745cf49408d648a7187f">JSON_OFD_SIGN</a> = 8
+<br />
+ }</td></tr>
+<tr class="separator:af8f9d177c2dc5f07f4eccb613b342e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a4d178ec5f52534c3fcc7b775e0d45dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d178ec5f52534c3fcc7b775e0d45dca">&#9670;&nbsp;</a></span>_ERROR_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _ERROR_&#160;&#160;&#160;&quot;ERROR&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e549fb17e855dbd140eae566abf0389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e549fb17e855dbd140eae566abf0389">&#9670;&nbsp;</a></span>_OK_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _OK_&#160;&#160;&#160;&quot;OK&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed3ddc0de098c77c000ca6d9a71c65ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed3ddc0de098c77c000ca6d9a71c65ca">&#9670;&nbsp;</a></span>BIND_PRODUCT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIND_PRODUCT_TYPE&#160;&#160;&#160;&quot;bind_product&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfbada98ee733b1e1370b324aaac92bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbada98ee733b1e1370b324aaac92bf">&#9670;&nbsp;</a></span>CAB_NEED_HANDSHAKE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_NEED_HANDSHAKE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8b068c101188fc806e744d9c17347a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b068c101188fc806e744d9c17347a8">&#9670;&nbsp;</a></span>CAB_NEED_REGISTERED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_NEED_REGISTERED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86b61eeb93d7d11c90ec26c027ca7621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b61eeb93d7d11c90ec26c027ca7621">&#9670;&nbsp;</a></span>CAB_NEED_UPDATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_NEED_UPDATE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f64b33d4b0d53b3d5682c9ad670ee5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f64b33d4b0d53b3d5682c9ad670ee5c">&#9670;&nbsp;</a></span>CAB_OK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_OK&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca4f3d2251670ba386dc0c42fe648db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca4f3d2251670ba386dc0c42fe648db1">&#9670;&nbsp;</a></span>CAB_REQUEST_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_REQUEST_FAILURE&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67c07e398ffa72614fa08c62b1f4e317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c07e398ffa72614fa08c62b1f4e317">&#9670;&nbsp;</a></span>CAB_USER_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAB_USER_FAILURE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca38cf64268b5db456d089d2902a676e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca38cf64268b5db456d089d2902a676e">&#9670;&nbsp;</a></span>DELETE_DISCOUNT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DELETE_DISCOUNT_TYPE&#160;&#160;&#160;&quot;delete_discount&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a847af091649f66b48436366c6bccd228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847af091649f66b48436366c6bccd228">&#9670;&nbsp;</a></span>DELETE_PRODUCT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DELETE_PRODUCT_TYPE&#160;&#160;&#160;&quot;delete_product&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3a6e3ce2f1d5e77f1548af544445e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a6e3ce2f1d5e77f1548af544445e80">&#9670;&nbsp;</a></span>EXTERNAL_PURCHASE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXTERNAL_PURCHASE_TYPE&#160;&#160;&#160;&quot;external_purchase&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2a29201158e9b795d1b0ee60bf0bfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a29201158e9b795d1b0ee60bf0bfda">&#9670;&nbsp;</a></span>FMT_FLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_FLOAT&#160;&#160;&#160;&quot; %-17s %15f &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b2950ab0a1edb5beda5e63220c7e722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2950ab0a1edb5beda5e63220c7e722">&#9670;&nbsp;</a></span>FMT_LLU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_LLU&#160;&#160;&#160;&quot; %-17s %15llu &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaeec52d64d60583082da5a33a1bcee74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeec52d64d60583082da5a33a1bcee74">&#9670;&nbsp;</a></span>FMT_STR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_STR&#160;&#160;&#160;&quot; %-17s %15s &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec57c2daf5e38cc8cfcb9f6c789666a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec57c2daf5e38cc8cfcb9f6c789666a">&#9670;&nbsp;</a></span>INVALID_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INVALID_CODE&#160;&#160;&#160;&quot;INVALID_CODE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae63380f748c6a35cddcfece6d6ddc2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63380f748c6a35cddcfece6d6ddc2bd">&#9670;&nbsp;</a></span>KEY_ACTIVATION_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEY_ACTIVATION_TYPE&#160;&#160;&#160;&quot;key_activation&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad84bd9667e172211497710f695b9539a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84bd9667e172211497710f695b9539a">&#9670;&nbsp;</a></span>KKT_REGISTRY_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KKT_REGISTRY_NAME&#160;&#160;&#160;&quot;Пульс ФА&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a308406fe89e2901f3edb77a8e3d40403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308406fe89e2901f3edb77a8e3d40403">&#9670;&nbsp;</a></span>NEED_CLOUD_SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEED_CLOUD_SIGN&#160;&#160;&#160;&quot;NEED_CLOUD_SIGN&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0841a554c24a691e74bd22540132d002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0841a554c24a691e74bd22540132d002">&#9670;&nbsp;</a></span>NEED_REPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NEED_REPORT&#160;&#160;&#160;&quot;NEED_REPORT&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a050c1570b74166b8930ab2d32dc20434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050c1570b74166b8930ab2d32dc20434">&#9670;&nbsp;</a></span>NET_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NET_ERROR&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd34cedb3847d908a117870bcfa0fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd34cedb3847d908a117870bcfa0fe2">&#9670;&nbsp;</a></span>NO_CLOUD_SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_CLOUD_SIGN&#160;&#160;&#160;&quot;NO_CLOUD_SIGN&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0635c06368a91741b5296f37229abec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0635c06368a91741b5296f37229abec0">&#9670;&nbsp;</a></span>NOT_REGISTERED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NOT_REGISTERED&#160;&#160;&#160;&quot;NOT_REGISTERED&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b988cd042236329a1064f1d896998f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b988cd042236329a1064f1d896998f7">&#9670;&nbsp;</a></span>REGISTERED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTERED&#160;&#160;&#160;&quot;REGISTERED&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc6ce5215f1353a899cd3327b2a6d1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6ce5215f1353a899cd3327b2a6d1f0">&#9670;&nbsp;</a></span>REGISTRATION_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTRATION_TASK&#160;&#160;&#160;&quot;registration&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac86fa465a7e5637ccfaa15e4a205fa21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86fa465a7e5637ccfaa15e4a205fa21">&#9670;&nbsp;</a></span>UPSERT_DISCOUNT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UPSERT_DISCOUNT_TYPE&#160;&#160;&#160;&quot;upsert_discount&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9180cf7aca4d313ec57d727ea4b5ffc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9180cf7aca4d313ec57d727ea4b5ffc5">&#9670;&nbsp;</a></span>UPSERT_PRODUCT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UPSERT_PRODUCT_TYPE&#160;&#160;&#160;&quot;upsert_product&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13ee57d95da6b6509d43bb1b3f67bb02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13ee57d95da6b6509d43bb1b3f67bb02">&#9670;&nbsp;</a></span>WAITING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITING&#160;&#160;&#160;&quot;WAITING&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="af49606058cb80e0e28ff5fd4b8e8d997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49606058cb80e0e28ff5fd4b8e8d997">&#9670;&nbsp;</a></span>JsonParser</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a> =  <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="af8f9d177c2dc5f07f4eccb613b342e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f9d177c2dc5f07f4eccb613b342e0f">&#9670;&nbsp;</a></span>E_JSON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="json_8h.html#af8f9d177c2dc5f07f4eccb613b342e0f">E_JSON</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa8f88e60a7bfaccd99cf7d790610c6740"></a>JSON_RESULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa536c4a28d9e1ec09f523ad8a8e9529e5"></a>JSON_UPDATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa3f7c3ee1e858c2265751ad9d9a421953"></a>JSON_RESULT_INT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0faf0a7e29d1045b7262aded25a61408a6e"></a>JSON_KKT_REGISTR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa91d8bb1b8cbbe1d1b00a344274b4bc12"></a>JSON_POLL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa414399cd73e6811901f65a2810c7499d"></a>JSON_OFD_REGISTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa73a43d559c804053c7792104f7d8b814"></a>JSON_OFD_REGISTRATION_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af8f9d177c2dc5f07f4eccb613b342e0fa659a73422c1a745cf49408d648a7187f"></a>JSON_OFD_SIGN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

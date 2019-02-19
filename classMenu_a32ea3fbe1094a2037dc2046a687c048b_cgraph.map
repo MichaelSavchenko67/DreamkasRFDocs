@@ -1,0 +1,14 @@
+<map id="Menu::action_open_shift" name="Menu::action_open_shift">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,169,209"/>
+<area shape="rect" id="node2" href="$classMenu.html#a15040ac3df50a2dc328b4da7350b41c6" title=" " alt="" coords="241,49,420,90"/>
+<area shape="rect" id="node5" href="$classMenu.html#ad83512893bb284304d9fefad779a0471" title="checkCurDate &#45; Проверка текущей даты" alt="" coords="257,157,404,184"/>
+<area shape="rect" id="node9" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title=" " alt="" coords="217,208,444,235"/>
+<area shape="rect" id="node12" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="282,259,379,285"/>
+<area shape="rect" id="node3" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="503,5,679,32"/>
+<area shape="rect" id="node4" href="$classMenu.html#a05da5743929b000b220fdac83a09da8a" title=" " alt="" coords="524,56,659,83"/>
+<area shape="rect" id="node6" href="$classConvert.html#a78813c1afce96d9a4ffb4bb77995d0e6" title=" " alt="" coords="492,107,691,133"/>
+<area shape="rect" id="node7" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="504,157,679,184"/>
+<area shape="rect" id="node8" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="548,208,635,235"/>
+<area shape="rect" id="node10" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="515,259,668,285"/>
+<area shape="rect" id="node11" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="739,259,869,285"/>
+</map>

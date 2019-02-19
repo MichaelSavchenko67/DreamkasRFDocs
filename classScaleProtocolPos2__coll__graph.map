@@ -1,0 +1,7 @@
+<map id="ScaleProtocolPos2" name="ScaleProtocolPos2">
+<area shape="rect" id="node1" title=" " alt="" coords="209,1049,371,1244"/>
+<area shape="rect" id="node2" href="$classScaleProtocolInterface.html" title="The ScaleProtocolInterface class &#45; базовый класс протокола весов" alt="" coords="195,321,385,1000"/>
+<area shape="rect" id="node3" href="$structScaleProtocolInterface_1_1Param.html" title="The Param struct &#45; параметры весов" alt="" coords="5,5,188,259"/>
+<area shape="rect" id="node4" href="$structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct &#45; формат пакета" alt="" coords="213,64,367,200"/>
+<area shape="rect" id="node5" href="$structScaleProtocolInterface_1_1ScaleErr.html" title="The ScaleErr struct &#45; структура ошибки" alt="" coords="391,79,546,185"/>
+</map>

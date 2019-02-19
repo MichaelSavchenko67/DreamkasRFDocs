@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/json.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл json.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;boost/property_tree/ptree.hpp&gt;</code><br />
+<code>#include &lt;boost/property_tree/json_parser.hpp&gt;</code><br />
+<code>#include &lt;boost/foreach.hpp&gt;</code><br />
+<code>#include &lt;boost/optional/optional.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="json_8h_source.html">json.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="goods__new_8h_source.html">goods_new.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="license_8h_source.html">license.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для json.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="json_8cpp__incl.png" border="0" usemap="#src_2appl_2json_8cpp" alt=""/></div>
+<map name="src_2appl_2json_8cpp" id="src_2appl_2json_8cpp">
+<area shape="rect"  title=" " alt="" coords="679,5,800,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,140,121"/>
+<area shape="rect"  title=" " alt="" coords="164,80,299,121"/>
+<area shape="rect"  title=" " alt="" coords="323,87,449,114"/>
+<area shape="rect"  title=" " alt="" coords="473,87,651,114"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="1087,87,1144,114"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="2647,251,2781,278"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2061,408,2111,435"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="889,333,965,360"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="622,251,697,278"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="1735,169,1834,196"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="2207,169,2306,196"/>
+<area shape="rect"  title=" " alt="" coords="547,408,630,435"/>
+<area shape="rect"  title=" " alt="" coords="1745,333,1800,360"/>
+<area shape="rect"  title=" " alt="" coords="1531,408,1593,435"/>
+<area shape="rect"  title=" " alt="" coords="1697,408,1769,435"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="885,169,935,196"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="1143,169,1211,196"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1337,251,1432,278"/>
+<area shape="rect"  title=" " alt="" coords="2646,333,2710,360"/>
+<area shape="rect"  title=" " alt="" coords="2595,483,2657,509"/>
+<area shape="rect"  title=" " alt="" coords="2734,333,2782,360"/>
+<area shape="rect"  title=" " alt="" coords="811,251,894,278"/>
+<area shape="rect"  title=" " alt="" coords="919,251,1016,278"/>
+<area shape="rect"  title=" " alt="" coords="721,251,787,278"/>
+<area shape="rect"  title=" " alt="" coords="975,483,1040,509"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1143,251,1211,278"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="1193,333,1315,360"/>
+<area shape="rect"  title=" " alt="" coords="2107,483,2177,509"/>
+<area shape="rect"  title=" " alt="" coords="2201,483,2270,509"/>
+<area shape="rect"  title=" " alt="" coords="1881,483,1952,509"/>
+<area shape="rect"  title=" " alt="" coords="1977,483,2083,509"/>
+<area shape="rect"  title=" " alt="" coords="1059,408,1118,435"/>
+<area shape="rect"  title=" " alt="" coords="1142,408,1211,435"/>
+<area shape="rect"  title=" " alt="" coords="2253,408,2314,435"/>
+<area shape="rect"  title=" " alt="" coords="705,408,771,435"/>
+<area shape="rect"  title=" " alt="" coords="1235,408,1310,435"/>
+<area shape="rect"  title=" " alt="" coords="2407,408,2464,435"/>
+<area shape="rect"  title=" " alt="" coords="1385,408,1424,435"/>
+<area shape="rect"  title=" " alt="" coords="1449,408,1507,435"/>
+<area shape="rect"  title=" " alt="" coords="795,408,910,435"/>
+<area shape="rect"  title=" " alt="" coords="934,408,1035,435"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="2295,251,2363,278"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="1823,251,1888,278"/>
+<area shape="rect"  title=" " alt="" coords="1609,244,1747,285"/>
+<area shape="rect"  title=" " alt="" coords="1996,251,2067,278"/>
+<area shape="rect"  title=" " alt="" coords="1913,251,1971,278"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="2028,333,2144,360"/>
+<area shape="rect"  title=" " alt="" coords="2438,251,2499,278"/>
+<area shape="rect"  title=" " alt="" coords="2524,251,2571,278"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab07969225d898805b009f4a619f2450d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#ab07969225d898805b009f4a619f2450d">BOOST_SPIRIT_THREADSAFE</a></td></tr>
+<tr class="separator:ab07969225d898805b009f4a619f2450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa34ad5f804a9458bf448d831506c8c5b"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#aa34ad5f804a9458bf448d831506c8c5b">hashString</a> (const char *str, size_t h=0)</td></tr>
+<tr class="separator:aa34ad5f804a9458bf448d831506c8c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6623824abe4253cc7dac4cfba236a93b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#a6623824abe4253cc7dac4cfba236a93b">as_json_string</a> (boost::property_tree::ptree const &amp;pt)</td></tr>
+<tr class="separator:a6623824abe4253cc7dac4cfba236a93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a734823df2478e76946a15a81749ce9fd"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#a734823df2478e76946a15a81749ce9fd">HASH_PRIME_NUMBER</a> = 10007</td></tr>
+<tr class="separator:a734823df2478e76946a15a81749ce9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d2c39a203c7beaa694537e507c05b33"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html#a4d2c39a203c7beaa694537e507c05b33">HASH_SECOND_PRIME_NUMBER</a> = 37</td></tr>
+<tr class="separator:a4d2c39a203c7beaa694537e507c05b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="ab07969225d898805b009f4a619f2450d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07969225d898805b009f4a619f2450d">&#9670;&nbsp;</a></span>BOOST_SPIRIT_THREADSAFE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_SPIRIT_THREADSAFE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a6623824abe4253cc7dac4cfba236a93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6623824abe4253cc7dac4cfba236a93b">&#9670;&nbsp;</a></span>as_json_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string as_json_string </td>
+          <td>(</td>
+          <td class="paramtype">boost::property_tree::ptree const &amp;&#160;</td>
+          <td class="paramname"><em>pt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa34ad5f804a9458bf448d831506c8c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34ad5f804a9458bf448d831506c8c5b">&#9670;&nbsp;</a></span>hashString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t hashString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>h</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a734823df2478e76946a15a81749ce9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734823df2478e76946a15a81749ce9fd">&#9670;&nbsp;</a></span>HASH_PRIME_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t HASH_PRIME_NUMBER = 10007</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d2c39a203c7beaa694537e507c05b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2c39a203c7beaa694537e507c05b33">&#9670;&nbsp;</a></span>HASH_SECOND_PRIME_NUMBER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t HASH_SECOND_PRIME_NUMBER = 37</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

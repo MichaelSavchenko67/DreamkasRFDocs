@@ -1,0 +1,11 @@
+<map id="Menu::time_zone_update" name="Menu::time_zone_update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,173,173,200"/>
+<area shape="rect" id="node2" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="267,5,365,32"/>
+<area shape="rect" id="node3" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="247,56,385,83"/>
+<area shape="rect" id="node5" href="$classTimeSync.html#ab1537a58169462da5b93e7536fc33ac7" title="getCurrentZoneIndex получить индекс текущего часового пояса" alt="" coords="227,107,405,149"/>
+<area shape="rect" id="node6" href="$classTimeSync.html#a4002be2e1a3c74099fb0d7b642c09053" title="getZoneinfo вернуть список часовых поясов" alt="" coords="237,173,395,200"/>
+<area shape="rect" id="node7" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="249,225,383,266"/>
+<area shape="rect" id="node8" href="$classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone изменение текущего часового пояса время выполнеиня 5 сек + время перезапуска сервиса" alt="" coords="221,291,411,317"/>
+<area shape="rect" id="node9" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="273,341,359,368"/>
+<area shape="rect" id="node4" href="$classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="459,56,607,83"/>
+</map>

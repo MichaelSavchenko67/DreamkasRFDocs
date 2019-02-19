@@ -1,0 +1,1049 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/threads.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл threads.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="filesfg_8h_source.html">filesfg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="receipt__new_8h_source.html">receipt_new.h</a>&quot;</code><br />
+<code>#include &lt;boost/filesystem.hpp&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="bsp__printer__keypad_8h_source.html">bsp_printer_keypad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для threads.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h__incl.png" border="0" usemap="#src_2appl_2include_2threads_8h" alt=""/></div>
+<map name="src_2appl_2include_2threads_8h" id="src_2appl_2include_2threads_8h">
+<area shape="rect"  title=" " alt="" coords="4393,5,4564,32"/>
+<area shape="rect"  title=" " alt="" coords="3204,976,3276,1003"/>
+<area shape="rect"  title=" " alt="" coords="4408,155,4467,181"/>
+<area shape="rect"  title=" " alt="" coords="757,901,816,928"/>
+<area shape="rect"  title=" " alt="" coords="2805,752,2859,779"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="2379,80,2445,107"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1922,528,2025,555"/>
+<area shape="rect"  title=" " alt="" coords="3767,827,3828,853"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="3883,677,3951,704"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="1051,453,1157,480"/>
+<area shape="rect"  href="NodeConflictResolver_8h.html" title=" " alt="" coords="94,603,255,629"/>
+<area shape="rect"  href="bsp__printer__keypad_8h.html" title=" " alt="" coords="3901,304,4048,331"/>
+<area shape="rect"  title=" " alt="" coords="4745,80,4887,107"/>
+<area shape="rect"  title=" " alt="" coords="686,155,781,181"/>
+<area shape="rect"  title=" " alt="" coords="2503,901,2542,928"/>
+<area shape="rect"  title=" " alt="" coords="1022,528,1069,555"/>
+<area shape="rect"  title=" " alt="" coords="1058,155,1113,181"/>
+<area shape="rect"  title=" " alt="" coords="1280,677,1339,704"/>
+<area shape="rect"  title=" " alt="" coords="3125,453,3187,480"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="1535,229,1585,256"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="2015,901,2065,928"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="1537,827,1623,853"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="1618,901,1718,928"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="1448,603,1531,629"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="3177,603,3234,629"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="2713,677,2847,704"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="3328,677,3379,704"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="1284,752,1356,779"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="3635,752,3703,779"/>
+<area shape="rect"  title=" " alt="" coords="2105,752,2213,779"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="2465,827,2581,853"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="2475,304,2602,331"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="2424,379,2549,405"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="2425,453,2493,480"/>
+<area shape="rect"  href="barcodeScanner_8h.html" title=" " alt="" coords="230,528,357,555"/>
+<area shape="rect"  href="goods__new_8h.html" title=" " alt="" coords="2932,379,3031,405"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="3496,229,3571,256"/>
+<area shape="rect"  href="keys_8h.html" title=" " alt="" coords="3784,528,3845,555"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="1851,155,1920,181"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="3617,453,3682,480"/>
+<area shape="rect"  href="fiscal__doc__db_8h.html" title=" " alt="" coords="534,603,647,629"/>
+<area shape="rect"  href="flashMounter_8h.html" title=" " alt="" coords="2779,304,2887,331"/>
+<area shape="rect"  href="gen__uuid_8h.html" title=" " alt="" coords="4280,677,4365,704"/>
+<area shape="rect"  href="sqlWrapper_8h.html" title=" " alt="" coords="3137,379,3236,405"/>
+<area shape="rect"  title=" " alt="" coords="1137,155,1309,181"/>
+<area shape="rect"  href="ReceiptsDb_8h.html" title=" " alt="" coords="2043,453,2146,480"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="3227,155,3317,181"/>
+<area shape="rect"  title=" " alt="" coords="1333,155,1435,181"/>
+<area shape="rect"  href="LogServant_8h.html" title=" " alt="" coords="736,229,835,256"/>
+<area shape="rect"  href="time__sync_8h.html" title=" " alt="" coords="875,603,968,629"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2threads_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2threads_8hdep" id="src_2appl_2include_2threads_8hdep">
+<area shape="rect"  title=" " alt="" coords="5,5,176,32"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="28,80,153,107"/>
+</map>
+</div>
+</div>
+<p><a href="threads_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a314b9029e4eb5f864fc208bbe5f06947"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a314b9029e4eb5f864fc208bbe5f06947">MAX_TIME_SYNC_TRYES</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a314b9029e4eb5f864fc208bbe5f06947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a569272e6bbe8c64d4cc7b03693884bff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a569272e6bbe8c64d4cc7b03693884bff">getCurrYear</a> ()</td></tr>
+<tr class="separator:a569272e6bbe8c64d4cc7b03693884bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a117c3242a071a6a18f61f41072c38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a23a117c3242a071a6a18f61f41072c38">cabTerminalThread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a23a117c3242a071a6a18f61f41072c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc5c8184e06fcc35fd84e028714a8b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0">taskManagerThread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:accc5c8184e06fcc35fd84e028714a8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade37d508fb463321815e016967362fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#ade37d508fb463321815e016967362fa8">receipts_query_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:ade37d508fb463321815e016967362fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd6a389414850ad67447f1888b3f526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a6dd6a389414850ad67447f1888b3f526">timer_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a6dd6a389414850ad67447f1888b3f526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3723d3ddd4c5b02c5e1f3c4933b3c136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a3723d3ddd4c5b02c5e1f3c4933b3c136">background_events_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a3723d3ddd4c5b02c5e1f3c4933b3c136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b93566c6f56031bcfd3d64df5786505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a7b93566c6f56031bcfd3d64df5786505">fisgo_bios_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a7b93566c6f56031bcfd3d64df5786505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ef808e1c6af6891f4ab64fd9504c8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a">main_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a61ef808e1c6af6891f4ab64fd9504c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c7a2f63e7567a5603c82695ca2a844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844">barcodeScannerThread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a89c7a2f63e7567a5603c82695ca2a844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de4a71e222156bc6db4f61396d6e511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a2de4a71e222156bc6db4f61396d6e511">ofd_disconnect_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a2de4a71e222156bc6db4f61396d6e511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab08de41033facb3e1e21893f455044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#afab08de41033facb3e1e21893f455044">log_db_thread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:afab08de41033facb3e1e21893f455044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856a9a157dbf1188858061e0a2842897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a856a9a157dbf1188858061e0a2842897">receipts_Db_Clean_thread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a856a9a157dbf1188858061e0a2842897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00d87b3d77d4c6d03f5ac0258df053d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d">log_servant_thread_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:ab00d87b3d77d4c6d03f5ac0258df053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d430d9ccb21bbe403a17783f7f97577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a4d430d9ccb21bbe403a17783f7f97577">loader_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a4d430d9ccb21bbe403a17783f7f97577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ace1168749fab432b0a009c631be836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a4ace1168749fab432b0a009c631be836">updateFisGo_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a4ace1168749fab432b0a009c631be836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7412686a6381a5b34ddcd5f459dd81a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5">updateDowload_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a7412686a6381a5b34ddcd5f459dd81a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a750c6f52c7d659d7ec53a3cce5359a0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a750c6f52c7d659d7ec53a3cce5359a0a">keypad_mixed_mode_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a750c6f52c7d659d7ec53a3cce5359a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c844a866e48badcc4145b6560d917d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a8c844a866e48badcc4145b6560d917d1">first_start_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a8c844a866e48badcc4145b6560d917d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015db014aa4df021bd54be5a4ad47a9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a">FisGoTestServer_</a> (<a class="el" href="classMenu.html">Menu</a> *l)</td></tr>
+<tr class="separator:a015db014aa4df021bd54be5a4ad47a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a3a06d15ddac5702d1c79f9bac7c7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a">threads_init</a> (<a class="el" href="classMenu.html">Menu</a> &amp;menu)</td></tr>
+<tr class="separator:a86a3a06d15ddac5702d1c79f9bac7c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a7c5a79435b435a2d34758a15d3809547"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a7c5a79435b435a2d34758a15d3809547">fb_wasErr</a></td></tr>
+<tr class="separator:a7c5a79435b435a2d34758a15d3809547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91235086abfde06b81e909e472776b36"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a91235086abfde06b81e909e472776b36">fb_errMess</a></td></tr>
+<tr class="separator:a91235086abfde06b81e909e472776b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af912dff073c15bfcb0efe350af88191f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#af912dff073c15bfcb0efe350af88191f">fb_errCode</a></td></tr>
+<tr class="separator:af912dff073c15bfcb0efe350af88191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b7b1a69fb161ceafe505ca42059fc8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a45b7b1a69fb161ceafe505ca42059fc8">fb_wasWarning</a></td></tr>
+<tr class="separator:a45b7b1a69fb161ceafe505ca42059fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42ba6361a8169f1a1d1f41ad6e08ed9"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#ac42ba6361a8169f1a1d1f41ad6e08ed9">fb_warnMess</a></td></tr>
+<tr class="separator:ac42ba6361a8169f1a1d1f41ad6e08ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f5f77a68490fc0383f2902ca56835ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threads_8h.html#a1f5f77a68490fc0383f2902ca56835ff">fb_warnCode</a></td></tr>
+<tr class="separator:a1f5f77a68490fc0383f2902ca56835ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a314b9029e4eb5f864fc208bbe5f06947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314b9029e4eb5f864fc208bbe5f06947">&#9670;&nbsp;</a></span>MAX_TIME_SYNC_TRYES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TIME_SYNC_TRYES&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a3723d3ddd4c5b02c5e1f3c4933b3c136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3723d3ddd4c5b02c5e1f3c4933b3c136">&#9670;&nbsp;</a></span>background_events_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void background_events_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a3723d3ddd4c5b02c5e1f3c4933b3c136_cgraph.png" border="0" usemap="#threads_8h_a3723d3ddd4c5b02c5e1f3c4933b3c136_cgraph" alt=""/></div>
+<map name="threads_8h_a3723d3ddd4c5b02c5e1f3c4933b3c136_cgraph" id="threads_8h_a3723d3ddd4c5b02c5e1f3c4933b3c136_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,488,148,515"/>
+<area shape="rect"  href="classMenu.html#a9b4b9098323bce89c75588ed806b3744" title=" " alt="" coords="213,488,376,515"/>
+<area shape="rect"  href="classMenu.html#acf6016610407e064f09957bba8a90ba4" title=" " alt="" coords="217,387,372,413"/>
+<area shape="rect"  href="classMenu.html#a276c2f9b8b3a216347a756d8b8c10116" title=" " alt="" coords="196,437,393,464"/>
+<area shape="rect"  href="classMenu.html#a470a649d94e8dc05b3937ce4146e7b5f" title=" " alt="" coords="225,539,365,565"/>
+<area shape="rect"  href="classMenu.html#a30e8f8ed98f23626037833ff442cfbdf" title=" " alt="" coords="231,591,358,617"/>
+<area shape="rect"  href="classMenu.html#a8ce101ab60b51ec8329f2e9e8e65d0fa" title=" " alt="" coords="441,437,624,464"/>
+<area shape="rect"  href="classMenu.html#a96b8082e6ccce216452c41838b415b56" title=" " alt="" coords="459,509,606,550"/>
+<area shape="rect"  href="classMenu.html#a8926b3af65cc20cfb2f8e24e65448f1b" title=" " alt="" coords="679,477,815,504"/>
+<area shape="rect"  href="classMenu.html#a0fbb7da416573956bd199fbe0af5f433" title=" " alt="" coords="672,529,823,570"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="680,242,815,283"/>
+<area shape="rect"  href="classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="921,477,1008,504"/>
+<area shape="rect"  href="classMenu.html#a740d2d60a604deb5d102a559a36a18a3" title=" " alt="" coords="879,529,1050,570"/>
+<area shape="rect"  href="classMenuTree.html#a4e8f17f54eb880f5acc283cd538c287f" title=" " alt="" coords="1157,89,1305,116"/>
+<area shape="rect"  href="classMenuTree.html#ad4739105350f6beed5592d1bfcdfa462" title=" " alt="" coords="871,224,1059,251"/>
+<area shape="rect"  href="classMenuTree.html#af7e756fc557e6cc0e7f36d3ddde90ab7" title=" " alt="" coords="873,158,1056,199"/>
+<area shape="rect"  href="classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="886,275,1043,301"/>
+<area shape="rect"  href="classMenuItem.html#a75cd43978e4c9ba8c207210bdb5398c5" title=" " alt="" coords="891,325,1039,352"/>
+<area shape="rect"  href="classMenuTree.html#a2f54c26048b54be44a43209728d14141" title=" " alt="" coords="901,376,1028,403"/>
+<area shape="rect"  href="classMenuTree.html#abf311c36141820335205f98043044ffb" title=" " alt="" coords="903,427,1026,453"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf" title=" " alt="" coords="905,5,1024,32"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="908,56,1021,83"/>
+<area shape="rect"  href="classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="1426,115,1549,141"/>
+<area shape="rect"  href="classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b" title=" " alt="" coords="1111,241,1351,268"/>
+<area shape="rect"  href="classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="1404,191,1571,217"/>
+<area shape="rect"  href="classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="1152,140,1311,167"/>
+<area shape="rect"  href="classMenuItem.html#af867942c91e584773df5705b5267d430" title=" " alt="" coords="1107,191,1356,217"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="1158,427,1305,453"/>
+<area shape="rect"  href="classMenu.html#af8120a8c8b846d6e6aaa8336b77e646e" title=" " alt="" coords="481,595,585,621"/>
+<area shape="rect"  href="classMenu.html#a19cb09690d9da57ea574149dac460991" title=" " alt="" coords="676,595,819,621"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89c7a2f63e7567a5603c82695ca2a844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c7a2f63e7567a5603c82695ca2a844">&#9670;&nbsp;</a></span>barcodeScannerThread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void barcodeScannerThread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a89c7a2f63e7567a5603c82695ca2a844_cgraph.png" border="0" usemap="#threads_8h_a89c7a2f63e7567a5603c82695ca2a844_cgraph" alt=""/></div>
+<map name="threads_8h_a89c7a2f63e7567a5603c82695ca2a844_cgraph" id="threads_8h_a89c7a2f63e7567a5603c82695ca2a844_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,75,168,102"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="217,75,401,102"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="218,9,401,51"/>
+<area shape="rect"  href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; Ð¿Ð°ÑÑ DataMatrix" alt="" coords="216,127,403,168"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="451,5,601,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="451,71,601,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a23a117c3242a071a6a18f61f41072c38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a117c3242a071a6a18f61f41072c38">&#9670;&nbsp;</a></span>cabTerminalThread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> cabTerminalThread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a23a117c3242a071a6a18f61f41072c38_cgraph.png" border="0" usemap="#threads_8h_a23a117c3242a071a6a18f61f41072c38_cgraph" alt=""/></div>
+<map name="threads_8h_a23a117c3242a071a6a18f61f41072c38_cgraph" id="threads_8h_a23a117c3242a071a6a18f61f41072c38_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,81,145,108"/>
+<area shape="rect"  href="classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="193,81,329,108"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="383,5,557,32"/>
+<area shape="rect"  href="classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¸ Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÑÑÐ°ÑÐ¸ÑÑÐ¸ÐºÑ" alt="" coords="397,107,543,133"/>
+<area shape="rect"  href="classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="611,56,804,83"/>
+<area shape="rect"  href="classMenu.html#a978572cb6498f20b20be4db9dcbe3966" title=" " alt="" coords="377,157,563,184"/>
+<area shape="rect"  href="classMenu.html#a7fde71d6e01eae195621d6bf2f06bb52" title=" " alt="" coords="614,107,801,133"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="1067,81,1215,108"/>
+<area shape="rect"  href="classBIOS.html#a7ce3cab079208f86115b2b1c213472b7" title=" " alt="" coords="852,107,1019,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c844a866e48badcc4145b6560d917d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c844a866e48badcc4145b6560d917d1">&#9670;&nbsp;</a></span>first_start_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void first_start_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a8c844a866e48badcc4145b6560d917d1_cgraph.png" border="0" usemap="#threads_8h_a8c844a866e48badcc4145b6560d917d1_cgraph" alt=""/></div>
+<map name="threads_8h_a8c844a866e48badcc4145b6560d917d1_cgraph" id="threads_8h_a8c844a866e48badcc4145b6560d917d1_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,157,89,184"/>
+<area shape="rect"  href="classMenu.html#a1d24b01ce0f5b83b32bd19ff12f816ef" title=" " alt="" coords="137,157,293,184"/>
+<area shape="rect"  href="classMenu.html#a096d8d1a8a3abd8926074c2f55889dcf" title=" " alt="" coords="356,56,491,83"/>
+<area shape="rect"  href="classMenu.html#aded72c7f7c190e266fe6c48a3d3c1845" title=" " alt="" coords="341,107,505,133"/>
+<area shape="rect"  href="classMenu.html#a7c2fcb18b83e47d4af2378dcb428b18e" title=" " alt="" coords="352,157,495,184"/>
+<area shape="rect"  href="classMenu.html#a68c4668736f996f3b4b9477e4214b668" title=" " alt="" coords="363,208,484,235"/>
+<area shape="rect"  href="classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="553,259,747,285"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135" title=" " alt="" coords="570,5,730,32"/>
+<area shape="rect"  href="dynamic__mask_8h.html#ac734db8c00867dfccda9d0497839983e" title=" " alt="" coords="589,56,711,83"/>
+<area shape="rect"  href="classFilesFG.html#a39e5e53c511abb3058e9c71cfc3a15a4" title=" " alt="" coords="569,107,731,133"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb" title=" " alt="" coords="569,157,731,184"/>
+<area shape="rect"  href="dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020" title=" " alt="" coords="568,208,732,235"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="795,259,943,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b93566c6f56031bcfd3d64df5786505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b93566c6f56031bcfd3d64df5786505">&#9670;&nbsp;</a></span>fisgo_bios_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fisgo_bios_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a7b93566c6f56031bcfd3d64df5786505_cgraph.png" border="0" usemap="#threads_8h_a7b93566c6f56031bcfd3d64df5786505_cgraph" alt=""/></div>
+<map name="threads_8h_a7b93566c6f56031bcfd3d64df5786505_cgraph" id="threads_8h_a7b93566c6f56031bcfd3d64df5786505_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,183,93,209"/>
+<area shape="rect"  href="classBIOS.html#a345080151381f8ff0c8da8d149da837f" title=" " alt="" coords="148,5,291,32"/>
+<area shape="rect"  href="classBIOS.html#a992b0eb58044e97fe56a4046cb00c7d3" title=" " alt="" coords="173,56,266,83"/>
+<area shape="rect"  href="classBIOS.html#a79aadb0ed1de220ffbbd6b2f97147c60" title=" " alt="" coords="167,107,271,133"/>
+<area shape="rect"  href="classBIOS.html#a3327ba8a216748f9c4daf0ca092f3ef3" title=" " alt="" coords="164,157,275,184"/>
+<area shape="rect"  href="classBIOS.html#a75920c7cdb3325fc7a79d9ba047a7a30" title=" " alt="" coords="162,208,277,235"/>
+<area shape="rect"  href="classBIOS.html#a688323e71bc05876290c7cc5a5041136" title=" " alt="" coords="147,259,292,285"/>
+<area shape="rect"  href="classBIOS.html#a204f07296f285611e8b9d915089957da" title=" " alt="" coords="141,309,297,336"/>
+<area shape="rect"  href="classBIOS.html#a324cf6cc38e988e342df6aeed1908e19" title=" " alt="" coords="144,360,295,387"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="363,309,511,336"/>
+<area shape="rect"  href="classBIOS.html#ace050c1e3b5cc523d691428371b38bf5" title=" " alt="" coords="345,259,528,285"/>
+<area shape="rect"  href="classBIOS.html#a1effb47456b6982bf8a711624a305720" title=" " alt="" coords="576,233,727,260"/>
+<area shape="rect"  href="classBIOS.html#ac97a57be897456bc15df30c7649e710a" title=" " alt="" coords="576,284,727,311"/>
+<area shape="rect"  href="classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="359,360,514,387"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a015db014aa4df021bd54be5a4ad47a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015db014aa4df021bd54be5a4ad47a9a">&#9670;&nbsp;</a></span>FisGoTestServer_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FisGoTestServer_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a015db014aa4df021bd54be5a4ad47a9a_cgraph.png" border="0" usemap="#threads_8h_a015db014aa4df021bd54be5a4ad47a9a_cgraph" alt=""/></div>
+<map name="threads_8h_a015db014aa4df021bd54be5a4ad47a9a_cgraph" id="threads_8h_a015db014aa4df021bd54be5a4ad47a9a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,879,133,905"/>
+<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="181,879,339,905"/>
+<area shape="rect"  href="classMenu.html#a5b2c90b56a309012df0fca1d89697b07" title=" " alt="" coords="401,81,551,108"/>
+<area shape="rect"  href="classMenu.html#aece481d9e2cf80d9d415b2a973c5cd53" title=" " alt="" coords="398,344,554,371"/>
+<area shape="rect"  href="keypad_8h.html#a74c29ed5f4052ac48bbb100dc31005cc" title=" " alt="" coords="412,575,540,601"/>
+<area shape="rect"  href="classMenu.html#a596b304af0d6db8bc830c9cb9862ad7b" title="getWiFiStatus &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÑÐ°ÑÑÐ¸ÑÑÐ¾Ð²ÐºÑ ÑÑÐ°ÑÑÑÐ° Ð¼Ð¾Ð´ÑÐ»Ñ WIFI" alt="" coords="403,625,549,652"/>
+<area shape="rect"  href="classMenu.html#a9f42c294fed78f3cf3adb85b4faac982" title=" " alt="" coords="411,676,541,703"/>
+<area shape="rect"  href="classMenu.html#aa4abdfcdc0d99d2ae9348356f7e7e70c" title=" " alt="" coords="405,727,547,753"/>
+<area shape="rect"  href="classPosition__new.html#aa6d4de2f6bd2e4834c511f4284124dfd" title=" " alt="" coords="651,224,800,251"/>
+<area shape="rect"  href="classReceipt__new.html#a40bfb39e752b7d0b1d253adfec0b29f8" title=" " alt="" coords="387,828,565,855"/>
+<area shape="rect"  href="classMenu.html#ab65257ae17b0fe84408ced72836754cf" title=" " alt="" coords="404,879,548,905"/>
+<area shape="rect"  href="classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="407,929,545,956"/>
+<area shape="rect"  href="classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae" title=" " alt="" coords="405,980,547,1007"/>
+<area shape="rect"  href="classMenuItem.html#a396e20bb2e3053731fb00050b241ba9b" title=" " alt="" coords="404,1031,548,1057"/>
+<area shape="rect"  href="classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="403,1081,549,1108"/>
+<area shape="rect"  href="classMenu.html#a575c29fe812806522677f4a24c55c745" title=" " alt="" coords="407,1132,545,1159"/>
+<area shape="rect"  href="classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; Ð¾ÑÐ¸ÑÑÐºÐ° ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="425,1183,527,1209"/>
+<area shape="rect"  href="classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="411,1233,541,1260"/>
+<area shape="rect"  href="classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; Ð´Ð¾Ð±Ð°Ð²Ð¸ÑÑ ÑÑÐ³" alt="" coords="417,1284,535,1311"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html#a93df587a3ecf20077b5ea824ff8e5d1c" title=" " alt="" coords="686,5,765,32"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html#a4dc7db703212a2a88e64dc279e598527" title=" " alt="" coords="694,56,757,83"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html#aaa7d088331dd265ec6dc010c2beade10" title=" " alt="" coords="689,107,761,133"/>
+<area shape="rect"  href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; Ð¿Ð°ÑÑ DataMatrix" alt="" coords="632,158,819,199"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="885,224,924,251"/>
+<area shape="rect"  href="classBIOS.html#a324cf6cc38e988e342df6aeed1908e19" title=" " alt="" coords="650,275,801,301"/>
+<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="650,325,801,352"/>
+<area shape="rect"  href="classBIOS.html#a6db199a1975988fcb7b2bc64f88e3729" title=" " alt="" coords="617,376,833,403"/>
+<area shape="rect"  href="classBIOS.html#a2c6e6de71f43d62fbac4a724e8218a44" title=" " alt="" coords="615,427,835,453"/>
+<area shape="rect"  href="classBIOS.html#afb1eee8dab8735e1d9dda08a3728ff99" title=" " alt="" coords="629,478,822,519"/>
+<area shape="rect"  href="classMenu.html#ad04795489a5a885437c6118d8a7d83a2" title=" " alt="" coords="622,544,829,571"/>
+<area shape="rect"  href="classBIOS.html#a458b463ccdfcc6d57f09ddc4eb4db48e" title=" " alt="" coords="629,595,822,637"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="651,661,799,702"/>
+<area shape="rect"  href="classBIOS.html#a16fd0fe9fecc62875d6150fe3a069063" title=" " alt="" coords="632,726,819,767"/>
+<area shape="rect"  href="classBIOS.html#a7471db143bc34722e4db067e8de6db0d" title=" " alt="" coords="631,791,819,833"/>
+<area shape="rect"  href="classBIOS.html#a657de5b4fc33025cc5fdc930d576f21b" title=" " alt="" coords="632,857,819,898"/>
+<area shape="rect"  href="classBIOS.html#a08abbb73dc975ce375d15d1320386104" title=" " alt="" coords="632,922,819,963"/>
+<area shape="rect"  href="classBIOS.html#aa291417626f0023bb98242db6b8a4791" title=" " alt="" coords="629,987,821,1029"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="651,1053,799,1094"/>
+<area shape="rect"  href="classBIOS.html#a446812c973193b87f68e40a7c0f35bee" title=" " alt="" coords="626,1118,825,1159"/>
+<area shape="rect"  href="classBIOS.html#ac14f905548a335ec0313d2e130db9e6e" title=" " alt="" coords="614,1184,837,1211"/>
+<area shape="rect"  href="classBIOS.html#a79aad1f2f30a9b0fc7c9ff549d1e63be" title=" " alt="" coords="613,1235,837,1261"/>
+<area shape="rect"  href="classBIOS.html#a863b43a3c51e47b99fd8dbb9be7ef1a9" title=" " alt="" coords="647,1285,804,1312"/>
+<area shape="rect"  href="classBIOS.html#a60a6d1cef0856e48a63c6ec493e83568" title=" " alt="" coords="618,1336,833,1363"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="651,1387,799,1429"/>
+<area shape="rect"  href="classBIOS.html#a7724374670b27ead155ecdc7e54488ca" title=" " alt="" coords="621,1453,830,1480"/>
+<area shape="rect"  href="classBIOS.html#a2642b8c4f47a8d8f915ea84f6f8fdda5" title=" " alt="" coords="626,1504,825,1531"/>
+<area shape="rect"  href="classBIOS.html#aa4e4c8200140151033a14a70be963ec4" title=" " alt="" coords="631,1555,820,1581"/>
+<area shape="rect"  href="classMenu.html#a1e6edcfdd727f37c821609a7b2e7a3c5" title=" " alt="" coords="659,1656,792,1683"/>
+<area shape="rect"  href="classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="647,1605,804,1632"/>
+<area shape="rect"  href="classMenuTree.html#ad1ca1629a3c625e66300c5660ccced96" title=" " alt="" coords="622,1707,829,1733"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a569272e6bbe8c64d4cc7b03693884bff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569272e6bbe8c64d4cc7b03693884bff">&#9670;&nbsp;</a></span>getCurrYear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> getCurrYear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a750c6f52c7d659d7ec53a3cce5359a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750c6f52c7d659d7ec53a3cce5359a0a">&#9670;&nbsp;</a></span>keypad_mixed_mode_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void keypad_mixed_mode_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d430d9ccb21bbe403a17783f7f97577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d430d9ccb21bbe403a17783f7f97577">&#9670;&nbsp;</a></span>loader_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loader_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afab08de41033facb3e1e21893f455044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab08de41033facb3e1e21893f455044">&#9670;&nbsp;</a></span>log_db_thread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log_db_thread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab00d87b3d77d4c6d03f5ac0258df053d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00d87b3d77d4c6d03f5ac0258df053d">&#9670;&nbsp;</a></span>log_servant_thread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log_servant_thread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_ab00d87b3d77d4c6d03f5ac0258df053d_cgraph.png" border="0" usemap="#threads_8h_ab00d87b3d77d4c6d03f5ac0258df053d_cgraph" alt=""/></div>
+<map name="threads_8h_ab00d87b3d77d4c6d03f5ac0258df053d_cgraph" id="threads_8h_ab00d87b3d77d4c6d03f5ac0258df053d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,56,144,83"/>
+<area shape="rect"  href="classLogServant.html#a4c46a0f164b67b4a3149a8eefd50f808" title=" " alt="" coords="192,5,360,32"/>
+<area shape="rect"  href="log_8h.html#a02ba13b54a5d46206d2dbdc30915ea21" title=" " alt="" coords="230,56,322,83"/>
+<area shape="rect"  href="classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4" title=" " alt="" coords="203,107,349,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a61ef808e1c6af6891f4ab64fd9504c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ef808e1c6af6891f4ab64fd9504c8a">&#9670;&nbsp;</a></span>main_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a61ef808e1c6af6891f4ab64fd9504c8a_cgraph.png" border="0" usemap="#threads_8h_a61ef808e1c6af6891f4ab64fd9504c8a_cgraph" alt=""/></div>
+<map name="threads_8h_a61ef808e1c6af6891f4ab64fd9504c8a_cgraph" id="threads_8h_a61ef808e1c6af6891f4ab64fd9504c8a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,107,63,133"/>
+<area shape="rect"  href="keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="111,81,239,108"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="129,132,220,159"/>
+<area shape="rect"  href="classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="320,5,459,32"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="287,56,492,83"/>
+<area shape="rect"  href="classMenu.html#aca8555c864ae3ba22ba16a32188251c2" title=" " alt="" coords="326,107,453,133"/>
+<area shape="rect"  href="classFilesFG.html#a920dafbb9906b83c9915f8ac8881a294" title=" " alt="" coords="295,157,483,184"/>
+<area shape="rect"  href="classMenu.html#a772d853fef1e78ed0423b8091d420a8b" title=" " alt="" coords="305,208,473,235"/>
+<area shape="rect"  href="classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="341,259,438,285"/>
+<area shape="rect"  href="classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="540,5,688,32"/>
+<area shape="rect"  href="classFilesFG.html#a8c83d9691042581eea5a688447b3ae1f" title=" " alt="" coords="547,107,681,133"/>
+<area shape="rect"  href="classFilesFG.html#a5fa59a4738fd9525487b29c415cc1ca5" title=" " alt="" coords="549,157,679,184"/>
+<area shape="rect"  href="classUsers.html#a56f7251f02d59fe193832672dc138c41" title=" " alt="" coords="551,208,677,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2de4a71e222156bc6db4f61396d6e511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de4a71e222156bc6db4f61396d6e511">&#9670;&nbsp;</a></span>ofd_disconnect_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ofd_disconnect_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a856a9a157dbf1188858061e0a2842897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856a9a157dbf1188858061e0a2842897">&#9670;&nbsp;</a></span>receipts_Db_Clean_thread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void receipts_Db_Clean_thread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade37d508fb463321815e016967362fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade37d508fb463321815e016967362fa8">&#9670;&nbsp;</a></span>receipts_query_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void receipts_query_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_ade37d508fb463321815e016967362fa8_cgraph.png" border="0" usemap="#threads_8h_ade37d508fb463321815e016967362fa8_cgraph" alt=""/></div>
+<map name="threads_8h_ade37d508fb463321815e016967362fa8_cgraph" id="threads_8h_ade37d508fb463321815e016967362fa8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,173,120,200"/>
+<area shape="rect"  href="classMenu.html#a01055d22b4ff7219c63941cd7c28e9cd" title=" " alt="" coords="168,173,315,200"/>
+<area shape="rect"  href="classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="369,93,503,120"/>
+<area shape="rect"  href="classReceipt__new.html#a75349ba0f42d64767ac4e24201c7994d" title=" " alt="" coords="363,224,509,251"/>
+<area shape="rect"  href="classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="558,5,767,32"/>
+<area shape="rect"  href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="569,57,756,98"/>
+<area shape="rect"  href="classReceipt__new.html#aa74bb0cf6b1fe801f06fdf70213ca978" title=" " alt="" coords="571,123,755,149"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="643,173,682,200"/>
+<area shape="rect"  href="classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9" title=" " alt="" coords="557,224,768,251"/>
+<area shape="rect"  href="classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6" title=" " alt="" coords="569,275,756,317"/>
+<area shape="rect"  href="classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="597,341,728,382"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="accc5c8184e06fcc35fd84e028714a8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc5c8184e06fcc35fd84e028714a8b0">&#9670;&nbsp;</a></span>taskManagerThread_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> taskManagerThread_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_accc5c8184e06fcc35fd84e028714a8b0_cgraph.png" border="0" usemap="#threads_8h_accc5c8184e06fcc35fd84e028714a8b0_cgraph" alt=""/></div>
+<map name="threads_8h_accc5c8184e06fcc35fd84e028714a8b0_cgraph" id="threads_8h_accc5c8184e06fcc35fd84e028714a8b0_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,912,149,939"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="197,912,341,939"/>
+<area shape="rect"  href="classMenu.html#a72d358aadbb3f3f3733f79f192789d9c" title="isPurchaseAvailable &#45; ÑÐµÑÑ Ð½Ð° Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑÑ ÑÐ¸ÑÐºÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ð¸ ÑÐµÐºÐ°" alt="" coords="396,73,576,100"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="632,23,847,49"/>
+<area shape="rect"  href="classJSON.html#ab16a32c36e8cbb6927f599750477c8fa" title=" " alt="" coords="414,124,558,151"/>
+<area shape="rect"  href="classMenu.html#ae77d7ef2891da59b042113ad3a911aad" title=" " alt="" coords="397,175,575,201"/>
+<area shape="rect"  href="classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="389,225,583,252"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="419,513,553,554"/>
+<area shape="rect"  href="classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="421,668,551,695"/>
+<area shape="rect"  href="classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¸ Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÑÑÐ°ÑÐ¸ÑÑÐ¸ÐºÑ" alt="" coords="413,769,559,796"/>
+<area shape="rect"  href="classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="643,748,836,775"/>
+<area shape="rect"  href="classGoodsStructure__new.html#a583c471880632745a889371d6accf1fe" title=" " alt="" coords="414,821,558,862"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="467,887,505,913"/>
+<area shape="rect"  href="classMenu.html#acc22560f1e3315c1c223109b02c21697" title=" " alt="" coords="394,937,578,964"/>
+<area shape="rect"  href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="896,965,1027,992"/>
+<area shape="rect"  href="classMenu.html#ac4436566ce01c2a1dcf133541d82b29b" title=" " alt="" coords="421,1039,551,1065"/>
+<area shape="rect"  href="classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="437,1089,535,1116"/>
+<area shape="rect"  href="classMenu.html#a9b394e4ec2f8c9a91bc252d840bc41bf" title="regFromHub Ð ÐµÐ³Ð¸ÑÑÑÐ°ÑÐ¸Ñ Ð¸Ð· HUB" alt="" coords="419,1140,553,1167"/>
+<area shape="rect"  href="classMenuTree.html#a9ad9f70417b039df5ac4f61d66ce6abf" title=" " alt="" coords="419,1191,553,1217"/>
+<area shape="rect"  href="classMenu.html#a2fe8cf071267b2cd369a5793e7a1c20d" title=" " alt="" coords="405,1241,567,1268"/>
+<area shape="rect"  href="keypad_8h.html#aea7d09a5aceb5447a0b9552ef51ab6b1" title=" " alt="" coords="406,1292,566,1319"/>
+<area shape="rect"  href="classMenu.html#a12ac9da969661bb914c183ed0c7824c8" title=" " alt="" coords="427,1343,545,1369"/>
+<area shape="rect"  href="classMenu.html#a438c0d2d6713ebd6eeb3fbf93847442b" title=" " alt="" coords="415,1393,557,1420"/>
+<area shape="rect"  href="classJSON.html#abec4470b376a56a4b85d620db9e27a10" title=" " alt="" coords="410,1444,562,1471"/>
+<area shape="rect"  href="classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; Ð¾ÑÐ¸ÑÑÐºÐ° ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="688,73,791,100"/>
+<area shape="rect"  href="classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; Ð´Ð¾Ð±Ð°Ð²Ð¸ÑÑ ÑÑÐ³" alt="" coords="680,124,799,151"/>
+<area shape="rect"  href="classLicense.html#a256cdc19062818167eb290fd49317d77" title="showLicense &#45; Ð²ÑÐ²Ð¾Ð´ Ð²ÑÐµÑ ÑÑÐ»ÑÐ³ Ð² Ð»Ð¾Ð³ Ð¸ ÐºÐ¾Ð½ÑÐ¾Ð»Ñ" alt="" coords="664,175,815,201"/>
+<area shape="rect"  href="classLicense.html#ad0f037a7fe472c26db3e1e5e763c001c" title="size &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÑÐ°Ð·Ð¼ÐµÑ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="690,225,789,252"/>
+<area shape="rect"  href="classMenuTree.html#a4e8f17f54eb880f5acc283cd538c287f" title=" " alt="" coords="665,276,813,303"/>
+<area shape="rect"  href="classMenuTree.html#ad4739105350f6beed5592d1bfcdfa462" title=" " alt="" coords="645,327,833,353"/>
+<area shape="rect"  href="classMenuTree.html#af7e756fc557e6cc0e7f36d3ddde90ab7" title=" " alt="" coords="648,378,831,419"/>
+<area shape="rect"  href="classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="661,444,818,471"/>
+<area shape="rect"  href="classMenuItem.html#a75cd43978e4c9ba8c207210bdb5398c5" title=" " alt="" coords="665,495,813,521"/>
+<area shape="rect"  href="classMenuTree.html#a2f54c26048b54be44a43209728d14141" title=" " alt="" coords="676,545,803,572"/>
+<area shape="rect"  href="classMenuTree.html#abf311c36141820335205f98043044ffb" title=" " alt="" coords="678,596,801,623"/>
+<area shape="rect"  href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf" title=" " alt="" coords="680,647,799,673"/>
+<area shape="rect"  href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="683,697,796,724"/>
+<area shape="rect"  href="classMenu.html#a7fde71d6e01eae195621d6bf2f06bb52" title=" " alt="" coords="646,799,833,825"/>
+<area shape="rect"  href="classReceipt__new.html#aeb21c179db2971859d421ca95126179a" title=" " alt="" coords="672,849,807,876"/>
+<area shape="rect"  href="classReceipt__new.html#a7654b5c6558b8776c0fa3912115b2410" title=" " alt="" coords="631,900,848,927"/>
+<area shape="rect"  href="classReceipt__new.html#a0655b5939fb0178fdd415820522f99b4" title=" " alt="" coords="658,951,821,993"/>
+<area shape="rect"  href="classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="1120,791,1256,817"/>
+<area shape="rect"  href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="1095,841,1281,868"/>
+<area shape="rect"  href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="1121,893,1255,934"/>
+<area shape="rect"  href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="1123,1089,1253,1130"/>
+<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="1123,1154,1253,1195"/>
+<area shape="rect"  href="classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; Ð¿ÐµÑÐµÐ²Ð¾Ð´ Ð¸Ð· double Ð² uint64_t Ñ Ð°ÑÐ¸ÑÐ¼ÐµÑÐ¸ÑÐµÑÐºÐ¸Ð¼ Ð¾ÐºÑÑÐ³Ð»ÐµÐ½Ð¸ÐµÐ¼" alt="" coords="1075,958,1301,999"/>
+<area shape="rect"  href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="1123,1023,1253,1065"/>
+<area shape="rect"  href="classMenu.html#a6c9a45e60c987a9a5a783cbaea7a2e7b" title=" " alt="" coords="649,1068,830,1095"/>
+<area shape="rect"  href="classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="696,1119,783,1145"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86a3a06d15ddac5702d1c79f9bac7c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a3a06d15ddac5702d1c79f9bac7c7a">&#9670;&nbsp;</a></span>threads_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void threads_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> &amp;&#160;</td>
+          <td class="paramname"><em>menu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a86a3a06d15ddac5702d1c79f9bac7c7a_cgraph.png" border="0" usemap="#threads_8h_a86a3a06d15ddac5702d1c79f9bac7c7a_cgraph" alt=""/></div>
+<map name="threads_8h_a86a3a06d15ddac5702d1c79f9bac7c7a_cgraph" id="threads_8h_a86a3a06d15ddac5702d1c79f9bac7c7a_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,959,95,985"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="170,132,298,159"/>
+<area shape="rect"  href="threads_8h.html#a7b93566c6f56031bcfd3d64df5786505" title=" " alt="" coords="190,284,278,311"/>
+<area shape="rect"  href="classBIOS.html#a204f07296f285611e8b9d915089957da" title=" " alt="" coords="394,436,550,463"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="205,537,263,564"/>
+<area shape="rect"  href="threads_8h.html#a4d430d9ccb21bbe403a17783f7f97577" title=" " alt="" coords="202,647,266,673"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="153,697,315,724"/>
+<area shape="rect"  href="threads_8h.html#afab08de41033facb3e1e21893f455044" title=" " alt="" coords="179,807,289,833"/>
+<area shape="rect"  href="threads_8h.html#a750c6f52c7d659d7ec53a3cce5359a0a" title=" " alt="" coords="158,857,310,884"/>
+<area shape="rect"  href="threads_8h.html#a3723d3ddd4c5b02c5e1f3c4933b3c136" title=" " alt="" coords="163,908,305,935"/>
+<area shape="rect"  href="threads_8h.html#a2de4a71e222156bc6db4f61396d6e511" title=" " alt="" coords="175,959,293,985"/>
+<area shape="rect"  href="threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="164,1009,304,1036"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="162,1060,306,1087"/>
+<area shape="rect"  href="threads_8h.html#ade37d508fb463321815e016967362fa8" title=" " alt="" coords="177,1111,291,1137"/>
+<area shape="rect"  href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d" title=" " alt="" coords="165,1161,303,1188"/>
+<area shape="rect"  href="threads_8h.html#a856a9a157dbf1188858061e0a2842897" title=" " alt="" coords="143,1212,325,1239"/>
+<area shape="rect"  href="threads_8h.html#a4ace1168749fab432b0a009c631be836" title=" " alt="" coords="183,1263,285,1289"/>
+<area shape="rect"  href="threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5" title=" " alt="" coords="175,1313,293,1340"/>
+<area shape="rect"  href="classMenu.html#aa14f1c2b6ef85fe02fa6f2291a1bd6b7" title="queuePurchasesUp &#45; ÑÑÐ°ÑÑ Ð¿Ð¾ÑÐ¾ÐºÐ° Ð¾ÑÐµÑÐµÐ´Ð¸ ÑÐµÐºÐ¾Ð² Ð² Ð±Ð°Ð·Ñ" alt="" coords="146,1364,322,1391"/>
+<area shape="rect"  href="threads_8h.html#a8c844a866e48badcc4145b6560d917d1" title=" " alt="" coords="192,1415,276,1441"/>
+<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="393,31,551,57"/>
+<area shape="rect"  href="classMenu.html#a5b2c90b56a309012df0fca1d89697b07" title=" " alt="" coords="621,5,772,32"/>
+<area shape="rect"  href="classMenu.html#aece481d9e2cf80d9d415b2a973c5cd53" title=" " alt="" coords="619,56,775,83"/>
+<area shape="rect"  href="keypad_8h.html#a74c29ed5f4052ac48bbb100dc31005cc" title=" " alt="" coords="633,107,761,133"/>
+<area shape="rect"  href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; Ð¿Ð°ÑÑ DataMatrix" alt="" coords="823,327,1009,369"/>
+<area shape="rect"  href="classBIOS.html#a345080151381f8ff0c8da8d149da837f" title=" " alt="" coords="401,81,543,108"/>
+<area shape="rect"  href="classBIOS.html#a992b0eb58044e97fe56a4046cb00c7d3" title=" " alt="" coords="425,132,519,159"/>
+<area shape="rect"  href="classBIOS.html#a79aadb0ed1de220ffbbd6b2f97147c60" title=" " alt="" coords="420,183,524,209"/>
+<area shape="rect"  href="classBIOS.html#a3327ba8a216748f9c4daf0ca092f3ef3" title=" " alt="" coords="417,233,527,260"/>
+<area shape="rect"  href="classBIOS.html#a75920c7cdb3325fc7a79d9ba047a7a30" title=" " alt="" coords="415,284,529,311"/>
+<area shape="rect"  href="classBIOS.html#a688323e71bc05876290c7cc5a5041136" title=" " alt="" coords="399,335,545,361"/>
+<area shape="rect"  href="classBIOS.html#a324cf6cc38e988e342df6aeed1908e19" title=" " alt="" coords="397,385,547,412"/>
+<area shape="rect"  href="keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="408,487,536,513"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="427,537,517,564"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="380,639,564,665"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="381,690,563,731"/>
+<area shape="rect"  href="classMenu.html#a9b4b9098323bce89c75588ed806b3744" title=" " alt="" coords="391,756,553,783"/>
+<area shape="rect"  href="classMenu.html#acf6016610407e064f09957bba8a90ba4" title=" " alt="" coords="395,807,549,833"/>
+<area shape="rect"  href="classMenu.html#a276c2f9b8b3a216347a756d8b8c10116" title=" " alt="" coords="373,857,571,884"/>
+<area shape="rect"  href="classMenu.html#a470a649d94e8dc05b3937ce4146e7b5f" title=" " alt="" coords="402,908,542,935"/>
+<area shape="rect"  href="classMenu.html#a30e8f8ed98f23626037833ff442cfbdf" title=" " alt="" coords="409,959,535,985"/>
+<area shape="rect"  href="classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="404,1009,540,1036"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="400,1060,544,1087"/>
+<area shape="rect"  href="classMenu.html#a01055d22b4ff7219c63941cd7c28e9cd" title=" " alt="" coords="399,1111,545,1137"/>
+<area shape="rect"  href="classLogServant.html#a4c46a0f164b67b4a3149a8eefd50f808" title=" " alt="" coords="388,1161,556,1188"/>
+<area shape="rect"  href="log_8h.html#a02ba13b54a5d46206d2dbdc30915ea21" title=" " alt="" coords="426,1212,518,1239"/>
+<area shape="rect"  href="classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4" title=" " alt="" coords="399,1263,545,1289"/>
+<area shape="rect"  href="classMenu.html#a2ab76908e70209a0ffbc53c6938c6e77" title=" " alt="" coords="399,1313,545,1340"/>
+<area shape="rect"  href="classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="393,1364,551,1391"/>
+<area shape="rect"  href="classMenu.html#a1d24b01ce0f5b83b32bd19ff12f816ef" title=" " alt="" coords="394,1415,550,1441"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6dd6a389414850ad67447f1888b3f526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd6a389414850ad67447f1888b3f526">&#9670;&nbsp;</a></span>timer_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void timer_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a6dd6a389414850ad67447f1888b3f526_cgraph.png" border="0" usemap="#threads_8h_a6dd6a389414850ad67447f1888b3f526_cgraph" alt=""/></div>
+<map name="threads_8h_a6dd6a389414850ad67447f1888b3f526_cgraph" id="threads_8h_a6dd6a389414850ad67447f1888b3f526_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,64,32"/>
+<area shape="rect"  href="classMenu.html#a71625398c06de298630250f9617adaa3" title=" " alt="" coords="112,5,239,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7412686a6381a5b34ddcd5f459dd81a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7412686a6381a5b34ddcd5f459dd81a5">&#9670;&nbsp;</a></span>updateDowload_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateDowload_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a7412686a6381a5b34ddcd5f459dd81a5_cgraph.png" border="0" usemap="#threads_8h_a7412686a6381a5b34ddcd5f459dd81a5_cgraph" alt=""/></div>
+<map name="threads_8h_a7412686a6381a5b34ddcd5f459dd81a5_cgraph" id="threads_8h_a7412686a6381a5b34ddcd5f459dd81a5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,81,124,108"/>
+<area shape="rect"  href="classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="172,81,331,108"/>
+<area shape="rect"  href="classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ Ð´Ð°Ð½Ð½ÑÐµ Ð¸ Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÑÑÐ°ÑÐ¸ÑÑÐ¸ÐºÑ" alt="" coords="379,31,524,57"/>
+<area shape="rect"  href="classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="408,81,495,108"/>
+<area shape="rect"  href="classMenu.html#a861b29cc972a9e63bd9547d5b84ca869" title=" " alt="" coords="402,132,501,159"/>
+<area shape="rect"  href="classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="807,5,1000,32"/>
+<area shape="rect"  href="classMenu.html#a7fde71d6e01eae195621d6bf2f06bb52" title=" " alt="" coords="572,56,759,83"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="1048,31,1196,57"/>
+<area shape="rect"  href="classBIOS.html#a7ce3cab079208f86115b2b1c213472b7" title=" " alt="" coords="820,56,987,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4ace1168749fab432b0a009c631be836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ace1168749fab432b0a009c631be836">&#9670;&nbsp;</a></span>updateFisGo_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateFisGo_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMenu.html">Menu</a> *&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="threads_8h_a4ace1168749fab432b0a009c631be836_cgraph.png" border="0" usemap="#threads_8h_a4ace1168749fab432b0a009c631be836_cgraph" alt=""/></div>
+<map name="threads_8h_a4ace1168749fab432b0a009c631be836_cgraph" id="threads_8h_a4ace1168749fab432b0a009c631be836_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect"  href="classMenu.html#a2ab76908e70209a0ffbc53c6938c6e77" title=" " alt="" coords="156,5,303,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="af912dff073c15bfcb0efe350af88191f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af912dff073c15bfcb0efe350af88191f">&#9670;&nbsp;</a></span>fb_errCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fb_errCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91235086abfde06b81e909e472776b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91235086abfde06b81e909e472776b36">&#9670;&nbsp;</a></span>fb_errMess</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string fb_errMess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f5f77a68490fc0383f2902ca56835ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f5f77a68490fc0383f2902ca56835ff">&#9670;&nbsp;</a></span>fb_warnCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fb_warnCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac42ba6361a8169f1a1d1f41ad6e08ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42ba6361a8169f1a1d1f41ad6e08ed9">&#9670;&nbsp;</a></span>fb_warnMess</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string fb_warnMess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c5a79435b435a2d34758a15d3809547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5a79435b435a2d34758a15d3809547">&#9670;&nbsp;</a></span>fb_wasErr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fb_wasErr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45b7b1a69fb161ceafe505ca42059fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b7b1a69fb161ceafe505ca42059fc8">&#9670;&nbsp;</a></span>fb_wasWarning</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fb_wasWarning</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

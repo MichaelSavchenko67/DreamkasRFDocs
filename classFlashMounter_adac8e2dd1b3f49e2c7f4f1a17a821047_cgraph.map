@@ -1,0 +1,4 @@
+<map id="FlashMounter::isMounted" name="FlashMounter::isMounted">
+<area shape="rect" id="node1" title="isMounted получение флага смонтирована ли флешка" alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$classFlashMounter.html#a6e9b5b794727b91e9b36e2577a5d20b5" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="223,5,409,32"/>
+</map>

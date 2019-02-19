@@ -1,0 +1,2427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс FISGO_TEST_API</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="classFISGO__TEST__API-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс FISGO_TEST_API</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Fisgo__Test__API_8h_source.html">Fisgo_Test_API.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса FISGO_TEST_API:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API__coll__graph.png" border="0" usemap="#FISGO__TEST__API_coll__map" alt="Collaboration graph"/></div>
+<map name="FISGO__TEST__API_coll__map" id="FISGO__TEST__API_coll__map">
+<area shape="rect"  title=" " alt="" coords="749,2464,946,3685"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1TASK.html" title=" " alt="" coords="759,2148,935,2401"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1KEYPAD__MODE__TASK.html" title=" " alt="" coords="5,1905,201,2012"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1CONTERS__GET__TASK.html" title=" " alt="" coords="225,1913,432,2005"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1MENU.html" title=" " alt="" coords="457,1898,638,2019"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1CFG__GET__TASK.html" title=" " alt="" coords="663,1905,832,2012"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1LCD__SCREEN__TASK.html" title=" " alt="" coords="856,1898,1039,2019"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1GOODS.html" title=" " alt="" coords="1063,1913,1253,2005"/>
+<area shape="rect"  href="classPosition__new.html" title=" " alt="" coords="1058,5,1258,1769"/>
+<area shape="rect"  href="structFISGO__TEST__API_1_1KEYPAD__CTRL__TASK.html" title=" " alt="" coords="1277,1891,1473,2027"/>
+<area shape="rect"  href="classLicense.html" title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="1497,1832,1717,2085"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1CFG__FIELD.html">CFG_FIELD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structFISGO__TEST__API_1_1CFG__FIELD.html" title="The CFG_FIELD struct поле конфигурации">CFG_FIELD</a> struct поле конфигурации  <a href="structFISGO__TEST__API_1_1CFG__FIELD.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1CFG__GET__TASK.html">CFG_GET_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1CONTERS__GET__TASK.html">CONTERS_GET_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1COUNTER.html">COUNTER</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1GOODS.html">GOODS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1KEYPAD__CTRL__TASK.html">KEYPAD_CTRL_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1KEYPAD__MODE__TASK.html">KEYPAD_MODE_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1LCD__SCREEN__TASK.html">LCD_SCREEN_TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1MENU.html">MENU</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFISGO__TEST__API_1_1TASK.html">TASK</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:af9559cb79d983267441a1aead6d04b35"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35">STATE</a> { <br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35aebf3a6966575e049da50380c9c55e25c">SERVER_UP</a> = 1, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a643aca32ec5f3d08d49cc14b560fbddf">ACCEPT</a>, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a2fda6422728ef26d4091142c491c1316">MSG_WAIT</a>, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a7179ed9279e403fd3a3c876368d4a683">PARSE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a431c76f322eeecdf2d270d65e0fa503e">ACTION_DO</a>, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a5110bdfaf2e51c39b804a4ef45ac10af">ANSWER</a>, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35a1fe32f77888e03fd670d2bcb8c90579c">SERVER_DOWN</a>, 
+<a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35aad5e8ccc1ba9c9394bb5ff3531e30eaf">SLEEP</a>
+<br />
+ }</td></tr>
+<tr class="separator:af9559cb79d983267441a1aead6d04b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908b3c67e49e7d73e0a1f7f0f62a27de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27de">ERRORS</a> { <br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea084a27f3261c5b4a4df4fc92ae108f50">SOCK_CREATE_ERROR</a> = -1, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea756765cdd820bc4879bbb2ac5a15a641">BIND_ERROR</a> = -2, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deab5945507507510b1dc5de112a2dafad0">ACCEPT_ERROR</a> = -3, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deab7780e92333c4093e12f954120832090">RW_TIMEOUT</a> = -4, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea62b0d49c0937b99c83ae684a53438f4b">CLIENT_SOCK_CLOSE</a> = -5, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea6ce931457cf5c36befda71fdee3b2e39">RW_ERROR</a> = -6, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dead10d48e5aaed08f148333e3f8d5eb923">ADDR_INIT_ERROR</a> = -7, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deac03a296cef2d91eb8af565d4d5d0db15">LISTEN_ERROR</a> = -8, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deab7f705cdd28f7c2ba01272ef28a019ea">INIT_ERROR</a> = -10, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea003db428216ec737f254a0faee7aa45f">ACCEPT_TIMEOUT</a> = -11, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deaa4a355974cd1d2f7e9b9ed6d33482025">CLOSE_ERROR</a> = -12, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deaf7a60fc2b26f7d5f64af87440745038c">BUF_OVERFLOW</a> = -13, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea328ffd0185d1838750311c44c99893da">IGNORE</a> = -14, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea1c590a3a3561288c768edb7d60949675">SERVER_ERROR</a> = -15, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deae9f42cb74518d8ceeb4610c83f4b874c">PARSE_ERROR</a> = -16, 
+<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea6f0e3176b9000ec76448f53de748efd1">CRC16_ERROR</a> = -17, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea04b14096db8e8dfaf7a96bba65256ea4">SUCCESS</a> = 0
+<br />
+ }</td></tr>
+<tr class="separator:a908b3c67e49e7d73e0a1f7f0f62a27de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb12e5dac91107d8ba986141dde066ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ad">ACTION_CMD</a> { <br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaced2fd7e9a906ccffc9b3c19e66c3b15">KEY_PRESS</a> = 1, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adac4875b61ca112e7824cd873cb4b4b68a">LCD_SCREEN</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adacdd0c309a159f370c47880b6115eb828">KEYPAD_MODE_GET</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adae5c7a7758b3c2d6f4a4f4aeb99024dde">LOADER_STATUS_GET</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adae97b7ddce5e6eefaf723008511fc8981">CLOSE_SESSION</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada3142b05630292ec53bc54330fa1345d3">CFG_GET</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada0efb9bc69b5bfd588a4575a2ac2e9e10">COUNTERS_GET</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada830df028b72aadbca9d1684e3517c3db">SEARCH_GOODS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adabbeac37d48e6dc2e2a50251079f673f9">SEARCH_POSITION</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada62ea6241734311ece1b349403aae1b3c">GET_LEAF</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adafb09b4fee4ae5dbb6857c801f016e8ad">JSON_SNIFFER</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adadff0564f637e9223fac7753d345f4628">HUB_MODE_ON</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaf5e2c2b19d9916575d986a9c8b6a2761">HUB_MODE_OFF</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada13e21603a00587ef4365316f1f3e8ee6">GET_LICENSE</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada001fe73a5ae3b720fe8873ce1d8b9a14">GET_DISCOUNTS</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaa4b83d71c53bb13857382a42c86d1c6a">GET_LAST_PURCHASE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada67777f6534427170ab899c4b53169a81">SET_POLL_TIME</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada3496bfc3d653c2b807e753b4ed01c6cc">KILL_NTPD</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada25f36ba371e31c07c106db3a41c31806">SCANNER</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada6c62efd56986904dcbf9c1472c108c57">GET_WIFI_STATUS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada781bd1281bca65b304c052ff21df68a9">FS_RESET</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada9f15761b5aa245b8046a29e8ad3b31fb">LAST_FD_NUM_GET</a>, 
+<a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaba63952a9e43329b2107578ad0a4156f">DO</a> = 12345
+<br />
+ }</td></tr>
+<tr class="separator:aeb12e5dac91107d8ba986141dde066ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb945bc58652fe0cca1f799c810a694e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aeb945bc58652fe0cca1f799c810a694e">ACTION_STATUS_</a> { <a class="el" href="classFISGO__TEST__API.html#aeb945bc58652fe0cca1f799c810a694ea355da1224bcaaf9bfaa1c50d2e12305e">COMPLETE</a> = 0, 
+<a class="el" href="classFISGO__TEST__API.html#aeb945bc58652fe0cca1f799c810a694ea23024dc01c46f282270b6d343ca64148">FAILED</a>
+ }</td></tr>
+<tr class="separator:aeb945bc58652fe0cca1f799c810a694e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1728e5126cfcb1f85bd4416bead35ba1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1">POS_SOURCE</a> { <a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1a557a6a9c532519ff0e8909e63cd2d2b6">GOODS_DB</a> = 1, 
+<a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1a8793e059f7fefffb7737608daf878d65">RECEIPT</a>
+ }</td></tr>
+<tr class="separator:a1728e5126cfcb1f85bd4416bead35ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1cd1f4d980eb4a59849a4fb71e134d9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a1cd1f4d980eb4a59849a4fb71e134d9a">FISGO_TEST_API</a> ()</td></tr>
+<tr class="separator:a1cd1f4d980eb4a59849a4fb71e134d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee6b9d714fc7f39a6997db7c0543078"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#adee6b9d714fc7f39a6997db7c0543078">~FISGO_TEST_API</a> ()</td></tr>
+<tr class="separator:adee6b9d714fc7f39a6997db7c0543078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9171fc61c0c0f89366d8a458e58190d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8">GoodsDataJsonCreate</a> (<a class="el" href="classPosition__new.html">Position_new</a> &amp;pos_new, <a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1">POS_SOURCE</a> pos_source)</td></tr>
+<tr class="separator:a9171fc61c0c0f89366d8a458e58190d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a1daebe37f358278548f9f6b45baae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a8a1daebe37f358278548f9f6b45baae0">server_up</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;sock, uint16_t port)</td></tr>
+<tr class="separator:a8a1daebe37f358278548f9f6b45baae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3bcfde259491cbbccd0ed2068819ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27de">ERRORS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#acc3bcfde259491cbbccd0ed2068819ab">rem_accept</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;fd, const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;listener)</td></tr>
+<tr class="separator:acc3bcfde259491cbbccd0ed2068819ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb0ca9bde9936bce8bad860a9c48d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#acbb0ca9bde9936bce8bad860a9c48d8f">server_down</a> ()</td></tr>
+<tr class="separator:acbb0ca9bde9936bce8bad860a9c48d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ba3cc1b5b5a3aa319c83e338764f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a77ba3cc1b5b5a3aa319c83e338764f8e">msg_read</a> ()</td></tr>
+<tr class="separator:a77ba3cc1b5b5a3aa319c83e338764f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7c209f136a71d097e2685926ae2392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#afc7c209f136a71d097e2685926ae2392">msg_write</a> (string msg, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fd=-1)</td></tr>
+<tr class="separator:afc7c209f136a71d097e2685926ae2392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63be607063be985bf32be34cd12d587d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a63be607063be985bf32be34cd12d587d">client_disconnect</a> ()</td></tr>
+<tr class="separator:a63be607063be985bf32be34cd12d587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1221da344e11a4e850875ad8c6c88ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea">parse</a> ()</td></tr>
+<tr class="separator:ab1221da344e11a4e850875ad8c6c88ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0c3ca513ac4b789c83239c16a3bd6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#afd0c3ca513ac4b789c83239c16a3bd6e">read_buf_clear</a> ()</td></tr>
+<tr class="separator:afd0c3ca513ac4b789c83239c16a3bd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3177fa6676f984df36ab7041cfd940e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e">write_buf_clear</a> ()</td></tr>
+<tr class="separator:af3177fa6676f984df36ab7041cfd940e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d68391ff0de96a4bb9c12831322f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e">socket_reset</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>)</td></tr>
+<tr class="separator:af3d68391ff0de96a4bb9c12831322f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d04e0d76ce62304bd9b5cdf4fd9da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a44d04e0d76ce62304bd9b5cdf4fd9da0">packet_reset</a> ()</td></tr>
+<tr class="separator:a44d04e0d76ce62304bd9b5cdf4fd9da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd218b2791ff47d267225239e1ce7281"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281">answer_create</a> ()</td></tr>
+<tr class="separator:afd218b2791ff47d267225239e1ce7281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639ead2ba2cad720847e97cac076c072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a639ead2ba2cad720847e97cac076c072">answer_send</a> ()</td></tr>
+<tr class="separator:a639ead2ba2cad720847e97cac076c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7497d43cd0a9248c13be85a75ea5d162"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a7497d43cd0a9248c13be85a75ea5d162">addEvent</a> (const string &amp;)</td></tr>
+<tr class="separator:a7497d43cd0a9248c13be85a75ea5d162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad874961d3a9596be7f528cae52398ee9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ad874961d3a9596be7f528cae52398ee9">eventsTransmitter</a> ()</td></tr>
+<tr class="separator:ad874961d3a9596be7f528cae52398ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f4aac840723cb4ad48b54b122956e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a56f4aac840723cb4ad48b54b122956e6">eventsThreadStart</a> ()</td></tr>
+<tr class="separator:a56f4aac840723cb4ad48b54b122956e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa595258a35fc2e9dcc60362b6006eb4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aa595258a35fc2e9dcc60362b6006eb4d">eventsThreadStop</a> ()</td></tr>
+<tr class="separator:aa595258a35fc2e9dcc60362b6006eb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7ce286eaa6d25a5fd24e4c58f4d035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035">FisGoTestServer</a> ()</td></tr>
+<tr class="separator:a1d7ce286eaa6d25a5fd24e4c58f4d035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a32c863d9382499da5efd07a5c9a3ec41"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a32c863d9382499da5efd07a5c9a3ec41">uuid</a></td></tr>
+<tr class="separator:a32c863d9382499da5efd07a5c9a3ec41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096aed6f5f9b75fcc6c615aa24b3c55f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a096aed6f5f9b75fcc6c615aa24b3c55f">SERVER_STATE</a></td></tr>
+<tr class="separator:a096aed6f5f9b75fcc6c615aa24b3c55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ac6875b24a850a381848c8b5b115ca"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ab1ac6875b24a850a381848c8b5b115ca">ACTION</a></td></tr>
+<tr class="separator:ab1ac6875b24a850a381848c8b5b115ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37cae248069dd1f4cba7a3b6326b66dc"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structFISGO__TEST__API_1_1TASK.html">FISGO_TEST_API::TASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a37cae248069dd1f4cba7a3b6326b66dc">task</a></td></tr>
+<tr class="separator:a37cae248069dd1f4cba7a3b6326b66dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5841cad6cb5ffa1ffb9276ea36a2a244"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structFISGO__TEST__API_1_1TASK.html">TASK</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a5841cad6cb5ffa1ffb9276ea36a2a244">tasks</a></td></tr>
+<tr class="separator:a5841cad6cb5ffa1ffb9276ea36a2a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbe34817d7a66358e612b6ea49f2287"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classReceipt__new.html">Receipt_new</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a0cbe34817d7a66358e612b6ea49f2287">purchase</a></td></tr>
+<tr class="separator:a0cbe34817d7a66358e612b6ea49f2287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fc6b78e7dbf3e23627e62ad03ab6e9"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a38fc6b78e7dbf3e23627e62ad03ab6e9">ACTION_STATUS</a></td></tr>
+<tr class="separator:a38fc6b78e7dbf3e23627e62ad03ab6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Статические открытые данные</h2></td></tr>
+<tr class="memitem:ae1c1b26615f165173c9541f3734bc7ab"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ae1c1b26615f165173c9541f3734bc7ab">KEY_DOWN</a> = 0x01</td></tr>
+<tr class="separator:ae1c1b26615f165173c9541f3734bc7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7897474ffb69b43250d3e4de2472e11"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aa7897474ffb69b43250d3e4de2472e11">KEY_HOLD</a> = 0x02</td></tr>
+<tr class="separator:aa7897474ffb69b43250d3e4de2472e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dcbc4b48022f8ca57f10da240d0446f"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a5dcbc4b48022f8ca57f10da240d0446f">KEY_DOWN_PAIR</a> = 0x03</td></tr>
+<tr class="separator:a5dcbc4b48022f8ca57f10da240d0446f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb02af8b7a48d97036dcd5bf353cb823"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#abb02af8b7a48d97036dcd5bf353cb823">SHIFT_NUM_</a> = &quot;SHIFT_NUM&quot;</td></tr>
+<tr class="separator:abb02af8b7a48d97036dcd5bf353cb823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41134c136a11eb62ba376ec68660050f"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a41134c136a11eb62ba376ec68660050f">NEXT_REC_NUM_</a> = &quot;NEXT_REC_NUM&quot;</td></tr>
+<tr class="separator:a41134c136a11eb62ba376ec68660050f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7829fc5df27138d1745242cec2ae548"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ad7829fc5df27138d1745242cec2ae548">SALE_SUMS_</a> = &quot;SALE_SUMS&quot;</td></tr>
+<tr class="separator:ad7829fc5df27138d1745242cec2ae548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b635ed6442b21cf3d481abd0aaf53b"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af4b635ed6442b21cf3d481abd0aaf53b">SALE_CNTS_</a> = &quot;SALE_CNTS&quot;</td></tr>
+<tr class="separator:af4b635ed6442b21cf3d481abd0aaf53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5de9b7c96bbbf39968d67b4d4bf0d5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a3c5de9b7c96bbbf39968d67b4d4bf0d5">RET_SUMS_</a> = &quot;RET_SUMS&quot;</td></tr>
+<tr class="separator:a3c5de9b7c96bbbf39968d67b4d4bf0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af462b040ebc7ca7a67d8a1e16419947a"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af462b040ebc7ca7a67d8a1e16419947a">RET_CNTS_</a> = &quot;RET_CNTS&quot;</td></tr>
+<tr class="separator:af462b040ebc7ca7a67d8a1e16419947a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade472204169032f1c3d5225f7768bdd1"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ade472204169032f1c3d5225f7768bdd1">PURCHASE_SUMS_</a> = &quot;PURCHASE_SUMS&quot;</td></tr>
+<tr class="separator:ade472204169032f1c3d5225f7768bdd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b0b5db614cfe307e87464a4b486975"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ad9b0b5db614cfe307e87464a4b486975">RET_PURCHASE_SUMS_</a> = &quot;RET_PURCHASE_SUMS&quot;</td></tr>
+<tr class="separator:ad9b0b5db614cfe307e87464a4b486975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965b51c3e5b42301ae3de5ee694b9983"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a965b51c3e5b42301ae3de5ee694b9983">CASH_</a> = &quot;CASH&quot;</td></tr>
+<tr class="separator:a965b51c3e5b42301ae3de5ee694b9983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2220c9a449b5431e0e293c3bfb696a9"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ab2220c9a449b5431e0e293c3bfb696a9">CARD_</a> = &quot;CARD&quot;</td></tr>
+<tr class="separator:ab2220c9a449b5431e0e293c3bfb696a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef4e6eca474943a5202fce180ce7a87"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a6ef4e6eca474943a5202fce180ce7a87">ADVANCE_</a> = &quot;ADVANCE&quot;</td></tr>
+<tr class="separator:a6ef4e6eca474943a5202fce180ce7a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cab76ec929afe4274d938019dde9e8f"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a3cab76ec929afe4274d938019dde9e8f">CREDIT_</a> = &quot;CREDIT&quot;</td></tr>
+<tr class="separator:a3cab76ec929afe4274d938019dde9e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad650ac72d81d32147e67701026ce477e"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ad650ac72d81d32147e67701026ce477e">EXCHANGE_</a> = &quot;EXCHANGE&quot;</td></tr>
+<tr class="separator:ad650ac72d81d32147e67701026ce477e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318e54471ed3b004d61866c6c16373e5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a318e54471ed3b004d61866c6c16373e5">REC_SUMS_</a> = &quot;REC_SUMS&quot;</td></tr>
+<tr class="separator:a318e54471ed3b004d61866c6c16373e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad030fe129b83bf5d3dce29c0be72e858"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ad030fe129b83bf5d3dce29c0be72e858">REC_CNTS_</a> = &quot;REC_CNTS&quot;</td></tr>
+<tr class="separator:ad030fe129b83bf5d3dce29c0be72e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac129130d42cb4886b3f80bb2bbe7086c"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ac129130d42cb4886b3f80bb2bbe7086c">DISCOUNT_SUMS_</a> = &quot;DISCOUNT_SUMS&quot;</td></tr>
+<tr class="separator:ac129130d42cb4886b3f80bb2bbe7086c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadfc22d8ddf191353a330c5a793b42f6"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aadfc22d8ddf191353a330c5a793b42f6">SALE_</a> = &quot;SALE&quot;</td></tr>
+<tr class="separator:aadfc22d8ddf191353a330c5a793b42f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ededcd0ed721a2d2eaaab3d691762fd"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a8ededcd0ed721a2d2eaaab3d691762fd">RET_</a> = &quot;RET&quot;</td></tr>
+<tr class="separator:a8ededcd0ed721a2d2eaaab3d691762fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4690678a7066bbd6b502d07e46db92"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a2f4690678a7066bbd6b502d07e46db92">CANCELED_</a> = &quot;CANCELED&quot;</td></tr>
+<tr class="separator:a2f4690678a7066bbd6b502d07e46db92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a9c6ae373bd7fc5d099aa88067bab9"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a69a9c6ae373bd7fc5d099aa88067bab9">DEFFERED_</a> = &quot;DEFFERED&quot;</td></tr>
+<tr class="separator:a69a9c6ae373bd7fc5d099aa88067bab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f54815a115937205b7221fc005220ad"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a7f54815a115937205b7221fc005220ad">INSERT_</a> = &quot;INSERT&quot;</td></tr>
+<tr class="separator:a7f54815a115937205b7221fc005220ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af546b93d1c3d3bc2837d8d637ad60fdb"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#af546b93d1c3d3bc2837d8d637ad60fdb">RESERVE_</a> = &quot;RESERVE&quot;</td></tr>
+<tr class="separator:af546b93d1c3d3bc2837d8d637ad60fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c1802ba6197c08bbe6ae7d85cee813"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ae6c1802ba6197c08bbe6ae7d85cee813">SALE_TAXS_</a> = &quot;SALE_TAXS&quot;</td></tr>
+<tr class="separator:ae6c1802ba6197c08bbe6ae7d85cee813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354285588f5ef47203d99d24873553b4"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a354285588f5ef47203d99d24873553b4">RET_TAXS_</a> = &quot;RET_TAXS&quot;</td></tr>
+<tr class="separator:a354285588f5ef47203d99d24873553b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341600ceaac95cd6739a30a7f59503a7"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a341600ceaac95cd6739a30a7f59503a7">NDS_18_</a> = &quot;NDS_18&quot;</td></tr>
+<tr class="separator:a341600ceaac95cd6739a30a7f59503a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfedfc6aa9fb26ace68eae7755462221"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#acfedfc6aa9fb26ace68eae7755462221">NDS_10_</a> = &quot;NDS_10&quot;</td></tr>
+<tr class="separator:acfedfc6aa9fb26ace68eae7755462221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7764c09bb191162248adb783755b5a5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#ae7764c09bb191162248adb783755b5a5">NDS_0_</a> = &quot;NDS_0&quot;</td></tr>
+<tr class="separator:ae7764c09bb191162248adb783755b5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1a65567f9081b83491e01bbc7816bd"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a1c1a65567f9081b83491e01bbc7816bd">WITHOUT_NDS_</a> = &quot;WITHOUT_NDS&quot;</td></tr>
+<tr class="separator:a1c1a65567f9081b83491e01bbc7816bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e06924ce26d3cc50fd41d29db798a59"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a4e06924ce26d3cc50fd41d29db798a59">NDS_18_118_</a> = &quot;NDS_18_118&quot;</td></tr>
+<tr class="separator:a4e06924ce26d3cc50fd41d29db798a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2c1292219fbe143d37140c0e65ef72"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a3e2c1292219fbe143d37140c0e65ef72">NDS_10_110_</a> = &quot;NDS_10_110&quot;</td></tr>
+<tr class="separator:a3e2c1292219fbe143d37140c0e65ef72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342d5e2b7f8007951d31f601f410a14d"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a342d5e2b7f8007951d31f601f410a14d">X_Z_DATA_</a> = &quot;X_Z_DATA&quot;</td></tr>
+<tr class="separator:a342d5e2b7f8007951d31f601f410a14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12624ac6d76fbbb303d77e0aba1e5564"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a12624ac6d76fbbb303d77e0aba1e5564">OPERATION_CNT_</a> = &quot;OPERATION_CNT&quot;</td></tr>
+<tr class="separator:a12624ac6d76fbbb303d77e0aba1e5564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31fde82cce59ce151c8d6bb4bc8bb434"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a31fde82cce59ce151c8d6bb4bc8bb434">DOC_NUM_</a> = &quot;DOC_NUM&quot;</td></tr>
+<tr class="separator:a31fde82cce59ce151c8d6bb4bc8bb434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67595f0f35fc72459beb4af252ccafe5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a67595f0f35fc72459beb4af252ccafe5">CASH_IN_DRAWER_</a> = &quot;CASH_IN_DRAWER&quot;</td></tr>
+<tr class="separator:a67595f0f35fc72459beb4af252ccafe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe88ea10c187931c386f7c9848461f4b"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#afe88ea10c187931c386f7c9848461f4b">SALE_CNT_</a> = &quot;SALE_CNT&quot;</td></tr>
+<tr class="separator:afe88ea10c187931c386f7c9848461f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fe541c92d7ad13f071c077b127c305"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a94fe541c92d7ad13f071c077b127c305">SALE_SUM_</a> = &quot;SALE_SUM&quot;</td></tr>
+<tr class="separator:a94fe541c92d7ad13f071c077b127c305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea19d9f20aff05d134b17668b080f7a6"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aea19d9f20aff05d134b17668b080f7a6">RET_CNT_</a> = &quot;RET_CNT&quot;</td></tr>
+<tr class="separator:aea19d9f20aff05d134b17668b080f7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281b72745c7572b6db07e2df587960e0"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a281b72745c7572b6db07e2df587960e0">RET_SUM_</a> = &quot;RET_SUM&quot;</td></tr>
+<tr class="separator:a281b72745c7572b6db07e2df587960e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7909ac9eedc3b492fdf43345821c69"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#abe7909ac9eedc3b492fdf43345821c69">CANCELED_CNT_</a> = &quot;CANCELED_CNT&quot;</td></tr>
+<tr class="separator:abe7909ac9eedc3b492fdf43345821c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23786760beacb1c5072fe97bfae65d49"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a23786760beacb1c5072fe97bfae65d49">CANCELED_SUM_</a> = &quot;CANCELED_SUM&quot;</td></tr>
+<tr class="separator:a23786760beacb1c5072fe97bfae65d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8482ad489789b3f28ccbee18014c4887"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a8482ad489789b3f28ccbee18014c4887">INSERT_CNT_</a> = &quot;INSERT_CNT&quot;</td></tr>
+<tr class="separator:a8482ad489789b3f28ccbee18014c4887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b87e33f5d5b55b5aa704cef2f790cf"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a49b87e33f5d5b55b5aa704cef2f790cf">INSERT_SUM_</a> = &quot;INSERT_SUM&quot;</td></tr>
+<tr class="separator:a49b87e33f5d5b55b5aa704cef2f790cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10674d295fe8d4eafd4efa7b60d54fa5"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a10674d295fe8d4eafd4efa7b60d54fa5">RESERVE_CNT_</a> = &quot;RESERVE_CNT&quot;</td></tr>
+<tr class="separator:a10674d295fe8d4eafd4efa7b60d54fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92abba29502b8ce3ecdbe47d48f12f2a"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a92abba29502b8ce3ecdbe47d48f12f2a">RESERVE_SUM_</a> = &quot;RESERVE_SUM&quot;</td></tr>
+<tr class="separator:a92abba29502b8ce3ecdbe47d48f12f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e6ca6515be8fdcc24e4e8bfb8a9dc9"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a45e6ca6515be8fdcc24e4e8bfb8a9dc9">DEP_SALE_SUM_</a> = &quot;DEP_SALE_SUM&quot;</td></tr>
+<tr class="separator:a45e6ca6515be8fdcc24e4e8bfb8a9dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabdacf18bb7633ee2c29bafd438e98b"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#adabdacf18bb7633ee2c29bafd438e98b">DEP_RET_SUM_</a> = &quot;DEP_RET_SUM&quot;</td></tr>
+<tr class="separator:adabdacf18bb7633ee2c29bafd438e98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3349dbd0c7f137eaae42f0a5de795ad9"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a3349dbd0c7f137eaae42f0a5de795ad9">PURCHASE_CNT_</a> = &quot;PURCHASE_CNT&quot;</td></tr>
+<tr class="separator:a3349dbd0c7f137eaae42f0a5de795ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f0168c5fff3ca9d4c2ec9d237f3f39"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#aa1f0168c5fff3ca9d4c2ec9d237f3f39">RET_PURCHASE_CNT_</a> = &quot;RET_PURCHASE_CNT&quot;</td></tr>
+<tr class="separator:aa1f0168c5fff3ca9d4c2ec9d237f3f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033c1f2c86ba4b63ec2369803efc94c1"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#a033c1f2c86ba4b63ec2369803efc94c1">COR_DATA_</a> = &quot;COR_DATA&quot;</td></tr>
+<tr class="separator:a033c1f2c86ba4b63ec2369803efc94c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd63e08eeca3f526b88a06d121c2a649"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFISGO__TEST__API.html#abd63e08eeca3f526b88a06d121c2a649">CNT_</a> = &quot;CNT&quot;</td></tr>
+<tr class="separator:abd63e08eeca3f526b88a06d121c2a649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="aeb12e5dac91107d8ba986141dde066ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb12e5dac91107d8ba986141dde066ad">&#9670;&nbsp;</a></span>ACTION_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ad">FISGO_TEST_API::ACTION_CMD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adaced2fd7e9a906ccffc9b3c19e66c3b15"></a>KEY_PRESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adac4875b61ca112e7824cd873cb4b4b68a"></a>LCD_SCREEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adacdd0c309a159f370c47880b6115eb828"></a>KEYPAD_MODE_GET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adae5c7a7758b3c2d6f4a4f4aeb99024dde"></a>LOADER_STATUS_GET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adae97b7ddce5e6eefaf723008511fc8981"></a>CLOSE_SESSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada3142b05630292ec53bc54330fa1345d3"></a>CFG_GET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada0efb9bc69b5bfd588a4575a2ac2e9e10"></a>COUNTERS_GET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada830df028b72aadbca9d1684e3517c3db"></a>SEARCH_GOODS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adabbeac37d48e6dc2e2a50251079f673f9"></a>SEARCH_POSITION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada62ea6241734311ece1b349403aae1b3c"></a>GET_LEAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adafb09b4fee4ae5dbb6857c801f016e8ad"></a>JSON_SNIFFER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adadff0564f637e9223fac7753d345f4628"></a>HUB_MODE_ON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adaf5e2c2b19d9916575d986a9c8b6a2761"></a>HUB_MODE_OFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada13e21603a00587ef4365316f1f3e8ee6"></a>GET_LICENSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada001fe73a5ae3b720fe8873ce1d8b9a14"></a>GET_DISCOUNTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adaa4b83d71c53bb13857382a42c86d1c6a"></a>GET_LAST_PURCHASE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada67777f6534427170ab899c4b53169a81"></a>SET_POLL_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada3496bfc3d653c2b807e753b4ed01c6cc"></a>KILL_NTPD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada25f36ba371e31c07c106db3a41c31806"></a>SCANNER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada6c62efd56986904dcbf9c1472c108c57"></a>GET_WIFI_STATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada781bd1281bca65b304c052ff21df68a9"></a>FS_RESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066ada9f15761b5aa245b8046a29e8ad3b31fb"></a>LAST_FD_NUM_GET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb12e5dac91107d8ba986141dde066adaba63952a9e43329b2107578ad0a4156f"></a>DO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aeb945bc58652fe0cca1f799c810a694e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb945bc58652fe0cca1f799c810a694e">&#9670;&nbsp;</a></span>ACTION_STATUS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFISGO__TEST__API.html#aeb945bc58652fe0cca1f799c810a694e">FISGO_TEST_API::ACTION_STATUS_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aeb945bc58652fe0cca1f799c810a694ea355da1224bcaaf9bfaa1c50d2e12305e"></a>COMPLETE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb945bc58652fe0cca1f799c810a694ea23024dc01c46f282270b6d343ca64148"></a>FAILED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a908b3c67e49e7d73e0a1f7f0f62a27de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908b3c67e49e7d73e0a1f7f0f62a27de">&#9670;&nbsp;</a></span>ERRORS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27de">FISGO_TEST_API::ERRORS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea084a27f3261c5b4a4df4fc92ae108f50"></a>SOCK_CREATE_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea756765cdd820bc4879bbb2ac5a15a641"></a>BIND_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deab5945507507510b1dc5de112a2dafad0"></a>ACCEPT_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deab7780e92333c4093e12f954120832090"></a>RW_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea62b0d49c0937b99c83ae684a53438f4b"></a>CLIENT_SOCK_CLOSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea6ce931457cf5c36befda71fdee3b2e39"></a>RW_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dead10d48e5aaed08f148333e3f8d5eb923"></a>ADDR_INIT_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deac03a296cef2d91eb8af565d4d5d0db15"></a>LISTEN_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deab7f705cdd28f7c2ba01272ef28a019ea"></a>INIT_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea003db428216ec737f254a0faee7aa45f"></a>ACCEPT_TIMEOUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deaa4a355974cd1d2f7e9b9ed6d33482025"></a>CLOSE_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deaf7a60fc2b26f7d5f64af87440745038c"></a>BUF_OVERFLOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea328ffd0185d1838750311c44c99893da"></a>IGNORE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea1c590a3a3561288c768edb7d60949675"></a>SERVER_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27deae9f42cb74518d8ceeb4610c83f4b874c"></a>PARSE_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea6f0e3176b9000ec76448f53de748efd1"></a>CRC16_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a908b3c67e49e7d73e0a1f7f0f62a27dea04b14096db8e8dfaf7a96bba65256ea4"></a>SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1728e5126cfcb1f85bd4416bead35ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1728e5126cfcb1f85bd4416bead35ba1">&#9670;&nbsp;</a></span>POS_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1">FISGO_TEST_API::POS_SOURCE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a1728e5126cfcb1f85bd4416bead35ba1a557a6a9c532519ff0e8909e63cd2d2b6"></a>GOODS_DB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1728e5126cfcb1f85bd4416bead35ba1a8793e059f7fefffb7737608daf878d65"></a>RECEIPT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af9559cb79d983267441a1aead6d04b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9559cb79d983267441a1aead6d04b35">&#9670;&nbsp;</a></span>STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35">FISGO_TEST_API::STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35aebf3a6966575e049da50380c9c55e25c"></a>SERVER_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a643aca32ec5f3d08d49cc14b560fbddf"></a>ACCEPT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a2fda6422728ef26d4091142c491c1316"></a>MSG_WAIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a7179ed9279e403fd3a3c876368d4a683"></a>PARSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a431c76f322eeecdf2d270d65e0fa503e"></a>ACTION_DO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a5110bdfaf2e51c39b804a4ef45ac10af"></a>ANSWER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35a1fe32f77888e03fd670d2bcb8c90579c"></a>SERVER_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af9559cb79d983267441a1aead6d04b35aad5e8ccc1ba9c9394bb5ff3531e30eaf"></a>SLEEP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a1cd1f4d980eb4a59849a4fb71e134d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd1f4d980eb4a59849a4fb71e134d9a">&#9670;&nbsp;</a></span>FISGO_TEST_API()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FISGO_TEST_API::FISGO_TEST_API </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adee6b9d714fc7f39a6997db7c0543078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adee6b9d714fc7f39a6997db7c0543078">&#9670;&nbsp;</a></span>~FISGO_TEST_API()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FISGO_TEST_API::~FISGO_TEST_API </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_adee6b9d714fc7f39a6997db7c0543078_cgraph.png" border="0" usemap="#classFISGO__TEST__API_adee6b9d714fc7f39a6997db7c0543078_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_adee6b9d714fc7f39a6997db7c0543078_cgraph" id="classFISGO__TEST__API_adee6b9d714fc7f39a6997db7c0543078_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,100,196,141"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#acbb0ca9bde9936bce8bad860a9c48d8f" title=" " alt="" coords="244,107,459,134"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a44d04e0d76ce62304bd9b5cdf4fd9da0" title=" " alt="" coords="540,71,720,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#aa595258a35fc2e9dcc60362b6006eb4d" title=" " alt="" coords="507,137,753,163"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e" title=" " alt="" coords="801,5,981,47"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd0c3ca513ac4b789c83239c16a3bd6e" title=" " alt="" coords="808,71,975,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e" title=" " alt="" coords="807,136,976,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a7497d43cd0a9248c13be85a75ea5d162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7497d43cd0a9248c13be85a75ea5d162">&#9670;&nbsp;</a></span>addEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::addEvent </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd218b2791ff47d267225239e1ce7281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd218b2791ff47d267225239e1ce7281">&#9670;&nbsp;</a></span>answer_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FISGO_TEST_API::answer_create </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_afd218b2791ff47d267225239e1ce7281_cgraph.png" border="0" usemap="#classFISGO__TEST__API_afd218b2791ff47d267225239e1ce7281_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_afd218b2791ff47d267225239e1ce7281_cgraph" id="classFISGO__TEST__API_afd218b2791ff47d267225239e1ce7281_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,337,188,379"/>
+<area shape="rect"  href="classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="274,110,405,137"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="491,267,705,294"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="265,161,413,203"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="265,304,413,345"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8" title=" " alt="" coords="236,369,443,411"/>
+<area shape="rect"  href="classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="247,435,431,462"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="265,487,413,528"/>
+<area shape="rect"  href="classConvert.html#adbe4d3b4cdaddce6681244243805b537" title=" " alt="" coords="245,553,434,579"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="524,71,672,112"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="524,136,672,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="523,201,673,243"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="524,5,672,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="753,201,935,243"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="505,318,691,345"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="531,369,665,411"/>
+<area shape="rect"  href="classPosition__new.html#a0150395b73c0568fa02bd30507ca2568" title=" " alt="" coords="517,435,679,476"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="579,501,617,527"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a639ead2ba2cad720847e97cac076c072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639ead2ba2cad720847e97cac076c072">&#9670;&nbsp;</a></span>answer_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::answer_send </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a639ead2ba2cad720847e97cac076c072_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a639ead2ba2cad720847e97cac076c072_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a639ead2ba2cad720847e97cac076c072_cgraph" id="classFISGO__TEST__API_a639ead2ba2cad720847e97cac076c072_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,221,224,247"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afc7c209f136a71d097e2685926ae2392" title=" " alt="" coords="280,104,447,145"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="272,245,455,287"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="519,34,693,61"/>
+<area shape="rect"  href="classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="541,135,671,162"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="757,267,972,294"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="532,187,680,228"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="532,304,680,345"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8" title=" " alt="" coords="503,369,709,411"/>
+<area shape="rect"  href="classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="514,435,698,462"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="532,487,680,528"/>
+<area shape="rect"  href="classConvert.html#adbe4d3b4cdaddce6681244243805b537" title=" " alt="" coords="511,85,701,111"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="791,71,939,112"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="791,136,939,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="789,201,940,243"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="791,5,939,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1020,201,1201,243"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="771,318,958,345"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="798,369,931,411"/>
+<area shape="rect"  href="classPosition__new.html#a0150395b73c0568fa02bd30507ca2568" title=" " alt="" coords="784,435,945,476"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="845,501,884,527"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63be607063be985bf32be34cd12d587d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63be607063be985bf32be34cd12d587d">&#9670;&nbsp;</a></span>client_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::client_disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a63be607063be985bf32be34cd12d587d_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a63be607063be985bf32be34cd12d587d_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a63be607063be985bf32be34cd12d587d_cgraph" id="classFISGO__TEST__API_a63be607063be985bf32be34cd12d587d_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,177,47"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#aa595258a35fc2e9dcc60362b6006eb4d" title=" " alt="" coords="225,13,472,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a56f4aac840723cb4ad48b54b122956e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f4aac840723cb4ad48b54b122956e6">&#9670;&nbsp;</a></span>eventsThreadStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FISGO_TEST_API::eventsThreadStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a56f4aac840723cb4ad48b54b122956e6_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a56f4aac840723cb4ad48b54b122956e6_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a56f4aac840723cb4ad48b54b122956e6_cgraph" id="classFISGO__TEST__API_a56f4aac840723cb4ad48b54b122956e6_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,57,225,98"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a8a1daebe37f358278548f9f6b45baae0" title=" " alt="" coords="297,5,496,32"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#acc3bcfde259491cbbccd0ed2068819ab" title=" " alt="" coords="315,57,478,98"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#ad874961d3a9596be7f528cae52398ee9" title=" " alt="" coords="273,123,520,149"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afc7c209f136a71d097e2685926ae2392" title=" " alt="" coords="568,115,735,157"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="783,123,957,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa595258a35fc2e9dcc60362b6006eb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa595258a35fc2e9dcc60362b6006eb4d">&#9670;&nbsp;</a></span>eventsThreadStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FISGO_TEST_API::eventsThreadStop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad874961d3a9596be7f528cae52398ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad874961d3a9596be7f528cae52398ee9">&#9670;&nbsp;</a></span>eventsTransmitter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::eventsTransmitter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_ad874961d3a9596be7f528cae52398ee9_cgraph.png" border="0" usemap="#classFISGO__TEST__API_ad874961d3a9596be7f528cae52398ee9_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_ad874961d3a9596be7f528cae52398ee9_cgraph" id="classFISGO__TEST__API_ad874961d3a9596be7f528cae52398ee9_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,13,252,39"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afc7c209f136a71d097e2685926ae2392" title=" " alt="" coords="300,5,467,47"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="515,13,689,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d7ce286eaa6d25a5fd24e4c58f4d035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d7ce286eaa6d25a5fd24e4c58f4d035">&#9670;&nbsp;</a></span>FisGoTestServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::FisGoTestServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a1d7ce286eaa6d25a5fd24e4c58f4d035_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a1d7ce286eaa6d25a5fd24e4c58f4d035_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a1d7ce286eaa6d25a5fd24e4c58f4d035_cgraph" id="classFISGO__TEST__API_a1d7ce286eaa6d25a5fd24e4c58f4d035_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,273,208,315"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a8a1daebe37f358278548f9f6b45baae0" title=" " alt="" coords="548,62,747,89"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#acc3bcfde259491cbbccd0ed2068819ab" title=" " alt="" coords="566,164,729,205"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a56f4aac840723cb4ad48b54b122956e6" title=" " alt="" coords="256,152,476,193"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a77ba3cc1b5b5a3aa319c83e338764f8e" title=" " alt="" coords="267,531,465,558"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="561,531,734,558"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a639ead2ba2cad720847e97cac076c072" title=" " alt="" coords="257,281,475,307"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#acbb0ca9bde9936bce8bad860a9c48d8f" title=" " alt="" coords="259,677,473,703"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#ad874961d3a9596be7f528cae52398ee9" title=" " alt="" coords="524,113,771,139"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afc7c209f136a71d097e2685926ae2392" title=" " alt="" coords="839,5,1005,47"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="1093,13,1268,39"/>
+<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="572,582,723,609"/>
+<area shape="rect"  href="classJSON.html#afc337c57f7bc46999d31a71cc883e76b" title=" " alt="" coords="828,634,1016,661"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="848,685,996,727"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="848,503,996,544"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="848,568,996,609"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a875585b0cb6133902066daccd7c9d420" title=" " alt="" coords="1107,803,1255,844"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="1355,751,1516,792"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1100,995,1261,1036"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="1345,1094,1525,1150"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="1359,1175,1512,1216"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="1359,1240,1512,1281"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="1357,816,1514,857"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="1345,882,1525,938"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="1336,963,1535,1004"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="1340,1028,1531,1069"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1583,660,1764,701"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="1361,685,1509,727"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="1107,685,1255,727"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="1347,634,1524,661"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="1105,503,1256,544"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="1107,568,1255,609"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="556,281,739,323"/>
+<area shape="rect"  href="classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="857,289,987,315"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="1073,139,1288,166"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="848,437,996,479"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="848,71,996,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8" title=" " alt="" coords="819,340,1025,381"/>
+<area shape="rect"  href="classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="830,137,1014,163"/>
+<area shape="rect"  href="classConvert.html#adbe4d3b4cdaddce6681244243805b537" title=" " alt="" coords="827,187,1017,214"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="1107,372,1255,413"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="1107,437,1255,479"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="1087,190,1274,217"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="1114,241,1247,283"/>
+<area shape="rect"  href="classPosition__new.html#a0150395b73c0568fa02bd30507ca2568" title=" " alt="" coords="1100,307,1261,348"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a44d04e0d76ce62304bd9b5cdf4fd9da0" title=" " alt="" coords="557,783,737,824"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#aa595258a35fc2e9dcc60362b6006eb4d" title=" " alt="" coords="524,677,771,703"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e" title=" " alt="" coords="832,751,1012,792"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd0c3ca513ac4b789c83239c16a3bd6e" title=" " alt="" coords="839,816,1005,857"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e" title=" " alt="" coords="837,881,1007,923"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9171fc61c0c0f89366d8a458e58190d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9171fc61c0c0f89366d8a458e58190d8">&#9670;&nbsp;</a></span>GoodsDataJsonCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="https__exchange_8h.html#aa83916737a5ebe430a6e6842a0734c50">JsonParser</a> FISGO_TEST_API::GoodsDataJsonCreate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPosition__new.html">Position_new</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos_new</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1">POS_SOURCE</a>&#160;</td>
+          <td class="paramname"><em>pos_source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a9171fc61c0c0f89366d8a458e58190d8_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a9171fc61c0c0f89366d8a458e58190d8_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a9171fc61c0c0f89366d8a458e58190d8_cgraph" id="classFISGO__TEST__API_a9171fc61c0c0f89366d8a458e58190d8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,107,212,149"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="260,5,475,32"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="274,56,461,83"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="301,107,434,149"/>
+<area shape="rect"  href="classPosition__new.html#a0150395b73c0568fa02bd30507ca2568" title=" " alt="" coords="287,173,448,214"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="348,239,387,265"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77ba3cc1b5b5a3aa319c83e338764f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ba3cc1b5b5a3aa319c83e338764f8e">&#9670;&nbsp;</a></span>msg_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::msg_read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a77ba3cc1b5b5a3aa319c83e338764f8e_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a77ba3cc1b5b5a3aa319c83e338764f8e_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a77ba3cc1b5b5a3aa319c83e338764f8e_cgraph" id="classFISGO__TEST__API_a77ba3cc1b5b5a3aa319c83e338764f8e_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,204,32"/>
+<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="252,5,403,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afc7c209f136a71d097e2685926ae2392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7c209f136a71d097e2685926ae2392">&#9670;&nbsp;</a></span>msg_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::msg_write </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>fd</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_afc7c209f136a71d097e2685926ae2392_cgraph.png" border="0" usemap="#classFISGO__TEST__API_afc7c209f136a71d097e2685926ae2392_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_afc7c209f136a71d097e2685926ae2392_cgraph" id="classFISGO__TEST__API_afc7c209f136a71d097e2685926ae2392_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect"  href="classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="220,13,395,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44d04e0d76ce62304bd9b5cdf4fd9da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d04e0d76ce62304bd9b5cdf4fd9da0">&#9670;&nbsp;</a></span>packet_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::packet_reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_a44d04e0d76ce62304bd9b5cdf4fd9da0_cgraph.png" border="0" usemap="#classFISGO__TEST__API_a44d04e0d76ce62304bd9b5cdf4fd9da0_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_a44d04e0d76ce62304bd9b5cdf4fd9da0_cgraph" id="classFISGO__TEST__API_a44d04e0d76ce62304bd9b5cdf4fd9da0_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,71,185,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e" title=" " alt="" coords="233,5,413,47"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd0c3ca513ac4b789c83239c16a3bd6e" title=" " alt="" coords="240,71,407,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e" title=" " alt="" coords="239,136,408,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab1221da344e11a4e850875ad8c6c88ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1221da344e11a4e850875ad8c6c88ea">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_ab1221da344e11a4e850875ad8c6c88ea_cgraph.png" border="0" usemap="#classFISGO__TEST__API_ab1221da344e11a4e850875ad8c6c88ea_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_ab1221da344e11a4e850875ad8c6c88ea_cgraph" id="classFISGO__TEST__API_ab1221da344e11a4e850875ad8c6c88ea_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,302,179,329"/>
+<area shape="rect"  href="classJSON.html#afc337c57f7bc46999d31a71cc883e76b" title=" " alt="" coords="227,165,415,191"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="247,236,395,277"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="247,392,395,433"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="247,327,395,368"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a875585b0cb6133902066daccd7c9d420" title=" " alt="" coords="463,115,611,156"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="667,108,828,149"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="884,104,1045,145"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="1116,5,1269,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="1116,71,1269,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="1114,136,1271,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1340,312,1521,353"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="884,209,1045,251"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="1103,202,1283,258"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="1103,282,1283,338"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="1093,363,1292,404"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="1097,428,1288,469"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="673,397,821,439"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="463,436,611,477"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="659,489,836,515"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="889,407,1040,448"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="463,268,611,309"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afd0c3ca513ac4b789c83239c16a3bd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0c3ca513ac4b789c83239c16a3bd6e">&#9670;&nbsp;</a></span>read_buf_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FISGO_TEST_API::read_buf_clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc3bcfde259491cbbccd0ed2068819ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3bcfde259491cbbccd0ed2068819ab">&#9670;&nbsp;</a></span>rem_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27de">FISGO_TEST_API::ERRORS</a> FISGO_TEST_API::rem_accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbb0ca9bde9936bce8bad860a9c48d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb0ca9bde9936bce8bad860a9c48d8f">&#9670;&nbsp;</a></span>server_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::server_down </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFISGO__TEST__API_acbb0ca9bde9936bce8bad860a9c48d8f_cgraph.png" border="0" usemap="#classFISGO__TEST__API_acbb0ca9bde9936bce8bad860a9c48d8f_cgraph" alt=""/></div>
+<map name="classFISGO__TEST__API_acbb0ca9bde9936bce8bad860a9c48d8f_cgraph" id="classFISGO__TEST__API_acbb0ca9bde9936bce8bad860a9c48d8f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,107,220,134"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a44d04e0d76ce62304bd9b5cdf4fd9da0" title=" " alt="" coords="301,71,481,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#aa595258a35fc2e9dcc60362b6006eb4d" title=" " alt="" coords="268,137,515,163"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e" title=" " alt="" coords="563,5,743,47"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd0c3ca513ac4b789c83239c16a3bd6e" title=" " alt="" coords="569,71,736,112"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e" title=" " alt="" coords="568,136,737,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a1daebe37f358278548f9f6b45baae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a1daebe37f358278548f9f6b45baae0">&#9670;&nbsp;</a></span>server_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::server_up </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;&#160;</td>
+          <td class="paramname"><em>sock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3d68391ff0de96a4bb9c12831322f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d68391ff0de96a4bb9c12831322f5e">&#9670;&nbsp;</a></span>socket_reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::socket_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>sock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3177fa6676f984df36ab7041cfd940e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3177fa6676f984df36ab7041cfd940e">&#9670;&nbsp;</a></span>write_buf_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FISGO_TEST_API::write_buf_clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ab1ac6875b24a850a381848c8b5b115ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ac6875b24a850a381848c8b5b115ca">&#9670;&nbsp;</a></span>ACTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t FISGO_TEST_API::ACTION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38fc6b78e7dbf3e23627e62ad03ab6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fc6b78e7dbf3e23627e62ad03ab6e9">&#9670;&nbsp;</a></span>ACTION_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t FISGO_TEST_API::ACTION_STATUS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ef4e6eca474943a5202fce180ce7a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef4e6eca474943a5202fce180ce7a87">&#9670;&nbsp;</a></span>ADVANCE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::ADVANCE_ = &quot;ADVANCE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f4690678a7066bbd6b502d07e46db92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4690678a7066bbd6b502d07e46db92">&#9670;&nbsp;</a></span>CANCELED_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CANCELED_ = &quot;CANCELED&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe7909ac9eedc3b492fdf43345821c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7909ac9eedc3b492fdf43345821c69">&#9670;&nbsp;</a></span>CANCELED_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CANCELED_CNT_ = &quot;CANCELED_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23786760beacb1c5072fe97bfae65d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23786760beacb1c5072fe97bfae65d49">&#9670;&nbsp;</a></span>CANCELED_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CANCELED_SUM_ = &quot;CANCELED_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2220c9a449b5431e0e293c3bfb696a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2220c9a449b5431e0e293c3bfb696a9">&#9670;&nbsp;</a></span>CARD_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CARD_ = &quot;CARD&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a965b51c3e5b42301ae3de5ee694b9983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965b51c3e5b42301ae3de5ee694b9983">&#9670;&nbsp;</a></span>CASH_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CASH_ = &quot;CASH&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67595f0f35fc72459beb4af252ccafe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67595f0f35fc72459beb4af252ccafe5">&#9670;&nbsp;</a></span>CASH_IN_DRAWER_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CASH_IN_DRAWER_ = &quot;CASH_IN_DRAWER&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd63e08eeca3f526b88a06d121c2a649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd63e08eeca3f526b88a06d121c2a649">&#9670;&nbsp;</a></span>CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CNT_ = &quot;CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a033c1f2c86ba4b63ec2369803efc94c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033c1f2c86ba4b63ec2369803efc94c1">&#9670;&nbsp;</a></span>COR_DATA_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::COR_DATA_ = &quot;COR_DATA&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cab76ec929afe4274d938019dde9e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cab76ec929afe4274d938019dde9e8f">&#9670;&nbsp;</a></span>CREDIT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::CREDIT_ = &quot;CREDIT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69a9c6ae373bd7fc5d099aa88067bab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a9c6ae373bd7fc5d099aa88067bab9">&#9670;&nbsp;</a></span>DEFFERED_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::DEFFERED_ = &quot;DEFFERED&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adabdacf18bb7633ee2c29bafd438e98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabdacf18bb7633ee2c29bafd438e98b">&#9670;&nbsp;</a></span>DEP_RET_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::DEP_RET_SUM_ = &quot;DEP_RET_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45e6ca6515be8fdcc24e4e8bfb8a9dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e6ca6515be8fdcc24e4e8bfb8a9dc9">&#9670;&nbsp;</a></span>DEP_SALE_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::DEP_SALE_SUM_ = &quot;DEP_SALE_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac129130d42cb4886b3f80bb2bbe7086c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac129130d42cb4886b3f80bb2bbe7086c">&#9670;&nbsp;</a></span>DISCOUNT_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::DISCOUNT_SUMS_ = &quot;DISCOUNT_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31fde82cce59ce151c8d6bb4bc8bb434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31fde82cce59ce151c8d6bb4bc8bb434">&#9670;&nbsp;</a></span>DOC_NUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::DOC_NUM_ = &quot;DOC_NUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad650ac72d81d32147e67701026ce477e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad650ac72d81d32147e67701026ce477e">&#9670;&nbsp;</a></span>EXCHANGE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::EXCHANGE_ = &quot;EXCHANGE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f54815a115937205b7221fc005220ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f54815a115937205b7221fc005220ad">&#9670;&nbsp;</a></span>INSERT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::INSERT_ = &quot;INSERT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8482ad489789b3f28ccbee18014c4887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8482ad489789b3f28ccbee18014c4887">&#9670;&nbsp;</a></span>INSERT_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::INSERT_CNT_ = &quot;INSERT_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49b87e33f5d5b55b5aa704cef2f790cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b87e33f5d5b55b5aa704cef2f790cf">&#9670;&nbsp;</a></span>INSERT_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::INSERT_SUM_ = &quot;INSERT_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1c1b26615f165173c9541f3734bc7ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c1b26615f165173c9541f3734bc7ab">&#9670;&nbsp;</a></span>KEY_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char FISGO_TEST_API::KEY_DOWN = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dcbc4b48022f8ca57f10da240d0446f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dcbc4b48022f8ca57f10da240d0446f">&#9670;&nbsp;</a></span>KEY_DOWN_PAIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char FISGO_TEST_API::KEY_DOWN_PAIR = 0x03</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7897474ffb69b43250d3e4de2472e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7897474ffb69b43250d3e4de2472e11">&#9670;&nbsp;</a></span>KEY_HOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char FISGO_TEST_API::KEY_HOLD = 0x02</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7764c09bb191162248adb783755b5a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7764c09bb191162248adb783755b5a5">&#9670;&nbsp;</a></span>NDS_0_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NDS_0_ = &quot;NDS_0&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfedfc6aa9fb26ace68eae7755462221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfedfc6aa9fb26ace68eae7755462221">&#9670;&nbsp;</a></span>NDS_10_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NDS_10_ = &quot;NDS_10&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e2c1292219fbe143d37140c0e65ef72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2c1292219fbe143d37140c0e65ef72">&#9670;&nbsp;</a></span>NDS_10_110_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NDS_10_110_ = &quot;NDS_10_110&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a341600ceaac95cd6739a30a7f59503a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341600ceaac95cd6739a30a7f59503a7">&#9670;&nbsp;</a></span>NDS_18_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NDS_18_ = &quot;NDS_18&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e06924ce26d3cc50fd41d29db798a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e06924ce26d3cc50fd41d29db798a59">&#9670;&nbsp;</a></span>NDS_18_118_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NDS_18_118_ = &quot;NDS_18_118&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41134c136a11eb62ba376ec68660050f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41134c136a11eb62ba376ec68660050f">&#9670;&nbsp;</a></span>NEXT_REC_NUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::NEXT_REC_NUM_ = &quot;NEXT_REC_NUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12624ac6d76fbbb303d77e0aba1e5564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12624ac6d76fbbb303d77e0aba1e5564">&#9670;&nbsp;</a></span>OPERATION_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::OPERATION_CNT_ = &quot;OPERATION_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cbe34817d7a66358e612b6ea49f2287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cbe34817d7a66358e612b6ea49f2287">&#9670;&nbsp;</a></span>purchase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classReceipt__new.html">Receipt_new</a>&gt; FISGO_TEST_API::purchase</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3349dbd0c7f137eaae42f0a5de795ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3349dbd0c7f137eaae42f0a5de795ad9">&#9670;&nbsp;</a></span>PURCHASE_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::PURCHASE_CNT_ = &quot;PURCHASE_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade472204169032f1c3d5225f7768bdd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade472204169032f1c3d5225f7768bdd1">&#9670;&nbsp;</a></span>PURCHASE_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::PURCHASE_SUMS_ = &quot;PURCHASE_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad030fe129b83bf5d3dce29c0be72e858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad030fe129b83bf5d3dce29c0be72e858">&#9670;&nbsp;</a></span>REC_CNTS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::REC_CNTS_ = &quot;REC_CNTS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a318e54471ed3b004d61866c6c16373e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318e54471ed3b004d61866c6c16373e5">&#9670;&nbsp;</a></span>REC_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::REC_SUMS_ = &quot;REC_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af546b93d1c3d3bc2837d8d637ad60fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af546b93d1c3d3bc2837d8d637ad60fdb">&#9670;&nbsp;</a></span>RESERVE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RESERVE_ = &quot;RESERVE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10674d295fe8d4eafd4efa7b60d54fa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10674d295fe8d4eafd4efa7b60d54fa5">&#9670;&nbsp;</a></span>RESERVE_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RESERVE_CNT_ = &quot;RESERVE_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92abba29502b8ce3ecdbe47d48f12f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92abba29502b8ce3ecdbe47d48f12f2a">&#9670;&nbsp;</a></span>RESERVE_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RESERVE_SUM_ = &quot;RESERVE_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ededcd0ed721a2d2eaaab3d691762fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ededcd0ed721a2d2eaaab3d691762fd">&#9670;&nbsp;</a></span>RET_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_ = &quot;RET&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea19d9f20aff05d134b17668b080f7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea19d9f20aff05d134b17668b080f7a6">&#9670;&nbsp;</a></span>RET_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_CNT_ = &quot;RET_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af462b040ebc7ca7a67d8a1e16419947a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af462b040ebc7ca7a67d8a1e16419947a">&#9670;&nbsp;</a></span>RET_CNTS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_CNTS_ = &quot;RET_CNTS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1f0168c5fff3ca9d4c2ec9d237f3f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f0168c5fff3ca9d4c2ec9d237f3f39">&#9670;&nbsp;</a></span>RET_PURCHASE_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_PURCHASE_CNT_ = &quot;RET_PURCHASE_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9b0b5db614cfe307e87464a4b486975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b0b5db614cfe307e87464a4b486975">&#9670;&nbsp;</a></span>RET_PURCHASE_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_PURCHASE_SUMS_ = &quot;RET_PURCHASE_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a281b72745c7572b6db07e2df587960e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281b72745c7572b6db07e2df587960e0">&#9670;&nbsp;</a></span>RET_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_SUM_ = &quot;RET_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c5de9b7c96bbbf39968d67b4d4bf0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5de9b7c96bbbf39968d67b4d4bf0d5">&#9670;&nbsp;</a></span>RET_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_SUMS_ = &quot;RET_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a354285588f5ef47203d99d24873553b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354285588f5ef47203d99d24873553b4">&#9670;&nbsp;</a></span>RET_TAXS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::RET_TAXS_ = &quot;RET_TAXS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadfc22d8ddf191353a330c5a793b42f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfc22d8ddf191353a330c5a793b42f6">&#9670;&nbsp;</a></span>SALE_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_ = &quot;SALE&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe88ea10c187931c386f7c9848461f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe88ea10c187931c386f7c9848461f4b">&#9670;&nbsp;</a></span>SALE_CNT_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_CNT_ = &quot;SALE_CNT&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4b635ed6442b21cf3d481abd0aaf53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b635ed6442b21cf3d481abd0aaf53b">&#9670;&nbsp;</a></span>SALE_CNTS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_CNTS_ = &quot;SALE_CNTS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94fe541c92d7ad13f071c077b127c305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94fe541c92d7ad13f071c077b127c305">&#9670;&nbsp;</a></span>SALE_SUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_SUM_ = &quot;SALE_SUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7829fc5df27138d1745242cec2ae548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7829fc5df27138d1745242cec2ae548">&#9670;&nbsp;</a></span>SALE_SUMS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_SUMS_ = &quot;SALE_SUMS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6c1802ba6197c08bbe6ae7d85cee813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c1802ba6197c08bbe6ae7d85cee813">&#9670;&nbsp;</a></span>SALE_TAXS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SALE_TAXS_ = &quot;SALE_TAXS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a096aed6f5f9b75fcc6c615aa24b3c55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096aed6f5f9b75fcc6c615aa24b3c55f">&#9670;&nbsp;</a></span>SERVER_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FISGO_TEST_API::SERVER_STATE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb02af8b7a48d97036dcd5bf353cb823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb02af8b7a48d97036dcd5bf353cb823">&#9670;&nbsp;</a></span>SHIFT_NUM_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::SHIFT_NUM_ = &quot;SHIFT_NUM&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37cae248069dd1f4cba7a3b6326b66dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37cae248069dd1f4cba7a3b6326b66dc">&#9670;&nbsp;</a></span>task</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structFISGO__TEST__API_1_1TASK.html">FISGO_TEST_API::TASK</a> FISGO_TEST_API::task</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5841cad6cb5ffa1ffb9276ea36a2a244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5841cad6cb5ffa1ffb9276ea36a2a244">&#9670;&nbsp;</a></span>tasks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structFISGO__TEST__API_1_1TASK.html">TASK</a>&gt; FISGO_TEST_API::tasks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32c863d9382499da5efd07a5c9a3ec41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c863d9382499da5efd07a5c9a3ec41">&#9670;&nbsp;</a></span>uuid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string FISGO_TEST_API::uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c1a65567f9081b83491e01bbc7816bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1a65567f9081b83491e01bbc7816bd">&#9670;&nbsp;</a></span>WITHOUT_NDS_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::WITHOUT_NDS_ = &quot;WITHOUT_NDS&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a342d5e2b7f8007951d31f601f410a14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a342d5e2b7f8007951d31f601f410a14d">&#9670;&nbsp;</a></span>X_Z_DATA_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string FISGO_TEST_API::X_Z_DATA_ = &quot;X_Z_DATA&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="Fisgo__Test__API_8h_source.html">Fisgo_Test_API.h</a></li>
+<li>src/appl/<a class="el" href="Fisgo__Test__API_8cpp.html">Fisgo_Test_API.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

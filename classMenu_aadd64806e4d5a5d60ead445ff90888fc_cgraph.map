@@ -1,0 +1,17 @@
+<map id="Menu::weight_price" name="Menu::weight_price">
+<area shape="rect" id="node1" title=" " alt="" coords="5,226,140,253"/>
+<area shape="rect" id="node2" href="$classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="637,45,780,71"/>
+<area shape="rect" id="node5" href="$classMenu.html#aa2275557cfb584a05755973d8f37ecb0" title=" " alt="" coords="202,197,361,223"/>
+<area shape="rect" id="node6" href="$classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI чтения веса" alt="" coords="200,146,363,173"/>
+<area shape="rect" id="node13" href="$classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341" title=" " alt="" coords="213,248,349,289"/>
+<area shape="rect" id="node14" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="188,314,375,341"/>
+<area shape="rect" id="node15" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="215,365,348,407"/>
+<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="828,5,979,47"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f" title=" " alt="" coords="828,71,979,112"/>
+<area shape="rect" id="node7" href="$classMenu.html#ac008e9daec547f2649c6cb95e76702f0" title="asyncKeyWait &#45; асинхронный wait кнопок" alt="" coords="433,146,579,173"/>
+<area shape="rect" id="node9" href="$classMenu.html#a39305eb1068241879143fdc27b4496e3" title=" " alt="" coords="429,197,583,223"/>
+<area shape="rect" id="node10" href="$classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; чтение веса" alt="" coords="429,95,583,122"/>
+<area shape="rect" id="node12" href="$classMenu.html#a0d155782e65f6ab5259fd073e8574b1d" title=" " alt="" coords="423,247,589,274"/>
+<area shape="rect" id="node8" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="665,146,752,173"/>
+<area shape="rect" id="node11" href="$classScales.html#a0bf37d26fe6fab594ac5206659c11d6f" title="getWeight &#45; получить вес (грамм)" alt="" coords="644,95,773,122"/>
+</map>

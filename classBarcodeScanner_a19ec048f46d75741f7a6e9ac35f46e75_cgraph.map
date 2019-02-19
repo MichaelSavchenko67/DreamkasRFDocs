@@ -1,0 +1,4 @@
+<map id="BarcodeScanner::isEan13" name="BarcodeScanner::isEan13">
+<area shape="rect" id="node1" title="isEan13 &#45; тест на валидность EAN13" alt="" coords="5,5,179,32"/>
+<area shape="rect" id="node2" href="$classBarcodeScanner.html#a6e056913d31c91889d3ff56038e0484d" title="ean13Gs1Clc &#45; расчёт КС EAN13" alt="" coords="227,5,432,32"/>
+</map>

@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/counters.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл counters.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
+<code>#include &lt;sqlite3.h&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="dynamic__mask_8h_source.html">dynamic_mask.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для counters.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="counters_8h__incl.png" border="0" usemap="#src_2appl_2include_2counters_8h" alt=""/></div>
+<map name="src_2appl_2include_2counters_8h" id="src_2appl_2include_2counters_8h">
+<area shape="rect"  title=" " alt="" coords="328,5,507,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,77,107"/>
+<area shape="rect"  title=" " alt="" coords="102,80,157,107"/>
+<area shape="rect"  title=" " alt="" coords="181,80,243,107"/>
+<area shape="rect"  title=" " alt="" coords="267,80,325,107"/>
+<area shape="rect"  title=" " alt="" coords="349,80,408,107"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="432,80,483,107"/>
+<area shape="rect"  title=" " alt="" coords="507,80,578,107"/>
+<area shape="rect"  title=" " alt="" coords="603,80,661,107"/>
+<area shape="rect"  title=" " alt="" coords="686,80,754,107"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="778,80,899,107"/>
+<area shape="rect"  title=" " alt="" coords="242,155,305,181"/>
+<area shape="rect"  title=" " alt="" coords="329,155,399,181"/>
+<area shape="rect"  title=" " alt="" coords="423,155,492,181"/>
+<area shape="rect"  title=" " alt="" coords="775,155,841,181"/>
+<area shape="rect"  title=" " alt="" coords="517,155,587,181"/>
+<area shape="rect"  title=" " alt="" coords="612,155,719,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="counters_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2counters_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2counters_8hdep" id="src_2appl_2include_2counters_8hdep">
+<area shape="rect"  title=" " alt="" coords="415,5,593,32"/>
+<area shape="rect"  href="counters_8cpp.html" title=" " alt="" coords="5,87,152,114"/>
+<area shape="rect"  href="https__exchange_8h.html" title=" " alt="" coords="431,80,577,121"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="895,266,1041,293"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="500,423,660,449"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="1411,348,1575,375"/>
+<area shape="rect"  href="https__exchange_8cpp.html" title=" " alt="" coords="277,177,467,203"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="741,169,891,211"/>
+<area shape="rect"  href="menu_8cpp.html" title=" " alt="" coords="175,497,305,524"/>
+<area shape="rect"  href="testHttpsExchange_8h.html" title=" " alt="" coords="541,169,717,211"/>
+<area shape="rect"  href="Fisgo__Test__API_8cpp.html" title=" " alt="" coords="734,259,871,300"/>
+<area shape="rect"  href="printer_8cpp.html" title=" " alt="" coords="1307,423,1440,449"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="1011,348,1197,375"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="1221,348,1336,375"/>
+<area shape="rect"  href="lcd__test_8cpp.html" title=" " alt="" coords="643,348,786,375"/>
+<area shape="rect"  href="testLcd_8h.html" title=" " alt="" coords="811,348,987,375"/>
+<area shape="rect"  href="threads_8h.html" title=" " alt="" coords="777,497,948,524"/>
+<area shape="rect"  href="testExamples_8h.html" title=" " alt="" coords="329,497,543,524"/>
+<area shape="rect"  href="testMenu_8h.html" title=" " alt="" coords="567,497,753,524"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="800,572,925,599"/>
+<area shape="rect"  href="testPrinter_8h.html" title=" " alt="" coords="1465,423,1658,449"/>
+<area shape="rect"  href="MenuTree_8cpp.html" title=" " alt="" coords="1027,423,1181,449"/>
+</map>
+</div>
+</div>
+<p><a href="counters_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCounters.html">Counters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

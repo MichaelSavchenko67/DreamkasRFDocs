@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/goods_new.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл goods_new.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &quot;<a class="el" href="goods_8h_source.html">goods.h</a>&quot;</code><br />
+<code>#include &lt;sqlite3.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;ratio&gt;</code><br />
+<code>#include &quot;<a class="el" href="positions__new_8h_source.html">positions_new.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EncodeConvertor_8h_source.html">EncodeConvertor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для goods_new.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="goods__new_8h__incl.png" border="0" usemap="#src_2appl_2include_2goods__new_8h" alt=""/></div>
+<map name="src_2appl_2include_2goods__new_8h" id="src_2appl_2include_2goods__new_8h">
+<area shape="rect"  title=" " alt="" coords="3287,5,3439,47"/>
+<area shape="rect"  title=" " alt="" coords="255,692,313,719"/>
+<area shape="rect"  title=" " alt="" coords="532,692,593,719"/>
+<area shape="rect"  title=" " alt="" coords="2659,692,2720,719"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="909,95,977,121"/>
+<area shape="rect"  title=" " alt="" coords="2147,692,2219,719"/>
+<area shape="rect"  title=" " alt="" coords="2803,617,2858,644"/>
+<area shape="rect"  href="EncodeConvertor_8h.html" title=" " alt="" coords="3270,319,3405,345"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="530,393,646,420"/>
+<area shape="rect"  title=" " alt="" coords="3527,95,3598,121"/>
+<area shape="rect"  title=" " alt="" coords="3623,95,3681,121"/>
+<area shape="rect"  title=" " alt="" coords="3705,95,3767,121"/>
+<area shape="rect"  title=" " alt="" coords="3791,95,3838,121"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="1208,692,1259,719"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="987,393,1072,420"/>
+<area shape="rect"  href="goods__data_8h.html" title=" " alt="" coords="726,543,826,569"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1030,169,1133,196"/>
+<area shape="rect"  title=" " alt="" coords="3221,767,3283,793"/>
+<area shape="rect"  title=" " alt="" coords="1057,767,1127,793"/>
+<area shape="rect"  title=" " alt="" coords="1151,767,1220,793"/>
+<area shape="rect"  title=" " alt="" coords="2914,767,2979,793"/>
+<area shape="rect"  title=" " alt="" coords="1245,767,1315,793"/>
+<area shape="rect"  title=" " alt="" coords="1340,767,1447,793"/>
+<area shape="rect"  title=" " alt="" coords="746,692,785,719"/>
+<area shape="rect"  title=" " alt="" coords="1076,692,1135,719"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1449,468,1500,495"/>
+<area shape="rect"  href="agents_8h.html" title=" " alt="" coords="2313,468,2385,495"/>
+<area shape="rect"  title=" " alt="" coords="1309,617,1368,644"/>
+<area shape="rect"  title=" " alt="" coords="1392,617,1461,644"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1638,617,1714,644"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="1301,543,1376,569"/>
+<area shape="rect"  title=" " alt="" coords="1912,692,1995,719"/>
+<area shape="rect"  title=" " alt="" coords="1547,692,1605,719"/>
+<area shape="rect"  title=" " alt="" coords="1629,692,1699,719"/>
+<area shape="rect"  title=" " alt="" coords="1723,692,1789,719"/>
+<area shape="rect"  title=" " alt="" coords="1813,692,1888,719"/>
+<area shape="rect"  title=" " alt="" coords="1283,692,1397,719"/>
+<area shape="rect"  title=" " alt="" coords="1421,692,1523,719"/>
+<area shape="rect"  title=" " alt="" coords="2651,543,2712,569"/>
+<area shape="rect"  href="json_8h.html" title=" " alt="" coords="2325,244,2382,271"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="2461,393,2529,420"/>
+<area shape="rect"  href="net_8h.html" title=" " alt="" coords="2469,319,2520,345"/>
+<area shape="rect"  href="filesfg_8h.html" title=" " alt="" coords="2685,319,2753,345"/>
+<area shape="rect"  href="jsonParser_8h.html" title=" " alt="" coords="1502,543,1597,569"/>
+<area shape="rect"  title=" " alt="" coords="3380,393,3444,420"/>
+<area shape="rect"  title=" " alt="" coords="3308,393,3356,420"/>
+<area shape="rect"  title=" " alt="" coords="2232,393,2315,420"/>
+<area shape="rect"  title=" " alt="" coords="2339,393,2437,420"/>
+<area shape="rect"  title=" " alt="" coords="2511,468,2579,495"/>
+<area shape="rect"  href="dynamic__mask_8h.html" title=" " alt="" coords="2706,468,2827,495"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="goods__new_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2goods__new_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2goods__new_8hdep" id="src_2appl_2include_2goods__new_8hdep">
+<area shape="rect"  title=" " alt="" coords="323,5,475,47"/>
+<area shape="rect"  href="goods__new_8cpp.html" title=" " alt="" coords="87,102,249,129"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="324,95,473,136"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="283,348,443,375"/>
+<area shape="rect"  href="json_8cpp.html" title=" " alt="" coords="498,102,619,129"/>
+<area shape="rect"  href="testJSON_8h.html" title=" " alt="" coords="643,102,834,129"/>
+<area shape="rect"  href="Fisgo__Test__API_8cpp.html" title=" " alt="" coords="790,184,927,225"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="621,191,766,218"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="1143,273,1307,300"/>
+<area shape="rect"  href="printer_8cpp.html" title=" " alt="" coords="1279,348,1412,375"/>
+<area shape="rect"  href="MenuTree_8h.html" title=" " alt="" coords="425,273,612,300"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="636,273,751,300"/>
+<area shape="rect"  href="lcd__test_8cpp.html" title=" " alt="" coords="775,273,918,300"/>
+<area shape="rect"  href="testLcd_8h.html" title=" " alt="" coords="943,273,1119,300"/>
+<area shape="rect"  href="threads_8h.html" title=" " alt="" coords="5,423,176,449"/>
+<area shape="rect"  href="menu_8cpp.html" title=" " alt="" coords="201,423,330,449"/>
+<area shape="rect"  href="testExamples_8h.html" title=" " alt="" coords="355,423,568,449"/>
+<area shape="rect"  href="testMenu_8h.html" title=" " alt="" coords="592,423,779,449"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="28,497,153,524"/>
+<area shape="rect"  href="testPrinter_8h.html" title=" " alt="" coords="1061,348,1254,375"/>
+<area shape="rect"  href="MenuTree_8cpp.html" title=" " alt="" coords="467,348,621,375"/>
+</map>
+</div>
+</div>
+<p><a href="goods__new_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsStructure__new.html">GoodsStructure_new</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWearAttr.html">WearAttr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDiscount.html">Discount</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoods__new.html">Goods_new</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGoods__new_1_1CLC__DISCOUNT__DATA.html">Goods_new::CLC_DISCOUNT_DATA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:afae78deb4c82b9f747d195e1b97283c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8">DISCOUNT_TYPE</a> { <a class="el" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e">DISC_NONE</a> = 0, 
+<a class="el" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120">DISC_RUB</a>, 
+<a class="el" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82">DISC_PER</a>
+ }</td></tr>
+<tr class="separator:afae78deb4c82b9f747d195e1b97283c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cce64cc6016cbc2f4fe25853c1c601"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601">DISCOUNT_MODE</a> { <a class="el" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f">DISC_MODE_NONE</a> = 0, 
+<a class="el" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af">DISC_MODE_MANUAL</a>, 
+<a class="el" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39">DISC_MODE_AUTO</a>
+ }</td></tr>
+<tr class="separator:a75cce64cc6016cbc2f4fe25853c1c601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:ac276f5748d31844adfcd4ddef31725c0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#ac276f5748d31844adfcd4ddef31725c0">GOOD_TYPE_COUNTABLE</a> = &quot;COUNTABLE&quot;</td></tr>
+<tr class="separator:ac276f5748d31844adfcd4ddef31725c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fda7b48df6894554056aa56776e090"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a68fda7b48df6894554056aa56776e090">GOOD_TYPE_SCALABLE</a> = &quot;SCALABLE&quot;</td></tr>
+<tr class="separator:a68fda7b48df6894554056aa56776e090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55f2e2bbed095b73bc29d8513581f47"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#ad55f2e2bbed095b73bc29d8513581f47">GOOD_TYPE_ALCOHOL</a> = &quot;ALCOHOL&quot;</td></tr>
+<tr class="separator:ad55f2e2bbed095b73bc29d8513581f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e15a2dc858432ece3916447df230253"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a9e15a2dc858432ece3916447df230253">GOOD_TYPE_CLOTHES</a> = &quot;CLOTHES&quot;</td></tr>
+<tr class="separator:a9e15a2dc858432ece3916447df230253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d7cc3000382aef78e2933db3a2e2fb"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a57d7cc3000382aef78e2933db3a2e2fb">GOOD_TYPE_SHOES</a> = &quot;SHOES&quot;</td></tr>
+<tr class="separator:a57d7cc3000382aef78e2933db3a2e2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f46daa45a61fd6ea16f8e3bc198d396"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a1f46daa45a61fd6ea16f8e3bc198d396">GOOD_TYPE_SERVICE</a> = &quot;SERVICE&quot;</td></tr>
+<tr class="separator:a1f46daa45a61fd6ea16f8e3bc198d396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3fef2ee45c8935d171280fd3b9a9e3"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#adb3fef2ee45c8935d171280fd3b9a9e3">GOOD_TYPE_TOBACCO</a> = &quot;TOBACCO&quot;</td></tr>
+<tr class="separator:adb3fef2ee45c8935d171280fd3b9a9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a75cce64cc6016cbc2f4fe25853c1c601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75cce64cc6016cbc2f4fe25853c1c601">&#9670;&nbsp;</a></span>DISCOUNT_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601">DISCOUNT_MODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f"></a>DISC_MODE_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af"></a>DISC_MODE_MANUAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39"></a>DISC_MODE_AUTO&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="afae78deb4c82b9f747d195e1b97283c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae78deb4c82b9f747d195e1b97283c8">&#9670;&nbsp;</a></span>DISCOUNT_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8">DISCOUNT_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e"></a>DISC_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120"></a>DISC_RUB&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82"></a>DISC_PER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="ad55f2e2bbed095b73bc29d8513581f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55f2e2bbed095b73bc29d8513581f47">&#9670;&nbsp;</a></span>GOOD_TYPE_ALCOHOL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_ALCOHOL = &quot;ALCOHOL&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e15a2dc858432ece3916447df230253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e15a2dc858432ece3916447df230253">&#9670;&nbsp;</a></span>GOOD_TYPE_CLOTHES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_CLOTHES = &quot;CLOTHES&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac276f5748d31844adfcd4ddef31725c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac276f5748d31844adfcd4ddef31725c0">&#9670;&nbsp;</a></span>GOOD_TYPE_COUNTABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_COUNTABLE = &quot;COUNTABLE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68fda7b48df6894554056aa56776e090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fda7b48df6894554056aa56776e090">&#9670;&nbsp;</a></span>GOOD_TYPE_SCALABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_SCALABLE = &quot;SCALABLE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f46daa45a61fd6ea16f8e3bc198d396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f46daa45a61fd6ea16f8e3bc198d396">&#9670;&nbsp;</a></span>GOOD_TYPE_SERVICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_SERVICE = &quot;SERVICE&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d7cc3000382aef78e2933db3a2e2fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d7cc3000382aef78e2933db3a2e2fb">&#9670;&nbsp;</a></span>GOOD_TYPE_SHOES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_SHOES = &quot;SHOES&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb3fef2ee45c8935d171280fd3b9a9e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3fef2ee45c8935d171280fd3b9a9e3">&#9670;&nbsp;</a></span>GOOD_TYPE_TOBACCO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string GOOD_TYPE_TOBACCO = &quot;TOBACCO&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

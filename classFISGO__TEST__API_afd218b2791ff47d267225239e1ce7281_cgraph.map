@@ -1,0 +1,20 @@
+<map id="FISGO_TEST_API::answer_create" name="FISGO_TEST_API::answer_create">
+<area shape="rect" id="node1" title=" " alt="" coords="5,337,188,379"/>
+<area shape="rect" id="node2" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="274,110,405,137"/>
+<area shape="rect" id="node3" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="491,267,705,294"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="265,161,413,203"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="265,304,413,345"/>
+<area shape="rect" id="node11" href="$classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8" title=" " alt="" coords="236,369,443,411"/>
+<area shape="rect" id="node16" href="$classConvert.html#ad444efce793fae6d923519c5409c5516" title=" " alt="" coords="247,435,431,462"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#a1a86d444bfeaa9518d2421aedd74444a" title="checks whether the container is empty." alt="" coords="265,487,413,528"/>
+<area shape="rect" id="node18" href="$classConvert.html#adbe4d3b4cdaddce6681244243805b537" title=" " alt="" coords="245,553,434,579"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="524,71,672,112"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="524,136,672,177"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="523,201,673,243"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="524,5,672,47"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="753,201,935,243"/>
+<area shape="rect" id="node12" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="505,318,691,345"/>
+<area shape="rect" id="node13" href="$classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="531,369,665,411"/>
+<area shape="rect" id="node14" href="$classPosition__new.html#a0150395b73c0568fa02bd30507ca2568" title=" " alt="" coords="517,435,679,476"/>
+<area shape="rect" id="node15" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="579,501,617,527"/>
+</map>

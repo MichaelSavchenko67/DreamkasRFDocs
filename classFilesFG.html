@@ -1,0 +1,961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс FilesFG</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="classFilesFG-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс FilesFG</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="filesfg_8h_source.html">filesfg.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:FilesFG:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG__inherit__graph.png" border="0" usemap="#FilesFG_inherit__map" alt="Inheritance graph"/></div>
+<map name="FilesFG_inherit__map" id="FilesFG_inherit__map">
+<area shape="rect"  title=" " alt="" coords="93,5,251,361"/>
+<area shape="rect"  href="classMenuTest_1_1MockFG.html" title=" " alt="" coords="5,409,160,516"/>
+<area shape="rect"  href="classTestJSON_1_1MockFg.html" title=" " alt="" coords="184,409,339,516"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса FilesFG:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG__coll__graph.png" border="0" usemap="#FilesFG_coll__map" alt="Collaboration graph"/></div>
+<map name="FilesFG_coll__map" id="FilesFG_coll__map">
+<area shape="rect"  title=" " alt="" coords="5,5,163,361"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:aeca43e421f50a234c4bf54f329e73fe8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a> { <br />
+&#160;&#160;<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a516459be92e07b043cc29b5469be9a98">FILE_IS_ALREADY_EXIST</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a1089d799301c403097f7f6b5ad9dd4b5">FILE_CREATE_SUCCESS</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8ac7bfd075f87fbc4c09e773f9dc5e96a4">FILE_CREATE_ERR</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a9f42794ae8e77f7fd773258fd9c4c186">FILE_OPEN_ERR</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a82cd1d73e93f0692b493c0d3a5ea0643">FILE_WRITE_ERR</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a24d6d2bb9cc80c0a139e999579d24411">FILE_CLOSE_ERR</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8ad166a5cde7e7c712a42fcb4c9019ea2c">FILE_READ_SUCCESS</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a711f0c46f687c9f4ad98c89490243b5c">FILE_WRITE_SUCCESS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a075297444376c30aecefba5acbc61aab">FILE_IS_EXIST</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a7b8cde40ae9ea7980d53dadad5e32fae">FILE_IS_NOT_EXIST</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8ab4a13c0617727907b1b1a4b7da5bfc20">FILE_IS_CLOSE</a>, 
+<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8aab7a03bbca88d1156c88c418b2a095b0">SUCCESS</a>, 
+<br />
+&#160;&#160;<a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8a72db339c4b287a0d96a8da7c67af0e82">FAILED</a>
+<br />
+ }</td></tr>
+<tr class="separator:aeca43e421f50a234c4bf54f329e73fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ccea934714d715d60abdf0c2e1b44aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">DIR_STATUS</a> { <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aaa50ca87d006a5e511ecd096768ea1edca">DIR_IS_EXIST</a>, 
+<a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aaa5d695810b985c8e49adb7a378e8ea55e">DIR_IS_NOT_EXIST</a>, 
+<a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aaae03d7d470ae550850be733a45f7c55c3">MKDIR_SUCCESS</a>, 
+<a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aaae638e24b43d1f1989fca5d69e4d23bae">MKDIR_ERR</a>
+ }</td></tr>
+<tr class="separator:a0ccea934714d715d60abdf0c2e1b44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a31183d9b87625adba48bd5f04aa42711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a31183d9b87625adba48bd5f04aa42711">FilesFG</a> ()</td></tr>
+<tr class="separator:a31183d9b87625adba48bd5f04aa42711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122b848b473624acadeb164b7caadd54"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a122b848b473624acadeb164b7caadd54">~FilesFG</a> ()</td></tr>
+<tr class="separator:a122b848b473624acadeb164b7caadd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1b54aa50cd2f0b6496c03f299573eb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a5e1b54aa50cd2f0b6496c03f299573eb">save_in_file</a> (string filename, string strSource)</td></tr>
+<tr class="separator:a5e1b54aa50cd2f0b6496c03f299573eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a54507e49d116e9f6a7d41118b79a6e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a0a54507e49d116e9f6a7d41118b79a6e">isFileExist</a> (string)</td></tr>
+<tr class="separator:a0a54507e49d116e9f6a7d41118b79a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881901d62fd1eaae817d54e62a149416"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a881901d62fd1eaae817d54e62a149416">fileCreate</a> (string)</td></tr>
+<tr class="separator:a881901d62fd1eaae817d54e62a149416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864dc0a300eb9c9b1ece206e38cf62a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a864dc0a300eb9c9b1ece206e38cf62a8">fileCreateIfNotExist</a> (string)</td></tr>
+<tr class="separator:a864dc0a300eb9c9b1ece206e38cf62a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9745fb7f0246912149d0db298ca1d786"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a9745fb7f0246912149d0db298ca1d786">str_to_file</a> (string, string)</td></tr>
+<tr class="separator:a9745fb7f0246912149d0db298ca1d786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5fc38b845d646772d9a14fa999a466"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a9a5fc38b845d646772d9a14fa999a466">strFromFile</a> (string, string &amp;)</td></tr>
+<tr class="separator:a9a5fc38b845d646772d9a14fa999a466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb019110bbb7ec23bb479dcbc3d42383"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adb019110bbb7ec23bb479dcbc3d42383"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFilesFG.html#adb019110bbb7ec23bb479dcbc3d42383">write</a> (string filename, T value, ios_base::openmode mode=ios_base::in|ios_base::trunc)</td></tr>
+<tr class="separator:adb019110bbb7ec23bb479dcbc3d42383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac198de7d7e8c35283f1d40ac6686d04c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac198de7d7e8c35283f1d40ac6686d04c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFilesFG.html#ac198de7d7e8c35283f1d40ac6686d04c">read</a> (string filename, T &amp;value)</td></tr>
+<tr class="separator:ac198de7d7e8c35283f1d40ac6686d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1ed1e4e386894a1dd2fc3c77bda58c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:aac1ed1e4e386894a1dd2fc3c77bda58c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFilesFG.html#aac1ed1e4e386894a1dd2fc3c77bda58c">read</a> (string filename, string &amp;value)</td></tr>
+<tr class="separator:aac1ed1e4e386894a1dd2fc3c77bda58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a5bc3ef87559df994e73cf99ebe6e2429"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a5bc3ef87559df994e73cf99ebe6e2429">save_in_file</a> (string filename, char *data, size_t size, bool sync=true)</td></tr>
+<tr class="separator:a5bc3ef87559df994e73cf99ebe6e2429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdebb3714a8ac38d7e78a87e3d3e742b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#acdebb3714a8ac38d7e78a87e3d3e742b">save_in_file</a> (string filename, <a class="el" href="structAGENTS.html">AGENTS</a> data)</td></tr>
+<tr class="separator:acdebb3714a8ac38d7e78a87e3d3e742b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28957c806f44f14c7b6df7c316acbdc7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a28957c806f44f14c7b6df7c316acbdc7">save_array_in_file</a> (string filename, uint32_t *mass, uint32_t size)</td></tr>
+<tr class="separator:a28957c806f44f14c7b6df7c316acbdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0772e0846c4f2728ff002c1da8b9751"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#ab0772e0846c4f2728ff002c1da8b9751">print_array_of_char</a> (char *mass, unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> size)</td></tr>
+<tr class="separator:ab0772e0846c4f2728ff002c1da8b9751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e5e53c511abb3058e9c71cfc3a15a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a39e5e53c511abb3058e9c71cfc3a15a4">cfg_data_copy</a> (<a class="el" href="structConfig.html">Config</a> *dest, <a class="el" href="structConfig.html">Config</a> *source, <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> &amp;mask)</td></tr>
+<tr class="separator:a39e5e53c511abb3058e9c71cfc3a15a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c83d9691042581eea5a688447b3ae1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">DIR_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a8c83d9691042581eea5a688447b3ae1f">isDirExist</a> (string path)</td></tr>
+<tr class="separator:a8c83d9691042581eea5a688447b3ae1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa59a4738fd9525487b29c415cc1ca5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">DIR_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a5fa59a4738fd9525487b29c415cc1ca5">dirCreate</a> (string path)</td></tr>
+<tr class="separator:a5fa59a4738fd9525487b29c415cc1ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920dafbb9906b83c9915f8ac8881a294"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">DIR_STATUS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#a920dafbb9906b83c9915f8ac8881a294">dirCreateIfNotExist</a> (string path)</td></tr>
+<tr class="separator:a920dafbb9906b83c9915f8ac8881a294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bfdbaa1d508651fcb08c40109410cc"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilesFG.html#ac2bfdbaa1d508651fcb08c40109410cc">readCurlCallback</a> (void *ptr, size_t size, size_t nmemb, FILE *stream)</td></tr>
+<tr class="separator:ac2bfdbaa1d508651fcb08c40109410cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a0ccea934714d715d60abdf0c2e1b44aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ccea934714d715d60abdf0c2e1b44aa">&#9670;&nbsp;</a></span>DIR_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">FilesFG::DIR_STATUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a0ccea934714d715d60abdf0c2e1b44aaa50ca87d006a5e511ecd096768ea1edca"></a>DIR_IS_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ccea934714d715d60abdf0c2e1b44aaa5d695810b985c8e49adb7a378e8ea55e"></a>DIR_IS_NOT_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ccea934714d715d60abdf0c2e1b44aaae03d7d470ae550850be733a45f7c55c3"></a>MKDIR_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0ccea934714d715d60abdf0c2e1b44aaae638e24b43d1f1989fca5d69e4d23bae"></a>MKDIR_ERR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aeca43e421f50a234c4bf54f329e73fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca43e421f50a234c4bf54f329e73fe8">&#9670;&nbsp;</a></span>FILE_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a516459be92e07b043cc29b5469be9a98"></a>FILE_IS_ALREADY_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a1089d799301c403097f7f6b5ad9dd4b5"></a>FILE_CREATE_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8ac7bfd075f87fbc4c09e773f9dc5e96a4"></a>FILE_CREATE_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a9f42794ae8e77f7fd773258fd9c4c186"></a>FILE_OPEN_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a82cd1d73e93f0692b493c0d3a5ea0643"></a>FILE_WRITE_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a24d6d2bb9cc80c0a139e999579d24411"></a>FILE_CLOSE_ERR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8ad166a5cde7e7c712a42fcb4c9019ea2c"></a>FILE_READ_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a711f0c46f687c9f4ad98c89490243b5c"></a>FILE_WRITE_SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a075297444376c30aecefba5acbc61aab"></a>FILE_IS_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a7b8cde40ae9ea7980d53dadad5e32fae"></a>FILE_IS_NOT_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8ab4a13c0617727907b1b1a4b7da5bfc20"></a>FILE_IS_CLOSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8aab7a03bbca88d1156c88c418b2a095b0"></a>SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeca43e421f50a234c4bf54f329e73fe8a72db339c4b287a0d96a8da7c67af0e82"></a>FAILED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a31183d9b87625adba48bd5f04aa42711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31183d9b87625adba48bd5f04aa42711">&#9670;&nbsp;</a></span>FilesFG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FilesFG::FilesFG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a122b848b473624acadeb164b7caadd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122b848b473624acadeb164b7caadd54">&#9670;&nbsp;</a></span>~FilesFG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual FilesFG::~FilesFG </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a39e5e53c511abb3058e9c71cfc3a15a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e5e53c511abb3058e9c71cfc3a15a4">&#9670;&nbsp;</a></span>cfg_data_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FilesFG::cfg_data_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structConfig.html">Config</a> *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> &amp;&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fa59a4738fd9525487b29c415cc1ca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa59a4738fd9525487b29c415cc1ca5">&#9670;&nbsp;</a></span>dirCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">FilesFG::DIR_STATUS</a> FilesFG::dirCreate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a920dafbb9906b83c9915f8ac8881a294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a920dafbb9906b83c9915f8ac8881a294">&#9670;&nbsp;</a></span>dirCreateIfNotExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">FilesFG::DIR_STATUS</a> FilesFG::dirCreateIfNotExist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG_a920dafbb9906b83c9915f8ac8881a294_cgraph.png" border="0" usemap="#classFilesFG_a920dafbb9906b83c9915f8ac8881a294_cgraph" alt=""/></div>
+<map name="classFilesFG_a920dafbb9906b83c9915f8ac8881a294_cgraph" id="classFilesFG_a920dafbb9906b83c9915f8ac8881a294_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,31,193,57"/>
+<area shape="rect"  href="classFilesFG.html#a8c83d9691042581eea5a688447b3ae1f" title=" " alt="" coords="241,5,375,32"/>
+<area shape="rect"  href="classFilesFG.html#a5fa59a4738fd9525487b29c415cc1ca5" title=" " alt="" coords="243,56,373,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a881901d62fd1eaae817d54e62a149416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881901d62fd1eaae817d54e62a149416">&#9670;&nbsp;</a></span>fileCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::fileCreate </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a864dc0a300eb9c9b1ece206e38cf62a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864dc0a300eb9c9b1ece206e38cf62a8">&#9670;&nbsp;</a></span>fileCreateIfNotExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::fileCreateIfNotExist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG_a864dc0a300eb9c9b1ece206e38cf62a8_cgraph.png" border="0" usemap="#classFilesFG_a864dc0a300eb9c9b1ece206e38cf62a8_cgraph" alt=""/></div>
+<map name="classFilesFG_a864dc0a300eb9c9b1ece206e38cf62a8_cgraph" id="classFilesFG_a864dc0a300eb9c9b1ece206e38cf62a8_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,23,167,65"/>
+<area shape="rect"  href="classFilesFG.html#a0a54507e49d116e9f6a7d41118b79a6e" title=" " alt="" coords="215,5,352,32"/>
+<area shape="rect"  href="classFilesFG.html#a881901d62fd1eaae817d54e62a149416" title=" " alt="" coords="217,56,349,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8c83d9691042581eea5a688447b3ae1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c83d9691042581eea5a688447b3ae1f">&#9670;&nbsp;</a></span>isDirExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aa">FilesFG::DIR_STATUS</a> FilesFG::isDirExist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a54507e49d116e9f6a7d41118b79a6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a54507e49d116e9f6a7d41118b79a6e">&#9670;&nbsp;</a></span>isFileExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::isFileExist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0772e0846c4f2728ff002c1da8b9751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0772e0846c4f2728ff002c1da8b9751">&#9670;&nbsp;</a></span>print_array_of_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FilesFG::print_array_of_char </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac198de7d7e8c35283f1d40ac6686d04c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac198de7d7e8c35283f1d40ac6686d04c">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a> FilesFG::read </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac1ed1e4e386894a1dd2fc3c77bda58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1ed1e4e386894a1dd2fc3c77bda58c">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::read </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG_aac1ed1e4e386894a1dd2fc3c77bda58c_cgraph.png" border="0" usemap="#classFilesFG_aac1ed1e4e386894a1dd2fc3c77bda58c_cgraph" alt=""/></div>
+<map name="classFilesFG_aac1ed1e4e386894a1dd2fc3c77bda58c_cgraph" id="classFilesFG_aac1ed1e4e386894a1dd2fc3c77bda58c_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect"  href="classFilesFG.html#a0a54507e49d116e9f6a7d41118b79a6e" title=" " alt="" coords="155,5,292,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac2bfdbaa1d508651fcb08c40109410cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bfdbaa1d508651fcb08c40109410cc">&#9670;&nbsp;</a></span>readCurlCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t FilesFG::readCurlCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28957c806f44f14c7b6df7c316acbdc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28957c806f44f14c7b6df7c316acbdc7">&#9670;&nbsp;</a></span>save_array_in_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FilesFG::save_array_in_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>mass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bc3ef87559df994e73cf99ebe6e2429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc3ef87559df994e73cf99ebe6e2429">&#9670;&nbsp;</a></span>save_in_file() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FilesFG::save_in_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sync</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdebb3714a8ac38d7e78a87e3d3e742b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdebb3714a8ac38d7e78a87e3d3e742b">&#9670;&nbsp;</a></span>save_in_file() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FilesFG::save_in_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structAGENTS.html">AGENTS</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1b54aa50cd2f0b6496c03f299573eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1b54aa50cd2f0b6496c03f299573eb">&#9670;&nbsp;</a></span>save_in_file() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> FilesFG::save_in_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>strSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9745fb7f0246912149d0db298ca1d786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9745fb7f0246912149d0db298ca1d786">&#9670;&nbsp;</a></span>str_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::str_to_file </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG_a9745fb7f0246912149d0db298ca1d786_cgraph.png" border="0" usemap="#classFilesFG_a9745fb7f0246912149d0db298ca1d786_cgraph" alt=""/></div>
+<map name="classFilesFG_a9745fb7f0246912149d0db298ca1d786_cgraph" id="classFilesFG_a9745fb7f0246912149d0db298ca1d786_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,139,32"/>
+<area shape="rect"  href="classFilesFG.html#a0a54507e49d116e9f6a7d41118b79a6e" title=" " alt="" coords="187,5,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a5fc38b845d646772d9a14fa999a466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5fc38b845d646772d9a14fa999a466">&#9670;&nbsp;</a></span>strFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FilesFG::FILE_STATUS</a> FilesFG::strFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classFilesFG_a9a5fc38b845d646772d9a14fa999a466_cgraph.png" border="0" usemap="#classFilesFG_a9a5fc38b845d646772d9a14fa999a466_cgraph" alt=""/></div>
+<map name="classFilesFG_a9a5fc38b845d646772d9a14fa999a466_cgraph" id="classFilesFG_a9a5fc38b845d646772d9a14fa999a466_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect"  href="classFilesFG.html#a0a54507e49d116e9f6a7d41118b79a6e" title=" " alt="" coords="196,5,333,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb019110bbb7ec23bb479dcbc3d42383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb019110bbb7ec23bb479dcbc3d42383">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFilesFG.html#aeca43e421f50a234c4bf54f329e73fe8">FILE_STATUS</a> FilesFG::write </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ios_base::openmode&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>ios_base::in&#160;|&#160;ios_base::trunc</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="filesfg_8h_source.html">filesfg.h</a></li>
+<li>src/appl/<a class="el" href="filesfg_8cpp.html">filesfg.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

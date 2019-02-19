@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/bsp/bsp_fiscal_mem.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0937102de6aefa85ea195f3f88a55c7c.html">bsp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл bsp_fiscal_mem.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="bsp__fiscal__mem_8h_source.html">bsp_fiscal_mem.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для bsp_fiscal_mem.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="bsp__fiscal__mem_8c__incl.png" border="0" usemap="#src_2bsp_2bsp__fiscal__mem_8c" alt=""/></div>
+<map name="src_2bsp_2bsp__fiscal__mem_8c" id="src_2bsp_2bsp__fiscal__mem_8c">
+<area shape="rect"  title=" " alt="" coords="323,5,451,47"/>
+<area shape="rect"  href="bsp__fiscal__mem_8h.html" title=" " alt="" coords="323,95,451,121"/>
+<area shape="rect"  title=" " alt="" coords="5,169,67,196"/>
+<area shape="rect"  title=" " alt="" coords="91,169,159,196"/>
+<area shape="rect"  title=" " alt="" coords="184,169,243,196"/>
+<area shape="rect"  title=" " alt="" coords="267,169,349,196"/>
+<area shape="rect"  title=" " alt="" coords="297,244,362,271"/>
+<area shape="rect"  title=" " alt="" coords="387,244,456,271"/>
+<area shape="rect"  title=" " alt="" coords="549,169,632,196"/>
+<area shape="rect"  title=" " alt="" coords="656,169,720,196"/>
+<area shape="rect"  href="log_8h.html" title=" " alt="" coords="475,169,525,196"/>
+<area shape="rect"  title=" " alt="" coords="707,244,770,271"/>
+<area shape="rect"  title=" " alt="" coords="795,244,864,271"/>
+<area shape="rect"  title=" " alt="" coords="481,244,551,271"/>
+<area shape="rect"  title=" " alt="" coords="576,244,683,271"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a7c51c72e32a1ea4484c7b9a2e362d68c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__fiscal__mem_8c.html#a7c51c72e32a1ea4484c7b9a2e362d68c">bsp_fiscal_mem_init</a> ()</td></tr>
+<tr class="separator:a7c51c72e32a1ea4484c7b9a2e362d68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf672231f53521834b6f6f8e233c35bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__fiscal__mem_8c.html#acf672231f53521834b6f6f8e233c35bc">bsp_fiscal_mem_write</a> (unsigned char *buf_tmp, unsigned short len)</td></tr>
+<tr class="separator:acf672231f53521834b6f6f8e233c35bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9328b00afae3150e0584049b8e1b1de8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__fiscal__mem_8c.html#a9328b00afae3150e0584049b8e1b1de8">bsp_fiscal_mem_read</a> (unsigned char *buf_tmp, unsigned short len)</td></tr>
+<tr class="separator:a9328b00afae3150e0584049b8e1b1de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94083a14d6cf11783fc89dc71db4bd63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__fiscal__mem_8c.html#a94083a14d6cf11783fc89dc71db4bd63">bsp_fiscal_mem_close</a> ()</td></tr>
+<tr class="separator:a94083a14d6cf11783fc89dc71db4bd63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a5fa44127590e064bac5ef020c2b0760b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__fiscal__mem_8c.html#a5fa44127590e064bac5ef020c2b0760b">fm_handle</a></td></tr>
+<tr class="separator:a5fa44127590e064bac5ef020c2b0760b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a94083a14d6cf11783fc89dc71db4bd63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94083a14d6cf11783fc89dc71db4bd63">&#9670;&nbsp;</a></span>bsp_fiscal_mem_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> bsp_fiscal_mem_close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c51c72e32a1ea4484c7b9a2e362d68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c51c72e32a1ea4484c7b9a2e362d68c">&#9670;&nbsp;</a></span>bsp_fiscal_mem_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> bsp_fiscal_mem_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9328b00afae3150e0584049b8e1b1de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9328b00afae3150e0584049b8e1b1de8">&#9670;&nbsp;</a></span>bsp_fiscal_mem_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> bsp_fiscal_mem_read </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf_tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf672231f53521834b6f6f8e233c35bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf672231f53521834b6f6f8e233c35bc">&#9670;&nbsp;</a></span>bsp_fiscal_mem_write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> bsp_fiscal_mem_write </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf_tmp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a5fa44127590e064bac5ef020c2b0760b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa44127590e064bac5ef020c2b0760b">&#9670;&nbsp;</a></span>fm_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fm_handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,965 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Файл src/appl/include/log.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл log.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;syslog.h&gt;</code><br />
+<code>#include &quot;logdb_c_cpp.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для log.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="log_8h__incl.png" border="0" usemap="#src_2appl_2include_2log_8h" alt=""/></div>
+<map name="src_2appl_2include_2log_8h" id="src_2appl_2include_2log_8h">
+<area shape="rect"  title=" " alt="" coords="193,5,339,32"/>
+<area shape="rect"  title=" " alt="" coords="5,80,68,107"/>
+<area shape="rect"  title=" " alt="" coords="93,80,162,107"/>
+<area shape="rect"  title=" " alt="" coords="186,80,255,107"/>
+<area shape="rect"  title=" " alt="" coords="280,80,345,107"/>
+<area shape="rect"  title=" " alt="" coords="369,80,440,107"/>
+<area shape="rect"  title=" " alt="" coords="465,80,571,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="log_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2log_8hdep" alt=""/></div>
+<map name="src_2appl_2include_2log_8hdep" id="src_2appl_2include_2log_8hdep">
+<area shape="rect"  title=" " alt="" coords="2887,5,3032,32"/>
+<area shape="rect"  href="barcodeScanner_8cpp.html" title=" " alt="" coords="5,87,196,114"/>
+<area shape="rect"  href="CabinetBase_8cpp.html" title=" " alt="" coords="1519,266,1691,293"/>
+<area shape="rect"  href="EncodeConvertor_8cpp.html" title=" " alt="" coords="873,177,1072,203"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html" title=" " alt="" coords="1125,616,1295,643"/>
+<area shape="rect"  href="flashMounter_8cpp.html" title=" " alt="" coords="373,87,545,114"/>
+<area shape="rect"  href="goods__new_8cpp.html" title=" " alt="" coords="1097,177,1259,203"/>
+<area shape="rect"  href="goods__test_8cpp.html" title=" " alt="" coords="421,616,583,643"/>
+<area shape="rect"  href="https__exchange_8cpp.html" title=" " alt="" coords="1283,177,1473,203"/>
+<area shape="rect"  href="beeper_8h.html" title=" " alt="" coords="2869,266,3036,293"/>
+<area shape="rect"  href="printer_8h.html" title=" " alt="" coords="2079,616,2243,643"/>
+<area shape="rect"  href="menu_8h.html" title=" " alt="" coords="2307,691,2467,717"/>
+<area shape="rect"  href="keypad_8cpp.html" title=" " alt="" coords="3137,616,3275,643"/>
+<area shape="rect"  href="convert_8h.html" title=" " alt="" coords="1854,87,2025,114"/>
+<area shape="rect"  href="config_8h.html" title=" " alt="" coords="1987,355,2150,382"/>
+<area shape="rect"  href="receipt__new_8h.html" title=" " alt="" coords="1324,437,1480,479"/>
+<area shape="rect"  href="goods_8h.html" title=" " alt="" coords="741,534,903,561"/>
+<area shape="rect"  href="lcd_8h.html" title=" " alt="" coords="2593,534,2739,561"/>
+<area shape="rect"  href="positions_8h.html" title=" " alt="" coords="1417,355,1597,382"/>
+<area shape="rect"  href="requisites_8h.html" title=" " alt="" coords="1115,445,1299,471"/>
+<area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="2249,445,2416,471"/>
+<area shape="rect"  href="positions__new_8h.html" title=" " alt="" coords="692,348,861,389"/>
+<area shape="rect"  href="license_8h.html" title=" " alt="" coords="2241,177,2411,203"/>
+<area shape="rect"  href="Fisgo__Test__API_8h.html" title=" " alt="" coords="2533,259,2682,300"/>
+<area shape="rect"  href="json_8cpp.html" title=" " alt="" coords="2387,266,2508,293"/>
+<area shape="rect"  href="ReceiptsDb_8cpp.html" title=" " alt="" coords="2537,177,2704,203"/>
+<area shape="rect"  href="slipsDB_8cpp.html" title=" " alt="" coords="2728,177,2871,203"/>
+<area shape="rect"  href="sqlWrapper_8cpp.html" title=" " alt="" coords="3199,177,3362,203"/>
+<area shape="rect"  href="counters_8h.html" title=" " alt="" coords="2833,445,3011,471"/>
+<area shape="rect"  href="keypad_8h.html" title=" " alt="" coords="3331,87,3502,114"/>
+<area shape="rect"  href="bsp__printer__keypad_8c.html" title=" " alt="" coords="3538,169,3671,211"/>
+<area shape="rect"  href="users_8h.html" title=" " alt="" coords="3538,534,3698,561"/>
+<area shape="rect"  href="time__sync_8h.html" title=" " alt="" coords="3680,348,3823,389"/>
+<area shape="rect"  href="scaleProtocol_8h.html" title=" " alt="" coords="3949,87,4156,114"/>
+<area shape="rect"  href="scaleProtocolPos2_8h.html" title=" " alt="" coords="3899,169,4095,211"/>
+<area shape="rect"  href="scaleProtocolMassak_8h.html" title=" " alt="" coords="4119,169,4315,211"/>
+<area shape="rect"  href="log_8c.html" title=" " alt="" coords="4232,87,4332,114"/>
+<area shape="rect"  href="LogServant_8cpp.html" title=" " alt="" coords="4357,87,4519,114"/>
+<area shape="rect"  href="main_8cpp.html" title=" " alt="" coords="4543,87,4669,114"/>
+<area shape="rect"  href="NodeConflictResolver_8cpp.html" title=" " alt="" coords="4693,87,4919,114"/>
+<area shape="rect"  href="bsp__lcd__drawer_8c.html" title=" " alt="" coords="4943,87,5114,114"/>
+<area shape="rect"  href="bsp__fiscal__mem_8h.html" title=" " alt="" coords="5139,80,5273,121"/>
+<area shape="rect"  href="FisGo__BIOS_8h.html" title=" " alt="" coords="1921,527,2073,568"/>
+<area shape="rect"  href="convert_8cpp.html" title=" " alt="" coords="1881,445,2021,471"/>
+<area shape="rect"  href="counters_8cpp.html" title=" " alt="" coords="2763,534,2910,561"/>
+<area shape="rect"  href="CabinetBase_8h.html" title=" " alt="" coords="1649,169,1811,211"/>
+<area shape="rect"  href="lcd_8cpp.html" title=" " alt="" coords="2502,616,2617,643"/>
+<area shape="rect"  href="tax_8h.html" title=" " alt="" coords="1715,266,1862,293"/>
+<area shape="rect"  href="positions_8cpp.html" title=" " alt="" coords="1657,445,1806,471"/>
+<area shape="rect"  href="fiscal__doc__db_8h.html" title=" " alt="" coords="2369,527,2517,568"/>
+</map>
+</div>
+</div>
+<p><a href="log_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a8fb447618db946a9e2a596d9ea18763f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a8fb447618db946a9e2a596d9ea18763f">_DEFAULT_SOURCE</a></td></tr>
+<tr class="separator:a8fb447618db946a9e2a596d9ea18763f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f60bb8ab2ee2d0aa0df1b0e26e060b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(fmt, ...)&#160;&#160;&#160;logINFO_c( REG_COMMON, fmt, ##__VA_ARGS__ )</td></tr>
+<tr class="separator:a76f60bb8ab2ee2d0aa0df1b0e26e060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52306596450dfac3b0a4c81363ab36f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ac52306596450dfac3b0a4c81363ab36f">logWARN</a>(fmt, ...)&#160;&#160;&#160;logWARN_c( REG_COMMON, fmt, ##__VA_ARGS__ )</td></tr>
+<tr class="separator:ac52306596450dfac3b0a4c81363ab36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc587e7c622e9e5d18ec948255c1b11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( fmt, ...)&#160;&#160;&#160;logERR_c(  REG_COMMON, fmt, ##__VA_ARGS__ )</td></tr>
+<tr class="separator:a5cc587e7c622e9e5d18ec948255c1b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00dd66449102a6d5f35f8c9687892f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>( fmt, ...)&#160;&#160;&#160;logDBG_c(  REG_COMMON, fmt, ##__VA_ARGS__ )</td></tr>
+<tr class="separator:ab00dd66449102a6d5f35f8c9687892f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70fb334401142bda991416b16134d22b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a70fb334401142bda991416b16134d22b">setLogDBLevel</a>(lvl)&#160;&#160;&#160;setLogLevel_c( lvl )</td></tr>
+<tr class="separator:a70fb334401142bda991416b16134d22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b950ee4689addc61e3c964347000e46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a8b950ee4689addc61e3c964347000e46">getLogDBLevel</a>()&#160;&#160;&#160;getLogLevel_c()</td></tr>
+<tr class="separator:a8b950ee4689addc61e3c964347000e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df3ee8f3c76deb8b6db0bb830a0b228"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a1df3ee8f3c76deb8b6db0bb830a0b228">setLogDBName</a>(name)&#160;&#160;&#160;setDBName_c( name )</td></tr>
+<tr class="separator:a1df3ee8f3c76deb8b6db0bb830a0b228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcaf5782d9f272131ac387ba41e240bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#abcaf5782d9f272131ac387ba41e240bc">setLogDBMaxQuerySize</a>(size1)&#160;&#160;&#160;setMaxQuerySize_c( size1 )</td></tr>
+<tr class="separator:abcaf5782d9f272131ac387ba41e240bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afddb2e62ef3c0800734f1bcd3984347e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#afddb2e62ef3c0800734f1bcd3984347e">getLogDBMaxQuerySize</a>()&#160;&#160;&#160;getMaxQuerySize_c()</td></tr>
+<tr class="separator:afddb2e62ef3c0800734f1bcd3984347e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a76dcf7b28702051ce3ff12f93cda0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a2a76dcf7b28702051ce3ff12f93cda0d">setLogDBWritePeriod</a>(per)&#160;&#160;&#160;setWriteDBPeriod_c( per )</td></tr>
+<tr class="separator:a2a76dcf7b28702051ce3ff12f93cda0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292342366cef2e3adf573ef864169ebf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a292342366cef2e3adf573ef864169ebf">getLogDBWritePeriod</a>()&#160;&#160;&#160;getWriteDBPeriod_c()</td></tr>
+<tr class="separator:a292342366cef2e3adf573ef864169ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5369f553f2db52bcad4e95bcb0c03e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a9a5369f553f2db52bcad4e95bcb0c03e">setLogDBMaxDBSize</a>(size2)&#160;&#160;&#160;setMaxDBSize_c( size2 )</td></tr>
+<tr class="separator:a9a5369f553f2db52bcad4e95bcb0c03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b5b8458b261a37352524be6b82c359"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a61b5b8458b261a37352524be6b82c359">getLogDBMaxDBSize</a>()&#160;&#160;&#160;getMaxDBSize_c()</td></tr>
+<tr class="separator:a61b5b8458b261a37352524be6b82c359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93729ebad0dbb9bcf713c09f19fce133"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a93729ebad0dbb9bcf713c09f19fce133">setLogDBcode_CP866</a>()&#160;&#160;&#160;setCode_CP866_c()</td></tr>
+<tr class="separator:a93729ebad0dbb9bcf713c09f19fce133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77199178299781ed6c048b70c37693b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ad77199178299781ed6c048b70c37693b">setLogDBcode_UTF8</a>()&#160;&#160;&#160;setCode_UTF8_c()</td></tr>
+<tr class="separator:ad77199178299781ed6c048b70c37693b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e7319bfd08aea0ed9823def61ab25b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a23e7319bfd08aea0ed9823def61ab25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842ed03f27719bc87666bfd1f75415b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a842ed03f27719bc87666bfd1f75415b8">MAX_LINE</a>&#160;&#160;&#160;10000</td></tr>
+<tr class="separator:a842ed03f27719bc87666bfd1f75415b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c3df6c9906ede8f09fa2af74cb28d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af3c3df6c9906ede8f09fa2af74cb28d5">FILE_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:af3c3df6c9906ede8f09fa2af74cb28d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba889888734a8b272a51d444d70ad2fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aba889888734a8b272a51d444d70ad2fa">LINE_SIZE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:aba889888734a8b272a51d444d70ad2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef4fd826faf4624bdddf9f80b1dfc22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a7ef4fd826faf4624bdddf9f80b1dfc22">FN_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a7ef4fd826faf4624bdddf9f80b1dfc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ff90943a96fd2e05a2ba42d7581bb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a26ff90943a96fd2e05a2ba42d7581bb7">FMT_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:a26ff90943a96fd2e05a2ba42d7581bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3307d40b4252d143477be557b027679c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a3307d40b4252d143477be557b027679c">MEM_INFO_SIZE</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a3307d40b4252d143477be557b027679c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32071375be08882e272cacdc3cd34934"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a32071375be08882e272cacdc3cd34934">MEM_ALARM_PIC_LEN</a>&#160;&#160;&#160;1024</td></tr>
+<tr class="separator:a32071375be08882e272cacdc3cd34934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e62475e62dc3e6e3d0a609f911a47a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a8e62475e62dc3e6e3d0a609f911a47a4">FMT_NEW_SIZE</a>&#160;&#160;&#160;(<a class="el" href="log_8h.html#af3c3df6c9906ede8f09fa2af74cb28d5">FILE_SIZE</a> + 1 + <a class="el" href="log_8h.html#aba889888734a8b272a51d444d70ad2fa">LINE_SIZE</a> + 1 + <a class="el" href="log_8h.html#a7ef4fd826faf4624bdddf9f80b1dfc22">FN_SIZE</a> + 4 + <a class="el" href="log_8h.html#a26ff90943a96fd2e05a2ba42d7581bb7">FMT_SIZE</a> + 2)</td></tr>
+<tr class="separator:a8e62475e62dc3e6e3d0a609f911a47a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acae72e2ec7e12cfc94015032a61b0c23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#acae72e2ec7e12cfc94015032a61b0c23">MEM_INFO_STRING_SIZE</a>&#160;&#160;&#160;(<a class="el" href="log_8h.html#a3307d40b4252d143477be557b027679c">MEM_INFO_SIZE</a> + 2)</td></tr>
+<tr class="separator:acae72e2ec7e12cfc94015032a61b0c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa008be28e466e5b837e31c914f06bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#adfa008be28e466e5b837e31c914f06bf">logALWAYS_ASSERT</a>(x)</td></tr>
+<tr class="separator:adfa008be28e466e5b837e31c914f06bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d11d340c04cf0abd345270184232989"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a3d11d340c04cf0abd345270184232989">logASSERT</a></td></tr>
+<tr class="separator:a3d11d340c04cf0abd345270184232989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a41d3013c55b3bf5ba7cdf9477fcc0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>(x)</td></tr>
+<tr class="separator:a7a41d3013c55b3bf5ba7cdf9477fcc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa039924c6c62246c6215e02e3354d1a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#aa039924c6c62246c6215e02e3354d1a0">logH</a></td></tr>
+<tr class="separator:aa039924c6c62246c6215e02e3354d1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a2322ea0f264d6857d216f24b53d5d0cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a2322ea0f264d6857d216f24b53d5d0cb">g_log_init</a> (void)</td></tr>
+<tr class="separator:a2322ea0f264d6857d216f24b53d5d0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1aeba399686b3f29edf6b17cfa53a7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af1aeba399686b3f29edf6b17cfa53a7b">g_log</a> (const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> pri, const char *const file, size_t line, const char *const fn, const char *const fmt,...)</td></tr>
+<tr class="separator:af1aeba399686b3f29edf6b17cfa53a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9236eacb75c22fb5a3a844fd009144e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#af9236eacb75c22fb5a3a844fd009144e">g_log_buf_printf</a> (const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> pri, const char *const file, size_t line, const char *const fn, const char *format, unsigned char *buf, unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> len)</td></tr>
+<tr class="separator:af9236eacb75c22fb5a3a844fd009144e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ba13b54a5d46206d2dbdc30915ea21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a02ba13b54a5d46206d2dbdc30915ea21">setLogLevel</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> llev)</td></tr>
+<tr class="separator:a02ba13b54a5d46206d2dbdc30915ea21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4633c2e8127ec8b2668ff6c3ff38ac89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a4633c2e8127ec8b2668ff6c3ff38ac89">getLogLevel</a> ()</td></tr>
+<tr class="separator:a4633c2e8127ec8b2668ff6c3ff38ac89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51ed3863a291e7293bea4c111ac8f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#ac51ed3863a291e7293bea4c111ac8f9c">closeLog</a> ()</td></tr>
+<tr class="separator:ac51ed3863a291e7293bea4c111ac8f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9858d7282c491a9218ec27ce03ebaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8h.html#a0f9858d7282c491a9218ec27ce03ebaa">showMem</a> (char *msg)</td></tr>
+<tr class="separator:a0f9858d7282c491a9218ec27ce03ebaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a8fb447618db946a9e2a596d9ea18763f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb447618db946a9e2a596d9ea18763f">&#9670;&nbsp;</a></span>_DEFAULT_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DEFAULT_SOURCE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3c3df6c9906ede8f09fa2af74cb28d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c3df6c9906ede8f09fa2af74cb28d5">&#9670;&nbsp;</a></span>FILE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILE_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e62475e62dc3e6e3d0a609f911a47a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e62475e62dc3e6e3d0a609f911a47a4">&#9670;&nbsp;</a></span>FMT_NEW_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_NEW_SIZE&#160;&#160;&#160;(<a class="el" href="log_8h.html#af3c3df6c9906ede8f09fa2af74cb28d5">FILE_SIZE</a> + 1 + <a class="el" href="log_8h.html#aba889888734a8b272a51d444d70ad2fa">LINE_SIZE</a> + 1 + <a class="el" href="log_8h.html#a7ef4fd826faf4624bdddf9f80b1dfc22">FN_SIZE</a> + 4 + <a class="el" href="log_8h.html#a26ff90943a96fd2e05a2ba42d7581bb7">FMT_SIZE</a> + 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26ff90943a96fd2e05a2ba42d7581bb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ff90943a96fd2e05a2ba42d7581bb7">&#9670;&nbsp;</a></span>FMT_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_SIZE&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ef4fd826faf4624bdddf9f80b1dfc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef4fd826faf4624bdddf9f80b1dfc22">&#9670;&nbsp;</a></span>FN_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FN_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b950ee4689addc61e3c964347000e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b950ee4689addc61e3c964347000e46">&#9670;&nbsp;</a></span>getLogDBLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getLogDBLevel</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;getLogLevel_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61b5b8458b261a37352524be6b82c359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b5b8458b261a37352524be6b82c359">&#9670;&nbsp;</a></span>getLogDBMaxDBSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getLogDBMaxDBSize</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;getMaxDBSize_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afddb2e62ef3c0800734f1bcd3984347e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afddb2e62ef3c0800734f1bcd3984347e">&#9670;&nbsp;</a></span>getLogDBMaxQuerySize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getLogDBMaxQuerySize</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;getMaxQuerySize_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a292342366cef2e3adf573ef864169ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292342366cef2e3adf573ef864169ebf">&#9670;&nbsp;</a></span>getLogDBWritePeriod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getLogDBWritePeriod</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;getWriteDBPeriod_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba889888734a8b272a51d444d70ad2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba889888734a8b272a51d444d70ad2fa">&#9670;&nbsp;</a></span>LINE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINE_SIZE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfa008be28e466e5b837e31c914f06bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa008be28e466e5b837e31c914f06bf">&#9670;&nbsp;</a></span>logALWAYS_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logALWAYS_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">(                          \</div><div class="line">{                                                        \</div><div class="line">    if ((x) == 0)                                        \</div><div class="line">        logERR( <span class="stringliteral">&quot;утверждение (&quot;</span> #x <span class="stringliteral">&quot;) == 0 провалено&quot;</span> ); \</div><div class="line">}                             )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a3d11d340c04cf0abd345270184232989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d11d340c04cf0abd345270184232989">&#9670;&nbsp;</a></span>logASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logASSERT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab00dd66449102a6d5f35f8c9687892f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab00dd66449102a6d5f35f8c9687892f7">&#9670;&nbsp;</a></span>logDBG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logDBG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;logDBG_c(  REG_COMMON, fmt, ##__VA_ARGS__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cc587e7c622e9e5d18ec948255c1b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc587e7c622e9e5d18ec948255c1b11">&#9670;&nbsp;</a></span>logERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logERR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;logERR_c(  REG_COMMON, fmt, ##__VA_ARGS__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a41d3013c55b3bf5ba7cdf9477fcc0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a41d3013c55b3bf5ba7cdf9477fcc0c">&#9670;&nbsp;</a></span>logERRNO_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logERRNO_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">(                                                  \</div><div class="line">{                                                                               \</div><div class="line">    if ((x) != 0)                                                               \</div><div class="line">        logERR( <span class="stringliteral">&quot;утверждение (&quot;</span> #x <span class="stringliteral">&quot;) == 0 провалено: %s&quot;</span>, strerror( errno ) ); \</div><div class="line">}                            )</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a23e7319bfd08aea0ed9823def61ab25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e7319bfd08aea0ed9823def61ab25b">&#9670;&nbsp;</a></span>logEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logEXT&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa039924c6c62246c6215e02e3354d1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa039924c6c62246c6215e02e3354d1a0">&#9670;&nbsp;</a></span>logH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76f60bb8ab2ee2d0aa0df1b0e26e060b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76f60bb8ab2ee2d0aa0df1b0e26e060b">&#9670;&nbsp;</a></span>logINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logINFO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;logINFO_c( REG_COMMON, fmt, ##__VA_ARGS__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac52306596450dfac3b0a4c81363ab36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52306596450dfac3b0a4c81363ab36f">&#9670;&nbsp;</a></span>logWARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define logWARN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;logWARN_c( REG_COMMON, fmt, ##__VA_ARGS__ )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a842ed03f27719bc87666bfd1f75415b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842ed03f27719bc87666bfd1f75415b8">&#9670;&nbsp;</a></span>MAX_LINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_LINE&#160;&#160;&#160;10000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32071375be08882e272cacdc3cd34934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32071375be08882e272cacdc3cd34934">&#9670;&nbsp;</a></span>MEM_ALARM_PIC_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEM_ALARM_PIC_LEN&#160;&#160;&#160;1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3307d40b4252d143477be557b027679c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3307d40b4252d143477be557b027679c">&#9670;&nbsp;</a></span>MEM_INFO_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEM_INFO_SIZE&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acae72e2ec7e12cfc94015032a61b0c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae72e2ec7e12cfc94015032a61b0c23">&#9670;&nbsp;</a></span>MEM_INFO_STRING_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEM_INFO_STRING_SIZE&#160;&#160;&#160;(<a class="el" href="log_8h.html#a3307d40b4252d143477be557b027679c">MEM_INFO_SIZE</a> + 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93729ebad0dbb9bcf713c09f19fce133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93729ebad0dbb9bcf713c09f19fce133">&#9670;&nbsp;</a></span>setLogDBcode_CP866</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBcode_CP866</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;setCode_CP866_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad77199178299781ed6c048b70c37693b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77199178299781ed6c048b70c37693b">&#9670;&nbsp;</a></span>setLogDBcode_UTF8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBcode_UTF8</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;setCode_UTF8_c()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70fb334401142bda991416b16134d22b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fb334401142bda991416b16134d22b">&#9670;&nbsp;</a></span>setLogDBLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBLevel</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lvl</td><td>)</td>
+          <td>&#160;&#160;&#160;setLogLevel_c( lvl )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a5369f553f2db52bcad4e95bcb0c03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5369f553f2db52bcad4e95bcb0c03e">&#9670;&nbsp;</a></span>setLogDBMaxDBSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBMaxDBSize</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size2</td><td>)</td>
+          <td>&#160;&#160;&#160;setMaxDBSize_c( size2 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcaf5782d9f272131ac387ba41e240bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcaf5782d9f272131ac387ba41e240bc">&#9670;&nbsp;</a></span>setLogDBMaxQuerySize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBMaxQuerySize</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size1</td><td>)</td>
+          <td>&#160;&#160;&#160;setMaxQuerySize_c( size1 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1df3ee8f3c76deb8b6db0bb830a0b228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df3ee8f3c76deb8b6db0bb830a0b228">&#9670;&nbsp;</a></span>setLogDBName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBName</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;setDBName_c( name )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a76dcf7b28702051ce3ff12f93cda0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a76dcf7b28702051ce3ff12f93cda0d">&#9670;&nbsp;</a></span>setLogDBWritePeriod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define setLogDBWritePeriod</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">per</td><td>)</td>
+          <td>&#160;&#160;&#160;setWriteDBPeriod_c( per )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ac51ed3863a291e7293bea4c111ac8f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51ed3863a291e7293bea4c111ac8f9c">&#9670;&nbsp;</a></span>closeLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void closeLog </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1aeba399686b3f29edf6b17cfa53a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1aeba399686b3f29edf6b17cfa53a7b">&#9670;&nbsp;</a></span>g_log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void g_log </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>pri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9236eacb75c22fb5a3a844fd009144e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9236eacb75c22fb5a3a844fd009144e">&#9670;&nbsp;</a></span>g_log_buf_printf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void g_log_buf_printf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>pri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2322ea0f264d6857d216f24b53d5d0cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2322ea0f264d6857d216f24b53d5d0cb">&#9670;&nbsp;</a></span>g_log_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="log_8h.html#a23e7319bfd08aea0ed9823def61ab25b">logEXT</a> void g_log_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4633c2e8127ec8b2668ff6c3ff38ac89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4633c2e8127ec8b2668ff6c3ff38ac89">&#9670;&nbsp;</a></span>getLogLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> getLogLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02ba13b54a5d46206d2dbdc30915ea21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ba13b54a5d46206d2dbdc30915ea21">&#9670;&nbsp;</a></span>setLogLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLogLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>llev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f9858d7282c491a9218ec27ce03ebaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9858d7282c491a9218ec27ce03ebaa">&#9670;&nbsp;</a></span>showMem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showMem </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="nlohmann::basic_json::basic_json" name="nlohmann::basic_json::basic_json">
+<area shape="rect" id="node1" title="construct a JSON container given an iterator range" alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="201,5,364,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="412,5,593,47"/>
+</map>

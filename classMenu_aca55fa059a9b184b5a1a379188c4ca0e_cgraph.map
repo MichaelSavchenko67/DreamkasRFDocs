@@ -1,0 +1,7 @@
+<map id="Menu::getWeightScale" name="Menu::getWeightScale">
+<area shape="rect" id="node1" title="getWeightScale &#45; чтение веса" alt="" coords="5,70,160,97"/>
+<area shape="rect" id="node2" href="$classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="208,45,351,71"/>
+<area shape="rect" id="node5" href="$classScales.html#a0bf37d26fe6fab594ac5206659c11d6f" title="getWeight &#45; получить вес (грамм)" alt="" coords="215,95,344,122"/>
+<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="399,5,549,47"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f" title=" " alt="" coords="399,71,549,112"/>
+</map>

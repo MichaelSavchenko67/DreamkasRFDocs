@@ -1,0 +1,7 @@
+<map id="Menu::timeSyncForce" name="Menu::timeSyncForce">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,156,83"/>
+<area shape="rect" id="node2" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="206,5,345,32"/>
+<area shape="rect" id="node4" href="$classTimeSync.html#a3d40a1c60279db3ffef8b61467e7467c" title="stopNtpd остановка сервиса синхронизации времени" alt="" coords="204,56,347,83"/>
+<area shape="rect" id="node5" href="$classTimeSync.html#a58dfa241d02264b9cf1c5794d2d72386" title="startNtpd старт сервиса синхронизации времени" alt="" coords="204,107,347,133"/>
+<area shape="rect" id="node3" href="$classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="395,5,543,32"/>
+</map>

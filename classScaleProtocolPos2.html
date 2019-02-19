@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fiscat: Класс ScaleProtocolPos2</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Fiscat
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classScaleProtocolPos2-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ScaleProtocolPos2</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="scaleProtocolPos2_8h_source.html">scaleProtocolPos2.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ScaleProtocolPos2:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolPos2__inherit__graph.png" border="0" usemap="#ScaleProtocolPos2_inherit__map" alt="Inheritance graph"/></div>
+<map name="ScaleProtocolPos2_inherit__map" id="ScaleProtocolPos2_inherit__map">
+<area shape="rect"  title=" " alt="" coords="83,776,245,971"/>
+<area shape="rect"  href="classScalePos2.html" title=" " alt="" coords="5,1019,157,1184"/>
+<area shape="rect"  href="classTestPos2.html" title=" " alt="" coords="181,1026,312,1177"/>
+<area shape="rect"  href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="69,5,259,728"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса ScaleProtocolPos2:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolPos2__coll__graph.png" border="0" usemap="#ScaleProtocolPos2_coll__map" alt="Collaboration graph"/></div>
+<map name="ScaleProtocolPos2_coll__map" id="ScaleProtocolPos2_coll__map">
+<area shape="rect"  title=" " alt="" coords="209,1049,371,1244"/>
+<area shape="rect"  href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="195,321,385,1000"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1Param.html" title="The Param struct &#45; Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,188,259"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct &#45; ÑÐ¾ÑÐ¼Ð°Ñ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="213,64,367,200"/>
+<area shape="rect"  href="structScaleProtocolInterface_1_1ScaleErr.html" title="The ScaleErr struct &#45; ÑÑÑÑÐºÑÑÑÐ° Ð¾ÑÐ¸Ð±ÐºÐ¸" alt="" coords="391,79,546,185"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:a8a0055ad573e43d41286185f77cd5922"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922">PRECISION</a> { <a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">PRECISION_1_10</a> = 2, 
+<a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">PRECISION_1_1</a>, 
+<a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">PRECISION_10_1</a>
+ }</td></tr>
+<tr class="memdesc:a8a0055ad573e43d41286185f77cd5922"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PRECISION enum - точность весов  <a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8a0055ad573e43d41286185f77cd5922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9106bea804cfdae613158283af9458"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458">DATA_PARAM</a> { <br />
+&#160;&#160;<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458ab8d85021f340ea0bb26c940141fa8e0c">DATA_CHANNEL_LEN</a> = 1, 
+<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458afbe719d733d38137d8443d620c449201">DATA_PSWRD_LEN</a> = 4, 
+<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458a8857fe089b5362c77381bc4cc93aab91">DATA_ERR_OFFSET</a> = 4, 
+<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458a73887b4506716acfb5bc196f46012ccd">DATA_WEIGHT_OFFSET</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1">DATA_POWER_OF_TEN_OFFSET</a> = 8, 
+<a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458a923c7478019d1181e62ed23074c3df3b">DATA_TARE_OFFSET</a> = 11
+<br />
+ }</td></tr>
+<tr class="memdesc:a4f9106bea804cfdae613158283af9458"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DATA_PARAM enum - параметры пакета  <a href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4f9106bea804cfdae613158283af9458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92351ebddbd1a73ffc9ac8cb46708cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cb">ERR</a> { <a class="el" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251">SUCCESS</a> = 0
+ }</td></tr>
+<tr class="memdesc:ad92351ebddbd1a73ffc9ac8cb46708cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ERR enum - коды ошибок  <a href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cb">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad92351ebddbd1a73ffc9ac8cb46708cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classScaleProtocolInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classScaleProtocolInterface')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td></tr>
+<tr class="memitem:a817ba8bf027929da0435a73516abfa8f inherit pub_types_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8f">ERRORS</a> { <br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa425787bece795e5b08605247d0a51f16">ERRORS::CMD_NOT_SET</a> = 0x101, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fac1801354f23b9eb6e886650bac2cdf37">ERRORS::DATA_NOT_SET</a> = 0x102, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8faf69bc8b3fe2f3dcc171c16dccfcfddd2">ERRORS::HEAD_NOT_SET</a> = 0x103, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fae8dbfb1d07f358470b3cee8db2eb4a55">ERRORS::PACK_NOT_CREATED</a> = 0x104, 
+<br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58">ERRORS::PORT_NOT_OPENED</a> = 0x105, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456">ERRORS::PACK_NOT_SENT</a> = 0x106, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449">ERRORS::ANSW_NOT_READ</a> = 0x107, 
+<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa4eacaf6d276e51778dec30f433621307">ERRORS::TARE_NOT_PARSED</a> = 0x108, 
+<br />
+&#160;&#160;<a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c">ERRORS::PORT_NOT_CLOSED</a> = 0x109
+<br />
+ }</td></tr>
+<tr class="separator:a817ba8bf027929da0435a73516abfa8f inherit pub_types_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aafb92a2416ee79d8d2282054eda803a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2</a> (const string &amp;port)</td></tr>
+<tr class="separator:aafb92a2416ee79d8d2282054eda803a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdaa644d126e2272f092a9a96907e38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#afbdaa644d126e2272f092a9a96907e38">~ScaleProtocolPos2</a> () override</td></tr>
+<tr class="separator:afbdaa644d126e2272f092a9a96907e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007beffa6384539defb42ab0c2366a25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25">cmdGetWeight</a> () override</td></tr>
+<tr class="memdesc:a007beffa6384539defb42ab0c2366a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetWeight - чтение веса  <a href="#a007beffa6384539defb42ab0c2366a25">Подробнее...</a><br /></td></tr>
+<tr class="separator:a007beffa6384539defb42ab0c2366a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7961fe556bc761e8fd01a44131afd4d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a7961fe556bc761e8fd01a44131afd4d8">cmdSetTare</a> (int32_t tareWeight) override</td></tr>
+<tr class="memdesc:a7961fe556bc761e8fd01a44131afd4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdSetTare - установка тары  <a href="#a7961fe556bc761e8fd01a44131afd4d8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7961fe556bc761e8fd01a44131afd4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf9d77f55dec68d01982bd885da7f1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#afdf9d77f55dec68d01982bd885da7f1e">cmdGetTare</a> (int32_t &amp;tareWeight) override</td></tr>
+<tr class="memdesc:afdf9d77f55dec68d01982bd885da7f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetTare - чтение тары  <a href="#afdf9d77f55dec68d01982bd885da7f1e">Подробнее...</a><br /></td></tr>
+<tr class="separator:afdf9d77f55dec68d01982bd885da7f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1504b2d55876bc6a66dc35b637d1f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a2f1504b2d55876bc6a66dc35b637d1f8">cmdSetZero</a> () override</td></tr>
+<tr class="memdesc:a2f1504b2d55876bc6a66dc35b637d1f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdSetZero - чтение нуля  <a href="#a2f1504b2d55876bc6a66dc35b637d1f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2f1504b2d55876bc6a66dc35b637d1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb30f72f82bf3fbed3f45e1f11a372"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372">cmdGetScaleParam</a> () override</td></tr>
+<tr class="memdesc:a46eb30f72f82bf3fbed3f45e1f11a372"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScaleParam - чтение параметров весов  <a href="#a46eb30f72f82bf3fbed3f45e1f11a372">Подробнее...</a><br /></td></tr>
+<tr class="separator:a46eb30f72f82bf3fbed3f45e1f11a372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b5da320256c8928d065f5d6dbca7f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#ae1b5da320256c8928d065f5d6dbca7f2">cmdGetCalCode</a> (int32_t &amp;calCode) override</td></tr>
+<tr class="memdesc:ae1b5da320256c8928d065f5d6dbca7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">cmdGetCalCode - чтение кода юстировки  <a href="#ae1b5da320256c8928d065f5d6dbca7f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae1b5da320256c8928d065f5d6dbca7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfab75521a87421e6f3c31a68782acd8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolPos2.html#abfab75521a87421e6f3c31a68782acd8">convertToGrams</a> (const int32_t &amp;<a class="el" href="classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e">weight</a>)</td></tr>
+<tr class="memdesc:abfab75521a87421e6f3c31a68782acd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">convertToGrams - перевод в граммы  <a href="#abfab75521a87421e6f3c31a68782acd8">Подробнее...</a><br /></td></tr>
+<tr class="separator:abfab75521a87421e6f3c31a68782acd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classScaleProtocolInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classScaleProtocolInterface')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td></tr>
+<tr class="memitem:a272a9095cf2b21f59963386506b04c21 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a272a9095cf2b21f59963386506b04c21">ScaleProtocolInterface</a> (const string &amp;portName_)</td></tr>
+<tr class="separator:a272a9095cf2b21f59963386506b04c21 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4285ea3b1343c2505aa76105f4de375 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad4285ea3b1343c2505aa76105f4de375">~ScaleProtocolInterface</a> ()</td></tr>
+<tr class="separator:ad4285ea3b1343c2505aa76105f4de375 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21c401c4904bdaa62399e8fdda6f369 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ac21c401c4904bdaa62399e8fdda6f369">getVersion</a> () const</td></tr>
+<tr class="memdesc:ac21c401c4904bdaa62399e8fdda6f369 inherit pub_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">getVersion - получить версию протокола  <a href="classScaleProtocolInterface.html#ac21c401c4904bdaa62399e8fdda6f369">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac21c401c4904bdaa62399e8fdda6f369 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c26d1053890e1a52a45283d1cdbfbd9 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a8c26d1053890e1a52a45283d1cdbfbd9">getScaleErr</a> () const</td></tr>
+<tr class="memdesc:a8c26d1053890e1a52a45283d1cdbfbd9 inherit pub_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">getScaleErr - получить ошибки  <a href="classScaleProtocolInterface.html#a8c26d1053890e1a52a45283d1cdbfbd9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c26d1053890e1a52a45283d1cdbfbd9 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7926d925c49a3c4f9cc9e6eeb17efc2 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad7926d925c49a3c4f9cc9e6eeb17efc2">getWeight</a> () const</td></tr>
+<tr class="memdesc:ad7926d925c49a3c4f9cc9e6eeb17efc2 inherit pub_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWeight - выгрузить вес  <a href="classScaleProtocolInterface.html#ad7926d925c49a3c4f9cc9e6eeb17efc2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7926d925c49a3c4f9cc9e6eeb17efc2 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45beceba44f715cf793b0dc6cb22587e inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a45beceba44f715cf793b0dc6cb22587e">getWeightTare</a> () const</td></tr>
+<tr class="memdesc:a45beceba44f715cf793b0dc6cb22587e inherit pub_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">getWeightTare - выгрузить вес тары (грамм)  <a href="classScaleProtocolInterface.html#a45beceba44f715cf793b0dc6cb22587e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a45beceba44f715cf793b0dc6cb22587e inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b695ef0dc60b3980a36facebc30625 inherit pub_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">virtual ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625">WriteInScale</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>, const void *, size_t)</td></tr>
+<tr class="separator:a78b695ef0dc60b3980a36facebc30625 inherit pub_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_attribs_classScaleProtocolInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classScaleProtocolInterface')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td></tr>
+<tr class="memitem:a19625d70c67e8d19f74f35986150549c inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structScaleProtocolInterface_1_1Param.html">ScaleProtocolInterface::Param</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a19625d70c67e8d19f74f35986150549c">scaleParam</a></td></tr>
+<tr class="separator:a19625d70c67e8d19f74f35986150549c inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd2b09cf039748d40c0f1e23b211f0f inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aebd2b09cf039748d40c0f1e23b211f0f">version</a></td></tr>
+<tr class="separator:aebd2b09cf039748d40c0f1e23b211f0f inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c8854d5be99ddf9589b2fb226c3a8b inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ab6c8854d5be99ddf9589b2fb226c3a8b">speed</a> = 0</td></tr>
+<tr class="separator:ab6c8854d5be99ddf9589b2fb226c3a8b inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fec1119f25b605ec99871c45ebc7fb inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a89fec1119f25b605ec99871c45ebc7fb">portName</a></td></tr>
+<tr class="separator:a89fec1119f25b605ec99871c45ebc7fb inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c466c5b4b045c1d6bbb8ab4fbeaa8e1 inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a4c466c5b4b045c1d6bbb8ab4fbeaa8e1">scaleFd</a> = -1</td></tr>
+<tr class="separator:a4c466c5b4b045c1d6bbb8ab4fbeaa8e1 inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ef31f5bead7c8b3436e66db713c965 inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a63ef31f5bead7c8b3436e66db713c965">scaleErr</a></td></tr>
+<tr class="separator:a63ef31f5bead7c8b3436e66db713c965 inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classScaleProtocolInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classScaleProtocolInterface')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td></tr>
+<tr class="memitem:a4be9cd9db98bd23b44cb348cb31100de inherit pro_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">setPacketFormat</a> ()</td></tr>
+<tr class="memdesc:a4be9cd9db98bd23b44cb348cb31100de inherit pro_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPacketFormat - установить формат пакета на основе packetFormat  <a href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4be9cd9db98bd23b44cb348cb31100de inherit pro_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa227c153d403fe63dfd95630121986e0 inherit pro_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">packetCreate</a> ()</td></tr>
+<tr class="memdesc:aa227c153d403fe63dfd95630121986e0 inherit pro_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">packetCreate - создание пакета данных  <a href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa227c153d403fe63dfd95630121986e0 inherit pro_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa188c5de7a9bd9ff8da40d623558cf59 inherit pro_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59">writeCmd</a> ()</td></tr>
+<tr class="memdesc:aa188c5de7a9bd9ff8da40d623558cf59 inherit pro_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">writeCmd - отправить команду на весы  <a href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa188c5de7a9bd9ff8da40d623558cf59 inherit pro_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadabdb0713427195224e4ad7e62ba58 inherit pro_methods_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">readAnswer</a> ()</td></tr>
+<tr class="memdesc:aeadabdb0713427195224e4ad7e62ba58 inherit pro_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">readAnswer - прочитать ответ от весов  <a href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeadabdb0713427195224e4ad7e62ba58 inherit pro_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e10a3b16ad32c41b46aa2b4778e9e03 inherit pro_methods_classScaleProtocolInterface"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1e10a3b16ad32c41b46aa2b4778e9e03 inherit pro_methods_classScaleProtocolInterface"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03">parseIntegerValue</a> (T &amp;value, uint8_t offset, uint8_t size=0)</td></tr>
+<tr class="memdesc:a1e10a3b16ad32c41b46aa2b4778e9e03 inherit pro_methods_classScaleProtocolInterface"><td class="mdescLeft">&#160;</td><td class="mdescRight">parseIntegerValue - парс целочисленного значения  <a href="classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e10a3b16ad32c41b46aa2b4778e9e03 inherit pro_methods_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classScaleProtocolInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classScaleProtocolInterface')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td></tr>
+<tr class="memitem:aa32d847d1e9837fe1f1441e9e5f280ce inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#aa32d847d1e9837fe1f1441e9e5f280ce">dataSize</a> = 0</td></tr>
+<tr class="separator:aa32d847d1e9837fe1f1441e9e5f280ce inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66ff65c065ea9afdbec731a909843a7 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad66ff65c065ea9afdbec731a909843a7">packetSize</a> = 0</td></tr>
+<tr class="separator:ad66ff65c065ea9afdbec731a909843a7 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96fac136ed0bc8cd05db7974e33c3001 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a> = 0</td></tr>
+<tr class="separator:a96fac136ed0bc8cd05db7974e33c3001 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb8759cd430de1d5652d0e3aae8cb1e inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e">weight</a> = 0</td></tr>
+<tr class="separator:abbb8759cd430de1d5652d0e3aae8cb1e inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f01d527a22c98950e9399908fad7eb1 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a6f01d527a22c98950e9399908fad7eb1">weightTare</a> = 0</td></tr>
+<tr class="separator:a6f01d527a22c98950e9399908fad7eb1 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce2af7c7b982798a16d64b8759e4edf inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html">PacketFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#afce2af7c7b982798a16d64b8759e4edf">packetFormat</a></td></tr>
+<tr class="separator:afce2af7c7b982798a16d64b8759e4edf inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8277e9d9634cf8a9dfa62892789a48 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">header</a></td></tr>
+<tr class="separator:a6c8277e9d9634cf8a9dfa62892789a48 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad131c3472c0b49f723894061cf3b8f85 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a></td></tr>
+<tr class="separator:ad131c3472c0b49f723894061cf3b8f85 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0861970eb95cd63a71f1ef58d1708439 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a0861970eb95cd63a71f1ef58d1708439">dateLen</a></td></tr>
+<tr class="separator:a0861970eb95cd63a71f1ef58d1708439 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29cb47c40a6750ff4cc152a10b79589 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#af29cb47c40a6750ff4cc152a10b79589">data</a></td></tr>
+<tr class="separator:af29cb47c40a6750ff4cc152a10b79589 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18a0885e7ec7d26592d390c5c61a89e inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">crc</a></td></tr>
+<tr class="separator:ad18a0885e7ec7d26592d390c5c61a89e inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38cb01861f8d2a8f4c4a280f3bbf8b6 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#ae38cb01861f8d2a8f4c4a280f3bbf8b6">packet</a></td></tr>
+<tr class="separator:ae38cb01861f8d2a8f4c4a280f3bbf8b6 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd257f97ebffe52880a3c6c48032403 inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">answer</a></td></tr>
+<tr class="separator:adcd257f97ebffe52880a3c6c48032403 inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1dbfa3696c2ca3ea088cc5757ae23f inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a0f1dbfa3696c2ca3ea088cc5757ae23f">MAX_PACKET_ANSWER</a> = 255</td></tr>
+<tr class="separator:a0f1dbfa3696c2ca3ea088cc5757ae23f inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a4f9106bea804cfdae613158283af9458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9106bea804cfdae613158283af9458">&#9670;&nbsp;</a></span>DATA_PARAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458">ScaleProtocolPos2::DATA_PARAM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The DATA_PARAM enum - параметры пакета </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458ab8d85021f340ea0bb26c940141fa8e0c"></a>DATA_CHANNEL_LEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458afbe719d733d38137d8443d620c449201"></a>DATA_PSWRD_LEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458a8857fe089b5362c77381bc4cc93aab91"></a>DATA_ERR_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458a73887b4506716acfb5bc196f46012ccd"></a>DATA_WEIGHT_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1"></a>DATA_POWER_OF_TEN_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f9106bea804cfdae613158283af9458a923c7478019d1181e62ed23074c3df3b"></a>DATA_TARE_OFFSET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad92351ebddbd1a73ffc9ac8cb46708cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92351ebddbd1a73ffc9ac8cb46708cb">&#9670;&nbsp;</a></span>ERR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cb">ScaleProtocolPos2::ERR</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The ERR enum - коды ошибок </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251"></a>SUCCESS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8a0055ad573e43d41286185f77cd5922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0055ad573e43d41286185f77cd5922">&#9670;&nbsp;</a></span>PRECISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922">ScaleProtocolPos2::PRECISION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The PRECISION enum - точность весов </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75"></a>PRECISION_1_10&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca"></a>PRECISION_1_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb"></a>PRECISION_10_1&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aafb92a2416ee79d8d2282054eda803a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb92a2416ee79d8d2282054eda803a2">&#9670;&nbsp;</a></span>ScaleProtocolPos2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScaleProtocolPos2::ScaleProtocolPos2 </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolPos2_aafb92a2416ee79d8d2282054eda803a2_cgraph.png" border="0" usemap="#classScaleProtocolPos2_aafb92a2416ee79d8d2282054eda803a2_cgraph" alt=""/></div>
+<map name="classScaleProtocolPos2_aafb92a2416ee79d8d2282054eda803a2_cgraph" id="classScaleProtocolPos2_aafb92a2416ee79d8d2282054eda803a2_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,147,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de" title="setPacketFormat &#45; ÑÑÑÐ°Ð½Ð¾Ð²Ð¸ÑÑ ÑÐ¾ÑÐ¼Ð°Ñ Ð¿Ð°ÐºÐµÑÐ° Ð½Ð° Ð¾ÑÐ½Ð¾Ð²Ðµ packetFormat" alt="" coords="195,5,349,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbdaa644d126e2272f092a9a96907e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbdaa644d126e2272f092a9a96907e38">&#9670;&nbsp;</a></span>~ScaleProtocolPos2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScaleProtocolPos2::~ScaleProtocolPos2 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae1b5da320256c8928d065f5d6dbca7f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b5da320256c8928d065f5d6dbca7f2">&#9670;&nbsp;</a></span>cmdGetCalCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdGetCalCode </td>
+          <td>(</td>
+          <td class="paramtype">int32_t &amp;&#160;</td>
+          <td class="paramname"><em>calCode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetCalCode - чтение кода юстировки </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calCode</td><td>- код юстировки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#a626191302206211d1833f3e408d38623">ScaleProtocolInterface</a>.</p>
+
+</div>
+</div>
+<a id="a46eb30f72f82bf3fbed3f45e1f11a372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46eb30f72f82bf3fbed3f45e1f11a372">&#9670;&nbsp;</a></span>cmdGetScaleParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdGetScaleParam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getScaleParam - чтение параметров весов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">param</td><td>- структура параметров </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#af98ba7efc5b2b8a0cf445c6ffd4b81fa">ScaleProtocolInterface</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolPos2_a46eb30f72f82bf3fbed3f45e1f11a372_cgraph.png" border="0" usemap="#classScaleProtocolPos2_a46eb30f72f82bf3fbed3f45e1f11a372_cgraph" alt=""/></div>
+<map name="classScaleProtocolPos2_a46eb30f72f82bf3fbed3f45e1f11a372_cgraph" id="classScaleProtocolPos2_a46eb30f72f82bf3fbed3f45e1f11a372_cgraph">
+<area shape="rect"  title="getScaleParam &#45; ÑÑÐµÐ½Ð¸Ðµ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ¾Ð² Ð²ÐµÑÐ¾Ð²" alt="" coords="5,71,147,112"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0" title="packetCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð°ÐºÐµÑÐ° Ð´Ð°Ð½Ð½ÑÑ" alt="" coords="195,5,349,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59" title="writeCmd &#45; Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ Ð½Ð° Ð²ÐµÑÑ" alt="" coords="195,71,349,112"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58" title="readAnswer &#45; Ð¿ÑÐ¾ÑÐ¸ÑÐ°ÑÑ Ð¾ÑÐ²ÐµÑ Ð¾Ñ Ð²ÐµÑÐ¾Ð²" alt="" coords="195,136,349,177"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ CRC Ð´Ð»Ñ Ð¿Ð¾Ð´Ð³Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="397,5,552,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="397,71,552,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdf9d77f55dec68d01982bd885da7f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf9d77f55dec68d01982bd885da7f1e">&#9670;&nbsp;</a></span>cmdGetTare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdGetTare </td>
+          <td>(</td>
+          <td class="paramtype">int32_t &amp;&#160;</td>
+          <td class="paramname"><em>tareWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetTare - чтение тары </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tareWeight</td><td>- вес тары (грамм) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#aa71f71cca19cbb03f7f4052f27ba2e2b">ScaleProtocolInterface</a>.</p>
+
+</div>
+</div>
+<a id="a007beffa6384539defb42ab0c2366a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007beffa6384539defb42ab0c2366a25">&#9670;&nbsp;</a></span>cmdGetWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdGetWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdGetWeight - чтение веса </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#ad106f53286e120e2aecb7628fcb3acae">ScaleProtocolInterface</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classScaleProtocolPos2_a007beffa6384539defb42ab0c2366a25_cgraph.png" border="0" usemap="#classScaleProtocolPos2_a007beffa6384539defb42ab0c2366a25_cgraph" alt=""/></div>
+<map name="classScaleProtocolPos2_a007beffa6384539defb42ab0c2366a25_cgraph" id="classScaleProtocolPos2_a007beffa6384539defb42ab0c2366a25_cgraph">
+<area shape="rect"  title="cmdGetWeight &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="5,71,147,112"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0" title="packetCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð°ÐºÐµÑÐ° Ð´Ð°Ð½Ð½ÑÑ" alt="" coords="195,5,349,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59" title="writeCmd &#45; Ð¾ÑÐ¿ÑÐ°Ð²Ð¸ÑÑ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ Ð½Ð° Ð²ÐµÑÑ" alt="" coords="195,71,349,112"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58" title="readAnswer &#45; Ð¿ÑÐ¾ÑÐ¸ÑÐ°ÑÑ Ð¾ÑÐ²ÐµÑ Ð¾Ñ Ð²ÐµÑÐ¾Ð²" alt="" coords="195,136,349,177"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ðµ CRC Ð´Ð»Ñ Ð¿Ð¾Ð´Ð³Ð¾ÑÐ¾Ð²Ð»ÐµÐ½Ð½Ð¾Ð³Ð¾ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="397,5,552,47"/>
+<area shape="rect"  href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="397,71,552,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7961fe556bc761e8fd01a44131afd4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7961fe556bc761e8fd01a44131afd4d8">&#9670;&nbsp;</a></span>cmdSetTare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdSetTare </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>tareWeight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdSetTare - установка тары </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#a9f700846feb8420a757135d41d546719">ScaleProtocolInterface</a>.</p>
+
+</div>
+</div>
+<a id="a2f1504b2d55876bc6a66dc35b637d1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1504b2d55876bc6a66dc35b637d1f8">&#9670;&nbsp;</a></span>cmdSetZero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ScaleProtocolPos2::cmdSetZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cmdSetZero - чтение нуля </p>
+<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
+
+<p>Замещает <a class="el" href="classScaleProtocolInterface.html#a3f488d2e2a7b7d1febd0d52d0a2841c8">ScaleProtocolInterface</a>.</p>
+
+</div>
+</div>
+<a id="abfab75521a87421e6f3c31a68782acd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfab75521a87421e6f3c31a68782acd8">&#9670;&nbsp;</a></span>convertToGrams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t ScaleProtocolPos2::convertToGrams </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>weight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convertToGrams - перевод в граммы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weight</td><td>- вес с весов </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>вес в граммах </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>src/appl/include/<a class="el" href="scaleProtocolPos2_8h_source.html">scaleProtocolPos2.h</a></li>
+<li>src/appl/<a class="el" href="scaleProtocolPos2_8cpp.html">scaleProtocolPos2.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
