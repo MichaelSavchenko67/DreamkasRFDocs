@@ -9,7 +9,7 @@ var searchData=
   ['_7ecfg_5fget_5ftask',['~CFG_GET_TASK',['../structFISGO__TEST__API_1_1CFG__GET__TASK.html#a11a7cc4164b3fcfeffc9082ac4d28072',1,'FISGO_TEST_API::CFG_GET_TASK']]],
   ['_7econfig',['~Config',['../structConfig.html#a543dce59b66475c5108088ee4ce1cdfc',1,'Config']]],
   ['_7econvert',['~Convert',['../classConvert.html#aa42e3d5e50108e3447e9b5fccc2c8d0e',1,'Convert']]],
-  ['_7ecounters',['~Counters',['../classCounters.html#ae3ca8c11cf67325d8ba0e514b4d69ab6',1,'Counters::~Counters()'],['../structJSON_1_1COUNTERS.html#a2d1d8731e7e93e512645904b0e6f57ab',1,'JSON::COUNTERS::~COUNTERS()']]],
+  ['_7ecounters',['~COUNTERS',['../structJSON_1_1COUNTERS.html#a2d1d8731e7e93e512645904b0e6f57ab',1,'JSON::COUNTERS::~COUNTERS()'],['../classCounters.html#ae3ca8c11cf67325d8ba0e514b4d69ab6',1,'Counters::~Counters()']]],
   ['_7edynamic_5fmask',['~DYNAMIC_MASK',['../structDYNAMIC__MASK.html#aa9969710f6b6498373bd3655fc42c6a2',1,'DYNAMIC_MASK']]],
   ['_7eencodeconvertor',['~EncodeConvertor',['../classEncodeConvertor.html#a2d76636221b786cc11066f96628e0580',1,'EncodeConvertor']]],
   ['_7efilesfg',['~FilesFG',['../classFilesFG.html#a122b848b473624acadeb164b7caadd54',1,'FilesFG']]],
@@ -75,6 +75,7 @@ var searchData=
   ['_7etestlicense',['~TestLicense',['../classTestLicense.html#aa59cc565cc2984e6064fab7eb23f886a',1,'TestLicense']]],
   ['_7etestprinter',['~TestPrinter',['../classTestPrinter.html#a808c8828eac8b6d6887c4c4f00b02e1f',1,'TestPrinter']]],
   ['_7etestscaleprotocolpos2',['~TestScaleProtocolPos2',['../classTestScaleProtocolPos2.html#a7e3740d357f5eff37822e188479ed4b2',1,'TestScaleProtocolPos2']]],
+  ['_7etestsqlwrapper',['~TestSqlWrapper',['../classTestSqlWrapper.html#a02b722aa152f7bdfb7c984a359d29ddb',1,'TestSqlWrapper']]],
   ['_7etesttimesync',['~TestTimeSync',['../classTestTimeSync.html#acfc7334506f135dba408c6b8724e86e7',1,'TestTimeSync']]],
   ['_7etimesync',['~TimeSync',['../classTimeSync.html#ab8dc55cad76024232f962dbc7f2b541e',1,'TimeSync']]],
   ['_7eusers',['~Users',['../classUsers.html#a33ff9aadcaef989bf3c8570358f791f6',1,'Users']]]

@@ -4,7 +4,7 @@ var searchData=
   ['param',['Param',['../structScaleProtocolInterface_1_1Param.html',1,'ScaleProtocolInterface']]],
   ['parse_5ferror',['parse_error',['../classnlohmann_1_1detail_1_1parse__error.html',1,'nlohmann::detail']]],
   ['parser',['parser',['../classnlohmann_1_1detail_1_1parser.html',1,'nlohmann::detail']]],
-  ['pay_5ftype',['PAY_TYPE',['../structBIOS_1_1RUS_1_1PAY__TYPE.html',1,'BIOS::RUS::PAY_TYPE'],['../structBIOS_1_1BEL_1_1PAY__TYPE.html',1,'BIOS::BEL::PAY_TYPE']]],
+  ['pay_5ftype',['PAY_TYPE',['../structBIOS_1_1BEL_1_1PAY__TYPE.html',1,'BIOS::BEL::PAY_TYPE'],['../structBIOS_1_1RUS_1_1PAY__TYPE.html',1,'BIOS::RUS::PAY_TYPE']]],
   ['payment',['PAYMENT',['../structBIOS_1_1PAYMENT.html',1,'BIOS']]],
   ['payments',['PAYMENTS',['../structJSON_1_1PAYMENTS.html',1,'JSON']]],
   ['poll_5fparse_5ferrors',['POLL_PARSE_ERRORS',['../structJSON_1_1POLL__PARSE__ERRORS.html',1,'JSON']]],

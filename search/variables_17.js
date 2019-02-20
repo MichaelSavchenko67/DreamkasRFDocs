@@ -2,7 +2,7 @@ var searchData=
 [
   ['w',['w',['../structnlohmann_1_1detail_1_1dtoa__impl_1_1boundaries.html#ad1668c60aeade5f2557fafed8b8aee1a',1,'nlohmann::detail::dtoa_impl::boundaries']]],
   ['warning',['WARNING',['../classJSON.html#a2de5bbd5a75b18302b3146d390e1aaa4',1,'JSON::WARNING()'],['../classReceipt__new.html#a66a347e69bfc648f0b928151bc54a1f5',1,'Receipt_new::WARNING()']]],
-  ['weight',['weight',['../classPositions_1_1Position.html#a2939c7b04e9cdaa08f11b858a786bda7',1,'Positions::Position::weight()'],['../classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e',1,'ScaleProtocolInterface::weight()'],['../classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8',1,'GoodsData::WEIGHT()'],['../classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba',1,'Position_new::WEIGHT()']]],
+  ['weight',['WEIGHT',['../classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8',1,'GoodsData::WEIGHT()'],['../classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba',1,'Position_new::WEIGHT()'],['../classPositions_1_1Position.html#a2939c7b04e9cdaa08f11b858a786bda7',1,'Positions::Position::weight()'],['../classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e',1,'ScaleProtocolInterface::weight()']]],
   ['weighttare',['weightTare',['../classScaleProtocolInterface.html#a6f01d527a22c98950e9399908fad7eb1',1,'ScaleProtocolInterface']]],
   ['whatget',['whatGet',['../structFISGO__TEST__API_1_1MENU.html#aed3810e741ad3b85ca8808b0d0c18e6c',1,'FISGO_TEST_API::MENU']]],
   ['wifi',['WIFI',['../classNet.html#a28463a8608d2f532d17947acde6f8663',1,'Net']]],

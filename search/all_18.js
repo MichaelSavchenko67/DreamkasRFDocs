@@ -10,7 +10,7 @@ var searchData=
   ['warning',['WARNING',['../classJSON.html#a2de5bbd5a75b18302b3146d390e1aaa4',1,'JSON::WARNING()'],['../classReceipt__new.html#a66a347e69bfc648f0b928151bc54a1f5',1,'Receipt_new::WARNING()']]],
   ['warning_5fdraw',['warning_draw',['../classMenu.html#a5833794c50c4518f96ecc5f6da4a6bcf',1,'Menu']]],
   ['wearattr',['WearAttr',['../structWearAttr.html',1,'']]],
-  ['weight',['weight',['../classPositions_1_1Position.html#a2939c7b04e9cdaa08f11b858a786bda7',1,'Positions::Position::weight()'],['../classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e',1,'ScaleProtocolInterface::weight()'],['../classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8',1,'GoodsData::WEIGHT()'],['../classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba',1,'Position_new::WEIGHT()']]],
+  ['weight',['WEIGHT',['../classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8',1,'GoodsData::WEIGHT()'],['../classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba',1,'Position_new::WEIGHT()'],['../classPositions_1_1Position.html#a2939c7b04e9cdaa08f11b858a786bda7',1,'Positions::Position::weight()'],['../classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e',1,'ScaleProtocolInterface::weight()']]],
   ['weight_5fget_5fresult',['WEIGHT_GET_RESULT',['../classMenu.html#ac71319d5ac90e04b6dcd153312b9d3f8',1,'Menu']]],
   ['weight_5fprice',['weight_price',['../classMenu.html#aadd64806e4d5a5d60ead445ff90888fc',1,'Menu']]],
   ['weight_5fstr_5fto_5fuint64',['weight_str_to_uint64',['../classConvert.html#a00ab449d5afd03a41a7cc5daa2df1341',1,'Convert']]],

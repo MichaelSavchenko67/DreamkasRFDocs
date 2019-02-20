@@ -20,9 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="header-kassa-f.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Fiscat
    </div>
+   <div id="projectbrief">FisGo software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -80,9 +82,9 @@ $(function() {
 <div class="dyncontent">
 <div class="center"><img src="classBIOS__inherit__graph.png" border="0" usemap="#BIOS_inherit__map" alt="Inheritance graph"/></div>
 <map name="BIOS_inherit__map" id="BIOS_inherit__map">
-<area shape="rect"  title=" " alt="" coords="19,5,322,1520"/>
-<area shape="rect"  href="classMenuTest_1_1MockBIOS.html" title=" " alt="" coords="5,1568,160,1748"/>
-<area shape="rect"  href="classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="185,1619,333,1697"/>
+<area shape="rect"  title=" " alt="" coords="19,5,322,1535"/>
+<area shape="rect"  href="classMenuTest_1_1MockBIOS.html" title=" " alt="" coords="5,1583,160,1763"/>
+<area shape="rect"  href="classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="185,1634,333,1711"/>
 </map>
 </div>
 <div class="dynheader">
@@ -90,7 +92,7 @@ $(function() {
 <div class="dyncontent">
 <div class="center"><img src="classBIOS__coll__graph.png" border="0" usemap="#BIOS_coll__map" alt="Collaboration graph"/></div>
 <map name="BIOS_coll__map" id="BIOS_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,308,1520"/>
+<area shape="rect"  title=" " alt="" coords="5,5,308,1535"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -241,6 +243,9 @@ $(function() {
 <tr class="separator:a3e7902defe1623b8fcbaf45031d8241f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce3cab079208f86115b2b1c213472b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBIOS.html#a7ce3cab079208f86115b2b1c213472b7">getBatteryVoltage</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> &amp;voltage)</td></tr>
 <tr class="separator:a7ce3cab079208f86115b2b1c213472b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f235ba619aa7518df6ae7f9b84377b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBIOS.html#a09f235ba619aa7518df6ae7f9b84377b">restartKKT</a> ()</td></tr>
+<tr class="memdesc:a09f235ba619aa7518df6ae7f9b84377b"><td class="mdescLeft">&#160;</td><td class="mdescRight">restartKKT - переинициализация БИОС без перезапуска  <a href="#a09f235ba619aa7518df6ae7f9b84377b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a09f235ba619aa7518df6ae7f9b84377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0148e66fa1c53456612884c441f4972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBIOS.html#ac0148e66fa1c53456612884c441f4972">getDocFromFN</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fdNumber, char *hexData, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> lenBuf)</td></tr>
 <tr class="separator:ac0148e66fa1c53456612884c441f4972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345080151381f8ff0c8da8d149da837f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBIOS.html#a345080151381f8ff0c8da8d149da837f">setConnected</a> (bool isConn)</td></tr>
@@ -2218,6 +2223,35 @@ template&lt;typename T &gt; </div>
 <area shape="rect"  href="classBIOS.html#a0d3a77b1f66d181aa411ecfdc74b26e3" title=" " alt="" coords="195,81,372,108"/>
 <area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="429,5,577,32"/>
 <area shape="rect"  href="classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="425,56,580,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a09f235ba619aa7518df6ae7f9b84377b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f235ba619aa7518df6ae7f9b84377b">&#9670;&nbsp;</a></span>restartKKT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BIOS::restartKKT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>restartKKT - переинициализация БИОС без перезапуска </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true - в случае успеха, иначе false </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBIOS_a09f235ba619aa7518df6ae7f9b84377b_cgraph.png" border="0" usemap="#classBIOS_a09f235ba619aa7518df6ae7f9b84377b_cgraph" alt=""/></div>
+<map name="classBIOS_a09f235ba619aa7518df6ae7f9b84377b_cgraph" id="classBIOS_a09f235ba619aa7518df6ae7f9b84377b_cgraph">
+<area shape="rect"  title="restartKKT &#45; Ð¿ÐµÑÐµÐ¸Ð½Ð¸ÑÐ¸Ð°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ ÐÐÐÐ¡ Ð±ÐµÐ· Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ°" alt="" coords="5,5,131,32"/>
+<area shape="rect"  href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="179,5,327,32"/>
 </map>
 </div>
 

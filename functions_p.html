@@ -20,9 +20,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="header-kassa-f.jpg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Fiscat
    </div>
+   <div id="projectbrief">FisGo software documentation</div>
   </td>
  </tr>
  </tbody>
@@ -159,6 +161,9 @@ $(function() {
 <li>parseKktRegistr()
 : <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON</a>
 </li>
+<li>parseMask()
+: <a class="el" href="classsqlWrapper.html#a249e07be884932daf95a60af7d64aee0">sqlWrapper</a>
+</li>
 <li>parser()
 : <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a1a2bd258b7e99f86b7e6a3c41373ba55">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
@@ -167,17 +172,26 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a4f636086fa8e7cf26c35c8afd50903ce">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
+<li>parseSelectedValue()
+: <a class="el" href="classsqlWrapper.html#a0bbf40461e4d9b11fe7751a65cb4c6e4">sqlWrapper</a>
+</li>
 <li>parseTags()
 : <a class="el" href="classJSON.html#a50e4d0d2e07f3752de0c520965cb75a8">JSON</a>
 </li>
 <li>parseTasks()
 : <a class="el" href="classReceiptsDb.html#a74d97b444d94a55d8fc2a793e7b693de">ReceiptsDb</a>
 </li>
+<li>parseUpdateValue()
+: <a class="el" href="classsqlWrapper.html#a98ef853e1c91e96ca3888f8bf127a754">sqlWrapper</a>
+</li>
 <li>parseUpsertDiscount()
 : <a class="el" href="classJSON.html#a18d87845553bd111b9234f987ce4700f">JSON</a>
 </li>
 <li>parseUpsertProduct()
 : <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON</a>
+</li>
+<li>parseUsersAnswer()
+: <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper</a>
 </li>
 <li>part_pay()
 : <a class="el" href="classMenu.html#a8071c993ac3a17477251d0b9c02110f5">Menu</a>
@@ -578,7 +592,7 @@ $(function() {
 : <a class="el" href="classMenu.html#a903602f6020e4fc2589fa49b14ebc84a">Menu</a>
 </li>
 <li>Position_new()
-: <a class="el" href="classPosition__new.html#a02d14325625ad89b6854c8411090e049">Position_new</a>
+: <a class="el" href="classPosition__new.html#ac2e51c575e456b0c4625be1be6f1600e">Position_new</a>
 </li>
 <li>positions
 : <a class="el" href="structBIOS_1_1BEL_1_1RECEIPT.html#aa7ff877c6bdbe5dd7a11c554b230ab83">BIOS::BEL::RECEIPT</a>
@@ -587,7 +601,7 @@ $(function() {
 </li>
 <li>Positions
 : <a class="el" href="classPositions_1_1Position.html#ad19e3a61503f81738f4b7f4cb5e8a435">Positions::Position</a>
-, <a class="el" href="classPositions.html#a5efd80e75f6ac27a86df19b74d325720">Positions</a>
+, <a class="el" href="classPositions.html#abe551b3b660d6d272feb42ba3cc54cae">Positions</a>
 </li>
 <li>POSITIONS
 : <a class="el" href="classReceipt__new.html#a406d76150dcac7ab824134e881cc6c76">Receipt_new</a>
@@ -638,13 +652,13 @@ $(function() {
 <li>precision
 : <a class="el" href="classGoodsStructure__new.html#a91462a1a1b8c51194902ddfefaeebe19">GoodsStructure_new</a>
 , <a class="el" href="structJSON_1_1JSON__META.html#a7b5c835a656e07b7570012b11de2c777">JSON::JSON_META</a>
-, <a class="el" href="classPosition__new.html#ad234375742452b441ba2aabcfef80bbf">Position_new</a>
 </li>
 <li>PRECISION
 : <a class="el" href="classPosition__new.html#a03f3a73cdf499b6738cb70ff8584c843">Position_new</a>
 </li>
 <li>precision
-: <a class="el" href="structScaleProtocolInterface_1_1Param.html#a2bc2613befc68cdcb797e87b3cfe0980">ScaleProtocolInterface::Param</a>
+: <a class="el" href="classPosition__new.html#ad234375742452b441ba2aabcfef80bbf">Position_new</a>
+, <a class="el" href="structScaleProtocolInterface_1_1Param.html#a2bc2613befc68cdcb797e87b3cfe0980">ScaleProtocolInterface::Param</a>
 </li>
 <li>PRECISION
 : <a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922">ScaleProtocolPos2</a>
@@ -783,7 +797,7 @@ $(function() {
 : <a class="el" href="structPrinter_1_1technical__report.html#a4af3ed83626d8cc1fa95914785d7e1c0">Printer::technical_report</a>
 </li>
 <li>printer_buf_load()
-: <a class="el" href="classPrinter.html#a2d0120ac9c11717a7de0a20e5eb9266f">Printer</a>
+: <a class="el" href="classPrinter.html#a627bb40d5bb3d78a447480010268b663">Printer</a>
 </li>
 <li>printer_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a018bc07d3383712df1d38364794ba2fd">Printer::technical_report</a>
@@ -956,7 +970,7 @@ $(function() {
 : <a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72a9e0be1f3005eb253b7bec3de6a98c856">Receipt_new</a>
 </li>
 <li>push_back()
-: <a class="el" href="classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#ae11a3a51782c058fff2f6550cdfb9b3c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>pushTags()
 : <a class="el" href="classJSON.html#a2a0e43b55a3febb7e377c956e0659605">JSON</a>

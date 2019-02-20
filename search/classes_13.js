@@ -21,6 +21,7 @@ var searchData=
   ['testreceiptsdb',['TestReceiptsDb',['../classTestReceiptsDb.html',1,'']]],
   ['testscaleprotocolpos2',['TestScaleProtocolPos2',['../classTestScaleProtocolPos2.html',1,'']]],
   ['testscales',['TestScales',['../classTestScales.html',1,'']]],
+  ['testsqlwrapper',['TestSqlWrapper',['../classTestSqlWrapper.html',1,'']]],
   ['testtimesync',['TestTimeSync',['../classTestTimeSync.html',1,'']]],
   ['timesync',['TimeSync',['../classTimeSync.html',1,'']]],
   ['timezone',['TimeZone',['../structTimeZone.html',1,'']]],

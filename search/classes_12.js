@@ -14,6 +14,7 @@ var searchData=
   ['slipsdb',['SlipsDB',['../classSlipsDB.html',1,'']]],
   ['spec_5fagent',['SPEC_AGENT',['../structSPEC__AGENT.html',1,'']]],
   ['sqlwrapper',['sqlWrapper',['../classsqlWrapper.html',1,'']]],
+  ['sqlwrapperinterface',['SqlWrapperInterface',['../classSqlWrapperInterface.html',1,'']]],
   ['st_5fpos2',['st_pos2',['../structst__pos2.html',1,'']]],
   ['static_5fconst',['static_const',['../structnlohmann_1_1detail_1_1static__const.html',1,'nlohmann::detail']]],
   ['statusbios',['statusBIOS',['../structstatusBIOS.html',1,'']]],
