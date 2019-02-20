@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classMenu.html">Menu</a></li><li class="navelem"><a class="el" href="structMenu_1_1CorrectionData.html">CorrectionData</a></li>  </ul>
@@ -85,10 +108,7 @@ $(function() {
 <tr class="memitem:a4c91a577c2b4605adeb806e0fe75a222"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMenu_1_1CorrectionData.html#a4c91a577c2b4605adeb806e0fe75a222">step_num</a></td></tr>
 <tr class="separator:a4c91a577c2b4605adeb806e0fe75a222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00409">409</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a36d590e4dbf1de4d6dfc21fa49c30f53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36d590e4dbf1de4d6dfc21fa49c30f53">&#9670;&nbsp;</a></span>cur_pos</h2>
 
@@ -100,8 +120,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00416">416</a></p>
 
 </div>
 </div>
@@ -117,9 +135,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00411">411</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l16812">Menu::enterDiscountMargin()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l16479">Menu::name_goods_get()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#afcad02fe7564b2c36b99ff75bed20077">Menu::enterDiscountMargin()</a>, <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#ad956dae1b1ea6f6b5ea723df005890d8">Menu::name_goods_get()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a> и <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -135,9 +151,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00418">418</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="menu_8cpp_source.html#l13158">Menu::agent_choose()</a>, <a class="el" href="menu_8cpp_source.html#l13334">Menu::agent_choose_for_good()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a>, <a class="el" href="menu_8cpp_source.html#l13687">Menu::cor_doc_type()</a>, <a class="el" href="menu_8cpp_source.html#l13624">Menu::cor_type()</a>, <a class="el" href="menu_8cpp_source.html#l28428">Menu::dep_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l16812">Menu::enterDiscountMargin()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l21406">Menu::get_cash()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l26652">Menu::get_frac_number()</a>, <a class="el" href="menu_8cpp_source.html#l22376">Menu::goods_display_revert()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l16479">Menu::name_goods_get()</a>, <a class="el" href="menu_8cpp_source.html#l28472">Menu::nds_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l13457">Menu::tax_sys_cor_rec()</a>, <a class="el" href="menu_8cpp_source.html#l17013">Menu::tel_num_get()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a>, <a class="el" href="menu_8cpp_source.html#l26502">Menu::weight_price()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a2bec0f6e91a5c9895d25f4b5c51f0a2a">Menu::addDiscountPer()</a>, <a class="el" href="classMenu.html#aa581732ece232675f1216045a56a6668">Menu::addDiscountRub()</a>, <a class="el" href="classMenu.html#a2d4822ba83dd9fb856246eb8fa96b62a">Menu::agent_choose()</a>, <a class="el" href="classMenu.html#a0b44aef9dbf140ed8ab47dfa44317396">Menu::agent_choose_for_good()</a>, <a class="el" href="classMenu.html#a2527752049dc0887ba1ba2f439a616fb">Menu::cor_doc_type()</a>, <a class="el" href="classMenu.html#a4b04c56cc467cc637ac5a4389387b588">Menu::cor_type()</a>, <a class="el" href="classMenu.html#a2187d0184530f341c756f4eafdfb18dc">Menu::dep_man_get()</a>, <a class="el" href="classMenu.html#afcad02fe7564b2c36b99ff75bed20077">Menu::enterDiscountMargin()</a>, <a class="el" href="classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7">Menu::get_cash()</a>, <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#aa2275557cfb584a05755973d8f37ecb0">Menu::get_frac_number()</a>, <a class="el" href="classMenu.html#ae064477b883a70585755071d05b5ba75">Menu::goods_display_revert()</a>, <a class="el" href="classMenu.html#ad956dae1b1ea6f6b5ea723df005890d8">Menu::name_goods_get()</a>, <a class="el" href="classMenu.html#ae114c5b25b12f5cae8ec1296e5fefbab">Menu::nds_man_get()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a>, <a class="el" href="classMenu.html#ad31c8725981be2ff539e7f4075b2c79f">Menu::ofd_settings()</a>, <a class="el" href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#aee8411159ed7d42ee510da29626012fe">Menu::tax_sys_cor_rec()</a>, <a class="el" href="classMenu.html#a0389cb4d576bb67ad4dc75863e8837c9">Menu::tel_num_get()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a>, <a class="el" href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc">Menu::weight_price()</a> и <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -153,9 +167,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00414">414</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a>, <a class="el" href="menu_8cpp_source.html#l28428">Menu::dep_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l16812">Menu::enterDiscountMargin()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l22885">Menu::get_cash()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l22376">Menu::goods_display_revert()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l16479">Menu::name_goods_get()</a>, <a class="el" href="menu_8cpp_source.html#l28472">Menu::nds_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l17013">Menu::tel_num_get()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a>, <a class="el" href="menu_8cpp_source.html#l26502">Menu::weight_price()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a2bec0f6e91a5c9895d25f4b5c51f0a2a">Menu::addDiscountPer()</a>, <a class="el" href="classMenu.html#aa581732ece232675f1216045a56a6668">Menu::addDiscountRub()</a>, <a class="el" href="classMenu.html#a2187d0184530f341c756f4eafdfb18dc">Menu::dep_man_get()</a>, <a class="el" href="classMenu.html#afcad02fe7564b2c36b99ff75bed20077">Menu::enterDiscountMargin()</a>, <a class="el" href="classMenu.html#ac81fc27b0289eda493c1836f2ce3ea4a">Menu::get_cash()</a>, <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#ae064477b883a70585755071d05b5ba75">Menu::goods_display_revert()</a>, <a class="el" href="classMenu.html#ad956dae1b1ea6f6b5ea723df005890d8">Menu::name_goods_get()</a>, <a class="el" href="classMenu.html#ae114c5b25b12f5cae8ec1296e5fefbab">Menu::nds_man_get()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a>, <a class="el" href="classMenu.html#ad31c8725981be2ff539e7f4075b2c79f">Menu::ofd_settings()</a>, <a class="el" href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#a0389cb4d576bb67ad4dc75863e8837c9">Menu::tel_num_get()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a>, <a class="el" href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc">Menu::weight_price()</a> и <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -171,9 +183,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00412">412</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15364">Menu::receipt_correction_mode()</a> и <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>.</p>
 
 </div>
 </div>
@@ -189,9 +199,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00415">415</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a>, <a class="el" href="menu_8cpp_source.html#l28428">Menu::dep_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l16812">Menu::enterDiscountMargin()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l21406">Menu::get_cash()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l22376">Menu::goods_display_revert()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l16479">Menu::name_goods_get()</a>, <a class="el" href="menu_8cpp_source.html#l28472">Menu::nds_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l17013">Menu::tel_num_get()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#aa581732ece232675f1216045a56a6668">Menu::addDiscountRub()</a>, <a class="el" href="classMenu.html#a2187d0184530f341c756f4eafdfb18dc">Menu::dep_man_get()</a>, <a class="el" href="classMenu.html#afcad02fe7564b2c36b99ff75bed20077">Menu::enterDiscountMargin()</a>, <a class="el" href="classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7">Menu::get_cash()</a>, <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#ae064477b883a70585755071d05b5ba75">Menu::goods_display_revert()</a>, <a class="el" href="classMenu.html#ad956dae1b1ea6f6b5ea723df005890d8">Menu::name_goods_get()</a>, <a class="el" href="classMenu.html#ae114c5b25b12f5cae8ec1296e5fefbab">Menu::nds_man_get()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a>, <a class="el" href="classMenu.html#ad31c8725981be2ff539e7f4075b2c79f">Menu::ofd_settings()</a>, <a class="el" href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#a0389cb4d576bb67ad4dc75863e8837c9">Menu::tel_num_get()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a> и <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -207,8 +215,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00419">419</a></p>
-
 </div>
 </div>
 <a id="ab4b1d28c6e77de369896db1cf878ae98"></a>
@@ -223,9 +229,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00413">413</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a> и <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a> и <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +245,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="menu_8h_source.html">menu.h</a> строка <a class="el" href="menu_8h_source.html#l00417">417</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a>, <a class="el" href="menu_8cpp_source.html#l28428">Menu::dep_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l16812">Menu::enterDiscountMargin()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l21406">Menu::get_cash()</a>, <a class="el" href="menu_8cpp_source.html#l09365">Menu::get_data_int_pro()</a>, <a class="el" href="menu_8cpp_source.html#l26652">Menu::get_frac_number()</a>, <a class="el" href="menu_8cpp_source.html#l22376">Menu::goods_display_revert()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l16479">Menu::name_goods_get()</a>, <a class="el" href="menu_8cpp_source.html#l28472">Menu::nds_man_get()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l17013">Menu::tel_num_get()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a>, <a class="el" href="menu_8cpp_source.html#l26502">Menu::weight_price()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a2bec0f6e91a5c9895d25f4b5c51f0a2a">Menu::addDiscountPer()</a>, <a class="el" href="classMenu.html#aa581732ece232675f1216045a56a6668">Menu::addDiscountRub()</a>, <a class="el" href="classMenu.html#a2187d0184530f341c756f4eafdfb18dc">Menu::dep_man_get()</a>, <a class="el" href="classMenu.html#afcad02fe7564b2c36b99ff75bed20077">Menu::enterDiscountMargin()</a>, <a class="el" href="classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7">Menu::get_cash()</a>, <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu::get_data_int_pro()</a>, <a class="el" href="classMenu.html#aa2275557cfb584a05755973d8f37ecb0">Menu::get_frac_number()</a>, <a class="el" href="classMenu.html#ae064477b883a70585755071d05b5ba75">Menu::goods_display_revert()</a>, <a class="el" href="classMenu.html#ad956dae1b1ea6f6b5ea723df005890d8">Menu::name_goods_get()</a>, <a class="el" href="classMenu.html#ae114c5b25b12f5cae8ec1296e5fefbab">Menu::nds_man_get()</a>, <a class="el" href="classMenu.html#a0957ed0f9093bea39080e7b97556e449">Menu::ofd_manual_mode()</a>, <a class="el" href="classMenu.html#ad31c8725981be2ff539e7f4075b2c79f">Menu::ofd_settings()</a>, <a class="el" href="classMenu.html#ad1f496e964fa72638fdd2e9486a8d4bd">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#a0389cb4d576bb67ad4dc75863e8837c9">Menu::tel_num_get()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a>, <a class="el" href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc">Menu::weight_price()</a> и <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +255,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:48. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

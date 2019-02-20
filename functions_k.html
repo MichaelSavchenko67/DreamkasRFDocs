@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -142,13 +165,9 @@ $(function() {
 <li>KCA_TYPE_SERVICE
 : <a class="el" href="classBIOS_1_1BEL.html#ac4824e93a0b80176e198ef1b26011049ade5d00f263a9345e8d856a74ff1072ee">BIOS::BEL</a>
 </li>
-<li>keep_stack
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#ac24fd6c9f1b31b44328c16d65755ae76">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>key
 : <a class="el" href="structJSON_1_1JSON__KEY__ACTIVATION.html#aa1568b08d3f9aa9eb263333ac5c19b7a">JSON::JSON_KEY_ACTIVATION</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a15dfb2744fed2ef40c12a9e9a20d6dbc">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#aa99aca35df197eda29e1c37097144340">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#adc648a641e8e9a1072c5abd56ad06401">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a59e1ea5e9c8d25346a564bf9287a5c2a">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a0cc4a5192fe9b803276edb831b6099fa">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
@@ -179,24 +198,11 @@ $(function() {
 <li>KEY_HOLD
 : <a class="el" href="classFISGO__TEST__API.html#aa7897474ffb69b43250d3e4de2472e11">FISGO_TEST_API</a>
 </li>
-<li>key_keep_stack
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a8f0e96e8bc4f692169024105693f5706">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>KEY_PRESS
-: <a class="el" href="classBarcodeScanner.html#a4db5da598ed0802b5263ad3bb5a4b40cae7606bdbdd9d4d76d2918c5bb21a64ef">BarcodeScanner</a>
-, <a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaced2fd7e9a906ccffc9b3c19e66c3b15">FISGO_TEST_API</a>
-</li>
-<li>KEY_RELEASE
-: <a class="el" href="classBarcodeScanner.html#a4db5da598ed0802b5263ad3bb5a4b40cadf6ed36dd3464e78cdaa8eb475ab846b">BarcodeScanner</a>
-</li>
-<li>KEY_REPEAT
-: <a class="el" href="classBarcodeScanner.html#a4db5da598ed0802b5263ad3bb5a4b40ca8da484d1284c207127b10bc9b576e743">BarcodeScanner</a>
+: <a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066adaced2fd7e9a906ccffc9b3c19e66c3b15">FISGO_TEST_API</a>
 </li>
 <li>KEY_SCREEN()
 : <a class="el" href="structLcd_1_1KEY__SCREEN.html#a5744a67f117f7d85c8f32c8325a4bb84">Lcd::KEY_SCREEN</a>
-</li>
-<li>KEY_TYPE
-: <a class="el" href="classBarcodeScanner.html#a4db5da598ed0802b5263ad3bb5a4b40c">BarcodeScanner</a>
 </li>
 <li>keyboard_error
 : <a class="el" href="structPrinter_1_1technical__report.html#ab888176361f6cb8ce4c9ae097d5a252e">Printer::technical_report</a>
@@ -302,10 +308,12 @@ $(function() {
 : <a class="el" href="structConfig.html#a96770ab7ddc0ac5a25441d1d9698fccb">Config</a>
 , <a class="el" href="structPrinter_1_1technical__report.html#a6bf5b2668d3e5a00002e2b45f329ae65">Printer::technical_report</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a7b13c8419237217f62334b6da366fafc">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#acd6b35d58e53e37e83d820a447b64e10">Receipt_new</a>
 </li>
 <li>KKT_PLANT_NUM
 : <a class="el" href="classReceipt__new.html#a9a0ae39e6102835ea7de1b712e909b6a">Receipt_new</a>
+</li>
+<li>kkt_plant_num
+: <a class="el" href="classReceipt__new.html#acd6b35d58e53e37e83d820a447b64e10">Receipt_new</a>
 </li>
 <li>KKT_PLANT_NUM_MAX_SIZE
 : <a class="el" href="classBIOS_1_1RUS.html#a6adfa9f618abf40455d78c570fcccdd3ae54fb94bc1ed79043a78d9e8b26e943f">BIOS::RUS</a>
@@ -343,14 +351,8 @@ $(function() {
 : <a class="el" href="structConfig.html#ab632e228b5c6aa2f1fb8e8d955fc53f0">Config</a>
 , <a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html#a72e6e4ffce5f409c8c196041e3675865">JSON::JSON_OFD_REGISTER</a>
 </li>
-<li>kktAddSigns
-: <a class="el" href="classHttpsExchange.html#a9a429c3dbaa149fc177d6f4cbaf462c3">HttpsExchange</a>
-</li>
 <li>KKTREGISTRINFO
 : <a class="el" href="classHttpsExchange.html#a8d67821f75e87d148da02420bd11f09da10f3eb9eef31ceef079400587ca59f5f">HttpsExchange</a>
-</li>
-<li>kktSigns
-: <a class="el" href="classHttpsExchange.html#ae0e1a73879fa3844618bf64b3c798a70">HttpsExchange</a>
 </li>
 <li>KL_MEM_ERR
 : <a class="el" href="classBIOS_1_1BEL.html#a184132d9a24aa1e8a064b7ba12df8091a39c8fd1c5cc3e2e49cf8de9995acb3a9">BIOS::BEL</a>
@@ -368,8 +370,7 @@ $(function() {
 : <a class="el" href="classMenu.html#a8cc098c1d3a01717c8ccc2f5b8074479">Menu</a>
 </li>
 <li>kpp
-: <a class="el" href="classHttpsExchange.html#a82ee3064b6c288da565624c5dc2863a3">HttpsExchange</a>
-, <a class="el" href="structJSON_1_1JSON__SHOP__INFO.html#a915f0e5a9e938987d01c1a96eef9943d">JSON::JSON_SHOP_INFO</a>
+: <a class="el" href="structJSON_1_1JSON__SHOP__INFO.html#a915f0e5a9e938987d01c1a96eef9943d">JSON::JSON_SHOP_INFO</a>
 </li>
 <li>kPrecision
 : <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a03682754b06ed4f30b263119eecc2d52">nlohmann::detail::dtoa_impl::diyfp</a>
@@ -381,7 +382,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

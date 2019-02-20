@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0937102de6aefa85ea195f3f88a55c7c.html">bsp</a></li>  </ul>
@@ -46,8 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Макросы</a> &#124;
-<a href="#func-members">Функции</a> &#124;
-<a href="#var-members">Переменные</a>  </div>
+<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
 <div class="title">Файл bsp_lcd_drawer.c</div>  </div>
 </div><!--header-->
@@ -86,9 +108,7 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="885,155,992,181"/>
 </map>
 </div>
-</div>
-<p><a href="bsp__lcd__drawer_8c_source.html">См. исходные тексты.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a198450206b54d332d60ea5b0decb4757"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__lcd__drawer_8c.html#a198450206b54d332d60ea5b0decb4757">__BSP_LCD_DRAWER_C__</a></td></tr>
@@ -116,11 +136,6 @@ $(function() {
 <tr class="separator:ab297d4af51c9b93a0c61ba90fadacd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64369bf5cd21081260002b2142ced0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__lcd__drawer_8c.html#af64369bf5cd21081260002b2142ced0e">g_bsp_lcd_drawer_service2</a> (void)</td></tr>
 <tr class="separator:af64369bf5cd21081260002b2142ced0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Переменные</h2></td></tr>
-<tr class="memitem:a166bc0559aa7b9f36fa0bdf3f1b4dba1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></td></tr>
-<tr class="separator:a166bc0559aa7b9f36fa0bdf3f1b4dba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Макросы</h2>
 <a id="a198450206b54d332d60ea5b0decb4757"></a>
@@ -134,8 +149,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00016">16</a></p>
 
 </div>
 </div>
@@ -151,8 +164,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00038">38</a></p>
-
 </div>
 </div>
 <a id="ad8484f0cfaf5736be1585e122f47c0cf"></a>
@@ -166,8 +177,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00036">36</a></p>
 
 </div>
 </div>
@@ -183,8 +192,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00035">35</a></p>
-
 </div>
 </div>
 <a id="a4fe0e46fa630ade5669811e2dbdba448"></a>
@@ -198,8 +205,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00037">37</a></p>
 
 </div>
 </div>
@@ -219,14 +224,9 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00047">47</a></p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Открыть файл дисплей/денежный ящик</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a> = open( <a class="code" href="bsp__cfg_8h.html#a3a9df441ddbb1b162532da39f37d959e">bsp_cfgLCD_DRAWER</a>, O_RDWR | O_NOCTTY );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> rc = -1;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a> &gt; 0 )</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        rc = 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( rc );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00111">log.h:111</a></div></div>
-<div class="ttc" id="bsp__lcd__drawer_8c_html_a166bc0559aa7b9f36fa0bdf3f1b4dba1"><div class="ttname"><a href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></div><div class="ttdeci">static int fdLcdDrawer</div><div class="ttdef"><b>Definition:</b> <a href="bsp__lcd__drawer_8c_source.html#l00043">bsp_lcd_drawer.c:43</a></div></div>
-<div class="ttc" id="bsp__cfg_8h_html_a3a9df441ddbb1b162532da39f37d959e"><div class="ttname"><a href="bsp__cfg_8h.html#a3a9df441ddbb1b162532da39f37d959e">bsp_cfgLCD_DRAWER</a></div><div class="ttdeci">#define bsp_cfgLCD_DRAWER</div><div class="ttdef"><b>Definition:</b> <a href="bsp__cfg_8h_source.html#l00021">bsp_cfg.h:21</a></div></div>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Открыть файл дисплей/денежный ящик</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    fdLcdDrawer = open( <a class="code" href="bsp__cfg_8h.html#a3a9df441ddbb1b162532da39f37d959e">bsp_cfgLCD_DRAWER</a>, O_RDWR | O_NOCTTY );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> rc = -1;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> ( fdLcdDrawer &gt; 0 )</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        rc = 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( rc );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
+<div class="ttc" id="bsp__cfg_8h_html_a3a9df441ddbb1b162532da39f37d959e"><div class="ttname"><a href="bsp__cfg_8h.html#a3a9df441ddbb1b162532da39f37d959e">bsp_cfgLCD_DRAWER</a></div><div class="ttdeci">#define bsp_cfgLCD_DRAWER</div><div class="ttdef"><b>Definition:</b> bsp_cfg.h:21</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="bsp__cfg_8h_source.html#l00021">bsp_cfgLCD_DRAWER</a>, <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">fdLcdDrawer</a> и <a class="el" href="log_8h_source.html#l00111">logERRNO_ASSERT</a>.</p>
-
 </div>
 </div>
 <a id="a0e45fa820f610265b8d4f9ec7449072b"></a>
@@ -244,13 +244,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00074">74</a></p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a>, 0xBBBB, &amp;param ) );</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
-<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00111">log.h:111</a></div></div>
-<div class="ttc" id="bsp__lcd__drawer_8c_html_a166bc0559aa7b9f36fa0bdf3f1b4dba1"><div class="ttname"><a href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></div><div class="ttdeci">static int fdLcdDrawer</div><div class="ttdef"><b>Definition:</b> <a href="bsp__lcd__drawer_8c_source.html#l00043">bsp_lcd_drawer.c:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( fdLcdDrawer, 0xBBBB, &amp;param ) );</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
+<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">fdLcdDrawer</a>, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h_source.html#l00111">logERRNO_ASSERT</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -280,13 +277,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00067">67</a></p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a>, 0xAAAA, &amp;param ) );</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
-<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00111">log.h:111</a></div></div>
-<div class="ttc" id="bsp__lcd__drawer_8c_html_a166bc0559aa7b9f36fa0bdf3f1b4dba1"><div class="ttname"><a href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></div><div class="ttdeci">static int fdLcdDrawer</div><div class="ttdef"><b>Definition:</b> <a href="bsp__lcd__drawer_8c_source.html#l00043">bsp_lcd_drawer.c:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( fdLcdDrawer, 0xAAAA, &amp;param ) );</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
+<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">fdLcdDrawer</a>, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h_source.html#l00111">logERRNO_ASSERT</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -316,13 +310,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00081">81</a></p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a>, 0xCCCC, &amp;param ) );</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
-<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00111">log.h:111</a></div></div>
-<div class="ttc" id="bsp__lcd__drawer_8c_html_a166bc0559aa7b9f36fa0bdf3f1b4dba1"><div class="ttname"><a href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></div><div class="ttdeci">static int fdLcdDrawer</div><div class="ttdef"><b>Definition:</b> <a href="bsp__lcd__drawer_8c_source.html#l00043">bsp_lcd_drawer.c:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( fdLcdDrawer, 0xCCCC, &amp;param ) );</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
+<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">fdLcdDrawer</a>, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h_source.html#l00111">logERRNO_ASSERT</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -352,13 +343,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00088">88</a></p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( <a class="code" href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a>, 0xDDDD, &amp;param ) );</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
-<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00111">log.h:111</a></div></div>
-<div class="ttc" id="bsp__lcd__drawer_8c_html_a166bc0559aa7b9f36fa0bdf3f1b4dba1"><div class="ttname"><a href="bsp__lcd__drawer_8c.html#a166bc0559aa7b9f36fa0bdf3f1b4dba1">fdLcdDrawer</a></div><div class="ttdeci">static int fdLcdDrawer</div><div class="ttdef"><b>Definition:</b> <a href="bsp__lcd__drawer_8c_source.html#l00043">bsp_lcd_drawer.c:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> val = 0xFF;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> param = (<a class="code" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>) val;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>( ioctl( fdLcdDrawer, 0xDDDD, &amp;param ) );</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div><div class="ttc" id="testGlobalFuncMock_8h_html_a882197d618d1823462b68dc16270232c"><div class="ttname"><a href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a></div><div class="ttdeci">int(string &amp;))</div></div>
+<div class="ttc" id="log_8h_html_a7a41d3013c55b3bf5ba7cdf9477fcc0c"><div class="ttname"><a href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a></div><div class="ttdeci">#define logERRNO_ASSERT(x)</div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">fdLcdDrawer</a>, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h_source.html#l00111">logERRNO_ASSERT</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int()</a> и <a class="el" href="log_8h.html#a7a41d3013c55b3bf5ba7cdf9477fcc0c">logERRNO_ASSERT</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -398,10 +386,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00062">62</a></p>
 <div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    usleep(50000);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div></div><!-- fragment -->
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l00355">Lcd::bmp_cashier_draw()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classLcd.html#acd7cfb62db93982c64cdfa0b37dea1fd">Lcd::bmp_cashier_draw()</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -464,37 +450,10 @@ $(function() {
 
 </div>
 </div>
-<h2 class="groupheader">Переменные</h2>
-<a id="a166bc0559aa7b9f36fa0bdf3f1b4dba1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a166bc0559aa7b9f36fa0bdf3f1b4dba1">&#9670;&nbsp;</a></span>fdLcdDrawer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> fdLcdDrawer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__lcd__drawer_8c_source.html">bsp_lcd_drawer.c</a> строка <a class="el" href="bsp__lcd__drawer_8c_source.html#l00043">43</a></p>
-
-<p class="reference">Используется в <a class="el" href="bsp__lcd__drawer_8c_source.html#l00047">g_bsp_lcd_drawer_init()</a>, <a class="el" href="bsp__lcd__drawer_8c_source.html#l00074">g_bsp_lcd_drawer_print_state()</a>, <a class="el" href="bsp__lcd__drawer_8c_source.html#l00067">g_bsp_lcd_drawer_reinit()</a>, <a class="el" href="bsp__lcd__drawer_8c_source.html#l00081">g_bsp_lcd_drawer_service1()</a> и <a class="el" href="bsp__lcd__drawer_8c_source.html#l00088">g_bsp_lcd_drawer_service2()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

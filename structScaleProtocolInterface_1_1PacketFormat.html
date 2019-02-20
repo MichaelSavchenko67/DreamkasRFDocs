@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></li><li class="navelem"><a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html">PacketFormat</a></li>  </ul>
@@ -80,8 +103,6 @@ $(function() {
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>The <a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct - формат пакета">PacketFormat</a> struct - формат пакета </p>
-
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00144">144</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
 <a id="a554ec902dc6ebe34bfb0bc6b5577e79c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a554ec902dc6ebe34bfb0bc6b5577e79c">&#9670;&nbsp;</a></span>cmdSize</h2>
@@ -95,9 +116,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00147">147</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00270">ScaleProtocolMassak::crcPacketCreate()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00140">ScaleProtocolPos2::dataCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00253">ScaleProtocolMassak::dataCreate()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00125">ScaleProtocolPos2::makeCmd()</a>, <a class="el" href="scaleProtocol_8cpp_source.html#l00037">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00003">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00003">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="scaleProtocol_8cpp_source.html#l00029">ScaleProtocolInterface::setPacketFormat()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="classScaleProtocolMassak.html#ac3c5f838aedfea1a37108fbe4b133917">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">ScaleProtocolInterface::setPacketFormat()</a>.</p>
 
 </div>
 </div>
@@ -113,9 +132,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00149">149</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00164">ScaleProtocolPos2::crcPacketCreate()</a>, <a class="el" href="scaleProtocol_8cpp_source.html#l00037">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00003">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00003">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="scaleProtocol_8cpp_source.html#l00029">ScaleProtocolInterface::setPacketFormat()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="classScaleProtocolMassak.html#ac3c5f838aedfea1a37108fbe4b133917">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">ScaleProtocolInterface::setPacketFormat()</a>.</p>
 
 </div>
 </div>
@@ -131,9 +148,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00148">148</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00270">ScaleProtocolMassak::crcPacketCreate()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00111">ScaleProtocolPos2::makeDataLen()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00316">ScaleProtocolMassak::makeDataLen()</a>, <a class="el" href="scaleProtocol_8cpp_source.html#l00037">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00003">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00003">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="scaleProtocol_8cpp_source.html#l00029">ScaleProtocolInterface::setPacketFormat()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="classScaleProtocolMassak.html#ac3c5f838aedfea1a37108fbe4b133917">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">ScaleProtocolInterface::setPacketFormat()</a>.</p>
 
 </div>
 </div>
@@ -149,9 +164,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00146">146</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00270">ScaleProtocolMassak::crcPacketCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00475">ScaleProtocolMassak::isCorrectAnswerPacket()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00097">ScaleProtocolPos2::makeHeader()</a>, <a class="el" href="scaleProtocol_8cpp_source.html#l00037">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00003">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00003">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="scaleProtocol_8cpp_source.html#l00029">ScaleProtocolInterface::setPacketFormat()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">ScaleProtocolInterface::packetCreate()</a>, <a class="el" href="classScaleProtocolMassak.html#ac3c5f838aedfea1a37108fbe4b133917">ScaleProtocolMassak::ScaleProtocolMassak()</a>, <a class="el" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2()</a> и <a class="el" href="classScaleProtocolInterface.html#a4be9cd9db98bd23b44cb348cb31100de">ScaleProtocolInterface::setPacketFormat()</a>.</p>
 
 </div>
 </div>
@@ -161,7 +174,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

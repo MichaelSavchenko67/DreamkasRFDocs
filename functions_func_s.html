@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -87,12 +110,6 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
-<li>sax_parse_internal()
-: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
-<li>scaleParamParse()
-: <a class="el" href="classScaleProtocolPos2.html#aeb70fdf0739ef053256a65e44dd57425">ScaleProtocolPos2</a>
-</li>
 <li>ScalePos2()
 : <a class="el" href="classScalePos2.html#a5f68c7823298b931701f7fa34b544d5e">ScalePos2</a>
 </li>
@@ -110,15 +127,6 @@ $(function() {
 </li>
 <li>scan()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>scan_literal()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>scan_number()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>scan_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>scannerEmulate()
 : <a class="el" href="classMenu.html#aece481d9e2cf80d9d415b2a973c5cd53">Menu</a>
@@ -150,9 +158,6 @@ $(function() {
 </li>
 <li>send_receipt_in_sms()
 : <a class="el" href="classMenu.html#ada1e942c38cd206ec0b571082e8927a3">Menu</a>
-</li>
-<li>sendall()
-: <a class="el" href="classFISGO__TEST__API.html#acd016ee115c62e89137b344cc0a7da12">FISGO_TEST_API</a>
 </li>
 <li>sendCashInfoReport()
 : <a class="el" href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99">HttpsExchange</a>
@@ -213,7 +218,7 @@ $(function() {
 : <a class="el" href="classHttpsExchange.html#a2d11c809314dfe85283df6ae9ec596c1">HttpsExchange</a>
 </li>
 <li>sendRequest()
-: <a class="el" href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef">HttpsExchange</a>
+: <a class="el" href="classHttpsExchange.html#a7d5691f6969973154faff0e3bc2728c7">HttpsExchange</a>
 </li>
 <li>sendRequestWhoAmI()
 : <a class="el" href="classHttpsExchange.html#a22789e654b9265cca6904f8110252218">HttpsExchange</a>
@@ -253,12 +258,10 @@ $(function() {
 : <a class="el" href="classCounters.html#aff1bf22b6379d4ea456e8d20c229383a">Counters</a>
 </li>
 <li>set_begin()
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42">nlohmann::detail::primitive_iterator_t</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>set_end()
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a23e50ad4c13aa62d9ac7f60a123823ee">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb">nlohmann::detail::primitive_iterator_t</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>set_goods_type()
 : <a class="el" href="classPositions_1_1Position.html#a5c24f6f785580ceb9d1afa6494766bba">Positions::Position</a>
@@ -466,23 +469,16 @@ $(function() {
 </li>
 <li>setScaleErr()
 : <a class="el" href="classScaleProtocolInterface.html#ac7a713d971c496e367379b0f29775a0e">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#afac2187d6420584791a3372f6dd6bdf6">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#a76f72420064803e277e6f381ace03c89">ScaleProtocolPos2</a>
-, <a class="el" href="classTestMassaK.html#a514b983200b55586ffc66ea2806337b2">TestMassaK</a>
-, <a class="el" href="classTestPos2.html#a5ae243453f44d9c3e8135993c9c179e3">TestPos2</a>
 </li>
 <li>setSenderEmail()
 : <a class="el" href="classHttpsExchange.html#a05053dc0da7a5ed03f93896b808592de">HttpsExchange</a>
-</li>
-<li>setSystemDate()
-: <a class="el" href="classMenu.html#a3ae698b21e4298d93c521705e7171198">Menu</a>
 </li>
 <li>setTare()
 : <a class="el" href="classScales.html#a600d17680fbbdfb39f8834709cbf51d4">Scales</a>
 </li>
 <li>setTaxes()
 : <a class="el" href="classGoods.html#a322f31d22767d88dfbe9c41912196bfb">Goods</a>
-, <a class="el" href="classHttpsExchange.html#a9b3460d70f1acf1c22f980d3b14620a7">HttpsExchange</a>
+, <a class="el" href="classHttpsExchange.html#a93130cf9f21f799afc5560a8034f2f8e">HttpsExchange</a>
 , <a class="el" href="classPositions.html#a54a0107be889355245c5484c61447d3f">Positions</a>
 , <a class="el" href="classPrinter.html#a1ca8d943f0850850e8209df2fab766e2">Printer</a>
 , <a class="el" href="classReceipt__new.html#aa9dd056f7ca215e65c0372b5fcda043c">Receipt_new</a>
@@ -548,9 +544,6 @@ $(function() {
 <li>showLicense()
 : <a class="el" href="classLicense.html#a256cdc19062818167eb290fd49317d77">License</a>
 </li>
-<li>showLicenseList()
-: <a class="el" href="classMenu.html#a1e798b0d7908d29bb32d351c01efa44f">Menu</a>
-</li>
 <li>showNotificationFfdAndNdsLicense()
 : <a class="el" href="classMenu.html#a15040ac3df50a2dc328b4da7350b41c6">Menu</a>
 </li>
@@ -571,26 +564,8 @@ $(function() {
 <li>skip_bom()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
-<li>sms_sign_get()
-: <a class="el" href="classMenu.html#a864f75af07b26895a453bec628b2a796">Menu</a>
-</li>
 <li>snifferDataGet()
 : <a class="el" href="classHttpsExchange.html#a8393ea5476148d7a43100124092953f3">HttpsExchange</a>
-</li>
-<li>snifferDataIns()
-: <a class="el" href="classHttpsExchange.html#afd68062b2af2f29fe539a7e5ffe149c5">HttpsExchange</a>
-</li>
-<li>sock_accept()
-: <a class="el" href="classFISGO__TEST__API.html#af5f5121685545183488162a51612d2d6">FISGO_TEST_API</a>
-</li>
-<li>sock_close()
-: <a class="el" href="classFISGO__TEST__API.html#ae19d3415828b5926dd502eb54689e245">FISGO_TEST_API</a>
-</li>
-<li>sock_listen()
-: <a class="el" href="classFISGO__TEST__API.html#a7aca948bd573d4af424cdc5b4a08ce15">FISGO_TEST_API</a>
-</li>
-<li>socket_create()
-: <a class="el" href="classFISGO__TEST__API.html#ad395c398e7b19399e39797851041da6d">FISGO_TEST_API</a>
 </li>
 <li>socket_reset()
 : <a class="el" href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e">FISGO_TEST_API</a>
@@ -600,9 +575,6 @@ $(function() {
 </li>
 <li>spec_clc_method_mode()
 : <a class="el" href="classMenu.html#a178388971a2fcded644b2c347228aaf2">Menu</a>
-</li>
-<li>split()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#ae01c32c6a071c2e5198d5dfcce290e50">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>splitString()
 : <a class="el" href="classConvert.html#afcc16d4f5eb6e1281fe5745971a87275">Convert</a>
@@ -636,9 +608,6 @@ $(function() {
 </li>
 <li>stlv_len_clc()
 : <a class="el" href="classRequisites.html#a850cc2ddd94e29d9cc6e5fd94706482a">Requisites</a>
-</li>
-<li>stlv_parse()
-: <a class="el" href="classBIOS_1_1RUS.html#a7a9ea3f5ce26d8e0dacb8bdbf4f373a1">BIOS::RUS</a>
 </li>
 <li>stopNtpd()
 : <a class="el" href="classTimeSync.html#a3d40a1c60279db3ffef8b61467e7467c">TimeSync</a>
@@ -701,9 +670,6 @@ $(function() {
 <li>strLeftComplite()
 : <a class="el" href="classConvert.html#af49c970003b961fca69a3bc0f7e33aa4">Convert</a>
 </li>
-<li>strtof()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a0e28dda9a1e007d55d03e8d39dd3b9fa">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>sub()
 : <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#aeb26771af54ad73598c1a0430d65d884">nlohmann::detail::dtoa_impl::diyfp</a>
 </li>
@@ -719,7 +685,7 @@ $(function() {
 : <a class="el" href="classConvert.html#a46680f3461deb20c9c111d23ce53cefb">Convert</a>
 </li>
 <li>swap()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a8c9d932353e1ab98a7dc2fc27e002031">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a65b0a24e1361a030ad0a661de22f6c8e">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>sym_bright_reset()
 : <a class="el" href="classLcd.html#a2dfaa8725f466b82b225fbd6a68e7065">Lcd</a>
@@ -741,7 +707,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

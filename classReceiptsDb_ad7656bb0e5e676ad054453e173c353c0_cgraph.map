@@ -1,7 +1,5 @@
 <map id="ReceiptsDb::clearReceiptsDb" name="ReceiptsDb::clearReceiptsDb">
-<area shape="rect" id="node1" title=" " alt="" coords="5,60,201,87"/>
-<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="252,23,435,65"/>
-<area shape="rect" id="node5" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="249,89,437,116"/>
-<area shape="rect" id="node3" href="$ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb" title=" " alt="" coords="485,5,608,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="656,31,807,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,201,69"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="252,5,435,47"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="249,71,437,98"/>
 </map>

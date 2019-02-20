@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,27 +32,45 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_u"></a>- u -</h3><ul>
 <li>undelegated_doc_date
-: <a class="el" href="classBIOS_1_1RUS.html#a2006b63a094c9f40922989551e4f69e7">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#a6b244fb2af6e020a6bc4cca9e4e339af">Receipt::Fiscal_data</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#a6b244fb2af6e020a6bc4cca9e4e339af">Receipt::Fiscal_data</a>
 </li>
 <li>undelegated_docs_count
-: <a class="el" href="classBIOS_1_1RUS.html#a99bddbd6ba5aa80abcf3c06c487e9ce7">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#a232f335a36d2744d3e1453b7a032b538">Receipt::Fiscal_data</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#a232f335a36d2744d3e1453b7a032b538">Receipt::Fiscal_data</a>
 </li>
 <li>UNDELEGETED_CNTS_GET
 : <a class="el" href="classBIOS_1_1RUS.html#ad10724916c3593e6b3d8792b2ee74adf">BIOS::RUS</a>
@@ -62,10 +83,12 @@ $(function() {
 </li>
 <li>unit_name
 : <a class="el" href="classGoodsData.html#a995a11adc6d46602a296eebc1e2eb7e5">GoodsData</a>
-, <a class="el" href="classPosition__new.html#aece00de9f95bf1313447e62e805b4ad3">Position_new</a>
 </li>
 <li>UNIT_NAME
 : <a class="el" href="classPosition__new.html#a3c5a77bddfad836846f544269a175ea8">Position_new</a>
+</li>
+<li>unit_name
+: <a class="el" href="classPosition__new.html#aece00de9f95bf1313447e62e805b4ad3">Position_new</a>
 </li>
 <li>unit_price
 : <a class="el" href="classGoodsData.html#a11857d742ae4bb6fdcf462e0aa8c334e">GoodsData</a>
@@ -89,15 +112,6 @@ $(function() {
 <li>UPDATE_FILE
 : <a class="el" href="classHttpsExchange.html#a71690f0f7c01a92b325a420d235e6bcb">HttpsExchange</a>
 </li>
-<li>update_server
-: <a class="el" href="classHttpsExchange.html#a251f3f5abc442a1e77b62cc7176e1d08">HttpsExchange</a>
-</li>
-<li>update_server_beta
-: <a class="el" href="classHttpsExchange.html#a5a2621443f852502180d7dadbb4a95f3">HttpsExchange</a>
-</li>
-<li>update_server_name
-: <a class="el" href="classHttpsExchange.html#a1ce9e46a57d4feb53d883bc57ebee755">HttpsExchange</a>
-</li>
 <li>updateDownloadCv
 : <a class="el" href="classMenu.html#a0a30a92a9109568e60019c46658810cc">Menu</a>
 </li>
@@ -114,8 +128,7 @@ $(function() {
 : <a class="el" href="structJSON_1_1TASK__DATA.html#a4490367b8b93afae0909c38fd8a3fcd5">JSON::TASK_DATA</a>
 </li>
 <li>url
-: <a class="el" href="classHttpsExchange.html#a75165737e26d3aa84b6100bf43aaef7c">HttpsExchange</a>
-, <a class="el" href="classHttpsExchangeTest_1_1MockHttpsExchange.html#ae98287fcf66304f1be7fe707b88553fa">HttpsExchangeTest::MockHttpsExchange</a>
+: <a class="el" href="classHttpsExchangeTest_1_1MockHttpsExchange.html#ae98287fcf66304f1be7fe707b88553fa">HttpsExchangeTest::MockHttpsExchange</a>
 , <a class="el" href="structJSON_1_1JSON__LOGS.html#a66142f09d6de2b232278fe64176f5819">JSON::JSON_LOGS</a>
 , <a class="el" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">JSONUpdate</a>
 , <a class="el" href="structJSONUpdateStr.html#a95429128e8237f21fef02e633281cdbd">JSONUpdateStr</a>
@@ -126,65 +139,14 @@ $(function() {
 <li>urlCashInfoReport
 : <a class="el" href="classHttpsExchange.html#aefb40afcd69f138ef2db80bbb206abfc">HttpsExchange</a>
 </li>
-<li>urlCountersReport
-: <a class="el" href="classHttpsExchange.html#a43ada224a30755443cb1071a1670c443">HttpsExchange</a>
-</li>
 <li>urlDelFromCabinet
 : <a class="el" href="classHttpsExchange.html#a5abdcba3d704be1a1a30af556f0f1b3b">HttpsExchange</a>
 </li>
 <li>urlGetKeyFabrication
 : <a class="el" href="classHttpsExchange.html#a5a41766b343c2b3778f1425042d1bfc4">HttpsExchange</a>
 </li>
-<li>urlHandshake
-: <a class="el" href="classHttpsExchange.html#a428f255965da87a52c0bfd6563c567f9">HttpsExchange</a>
-</li>
-<li>urlImageUpdate
-: <a class="el" href="classHttpsExchange.html#a20849a6cfb998892b0391ca562d7f2e2">HttpsExchange</a>
-</li>
-<li>urlKKTRegistrInfo
-: <a class="el" href="classHttpsExchange.html#a7eb1cf2ccd193776b49464805f5495d6">HttpsExchange</a>
-</li>
-<li>urlLogs
-: <a class="el" href="classHttpsExchange.html#a1eef3046d7312ebca43a25bea2237b4c">HttpsExchange</a>
-</li>
-<li>urlMoneyDocumentReport
-: <a class="el" href="classHttpsExchange.html#adc44d2b1892a5ab6fdd58eeb7a88c202">HttpsExchange</a>
-</li>
-<li>urlOFDRegister
-: <a class="el" href="classHttpsExchange.html#a8ccf7e2f59e6a87c7e6e28bd74d9da16">HttpsExchange</a>
-</li>
-<li>urlOFDRegistrationStatus
-: <a class="el" href="classHttpsExchange.html#aec3728da5eeaf20d08d20c99e162e469">HttpsExchange</a>
-</li>
-<li>urlOFDSign
-: <a class="el" href="classHttpsExchange.html#af88d24183441ce2c40ef364b0ec3c7c8">HttpsExchange</a>
-</li>
-<li>urlPoll
-: <a class="el" href="classHttpsExchange.html#af3e71cb7d53d1f9e1c89a51379f850ec">HttpsExchange</a>
-</li>
-<li>urlReceipt
-: <a class="el" href="classHttpsExchange.html#a68fc987c9f4d215ed8e0fa4cd02aafa5">HttpsExchange</a>
-</li>
-<li>urlRegistrationReport
-: <a class="el" href="classHttpsExchange.html#aac124c0f3062063fa66e94e976fe7b81">HttpsExchange</a>
-</li>
-<li>urlSearchProduct
-: <a class="el" href="classHttpsExchange.html#ab532d72207146cf74931db2562385d89">HttpsExchange</a>
-</li>
-<li>urlShiftDocumentReport
-: <a class="el" href="classHttpsExchange.html#a8690a13d2ba05e1056f072798ef88bcc">HttpsExchange</a>
-</li>
-<li>urlStatistics
-: <a class="el" href="classHttpsExchange.html#a3c6474973f68c77b3d2c87d845740ec1">HttpsExchange</a>
-</li>
-<li>urlUpdate
-: <a class="el" href="classHttpsExchange.html#a2035f8ddddf73757694b05a0500f72e5">HttpsExchange</a>
-</li>
 <li>urlWhoAmI
 : <a class="el" href="classHttpsExchange.html#a03c53a607826e2d24489b401637da420">HttpsExchange</a>
-</li>
-<li>usbHidPath
-: <a class="el" href="classBarcodeScanner.html#a03805e68daf00f224fe3917fdc67778b">BarcodeScanner</a>
 </li>
 <li>used
 : <a class="el" href="structBIOS_1_1RUS_1_1FS__FORMAT.html#aaaab81cfc7d6440aa3a8dc4ec365e7e4">BIOS::RUS::FS_FORMAT</a>
@@ -198,17 +160,11 @@ $(function() {
 <li>USER_NAME_CHANGE
 : <a class="el" href="classBIOS_1_1RUS.html#ade78d3c1dad6bf3e5a358b9b40cd81ae">BIOS::RUS</a>
 </li>
-<li>user_num
-: <a class="el" href="classMenu.html#aaddc5b1e186d738f082a8d64c696224c">Menu</a>
-</li>
 <li>userName1
 : <a class="el" href="structregistrationStruct.html#a2f6e338f5cceb022df9013f407d11f1d">registrationStruct</a>
 </li>
 <li>userName2
 : <a class="el" href="structregistrationStruct.html#a21530cae4cf4a303d926feaeba9798d7">registrationStruct</a>
-</li>
-<li>users
-: <a class="el" href="classMenu.html#a65554150722c669bb5c03b26b895a6a7">Menu</a>
 </li>
 <li>usersBaseMutex
 : <a class="el" href="classsqlWrapper.html#aa2879d27f495e220b84c6434f47ad3a8">sqlWrapper</a>
@@ -222,26 +178,10 @@ $(function() {
 <li>usersQuery
 : <a class="el" href="classsqlWrapper.html#ac4c110d414b6fa9ac639b0bbe502a97d">sqlWrapper</a>
 </li>
-<li>UTF8_ACCEPT
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a52898111c3bbd130b2481dbef93c7292">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>utf8_bytes
-: <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#af0854ae66725357d074912379a235128">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
-</li>
-<li>utf8_bytes_filled
-: <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#a9fc33bf0974526336e53ea530c7097ff">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
-</li>
-<li>utf8_bytes_index
-: <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#a6d87bc3e8b427e06cda936383283e0c4">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
-</li>
-<li>UTF8_REJECT
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a6bcc08c64319454fb9d72c3f438efee1">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
 <li>uuid
 : <a class="el" href="structConfig.html#ae116bc50901d9c2fd8923dc9169c2f76">Config</a>
 , <a class="el" href="classFISGO__TEST__API.html#a32c863d9382499da5efd07a5c9a3ec41">FISGO_TEST_API</a>
 , <a class="el" href="classGoodsStructure__new.html#a5060d5a33ed36343c6f28569418124b2">GoodsStructure_new</a>
-, <a class="el" href="classHttpsExchange.html#a55042a263a9fe007098f48998482aa43">HttpsExchange</a>
 , <a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT_1_1REQUEST.html#abec1ef9926737a2bb327ae0328a2ba59">JSON::JSON_CASH_INFO_REPORT::REQUEST</a>
 , <a class="el" href="structJSON_1_1JSON__COUNTERS__REPORT_1_1REQUEST.html#ad012fec9cb6a275bd482880312250a64">JSON::JSON_COUNTERS_REPORT::REQUEST</a>
 , <a class="el" href="structJSON_1_1JSON__HANDSHAKE_1_1REQUEST.html#af19798b432dad0ccfc1d107a20c07290">JSON::JSON_HANDSHAKE::REQUEST</a>
@@ -259,17 +199,11 @@ $(function() {
 , <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a96e68787edf03864063ff12512c43430">JSON::MONEY_DOCUMENT_REPORT_JSON</a>
 , <a class="el" href="structJSON_1_1SHIFT__DOCUMENT__REPORT__JSON.html#a5a967586e12911491e6fd761b3b79e7d">JSON::SHIFT_DOCUMENT_REPORT_JSON</a>
 </li>
-<li>UUID_LEN
-: <a class="el" href="classGen__uuid.html#afe8d36ee220d42bfeb10d4075a608f02">Gen_uuid</a>
-</li>
-<li>UUID_PART_LEN
-: <a class="el" href="classGen__uuid.html#a17c83d208e6564560dd0e14e675cf28f">Gen_uuid</a>
-</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

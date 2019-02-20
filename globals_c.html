@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов файлов со ссылками на файлы, к которым они принадлежат.</div>
 
@@ -61,9 +84,6 @@ $(function() {
 <li>CAB_USER_FAILURE
 : <a class="el" href="json_8h.html#a67c07e398ffa72614fa08c62b1f4e317">json.h</a>
 </li>
-<li>CABINET_CONNECT_MASK
-: <a class="el" href="config_8h.html#a709b1b4bd28c52e4765ec0e332b55bfe">config.h</a>
-</li>
 <li>CABINET_REG_EMAIL()
 : <a class="el" href="dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020">dynamic_mask.h</a>
 </li>
@@ -75,27 +95,6 @@ $(function() {
 </li>
 <li>CALCULATION_PLACE()
 : <a class="el" href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">dynamic_mask.h</a>
-</li>
-<li>callbackCabinet()
-: <a class="el" href="CabinetBase_8cpp.html#a8f06885ff88b85a906d1809ce505debe">CabinetBase.cpp</a>
-</li>
-<li>callbackConfig()
-: <a class="el" href="sqlWrapper_8cpp.html#a9bace992b4fda03ebe91d5e5ff539d8b">sqlWrapper.cpp</a>
-</li>
-<li>callbackCounters()
-: <a class="el" href="counters_8cpp.html#a18466960a7958b39feef020903ae9908">counters.cpp</a>
-</li>
-<li>callbackHotkey()
-: <a class="el" href="sqlWrapper_8cpp.html#ad14f400bb54c4854bc544903769fb226">sqlWrapper.cpp</a>
-</li>
-<li>callbackReceipts()
-: <a class="el" href="ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb">ReceiptsDb.cpp</a>
-</li>
-<li>callbackTasks()
-: <a class="el" href="ReceiptsDb_8cpp.html#aa6e928b81fcae281aa1a118ef7720ee1">ReceiptsDb.cpp</a>
-</li>
-<li>callbackUsers()
-: <a class="el" href="sqlWrapper_8cpp.html#aa9efa3e0097a9e415b1bac337d27942d">sqlWrapper.cpp</a>
 </li>
 <li>CARD()
 : <a class="el" href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d">dynamic_mask.h</a>
@@ -131,35 +130,17 @@ $(function() {
 <li>CLOUD_KKT_FNS_NUM()
 : <a class="el" href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">dynamic_mask.h</a>
 </li>
-<li>CLOUD_NEED_REPORT
-: <a class="el" href="config_8h.html#a4975152829521f213cf72266058c85ef">config.h</a>
-</li>
-<li>CLOUD_NEED_SIGN
-: <a class="el" href="config_8h.html#af87c111f5707376af5c392e86a84d281">config.h</a>
-</li>
-<li>CLOUD_OFD_REGISTER
-: <a class="el" href="config_8h.html#ac4ae9c09340c98f4ff02505b7a46bf06">config.h</a>
-</li>
 <li>CLOUD_ORG_FNS_NUM()
 : <a class="el" href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">dynamic_mask.h</a>
 </li>
 <li>CLOUD_PIN()
 : <a class="el" href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">dynamic_mask.h</a>
 </li>
-<li>CLOUD_REG_KKT
-: <a class="el" href="config_8h.html#a0e871114d6f055f25111461eff61c109">config.h</a>
-</li>
 <li>CLOUD_REG_STATUS()
 : <a class="el" href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">dynamic_mask.h</a>
 </li>
-<li>CLOUD_REGISTERED
-: <a class="el" href="config_8h.html#a0a55bb24ce0de635ea6f729999ccdb3a">config.h</a>
-</li>
 <li>CLOUD_TEL()
 : <a class="el" href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">dynamic_mask.h</a>
-</li>
-<li>CLOUD_WAITING
-: <a class="el" href="config_8h.html#a5c95a6cbf941363b91969536d6045457">config.h</a>
 </li>
 <li>CMD_CHARACTER
 : <a class="el" href="bsp__printer__keypad_8c.html#a560da7859950c44fc33678a0d91e10b3">bsp_printer_keypad.c</a>
@@ -173,24 +154,12 @@ $(function() {
 <li>CMD_STATE
 : <a class="el" href="bsp__printer__keypad_8c.html#a095fe382f40042a01cc3136ad15e6f16">bsp_printer_keypad.c</a>
 </li>
-<li>COMMISION_AGENT
-: <a class="el" href="agents_8h.html#a2c22e599a8f04aaf88eb2c4a6c5a2140">agents.h</a>
-</li>
 <li>comports
 : <a class="el" href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">rs232.cpp</a>
 </li>
 <li>config_clear()
 : <a class="el" href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config.cpp</a>
 , <a class="el" href="config_8h.html#a494b0e207424d08fce7a81e09d9a93bf">config.h</a>
-</li>
-<li>CONFIG_FIELDS
-: <a class="el" href="config_8h.html#acb7096d5401aba1bd3215f8df6c930c9">config.h</a>
-</li>
-<li>CONFIG_VER()
-: <a class="el" href="dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6">dynamic_mask.h</a>
-</li>
-<li>CONFIG_VERSION
-: <a class="el" href="config_8h.html#af80efdbf1a16321cb0fbb1e695a114bf">config.h</a>
 </li>
 <li>configDbSize
 : <a class="el" href="sqlWrapper_8cpp.html#a04c8b4e83468b45bc08629d4ac31446a">sqlWrapper.cpp</a>
@@ -256,15 +225,6 @@ $(function() {
 <li>CURRENT_AGENT()
 : <a class="el" href="dynamic__mask_8h.html#a43016d7adde3d1febd971856bd76d1fe">dynamic_mask.h</a>
 </li>
-<li>currentFont
-: <a class="el" href="printer_8h.html#a142da2f4a6d1d42a1bef5e2140ac3034">printer.h</a>
-</li>
-<li>curShared
-: <a class="el" href="log_8c.html#aa831614c39455b1cfb65579230f551e4">log.c</a>
-</li>
-<li>curShared1
-: <a class="el" href="log_8c.html#a0620c19c0a4439fbef75d2e15f3ffcd4">log.c</a>
-</li>
 <li>CYRILLIC
 : <a class="el" href="keypad_8h.html#ab335ba505ea0193cc8cd61e5ff237400">keypad.h</a>
 </li>
@@ -272,7 +232,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

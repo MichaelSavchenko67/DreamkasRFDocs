@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов файлов со ссылками на файлы, к которым они принадлежат.</div>
 
@@ -55,9 +78,6 @@ $(function() {
 <li>REC_SENDER_EMAIL()
 : <a class="el" href="dynamic__mask_8h.html#a622fa781cad09d4c6148b3bc3beb7f64">dynamic_mask.h</a>
 </li>
-<li>RECEIPT_CORRECTION_MASK
-: <a class="el" href="config_8h.html#aab351dbe3ffaf7208b3305cc87a402a9">config.h</a>
-</li>
 <li>receipts_Db_Clean_thread_()
 : <a class="el" href="threads_8h.html#a856a9a157dbf1188858061e0a2842897">threads.h</a>
 </li>
@@ -66,9 +86,6 @@ $(function() {
 </li>
 <li>receiptsCnt
 : <a class="el" href="ReceiptsDb_8cpp.html#a1fe1c408b0148e3f78b575a8c564792a">ReceiptsDb.cpp</a>
-</li>
-<li>REG_KKT_MASK
-: <a class="el" href="config_8h.html#a8fb3d9cad5240b0a4b8d2753e4595a1b">config.h</a>
 </li>
 <li>REGISTERED
 : <a class="el" href="json_8h.html#a7b988cd042236329a1064f1d896998f7">json.h</a>
@@ -122,12 +139,12 @@ $(function() {
 , <a class="el" href="rs232_8cpp.html#a19f8ebf69442b4dd7de536a2e939cb97">rs232.cpp</a>
 </li>
 <li>RS232_enableDTR()
-: <a class="el" href="rs232_8cpp.html#aa5db27fb36ad23b71970280b2f3da854">rs232.cpp</a>
-, <a class="el" href="rs232_8h.html#afc4db318f5581d66017847da784eb2f7">rs232.h</a>
+: <a class="el" href="rs232_8h.html#afc4db318f5581d66017847da784eb2f7">rs232.h</a>
+, <a class="el" href="rs232_8cpp.html#aa5db27fb36ad23b71970280b2f3da854">rs232.cpp</a>
 </li>
 <li>RS232_enableRTS()
-: <a class="el" href="rs232_8h.html#af9a89830b8df7e54ec21560ac0508eff">rs232.h</a>
-, <a class="el" href="rs232_8cpp.html#a833fe676d78efba5f7c0b51f2006af54">rs232.cpp</a>
+: <a class="el" href="rs232_8cpp.html#a833fe676d78efba5f7c0b51f2006af54">rs232.cpp</a>
+, <a class="el" href="rs232_8h.html#af9a89830b8df7e54ec21560ac0508eff">rs232.h</a>
 </li>
 <li>RS232_IsCTSEnabled()
 : <a class="el" href="rs232_8h.html#ab159ebb8591bbb2662bb036bbd448318">rs232.h</a>
@@ -138,8 +155,8 @@ $(function() {
 , <a class="el" href="rs232_8h.html#adc99514ae679150d22b9104b762a2c5d">rs232.h</a>
 </li>
 <li>RS232_IsDSREnabled()
-: <a class="el" href="rs232_8cpp.html#a6ecbbbc1fcfea491db716909628bb0fa">rs232.cpp</a>
-, <a class="el" href="rs232_8h.html#a2a73a413a420cea0c9425be7129ed4a6">rs232.h</a>
+: <a class="el" href="rs232_8h.html#a2a73a413a420cea0c9425be7129ed4a6">rs232.h</a>
+, <a class="el" href="rs232_8cpp.html#a6ecbbbc1fcfea491db716909628bb0fa">rs232.cpp</a>
 </li>
 <li>RS232_OpenComport()
 : <a class="el" href="rs232_8h.html#a956013cd53ce97c8203609dc33b0ef62">rs232.h</a>
@@ -150,22 +167,22 @@ $(function() {
 , <a class="el" href="rs232_8h.html#ab204b323695fdcc87a0dd7f04e8adc97">rs232.h</a>
 </li>
 <li>RS232_SendBuf()
-: <a class="el" href="rs232_8cpp.html#ab8cee54fcc772fe76bd457787b737349">rs232.cpp</a>
-, <a class="el" href="rs232_8h.html#a99bd31714f630491bb87aa1130a191d0">rs232.h</a>
+: <a class="el" href="rs232_8h.html#a99bd31714f630491bb87aa1130a191d0">rs232.h</a>
+, <a class="el" href="rs232_8cpp.html#ab8cee54fcc772fe76bd457787b737349">rs232.cpp</a>
 </li>
 <li>RS232_SendByte()
 : <a class="el" href="rs232_8cpp.html#ad8d4dbe7691e53e178360403228d650b">rs232.cpp</a>
 , <a class="el" href="rs232_8h.html#ad1e29ede1c8d5ed5f32c67a097d5bbe9">rs232.h</a>
 </li>
 <li>RS232_SetZeroName()
-: <a class="el" href="rs232_8h.html#ad03a4a934e2760922e73cdb941aa5529">rs232.h</a>
-, <a class="el" href="rs232_8cpp.html#ad03a4a934e2760922e73cdb941aa5529">rs232.cpp</a>
+: <a class="el" href="rs232_8cpp.html#ad03a4a934e2760922e73cdb941aa5529">rs232.cpp</a>
+, <a class="el" href="rs232_8h.html#ad03a4a934e2760922e73cdb941aa5529">rs232.h</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

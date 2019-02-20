@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -47,37 +70,19 @@ $(function() {
 
 <p>Полный список членов класса <a class="el" href="classFiscalDocDb.html">FiscalDocDb</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a2ecd28572810567003555738548373f5">_count_fd</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#ab3059e75d7fa98874d08e85cfcce279d">_db</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#ad8c999e98d315b849d1a53d5444035ed">_docDb</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#ab362d9793f20ce90f12616f4f186fec0">_max_fd</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#afdae41c8ba45043d864de3d64cfef8cd">_min_fd</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#ab12959a152c3bf48c93d4e15edafb673">_mutex</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#ae80f41a7cecbce0ecef83b6142afffc6">clearFiscalDb</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#adc23a1b0262b6a1c5b693567b016f931">clearLastFiscalDoc</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a96f745973a9893aff8615bc22c61c640">convert</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a6be06da27f69783cd40001f2873ebcf3">count_fd</a>() const</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#ae385187f0caf76ce571b0b2547a4b389">createTable</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#abc6ed31415cc288f7015859b83a3a162">fileName</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a48e00cf7c4c86f9bd0628e47d36bdf43">fillMinMaxFD</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#ace50f83efee9023d35a697c913ead224">FiscalDocDb</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#aff73d1d70e28ecbe0fabdd95ec0961d5">FiscalDocDb</a>(FiscalDocDb const &amp;)=delete</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12">instance</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#afcda40a0fdc26a891d24e7850f46bc5c">loadCountFiscalDoc</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9">loadFiscalDoc</a>(vector&lt; fiscal_doc &gt; &amp;fiscal_docs, uint64_t fd_num)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83">makeRequestNotSave</a>(string request)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#af9d4a431972bc0bdf55d3d92a0515015">makeRequestSave</a>(string request, vector&lt; fiscal_doc &gt; &amp;fiscal_docs)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a">max_fd</a>() const</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a3b1b082440d5a74d88847b7079c12f24">maxCountFD</a></td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12">instance</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#afcda40a0fdc26a891d24e7850f46bc5c">loadCountFiscalDoc</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9">loadFiscalDoc</a>(vector&lt; fiscal_doc &gt; &amp;fiscal_docs, uint64_t fd_num)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a">max_fd</a>() const</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda">min_fd</a>() const</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#a01fad544b6532245b37c26f9a2fc2102">operator=</a>(FiscalDocDb const &amp;)=delete</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#aaada8a1b514e3e984f84a12f5cf3266d">releaseInstance</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#ab59ff2745ceaf6feed5b8ab8c24a367b">saveFiscalDoc</a>(vector&lt; fiscal_doc &gt; &amp;fiscal_docs, uint64_t fd_num)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#aa565eecfbad3939568c2677d89b12547">~FiscalDocDb</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classFiscalDocDb.html#aaada8a1b514e3e984f84a12f5cf3266d">releaseInstance</a>()</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classFiscalDocDb.html#ab59ff2745ceaf6feed5b8ab8c24a367b">saveFiscalDoc</a>(vector&lt; fiscal_doc &gt; &amp;fiscal_docs, uint64_t fd_num)</td><td class="entry"><a class="el" href="classFiscalDocDb.html">FiscalDocDb</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

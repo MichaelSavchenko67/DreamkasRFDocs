@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -99,8 +122,7 @@ $(function() {
 : <a class="el" href="classJSON.html#abcd14939fceb63fa8d171a1c2e23e45d">JSON</a>
 </li>
 <li>task_data
-: <a class="el" href="classHttpsExchange.html#a4537846dd9e168e726a0803276c3ec36">HttpsExchange</a>
-, <a class="el" href="structJSON_1_1JSON__POLL___1_1RESPONSE.html#ad2dbdb6765b5826e53240d2c216c2e45">JSON::JSON_POLL_::RESPONSE</a>
+: <a class="el" href="structJSON_1_1JSON__POLL___1_1RESPONSE.html#ad2dbdb6765b5826e53240d2c216c2e45">JSON::JSON_POLL_::RESPONSE</a>
 </li>
 <li>task_data_clear()
 : <a class="el" href="classJSON.html#abab246fcaa9910614f53301c96b1e7d4">JSON</a>
@@ -112,7 +134,7 @@ $(function() {
 : <a class="el" href="classJSON.html#a1c4e8467ce258f14ccf66ea11fd07e15a2e360efbe034ff2194d95d3bfe8cb206">JSON</a>
 </li>
 <li>task_display()
-: <a class="el" href="classJSON.html#a264b8d41f6a731068e92b799eb282760">JSON</a>
+: <a class="el" href="classJSON.html#ad8e90ea347a4757f43008a0764ae116a">JSON</a>
 </li>
 <li>TASK_EXTERNAL_PURCHASE
 : <a class="el" href="classJSON.html#a1c4e8467ce258f14ccf66ea11fd07e15abefb4fdeb5a2b452622128e6684845e7">JSON</a>
@@ -178,7 +200,7 @@ $(function() {
 : <a class="el" href="classJSON.html#a43e1840f39369db53249a4390dc0a199">JSON</a>
 </li>
 <li>tasks_display()
-: <a class="el" href="classJSON.html#a00d4484b2ceb53d748fa758e0f3d6f56">JSON</a>
+: <a class="el" href="classJSON.html#a9bf6023bb1fea93ecd0b5e6f02c71f77">JSON</a>
 </li>
 <li>tasksQuery
 : <a class="el" href="classReceiptsDb.html#ad9e6c995d3f3ef63acf95a09ed1fd404">ReceiptsDb</a>
@@ -258,8 +280,7 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#ab7e7e49ac3c4678fa675c3fa8b602552">BIOS::RUS</a>
 </li>
 <li>taxes
-: <a class="el" href="classHttpsExchange.html#ae07326332f52cea132612d656c0a093a">HttpsExchange</a>
-, <a class="el" href="structJSON_1_1JSON__TOTAL.html#a5832352df3faf1e14c272e74343ef814">JSON::JSON_TOTAL</a>
+: <a class="el" href="structJSON_1_1JSON__TOTAL.html#a5832352df3faf1e14c272e74343ef814">JSON::JSON_TOTAL</a>
 , <a class="el" href="classMenu.html#a97437d01f7be550e8b66b914c7e24391">Menu</a>
 </li>
 <li>Taxes()
@@ -431,9 +452,6 @@ $(function() {
 <li>TestMassaK()
 : <a class="el" href="classTestMassaK.html#a75e9f8b6547fb50f265b1bcc94d872b7">TestMassaK</a>
 </li>
-<li>testNandPath
-: <a class="el" href="classFlashMounter.html#a1aed416d88ecc549b37db35f487e7bd4">FlashMounter</a>
-</li>
 <li>testParseActivationKey()
 : <a class="el" href="classTestJSON_1_1MockJson.html#a8a1c5b1ff41715373e39dc69de39ba28">TestJSON::MockJson</a>
 </li>
@@ -490,9 +508,6 @@ $(function() {
 </li>
 <li>text_str
 : <a class="el" href="classLcd.html#abaa8e76b9d6498e76db00a1a5bb143fa">Lcd</a>
-</li>
-<li>thousands_sep
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a78a6ae833bb6cf7f00cb0d51db114b14">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
 <li>THREE_PARAM
 : <a class="el" href="classGoods__new.html#a9e1c12e1fd48765d74026b9ea45bf453ac4d7b2e22d302d7ec0b8cf1a2682119a">Goods_new</a>
@@ -559,11 +574,11 @@ $(function() {
 <li>TIMER_SLEEP
 : <a class="el" href="classMenu.html#ae1f145836e0fb84724e5adbb41af8245">Menu</a>
 </li>
-<li>timer_start
-: <a class="el" href="classMenu.html#a4967f5778e73c6a17f1575d399ea5109">Menu</a>
-</li>
 <li>TIMER_START
 : <a class="el" href="classMenu.html#a1275a7aabe1617253a2053628049de49">Menu</a>
+</li>
+<li>timer_start
+: <a class="el" href="classMenu.html#a4967f5778e73c6a17f1575d399ea5109">Menu</a>
 </li>
 <li>timer_work()
 : <a class="el" href="classMenu.html#a71625398c06de298630250f9617adaa3">Menu</a>
@@ -582,9 +597,6 @@ $(function() {
 </li>
 <li>TimeZone()
 : <a class="el" href="structTimeZone.html#acced76f0320a8b4192d6cd3d5a447827">TimeZone</a>
-</li>
-<li>tlv_parse()
-: <a class="el" href="classBIOS_1_1RUS.html#ae83c0ea3747c916d2b869df9924a0270">BIOS::RUS</a>
 </li>
 <li>tlv_to_list_add_int32()
 : <a class="el" href="classRequisites.html#a51528cafbdf1be79081a9ddfb453a754">Requisites</a>
@@ -617,7 +629,7 @@ $(function() {
 : <a class="el" href="structnlohmann_1_1adl__serializer.html#adf8cd96afe6ab243b67392dfe35ace89">nlohmann::adl_serializer&lt; typename, typename &gt;</a>
 </li>
 <li>to_msgpack()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a99efe44b502de2762a433ce3688ec2d2">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a4ef190107be36fea6b6c63d71d439c99">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>to_string()
 : <a class="el" href="classnlohmann_1_1json__pointer.html#ad7d3a3a215db8fe0964e644a918dcccb">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
@@ -628,27 +640,14 @@ $(function() {
 <li>TOBACCO
 : <a class="el" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a15e929d3f61f396f0850e2a86351837d">GoodsData</a>
 </li>
-<li>token_buffer
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a8f43746570e5cadbc9b2b6b0c4c8e051">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>token_string
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ad2960e3d54af8fb8d572a8f6f7731d62">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>token_type
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>token_type_name()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
-<li>top()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#a00eff109d9a0091e42ada9b16b90c8d9">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
 <li>toString()
 : <a class="el" href="classMenu.html#aa31f756da7b53832a3d9422d2eebf93f">Menu</a>
-</li>
-<li>tot_receipt_sum
-: <a class="el" href="classMenu.html#a9d93b5b8a4f4704d81770e3dec27040e">Menu</a>
 </li>
 <li>total
 : <a class="el" href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html#a7c5f54b643edbdd7f3325b483af72dc2">JSON::JSON_EXTERNAL_PURCHASE</a>
@@ -664,8 +663,7 @@ $(function() {
 : <a class="el" href="classPosition__new.html#af280478dcc3fc624edb35e3ee25473b6">Position_new</a>
 </li>
 <li>total_pos_sum
-: <a class="el" href="classPosition__new.html#af7d16e6bb3873270f65ecba1125397c7">Position_new</a>
-, <a class="el" href="classPositions_1_1Position.html#aa392ac5dfee050d2bbdc41a5fc6f469b">Positions::Position</a>
+: <a class="el" href="classPositions_1_1Position.html#aa392ac5dfee050d2bbdc41a5fc6f469b">Positions::Position</a>
 </li>
 <li>total_pos_sum_get()
 : <a class="el" href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb">Position_new</a>
@@ -686,21 +684,11 @@ $(function() {
 <li>TOTAL_SUM_DISPLAY
 : <a class="el" href="classReceipt__new.html#a1e5d51948f054ada4fe2892b972cd36a">Receipt_new</a>
 </li>
-<li>total_sum_display
-: <a class="el" href="classReceipt__new.html#afef2f73235ae93b693aa2b07fa6ada44">Receipt_new</a>
-</li>
 <li>total_sum_display_get()
 : <a class="el" href="classReceipt__new.html#ac0f54ec75ef765fdc54e52cf47159400">Receipt_new</a>
 </li>
 <li>total_sum_display_set()
 : <a class="el" href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec">Receipt_new</a>
-</li>
-<li>total_sum_prepayment
-: <a class="el" href="classPositions.html#a8773420eeeb7f0cfea00308073ef2e5b">Positions</a>
-</li>
-<li>total_sum_receipt
-: <a class="el" href="classPositions.html#ac7788aa70c199b713e0f68b12fe41339">Positions</a>
-, <a class="el" href="classReceipt__new.html#acad51d5668dcb89e8b0ea74747d9b0d0">Receipt_new</a>
 </li>
 <li>TOTAL_SUM_RECEIPT
 : <a class="el" href="classReceipt__new.html#ac97aaef8766f3e4130615db011a12ff1">Receipt_new</a>
@@ -711,10 +699,6 @@ $(function() {
 <li>total_sum_receipt_set()
 : <a class="el" href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4">Receipt_new</a>
 </li>
-<li>total_tax_sum
-: <a class="el" href="classPositions.html#a9adccd23d9476c02ce623eb3dcee1155">Positions</a>
-, <a class="el" href="classReceipt__new.html#a3d679367dacab6e2f65e43ca51f512e9">Receipt_new</a>
-</li>
 <li>TOTAL_TAX_SUM
 : <a class="el" href="classReceipt__new.html#abfa9b96a7f2e0e839893fcec84e069db">Receipt_new</a>
 </li>
@@ -724,17 +708,11 @@ $(function() {
 <li>total_tax_sum_set()
 : <a class="el" href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b">Receipt_new</a>
 </li>
-<li>totalCashlessSum
-: <a class="el" href="classReceipt__new.html#a7b144b34b8fa7272ec7761489e938955">Receipt_new</a>
-</li>
 <li>totalCashlessSumGet()
 : <a class="el" href="classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6">Receipt_new</a>
 </li>
 <li>totalCashlessSumSet()
 : <a class="el" href="classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b">Receipt_new</a>
-</li>
-<li>totalCashSum
-: <a class="el" href="classReceipt__new.html#a9d9fd067a34ad651edaf6189a5fcf24f">Receipt_new</a>
 </li>
 <li>totalCashSumGet()
 : <a class="el" href="classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9">Receipt_new</a>
@@ -771,8 +749,7 @@ $(function() {
 : <a class="el" href="classGoods__new.html#a9e1c12e1fd48765d74026b9ea45bf453ac62597bb5f3c2dac9e8f3e0cf192b85e">Goods_new</a>
 </li>
 <li>type
-: <a class="el" href="classBarcodeScanner.html#ad79890b3dcc3019aa161730386f22aa8">BarcodeScanner</a>
-, <a class="el" href="structBIOS_1_1BEL_1_1OPEN__DOC.html#ad768e1477f0c75679ffff60c119db476">BIOS::BEL::OPEN_DOC</a>
+: <a class="el" href="structBIOS_1_1BEL_1_1OPEN__DOC.html#ad768e1477f0c75679ffff60c119db476">BIOS::BEL::OPEN_DOC</a>
 , <a class="el" href="structBIOS_1_1BEL_1_1RECEIPT__FIS__DATA.html#adebb154eac3f3382c753a11b900c8580">BIOS::BEL::RECEIPT_FIS_DATA</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1OPEN__DOC.html#a3d365ecc1eef4143269950820671639c">BIOS::RUS::OPEN_DOC</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1RECEIPT__FIS__DATA.html#ac8a26249735fd2e43e051ff9e2875609">BIOS::RUS::RECEIPT_FIS_DATA</a>
@@ -792,19 +769,17 @@ $(function() {
 , <a class="el" href="structJSON_1_1JSON__TASK.html#ae8096b9a3068b5d247b5e048d758bb2c">JSON::JSON_TASK</a>
 , <a class="el" href="structJSON_1_1JSON__UPSDISC__RESULT.html#a9c422e5a5549896a6fbba4d67c11661d">JSON::JSON_UPSDISC_RESULT</a>
 , <a class="el" href="structJSON_1_1PAYMENTS.html#ada70f69af8ca183bbd8113f4681bfcab">JSON::PAYMENTS</a>
-, <a class="el" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE</a>
-, <a class="el" href="classMenuItem.html#a10c3a3c2b6aa01692b1cb367403f9790">MenuItem</a>
 , <a class="el" href="classnlohmann_1_1basic__json.html#a2b2d781d7f2a4ee41bc0016e931cadf7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1detector.html#a0cd69423587748bf3d3d702cc7b7c2ce">nlohmann::detail::detector&lt; Default, AlwaysVoid, Op, Args &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1detector_3_01Default_00_01void__t_3_01Op_3_01Args_8_8_8_01_4_01_4_00_01Op_00_01Args_8_8_8_01_4.html#a5afd6a40e94dde21d120ac646468c495">nlohmann::detail::detector&lt; Default, void_t&lt; Op&lt; Args... &gt; &gt;, Op, Args... &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1index__sequence.html#a3c14c4ab277de72b166806193ff4fa10">nlohmann::detail::index_sequence&lt; Ints &gt;</a>
+, <a class="el" href="classReceipt__new.html#a92879103d87eee6ea8bf1406be4569ce">Receipt_new</a>
 </li>
 <li>TYPE
 : <a class="el" href="classReceipt__new.html#a7f697b62c97446530e9d6f75065fb266">Receipt_new</a>
 </li>
 <li>type
-: <a class="el" href="classReceipt__new.html#a92879103d87eee6ea8bf1406be4569ce">Receipt_new</a>
-, <a class="el" href="structregistrationStruct.html#ae0bc76ff99c861984a548a6a62dd93eb">registrationStruct</a>
+: <a class="el" href="structregistrationStruct.html#ae0bc76ff99c861984a548a6a62dd93eb">registrationStruct</a>
 , <a class="el" href="classRequisites_1_1Requisite.html#a6f64c9eff6f57eac0d41300f7a80726e">Requisites::Requisite</a>
 , <a class="el" href="structScaleConfig.html#aca2318713d067061f00aa99f6aa289a4">ScaleConfig</a>
 </li>
@@ -843,7 +818,6 @@ $(function() {
 </li>
 <li>type_error
 : <a class="el" href="classnlohmann_1_1basic__json.html#a4010e8e268fefd86da773c10318f2902">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7">nlohmann::detail::type_error</a>
 </li>
 <li>type_name()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -861,7 +835,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

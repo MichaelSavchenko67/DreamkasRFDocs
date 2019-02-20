@@ -1,10 +1,10 @@
 <map id="Menu::chose_signs" name="Menu::chose_signs">
-<area shape="rect" id="node1" title=" " alt="" coords="5,115,140,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,140,156"/>
 <area shape="rect" id="node2" href="$classMenu.html#a36df8d35739295add4f09ee848d8739f" title=" " alt="" coords="188,5,377,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a05203c188dcd29c53f38370dc8e32def" title=" " alt="" coords="425,49,588,90"/>
-<area shape="rect" id="node6" href="$classMenu.html#ad4936d5dc8350ec7e1dd3e0180cb430d" title=" " alt="" coords="215,107,351,149"/>
-<area shape="rect" id="node7" href="$classMenu.html#aad79e98552f82d7cc862f52b62058de4" title=" " alt="" coords="440,144,573,171"/>
-<area shape="rect" id="node8" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="239,224,326,251"/>
-<area shape="rect" id="node4" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="636,56,769,83"/>
-<area shape="rect" id="node5" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="639,111,767,137"/>
+<area shape="rect" id="node3" href="$classMenu.html#a05203c188dcd29c53f38370dc8e32def" title=" " alt="" coords="201,57,364,98"/>
+<area shape="rect" id="node6" href="$classMenu.html#ad4936d5dc8350ec7e1dd3e0180cb430d" title=" " alt="" coords="215,122,351,163"/>
+<area shape="rect" id="node7" href="$classMenu.html#aad79e98552f82d7cc862f52b62058de4" title=" " alt="" coords="216,188,349,215"/>
+<area shape="rect" id="node8" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="239,239,326,265"/>
+<area shape="rect" id="node4" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="425,64,559,91"/>
+<area shape="rect" id="node5" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="428,151,556,177"/>
 </map>

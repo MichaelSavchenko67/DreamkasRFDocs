@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1COUNTERS.html">COUNTERS</a></li>  </ul>
@@ -81,10 +104,7 @@ $(function() {
 <tr class="memitem:a85e030c94ee120041ad9a32e444eb9bb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">total_sum</a></td></tr>
 <tr class="separator:a85e030c94ee120041ad9a32e444eb9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00232">232</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a2ded61eb1e35ca73e325b825a92d7ed0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ded61eb1e35ca73e325b825a92d7ed0">&#9670;&nbsp;</a></span>COUNTERS()</h2>
 
@@ -99,11 +119,9 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02214">2214</a></p>
-<div class="fragment"><div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;{</div><div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">type</a>.    clear();</div><div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">payments</a>.clear();</div><div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">total_sum</a>    = 0;</div><div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;}</div><div class="ttc" id="structJSON_1_1COUNTERS_html_a3628ae9a7a710ddf59a3309dbefcd30b"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">JSON::COUNTERS::type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00236">json.h:236</a></div></div>
-<div class="ttc" id="structJSON_1_1COUNTERS_html_a85e030c94ee120041ad9a32e444eb9bb"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">JSON::COUNTERS::total_sum</a></div><div class="ttdeci">uint64_t total_sum</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00238">json.h:238</a></div></div>
-<div class="ttc" id="structJSON_1_1COUNTERS_html_a0c51a5d15ee48bcc4c71421aff251c2a"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">JSON::COUNTERS::payments</a></div><div class="ttdeci">vector&lt; PAYMENTS &gt; payments</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00237">json.h:237</a></div></div>
+<div class="fragment"><div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;{</div><div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">type</a>.    clear();</div><div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">payments</a>.clear();</div><div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">total_sum</a>    = 0;</div><div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;}</div><div class="ttc" id="structJSON_1_1COUNTERS_html_a3628ae9a7a710ddf59a3309dbefcd30b"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">JSON::COUNTERS::type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> json.h:236</div></div>
+<div class="ttc" id="structJSON_1_1COUNTERS_html_a85e030c94ee120041ad9a32e444eb9bb"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">JSON::COUNTERS::total_sum</a></div><div class="ttdeci">uint64_t total_sum</div><div class="ttdef"><b>Definition:</b> json.h:238</div></div>
+<div class="ttc" id="structJSON_1_1COUNTERS_html_a0c51a5d15ee48bcc4c71421aff251c2a"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">JSON::COUNTERS::payments</a></div><div class="ttdeci">vector&lt; PAYMENTS &gt; payments</div><div class="ttdef"><b>Definition:</b> json.h:237</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -121,11 +139,9 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02221">2221</a></p>
-<div class="fragment"><div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;{</div><div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">type</a>.    clear();</div><div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">payments</a>.clear();</div><div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">total_sum</a>    = 0;</div><div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;}</div><div class="ttc" id="structJSON_1_1COUNTERS_html_a3628ae9a7a710ddf59a3309dbefcd30b"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">JSON::COUNTERS::type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00236">json.h:236</a></div></div>
-<div class="ttc" id="structJSON_1_1COUNTERS_html_a85e030c94ee120041ad9a32e444eb9bb"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">JSON::COUNTERS::total_sum</a></div><div class="ttdeci">uint64_t total_sum</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00238">json.h:238</a></div></div>
-<div class="ttc" id="structJSON_1_1COUNTERS_html_a0c51a5d15ee48bcc4c71421aff251c2a"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">JSON::COUNTERS::payments</a></div><div class="ttdeci">vector&lt; PAYMENTS &gt; payments</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00237">json.h:237</a></div></div>
+<div class="fragment"><div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;{</div><div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">type</a>.    clear();</div><div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">payments</a>.clear();</div><div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;    <a class="code" href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">total_sum</a>    = 0;</div><div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;}</div><div class="ttc" id="structJSON_1_1COUNTERS_html_a3628ae9a7a710ddf59a3309dbefcd30b"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a3628ae9a7a710ddf59a3309dbefcd30b">JSON::COUNTERS::type</a></div><div class="ttdeci">string type</div><div class="ttdef"><b>Definition:</b> json.h:236</div></div>
+<div class="ttc" id="structJSON_1_1COUNTERS_html_a85e030c94ee120041ad9a32e444eb9bb"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a85e030c94ee120041ad9a32e444eb9bb">JSON::COUNTERS::total_sum</a></div><div class="ttdeci">uint64_t total_sum</div><div class="ttdef"><b>Definition:</b> json.h:238</div></div>
+<div class="ttc" id="structJSON_1_1COUNTERS_html_a0c51a5d15ee48bcc4c71421aff251c2a"><div class="ttname"><a href="structJSON_1_1COUNTERS.html#a0c51a5d15ee48bcc4c71421aff251c2a">JSON::COUNTERS::payments</a></div><div class="ttdeci">vector&lt; PAYMENTS &gt; payments</div><div class="ttdef"><b>Definition:</b> json.h:237</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -142,9 +158,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00237">237</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a9eb7efadef24f374d46585a187ebe036">Menu::shift_rep_send_to_cab()</a>.</p>
 
 </div>
 </div>
@@ -160,9 +174,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00238">238</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a9eb7efadef24f374d46585a187ebe036">Menu::shift_rep_send_to_cab()</a>.</p>
 
 </div>
 </div>
@@ -178,20 +190,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00236">236</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a9eb7efadef24f374d46585a187ebe036">Menu::shift_rep_send_to_cab()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="json_8h_source.html">json.h</a></li>
-<li>src/appl/<a class="el" href="json_8cpp_source.html">json.cpp</a></li>
+<li>src/appl/<a class="el" href="json_8cpp.html">json.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

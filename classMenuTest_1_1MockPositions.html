@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classMenuTest.html">MenuTest</a></li><li class="navelem"><a class="el" href="classMenuTest_1_1MockPositions.html">MockPositions</a></li>  </ul>
@@ -60,8 +83,8 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTest_1_1MockPositions__inherit__graph.png" border="0" usemap="#MenuTest_1_1MockPositions_inherit__map" alt="Inheritance graph"/></div>
 <map name="MenuTest_1_1MockPositions_inherit__map" id="MenuTest_1_1MockPositions_inherit__map">
-<area shape="rect"  title=" " alt="" coords="17,1385,192,1477"/>
-<area shape="rect"  href="classPositions.html" title=" " alt="" coords="5,395,204,1337"/>
+<area shape="rect"  title=" " alt="" coords="17,1327,192,1419"/>
+<area shape="rect"  href="classPositions.html" title=" " alt="" coords="5,395,204,1279"/>
 <area shape="rect"  href="classGoodsData.html" title=" " alt="" coords="33,5,176,347"/>
 </map>
 </div>
@@ -72,8 +95,8 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classMenuTest_1_1MockPositions__coll__graph.png" border="0" usemap="#MenuTest_1_1MockPositions_coll__map" alt="Collaboration graph"/></div>
 <map name="MenuTest_1_1MockPositions_coll__map" id="MenuTest_1_1MockPositions_coll__map">
-<area shape="rect"  title=" " alt="" coords="87,2429,261,2521"/>
-<area shape="rect"  href="classPositions.html" title=" " alt="" coords="75,1481,273,2380"/>
+<area shape="rect"  title=" " alt="" coords="87,2371,261,2463"/>
+<area shape="rect"  href="classPositions.html" title=" " alt="" coords="75,1481,273,2321"/>
 <area shape="rect"  href="classGoodsData.html" title=" " alt="" coords="81,263,224,604"/>
 <area shape="rect"  href="classPositions_1_1Position.html" title=" " alt="" coords="190,667,366,1389"/>
 <area shape="rect"  href="structAGENTS.html" title=" " alt="" coords="248,395,345,472"/>
@@ -281,10 +304,7 @@ $(function() {
 <tr class="memitem:a9931440d0c99377ad6f2162512e6a0b8 inherit pub_static_attribs_classGoodsData"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoodsData.html#a9931440d0c99377ad6f2162512e6a0b8">WEIGHT</a> = 16</td></tr>
 <tr class="separator:a9931440d0c99377ad6f2162512e6a0b8 inherit pub_static_attribs_classGoodsData"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="testMenu_8h_source.html">testMenu.h</a> строка <a class="el" href="testMenu_8h_source.html#l00240">240</a></p>
-</div><h2 class="groupheader">Методы</h2>
+<h2 class="groupheader">Методы</h2>
 <a id="a27efb35948b8bc9142e577be3f0cd04a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27efb35948b8bc9142e577be3f0cd04a">&#9670;&nbsp;</a></span>MOCK_METHOD0()</h2>
 
@@ -347,7 +367,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:48. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

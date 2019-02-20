@@ -1,6 +1,4 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,61,32"/>
 <area shape="rect" id="node2" href="$classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone изменение текущего часового пояса время выполнеиня 5 сек + время перезапуска сервиса" alt="" coords="109,5,299,32"/>
-<area shape="rect" id="node3" href="$classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447" title="updateZone обновление ссылки на часовой пояс" alt="" coords="347,5,504,32"/>
-<area shape="rect" id="node4" href="$classTimeSync.html#afe94b9496cdc125fe594b6b057826d83" title="updateZoneDefault обновить ссылка на стандартный часовой пояс" alt="" coords="552,5,751,32"/>
 </map>

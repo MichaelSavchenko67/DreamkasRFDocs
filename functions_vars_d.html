@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -71,9 +94,6 @@ $(function() {
 <li>dataMatrix
 : <a class="el" href="classMenu.html#a60fe3116f26fe03d87d400d74d6e9e82">Menu</a>
 , <a class="el" href="classPosition__new.html#a604b2dd2d07b25a254f0dd5eeeb0d78b">Position_new</a>
-</li>
-<li>dataMount
-: <a class="el" href="classFlashMounter.html#aadc3e28815d074c13214841d1d036845">FlashMounter</a>
 </li>
 <li>dataSize
 : <a class="el" href="classScaleProtocolInterface.html#aa32d847d1e9837fe1f1441e9e5f280ce">ScaleProtocolInterface</a>
@@ -121,26 +141,11 @@ $(function() {
 <li>DAYS_IN_MON
 : <a class="el" href="classReceiptsDb.html#a3c509eeb0c0dfb2f9d6eca4677720d88">ReceiptsDb</a>
 </li>
-<li>db
-: <a class="el" href="classSlipsDB.html#a4ddb1fc64948704c0050f268b27b3eed">SlipsDB</a>
-</li>
-<li>decimal_point
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a311e5d6f4b31d5be0eb3c0cb20b6965a">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>decimal_point_char
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a16593b0475f6d1cddd5eaf7c045771f3">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>DEFAULT_DEPS_CNT
 : <a class="el" href="classBIOS_1_1BEL.html#a58df6fc9cc84a7c22a6459b73096affb">BIOS::BEL</a>
 </li>
 <li>DEFFERED_
 : <a class="el" href="classFISGO__TEST__API.html#a69a9c6ae373bd7fc5d099aa88067bab9">FISGO_TEST_API</a>
-</li>
-<li>defZone
-: <a class="el" href="classTimeSync.html#a1be06f6137b1d312d13c7414801d0ba4">TimeSync</a>
-</li>
-<li>defZoneBy
-: <a class="el" href="classTimeSync.html#a2ca8b2ebcd470887bb0380c32e9da06e">TimeSync</a>
 </li>
 <li>del
 : <a class="el" href="structJSON_1_1JSON__LOGS.html#a2126938f374ae15d63b10fa735000c22">JSON::JSON_LOGS</a>
@@ -190,15 +195,6 @@ $(function() {
 <li>DEPS
 : <a class="el" href="classBIOS_1_1BEL.html#a15522b3a0b57844c80b54a8f3744894d">BIOS::BEL</a>
 </li>
-<li>deviceMountPath
-: <a class="el" href="classFlashMounter.html#ac72537ffc8283b6c264929f506b11d2d">FlashMounter</a>
-</li>
-<li>deviceName
-: <a class="el" href="classFlashMounter.html#af06a69216d275531efb8c0a91c041990">FlashMounter</a>
-</li>
-<li>devicePath
-: <a class="el" href="classFlashMounter.html#ab0dee2e2729131dded45dd71c6d53ee1">FlashMounter</a>
-</li>
 <li>directory_code
 : <a class="el" href="classGoodsData.html#ae1255b007f7e60a75ac54dd2b6c3054c">GoodsData</a>
 </li>
@@ -208,21 +204,18 @@ $(function() {
 <li>directory_code
 : <a class="el" href="classPosition__new.html#ae77ba11cfea877fe7366e71baa3d4b13">Position_new</a>
 </li>
-<li>discarded
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a8997ee6dc3bd39116b951465b946445e">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>discount
 : <a class="el" href="structBIOS_1_1BEL_1_1RECEIPT__FIS__DATA.html#ae079437a13b2b2c36bfcad3ad6e48a2a">BIOS::BEL::RECEIPT_FIS_DATA</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1RECEIPT__FIS__DATA.html#ab8084df5f5dafb3d5cc01518abda797f">BIOS::RUS::RECEIPT_FIS_DATA</a>
 , <a class="el" href="structGoods__new_1_1CLC__DISCOUNT__DATA.html#ab4469053328be57d0dc8c09ca0b1a403">Goods_new::CLC_DISCOUNT_DATA</a>
 , <a class="el" href="structJSON_1_1JSON__POSITION.html#accd230bf1264b5f57054bdd47d684ce1">JSON::JSON_POSITION</a>
+, <a class="el" href="classPosition__new.html#a40bbb7455b95a319a9e1c2f84f7ff330">Position_new</a>
 </li>
 <li>DISCOUNT
 : <a class="el" href="classPosition__new.html#ad73439361bdc385d2daf50e85f05924a">Position_new</a>
 </li>
 <li>discount
-: <a class="el" href="classPosition__new.html#a40bbb7455b95a319a9e1c2f84f7ff330">Position_new</a>
-, <a class="el" href="classPositions_1_1Position.html#ab531fd0e8ce6e148667c108032bdd46d">Positions::Position</a>
+: <a class="el" href="classPositions_1_1Position.html#ab531fd0e8ce6e148667c108032bdd46d">Positions::Position</a>
 </li>
 <li>DISCOUNT_REM_ID
 : <a class="el" href="classPosition__new.html#a0b93d4465bf64405e14834dda48f495c">Position_new</a>
@@ -325,12 +318,8 @@ $(function() {
 <li>DOC_NUM_
 : <a class="el" href="classFISGO__TEST__API.html#a31fde82cce59ce151c8d6bb4bc8bb434">FISGO_TEST_API</a>
 </li>
-<li>doc_state
-: <a class="el" href="classBIOS_1_1BEL.html#aa3ca4c97b5a10f30caa7409e403020fc">BIOS::BEL</a>
-</li>
 <li>doc_type
-: <a class="el" href="classBIOS_1_1BEL.html#acb95096f26c36a9d398b518527b342d8">BIOS::BEL</a>
-, <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT</a>
+: <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT</a>
 , <a class="el" href="structJSON_1_1SHIFTS.html#a4968fa8c99a0f8d0185195930cc29650">JSON::SHIFTS</a>
 </li>
 <li>documents
@@ -356,7 +345,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

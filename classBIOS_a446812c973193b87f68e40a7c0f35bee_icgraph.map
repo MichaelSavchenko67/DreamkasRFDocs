@@ -1,13 +1,10 @@
 <map id="BIOS::getCounters_RecSumsByType" name="BIOS::getCounters_RecSumsByType">
-<area shape="rect" id="node1" title=" " alt="" coords="829,23,1028,65"/>
-<area shape="rect" id="node2" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="641,5,779,32"/>
-<area shape="rect" id="node7" href="$classMenu.html#a438c0d2d6713ebd6eeb3fbf93847442b" title=" " alt="" coords="639,56,781,83"/>
-<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="433,5,591,32"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="249,5,377,32"/>
-<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,56,193,83"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node8" href="$classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="444,56,580,83"/>
-<area shape="rect" id="node10" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="440,107,584,133"/>
-<area shape="rect" id="node9" href="$threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="243,56,383,83"/>
-<area shape="rect" id="node11" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="241,107,385,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="731,23,929,65"/>
+<area shape="rect" id="node2" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="543,5,680,32"/>
+<area shape="rect" id="node6" href="$classMenu.html#a438c0d2d6713ebd6eeb3fbf93847442b" title=" " alt="" coords="540,56,683,83"/>
+<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="335,5,492,32"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="151,5,279,32"/>
+<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node7" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="341,56,485,83"/>
+<area shape="rect" id="node8" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="143,56,287,83"/>
 </map>

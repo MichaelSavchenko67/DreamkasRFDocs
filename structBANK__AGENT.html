@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -83,10 +106,7 @@ $(function() {
 <tr class="memitem:af9f1ede5e3a4456869f28966cecf1b2c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a> [19]</td></tr>
 <tr class="separator:af9f1ede5e3a4456869f28966cecf1b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00051">51</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a74e62c51f718c0f286c10735c75f5078"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74e62c51f718c0f286c10735c75f5078">&#9670;&nbsp;</a></span>BANK_AGENT()</h2>
 
@@ -109,17 +129,15 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00053">53</a></p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">transfer_operator_tel_num</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">transfer_operator_tel_num</a>) );</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">payin_agent_operation</a>,     0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">payin_agent_operation</a>) );</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">agent_tel_num</a>,             0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">agent_tel_num</a>) );</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">transfer_operator_name</a>,    0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">transfer_operator_name</a>) );</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">transfer_operator_adress</a>,  0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">transfer_operator_adress</a>) );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">transfer_operator_inn</a>,     0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">transfer_operator_inn</a>) );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a>,          0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a>) );</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="structBANK__AGENT_html_af9f1ede5e3a4456869f28966cecf1b2c"><div class="ttname"><a href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">BANK_AGENT::provider_tel_num</a></div><div class="ttdeci">char provider_tel_num[19]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00077">agents.h:77</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_acf13530208d3446ad9a5a0578478d9d3"><div class="ttname"><a href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">BANK_AGENT::transfer_operator_tel_num</a></div><div class="ttdeci">char transfer_operator_tel_num[19]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00065">agents.h:65</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_a416c4a57a5c40ef7d1c2045180c318d7"><div class="ttname"><a href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">BANK_AGENT::payin_agent_operation</a></div><div class="ttdeci">char payin_agent_operation[24]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00067">agents.h:67</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_aa64ddfe721b57b53658baee0fbb0af6f"><div class="ttname"><a href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">BANK_AGENT::transfer_operator_name</a></div><div class="ttdeci">char transfer_operator_name[64]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00071">agents.h:71</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_a8d5d43355916110d85807bfbd2aa4852"><div class="ttname"><a href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">BANK_AGENT::transfer_operator_inn</a></div><div class="ttdeci">char transfer_operator_inn[12]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00075">agents.h:75</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_af3ca4280a0f06b26b13b727567472dcc"><div class="ttname"><a href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">BANK_AGENT::transfer_operator_adress</a></div><div class="ttdeci">char transfer_operator_adress[256]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00073">agents.h:73</a></div></div>
-<div class="ttc" id="structBANK__AGENT_html_a53b64696e7a5cf271b1226db7a0685ed"><div class="ttname"><a href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">BANK_AGENT::agent_tel_num</a></div><div class="ttdeci">char agent_tel_num[19]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00069">agents.h:69</a></div></div>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">transfer_operator_tel_num</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">transfer_operator_tel_num</a>) );</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">payin_agent_operation</a>,     0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">payin_agent_operation</a>) );</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">agent_tel_num</a>,             0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">agent_tel_num</a>) );</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">transfer_operator_name</a>,    0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">transfer_operator_name</a>) );</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">transfer_operator_adress</a>,  0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">transfer_operator_adress</a>) );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">transfer_operator_inn</a>,     0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">transfer_operator_inn</a>) );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        memset( <a class="code" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a>,          0, <span class="keyword">sizeof</span>(<a class="code" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a>) );</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="structBANK__AGENT_html_af9f1ede5e3a4456869f28966cecf1b2c"><div class="ttname"><a href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">BANK_AGENT::provider_tel_num</a></div><div class="ttdeci">char provider_tel_num[19]</div><div class="ttdef"><b>Definition:</b> agents.h:77</div></div>
+<div class="ttc" id="structBANK__AGENT_html_acf13530208d3446ad9a5a0578478d9d3"><div class="ttname"><a href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">BANK_AGENT::transfer_operator_tel_num</a></div><div class="ttdeci">char transfer_operator_tel_num[19]</div><div class="ttdef"><b>Definition:</b> agents.h:65</div></div>
+<div class="ttc" id="structBANK__AGENT_html_a416c4a57a5c40ef7d1c2045180c318d7"><div class="ttname"><a href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">BANK_AGENT::payin_agent_operation</a></div><div class="ttdeci">char payin_agent_operation[24]</div><div class="ttdef"><b>Definition:</b> agents.h:67</div></div>
+<div class="ttc" id="structBANK__AGENT_html_aa64ddfe721b57b53658baee0fbb0af6f"><div class="ttname"><a href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">BANK_AGENT::transfer_operator_name</a></div><div class="ttdeci">char transfer_operator_name[64]</div><div class="ttdef"><b>Definition:</b> agents.h:71</div></div>
+<div class="ttc" id="structBANK__AGENT_html_a8d5d43355916110d85807bfbd2aa4852"><div class="ttname"><a href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">BANK_AGENT::transfer_operator_inn</a></div><div class="ttdeci">char transfer_operator_inn[12]</div><div class="ttdef"><b>Definition:</b> agents.h:75</div></div>
+<div class="ttc" id="structBANK__AGENT_html_af3ca4280a0f06b26b13b727567472dcc"><div class="ttname"><a href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">BANK_AGENT::transfer_operator_adress</a></div><div class="ttdeci">char transfer_operator_adress[256]</div><div class="ttdef"><b>Definition:</b> agents.h:73</div></div>
+<div class="ttc" id="structBANK__AGENT_html_a53b64696e7a5cf271b1226db7a0685ed"><div class="ttname"><a href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">BANK_AGENT::agent_tel_num</a></div><div class="ttdeci">char agent_tel_num[19]</div><div class="ttdef"><b>Definition:</b> agents.h:69</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="agents_8h_source.html#l00069">agent_tel_num</a>, <a class="el" href="agents_8h_source.html#l00067">payin_agent_operation</a>, <a class="el" href="agents_8h_source.html#l00077">provider_tel_num</a>, <a class="el" href="agents_8h_source.html#l00073">transfer_operator_adress</a>, <a class="el" href="agents_8h_source.html#l00075">transfer_operator_inn</a>, <a class="el" href="agents_8h_source.html#l00071">transfer_operator_name</a> и <a class="el" href="agents_8h_source.html#l00065">transfer_operator_tel_num</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structBANK__AGENT.html#a53b64696e7a5cf271b1226db7a0685ed">agent_tel_num</a>, <a class="el" href="structBANK__AGENT.html#a416c4a57a5c40ef7d1c2045180c318d7">payin_agent_operation</a>, <a class="el" href="structBANK__AGENT.html#af9f1ede5e3a4456869f28966cecf1b2c">provider_tel_num</a>, <a class="el" href="structBANK__AGENT.html#af3ca4280a0f06b26b13b727567472dcc">transfer_operator_adress</a>, <a class="el" href="structBANK__AGENT.html#a8d5d43355916110d85807bfbd2aa4852">transfer_operator_inn</a>, <a class="el" href="structBANK__AGENT.html#aa64ddfe721b57b53658baee0fbb0af6f">transfer_operator_name</a> и <a class="el" href="structBANK__AGENT.html#acf13530208d3446ad9a5a0578478d9d3">transfer_operator_tel_num</a>.</p>
 
 </div>
 </div>
@@ -136,9 +154,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00069">69</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -154,9 +170,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00067">67</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -172,9 +186,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00077">77</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -190,9 +202,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00073">73</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -208,9 +218,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00075">75</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -226,9 +234,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00071">71</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -244,9 +250,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00065">65</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00053">BANK_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structBANK__AGENT.html#a74e62c51f718c0f286c10735c75f5078">BANK_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -256,7 +260,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

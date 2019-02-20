@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
@@ -213,8 +236,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00023">23</a></p>
-
 </div>
 </div>
 <a id="a08d0aa4a55ee6fafd8ae4153d5c763f9"></a>
@@ -228,8 +249,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00020">20</a></p>
 
 </div>
 </div>
@@ -245,8 +264,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00019">19</a></p>
-
 </div>
 </div>
 <a id="aa2173a2f64ca14c1a04d3a1eb015c36e"></a>
@@ -260,8 +277,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00021">21</a></p>
 
 </div>
 </div>
@@ -277,8 +292,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00018">18</a></p>
-
 </div>
 </div>
 <a id="a06c8f5a42227ec83a3a9ef087026e42b"></a>
@@ -292,8 +305,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00022">22</a></p>
 
 </div>
 </div>
@@ -317,14 +328,12 @@ $(function() {
 <tr><td class="fieldname"><a id="a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4"></a>nds_0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346"></a>nds_no&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00025">25</a></p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     <span class="comment">//                            ЭФ       ПФ</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc">nds_18</a>     = 1,  <span class="comment">// ставка НДС 18%              1    &quot;НДС 18%&quot;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd">nds_10</a>     = 2,  <span class="comment">// ставка НДС 10%              2    &quot;НДС 10%&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17">nds_18_118</a> = 3,  <span class="comment">// ставка НДС расч. 18/118.    3    &quot;НДС 18/118&quot;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358">nds_10_110</a> = 4,  <span class="comment">// ставка НДС расч. 10/110     4    &quot;НДС 10/110&quot;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4">nds_0</a>      = 5,  <span class="comment">// ставка НДС 0%               5    &quot;НДС 0%&quot;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a>     = 6   <span class="comment">// НДС не облагается           6     -</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef BIOS_RB</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , nds_manual = 7 <span class="comment">// налог для РБ</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd">nds_10</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00029">tax.h:29</a></div></div>
-<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17">nds_18_118</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00030">tax.h:30</a></div></div>
-<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00033">tax.h:33</a></div></div>
-<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358">nds_10_110</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00031">tax.h:31</a></div></div>
-<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc">nds_18</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00028">tax.h:28</a></div></div>
-<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4">nds_0</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00032">tax.h:32</a></div></div>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                     <span class="comment">//                            ЭФ       ПФ</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc">nds_18</a>     = 1,  <span class="comment">// ставка НДС 18%              1    &quot;НДС 18%&quot;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd">nds_10</a>     = 2,  <span class="comment">// ставка НДС 10%              2    &quot;НДС 10%&quot;</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17">nds_18_118</a> = 3,  <span class="comment">// ставка НДС расч. 18/118.    3    &quot;НДС 18/118&quot;</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358">nds_10_110</a> = 4,  <span class="comment">// ставка НДС расч. 10/110     4    &quot;НДС 10/110&quot;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4">nds_0</a>      = 5,  <span class="comment">// ставка НДС 0%               5    &quot;НДС 0%&quot;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a>     = 6   <span class="comment">// НДС не облагается           6     -</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef BIOS_RB</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    , nds_manual = 7 <span class="comment">// налог для РБ</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba191c6cdd9d18e2b759a8eaa9b5bbe2dd">nds_10</a></div><div class="ttdef"><b>Definition:</b> tax.h:29</div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba8d2e2bc40064b0a3bf254c47d5d56d17">nds_18_118</a></div><div class="ttdef"><b>Definition:</b> tax.h:30</div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a></div><div class="ttdef"><b>Definition:</b> tax.h:33</div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba2b6ad43d516290becfb099e49e07e358">nds_10_110</a></div><div class="ttdef"><b>Definition:</b> tax.h:31</div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba12bb4825516d3cba6ae44676a37dabbc">nds_18</a></div><div class="ttdef"><b>Definition:</b> tax.h:28</div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba6484b774df8a831701280f1f3823cae4">nds_0</a></div><div class="ttdef"><b>Definition:</b> tax.h:32</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,21 +356,19 @@ $(function() {
 <tr><td class="fieldname"><a id="a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c"></a>nds_0_BIOS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b"></a>nds_no_BIOS&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">См. определение в файле <a class="el" href="tax_8h_source.html">tax.h</a> строка <a class="el" href="tax_8h_source.html#l00039">39</a></p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                     <span class="comment">//                            ЭФ       ПФ</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7">nds_18_BIOS</a>     = 0,  <span class="comment">// ставка НДС 18%              1    &quot;НДС 18%&quot;</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608">nds_10_BIOS</a>     = 1,  <span class="comment">// ставка НДС 10%              2    &quot;НДС 10%&quot;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6">nds_18_118_BIOS</a> = 4,  <span class="comment">// ставка НДС расч. 18/118.    3    &quot;НДС 18/118&quot;</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc">nds_10_110_BIOS</a> = 5,  <span class="comment">// ставка НДС расч. 10/110     4    &quot;НДС 10/110&quot;</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c">nds_0_BIOS</a>      = 2,  <span class="comment">// ставка НДС 0%               5    &quot;НДС 0%&quot;</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b">nds_no_BIOS</a>     = 3   <span class="comment">// НДС не облагается           6     -</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div><div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c">nds_0_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00046">tax.h:46</a></div></div>
-<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc">nds_10_110_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00045">tax.h:45</a></div></div>
-<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b">nds_no_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00047">tax.h:47</a></div></div>
-<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7">nds_18_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00042">tax.h:42</a></div></div>
-<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6">nds_18_118_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00044">tax.h:44</a></div></div>
-<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608">nds_10_BIOS</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00043">tax.h:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                     <span class="comment">//                            ЭФ       ПФ</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7">nds_18_BIOS</a>     = 0,  <span class="comment">// ставка НДС 18%              1    &quot;НДС 18%&quot;</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608">nds_10_BIOS</a>     = 1,  <span class="comment">// ставка НДС 10%              2    &quot;НДС 10%&quot;</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6">nds_18_118_BIOS</a> = 4,  <span class="comment">// ставка НДС расч. 18/118.    3    &quot;НДС 18/118&quot;</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc">nds_10_110_BIOS</a> = 5,  <span class="comment">// ставка НДС расч. 10/110     4    &quot;НДС 10/110&quot;</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c">nds_0_BIOS</a>      = 2,  <span class="comment">// ставка НДС 0%               5    &quot;НДС 0%&quot;</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b">nds_no_BIOS</a>     = 3   <span class="comment">// НДС не облагается           6     -</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div><div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aab70ccef3bd3c8e30387127a64373ad3c">nds_0_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:46</div></div>
+<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa9aef9996464d13968ba5150c6663f1dc">nds_10_110_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:45</div></div>
+<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa00012506477b97a2abf5cb23fecea47b">nds_no_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:47</div></div>
+<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa086c930d0fadb7a0a6dc5d27c0aadaf7">nds_18_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:42</div></div>
+<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aa5114a4cc64b9a321238367bd2c0adac6">nds_18_118_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:44</div></div>
+<div class="ttc" id="tax_8h_html_a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608"><div class="ttname"><a href="tax_8h.html#a9c6411171b294b1e0ad96b6b2b897e6aad163488106da4f52df69024ea5963608">nds_10_BIOS</a></div><div class="ttdef"><b>Definition:</b> tax.h:43</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

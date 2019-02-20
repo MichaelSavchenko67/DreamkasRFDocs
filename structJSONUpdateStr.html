@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,10 +96,7 @@ $(function() {
 <tr class="memitem:a62d9dc01eb93f74ba9c4888feac72bc1"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONUpdateStr.html#a62d9dc01eb93f74ba9c4888feac72bc1">fileSize</a></td></tr>
 <tr class="separator:a62d9dc01eb93f74ba9c4888feac72bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00088">88</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a62d9dc01eb93f74ba9c4888feac72bc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62d9dc01eb93f74ba9c4888feac72bc1">&#9670;&nbsp;</a></span>fileSize</h2>
 
@@ -89,9 +109,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00094">94</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01974">JSON::jsonParser()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>.</p>
 
 </div>
 </div>
@@ -107,9 +125,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00092">92</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01974">JSON::jsonParser()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>.</p>
 
 </div>
 </div>
@@ -125,9 +141,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00093">93</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01974">JSON::jsonParser()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>.</p>
 
 </div>
 </div>
@@ -143,9 +157,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00091">91</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01974">JSON::jsonParser()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>.</p>
 
 </div>
 </div>
@@ -161,9 +173,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00090">90</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01974">JSON::jsonParser()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#adb55f3f8f33b58832d11c16c31d1f72c">JSON::jsonParser()</a>.</p>
 
 </div>
 </div>
@@ -173,7 +183,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

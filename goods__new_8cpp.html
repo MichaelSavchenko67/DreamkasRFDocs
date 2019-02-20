@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -45,7 +68,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Функции</a> &#124;
 <a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Файл goods_new.cpp</div>  </div>
@@ -119,16 +141,7 @@ $(function() {
 <area shape="rect"  href="keys_8h.html" title=" " alt="" coords="2256,543,2317,569"/>
 </map>
 </div>
-</div>
-<p><a href="goods__new_8cpp_source.html">См. исходные тексты.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:a185061e018163988c3158277a8db9c59"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html#a185061e018163988c3158277a8db9c59">sqlite_ibm866_to_utf8</a> (sqlite3_context *context, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> argc, sqlite3_value **values)</td></tr>
-<tr class="separator:a185061e018163988c3158277a8db9c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea08d0864e20eda0d0f252abc57bdf5d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html#aea08d0864e20eda0d0f252abc57bdf5d">sqlite_hash</a> (sqlite3_context *context, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> argc, sqlite3_value **values)</td></tr>
-<tr class="separator:aea08d0864e20eda0d0f252abc57bdf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Переменные</h2></td></tr>
 <tr class="memitem:a9db036c0dde25683f29185e009b07340"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html#a9db036c0dde25683f29185e009b07340">goodsDbString</a></td></tr>
@@ -138,167 +151,6 @@ $(function() {
 <tr class="memitem:a49846a692631a4ed6231be95cc38837d"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html#a49846a692631a4ed6231be95cc38837d">goodsDbValuesCnt</a> = 0</td></tr>
 <tr class="separator:a49846a692631a4ed6231be95cc38837d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Функции</h2>
-<a id="aea08d0864e20eda0d0f252abc57bdf5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea08d0864e20eda0d0f252abc57bdf5d">&#9670;&nbsp;</a></span>sqlite_hash()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void sqlite_hash </td>
-          <td>(</td>
-          <td class="paramtype">sqlite3_context *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sqlite3_value **&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8cpp_source.html">goods_new.cpp</a> строка <a class="el" href="goods__new_8cpp_source.html#l00166">166</a></p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> ( argc != 1 )</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        sqlite3_result_error(context, <span class="stringliteral">&quot;SQLite invalid argument!&quot;</span>, -1);</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    int64_t rv = 0;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">string</span> strVal;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* val = sqlite3_value_text(values[0]);</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span> ( val != <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        strVal = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(reinterpret_cast&lt;const char*&gt;( val ));</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        hash&lt;string&gt; strHash;</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        rv = strHash(strVal);</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    sqlite3_result_int64(context, rv);</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div><div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
-</div><!-- fragment -->
-<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00381">Goods_new::queryNotSaveResult()</a> и <a class="el" href="goods__new_8cpp_source.html#l00278">Goods_new::querySaveResult()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="goods__new_8cpp_aea08d0864e20eda0d0f252abc57bdf5d_icgraph.png" border="0" usemap="#goods__new_8cpp_aea08d0864e20eda0d0f252abc57bdf5d_icgraph" alt=""/></div>
-<map name="goods__new_8cpp_aea08d0864e20eda0d0f252abc57bdf5d_icgraph" id="goods__new_8cpp_aea08d0864e20eda0d0f252abc57bdf5d_icgraph">
-<area shape="rect"  title=" " alt="" coords="820,688,908,715"/>
-<area shape="rect"  href="classGoods__new.html#abe09f75ff1821181f62a1a3d9ee50fc3" title=" " alt="" coords="552,401,772,428"/>
-<area shape="rect"  href="classGoods__new.html#a5767f844de7b473c7a6f20538830cc67" title=" " alt="" coords="563,920,761,947"/>
-<area shape="rect"  href="classGoods__new.html#a1cbeaf3b8482593e13f240e85730c5dc" title=" " alt="" coords="305,5,477,32"/>
-<area shape="rect"  href="classGoods__new.html#a3da601aaf9ac1a343bec6217a6679461" title=" " alt="" coords="307,56,475,83"/>
-<area shape="rect"  href="classGoods__new.html#a8a8d0ffba6af23ed6aa43cabcabbab9c" title=" " alt="" coords="295,107,486,133"/>
-<area shape="rect"  href="classGoods__new.html#a9b374fa7a8fec0e44f57be2bd721d1be" title=" " alt="" coords="289,157,492,184"/>
-<area shape="rect"  href="classGoods__new.html#a4fe6f150a7654bc7e1363acdf98dc3be" title=" " alt="" coords="295,208,486,235"/>
-<area shape="rect"  href="classGoods__new.html#ae71de5660df6bd41e851b7db3ea77e13" title=" " alt="" coords="279,259,502,301"/>
-<area shape="rect"  href="classGoods__new.html#aa728b6ad68aa138dd4dc0b9270bf86e9" title=" " alt="" coords="288,325,493,352"/>
-<area shape="rect"  href="classGoods__new.html#ac7799dad7fdea54f7762c90b34368b45" title=" " alt="" coords="289,376,492,403"/>
-<area shape="rect"  href="classGoods__new.html#ae839a8511b80d1c022bb6f151f475517" title=" " alt="" coords="306,427,475,453"/>
-<area shape="rect"  href="classGoods__new.html#a9929c060b510d34670576648d4f9d445" title=" " alt="" coords="42,477,193,504"/>
-<area shape="rect"  href="classGoods__new.html#a71bfe7aa217447e1769b0650efb09644" title=" " alt="" coords="318,528,463,555"/>
-<area shape="rect"  href="classGoods__new.html#afad337fab770147d191ce94245bace16" title=" " alt="" coords="301,579,480,605"/>
-<area shape="rect"  href="classGoods__new.html#a84374d4771d2645f31c24bb62da2263f" title=" " alt="" coords="299,629,482,656"/>
-<area shape="rect"  href="classGoods__new.html#af8de7ed07d647eb8dd9d026dfd031aa5" title=" " alt="" coords="315,731,466,757"/>
-<area shape="rect"  href="classGoods__new.html#a4a2c74218b79b9587a84e499669e02c6" title=" " alt="" coords="308,680,473,707"/>
-<area shape="rect"  href="classGoods__new.html#a5f7b9568106bd0cda846778f6423aa66" title=" " alt="" coords="5,107,229,133"/>
-<area shape="rect"  href="classGoods__new.html#a9a515653914379d6eaba33973c5556b5" title=" " alt="" coords="303,781,479,808"/>
-<area shape="rect"  href="classGoods__new.html#aa4cd058c407da8ad979226e6de2a72d3" title=" " alt="" coords="279,832,502,859"/>
-<area shape="rect"  href="classGoods__new.html#a5ee054fffdc6e4b07b80117d42ca55db" title=" " alt="" coords="298,883,483,925"/>
-<area shape="rect"  href="classGoods__new.html#aa14aece2ae8dfca4c358f52a899b6dcf" title=" " alt="" coords="315,949,466,976"/>
-<area shape="rect"  href="classGoods__new.html#adfa940838fb31612750b0599a64e8ec4" title=" " alt="" coords="299,1000,482,1027"/>
-<area shape="rect"  href="classGoods__new.html#a8ea4e9e7de637adbe9a88b67db721ecc" title=" " alt="" coords="297,1051,484,1077"/>
-<area shape="rect"  href="classGoods__new.html#aac92fb1e9c164250a3abd4486980d809" title=" " alt="" coords="277,1101,504,1128"/>
-<area shape="rect"  href="classGoods__new.html#aab4d90ae12fac7d99839e951d340f928" title=" " alt="" coords="313,1152,468,1179"/>
-<area shape="rect"  href="classGoods__new.html#a43514453fd04742cebde72e1f2c338c9" title=" " alt="" coords="48,1000,187,1027"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a185061e018163988c3158277a8db9c59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185061e018163988c3158277a8db9c59">&#9670;&nbsp;</a></span>sqlite_ibm866_to_utf8()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void sqlite_ibm866_to_utf8 </td>
-          <td>(</td>
-          <td class="paramtype">sqlite3_context *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sqlite3_value **&#160;</td>
-          <td class="paramname"><em>values</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8cpp_source.html">goods_new.cpp</a> строка <a class="el" href="goods__new_8cpp_source.html#l00022">22</a></p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> ( argc != 1)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        sqlite3_result_error(context, <span class="stringliteral">&quot;SQLite invalid argument!&quot;</span>, -1);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classEncodeConvertor.html">EncodeConvertor</a> ec;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> err = 0;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">string</span> strIbm = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(reinterpret_cast&lt;const char*&gt;( sqlite3_value_text(values[0]) ));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">string</span> strUtf = ec.<a class="code" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">CP866toUTF8</a>( strIbm, &amp;err );</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> ( strIbm.empty() )</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        sqlite3_result_error(context, <span class="stringliteral">&quot;SQLite error regexp syntax!&quot;</span>, -1);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    sqlite3_result_text(context, strUtf.c_str(), strUtf.size() + 1, <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div><div class="ttc" id="classEncodeConvertor_html"><div class="ttname"><a href="classEncodeConvertor.html">EncodeConvertor</a></div><div class="ttdef"><b>Definition:</b> <a href="EncodeConvertor_8h_source.html#l00018">EncodeConvertor.h:18</a></div></div>
-<div class="ttc" id="classEncodeConvertor_html_abc751a9512177eed813c00a8074197e3"><div class="ttname"><a href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">EncodeConvertor::CP866toUTF8</a></div><div class="ttdeci">string CP866toUTF8(const string &amp;val, int *err)</div><div class="ttdef"><b>Definition:</b> <a href="EncodeConvertor_8cpp_source.html#l00156">EncodeConvertor.cpp:156</a></div></div>
-<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="EncodeConvertor_8cpp_source.html#l00156">EncodeConvertor::CP866toUTF8()</a>.</p>
-
-<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00051">Goods_new::querySaveResult()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="goods__new_8cpp_a185061e018163988c3158277a8db9c59_cgraph.png" border="0" usemap="#goods__new_8cpp_a185061e018163988c3158277a8db9c59_cgraph" alt=""/></div>
-<map name="goods__new_8cpp_a185061e018163988c3158277a8db9c59_cgraph" id="goods__new_8cpp_a185061e018163988c3158277a8db9c59_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,31,155,57"/>
-<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="203,31,417,57"/>
-<area shape="rect"  href="classEncodeConvertor.html#a446a3149c95493a817adcf5b6a7e5fca" title=" " alt="" coords="465,31,624,57"/>
-<area shape="rect"  href="classEncodeConvertor.html#aec7e4a8301ba943d46155bdb1556a47f" title=" " alt="" coords="672,5,847,32"/>
-<area shape="rect"  href="classConvert.html#a4b693c16383ba0f789f5a75f83f74b7e" title=" " alt="" coords="675,56,844,83"/>
-</map>
-</div>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="goods__new_8cpp_a185061e018163988c3158277a8db9c59_icgraph.png" border="0" usemap="#goods__new_8cpp_a185061e018163988c3158277a8db9c59_icgraph" alt=""/></div>
-<map name="goods__new_8cpp_a185061e018163988c3158277a8db9c59_icgraph" id="goods__new_8cpp_a185061e018163988c3158277a8db9c59_icgraph">
-<area shape="rect"  title=" " alt="" coords="252,5,401,32"/>
-<area shape="rect"  href="classGoods__new.html#a9e4cdfedc34409ec41846cc7f13caa1f" title=" " alt="" coords="5,5,204,32"/>
-</map>
-</div>
-
-</div>
-</div>
 <h2 class="groupheader">Переменные</h2>
 <a id="a9db036c0dde25683f29185e009b07340"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9db036c0dde25683f29185e009b07340">&#9670;&nbsp;</a></span>goodsDbString</h2>
@@ -311,10 +163,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8cpp_source.html">goods_new.cpp</a> строка <a class="el" href="goods__new_8cpp_source.html#l00018">18</a></p>
-
-<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l02356">Goods_new::addWear()</a>, <a class="el" href="goods__new_8cpp_source.html#l01232">Goods_new::findGood()</a>, <a class="el" href="goods__new_8cpp_source.html#l01337">Goods_new::findGood_new()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8cpp_source.html#l02259">Goods_new::getGoodsIDByRemID()</a>, <a class="el" href="goods__new_8cpp_source.html#l02299">Goods_new::getWears()</a>, <a class="el" href="goods__new_8cpp_source.html#l00673">Goods_new::isDiscountsDbEmpty()</a>, <a class="el" href="goods__new_8cpp_source.html#l01708">Goods_new::parseGoodsAnswer()</a>, <a class="el" href="goods__new_8cpp_source.html#l01916">Goods_new::parseGoodsAnswer_new()</a> и <a class="el" href="goods__new_8cpp_source.html#l00051">Goods_new::querySaveResult()</a>.</p>
 
 </div>
 </div>
@@ -330,10 +178,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8cpp_source.html">goods_new.cpp</a> строка <a class="el" href="goods__new_8cpp_source.html#l00020">20</a></p>
-
-<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00234">Goods_new::fillGoodsCount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00191">Goods_new::isGoodsBaseEmpty()</a> и <a class="el" href="goods__new_8cpp_source.html#l00212">Goods_new::numberGoodsInBase()</a>.</p>
-
 </div>
 </div>
 <a id="ad95374136e532a3195973ffe5daf7f9c"></a>
@@ -348,14 +192,12 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8cpp_source.html">goods_new.cpp</a> строка <a class="el" href="goods__new_8cpp_source.html#l00019">19</a></p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

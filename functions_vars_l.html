@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,26 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_l"></a>- l -</h3><ul>
-<li>last_fd_num
-: <a class="el" href="classBIOS_1_1RUS.html#ac9cd6639648f235c3b2f8ec3f72f681e">BIOS::RUS</a>
-</li>
-<li>last_token
-: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>lastFdNum
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#aa13bb7a1afa99def76af9ab0a1134430">FISGO_TEST_API::TASK</a>
 </li>
@@ -60,12 +77,6 @@ $(function() {
 </li>
 <li>lcd
 : <a class="el" href="classMenu.html#a80fb7ffc15393e5b5543393553557414">Menu</a>
-</li>
-<li>lcd_buf_buyer_size
-: <a class="el" href="classLcd.html#ab67fff67db9dfc2e8ee1a0dba2f82450">Lcd</a>
-</li>
-<li>lcd_buf_cashier_size
-: <a class="el" href="classLcd.html#a0442f5ddc3db9d3d979b71b7e18f625a">Lcd</a>
 </li>
 <li>lcd_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a761177e27148a375f3eb82d4847323dd">Printer::technical_report</a>
@@ -100,12 +111,6 @@ $(function() {
 <li>length
 : <a class="el" href="structst__pos2.html#ac616bd78bab71d951fe33ae4d2b59ea0">st_pos2</a>
 </li>
-<li>libFiscal1Path
-: <a class="el" href="classFlashMounter.html#a8af07e9b7c5518f05d2c9de2f9636040">FlashMounter</a>
-</li>
-<li>libFiscalPath
-: <a class="el" href="classFlashMounter.html#af1e498faa96d30fbbc51516f777063d7">FlashMounter</a>
-</li>
 <li>license
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#a5ee99e655e33f373d146a98040ef38c3">FISGO_TEST_API::TASK</a>
 , <a class="el" href="classMenu.html#ab4ed74ec379d4e56dbf989ba35c74c24">Menu</a>
@@ -113,9 +118,6 @@ $(function() {
 </li>
 <li>licensePtr
 : <a class="el" href="classMenu.html#a79d8dd13ba415206862ddbbab0ca77fe">Menu</a>
-</li>
-<li>limit
-: <a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">nlohmann::detail::input_buffer_adapter</a>
 </li>
 <li>LOAD_POSITION
 : <a class="el" href="classPosition__new.html#a94287e3e757e7c7b72d8823cf40c08db">Position_new</a>
@@ -132,20 +134,11 @@ $(function() {
 <li>loader_status
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#abba30a3ec7116c82291f9e3f9e361936">FISGO_TEST_API::TASK</a>
 </li>
-<li>loc
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a1952945b7652afb59d3903cc8457a589">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
 <li>local_time
 : <a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT_1_1REQUEST.html#ac60e306e413edffb1eb87c7c79253e6f">JSON::JSON_CASH_INFO_REPORT::REQUEST</a>
 </li>
-<li>logFilePath
-: <a class="el" href="classFlashMounter.html#a20acc7550b25d42f1200c7c1d49c1ae1">FlashMounter</a>
-</li>
 <li>logServant
 : <a class="el" href="classMenu.html#add5b1f5608e1b5c404cbdf30d451d904">Menu</a>
-</li>
-<li>logServantMutex
-: <a class="el" href="classLogServant.html#a5f75f9dfe76b8309a6701453e6797423">LogServant</a>
 </li>
 <li>logType
 : <a class="el" href="structConfig.html#a81608e39deaa1381fb134cbf5cf6fb3a">Config</a>
@@ -169,7 +162,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

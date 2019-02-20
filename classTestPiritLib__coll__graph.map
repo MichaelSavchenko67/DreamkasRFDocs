@@ -1,7 +1,6 @@
 <map id="TestPiritLib" name="TestPiritLib">
-<area shape="rect" id="node1" title=" " alt="" coords="11,2128,99,2205"/>
-<area shape="rect" id="node2" title=" " alt="" coords="10,1988,58,2065"/>
-<area shape="rect" id="node3" href="$classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="83,1988,231,2065"/>
-<area shape="rect" id="node4" href="$classBIOS.html" title=" " alt="" coords="5,351,308,1939"/>
-<area shape="rect" id="node5" href="$structstatusBIOS.html" title=" " alt="" coords="73,5,241,288"/>
+<area shape="rect" id="node1" title=" " alt="" coords="11,1724,99,1801"/>
+<area shape="rect" id="node2" title=" " alt="" coords="10,1584,58,1661"/>
+<area shape="rect" id="node3" href="$classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="83,1584,231,1661"/>
+<area shape="rect" id="node4" href="$classBIOS.html" title=" " alt="" coords="5,5,308,1535"/>
 </map>

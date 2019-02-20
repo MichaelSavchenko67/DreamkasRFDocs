@@ -1,12 +1,8 @@
 <map id="barcodeScannerThread_" name="barcodeScannerThread_">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,168,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,168,105"/>
 <area shape="rect" id="node2" href="$classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; парс DataMatrix" alt="" coords="216,5,403,47"/>
-<area shape="rect" id="node3" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="217,71,401,98"/>
-<area shape="rect" id="node9" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="218,123,401,164"/>
-<area shape="rect" id="node4" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="479,123,629,164"/>
-<area shape="rect" id="node6" href="$classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="479,57,629,99"/>
-<area shape="rect" id="node5" href="$classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a" title=" " alt="" coords="705,123,864,164"/>
-<area shape="rect" id="node7" href="$classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="709,57,860,99"/>
-<area shape="rect" id="node8" href="$classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="912,57,1063,99"/>
-<area shape="rect" id="node10" href="$classBarcodeScanner.html#ad1dc13e1280e740b24c67ad0b8001674" title=" " alt="" coords="451,189,657,215"/>
+<area shape="rect" id="node3" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="217,137,401,163"/>
+<area shape="rect" id="node6" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="218,71,401,112"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="451,67,601,108"/>
+<area shape="rect" id="node5" href="$classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="451,132,601,173"/>
 </map>

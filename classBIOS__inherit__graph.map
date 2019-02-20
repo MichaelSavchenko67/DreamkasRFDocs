@@ -1,5 +1,5 @@
 <map id="BIOS" name="BIOS">
-<area shape="rect" id="node1" title=" " alt="" coords="19,5,322,1608"/>
-<area shape="rect" id="node2" href="$classMenuTest_1_1MockBIOS.html" title=" " alt="" coords="5,1656,160,1836"/>
-<area shape="rect" id="node3" href="$classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="185,1707,333,1785"/>
+<area shape="rect" id="node1" title=" " alt="" coords="19,5,322,1535"/>
+<area shape="rect" id="node2" href="$classMenuTest_1_1MockBIOS.html" title=" " alt="" coords="5,1583,160,1763"/>
+<area shape="rect" id="node3" href="$classTestPiritLib_1_1TestBios.html" title=" " alt="" coords="185,1634,333,1711"/>
 </map>

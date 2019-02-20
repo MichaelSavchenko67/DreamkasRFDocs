@@ -1,4 +1,12 @@
 <map id="nlohmann::detail::parser::sax_parse" name="nlohmann::detail::parser::sax_parse">
-<area shape="rect" id="node1" title=" " alt="" coords="215,5,376,47"/>
-<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1119,107,1280,149"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="909,74,1071,115"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="916,139,1064,181"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a875585b0cb6133902066daccd7c9d420" title=" " alt="" coords="713,74,861,115"/>
+<area shape="rect" id="node4" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="496,5,647,32"/>
+<area shape="rect" id="node5" href="$classJSON.html#afc337c57f7bc46999d31a71cc883e76b" title=" " alt="" coords="477,56,665,83"/>
+<area shape="rect" id="node8" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="491,107,651,133"/>
+<area shape="rect" id="node9" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="478,157,665,184"/>
+<area shape="rect" id="node6" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="256,56,429,83"/>
+<area shape="rect" id="node7" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="5,49,208,90"/>
 </map>

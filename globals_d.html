@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,28 +32,42 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов файлов со ссылками на файлы, к которым они принадлежат.</div>
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>db_name
-: <a class="el" href="slipsDB_8h.html#aa5452409c43f2dcd630c9214dc022fc8">slipsDB.h</a>
-</li>
 <li>dbString
 : <a class="el" href="slipsDB_8cpp.html#adfb04358d91531d4316d87348edd6cb9">slipsDB.cpp</a>
-</li>
-<li>DEFAULT_EXTERNAL_CASHIER_NAME
-: <a class="el" href="receipt__new_8h.html#a9237cd779c371fba62540dd701d2e652">receipt_new.h</a>
 </li>
 <li>DELETE_DISCOUNT_TYPE
 : <a class="el" href="json_8h.html#aca38cf64268b5db456d089d2902a676e">json.h</a>
@@ -121,14 +138,11 @@ $(function() {
 <li>DOWNLOAD()
 : <a class="el" href="dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c">dynamic_mask.h</a>
 </li>
-<li>DREAMKAS_OFD
-: <a class="el" href="config_8h.html#ab5143fe81368c494f125e6dd73570e3c">config.h</a>
-</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

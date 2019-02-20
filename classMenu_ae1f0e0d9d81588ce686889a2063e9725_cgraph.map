@@ -2,10 +2,8 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,107,168,133"/>
 <area shape="rect" id="node2" href="$classFlashMounter.html#abe13d33e759efd456953cc38d8ea151b" title="getModeWrite получение флага о возможности записи данных на флешку" alt="" coords="216,5,407,32"/>
 <area shape="rect" id="node3" href="$classFlashMounter.html#adac8e2dd1b3f49e2c7f4f1a17a821047" title="isMounted получение флага смонтирована ли флешка" alt="" coords="227,56,396,83"/>
-<area shape="rect" id="node7" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="263,107,360,133"/>
-<area shape="rect" id="node8" href="$classFlashMounter.html#a60a71bdc4df39f76cf25bf3d8504c5ac" title="storyLIBToFlash записать фискальных библиотек на флэшку" alt="" coords="225,158,398,199"/>
-<area shape="rect" id="node9" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="268,224,355,251"/>
+<area shape="rect" id="node5" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="263,107,360,133"/>
+<area shape="rect" id="node6" href="$classFlashMounter.html#a60a71bdc4df39f76cf25bf3d8504c5ac" title="storyLIBToFlash записать фискальных библиотек на флэшку" alt="" coords="225,158,398,199"/>
+<area shape="rect" id="node7" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="268,224,355,251"/>
 <area shape="rect" id="node4" href="$classFlashMounter.html#a6e9b5b794727b91e9b36e2577a5d20b5" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="455,56,641,83"/>
-<area shape="rect" id="node5" href="$classFlashMounter.html#a1fdf174486adf03846c0d136b0ce94c3" title="clearAll очистить данные" alt="" coords="713,31,865,57"/>
-<area shape="rect" id="node6" href="$classFlashMounter.html#a33f4cac9ab669913d78a9e311fe6c93d" title="findDevicePath поиск подключенных устройств" alt="" coords="689,81,888,108"/>
 </map>

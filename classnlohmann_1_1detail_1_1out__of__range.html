@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html">out_of_range</a></li>  </ul>
@@ -46,7 +69,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Открытые статические члены</a> &#124;
-<a href="#pri-methods">Закрытые члены</a> &#124;
 <a href="classnlohmann_1_1detail_1_1out__of__range-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс nlohmann::detail::out_of_range</div>  </div>
@@ -64,8 +86,8 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1out__of__range_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1out__of__range_inherit__map" id="nlohmann_1_1detail_1_1out__of__range_inherit__map">
-<area shape="rect"  title="exception indicating access out of the defined range" alt="" coords="25,300,167,407"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html" title="general exception of the basic_json class" alt="" coords="5,131,187,252"/>
+<area shape="rect"  title="exception indicating access out of the defined range" alt="" coords="25,285,167,377"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html" title="general exception of the basic_json class" alt="" coords="5,131,187,237"/>
 <area shape="rect"  title=" " alt="" coords="44,5,148,83"/>
 </map>
 </div>
@@ -76,8 +98,8 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1out__of__range_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1out__of__range_coll__map" id="nlohmann_1_1detail_1_1out__of__range_coll__map">
-<area shape="rect"  title="exception indicating access out of the defined range" alt="" coords="25,300,167,407"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html" title="general exception of the basic_json class" alt="" coords="5,131,187,252"/>
+<area shape="rect"  title="exception indicating access out of the defined range" alt="" coords="25,285,167,377"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html" title="general exception of the basic_json class" alt="" coords="5,131,187,237"/>
 <area shape="rect"  title=" " alt="" coords="44,5,148,83"/>
 </map>
 </div>
@@ -86,11 +108,6 @@ $(function() {
 Открытые статические члены</h2></td></tr>
 <tr class="memitem:a3f6d82a6f967c4728a1ec735a7867073"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html">out_of_range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">create</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> id_, const <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> &amp;what_arg)</td></tr>
 <tr class="separator:a3f6d82a6f967c4728a1ec735a7867073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Закрытые члены</h2></td></tr>
-<tr class="memitem:ab5fe402019dba957558499502f0fd731"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731">out_of_range</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> id_, const char *what_arg)</td></tr>
-<tr class="separator:ab5fe402019dba957558499502f0fd731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
@@ -144,100 +161,7 @@ $(function() {
 <dd>
 <a class="el" href="classnlohmann_1_1detail_1_1other__error.html">other_error</a> for exceptions indicating other library errors</dd></dl>
 <dl class="section since"><dt>Начиная с</dt><dd>version 3.0.0 </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l00817">817</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="ab5fe402019dba957558499502f0fd731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5fe402019dba957558499502f0fd731">&#9670;&nbsp;</a></span>out_of_range()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">nlohmann::detail::out_of_range::out_of_range </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
-          <td class="paramname"><em>id_</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>what_arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l00827">827</a></p>
-<div class="fragment"><div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;: <a class="code" href="classnlohmann_1_1detail_1_1exception.html#ae323ad0d53bc724414c2233164e65657">exception</a>(id_, what_arg) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1exception_html_ae323ad0d53bc724414c2233164e65657"><div class="ttname"><a href="classnlohmann_1_1detail_1_1exception.html#ae323ad0d53bc724414c2233164e65657">nlohmann::detail::exception::exception</a></div><div class="ttdeci">exception(int id_, const char *what_arg)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00593">jsonParser.h:593</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l00820">create()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range_ab5fe402019dba957558499502f0fd731_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1out__of__range_ab5fe402019dba957558499502f0fd731_icgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1out__of__range_ab5fe402019dba957558499502f0fd731_icgraph" id="classnlohmann_1_1detail_1_1out__of__range_ab5fe402019dba957558499502f0fd731_icgraph">
-<area shape="rect"  title=" " alt="" coords="979,481,1141,522"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="788,481,931,522"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9929b4cc92d471c49bd0a92802629f90" title=" " alt="" coords="563,5,722,61"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a056b895d011efaf48ea096c024aca0d4" title=" " alt="" coords="545,86,740,127"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a040e60243cc7c18a6078c6b83cdb4a81" title=" " alt="" coords="553,152,733,208"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a5255b98ba8282e3625968f91cff9d3d0" title=" " alt="" coords="553,232,733,288"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="562,313,723,354"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1binary__writer.html#a0ea6745f944c0c61672146886b4ee90f" title=" " alt="" coords="553,379,732,435"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="565,510,721,551"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294" title=" " alt="" coords="321,430,477,471"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5" title="return a reference to the pointed to value" alt="" coords="321,561,477,602"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="325,626,473,667"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a4d523606a8b40cef73e976e61b6fd383" title="remove and return last reference pointer" alt="" coords="565,678,721,719"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a00eff109d9a0091e42ada9b16b90c8d9" title=" " alt="" coords="551,744,734,771"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="559,797,726,824"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a88cbcefe9a3f4d294bed0653550a5cb9" title="remove element from a JSON array given an index" alt="" coords="569,849,717,890"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="318,247,479,289"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="318,313,479,354"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="48,310,209,351"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5" title="create and return a reference to the pointed to value" alt="" coords="321,495,477,537"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="55,375,203,417"/>
-<area shape="rect"  href="classJSON.html#a24e7816e522110443326fd259568aa5a" title=" " alt="" coords="323,849,474,876"/>
-<area shape="rect"  href="classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="314,900,483,927"/>
-<area shape="rect"  href="classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="307,748,490,775"/>
-<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="300,799,497,825"/>
-<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="28,791,229,833"/>
-<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="28,857,229,898"/>
-<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="28,922,229,963"/>
-<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="21,988,236,1015"/>
-<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="11,1039,246,1081"/>
-<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="9,1105,248,1132"/>
-<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="44,1156,213,1183"/>
-<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="35,1207,222,1249"/>
-<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="16,1273,241,1300"/>
-<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="5,441,252,482"/>
-<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="27,507,230,533"/>
-<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="30,557,227,584"/>
-<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="34,609,223,650"/>
-<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="41,674,216,715"/>
-<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="33,740,224,767"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Методы</h2>
+</div><h2 class="groupheader">Методы</h2>
 <a id="a3f6d82a6f967c4728a1ec735a7867073"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f6d82a6f967c4728a1ec735a7867073">&#9670;&nbsp;</a></span>create()</h2>
 
@@ -271,73 +195,58 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l00820">820</a></p>
-<div class="fragment"><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    {</div><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> w = <a class="code" href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">exception::name</a>(<span class="stringliteral">&quot;out_of_range&quot;</span>, id_) + what_arg;</div><div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731">out_of_range</a>(id_, w.c_str());</div><div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_ab5fe402019dba957558499502f0fd731"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731">nlohmann::detail::out_of_range::out_of_range</a></div><div class="ttdeci">out_of_range(int id_, const char *what_arg)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00827">jsonParser.h:827</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1exception_html_abf41a7e9178356314082284e6cfea278"><div class="ttname"><a href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">nlohmann::detail::exception::name</a></div><div class="ttdeci">static std::string name(const std::string &amp;ename, int id_)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00595">jsonParser.h:595</a></div></div>
+<div class="fragment"><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    {</div><div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> w = <a class="code" href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">exception::name</a>(<span class="stringliteral">&quot;out_of_range&quot;</span>, id_) + what_arg;</div><div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="keywordflow">return</span> out_of_range(id_, w.c_str());</div><div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1exception_html_abf41a7e9178356314082284e6cfea278"><div class="ttname"><a href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">nlohmann::detail::exception::name</a></div><div class="ttdeci">static std::string name(const std::string &amp;ename, int id_)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:595</div></div>
 <div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00595">nlohmann::detail::exception::name()</a>, <a class="el" href="jsonParser_8h_source.html#l00827">out_of_range()</a> и <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::string</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278">nlohmann::detail::exception::name()</a> и <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::string</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l10516">nlohmann::json_pointer&lt; BasicJsonType &gt;::array_index()</a>, <a class="el" href="jsonParser_8h_source.html#l13987">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::at()</a>, <a class="el" href="jsonParser_8h_source.html#l14928">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::erase()</a>, <a class="el" href="jsonParser_8h_source.html#l10729">nlohmann::json_pointer&lt; BasicJsonType &gt;::get_checked()</a>, <a class="el" href="jsonParser_8h_source.html#l10653">nlohmann::json_pointer&lt; BasicJsonType &gt;::get_unchecked()</a>, <a class="el" href="jsonParser_8h_source.html#l18287">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::patch()</a>, <a class="el" href="jsonParser_8h_source.html#l10535">nlohmann::json_pointer&lt; BasicJsonType &gt;::pop_back()</a>, <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>, <a class="el" href="jsonParser_8h_source.html#l04002">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_array()</a>, <a class="el" href="jsonParser_8h_source.html#l04227">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::start_array()</a>, <a class="el" href="jsonParser_8h_source.html#l03976">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_object()</a>, <a class="el" href="jsonParser_8h_source.html#l04153">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::start_object()</a>, <a class="el" href="jsonParser_8h_source.html#l10553">nlohmann::json_pointer&lt; BasicJsonType &gt;::top()</a> и <a class="el" href="jsonParser_8h_source.html#l08401">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_number_with_ubjson_prefix()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4">nlohmann::json_pointer&lt; BasicJsonType &gt;::array_index()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::at()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a88cbcefe9a3f4d294bed0653550a5cb9">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::erase()</a>, <a class="el" href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::patch()</a>, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a056b895d011efaf48ea096c024aca0d4">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_array()</a>, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a5255b98ba8282e3625968f91cff9d3d0">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::start_array()</a>, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9929b4cc92d471c49bd0a92802629f90">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_object()</a> и <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a040e60243cc7c18a6078c6b83cdb4a81">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::start_object()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph" id="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="196,5,377,47"/>
+</map>
+</div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph" id="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,39,148,80"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="196,5,377,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="205,71,368,112"/>
-</map>
-</div>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_icgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_icgraph" id="classnlohmann_1_1detail_1_1out__of__range_a3f6d82a6f967c4728a1ec735a7867073_icgraph">
-<area shape="rect"  title=" " alt="" coords="788,621,931,663"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="565,304,721,345"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294" title=" " alt="" coords="321,181,477,223"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5" title="return a reference to the pointed to value" alt="" coords="321,312,477,353"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="325,377,473,419"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="559,471,726,498"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html#a88cbcefe9a3f4d294bed0653550a5cb9" title="remove element from a JSON array given an index" alt="" coords="569,523,717,564"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a4d523606a8b40cef73e976e61b6fd383" title="remove and return last reference pointer" alt="" coords="565,588,721,629"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="562,653,723,695"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a056b895d011efaf48ea096c024aca0d4" title=" " alt="" coords="545,719,740,760"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a5255b98ba8282e3625968f91cff9d3d0" title=" " alt="" coords="553,785,733,841"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9929b4cc92d471c49bd0a92802629f90" title=" " alt="" coords="563,865,722,921"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a040e60243cc7c18a6078c6b83cdb4a81" title=" " alt="" coords="553,945,733,1001"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a00eff109d9a0091e42ada9b16b90c8d9" title=" " alt="" coords="551,1025,734,1051"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1binary__writer.html#a0ea6745f944c0c61672146886b4ee90f" title=" " alt="" coords="553,1075,732,1131"/>
-<area shape="rect"  href="classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5" title="create and return a reference to the pointed to value" alt="" coords="321,247,477,288"/>
+<area shape="rect"  title=" " alt="" coords="788,328,931,369"/>
+<area shape="rect"  href="classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="565,127,721,168"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="325,127,473,168"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="559,243,726,270"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a88cbcefe9a3f4d294bed0653550a5cb9" title="remove element from a JSON array given an index" alt="" coords="569,295,717,336"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a056b895d011efaf48ea096c024aca0d4" title=" " alt="" coords="545,360,740,401"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a5255b98ba8282e3625968f91cff9d3d0" title=" " alt="" coords="553,426,733,482"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9929b4cc92d471c49bd0a92802629f90" title=" " alt="" coords="563,506,722,562"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a040e60243cc7c18a6078c6b83cdb4a81" title=" " alt="" coords="553,586,733,642"/>
 <area shape="rect"  href="classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="55,5,203,47"/>
-<area shape="rect"  href="classJSON.html#a24e7816e522110443326fd259568aa5a" title=" " alt="" coords="323,545,474,571"/>
-<area shape="rect"  href="classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="314,595,483,622"/>
-<area shape="rect"  href="classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="307,443,490,470"/>
-<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="300,494,497,521"/>
-<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="28,421,229,463"/>
-<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="28,487,229,528"/>
-<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="28,552,229,593"/>
-<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="21,618,236,645"/>
-<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="11,669,246,711"/>
-<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="9,735,248,762"/>
-<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="44,786,213,813"/>
-<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="35,837,222,879"/>
-<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="16,903,241,930"/>
-<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="5,71,252,112"/>
-<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="27,137,230,163"/>
-<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="30,187,227,214"/>
-<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="34,239,223,280"/>
-<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="41,304,216,345"/>
-<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="33,370,224,397"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="318,653,479,695"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="318,840,479,881"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="48,955,209,996"/>
+<area shape="rect"  href="classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="314,218,483,245"/>
+<area shape="rect"  href="classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="307,269,490,295"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="300,465,497,491"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="28,71,229,112"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="28,136,229,177"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="28,201,229,243"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="21,267,236,294"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="11,319,246,360"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="9,385,248,411"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="44,435,213,462"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="35,487,222,528"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="16,553,241,579"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="5,604,252,645"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="27,670,230,697"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="30,721,227,747"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="34,772,223,813"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="41,837,216,879"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="33,903,224,930"/>
 </map>
 </div>
 
@@ -349,7 +258,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

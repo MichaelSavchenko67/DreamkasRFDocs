@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1BEL.html">BEL</a></li><li class="navelem"><a class="el" href="structBIOS_1_1BEL_1_1RECEIPT.html">RECEIPT</a></li>  </ul>
@@ -87,10 +110,7 @@ $(function() {
 <tr class="memitem:ac2bb6a8d46333863d1e7852e73ac68ac"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1BEL_1_1RECEIPT.html#ac2bb6a8d46333863d1e7852e73ac68ac">marginRubSum</a></td></tr>
 <tr class="separator:ac2bb6a8d46333863d1e7852e73ac68ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01098">1098</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a5afecb13daaa2f9cdf61f681b2eed387"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5afecb13daaa2f9cdf61f681b2eed387">&#9670;&nbsp;</a></span>buyerAddress</h2>
 
@@ -103,9 +123,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01107">1107</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -121,9 +139,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01109">1109</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -139,9 +155,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01110">1110</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -157,9 +171,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01111">1111</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -175,9 +187,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01104">1104</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a>, <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -193,9 +203,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01113">1113</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -211,9 +219,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01114">1114</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -229,9 +235,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01106">1106</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -247,9 +251,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01105">1105</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a>, <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -259,7 +261,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

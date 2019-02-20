@@ -1,7 +1,5 @@
 <map id="ReceiptsDb::createTasksDb" name="ReceiptsDb::createTasksDb">
 <area shape="rect" id="node1" title="createTasksDb &#45; создать таблицу тасок HUB" alt="" coords="5,31,193,57"/>
 <area shape="rect" id="node2" href="$classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a" title="makeTasksRequest &#45; запрос к таблице тасок" alt="" coords="241,5,457,32"/>
-<area shape="rect" id="node5" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="255,56,443,83"/>
-<area shape="rect" id="node3" href="$ReceiptsDb_8cpp.html#aa6e928b81fcae281aa1a118ef7720ee1" title=" " alt="" coords="505,5,612,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="660,5,811,32"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="255,56,443,83"/>
 </map>

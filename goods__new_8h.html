@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
@@ -184,8 +207,6 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Переменные</h2></td></tr>
-<tr class="memitem:a667f51b7cb63fdbb6c50cc1b166a20df"><td class="memItemLeft" align="right" valign="top">static mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a667f51b7cb63fdbb6c50cc1b166a20df">goodsBaseMutex</a></td></tr>
-<tr class="separator:a667f51b7cb63fdbb6c50cc1b166a20df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac276f5748d31844adfcd4ddef31725c0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#ac276f5748d31844adfcd4ddef31725c0">GOOD_TYPE_COUNTABLE</a> = &quot;COUNTABLE&quot;</td></tr>
 <tr class="separator:ac276f5748d31844adfcd4ddef31725c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68fda7b48df6894554056aa56776e090"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8h.html#a68fda7b48df6894554056aa56776e090">GOOD_TYPE_SCALABLE</a> = &quot;SCALABLE&quot;</td></tr>
@@ -218,11 +239,9 @@ $(function() {
 <tr><td class="fieldname"><a id="a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af"></a>DISC_MODE_MANUAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39"></a>DISC_MODE_AUTO&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00092">92</a></p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f">DISC_MODE_NONE</a> = 0,</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af">DISC_MODE_MANUAL</a>,     <span class="comment">//</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39">DISC_MODE_AUTO</a>,       <span class="comment">//</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div><div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af">DISC_MODE_MANUAL</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00095">goods_new.h:95</a></div></div>
-<div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f">DISC_MODE_NONE</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00094">goods_new.h:94</a></div></div>
-<div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39">DISC_MODE_AUTO</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00096">goods_new.h:96</a></div></div>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f">DISC_MODE_NONE</a> = 0,</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af">DISC_MODE_MANUAL</a>,     <span class="comment">//</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39">DISC_MODE_AUTO</a>,       <span class="comment">//</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div><div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601af0b1830f7303ab1dfc5ab0a23879b2af">DISC_MODE_MANUAL</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:95</div></div>
+<div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601aa4edb610e7b424113bfebc0d06ded20f">DISC_MODE_NONE</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:94</div></div>
+<div class="ttc" id="goods__new_8h_html_a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39"><div class="ttname"><a href="goods__new_8h.html#a75cce64cc6016cbc2f4fe25853c1c601a9a6d9a84ca2dd6ae4ccb567bdd79cf39">DISC_MODE_AUTO</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:96</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -242,11 +261,9 @@ $(function() {
 <tr><td class="fieldname"><a id="afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120"></a>DISC_RUB&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82"></a>DISC_PER&#160;</td><td class="fielddoc"></td></tr>
 </table>
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00086">86</a></p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e">DISC_NONE</a> = 0, <span class="comment">//</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120">DISC_RUB</a>,      <span class="comment">// Рублёвая</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82">DISC_PER</a>       <span class="comment">// Процентная</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div><div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e">DISC_NONE</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00088">goods_new.h:88</a></div></div>
-<div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82">DISC_PER</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00090">goods_new.h:90</a></div></div>
-<div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120">DISC_RUB</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00089">goods_new.h:89</a></div></div>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e">DISC_NONE</a> = 0, <span class="comment">//</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120">DISC_RUB</a>,      <span class="comment">// Рублёвая</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82">DISC_PER</a>       <span class="comment">// Процентная</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div><div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a1775d104f262a75314482e43c4347b2e">DISC_NONE</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:88</div></div>
+<div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8ad8fc2c75d44017db606ea3a1f816df82">DISC_PER</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:90</div></div>
+<div class="ttc" id="goods__new_8h_html_afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120"><div class="ttname"><a href="goods__new_8h.html#afae78deb4c82b9f747d195e1b97283c8a020460f328e4653373b97b0983cb5120">DISC_RUB</a></div><div class="ttdef"><b>Definition:</b> goods_new.h:89</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,8 +280,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00069">69</a></p>
-
 </div>
 </div>
 <a id="a9e15a2dc858432ece3916447df230253"></a>
@@ -279,9 +294,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00070">70</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
@@ -297,9 +310,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00067">67</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01889">JSON::isValidPosition()</a> и <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a1be6361d490f9de1a8916faddca59463">JSON::isValidPosition()</a> и <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
@@ -315,9 +326,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00068">68</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
@@ -333,9 +342,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00072">72</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
@@ -351,9 +358,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00071">71</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
@@ -369,42 +374,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00073">73</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02850">JSON::parseUpsertProduct()</a>.</p>
-
-</div>
-</div>
-<a id="a667f51b7cb63fdbb6c50cc1b166a20df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a667f51b7cb63fdbb6c50cc1b166a20df">&#9670;&nbsp;</a></span>goodsBaseMutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mutex goodsBaseMutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00024">24</a></p>
-
-<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l01043">Goods_new::addClmToTable()</a>, <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l01003">Goods_new::addDiscountGood()</a>, <a class="el" href="goods__new_8cpp_source.html#l01989">Goods_new::addGood()</a>, <a class="el" href="goods__new_8cpp_source.html#l02356">Goods_new::addWear()</a>, <a class="el" href="goods__new_8cpp_source.html#l02237">Goods_new::clearGoodsDb()</a>, <a class="el" href="goods__new_8cpp_source.html#l00829">Goods_new::createGoodsDb()</a>, <a class="el" href="goods__new_8cpp_source.html#l01131">Goods_new::createHashRemId()</a>, <a class="el" href="goods__new_8cpp_source.html#l00457">Goods_new::delDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l02421">Goods_new::deleteWear()</a>, <a class="el" href="goods__new_8cpp_source.html#l01232">Goods_new::findGood()</a>, <a class="el" href="goods__new_8cpp_source.html#l01337">Goods_new::findGood_new()</a>, <a class="el" href="goods__new_8cpp_source.html#l01368">Goods_new::findGoodName()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8cpp_source.html#l02259">Goods_new::getGoodsIDByRemID()</a>, <a class="el" href="goods__new_8cpp_source.html#l02299">Goods_new::getWears()</a>, <a class="el" href="goods__new_8cpp_source.html#l00673">Goods_new::isDiscountsDbEmpty()</a>, <a class="el" href="goods__new_8cpp_source.html#l00191">Goods_new::isGoodsBaseEmpty()</a>, <a class="el" href="goods__new_8cpp_source.html#l01071">Goods_new::moveCodesToGoodsCodeTable()</a>, <a class="el" href="goods__new_8cpp_source.html#l00212">Goods_new::numberGoodsInBase()</a>, <a class="el" href="goods__new_8cpp_source.html#l02103">Goods_new::printGoodsDb()</a>, <a class="el" href="goods__new_8cpp_source.html#l01390">Goods_new::removeAllRemIds()</a>, <a class="el" href="goods__new_8cpp_source.html#l02074">Goods_new::rmGood()</a> и <a class="el" href="goods__new_8cpp_source.html#l01465">Goods_new::updateGood()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a22e71154079ea28e339d3b9404e840ad">JSON::parseUpsertProduct()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

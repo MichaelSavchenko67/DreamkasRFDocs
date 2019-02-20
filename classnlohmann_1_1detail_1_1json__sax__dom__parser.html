@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">json_sax_dom_parser</a></li>  </ul>
@@ -47,8 +70,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Открытые типы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pri-methods">Закрытые члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classnlohmann_1_1detail_1_1json__sax__dom__parser-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</div>  </div>
@@ -66,7 +87,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1json__sax__dom__parser_3_01BasicJsonType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1json__sax__dom__parser_3_01BasicJsonType_01_4_coll__map" id="nlohmann_1_1detail_1_1json__sax__dom__parser_3_01BasicJsonType_01_4_coll__map">
-<area shape="rect"  title="SAX implementation to create a JSON value from SAX events." alt="" coords="5,5,244,361"/>
+<area shape="rect"  title="SAX implementation to create a JSON value from SAX events." alt="" coords="5,5,244,288"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -111,30 +132,6 @@ $(function() {
 <tr class="separator:a7d3bf1f361ebb817c694ba45b3814fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1b9f3681fadbbb2e0127f5c8a99c662"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662">is_errored</a> () const</td></tr>
 <tr class="separator:ad1b9f3681fadbbb2e0127f5c8a99c662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Закрытые члены</h2></td></tr>
-<tr class="memitem:a8df0a59eddc25f9f68937dcd4f0750ff"><td class="memTemplParams" colspan="2">template&lt;typename Value &gt; </td></tr>
-<tr class="memitem:a8df0a59eddc25f9f68937dcd4f0750ff"><td class="memTemplItemLeft" align="right" valign="top">BasicJsonType *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a> (Value &amp;&amp;v)</td></tr>
-<tr class="separator:a8df0a59eddc25f9f68937dcd4f0750ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:aef0477277389e399d7128898841b71c0"><td class="memItemLeft" align="right" valign="top">BasicJsonType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">root</a></td></tr>
-<tr class="memdesc:aef0477277389e399d7128898841b71c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">the parsed <a class="el" href="classJSON.html">JSON</a> value  <a href="#aef0477277389e399d7128898841b71c0">Подробнее...</a><br /></td></tr>
-<tr class="separator:aef0477277389e399d7128898841b71c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7526e7ae7be7f63803a23fd8cf36e5d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; BasicJsonType * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a></td></tr>
-<tr class="memdesc:aa7526e7ae7be7f63803a23fd8cf36e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack to model hierarchy of values  <a href="#aa7526e7ae7be7f63803a23fd8cf36e5d">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa7526e7ae7be7f63803a23fd8cf36e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c03c76d3a8e89c8928097ba0b92c2db"><td class="memItemLeft" align="right" valign="top">BasicJsonType *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">object_element</a> = nullptr</td></tr>
-<tr class="memdesc:a9c03c76d3a8e89c8928097ba0b92c2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper to hold the reference for the next object element  <a href="#a9c03c76d3a8e89c8928097ba0b92c2db">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9c03c76d3a8e89c8928097ba0b92c2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ccb472ed855e2f2370fd091d91aad7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a31ccb472ed855e2f2370fd091d91aad7">errored</a> = false</td></tr>
-<tr class="memdesc:a31ccb472ed855e2f2370fd091d91aad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether a syntax error occurred  <a href="#a31ccb472ed855e2f2370fd091d91aad7">Подробнее...</a><br /></td></tr>
-<tr class="separator:a31ccb472ed855e2f2370fd091d91aad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0953e8d888339421d909d9016bc6e2c"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad0953e8d888339421d909d9016bc6e2c">allow_exceptions</a> = true</td></tr>
-<tr class="memdesc:ad0953e8d888339421d909d9016bc6e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether to throw exceptions in case of errors  <a href="#ad0953e8d888339421d909d9016bc6e2c">Подробнее...</a><br /></td></tr>
-<tr class="separator:ad0953e8d888339421d909d9016bc6e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><h3>template&lt;typename BasicJsonType&gt;<br />
@@ -149,8 +146,6 @@ class nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</h3>
   </table>
   </dd>
 </dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03923">3923</a></p>
 </div><h2 class="groupheader">Определения типов</h2>
 <a id="ad8da3aad0147b18b3cb76868480300fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8da3aad0147b18b3cb76868480300fe">&#9670;&nbsp;</a></span>number_float_t</h2>
@@ -165,8 +160,6 @@ template&lt;typename BasicJsonType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03928">3928</a></p>
 
 </div>
 </div>
@@ -184,8 +177,6 @@ template&lt;typename BasicJsonType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03926">3926</a></p>
-
 </div>
 </div>
 <a id="a90f19b272530a479db81db11be2ea15c"></a>
@@ -202,8 +193,6 @@ template&lt;typename BasicJsonType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03927">3927</a></p>
-
 </div>
 </div>
 <a id="afd4d961ab2a6b01cbe6e840f7fb90cdc"></a>
@@ -219,8 +208,6 @@ template&lt;typename BasicJsonType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03929">3929</a></p>
 
 </div>
 </div>
@@ -267,11 +254,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03936">3936</a></p>
-<div class="fragment"><div class="line"><a name="l03937"></a><span class="lineno"> 3937</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">root</a>(r), <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad0953e8d888339421d909d9016bc6e2c">allow_exceptions</a>(allow_exceptions_)</div><div class="line"><a name="l03938"></a><span class="lineno"> 3938</span>&#160;    {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aef0477277389e399d7128898841b71c0"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">nlohmann::detail::json_sax_dom_parser::root</a></div><div class="ttdeci">BasicJsonType &amp; root</div><div class="ttdoc">the parsed JSON value</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04087">jsonParser.h:4087</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_ad0953e8d888339421d909d9016bc6e2c"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad0953e8d888339421d909d9016bc6e2c">nlohmann::detail::json_sax_dom_parser::allow_exceptions</a></div><div class="ttdeci">const bool allow_exceptions</div><div class="ttdoc">whether to throw exceptions in case of errors</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04095">jsonParser.h:4095</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l03937"></a><span class="lineno"> 3937</span>&#160;        : root(r), allow_exceptions(allow_exceptions_)</div><div class="line"><a name="l03938"></a><span class="lineno"> 3938</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -300,23 +283,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03946">3946</a></p>
-<div class="fragment"><div class="line"><a name="l03947"></a><span class="lineno"> 3947</span>&#160;    {</div><div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(val);</div><div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a476c4634b93546a1a555725e551c2b33_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a476c4634b93546a1a555725e551c2b33_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a476c4634b93546a1a555725e551c2b33_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a476c4634b93546a1a555725e551c2b33_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,184,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="232,5,441,47"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03947"></a><span class="lineno"> 3947</span>&#160;    {</div><div class="line"><a name="l03948"></a><span class="lineno"> 3948</span>&#160;        handle_value(val);</div><div class="line"><a name="l03949"></a><span class="lineno"> 3949</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03950"></a><span class="lineno"> 3950</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af7cb5e5fe06ea908b0ce4ed762919759"></a>
@@ -343,12 +310,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04015">4015</a></p>
-<div class="fragment"><div class="line"><a name="l04016"></a><span class="lineno"> 4016</span>&#160;    {</div><div class="line"><a name="l04017"></a><span class="lineno"> 4017</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.pop_back();</div><div class="line"><a name="l04018"></a><span class="lineno"> 4018</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04019"></a><span class="lineno"> 4019</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l04016"></a><span class="lineno"> 4016</span>&#160;    {</div><div class="line"><a name="l04017"></a><span class="lineno"> 4017</span>&#160;        ref_stack.pop_back();</div><div class="line"><a name="l04018"></a><span class="lineno"> 4018</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04019"></a><span class="lineno"> 4019</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a88de4907ad5668d0358af2135236101f"></a>
@@ -375,72 +337,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03996">3996</a></p>
-<div class="fragment"><div class="line"><a name="l03997"></a><span class="lineno"> 3997</span>&#160;    {</div><div class="line"><a name="l03998"></a><span class="lineno"> 3998</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.pop_back();</div><div class="line"><a name="l03999"></a><span class="lineno"> 3999</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04000"></a><span class="lineno"> 4000</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a>.</p>
-
-</div>
-</div>
-<a id="a8df0a59eddc25f9f68937dcd4f0750ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df0a59eddc25f9f68937dcd4f0750ff">&#9670;&nbsp;</a></span>handle_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<div class="memtemplate">
-template&lt;typename Value &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BasicJsonType* <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::handle_value </td>
-          <td>(</td>
-          <td class="paramtype">Value &amp;&amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section invariant"><dt>Инвариант</dt><dd>If the ref stack is empty, then the passed value will be the new root. </dd>
-<dd>
-If the ref stack contains a value, then it is an array or an object to which we can add elements </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04062">4062</a></p>
-<div class="fragment"><div class="line"><a name="l04063"></a><span class="lineno"> 4063</span>&#160;    {</div><div class="line"><a name="l04064"></a><span class="lineno"> 4064</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.empty())</div><div class="line"><a name="l04065"></a><span class="lineno"> 4065</span>&#160;        {</div><div class="line"><a name="l04066"></a><span class="lineno"> 4066</span>&#160;            <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">root</a> = BasicJsonType(std::forward&lt;Value&gt;(v));</div><div class="line"><a name="l04067"></a><span class="lineno"> 4067</span>&#160;            <span class="keywordflow">return</span> &amp;<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">root</a>;</div><div class="line"><a name="l04068"></a><span class="lineno"> 4068</span>&#160;        }</div><div class="line"><a name="l04069"></a><span class="lineno"> 4069</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l04070"></a><span class="lineno"> 4070</span>&#160;        {</div><div class="line"><a name="l04071"></a><span class="lineno"> 4071</span>&#160;            assert(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;is_array() or <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;is_object());</div><div class="line"><a name="l04072"></a><span class="lineno"> 4072</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;is_array())</div><div class="line"><a name="l04073"></a><span class="lineno"> 4073</span>&#160;            {</div><div class="line"><a name="l04074"></a><span class="lineno"> 4074</span>&#160;                <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;m_value.array-&gt;emplace_back(std::forward&lt;Value&gt;(v));</div><div class="line"><a name="l04075"></a><span class="lineno"> 4075</span>&#160;                <span class="keywordflow">return</span> &amp;(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;m_value.array-&gt;back());</div><div class="line"><a name="l04076"></a><span class="lineno"> 4076</span>&#160;            }</div><div class="line"><a name="l04077"></a><span class="lineno"> 4077</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l04078"></a><span class="lineno"> 4078</span>&#160;            {</div><div class="line"><a name="l04079"></a><span class="lineno"> 4079</span>&#160;                assert(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">object_element</a>);</div><div class="line"><a name="l04080"></a><span class="lineno"> 4080</span>&#160;                *<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">object_element</a> = BasicJsonType(std::forward&lt;Value&gt;(v));</div><div class="line"><a name="l04081"></a><span class="lineno"> 4081</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">object_element</a>;</div><div class="line"><a name="l04082"></a><span class="lineno"> 4082</span>&#160;            }</div><div class="line"><a name="l04083"></a><span class="lineno"> 4083</span>&#160;        }</div><div class="line"><a name="l04084"></a><span class="lineno"> 4084</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aef0477277389e399d7128898841b71c0"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">nlohmann::detail::json_sax_dom_parser::root</a></div><div class="ttdeci">BasicJsonType &amp; root</div><div class="ttdoc">the parsed JSON value</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04087">jsonParser.h:4087</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a9c03c76d3a8e89c8928097ba0b92c2db"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">nlohmann::detail::json_sax_dom_parser::object_element</a></div><div class="ttdeci">BasicJsonType * object_element</div><div class="ttdoc">helper to hold the reference for the next object element</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04091">jsonParser.h:4091</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04091">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::object_element</a>, <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a> и <a class="el" href="jsonParser_8h_source.html#l04087">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::root</a>.</p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l03946">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::boolean()</a>, <a class="el" href="jsonParser_8h_source.html#l03940">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::null()</a>, <a class="el" href="jsonParser_8h_source.html#l03964">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::number_float()</a>, <a class="el" href="jsonParser_8h_source.html#l03952">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::number_integer()</a>, <a class="el" href="jsonParser_8h_source.html#l03958">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::number_unsigned()</a>, <a class="el" href="jsonParser_8h_source.html#l04002">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_array()</a>, <a class="el" href="jsonParser_8h_source.html#l03976">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_object()</a> и <a class="el" href="jsonParser_8h_source.html#l03970">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::string()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a8df0a59eddc25f9f68937dcd4f0750ff_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a8df0a59eddc25f9f68937dcd4f0750ff_icgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a8df0a59eddc25f9f68937dcd4f0750ff_icgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a8df0a59eddc25f9f68937dcd4f0750ff_icgraph">
-<area shape="rect"  title=" " alt="" coords="261,249,471,291"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a476c4634b93546a1a555725e551c2b33" title=" " alt="" coords="20,5,199,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#abb06babaa861f123d8d0cb443b887d8a" title=" " alt="" coords="33,71,186,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef4652c0e81d6c052acb5d36afe09499" title=" " alt="" coords="5,136,213,177"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aff77f861ba336df48c9786a993941397" title=" " alt="" coords="21,202,197,258"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a2b4ff5146ed46993527e4a67d99c1355" title=" " alt="" coords="21,282,197,338"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a056b895d011efaf48ea096c024aca0d4" title=" " alt="" coords="12,363,207,404"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9929b4cc92d471c49bd0a92802629f90" title=" " alt="" coords="30,429,189,485"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a851d965082d20a726138f5d0330dc7d8" title=" " alt="" coords="27,509,192,551"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03997"></a><span class="lineno"> 3997</span>&#160;    {</div><div class="line"><a name="l03998"></a><span class="lineno"> 3998</span>&#160;        ref_stack.pop_back();</div><div class="line"><a name="l03999"></a><span class="lineno"> 3999</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04000"></a><span class="lineno"> 4000</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ad1b9f3681fadbbb2e0127f5c8a99c662"></a>
@@ -467,22 +364,51 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04049">4049</a></p>
-<div class="fragment"><div class="line"><a name="l04050"></a><span class="lineno"> 4050</span>&#160;    {</div><div class="line"><a name="l04051"></a><span class="lineno"> 4051</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a31ccb472ed855e2f2370fd091d91aad7">errored</a>;</div><div class="line"><a name="l04052"></a><span class="lineno"> 4052</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a31ccb472ed855e2f2370fd091d91aad7"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a31ccb472ed855e2f2370fd091d91aad7">nlohmann::detail::json_sax_dom_parser::errored</a></div><div class="ttdeci">bool errored</div><div class="ttdoc">whether a syntax error occurred</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04093">jsonParser.h:4093</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04093">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::errored</a>.</p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div class="fragment"><div class="line"><a name="l04050"></a><span class="lineno"> 4050</span>&#160;    {</div><div class="line"><a name="l04051"></a><span class="lineno"> 4051</span>&#160;        <span class="keywordflow">return</span> errored;</div><div class="line"><a name="l04052"></a><span class="lineno"> 4052</span>&#160;    }</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_ad1b9f3681fadbbb2e0127f5c8a99c662_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_ad1b9f3681fadbbb2e0127f5c8a99c662_icgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_ad1b9f3681fadbbb2e0127f5c8a99c662_icgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_ad1b9f3681fadbbb2e0127f5c8a99c662_icgraph">
-<area shape="rect"  title=" " alt="" coords="215,5,405,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="5,5,167,47"/>
+<area shape="rect"  title=" " alt="" coords="1448,539,1639,580"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1239,539,1400,580"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="1043,539,1191,580"/>
+<area shape="rect"  href="classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title="hubModeAddRealUrl &#45; Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð² json Ð¿Ð¾Ð»Ñ real_url" alt="" coords="798,228,994,269"/>
+<area shape="rect"  href="classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="821,394,971,421"/>
+<area shape="rect"  href="classJSON.html#afbe68a62e809d131ffbe68f11db2c3ea" title=" " alt="" coords="797,495,995,522"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="258,305,493,347"/>
+<area shape="rect"  href="jsonParser_8h.html#ae90d59ab420a183cd5fb8588bdc95e06" title="user&#45;defined string literal for JSON values" alt="" coords="841,546,951,573"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="809,597,983,623"/>
+<area shape="rect"  href="classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; Ð¿Ð°ÑÑ Ð¾ÑÐ²ÐµÑÐ° Ð½Ð° Ð·Ð°Ð¿Ð¿ÑÐ¾Ñ ÑÐµÐ³Ð¸ÑÑÑÐ°ÑÐ¸Ð¸" alt="" coords="816,647,976,674"/>
+<area shape="rect"  href="classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="803,698,989,725"/>
+<area shape="rect"  href="testHttpsExchange_8h.html#a569611bfe66cc9c65129a67edd4cd580" title=" " alt="" coords="861,749,931,775"/>
+<area shape="rect"  href="classHttpsExchange.html#a145cdf98aa0e70ac8622281ffd8bcbef" title=" " alt="" coords="560,166,736,193"/>
+<area shape="rect"  href="classHttpsExchange.html#ab0babbd29470a4f28b93f04baf9fa50f" title=" " alt="" coords="279,5,472,47"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d11c809314dfe85283df6ae9ec596c1" title=" " alt="" coords="266,71,485,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145" title=" " alt="" coords="277,137,474,163"/>
+<area shape="rect"  href="classHttpsExchange.html#a22789e654b9265cca6904f8110252218" title=" " alt="" coords="277,188,474,229"/>
+<area shape="rect"  href="classHttpsExchange.html#a3c419991d6243a6537b0fd17a69597b3" title=" " alt="" coords="274,254,477,281"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="8,13,201,39"/>
+<area shape="rect"  href="classHttpsExchange.html#a4a3f9ba78e0ba86618fb6f376eafdbc5" title=" " alt="" coords="5,195,204,222"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="549,669,747,695"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="275,371,476,412"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="275,436,476,477"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="275,501,476,543"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="268,567,483,594"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="256,618,495,645"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="291,669,460,695"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="282,720,469,761"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="263,786,488,813"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="252,837,499,879"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="274,903,477,930"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="277,954,474,981"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="281,1005,470,1047"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="288,1071,463,1112"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="280,1137,471,1163"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="547,720,749,761"/>
 </map>
 </div>
 
@@ -513,13 +439,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03989">3989</a></p>
-<div class="fragment"><div class="line"><a name="l03990"></a><span class="lineno"> 3990</span>&#160;    {</div><div class="line"><a name="l03991"></a><span class="lineno"> 3991</span>&#160;        <span class="comment">// add null at given key and store the reference for later</span></div><div class="line"><a name="l03992"></a><span class="lineno"> 3992</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">object_element</a> = &amp;(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;m_value.object-&gt;operator[](val));</div><div class="line"><a name="l03993"></a><span class="lineno"> 3993</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03994"></a><span class="lineno"> 3994</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a9c03c76d3a8e89c8928097ba0b92c2db"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">nlohmann::detail::json_sax_dom_parser::object_element</a></div><div class="ttdeci">BasicJsonType * object_element</div><div class="ttdoc">helper to hold the reference for the next object element</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04091">jsonParser.h:4091</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04091">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::object_element</a> и <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l03990"></a><span class="lineno"> 3990</span>&#160;    {</div><div class="line"><a name="l03991"></a><span class="lineno"> 3991</span>&#160;        <span class="comment">// add null at given key and store the reference for later</span></div><div class="line"><a name="l03992"></a><span class="lineno"> 3992</span>&#160;        object_element = &amp;(ref_stack.back()-&gt;m_value.object-&gt;operator[](val));</div><div class="line"><a name="l03993"></a><span class="lineno"> 3993</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03994"></a><span class="lineno"> 3994</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="abb06babaa861f123d8d0cb443b887d8a"></a>
@@ -546,23 +466,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03940">3940</a></p>
-<div class="fragment"><div class="line"><a name="l03941"></a><span class="lineno"> 3941</span>&#160;    {</div><div class="line"><a name="l03942"></a><span class="lineno"> 3942</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(<span class="keyword">nullptr</span>);</div><div class="line"><a name="l03943"></a><span class="lineno"> 3943</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03944"></a><span class="lineno"> 3944</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_abb06babaa861f123d8d0cb443b887d8a_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_abb06babaa861f123d8d0cb443b887d8a_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_abb06babaa861f123d8d0cb443b887d8a_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_abb06babaa861f123d8d0cb443b887d8a_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,159,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="207,5,416,47"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03941"></a><span class="lineno"> 3941</span>&#160;    {</div><div class="line"><a name="l03942"></a><span class="lineno"> 3942</span>&#160;        handle_value(<span class="keyword">nullptr</span>);</div><div class="line"><a name="l03943"></a><span class="lineno"> 3943</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03944"></a><span class="lineno"> 3944</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aef4652c0e81d6c052acb5d36afe09499"></a>
@@ -600,23 +504,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03964">3964</a></p>
-<div class="fragment"><div class="line"><a name="l03965"></a><span class="lineno"> 3965</span>&#160;    {</div><div class="line"><a name="l03966"></a><span class="lineno"> 3966</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(val);</div><div class="line"><a name="l03967"></a><span class="lineno"> 3967</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03968"></a><span class="lineno"> 3968</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_aef4652c0e81d6c052acb5d36afe09499_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_aef4652c0e81d6c052acb5d36afe09499_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_aef4652c0e81d6c052acb5d36afe09499_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_aef4652c0e81d6c052acb5d36afe09499_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,213,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="261,5,471,47"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03965"></a><span class="lineno"> 3965</span>&#160;    {</div><div class="line"><a name="l03966"></a><span class="lineno"> 3966</span>&#160;        handle_value(val);</div><div class="line"><a name="l03967"></a><span class="lineno"> 3967</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03968"></a><span class="lineno"> 3968</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aff77f861ba336df48c9786a993941397"></a>
@@ -644,23 +532,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03952">3952</a></p>
-<div class="fragment"><div class="line"><a name="l03953"></a><span class="lineno"> 3953</span>&#160;    {</div><div class="line"><a name="l03954"></a><span class="lineno"> 3954</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(val);</div><div class="line"><a name="l03955"></a><span class="lineno"> 3955</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03956"></a><span class="lineno"> 3956</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_aff77f861ba336df48c9786a993941397_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_aff77f861ba336df48c9786a993941397_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_aff77f861ba336df48c9786a993941397_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_aff77f861ba336df48c9786a993941397_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,181,61"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="229,13,439,54"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03953"></a><span class="lineno"> 3953</span>&#160;    {</div><div class="line"><a name="l03954"></a><span class="lineno"> 3954</span>&#160;        handle_value(val);</div><div class="line"><a name="l03955"></a><span class="lineno"> 3955</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03956"></a><span class="lineno"> 3956</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2b4ff5146ed46993527e4a67d99c1355"></a>
@@ -688,23 +560,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03958">3958</a></p>
-<div class="fragment"><div class="line"><a name="l03959"></a><span class="lineno"> 3959</span>&#160;    {</div><div class="line"><a name="l03960"></a><span class="lineno"> 3960</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(val);</div><div class="line"><a name="l03961"></a><span class="lineno"> 3961</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03962"></a><span class="lineno"> 3962</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a2b4ff5146ed46993527e4a67d99c1355_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a2b4ff5146ed46993527e4a67d99c1355_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a2b4ff5146ed46993527e4a67d99c1355_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a2b4ff5146ed46993527e4a67d99c1355_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,181,61"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="229,13,439,54"/>
-</map>
-</div>
-
+<div class="fragment"><div class="line"><a name="l03959"></a><span class="lineno"> 3959</span>&#160;    {</div><div class="line"><a name="l03960"></a><span class="lineno"> 3960</span>&#160;        handle_value(val);</div><div class="line"><a name="l03961"></a><span class="lineno"> 3961</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03962"></a><span class="lineno"> 3962</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a7d3bf1f361ebb817c694ba45b3814fa6"></a>
@@ -748,24 +604,54 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04021">4021</a></p>
-<div class="fragment"><div class="line"><a name="l04023"></a><span class="lineno"> 4023</span>&#160;    {</div><div class="line"><a name="l04024"></a><span class="lineno"> 4024</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a31ccb472ed855e2f2370fd091d91aad7">errored</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l04025"></a><span class="lineno"> 4025</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad0953e8d888339421d909d9016bc6e2c">allow_exceptions</a>)</div><div class="line"><a name="l04026"></a><span class="lineno"> 4026</span>&#160;        {</div><div class="line"><a name="l04027"></a><span class="lineno"> 4027</span>&#160;            <span class="comment">// determine the proper exception type from the id</span></div><div class="line"><a name="l04028"></a><span class="lineno"> 4028</span>&#160;            <span class="keywordflow">switch</span> ((ex.id / 100) % 100)</div><div class="line"><a name="l04029"></a><span class="lineno"> 4029</span>&#160;            {</div><div class="line"><a name="l04030"></a><span class="lineno"> 4030</span>&#160;                <span class="keywordflow">case</span> 1:</div><div class="line"><a name="l04031"></a><span class="lineno"> 4031</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::parse_error*&gt;(&amp;ex));</div><div class="line"><a name="l04032"></a><span class="lineno"> 4032</span>&#160;                <span class="keywordflow">case</span> 4:</div><div class="line"><a name="l04033"></a><span class="lineno"> 4033</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::out_of_range*&gt;(&amp;ex));</div><div class="line"><a name="l04034"></a><span class="lineno"> 4034</span>&#160;                <span class="comment">// LCOV_EXCL_START</span></div><div class="line"><a name="l04035"></a><span class="lineno"> 4035</span>&#160;                <span class="keywordflow">case</span> 2:</div><div class="line"><a name="l04036"></a><span class="lineno"> 4036</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::invalid_iterator*&gt;(&amp;ex));</div><div class="line"><a name="l04037"></a><span class="lineno"> 4037</span>&#160;                <span class="keywordflow">case</span> 3:</div><div class="line"><a name="l04038"></a><span class="lineno"> 4038</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::type_error*&gt;(&amp;ex));</div><div class="line"><a name="l04039"></a><span class="lineno"> 4039</span>&#160;                <span class="keywordflow">case</span> 5:</div><div class="line"><a name="l04040"></a><span class="lineno"> 4040</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::other_error*&gt;(&amp;ex));</div><div class="line"><a name="l04041"></a><span class="lineno"> 4041</span>&#160;                <span class="keywordflow">default</span>:</div><div class="line"><a name="l04042"></a><span class="lineno"> 4042</span>&#160;                    assert(<span class="keyword">false</span>);</div><div class="line"><a name="l04043"></a><span class="lineno"> 4043</span>&#160;                    <span class="comment">// LCOV_EXCL_STOP</span></div><div class="line"><a name="l04044"></a><span class="lineno"> 4044</span>&#160;            }</div><div class="line"><a name="l04045"></a><span class="lineno"> 4045</span>&#160;        }</div><div class="line"><a name="l04046"></a><span class="lineno"> 4046</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04047"></a><span class="lineno"> 4047</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a31ccb472ed855e2f2370fd091d91aad7"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a31ccb472ed855e2f2370fd091d91aad7">nlohmann::detail::json_sax_dom_parser::errored</a></div><div class="ttdeci">bool errored</div><div class="ttdoc">whether a syntax error occurred</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04093">jsonParser.h:4093</a></div></div>
-<div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00162">jsonParser.h:162</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_ad0953e8d888339421d909d9016bc6e2c"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad0953e8d888339421d909d9016bc6e2c">nlohmann::detail::json_sax_dom_parser::allow_exceptions</a></div><div class="ttdeci">const bool allow_exceptions</div><div class="ttdoc">whether to throw exceptions in case of errors</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04095">jsonParser.h:4095</a></div></div>
+<div class="fragment"><div class="line"><a name="l04023"></a><span class="lineno"> 4023</span>&#160;    {</div><div class="line"><a name="l04024"></a><span class="lineno"> 4024</span>&#160;        errored = <span class="keyword">true</span>;</div><div class="line"><a name="l04025"></a><span class="lineno"> 4025</span>&#160;        <span class="keywordflow">if</span> (allow_exceptions)</div><div class="line"><a name="l04026"></a><span class="lineno"> 4026</span>&#160;        {</div><div class="line"><a name="l04027"></a><span class="lineno"> 4027</span>&#160;            <span class="comment">// determine the proper exception type from the id</span></div><div class="line"><a name="l04028"></a><span class="lineno"> 4028</span>&#160;            <span class="keywordflow">switch</span> ((ex.id / 100) % 100)</div><div class="line"><a name="l04029"></a><span class="lineno"> 4029</span>&#160;            {</div><div class="line"><a name="l04030"></a><span class="lineno"> 4030</span>&#160;                <span class="keywordflow">case</span> 1:</div><div class="line"><a name="l04031"></a><span class="lineno"> 4031</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::parse_error*&gt;(&amp;ex));</div><div class="line"><a name="l04032"></a><span class="lineno"> 4032</span>&#160;                <span class="keywordflow">case</span> 4:</div><div class="line"><a name="l04033"></a><span class="lineno"> 4033</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::out_of_range*&gt;(&amp;ex));</div><div class="line"><a name="l04034"></a><span class="lineno"> 4034</span>&#160;                <span class="comment">// LCOV_EXCL_START</span></div><div class="line"><a name="l04035"></a><span class="lineno"> 4035</span>&#160;                <span class="keywordflow">case</span> 2:</div><div class="line"><a name="l04036"></a><span class="lineno"> 4036</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::invalid_iterator*&gt;(&amp;ex));</div><div class="line"><a name="l04037"></a><span class="lineno"> 4037</span>&#160;                <span class="keywordflow">case</span> 3:</div><div class="line"><a name="l04038"></a><span class="lineno"> 4038</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::type_error*&gt;(&amp;ex));</div><div class="line"><a name="l04039"></a><span class="lineno"> 4039</span>&#160;                <span class="keywordflow">case</span> 5:</div><div class="line"><a name="l04040"></a><span class="lineno"> 4040</span>&#160;                    <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(*reinterpret_cast&lt;const detail::other_error*&gt;(&amp;ex));</div><div class="line"><a name="l04041"></a><span class="lineno"> 4041</span>&#160;                <span class="keywordflow">default</span>:</div><div class="line"><a name="l04042"></a><span class="lineno"> 4042</span>&#160;                    assert(<span class="keyword">false</span>);</div><div class="line"><a name="l04043"></a><span class="lineno"> 4043</span>&#160;                    <span class="comment">// LCOV_EXCL_STOP</span></div><div class="line"><a name="l04044"></a><span class="lineno"> 4044</span>&#160;            }</div><div class="line"><a name="l04045"></a><span class="lineno"> 4045</span>&#160;        }</div><div class="line"><a name="l04046"></a><span class="lineno"> 4046</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04047"></a><span class="lineno"> 4047</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:162</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04095">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::allow_exceptions</a>, <a class="el" href="jsonParser_8h_source.html#l04093">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::errored</a>, <a class="el" href="jsonParser_8h_source.html#l00590">nlohmann::detail::exception::id</a> и <a class="el" href="jsonParser_8h_source.html#l00162">JSON_THROW</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1exception.html#a0d4589a3fb54e81646d986c05efa3b9a">nlohmann::detail::exception::id</a> и <a class="el" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">Используется в <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a7d3bf1f361ebb817c694ba45b3814fa6_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a7d3bf1f361ebb817c694ba45b3814fa6_icgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a7d3bf1f361ebb817c694ba45b3814fa6_icgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a7d3bf1f361ebb817c694ba45b3814fa6_icgraph">
-<area shape="rect"  title=" " alt="" coords="215,5,413,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="5,5,167,47"/>
+<area shape="rect"  title=" " alt="" coords="1448,539,1647,580"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1239,539,1400,580"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="1043,539,1191,580"/>
+<area shape="rect"  href="classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title="hubModeAddRealUrl &#45; Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð² json Ð¿Ð¾Ð»Ñ real_url" alt="" coords="798,228,994,269"/>
+<area shape="rect"  href="classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="821,394,971,421"/>
+<area shape="rect"  href="classJSON.html#afbe68a62e809d131ffbe68f11db2c3ea" title=" " alt="" coords="797,495,995,522"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="258,305,493,347"/>
+<area shape="rect"  href="jsonParser_8h.html#ae90d59ab420a183cd5fb8588bdc95e06" title="user&#45;defined string literal for JSON values" alt="" coords="841,546,951,573"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="809,597,983,623"/>
+<area shape="rect"  href="classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; Ð¿Ð°ÑÑ Ð¾ÑÐ²ÐµÑÐ° Ð½Ð° Ð·Ð°Ð¿Ð¿ÑÐ¾Ñ ÑÐµÐ³Ð¸ÑÑÑÐ°ÑÐ¸Ð¸" alt="" coords="816,647,976,674"/>
+<area shape="rect"  href="classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="803,698,989,725"/>
+<area shape="rect"  href="testHttpsExchange_8h.html#a569611bfe66cc9c65129a67edd4cd580" title=" " alt="" coords="861,749,931,775"/>
+<area shape="rect"  href="classHttpsExchange.html#a145cdf98aa0e70ac8622281ffd8bcbef" title=" " alt="" coords="560,166,736,193"/>
+<area shape="rect"  href="classHttpsExchange.html#ab0babbd29470a4f28b93f04baf9fa50f" title=" " alt="" coords="279,5,472,47"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d11c809314dfe85283df6ae9ec596c1" title=" " alt="" coords="266,71,485,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145" title=" " alt="" coords="277,137,474,163"/>
+<area shape="rect"  href="classHttpsExchange.html#a22789e654b9265cca6904f8110252218" title=" " alt="" coords="277,188,474,229"/>
+<area shape="rect"  href="classHttpsExchange.html#a3c419991d6243a6537b0fd17a69597b3" title=" " alt="" coords="274,254,477,281"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="8,13,201,39"/>
+<area shape="rect"  href="classHttpsExchange.html#a4a3f9ba78e0ba86618fb6f376eafdbc5" title=" " alt="" coords="5,195,204,222"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="549,669,747,695"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="275,371,476,412"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="275,436,476,477"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="275,501,476,543"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="268,567,483,594"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="256,618,495,645"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="291,669,460,695"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="282,720,469,761"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="263,786,488,813"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="252,837,499,879"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="274,903,477,930"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="277,954,474,981"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="281,1005,470,1047"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="288,1071,463,1112"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="280,1137,471,1163"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="547,720,749,761"/>
 </map>
 </div>
 
@@ -796,27 +682,21 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04002">4002</a></p>
-<div class="fragment"><div class="line"><a name="l04003"></a><span class="lineno"> 4003</span>&#160;    {</div><div class="line"><a name="l04004"></a><span class="lineno"> 4004</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.push_back(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(BasicJsonType::value_t::array));</div><div class="line"><a name="l04005"></a><span class="lineno"> 4005</span>&#160;</div><div class="line"><a name="l04006"></a><span class="lineno"> 4006</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(len != std::size_t(-1) and len &gt; <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;max_size()))</div><div class="line"><a name="l04007"></a><span class="lineno"> 4007</span>&#160;        {</div><div class="line"><a name="l04008"></a><span class="lineno"> 4008</span>&#160;            <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(<a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">out_of_range::create</a>(408,</div><div class="line"><a name="l04009"></a><span class="lineno"> 4009</span>&#160;                                            <span class="stringliteral">&quot;excessive array size: &quot;</span> + std::to_string(len)));</div><div class="line"><a name="l04010"></a><span class="lineno"> 4010</span>&#160;        }</div><div class="line"><a name="l04011"></a><span class="lineno"> 4011</span>&#160;</div><div class="line"><a name="l04012"></a><span class="lineno"> 4012</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04013"></a><span class="lineno"> 4013</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-<div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00162">jsonParser.h:162</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00820">jsonParser.h:820</a></div></div>
-<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00193">jsonParser.h:193</a></div></div>
+<div class="fragment"><div class="line"><a name="l04003"></a><span class="lineno"> 4003</span>&#160;    {</div><div class="line"><a name="l04004"></a><span class="lineno"> 4004</span>&#160;        ref_stack.push_back(handle_value(BasicJsonType::value_t::array));</div><div class="line"><a name="l04005"></a><span class="lineno"> 4005</span>&#160;</div><div class="line"><a name="l04006"></a><span class="lineno"> 4006</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(len != std::size_t(-1) and len &gt; ref_stack.back()-&gt;max_size()))</div><div class="line"><a name="l04007"></a><span class="lineno"> 4007</span>&#160;        {</div><div class="line"><a name="l04008"></a><span class="lineno"> 4008</span>&#160;            <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(<a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">out_of_range::create</a>(408,</div><div class="line"><a name="l04009"></a><span class="lineno"> 4009</span>&#160;                                            <span class="stringliteral">&quot;excessive array size: &quot;</span> + std::to_string(len)));</div><div class="line"><a name="l04010"></a><span class="lineno"> 4010</span>&#160;        }</div><div class="line"><a name="l04011"></a><span class="lineno"> 4011</span>&#160;</div><div class="line"><a name="l04012"></a><span class="lineno"> 4012</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04013"></a><span class="lineno"> 4013</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:162</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:820</div></div>
+<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:193</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00820">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>, <a class="el" href="jsonParser_8h_source.html#l00162">JSON_THROW</a>, <a class="el" href="jsonParser_8h_source.html#l00193">JSON_UNLIKELY</a> и <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a>.</p>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a> и <a class="el" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a056b895d011efaf48ea096c024aca0d4_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a056b895d011efaf48ea096c024aca0d4_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a056b895d011efaf48ea096c024aca0d4_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a056b895d011efaf48ea096c024aca0d4_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,71,200,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="281,37,424,79"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="248,103,457,144"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="505,5,687,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="515,71,677,112"/>
+<area shape="rect"  title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="248,5,391,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="439,5,620,47"/>
 </map>
 </div>
 
@@ -847,27 +727,21 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03976">3976</a></p>
-<div class="fragment"><div class="line"><a name="l03977"></a><span class="lineno"> 3977</span>&#160;    {</div><div class="line"><a name="l03978"></a><span class="lineno"> 3978</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.push_back(<a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(BasicJsonType::value_t::object));</div><div class="line"><a name="l03979"></a><span class="lineno"> 3979</span>&#160;</div><div class="line"><a name="l03980"></a><span class="lineno"> 3980</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(len != std::size_t(-1) and len &gt; <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">ref_stack</a>.back()-&gt;max_size()))</div><div class="line"><a name="l03981"></a><span class="lineno"> 3981</span>&#160;        {</div><div class="line"><a name="l03982"></a><span class="lineno"> 3982</span>&#160;            <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(<a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">out_of_range::create</a>(408,</div><div class="line"><a name="l03983"></a><span class="lineno"> 3983</span>&#160;                                            <span class="stringliteral">&quot;excessive object size: &quot;</span> + std::to_string(len)));</div><div class="line"><a name="l03984"></a><span class="lineno"> 3984</span>&#160;        }</div><div class="line"><a name="l03985"></a><span class="lineno"> 3985</span>&#160;</div><div class="line"><a name="l03986"></a><span class="lineno"> 3986</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03987"></a><span class="lineno"> 3987</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_aa7526e7ae7be7f63803a23fd8cf36e5d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser::ref_stack</a></div><div class="ttdeci">std::vector&lt; BasicJsonType * &gt; ref_stack</div><div class="ttdoc">stack to model hierarchy of values</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04089">jsonParser.h:4089</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-<div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00162">jsonParser.h:162</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00820">jsonParser.h:820</a></div></div>
-<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00193">jsonParser.h:193</a></div></div>
+<div class="fragment"><div class="line"><a name="l03977"></a><span class="lineno"> 3977</span>&#160;    {</div><div class="line"><a name="l03978"></a><span class="lineno"> 3978</span>&#160;        ref_stack.push_back(handle_value(BasicJsonType::value_t::object));</div><div class="line"><a name="l03979"></a><span class="lineno"> 3979</span>&#160;</div><div class="line"><a name="l03980"></a><span class="lineno"> 3980</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(len != std::size_t(-1) and len &gt; ref_stack.back()-&gt;max_size()))</div><div class="line"><a name="l03981"></a><span class="lineno"> 3981</span>&#160;        {</div><div class="line"><a name="l03982"></a><span class="lineno"> 3982</span>&#160;            <a class="code" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a>(<a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">out_of_range::create</a>(408,</div><div class="line"><a name="l03983"></a><span class="lineno"> 3983</span>&#160;                                            <span class="stringliteral">&quot;excessive object size: &quot;</span> + std::to_string(len)));</div><div class="line"><a name="l03984"></a><span class="lineno"> 3984</span>&#160;        }</div><div class="line"><a name="l03985"></a><span class="lineno"> 3985</span>&#160;</div><div class="line"><a name="l03986"></a><span class="lineno"> 3986</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03987"></a><span class="lineno"> 3987</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a6c274f6db2e65c1b66c7d41b06ad690f"><div class="ttname"><a href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a></div><div class="ttdeci">#define JSON_THROW(exception)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:162</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:820</div></div>
+<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:193</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00820">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>, <a class="el" href="jsonParser_8h_source.html#l00162">JSON_THROW</a>, <a class="el" href="jsonParser_8h_source.html#l00193">JSON_UNLIKELY</a> и <a class="el" href="jsonParser_8h_source.html#l04089">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::ref_stack</a>.</p>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<p class="reference">Перекрестные ссылки <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h.html#a6c274f6db2e65c1b66c7d41b06ad690f">JSON_THROW</a> и <a class="el" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a9929b4cc92d471c49bd0a92802629f90_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a9929b4cc92d471c49bd0a92802629f90_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a9929b4cc92d471c49bd0a92802629f90_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a9929b4cc92d471c49bd0a92802629f90_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,63,164,119"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="245,37,388,79"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="212,103,421,144"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="469,5,651,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="479,71,641,112"/>
+<area shape="rect"  title=" " alt="" coords="5,5,164,61"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="212,13,355,54"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="403,13,584,54"/>
 </map>
 </div>
 
@@ -898,174 +772,7 @@ template&lt;typename BasicJsonType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l03970">3970</a></p>
-<div class="fragment"><div class="line"><a name="l03971"></a><span class="lineno"> 3971</span>&#160;    {</div><div class="line"><a name="l03972"></a><span class="lineno"> 3972</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">handle_value</a>(val);</div><div class="line"><a name="l03973"></a><span class="lineno"> 3973</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03974"></a><span class="lineno"> 3974</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_html_a8df0a59eddc25f9f68937dcd4f0750ff"><div class="ttname"><a href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff">nlohmann::detail::json_sax_dom_parser::handle_value</a></div><div class="ttdeci">BasicJsonType * handle_value(Value &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04062">jsonParser.h:4062</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="classnlohmann_1_1detail_1_1json__sax__dom__parser_a851d965082d20a726138f5d0330dc7d8_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1json__sax__dom__parser_a851d965082d20a726138f5d0330dc7d8_cgraph" alt=""/></div>
-<map name="classnlohmann_1_1detail_1_1json__sax__dom__parser_a851d965082d20a726138f5d0330dc7d8_cgraph" id="classnlohmann_1_1detail_1_1json__sax__dom__parser_a851d965082d20a726138f5d0330dc7d8_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,171,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a8df0a59eddc25f9f68937dcd4f0750ff" title=" " alt="" coords="219,5,428,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="ad0953e8d888339421d909d9016bc6e2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0953e8d888339421d909d9016bc6e2c">&#9670;&nbsp;</a></span>allow_exceptions</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::allow_exceptions = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>whether to throw exceptions in case of errors </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04095">4095</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04021">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::parse_error()</a>.</p>
-
-</div>
-</div>
-<a id="a31ccb472ed855e2f2370fd091d91aad7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ccb472ed855e2f2370fd091d91aad7">&#9670;&nbsp;</a></span>errored</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::errored = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>whether a syntax error occurred </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04093">4093</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04049">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::is_errored()</a> и <a class="el" href="jsonParser_8h_source.html#l04021">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::parse_error()</a>.</p>
-
-</div>
-</div>
-<a id="a9c03c76d3a8e89c8928097ba0b92c2db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c03c76d3a8e89c8928097ba0b92c2db">&#9670;&nbsp;</a></span>object_element</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BasicJsonType* <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::object_element = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>helper to hold the reference for the next object element </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04091">4091</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a> и <a class="el" href="jsonParser_8h_source.html#l03989">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::key()</a>.</p>
-
-</div>
-</div>
-<a id="aa7526e7ae7be7f63803a23fd8cf36e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7526e7ae7be7f63803a23fd8cf36e5d">&#9670;&nbsp;</a></span>ref_stack</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;BasicJsonType*&gt; <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::ref_stack</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>stack to model hierarchy of values </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04089">4089</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04015">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::end_array()</a>, <a class="el" href="jsonParser_8h_source.html#l03996">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::end_object()</a>, <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>, <a class="el" href="jsonParser_8h_source.html#l03989">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::key()</a>, <a class="el" href="jsonParser_8h_source.html#l04002">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_array()</a> и <a class="el" href="jsonParser_8h_source.html#l03976">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::start_object()</a>.</p>
-
-</div>
-</div>
-<a id="aef0477277389e399d7128898841b71c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef0477277389e399d7128898841b71c0">&#9670;&nbsp;</a></span>root</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename BasicJsonType&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">BasicJsonType&amp; <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html">nlohmann::detail::json_sax_dom_parser</a>&lt; BasicJsonType &gt;::root</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the parsed <a class="el" href="classJSON.html">JSON</a> value </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04087">4087</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04062">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::handle_value()</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l03971"></a><span class="lineno"> 3971</span>&#160;    {</div><div class="line"><a name="l03972"></a><span class="lineno"> 3972</span>&#160;        handle_value(val);</div><div class="line"><a name="l03973"></a><span class="lineno"> 3973</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l03974"></a><span class="lineno"> 3974</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -1074,7 +781,7 @@ template&lt;typename BasicJsonType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

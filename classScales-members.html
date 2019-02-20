@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -47,16 +70,6 @@ $(function() {
 
 <p>Полный список членов класса <a class="el" href="classScales.html">Scales</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a761f46cf6f747b542de7906872c11cab">_calCode</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#aec8621e792fcb8d783dce123f2784583">_errCode</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#aad560361464749f8c7bb0cba644ca150">_errMsg</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a35846ebc6b52ddf0068745e1b10c572e">_id</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a42c0f521851401aff08b47befa7a1201">_name</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#acf07bc79a4f7b486f4e2088a2489ec24">_param</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a7fb596df8127273525e174cbca6b745d">_stable</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#abf4aa7b7810edece57c027c9f0480b07">_tare</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#aef6c5e9e622980edb857465dfd61cb5d">_weight</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a7401366ee00a537a92c5b3e843edb872">_zero</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScales.html#a6dd4f976a87c3b69d6808022ac0ed632">getCalCode</a>() const</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScales.html#a781dcf6f576f7771c4d67a7f36d98b98">getErrCode</a>() const</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScales.html#af074f197bd8435fb8e98ff8e88ab9444">getErrMsg</a>() const</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
@@ -67,22 +80,15 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classScales.html#a0bf37d26fe6fab594ac5206659c11d6f">getWeight</a>() const</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScales.html#a396d2054e8d1c420d847b81260ee731e">getZero</a>() const</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11">isConnected</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a84b9afce724d4933d1949d1286fd619f">readCalCode</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a7b7f3fef5f8ca7f55a8b32ce599f036a">readNameId</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a78537197169d44083dc25c05de3b1631">readParam</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#ada277e5b30d91967608d07dde9d98e5f">readTare</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a2f2458ed508c9f91ae51ec0d586f2ccb">readWeight</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a30e1e05ef721a480c9857a1925480fb4">Scales</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a600d17680fbbdfb39f8834709cbf51d4">setTare</a>(int32_t tareWeight)</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a85a20ad8ba95e87cf550079c949cd845">setZero</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a608a169a5c721a1f6f0ae3ee95306b14">writeTare</a>(int32_t tareWeight)</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a5759e417b12df06a987a93d363ffecbe">writeZero</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScales.html#a482df21ad42a62b0620a2796504d13bd">~Scales</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a></td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classScales.html#a30e1e05ef721a480c9857a1925480fb4">Scales</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a600d17680fbbdfb39f8834709cbf51d4">setTare</a>(int32_t tareWeight)</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classScales.html#a85a20ad8ba95e87cf550079c949cd845">setZero</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classScales.html#a482df21ad42a62b0620a2796504d13bd">~Scales</a>()</td><td class="entry"><a class="el" href="classScales.html">Scales</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -74,109 +97,109 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Файлы</h2></td></tr>
-<tr class="memitem:barcodeScanner_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barcodeScanner_8cpp.html">barcodeScanner.cpp</a> <a href="barcodeScanner_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:barcodeScanner_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="barcodeScanner_8cpp.html">barcodeScanner.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:CabinetBase_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html">CabinetBase.cpp</a> <a href="CabinetBase_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:CabinetBase_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html">CabinetBase.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:config_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8cpp.html">config.cpp</a> <a href="config_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:config_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8cpp.html">config.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:convert_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="convert_8cpp.html">convert.cpp</a> <a href="convert_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:convert_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="convert_8cpp.html">convert.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:counters_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html">counters.cpp</a> <a href="counters_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:counters_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html">counters.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:EncodeConvertor_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EncodeConvertor_8cpp.html">EncodeConvertor.cpp</a> <a href="EncodeConvertor_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:EncodeConvertor_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EncodeConvertor_8cpp.html">EncodeConvertor.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:filesfg_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesfg_8cpp.html">filesfg.cpp</a> <a href="filesfg_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:filesfg_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filesfg_8cpp.html">filesfg.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:fiscal__doc__db_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fiscal__doc__db_8cpp.html">fiscal_doc_db.cpp</a> <a href="fiscal__doc__db_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:fiscal__doc__db_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fiscal__doc__db_8cpp.html">fiscal_doc_db.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:FisGo__BIOS_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a> <a href="FisGo__BIOS_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:FisGo__BIOS_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:Fisgo__Test__API_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fisgo__Test__API_8cpp.html">Fisgo_Test_API.cpp</a> <a href="Fisgo__Test__API_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:Fisgo__Test__API_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Fisgo__Test__API_8cpp.html">Fisgo_Test_API.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:flashMounter_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flashMounter_8cpp.html">flashMounter.cpp</a> <a href="flashMounter_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:flashMounter_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flashMounter_8cpp.html">flashMounter.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gen__uuid_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__uuid_8cpp.html">gen_uuid.cpp</a> <a href="gen__uuid_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:gen__uuid_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__uuid_8cpp.html">gen_uuid.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:goods_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods_8cpp.html">goods.cpp</a> <a href="goods_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:goods_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods_8cpp.html">goods.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:goods__data_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__data_8cpp.html">goods_data.cpp</a> <a href="goods__data_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:goods__data_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__data_8cpp.html">goods_data.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:goods__data__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__data__test_8cpp.html">goods_data_test.cpp</a> <a href="goods__data__test_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:goods__data__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__data__test_8cpp.html">goods_data_test.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:goods__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html">goods_new.cpp</a> <a href="goods__new_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:goods__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__new_8cpp.html">goods_new.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:goods__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__test_8cpp.html">goods_test.cpp</a> <a href="goods__test_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:goods__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="goods__test_8cpp.html">goods_test.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:https__exchange_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8cpp.html">https_exchange.cpp</a> <a href="https__exchange_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:https__exchange_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8cpp.html">https_exchange.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:json_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html">json.cpp</a> <a href="json_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:json_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="json_8cpp.html">json.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:keypad_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html">keypad.cpp</a> <a href="keypad_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:keypad_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="keypad_8cpp.html">keypad.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:lcd_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8cpp.html">lcd.cpp</a> <a href="lcd_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:lcd_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd_8cpp.html">lcd.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:lcd__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__test_8cpp.html">lcd_test.cpp</a> <a href="lcd__test_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:lcd__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lcd__test_8cpp.html">lcd_test.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:log_8c"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html">log.c</a> <a href="log_8c_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:log_8c"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log_8c.html">log.c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:LogServant_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LogServant_8cpp.html">LogServant.cpp</a> <a href="LogServant_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:LogServant_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LogServant_8cpp.html">LogServant.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:main_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html">main.cpp</a> <a href="main_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:main_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html">main.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:Md5Sum_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Md5Sum_8cpp.html">Md5Sum.cpp</a> <a href="Md5Sum_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:Md5Sum_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Md5Sum_8cpp.html">Md5Sum.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:menu_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html">menu.cpp</a> <a href="menu_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:menu_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8cpp.html">menu.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:MenuTree_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MenuTree_8cpp.html">MenuTree.cpp</a> <a href="MenuTree_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:MenuTree_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MenuTree_8cpp.html">MenuTree.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:net_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8cpp.html">net.cpp</a> <a href="net_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:net_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8cpp.html">net.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:NodeConflictResolver_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NodeConflictResolver_8cpp.html">NodeConflictResolver.cpp</a> <a href="NodeConflictResolver_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:NodeConflictResolver_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="NodeConflictResolver_8cpp.html">NodeConflictResolver.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pos2_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pos2_8cpp.html">pos2.cpp</a> <a href="pos2_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:pos2_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pos2_8cpp.html">pos2.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:positions_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions_8cpp.html">positions.cpp</a> <a href="positions_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:positions_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions_8cpp.html">positions.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:positions__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions__new_8cpp.html">positions_new.cpp</a> <a href="positions__new_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:positions__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions__new_8cpp.html">positions_new.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:positions__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions__test_8cpp.html">positions_test.cpp</a> <a href="positions__test_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:positions__test_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="positions__test_8cpp.html">positions_test.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:printer_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="printer_8cpp.html">printer.cpp</a> <a href="printer_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:printer_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="printer_8cpp.html">printer.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:receipt_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt_8cpp.html">receipt.cpp</a> <a href="receipt_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:receipt_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt_8cpp.html">receipt.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:receipt__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt__new_8cpp.html">receipt_new.cpp</a> <a href="receipt__new_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:receipt__new_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="receipt__new_8cpp.html">receipt_new.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ReceiptsDb_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html">ReceiptsDb.cpp</a> <a href="ReceiptsDb_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:ReceiptsDb_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ReceiptsDb_8cpp.html">ReceiptsDb.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:requisites_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="requisites_8cpp.html">requisites.cpp</a> <a href="requisites_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:requisites_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="requisites_8cpp.html">requisites.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:rs232_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8cpp.html">rs232.cpp</a> <a href="rs232_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:rs232_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs232_8cpp.html">rs232.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:scaleProtocol_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocol_8cpp.html">scaleProtocol.cpp</a> <a href="scaleProtocol_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:scaleProtocol_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocol_8cpp.html">scaleProtocol.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:scaleProtocolMassak_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocolMassak_8cpp.html">scaleProtocolMassak.cpp</a> <a href="scaleProtocolMassak_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:scaleProtocolMassak_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocolMassak_8cpp.html">scaleProtocolMassak.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:scaleProtocolPos2_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocolPos2_8cpp.html">scaleProtocolPos2.cpp</a> <a href="scaleProtocolPos2_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:scaleProtocolPos2_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scaleProtocolPos2_8cpp.html">scaleProtocolPos2.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:scales_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scales_8cpp.html">scales.cpp</a> <a href="scales_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:scales_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scales_8cpp.html">scales.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:slipsDB_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slipsDB_8cpp.html">slipsDB.cpp</a> <a href="slipsDB_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:slipsDB_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slipsDB_8cpp.html">slipsDB.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:sqlWrapper_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html">sqlWrapper.cpp</a> <a href="sqlWrapper_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:sqlWrapper_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sqlWrapper_8cpp.html">sqlWrapper.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:tax_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tax_8cpp.html">tax.cpp</a> <a href="tax_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:tax_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tax_8cpp.html">tax.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:time__sync_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__sync_8cpp.html">time_sync.cpp</a> <a href="time__sync_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:time__sync_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="time__sync_8cpp.html">time_sync.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:users_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="users_8cpp.html">users.cpp</a> <a href="users_8cpp_source.html">[Исходные тексты]</a></td></tr>
+<tr class="memitem:users_8cpp"><td class="memItemLeft" align="right" valign="top">файл &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="users_8cpp.html">users.cpp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

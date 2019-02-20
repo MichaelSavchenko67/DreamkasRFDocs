@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов файлов со ссылками на файлы, к которым они принадлежат.</div>
 
@@ -49,17 +72,8 @@ $(function() {
 <li>PATENT
 : <a class="el" href="tax_8h.html#a07460638cc38fb994608751145de38c7">tax.h</a>
 </li>
-<li>PAYING_AGENT
-: <a class="el" href="agents_8h.html#a4800edc4513630ad451802a8a13bf9fa">agents.h</a>
-</li>
-<li>PAYING_AGENT_OPERATION
-: <a class="el" href="agents_8h.html#a6e7224774d5585aea266d45f0ed380e1">agents.h</a>
-</li>
 <li>PAYING_AGENT_SIGN()
 : <a class="el" href="dynamic__mask_8h.html#a690073defc5dedb0dc1273b4597ea213">dynamic_mask.h</a>
-</li>
-<li>PAYING_SUBAGENT
-: <a class="el" href="agents_8h.html#ad7a3d73bbfbb1f07d40e82066d476483">agents.h</a>
 </li>
 <li>PB_ACK
 : <a class="el" href="pos2_8h.html#a1bb538696cbe2bb6191093f2da430493">pos2.h</a>
@@ -88,9 +102,6 @@ $(function() {
 : <a class="el" href="pos2_8h.html#ab940aad1465fcdc421ab925f31c4c3e0">pos2.h</a>
 , <a class="el" href="pos2_8cpp.html#ab940aad1465fcdc421ab925f31c4c3e0">pos2.cpp</a>
 </li>
-<li>pos2_buf
-: <a class="el" href="pos2_8cpp.html#ac0768ee102ff9973ba669d8929c44a39">pos2.cpp</a>
-</li>
 <li>POS2_BUF_LENGTH
 : <a class="el" href="pos2_8h.html#a2fcd2ed58830d0ef06a967ede3245da8">pos2.h</a>
 </li>
@@ -117,12 +128,6 @@ $(function() {
 <li>pos2_is_received()
 : <a class="el" href="pos2_8cpp.html#a9173b4af45a6ead063d85d50beda9a38">pos2.cpp</a>
 , <a class="el" href="pos2_8h.html#a9173b4af45a6ead063d85d50beda9a38">pos2.h</a>
-</li>
-<li>pos2_r_buf
-: <a class="el" href="pos2_8cpp.html#a1ce701618af1040b6260efdb0f344960">pos2.cpp</a>
-</li>
-<li>pos2_r_buf_p
-: <a class="el" href="pos2_8cpp.html#a17970d840116600336386019562a6bb7">pos2.cpp</a>
 </li>
 <li>pos2_receive_byte()
 : <a class="el" href="pos2_8h.html#a18a24dcb8af518224f2ed464d2568e3a">pos2.h</a>
@@ -182,17 +187,11 @@ $(function() {
 <li>product
 : <a class="el" href="config_8h.html#af589d182cd9ee7b6ba7be5d5207c7baf">config.h</a>
 </li>
-<li>PROVIDER_INN
-: <a class="el" href="agents_8h.html#aaf2c83d436b1c58076a9197823e85aeb">agents.h</a>
-</li>
-<li>PROVIDER_TEL_NUM
-: <a class="el" href="agents_8h.html#a09865371167b997b49ba11d342377584">agents.h</a>
-</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

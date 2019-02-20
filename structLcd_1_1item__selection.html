@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classLcd.html">Lcd</a></li><li class="navelem"><a class="el" href="structLcd_1_1item__selection.html">item_selection</a></li>  </ul>
@@ -79,10 +102,7 @@ $(function() {
 <tr class="memitem:a2814fb5abac91a0696651a178cf5a527"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">check_mark</a></td></tr>
 <tr class="separator:a2814fb5abac91a0696651a178cf5a527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00349">349</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a7a655f7b5ec961e0002de1bd7b33e066"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a655f7b5ec961e0002de1bd7b33e066">&#9670;&nbsp;</a></span>item_selection() <span class="overload">[1/2]</span></h2>
 
@@ -105,12 +125,10 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00353">353</a></p>
-<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            {</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">check_mark</a> = <a class="code" href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd::SWITCH_OFF</a>;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            };</div><div class="ttc" id="structLcd_1_1item__selection_html_a2814fb5abac91a0696651a178cf5a527"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">Lcd::item_selection::check_mark</a></div><div class="ttdeci">unsigned char check_mark</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00352">lcd.h:352</a></div></div>
-<div class="ttc" id="classLcd_html_a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499"><div class="ttname"><a href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd::SWITCH_OFF</a></div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00093">lcd.h:93</a></div></div>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            {</div><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">check_mark</a> = <a class="code" href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd::SWITCH_OFF</a>;</div><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            };</div><div class="ttc" id="structLcd_1_1item__selection_html_a2814fb5abac91a0696651a178cf5a527"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">Lcd::item_selection::check_mark</a></div><div class="ttdeci">unsigned char check_mark</div><div class="ttdef"><b>Definition:</b> lcd.h:352</div></div>
+<div class="ttc" id="classLcd_html_a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499"><div class="ttname"><a href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd::SWITCH_OFF</a></div><div class="ttdef"><b>Definition:</b> lcd.h:93</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="lcd_8h_source.html#l00093">Lcd::SWITCH_OFF</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd::SWITCH_OFF</a>.</p>
 
 </div>
 </div>
@@ -147,10 +165,8 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00357">357</a></p>
-<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2c7480d0713fd14c356d22c0c61343db">item</a>        =  newItem;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">check_mark</a>  =    newCm;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            };</div><div class="ttc" id="structLcd_1_1item__selection_html_a2814fb5abac91a0696651a178cf5a527"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">Lcd::item_selection::check_mark</a></div><div class="ttdeci">unsigned char check_mark</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00352">lcd.h:352</a></div></div>
-<div class="ttc" id="structLcd_1_1item__selection_html_a2c7480d0713fd14c356d22c0c61343db"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2c7480d0713fd14c356d22c0c61343db">Lcd::item_selection::item</a></div><div class="ttdeci">string item</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00351">lcd.h:351</a></div></div>
+<div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            {</div><div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2c7480d0713fd14c356d22c0c61343db">item</a>        =  newItem;</div><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <a class="code" href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">check_mark</a>  =    newCm;</div><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            };</div><div class="ttc" id="structLcd_1_1item__selection_html_a2814fb5abac91a0696651a178cf5a527"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2814fb5abac91a0696651a178cf5a527">Lcd::item_selection::check_mark</a></div><div class="ttdeci">unsigned char check_mark</div><div class="ttdef"><b>Definition:</b> lcd.h:352</div></div>
+<div class="ttc" id="structLcd_1_1item__selection_html_a2c7480d0713fd14c356d22c0c61343db"><div class="ttname"><a href="structLcd_1_1item__selection.html#a2c7480d0713fd14c356d22c0c61343db">Lcd::item_selection::item</a></div><div class="ttdeci">string item</div><div class="ttdef"><b>Definition:</b> lcd.h:351</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,9 +183,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00352">352</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l13158">Menu::agent_choose()</a>, <a class="el" href="menu_8cpp_source.html#l13334">Menu::agent_choose_for_good()</a>, <a class="el" href="menu_8cpp_source.html#l27134">Menu::check_box()</a>, <a class="el" href="menu_8cpp_source.html#l12745">Menu::choose_agents_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14103">Menu::choose_auto_reserve()</a>, <a class="el" href="menu_8cpp_source.html#l14039">Menu::choose_offline_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12874">Menu::choose_tax_system()</a>, <a class="el" href="menu_8cpp_source.html#l14165">Menu::choose_terminal_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14228">Menu::choose_terminal_state()</a>, <a class="el" href="menu_8cpp_source.html#l14342">Menu::choose_terminal_type()</a>, <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="menu_8cpp_source.html#l13687">Menu::cor_doc_type()</a>, <a class="el" href="menu_8cpp_source.html#l13624">Menu::cor_type()</a>, <a class="el" href="menu_8cpp_source.html#l28541">Menu::dep_choose()</a>, <a class="el" href="menu_8cpp_source.html#l28621">Menu::nds_choose_f()</a>, <a class="el" href="menu_8cpp_source.html#l28657">Menu::nds_choose_rb()</a>, <a class="el" href="menu_8cpp_source.html#l26215">Menu::nds_free_price()</a>, <a class="el" href="menu_8cpp_source.html#l11463">Menu::net2g_settings()</a>, <a class="el" href="menu_8cpp_source.html#l13457">Menu::tax_sys_cor_rec()</a>, <a class="el" href="menu_8cpp_source.html#l29566">Menu::terminalTest()</a> и <a class="el" href="menu_8cpp_source.html#l27050">Menu::user_choose()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a2d4822ba83dd9fb856246eb8fa96b62a">Menu::agent_choose()</a>, <a class="el" href="classMenu.html#a0b44aef9dbf140ed8ab47dfa44317396">Menu::agent_choose_for_good()</a>, <a class="el" href="classMenu.html#a459826f760209377688c24160f4d1ca8">Menu::check_box()</a>, <a class="el" href="classMenu.html#a36df8d35739295add4f09ee848d8739f">Menu::choose_agents_mode()</a>, <a class="el" href="classMenu.html#a5a4a193be6f5e8a3d6a78a5c3450c2d8">Menu::choose_auto_reserve()</a>, <a class="el" href="classMenu.html#aa8a2ab97a638fd23cdd112e740e95bef">Menu::choose_offline_mode()</a>, <a class="el" href="classMenu.html#ab7cd2fee1108066b9af9009c4c6d2603">Menu::choose_tax_system()</a>, <a class="el" href="classMenu.html#ac860130386e43a8e13f29f482e3db5ef">Menu::choose_terminal_mode()</a>, <a class="el" href="classMenu.html#a8a56221c7c7708cc2beb2e79453a0fb5">Menu::choose_terminal_type()</a>, <a class="el" href="classMenu.html#ade7fa0eb23cdfe5bbde28232c477ac81">Menu::chose_signs()</a>, <a class="el" href="classMenu.html#a2527752049dc0887ba1ba2f439a616fb">Menu::cor_doc_type()</a>, <a class="el" href="classMenu.html#a4b04c56cc467cc637ac5a4389387b588">Menu::cor_type()</a>, <a class="el" href="classMenu.html#ab81eacc9c151c7250c0cc317fe11bcb0">Menu::dep_choose()</a>, <a class="el" href="classMenu.html#a59bab4de785a0e0f8570fd045fdab872">Menu::nds_choose_f()</a>, <a class="el" href="classMenu.html#a88da63f2a1b90414d5eb16f11fa09a5a">Menu::nds_choose_rb()</a>, <a class="el" href="classMenu.html#ae12d8b6af8f5bd5b74231d024684094c">Menu::nds_free_price()</a>, <a class="el" href="classMenu.html#a5eadaf6dc3df099148836e4b6c4b52ad">Menu::net2g_settings()</a>, <a class="el" href="classMenu.html#aee8411159ed7d42ee510da29626012fe">Menu::tax_sys_cor_rec()</a>, <a class="el" href="classMenu.html#aaee3f5f48366e4df856cc2670a222c94">Menu::terminalTest()</a> и <a class="el" href="classMenu.html#afdef7fa605a89341855da0e78ee32530">Menu::user_choose()</a>.</p>
 
 </div>
 </div>
@@ -185,9 +199,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00351">351</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l13158">Menu::agent_choose()</a>, <a class="el" href="menu_8cpp_source.html#l13334">Menu::agent_choose_for_good()</a>, <a class="el" href="menu_8cpp_source.html#l27935">Menu::bso_choose()</a>, <a class="el" href="menu_8cpp_source.html#l27134">Menu::check_box()</a>, <a class="el" href="menu_8cpp_source.html#l12745">Menu::choose_agents_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14103">Menu::choose_auto_reserve()</a>, <a class="el" href="menu_8cpp_source.html#l14039">Menu::choose_offline_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12874">Menu::choose_tax_system()</a>, <a class="el" href="menu_8cpp_source.html#l14165">Menu::choose_terminal_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14228">Menu::choose_terminal_state()</a>, <a class="el" href="menu_8cpp_source.html#l14342">Menu::choose_terminal_type()</a>, <a class="el" href="menu_8cpp_source.html#l28905">Menu::chooseManDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="menu_8cpp_source.html#l13687">Menu::cor_doc_type()</a>, <a class="el" href="menu_8cpp_source.html#l13624">Menu::cor_type()</a>, <a class="el" href="menu_8cpp_source.html#l28541">Menu::dep_choose()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l15453">Menu::eth_state()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l28621">Menu::nds_choose_f()</a>, <a class="el" href="menu_8cpp_source.html#l28657">Menu::nds_choose_rb()</a>, <a class="el" href="menu_8cpp_source.html#l26215">Menu::nds_free_price()</a>, <a class="el" href="menu_8cpp_source.html#l11463">Menu::net2g_settings()</a>, <a class="el" href="menu_8cpp_source.html#l11646">Menu::net2g_state()</a>, <a class="el" href="menu_8cpp_source.html#l17539">Menu::payment_type_get()</a>, <a class="el" href="menu_8cpp_source.html#l17141">Menu::revert()</a>, <a class="el" href="menu_8cpp_source.html#l16504">Menu::sale()</a>, <a class="el" href="menu_8cpp_source.html#l15791">Menu::search_goods()</a>, <a class="el" href="menu_8cpp_source.html#l16789">Menu::selectDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l13457">Menu::tax_sys_cor_rec()</a>, <a class="el" href="menu_8cpp_source.html#l29566">Menu::terminalTest()</a>, <a class="el" href="lcd__test_8cpp_source.html#l00009">Lcd::test_lcd_selection_box()</a>, <a class="el" href="menu_8cpp_source.html#l23806">Menu::time_zone_update()</a>, <a class="el" href="menu_8cpp_source.html#l27050">Menu::user_choose()</a>, <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a> и <a class="el" href="menu_8cpp_source.html#l15554">Menu::wifi_state()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a2d4822ba83dd9fb856246eb8fa96b62a">Menu::agent_choose()</a>, <a class="el" href="classMenu.html#a459826f760209377688c24160f4d1ca8">Menu::check_box()</a>, <a class="el" href="classMenu.html#a36df8d35739295add4f09ee848d8739f">Menu::choose_agents_mode()</a>, <a class="el" href="classMenu.html#a5a4a193be6f5e8a3d6a78a5c3450c2d8">Menu::choose_auto_reserve()</a>, <a class="el" href="classMenu.html#aa8a2ab97a638fd23cdd112e740e95bef">Menu::choose_offline_mode()</a>, <a class="el" href="classMenu.html#ab7cd2fee1108066b9af9009c4c6d2603">Menu::choose_tax_system()</a>, <a class="el" href="classMenu.html#ac860130386e43a8e13f29f482e3db5ef">Menu::choose_terminal_mode()</a>, <a class="el" href="classMenu.html#a60a0a02587ea844d509f20ebc8f9f972">Menu::choose_terminal_state()</a>, <a class="el" href="classMenu.html#a8a56221c7c7708cc2beb2e79453a0fb5">Menu::choose_terminal_type()</a>, <a class="el" href="classMenu.html#a6c9a45e60c987a9a5a783cbaea7a2e7b">Menu::chooseManDiscount()</a>, <a class="el" href="classMenu.html#adca6c604c8e381a29875aeccab7756c2">Menu::chose_ofd_system()</a>, <a class="el" href="classMenu.html#ade7fa0eb23cdfe5bbde28232c477ac81">Menu::chose_signs()</a>, <a class="el" href="classMenu.html#a2527752049dc0887ba1ba2f439a616fb">Menu::cor_doc_type()</a>, <a class="el" href="classMenu.html#a4b04c56cc467cc637ac5a4389387b588">Menu::cor_type()</a>, <a class="el" href="classMenu.html#ab81eacc9c151c7250c0cc317fe11bcb0">Menu::dep_choose()</a>, <a class="el" href="classMenu.html#a596e72bb3c53102627b39ab48e040480">Menu::eth_settings_step()</a>, <a class="el" href="classMenu.html#a25a3c0eef455a419eddb1baedc91a0e6">Menu::get_reg_data_ext()</a>, <a class="el" href="classMenu.html#a59bab4de785a0e0f8570fd045fdab872">Menu::nds_choose_f()</a>, <a class="el" href="classMenu.html#a88da63f2a1b90414d5eb16f11fa09a5a">Menu::nds_choose_rb()</a>, <a class="el" href="classMenu.html#ae12d8b6af8f5bd5b74231d024684094c">Menu::nds_free_price()</a>, <a class="el" href="classMenu.html#a5eadaf6dc3df099148836e4b6c4b52ad">Menu::net2g_settings()</a>, <a class="el" href="classMenu.html#aeed0bec19f6bc736b4bc217a3fa9d653">Menu::net2g_state()</a>, <a class="el" href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec">Menu::revert()</a>, <a class="el" href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24">Menu::sale()</a>, <a class="el" href="classMenu.html#af5888eac8b8c26f33c778e1360580950">Menu::search_goods()</a>, <a class="el" href="classMenu.html#a81590a3fe5cfaa3023b7cf0b6a7baebb">Menu::selectDiscount()</a>, <a class="el" href="classMenu.html#aee8411159ed7d42ee510da29626012fe">Menu::tax_sys_cor_rec()</a>, <a class="el" href="classMenu.html#aaee3f5f48366e4df856cc2670a222c94">Menu::terminalTest()</a>, <a class="el" href="classLcd.html#a212fd4f85bacee640f3529105c24aec0">Lcd::test_lcd_selection_box()</a>, <a class="el" href="classMenu.html#a384c65faa88386caa2fb635c700f462a">Menu::time_zone_update()</a>, <a class="el" href="classMenu.html#afdef7fa605a89341855da0e78ee32530">Menu::user_choose()</a>, <a class="el" href="classMenu.html#a394cad128b19873bb99159d946f664a5">Menu::wifi_settings_step()</a> и <a class="el" href="classMenu.html#a0b15786d8bd7ba4ac015148b141b5ac2">Menu::wifi_state()</a>.</p>
 
 </div>
 </div>
@@ -197,7 +209,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

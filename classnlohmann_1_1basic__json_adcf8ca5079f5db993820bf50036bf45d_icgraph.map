@@ -1,24 +1,22 @@
 <map id="nlohmann::basic_json::value" name="nlohmann::basic_json::value">
-<area shape="rect" id="node1" title="access specified object element with default value" alt="" coords="917,394,1065,435"/>
-<area shape="rect" id="node2" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="700,5,837,32"/>
-<area shape="rect" id="node7" href="$unionnlohmann_1_1basic__json_1_1json__value.html#a8f75abc358ee45b9bbdc601c974d6c91" title="constructor for strings" alt="" coords="687,57,850,98"/>
-<area shape="rect" id="node8" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="693,123,844,149"/>
-<area shape="rect" id="node9" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="682,173,855,200"/>
-<area shape="rect" id="node11" href="$classJSON.html#a953eaebf5c99a886ae4e32894c7a9ca4" title=" " alt="" coords="679,224,858,251"/>
-<area shape="rect" id="node12" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="684,275,853,301"/>
-<area shape="rect" id="node13" href="$classJSON.html#a0ad8255f5c5b17b96b53ab8ed4d5c084" title="parseDeleteDiscount &#45; парс таски на удаление скидки" alt="" coords="675,325,863,352"/>
-<area shape="rect" id="node14" href="$classJSON.html#ac857adf6f636e0608fae1c073f6a568e" title=" " alt="" coords="678,376,859,403"/>
-<area shape="rect" id="node15" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="668,427,869,453"/>
-<area shape="rect" id="node16" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="689,477,849,504"/>
-<area shape="rect" id="node17" href="$classJSON.html#a18d87845553bd111b9234f987ce4700f" title="parseUpsertDiscount &#45; парс таски на добавление скидки" alt="" coords="674,528,863,555"/>
-<area shape="rect" id="node18" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="677,579,860,605"/>
-<area shape="rect" id="node19" href="$classJSON.html#a2a0e43b55a3febb7e377c956e0659605" title="pushTags &#45; добавить тег в вектор тегов" alt="" coords="707,629,830,656"/>
-<area shape="rect" id="node20" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="675,680,862,707"/>
-<area shape="rect" id="node21" href="$testJSON_8h.html#a937e67a15400403d962da940dc859e70" title=" " alt="" coords="733,731,804,757"/>
-<area shape="rect" id="node22" href="$classnlohmann_1_1basic__json.html#ad6a18403e7fbac9c4efd06facc71fc88" title="overload for a default value of type const char*" alt="" coords="695,782,843,823"/>
-<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="440,5,597,32"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="241,5,369,32"/>
-<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
-<area shape="rect" id="node10" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="417,166,620,207"/>
+<area shape="rect" id="node1" title="access specified object element with default value" alt="" coords="819,353,967,394"/>
+<area shape="rect" id="node2" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="601,5,739,32"/>
+<area shape="rect" id="node6" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="595,56,745,83"/>
+<area shape="rect" id="node7" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="583,107,757,133"/>
+<area shape="rect" id="node9" href="$classJSON.html#a953eaebf5c99a886ae4e32894c7a9ca4" title=" " alt="" coords="581,157,759,184"/>
+<area shape="rect" id="node10" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="585,208,755,235"/>
+<area shape="rect" id="node11" href="$classJSON.html#a0ad8255f5c5b17b96b53ab8ed4d5c084" title="parseDeleteDiscount &#45; парс таски на удаление скидки" alt="" coords="576,259,764,285"/>
+<area shape="rect" id="node12" href="$classJSON.html#ac857adf6f636e0608fae1c073f6a568e" title=" " alt="" coords="579,309,761,336"/>
+<area shape="rect" id="node13" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="569,360,771,387"/>
+<area shape="rect" id="node14" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="590,411,750,437"/>
+<area shape="rect" id="node15" href="$classJSON.html#a18d87845553bd111b9234f987ce4700f" title="parseUpsertDiscount &#45; парс таски на добавление скидки" alt="" coords="575,461,765,488"/>
+<area shape="rect" id="node16" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="579,512,761,539"/>
+<area shape="rect" id="node17" href="$classJSON.html#a2a0e43b55a3febb7e377c956e0659605" title="pushTags &#45; добавить тег в вектор тегов" alt="" coords="609,563,731,589"/>
+<area shape="rect" id="node18" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="577,613,763,640"/>
+<area shape="rect" id="node19" href="$testJSON_8h.html#a5ffa365adffde765ab4ed5e3319de45e" title=" " alt="" coords="635,664,705,691"/>
+<area shape="rect" id="node20" href="$classnlohmann_1_1basic__json.html#ad6a18403e7fbac9c4efd06facc71fc88" title="overload for a default value of type const char*" alt="" coords="596,715,744,757"/>
+<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="341,5,499,32"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="143,5,271,32"/>
+<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node8" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="319,99,521,141"/>
 </map>

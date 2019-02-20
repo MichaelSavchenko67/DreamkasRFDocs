@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></li><li class="navelem"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a></li>  </ul>
@@ -76,8 +99,6 @@ $(function() {
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>The <a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html" title="The ScaleErr struct - структура ошибки">ScaleErr</a> struct - структура ошибки </p>
-
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00066">66</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
 <a id="a720b11dc1850e320cbaec9bc036b51a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a720b11dc1850e320cbaec9bc036b51a5">&#9670;&nbsp;</a></span>errCode</h2>
@@ -91,9 +112,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00068">68</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00369">ScaleProtocolPos2::cmdGetScaleParam()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00187">ScaleProtocolPos2::cmdGetWeight()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00025">ScaleProtocolMassak::cmdGetWeight()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00340">ScaleProtocolMassak::parseErrorCode()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00461">ScaleProtocolPos2::setScaleErr()</a> и <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00210">ScaleProtocolMassak::setScaleErr()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372">ScaleProtocolPos2::cmdGetScaleParam()</a>, <a class="el" href="classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25">ScaleProtocolPos2::cmdGetWeight()</a> и <a class="el" href="classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85">ScaleProtocolMassak::cmdGetWeight()</a>.</p>
 
 </div>
 </div>
@@ -109,9 +128,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="scaleProtocol_8h_source.html">scaleProtocol.h</a> строка <a class="el" href="scaleProtocol_8h_source.html#l00069">69</a></p>
-
-<p class="reference">Используется в <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00369">ScaleProtocolPos2::cmdGetScaleParam()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00187">ScaleProtocolPos2::cmdGetWeight()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00025">ScaleProtocolMassak::cmdGetWeight()</a>, <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00340">ScaleProtocolMassak::parseErrorCode()</a>, <a class="el" href="scaleProtocolPos2_8cpp_source.html#l00461">ScaleProtocolPos2::setScaleErr()</a> и <a class="el" href="scaleProtocolMassak_8cpp_source.html#l00210">ScaleProtocolMassak::setScaleErr()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372">ScaleProtocolPos2::cmdGetScaleParam()</a>, <a class="el" href="classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25">ScaleProtocolPos2::cmdGetWeight()</a> и <a class="el" href="classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85">ScaleProtocolMassak::cmdGetWeight()</a>.</p>
 
 </div>
 </div>
@@ -121,7 +138,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

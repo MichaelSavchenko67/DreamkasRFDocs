@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -111,10 +134,7 @@ $(function() {
 <tr class="memitem:a03b88c116b03cede9a27189165c22443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONKKTRegInfo.html#a03b88c116b03cede9a27189165c22443">result</a> = 0</td></tr>
 <tr class="separator:a03b88c116b03cede9a27189165c22443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00136">136</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a73968ab447892dc1f3c27a56bf4c2476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73968ab447892dc1f3c27a56bf4c2476">&#9670;&nbsp;</a></span>agent_types</h2>
 
@@ -127,9 +147,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00161">161</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a> и <a class="el" href="testJSON_8h.html#a6c67b097b85ec86d8889cb6b17f16225">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -145,9 +163,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00160">160</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -163,9 +179,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00158">158</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -181,10 +195,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00139">139</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="a634cf8f61b844b444607b001036c09a8"></a>
@@ -198,10 +208,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00140">140</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
 
 </div>
 </div>
@@ -217,10 +223,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00147">147</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="aeb4b50a02e58049fdf54bd4ce13fd4d3"></a>
@@ -235,9 +237,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00154">154</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -253,9 +253,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00152">152</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -271,9 +269,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00153">153</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -289,9 +285,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00155">155</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -307,9 +301,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00159">159</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -325,9 +317,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00148">148</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -343,10 +333,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00142">142</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="a73544cb553a32eef797729262ce272f3"></a>
@@ -361,9 +347,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00156">156</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -379,10 +363,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00146">146</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="abe2b8f1284360fcd1ae073bcb4387194"></a>
@@ -396,10 +376,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00143">143</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
 
 </div>
 </div>
@@ -415,10 +391,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00144">144</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="a51a90b974190599f7375ba42288e72b7"></a>
@@ -433,9 +405,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00145">145</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -451,10 +421,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00141">141</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
-
 </div>
 </div>
 <a id="aaab8842c21ead4df0d0c61ffd40ef258"></a>
@@ -468,10 +434,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00138">138</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
 
 </div>
 </div>
@@ -487,9 +449,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00157">157</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a>.</p>
 
 </div>
 </div>
@@ -505,9 +465,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00162">162</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a> и <a class="el" href="https__exchange_8cpp_source.html#l00651">HttpsExchange::sendKKTRegistrInfo()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a> и <a class="el" href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054">HttpsExchange::sendKKTRegistrInfo()</a>.</p>
 
 </div>
 </div>
@@ -523,9 +481,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00150">150</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="testJSON_8h.html#a6c67b097b85ec86d8889cb6b17f16225">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -541,9 +497,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00149">149</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l03212">JSON::parseKktRegistr()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a> и <a class="el" href="testJSON_8h_source.html#l01915">TEST_F()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#ae85b9979727902275289b724f1b50aec">JSON::parseKktRegistr()</a> и <a class="el" href="testJSON_8h.html#a6c67b097b85ec86d8889cb6b17f16225">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -553,7 +507,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

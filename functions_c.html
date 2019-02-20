@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -63,15 +86,6 @@ $(function() {
 </li>
 <li>CabinetBase()
 : <a class="el" href="classCabinetBase.html#a2b98c65e7e39cff27d69e2305454fc56">CabinetBase</a>
-</li>
-<li>cabinetBaseMutex
-: <a class="el" href="classCabinetBase.html#af839411ffdfbf873f2653d6394700220">CabinetBase</a>
-</li>
-<li>cabinetDb
-: <a class="el" href="classCabinetBase.html#aa45e6bb712bd68dae84bdfd8f4ba18e4">CabinetBase</a>
-</li>
-<li>cabinetQuery
-: <a class="el" href="classCabinetBase.html#adf7f9cbab848614770a15a992f4a9ff9">CabinetBase</a>
 </li>
 <li>cabinetRegEmail
 : <a class="el" href="structConfig.html#a0e59d9718d17a52d6ca2cd2eaddd919b">Config</a>
@@ -139,14 +153,6 @@ $(function() {
 <li>calculator()
 : <a class="el" href="classMenu.html#a10f0361710bd082683684ad6fb2c0355">Menu</a>
 </li>
-<li>call()
-: <a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a2d6108c9d0f54e97134203984ed8d3a3">nlohmann::detail::from_json_fn</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1to__json__fn.html#ada2ce804ebf3b55f6e3e46ff3a055394">nlohmann::detail::to_json_fn</a>
-</li>
-<li>callback
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a46a72dffd5be4a25602af00f0033c126">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>CALULATION_ADRESS
 : <a class="el" href="classReceipt__new.html#a75128f46cd5335b8d203a3e4246274fa">Receipt_new</a>
 </li>
@@ -169,26 +175,14 @@ $(function() {
 <li>capacity
 : <a class="el" href="structJSON_1_1JSON__ALCOHOL__META.html#ac8e0958a0b464115dc7c47e7b45d6221">JSON::JSON_ALCOHOL_META</a>
 </li>
-<li>card
-: <a class="el" href="structCounters_1_1COUNTERS.html#ad31d4930ac1fc55daa292df0e040ed3d">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a81bc17e0d992e1fdf9c0bed9228addb3">Counters::COUNTERS_0</a>
-</li>
 <li>CARD
 : <a class="el" href="classMenu.html#a6f0ce13dfd114e4e8920db21ae3a68a7a9ea1052101d1b02ac71f496425cac451">Menu</a>
 </li>
 <li>CARD_
 : <a class="el" href="classFISGO__TEST__API.html#ab2220c9a449b5431e0e293c3bfb696a9">FISGO_TEST_API</a>
 </li>
-<li>card_cnt
-: <a class="el" href="structCounters_1_1COUNTERS.html#afb0820afd252aa9883c9f6468ce9f7b8">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a652d4c92bce9c3fe9fe5c38b627fdf13">Counters::COUNTERS_0</a>
-</li>
 <li>card_correct
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#af8cab4d5cf10bebb225117df2f6b11d3">Receipt::Fiscal_data</a>
-</li>
-<li>cash
-: <a class="el" href="structCounters_1_1COUNTERS.html#a614a2a258cbdb0b5621b836256883942">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a15f9c0d146fc27774ad0ba85c07ee813">Counters::COUNTERS_0</a>
 </li>
 <li>CASH
 : <a class="el" href="classJSON.html#ad376bdf6e8872dcbdf0fdbbdd654ef6a">JSON</a>
@@ -202,19 +196,11 @@ $(function() {
 <li>CASH_
 : <a class="el" href="classFISGO__TEST__API.html#a965b51c3e5b42301ae3de5ee694b9983">FISGO_TEST_API</a>
 </li>
-<li>cash_cnt
-: <a class="el" href="structCounters_1_1COUNTERS.html#a5b5bcfdacdee05a392d18393f8b2606b">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#ac1a4ee232333d28dfa1bb647bea56144">Counters::COUNTERS_0</a>
-</li>
 <li>cash_correct
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#ad31c35d597b6202a8a7b1fdb81a2be9e">Receipt::Fiscal_data</a>
 </li>
 <li>CASH_IN_DRAWER_
 : <a class="el" href="classFISGO__TEST__API.html#a67595f0f35fc72459beb4af252ccafe5">FISGO_TEST_API</a>
-</li>
-<li>cash_in_final
-: <a class="el" href="structCounters_1_1COUNTERS.html#a01fd8cb8975232ff3f1f391e8ca507b5">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#aee45abc789aab0872e0c191bb5b48379">Counters::COUNTERS_0</a>
 </li>
 <li>CASH_INFO_REP
 : <a class="el" href="classMenu.html#ac46824c4e109b51d40e4a5c15439759fa76adf0e3055594363b8d1b7176e4f982">Menu</a>
@@ -227,10 +213,6 @@ $(function() {
 </li>
 <li>cash_need_reg_in_cabinet()
 : <a class="el" href="classMenu.html#a165a6e20d75c18758b16c24130a3ca8d">Menu</a>
-</li>
-<li>cash_on_top
-: <a class="el" href="structCounters_1_1COUNTERS.html#a9badf648b92603f6710c8ee2b050550d">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a3c6bc280f5c8c193313c362e772c1ba4">Counters::COUNTERS_0</a>
 </li>
 <li>CASH_SUM
 : <a class="el" href="classReceipt__new.html#aea02a298784e01eccc6e103235c45a42">Receipt_new</a>
@@ -352,10 +334,6 @@ $(function() {
 <li>char_to_string_convert()
 : <a class="el" href="classConvert.html#a936146dcd86776a9aedc55e41568e34c">Convert</a>
 </li>
-<li>chars_read
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a287aa2641bfcb0e47f6cd4657692f9a2">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#aab991bcbf230c372b276742f1790ba5b">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>charToInt()
 : <a class="el" href="classConvert.html#a8b00e2b4e043b342735ee8697eade0de">Convert</a>
 </li>
@@ -429,9 +407,6 @@ $(function() {
 </li>
 <li>childsNames
 : <a class="el" href="structFISGO__TEST__API_1_1MENU.html#ac860bee23602473dfe60120ddb1bfcc1">FISGO_TEST_API::MENU</a>
-</li>
-<li>childVect
-: <a class="el" href="classMenuItem.html#a775d778c7cc92cd53689861fe0d350c6">MenuItem</a>
 </li>
 <li>choose_agents_mode()
 : <a class="el" href="classMenu.html#a36df8d35739295add4f09ee848d8739f">Menu</a>
@@ -606,17 +581,11 @@ $(function() {
 <li>clear_receipt_signs()
 : <a class="el" href="classMenu.html#ad4936d5dc8350ec7e1dd3e0180cb430d">Menu</a>
 </li>
-<li>clearAll()
-: <a class="el" href="classFlashMounter.html#a1fdf174486adf03846c0d136b0ce94c3">FlashMounter</a>
-</li>
 <li>clearFiscalDb()
 : <a class="el" href="classFiscalDocDb.html#ae80f41a7cecbce0ecef83b6142afffc6">FiscalDocDb</a>
 </li>
 <li>clearGoodsDb()
 : <a class="el" href="classGoods__new.html#a84374d4771d2645f31c24bb62da2263f">Goods_new</a>
-</li>
-<li>clearLastFiscalDoc()
-: <a class="el" href="classFiscalDocDb.html#adc23a1b0262b6a1c5b693567b016f931">FiscalDocDb</a>
 </li>
 <li>clearLog()
 : <a class="el" href="classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4">LogServant</a>
@@ -641,9 +610,6 @@ $(function() {
 </li>
 <li>CLIENT_SOCK_CLOSE
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea62b0d49c0937b99c83ae684a53438f4b">FISGO_TEST_API</a>
-</li>
-<li>CLIENT_TIMEOUT
-: <a class="el" href="classFISGO__TEST__API.html#a1f583a7cdb4a7a5602b492b99336f075">FISGO_TEST_API</a>
 </li>
 <li>CLOSE_ERROR
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deaa4a355974cd1d2f7e9b9ed6d33482025">FISGO_TEST_API</a>
@@ -680,15 +646,7 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#abe3e03cf6f3bb7ae9d28d6858d8e48e6">BIOS::RUS</a>
 </li>
 <li>closePort()
-: <a class="el" href="classScalePos2.html#a79c5f406738f9f82a21a029fd9037503">ScalePos2</a>
-, <a class="el" href="classScaleProtocolInterface.html#a939017796440b049638db85aa8477fc3">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#a646e870aeddbac59c9b893c43fd356c1">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#aebce5d9bde60462976e3dbe00e770530">ScaleProtocolPos2</a>
-, <a class="el" href="classTestMassaK.html#ae38aab7b03b074487ff7e5aae502f19a">TestMassaK</a>
-, <a class="el" href="classTestPos2.html#af3740dd654f14727e4d90ecf631d1e96">TestPos2</a>
-</li>
-<li>closePortRc
-: <a class="el" href="classScalePos2.html#a97d4ad610258531e4a2fd0a2232aeb0f">ScalePos2</a>
+: <a class="el" href="classScaleProtocolInterface.html#a939017796440b049638db85aa8477fc3">ScaleProtocolInterface</a>
 </li>
 <li>closeShift()
 : <a class="el" href="classBIOS_1_1BEL.html#a3959fe2b6087c49c12636076e49a942c">BIOS::BEL</a>
@@ -730,9 +688,6 @@ $(function() {
 <li>cmd
 : <a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">ScaleProtocolInterface</a>
 </li>
-<li>CMD
-: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974">ScaleProtocolPos2</a>
-</li>
 <li>CMd5Sum()
 : <a class="el" href="classCMd5Sum.html#a465767703812b50a9bf151a658f52406">CMd5Sum</a>
 </li>
@@ -759,9 +714,6 @@ $(function() {
 </li>
 <li>CMD_ACK_ZERO
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aa0738b24a9bdf2436679a2798729ea165">ScaleProtocolMassak</a>
-</li>
-<li>CMD_DEVICE_TYPE_GET
-: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a7b2f698d66d1a2c239216c0be2747ca7">ScaleProtocolPos2</a>
 </li>
 <li>CMD_ERROR
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aa843b0c1ae80d4e48ec28c1bde23e59d7">ScaleProtocolMassak</a>
@@ -793,9 +745,6 @@ $(function() {
 <li>CMD_GET_CAL_CODE
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aacf0a2e1dc65265ccdf1e7910059d164a">ScaleProtocolMassak</a>
 </li>
-<li>CMD_GET_CHANNEL_PROPERTIES
-: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a6492171e2850b5ed472be9b1d38da4f8">ScaleProtocolPos2</a>
-</li>
 <li>CMD_GET_MASSA
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aac48514639d5c6c8f8c051b751d1c56e7">ScaleProtocolMassak</a>
 </li>
@@ -807,9 +756,6 @@ $(function() {
 </li>
 <li>CMD_GET_TARE
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aaac8699beae8c451927c0b3c7748c4b40">ScaleProtocolMassak</a>
-</li>
-<li>CMD_GET_WEIGHT
-: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a95a6274e2d0ea7ef5f3ccef4cb9dc1b3">ScaleProtocolPos2</a>
 </li>
 <li>CMD_GET_ZERO
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aacb54181614aa1c603119c0140808766a">ScaleProtocolMassak</a>
@@ -873,7 +819,6 @@ $(function() {
 </li>
 <li>code
 : <a class="el" href="structFISGO__TEST__API_1_1GOODS.html#aad8ed8d580e98de10b09752a8ed350b5">FISGO_TEST_API::GOODS</a>
-, <a class="el" href="classHttpsExchange.html#a46856829fda792088cabfdec531663da">HttpsExchange</a>
 , <a class="el" href="structJSON_1_1JSON__OFD__SIGN.html#afa142613d766001c5ef11418b52c7c20">JSON::JSON_OFD_SIGN</a>
 </li>
 <li>CODE
@@ -982,60 +927,16 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a72be3c24bfa24f0993d6c11af03e7404">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>construct()
-: <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#abfb2a6eec0bc21e8a7438546aebc55d8">nlohmann::detail::external_constructor&lt; value_t::array &gt;</a>
+: <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#a1b9226304e6492141080b4ebf228ddac">nlohmann::detail::external_constructor&lt; value_t::array &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1boolean_01_4.html#a867122bcf0856c757bd6bcbfb8be74bc">nlohmann::detail::external_constructor&lt; value_t::boolean &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1number__float_01_4.html#a669df5a4d258b588e67f747c6d656cdb">nlohmann::detail::external_constructor&lt; value_t::number_float &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html#a7c3949672ddb45095cc2527635feef0b">nlohmann::detail::external_constructor&lt; value_t::number_integer &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html#a17969b14852f43e04353858c87b0f539">nlohmann::detail::external_constructor&lt; value_t::number_unsigned &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html#a3a369c5d49596dd4411e368425f9ac7a">nlohmann::detail::external_constructor&lt; value_t::object &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html#a74f56b9ca1d4e8db9751353d76668322">nlohmann::detail::external_constructor&lt; value_t::string &gt;</a>
-</li>
-<li>consumption
-: <a class="el" href="structCounters_1_1COUNTERS.html#ab53302d9d9852c209bf1f74a59fef1cd">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a4e21859e13c63a0a8fffaab1bf2ae47a">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_card
-: <a class="el" href="structCounters_1_1COUNTERS.html#a149685afeeb9081383024edba90bc752">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a53c05610be74e7cc5d0b07a256e43094">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_card_cnt
-: <a class="el" href="structCounters_1_1COUNTERS.html#aee5786b971cce55603a94328de365f3a">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#ab537222886389a005bfb85df1d2a7763">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_cnt
-: <a class="el" href="structCounters_1_1COUNTERS.html#a44a46d2290d6643ac35c0d574fb09bad">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a3da938c8d1befc603743ca9bd2b6ae88">Counters::COUNTERS_0</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html#a91f89abe0ec4dec59099b691682ff927">nlohmann::detail::external_constructor&lt; value_t::object &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html#ad88d0b4b7ea01ea20e12cc1b82fe0d92">nlohmann::detail::external_constructor&lt; value_t::string &gt;</a>
 </li>
 <li>CONSUMPTION_ID
 : <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daa8a910ef0c914a0726285742891cd2057">Lcd</a>
-</li>
-<li>consumption_return
-: <a class="el" href="structCounters_1_1COUNTERS.html#af8db5d03712230586ce9b924532c9249">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a7a7cd546bc10a655473458c0dfa25145">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_return_cnt
-: <a class="el" href="structCounters_1_1COUNTERS.html#a76ad615117526f67ffd530e8304755b5">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#aa46741ff78028756181870eb8a40e76f">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_return_total
-: <a class="el" href="structCounters_1_1COUNTERS.html#ac1c4d6a6323e4209b0a73e27e2131785">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a379816135520691c22c8d29f844016b4">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_return_total_abs
-: <a class="el" href="structCounters_1_1COUNTERS.html#a493eb3874a1f6bd79cec3c039849ea2e">Counters::COUNTERS</a>
-</li>
-<li>consumption_total
-: <a class="el" href="structCounters_1_1COUNTERS.html#a195bc555560b6560d8f53868f4bfd351">Counters::COUNTERS</a>
-, <a class="el" href="structCounters_1_1COUNTERS__0.html#a182008c20f1c9cfd56384dae0fc1e0f1">Counters::COUNTERS_0</a>
-</li>
-<li>consumption_total_abs
-: <a class="el" href="structCounters_1_1COUNTERS.html#a57f201b027b4df6c86489174bdffbd42">Counters::COUNTERS</a>
-</li>
-<li>container
-: <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</a>
-</li>
-<li>conv()
-: <a class="el" href="classEncodeConvertor.html#acdc51e7136e7fb4a94834fbcddd54c65">EncodeConvertor</a>
 </li>
 <li>convert
 : <a class="el" href="classBIOS_1_1BEL.html#a60bc597fcedc4387f52c0e34b608ae46">BIOS::BEL</a>
@@ -1046,10 +947,8 @@ $(function() {
 <li>Convert()
 : <a class="el" href="classConvert.html#a88b6a7ab152469376c84a45b6ef845e7">Convert</a>
 </li>
-<li>convert()
-: <a class="el" href="classEncodeConvertor.html#aec7e4a8301ba943d46155bdb1556a47f">EncodeConvertor</a>
-, <a class="el" href="classFiscalDocDb.html#a96f745973a9893aff8615bc22c61c640">FiscalDocDb</a>
-, <a class="el" href="classGoods__new.html#ae3d1f4036f09c0ea5bb9aa816dc75c7b">Goods_new</a>
+<li>convert
+: <a class="el" href="classGoods__new.html#ae3d1f4036f09c0ea5bb9aa816dc75c7b">Goods_new</a>
 , <a class="el" href="classHttpsExchange.html#aa606ec4fb391c914262013a7b2b96063">HttpsExchange</a>
 , <a class="el" href="classJSON.html#a01ba7037c7897e66441cdcfd1874d5c4">JSON</a>
 , <a class="el" href="classLcd.html#a10fa990150a90ab9b836545205212268">Lcd</a>
@@ -1061,9 +960,6 @@ $(function() {
 </li>
 <li>convertASCIImassToHex()
 : <a class="el" href="classConvert.html#a2c094a805c870159901cd90112b966af">Convert</a>
-</li>
-<li>convertMassa()
-: <a class="el" href="classScaleProtocolMassak.html#a13d9f06c18f1f4f4e75441d3ebd011ec">ScaleProtocolMassak</a>
 </li>
 <li>convertToGrams()
 : <a class="el" href="classScaleProtocolPos2.html#abfab75521a87421e6f3c31a68782acd8">ScaleProtocolPos2</a>
@@ -1165,15 +1061,6 @@ $(function() {
 <li>counters_get()
 : <a class="el" href="classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886">Menu</a>
 </li>
-<li>Counters_list
-: <a class="el" href="classCounters.html#a06953bed05143aff885ebf6cbd32978d">Counters</a>
-</li>
-<li>Counters_list_0
-: <a class="el" href="classCounters.html#a0444456e4ba480dcda167aab2c8f884c">Counters</a>
-</li>
-<li>counters_mutex
-: <a class="el" href="classCounters.html#a47afd42da56678fd0039e6cfd12f21c5">Counters</a>
-</li>
 <li>COUNTERS_REPORT
 : <a class="el" href="classHttpsExchange.html#a8d67821f75e87d148da02420bd11f09da1f6c39b29fc5355500b539274517fd1e">HttpsExchange</a>
 , <a class="el" href="classMenu.html#a42b62fc0c612bb89745d5a83ff8fb36ba2dada27f5e3c358d595ea89c94893545">Menu</a>
@@ -1181,23 +1068,11 @@ $(function() {
 <li>COUNTERS_REPORT_VER
 : <a class="el" href="classJSON.html#aadc79c3e9b48fb1e0b173b9c52415ca7a49eda4a3c3386d4eeebcf8e82c3bd577">JSON</a>
 </li>
-<li>counters_version
-: <a class="el" href="structCounters_1_1COUNTERS.html#aac0a843ee6327fa7e9e495be1a08aeac">Counters::COUNTERS</a>
-</li>
-<li>countersBaseMutex
-: <a class="el" href="classCounters.html#ad82680e99e1401024fde248a90606b48">Counters</a>
-</li>
 <li>countersBaseSize()
 : <a class="el" href="classCounters.html#abcb1b798e1fd2666bd7a8eb9bfbe5b29">Counters</a>
 </li>
-<li>countersDb
-: <a class="el" href="classCounters.html#a0bd4b46dc532753ea058ed397389f9d2">Counters</a>
-</li>
-<li>countersQuery
-: <a class="el" href="classCounters.html#a65c7278b618e030e5aaaf8980ca2be64">Counters</a>
-</li>
 <li>CP866toUTF8()
-: <a class="el" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">EncodeConvertor</a>
+: <a class="el" href="classEncodeConvertor.html#a7cdb450ab283afbc35fe9410576ce0c1">EncodeConvertor</a>
 </li>
 <li>crbegin()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a1e0769d22d54573f294da0e5c6abc9de">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -1214,39 +1089,21 @@ $(function() {
 <li>CRC_LEN
 : <a class="el" href="classScaleProtocolMassak.html#a03ee75018c0d696c30770f3a34484639">ScaleProtocolMassak</a>
 </li>
-<li>CRCanceled
-: <a class="el" href="classHttpsExchange.html#a50412ebe0edc38b809661336ed371730">HttpsExchange</a>
-</li>
-<li>CRCash
-: <a class="el" href="classHttpsExchange.html#a645be9ba525dddfd06ce7a5904d9cd71">HttpsExchange</a>
-</li>
-<li>CRCashless
-: <a class="el" href="classHttpsExchange.html#ab8ed52522d2e7d5a8a392453acb7b107">HttpsExchange</a>
-</li>
 <li>crcPacketCreate()
 : <a class="el" href="classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#a97d735e3e12005d167a966ea04874fe8">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#acfac6fde1cade1f24a328d4341c324c9">ScaleProtocolPos2</a>
 </li>
 <li>crcSize
 : <a class="el" href="structScaleProtocolInterface_1_1PacketFormat.html#ab3fc2c8ed2267938680ef2bc7f53bbfd">ScaleProtocolInterface::PacketFormat</a>
 </li>
 <li>create()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a81100399cf3e2be457937be7db3f5729">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09">nlohmann::detail::invalid_iterator</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09">nlohmann::detail::invalid_iterator</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1other__error.html#a87e8ab894e8c85c0d97a0919782d3683">nlohmann::detail::other_error</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f">nlohmann::detail::type_error</a>
 </li>
-<li>createBackup()
-: <a class="el" href="classMenu.html#aa906d50dadf131d6160a0f7cfd4eba88">Menu</a>
-</li>
 <li>createBlankConfig()
 : <a class="el" href="classsqlWrapper.html#aa8ffa3bcaffadc848702b0569c17025f">sqlWrapper</a>
-</li>
-<li>createBlankCounters()
-: <a class="el" href="classCounters.html#a1b07b7c38a75eb07ed7e0de8c27a3fd5">Counters</a>
 </li>
 <li>createBlankUser()
 : <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper</a>
@@ -1278,17 +1135,11 @@ $(function() {
 <li>createImageTable()
 : <a class="el" href="classsqlWrapper.html#a560cd44c3443f524a25aee6d29397c53">sqlWrapper</a>
 </li>
-<li>createInfoFiles()
-: <a class="el" href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">NodeConflictResolver</a>
-</li>
 <li>createReceiptsDb()
 : <a class="el" href="classReceiptsDb.html#a86f39a6a40c7737bf6de2253a4750cd1">ReceiptsDb</a>
 </li>
 <li>CreateSubMenu()
 : <a class="el" href="classMenuTree.html#ae18b50f63474926d18b6ef949def5bb9">MenuTree</a>
-</li>
-<li>createTable()
-: <a class="el" href="classFiscalDocDb.html#ae385187f0caf76ce571b0b2547a4b389">FiscalDocDb</a>
 </li>
 <li>createTasksDb()
 : <a class="el" href="classReceiptsDb.html#aabc32db4d8f1bb36853e432111fb232e">ReceiptsDb</a>
@@ -1309,12 +1160,10 @@ $(function() {
 <li>credit
 : <a class="el" href="classPositions_1_1Position.html#a8b63b8820bd79793a911275f1be46a3d">Positions::Position</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a8c82c89a77c83057b9e0ba38a0daf424">Receipt::Fiscal_data</a>
+, <a class="el" href="classReceipt__new.html#a827cffab7607a1f0a0435df135f891e3">Receipt_new</a>
 </li>
 <li>CREDIT
 : <a class="el" href="classReceipt__new.html#a0436c73a5757395897659539f59de611">Receipt_new</a>
-</li>
-<li>credit
-: <a class="el" href="classReceipt__new.html#a827cffab7607a1f0a0435df135f891e3">Receipt_new</a>
 </li>
 <li>CREDIT_
 : <a class="el" href="classFISGO__TEST__API.html#a3cab76ec929afe4274d938019dde9e8f">FISGO_TEST_API</a>
@@ -1352,9 +1201,6 @@ $(function() {
 <li>crend()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5795b029dbf28e0cb2c7a439ec5d0a88">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>CRMoney
-: <a class="el" href="classHttpsExchange.html#a51410e2f41f5e5a7278503066766c423">HttpsExchange</a>
-</li>
 <li>cryptoPack
 : <a class="el" href="structBarcodeScanner_1_1DATA__MATRIX.html#a346af20d8994a52904efd7884f6e8149">BarcodeScanner::DATA_MATRIX</a>
 </li>
@@ -1370,9 +1216,6 @@ $(function() {
 <li>cur_department
 : <a class="el" href="structConfig.html#aa76fc0ae50318cc3094b55beda1e9cc1">Config</a>
 </li>
-<li>cur_item
-: <a class="el" href="classMenuTree.html#a74299960d53301eba4f9bc6f03156eff">MenuTree</a>
-</li>
 <li>cur_len
 : <a class="el" href="classRequisites_1_1Requisite.html#a32c006fd04bdc57a4859526c5a75d8a9">Requisites::Requisite</a>
 </li>
@@ -1387,14 +1230,8 @@ $(function() {
 <li>cur_pos_new
 : <a class="el" href="classMenu.html#ab84ac503df715fd3ea754d7d0fc47d55">Menu</a>
 </li>
-<li>cur_receipt_num
-: <a class="el" href="structCounters_1_1COUNTERS.html#a2098382d22b88aaa56441ef82ea3bf10">Counters::COUNTERS</a>
-</li>
 <li>CUR_SHIFT_CNTS
 : <a class="el" href="classBIOS_1_1RUS.html#addeef6bff4e862a317791c871d500dd6">BIOS::RUS</a>
-</li>
-<li>cur_shift_num
-: <a class="el" href="structCounters_1_1COUNTERS.html#a2441d882f66fe316e9202faabb348171">Counters::COUNTERS</a>
 </li>
 <li>cur_step
 : <a class="el" href="structMenu_1_1CorrectionData.html#ae0da4867670faceb47d89b74b9bab5bb">Menu::CorrectionData</a>
@@ -1416,22 +1253,12 @@ $(function() {
 <li>curItemName
 : <a class="el" href="structFISGO__TEST__API_1_1MENU.html#ac70bd5b12ff8ee0f888667437eb47ca0">FISGO_TEST_API::MENU</a>
 </li>
-<li>curPosSale
-: <a class="el" href="classMenu.html#ab9910b6252ad1d0fa93f5a91cc53f920">Menu</a>
-</li>
-<li>current
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aadd621ccddf3539f2ed4e2038d531870">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a47169f9aaf0da4c9885e61d3109859aa">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>current_agent
 : <a class="el" href="structConfig.html#af5a221eb6227e941629847e72c7734ac">Config</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a95662b833293e66d92c41b549793c5ae">Receipt::Fiscal_data</a>
 </li>
 <li>current_user
 : <a class="el" href="classMenu.html#a21a5a8e208f85e38597c179ec22c994c">Menu</a>
-</li>
-<li>current_wchar
-: <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#a196fe1fb07310dc8c2ca3a0a9ef9b27a">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
 </li>
 <li>CurrentItem()
 : <a class="el" href="classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283">MenuTree</a>
@@ -1441,12 +1268,6 @@ $(function() {
 </li>
 <li>curShiftNum()
 : <a class="el" href="classBIOS_1_1BEL.html#a6ae8df7bb31a59b15d617a619f818de8">BIOS::BEL</a>
-</li>
-<li>cursor
-: <a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">nlohmann::detail::input_buffer_adapter</a>
-</li>
-<li>CUSTOMER_VEND_CONST
-: <a class="el" href="classNodeConflictResolver.html#a770ddce896f829aa0f61066c53fb3ea5">NodeConflictResolver</a>
 </li>
 <li>cv_loader
 : <a class="el" href="classLcd.html#a51720320d2f209f555fa0b6cdc8dbd0d">Lcd</a>
@@ -1463,15 +1284,6 @@ $(function() {
 <li>cvBarcode
 : <a class="el" href="classMenu.html#a4e0291949045651a0b9557aa8c4838bf">Menu</a>
 </li>
-<li>cvEvents
-: <a class="el" href="classFISGO__TEST__API.html#acd360b9cb7e5a04566213706493875a8">FISGO_TEST_API</a>
-</li>
-<li>cvEventsNotified
-: <a class="el" href="classFISGO__TEST__API.html#aaa6a6eed6d2a465bb6ed8fcf7bccb6f4">FISGO_TEST_API</a>
-</li>
-<li>cvQueuePurchases
-: <a class="el" href="classMenu.html#a2481c40dc4c5836b146336075c0a28d1">Menu</a>
-</li>
 <li>CYCLE_SCROLL
 : <a class="el" href="classMenu.html#a51fbe3d3ab5eceee2847ef53506a8d47">Menu</a>
 </li>
@@ -1479,7 +1291,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

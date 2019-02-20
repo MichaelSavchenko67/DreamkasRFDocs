@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classReceipt.html">Receipt</a></li><li class="navelem"><a class="el" href="structReceipt_1_1Fiscal__data.html">Fiscal_data</a></li>  </ul>
@@ -227,10 +250,7 @@ $(function() {
 <tr class="memitem:a687de1644ce7730b5f5ef9a06ae2b26d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structReceipt_1_1Fiscal__data.html#a687de1644ce7730b5f5ef9a06ae2b26d">fs_time_left</a></td></tr>
 <tr class="separator:a687de1644ce7730b5f5ef9a06ae2b26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00098">98</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a4a769d4ebfaa456d6a32fc44e46ac74c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a769d4ebfaa456d6a32fc44e46ac74c">&#9670;&nbsp;</a></span>advance</h2>
 
@@ -242,8 +262,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00172">172</a></p>
 
 </div>
 </div>
@@ -259,9 +277,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00121">121</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -277,9 +293,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00131">131</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -295,8 +309,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00164">164</a></p>
-
 </div>
 </div>
 <a id="a9c05ed276c6cadd7f4fb01fa61141fd4"></a>
@@ -311,9 +323,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00115">115</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +339,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00116">116</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -347,8 +355,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00150">150</a></p>
-
 </div>
 </div>
 <a id="ad31c35d597b6202a8a7b1fdb81a2be9e"></a>
@@ -362,8 +368,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00149">149</a></p>
 
 </div>
 </div>
@@ -379,9 +383,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00139">139</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -397,9 +399,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00127">127</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -415,8 +415,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00174">174</a></p>
-
 </div>
 </div>
 <a id="ae3a5bbceb599adce269b82bc6f1c2a0d"></a>
@@ -430,8 +428,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00148">148</a></p>
 
 </div>
 </div>
@@ -447,8 +443,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00173">173</a></p>
-
 </div>
 </div>
 <a id="aa60d7e3baceab8d712ae285c0d1d9c6c"></a>
@@ -462,8 +456,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00161">161</a></p>
 
 </div>
 </div>
@@ -479,8 +471,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00162">162</a></p>
-
 </div>
 </div>
 <a id="a7ef669de18c492ffb7e20c9efb16328d"></a>
@@ -494,8 +484,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00154">154</a></p>
 
 </div>
 </div>
@@ -511,8 +499,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00147">147</a></p>
-
 </div>
 </div>
 <a id="a9634b596a055d7b04c5c4f42c7bb2607"></a>
@@ -526,8 +512,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00153">153</a></p>
 
 </div>
 </div>
@@ -543,8 +527,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00152">152</a></p>
-
 </div>
 </div>
 <a id="a2aa3efc85a583b5588bcf9ebdda9fdc0"></a>
@@ -558,8 +540,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00175">175</a></p>
 
 </div>
 </div>
@@ -575,8 +555,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00123">123</a></p>
-
 </div>
 </div>
 <a id="a95662b833293e66d92c41b549793c5ae"></a>
@@ -591,9 +569,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00132">132</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -609,9 +585,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00101">101</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -627,8 +601,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00171">171</a></p>
-
 </div>
 </div>
 <a id="ad0c5170631da932046ea224b7fe4e391"></a>
@@ -643,9 +615,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00125">125</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -661,9 +631,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00126">126</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -679,8 +647,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00166">166</a></p>
-
 </div>
 </div>
 <a id="a6d07a47e556bed9c76f74568502dd827"></a>
@@ -695,9 +661,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00140">140</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -713,8 +677,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00144">144</a></p>
-
 </div>
 </div>
 <a id="a412e3ae64c5352b57fe251236a979076"></a>
@@ -729,9 +691,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00141">141</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -747,9 +707,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00103">103</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -765,8 +723,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00179">179</a></p>
-
 </div>
 </div>
 <a id="a114046ada696463884936d626fab407a"></a>
@@ -781,9 +737,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00128">128</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -799,8 +753,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00167">167</a></p>
-
 </div>
 </div>
 <a id="a694952a11d5fa0a8b762b0340dbe7e57"></a>
@@ -815,9 +767,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00107">107</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -833,8 +783,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00176">176</a></p>
-
 </div>
 </div>
 <a id="a4cebfd8a6dfce7d84297bb756b7ab877"></a>
@@ -848,8 +796,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00176">176</a></p>
 
 </div>
 </div>
@@ -865,8 +811,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00176">176</a></p>
-
 </div>
 </div>
 <a id="a77ee3199799939dea6c57fb53089a564"></a>
@@ -881,9 +825,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00111">111</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -899,9 +841,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00110">110</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -917,9 +857,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00109">109</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -935,9 +873,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00112">112</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -953,9 +889,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00113">113</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -971,8 +905,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00119">119</a></p>
-
 </div>
 </div>
 <a id="a9a3f4ea014cc99bb5a745a66c3b8a047"></a>
@@ -987,9 +919,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00118">118</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1005,9 +935,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00129">129</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1023,8 +951,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00169">169</a></p>
-
 </div>
 </div>
 <a id="a7df986b4f7b320460e1cc427131557ab"></a>
@@ -1039,9 +965,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00105">105</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1057,9 +981,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00104">104</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1075,8 +997,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00160">160</a></p>
-
 </div>
 </div>
 <a id="a270b564cc225ad93e4802b04bfddbd07"></a>
@@ -1090,8 +1010,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00159">159</a></p>
 
 </div>
 </div>
@@ -1107,8 +1025,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00155">155</a></p>
-
 </div>
 </div>
 <a id="a32406ea32d7ed09a1cf44ba8c7a36ac0"></a>
@@ -1122,8 +1038,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00157">157</a></p>
 
 </div>
 </div>
@@ -1139,8 +1053,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00156">156</a></p>
-
 </div>
 </div>
 <a id="a67ad89ac49f6ac4ba0d21cc300240e49"></a>
@@ -1154,8 +1066,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00170">170</a></p>
 
 </div>
 </div>
@@ -1171,9 +1081,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00135">135</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1189,9 +1097,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1207,9 +1113,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00136">136</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1225,8 +1129,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00138">138</a></p>
-
 </div>
 </div>
 <a id="ae2bd4e6c1dd8e72b3d514e98df9f7713"></a>
@@ -1241,9 +1143,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00137">137</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1259,8 +1159,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00133">133</a></p>
-
 </div>
 </div>
 <a id="a214cf830873afe965cf58ba2ec67fc27"></a>
@@ -1275,9 +1173,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00108">108</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1189,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00117">117</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1311,9 +1205,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00114">114</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1329,9 +1221,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00130">130</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1347,8 +1237,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00151">151</a></p>
-
 </div>
 </div>
 <a id="a2ffde3ec832a1fa499b43a1c65884139"></a>
@@ -1362,8 +1250,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00165">165</a></p>
 
 </div>
 </div>
@@ -1379,9 +1265,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00100">100</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1397,8 +1281,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00142">142</a></p>
-
 </div>
 </div>
 <a id="a6870535660a0e6dd91e7b5a482188bcb"></a>
@@ -1412,8 +1294,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00168">168</a></p>
 
 </div>
 </div>
@@ -1429,9 +1309,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00102">102</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1447,9 +1325,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00106">106</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03198">Printer::sale_receipt_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a38ded531c55e8cbe4054906f686768de">Printer::sale_receipt_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1465,8 +1341,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00124">124</a></p>
-
 </div>
 </div>
 <a id="ae515f6c07c794bdd8359f95978b9102a"></a>
@@ -1481,9 +1355,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00120">120</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1499,9 +1371,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00122">122</a></p>
-
-<p class="reference">Используется в <a class="el" href="printer_8cpp_source.html#l03172">Printer::test_reciept_data_erase()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classPrinter.html#a5e46b02890e3363fc252d0688bd7e4b7">Printer::test_reciept_data_erase()</a>.</p>
 
 </div>
 </div>
@@ -1517,8 +1387,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00163">163</a></p>
-
 </div>
 </div>
 <a id="a7afd00b7ee2dec42d89d78b5f86fc0bc"></a>
@@ -1532,8 +1400,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00146">146</a></p>
 
 </div>
 </div>
@@ -1549,8 +1415,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00145">145</a></p>
-
 </div>
 </div>
 <a id="a232f335a36d2744d3e1453b7a032b538"></a>
@@ -1564,8 +1428,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00143">143</a></p>
 
 </div>
 </div>
@@ -1581,8 +1443,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00158">158</a></p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -1591,7 +1451,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

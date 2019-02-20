@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classTestLcd.html">TestLcd</a></li><li class="navelem"><a class="el" href="classTestLcd_1_1mockLcd.html">mockLcd</a></li>  </ul>
@@ -62,8 +85,8 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestLcd_1_1mockLcd__inherit__graph.png" border="0" usemap="#TestLcd_1_1mockLcd_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestLcd_1_1mockLcd_inherit__map" id="TestLcd_1_1mockLcd_inherit__map">
-<area shape="rect"  title=" " alt="" coords="56,3064,191,3200"/>
-<area shape="rect"  href="classLcd.html" title=" " alt="" coords="5,5,241,3016"/>
+<area shape="rect"  title=" " alt="" coords="56,2947,191,3083"/>
+<area shape="rect"  href="classLcd.html" title=" " alt="" coords="5,5,241,2899"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -73,8 +96,8 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestLcd_1_1mockLcd__coll__graph.png" border="0" usemap="#TestLcd_1_1mockLcd_coll__map" alt="Collaboration graph"/></div>
 <map name="TestLcd_1_1mockLcd_coll__map" id="TestLcd_1_1mockLcd_coll__map">
-<area shape="rect"  title=" " alt="" coords="56,3220,191,3356"/>
-<area shape="rect"  href="classLcd.html" title=" " alt="" coords="5,175,241,3171"/>
+<area shape="rect"  title=" " alt="" coords="56,3103,191,3239"/>
+<area shape="rect"  href="classLcd.html" title=" " alt="" coords="5,175,241,3053"/>
 <area shape="rect"  href="structLcd_1_1item__selection.html" title=" " alt="" coords="56,5,191,112"/>
 </map>
 </div>
@@ -934,10 +957,7 @@ $(function() {
 <tr class="memitem:a5a3331dbcddea41ea3a7a214cecf8efe inherit pub_static_attribs_classLcd"><td class="memItemLeft" align="right" valign="top">static const unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLcd.html#a5a3331dbcddea41ea3a7a214cecf8efe">BMP_FILE_SIZE</a></td></tr>
 <tr class="separator:a5a3331dbcddea41ea3a7a214cecf8efe inherit pub_static_attribs_classLcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00023">23</a></p>
-</div><h2 class="groupheader">Методы</h2>
+<h2 class="groupheader">Методы</h2>
 <a id="af3f6f75f7e4f936084e959ed0c260878"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3f6f75f7e4f936084e959ed0c260878">&#9670;&nbsp;</a></span>elementsCreate()</h2>
 
@@ -977,8 +997,6 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00071">71</a></p>
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            elements.clear();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">for</span>(uint8_t i = 1; i &lt;= elementsCnt; ++i)</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                elements.push_back(elementName + to_string(i));</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div></div><!-- fragment -->
 </div>
 </div>
@@ -1007,8 +1025,6 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classLcd.html#aad7c3311df16d9822418a9234c1084ae">Lcd</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00067">67</a></p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
@@ -1037,8 +1053,6 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classLcd.html#a4dcb87b3a74763946b61a351e81097d8">Lcd</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00066">66</a></p>
 <div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{};</div></div><!-- fragment -->
 </div>
 </div>
@@ -1095,13 +1109,11 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classLcd.html#ab08d9ce003e55dfd3728fdc3e4d1b2c3">Lcd</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00037">37</a></p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">text</a> == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s Null ptr!&quot;</span>, __PRETTY_FUNCTION__);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            LastStringDraw lastStringDraw;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            lastStringDraw.display = display;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            lastStringDraw.numStr  = numStr;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            lastStringDraw.pos     = pos;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            lastStringDraw.bright  = bright;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            lastStringDraw.text    = <a class="code" href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">text</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classTestLcd_1_1mockLcd.html#ae7c1cf3b40c47d519d1d4e4b260bde29">lastStringsDraw</a>.push_back(lastStringDraw);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div><div class="ttc" id="classTestLcd_html_a1a37bc511d384dd0a3dd013613be10aa"><div class="ttname"><a href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">TestLcd::text</a></div><div class="ttdeci">vector&lt; string &gt; text</div><div class="ttdef"><b>Definition:</b> <a href="testLcd_8h_source.html#l00020">testLcd.h:20</a></div></div>
-<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
-<div class="ttc" id="classTestLcd_1_1mockLcd_html_ae7c1cf3b40c47d519d1d4e4b260bde29"><div class="ttname"><a href="classTestLcd_1_1mockLcd.html#ae7c1cf3b40c47d519d1d4e4b260bde29">TestLcd::mockLcd::lastStringsDraw</a></div><div class="ttdeci">vector&lt; LastStringDraw &gt; lastStringsDraw</div><div class="ttdef"><b>Definition:</b> <a href="testLcd_8h_source.html#l00035">testLcd.h:35</a></div></div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">text</a> == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s Null ptr!&quot;</span>, __PRETTY_FUNCTION__);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            LastStringDraw lastStringDraw;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            lastStringDraw.display = display;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            lastStringDraw.numStr  = numStr;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            lastStringDraw.pos     = pos;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            lastStringDraw.bright  = bright;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            lastStringDraw.text    = <a class="code" href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">text</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classTestLcd_1_1mockLcd.html#ae7c1cf3b40c47d519d1d4e4b260bde29">lastStringsDraw</a>.push_back(lastStringDraw);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div><div class="ttc" id="classTestLcd_html_a1a37bc511d384dd0a3dd013613be10aa"><div class="ttname"><a href="classTestLcd.html#a1a37bc511d384dd0a3dd013613be10aa">TestLcd::text</a></div><div class="ttdeci">vector&lt; string &gt; text</div><div class="ttdef"><b>Definition:</b> testLcd.h:20</div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
+<div class="ttc" id="classTestLcd_1_1mockLcd_html_ae7c1cf3b40c47d519d1d4e4b260bde29"><div class="ttname"><a href="classTestLcd_1_1mockLcd.html#ae7c1cf3b40c47d519d1d4e4b260bde29">TestLcd::mockLcd::lastStringsDraw</a></div><div class="ttdeci">vector&lt; LastStringDraw &gt; lastStringsDraw</div><div class="ttdef"><b>Definition:</b> testLcd.h:35</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testLcd_8h_source.html#l00031">TestLcd::mockLcd::LastStringDraw::bright</a>, <a class="el" href="testLcd_8h_source.html#l00028">TestLcd::mockLcd::LastStringDraw::display</a>, <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="testLcd_8h_source.html#l00029">TestLcd::mockLcd::LastStringDraw::numStr</a>, <a class="el" href="testLcd_8h_source.html#l00030">TestLcd::mockLcd::LastStringDraw::pos</a> и <a class="el" href="testLcd_8h_source.html#l00032">TestLcd::mockLcd::LastStringDraw::text</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#a59e9a3e151525d917d764dab8a3a6552">TestLcd::mockLcd::LastStringDraw::bright</a>, <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#ace57470e088ad540d8882aeb201f38d5">TestLcd::mockLcd::LastStringDraw::display</a>, <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>, <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#a5514337ab6ca05d996d9fc29780d5c8f">TestLcd::mockLcd::LastStringDraw::numStr</a>, <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#ac9f3380d07b46de94a43d4e77fbc137a">TestLcd::mockLcd::LastStringDraw::pos</a> и <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#a162a8bb94b54564fc891e025cad2dfef">TestLcd::mockLcd::LastStringDraw::text</a>.</p>
 
 </div>
 </div>
@@ -1158,8 +1170,6 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2">Lcd</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00058">58</a></p>
 <div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        };</div></div><!-- fragment -->
 </div>
 </div>
@@ -1176,8 +1186,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="testLcd_8h_source.html">testLcd.h</a> строка <a class="el" href="testLcd_8h_source.html#l00035">35</a></p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -1186,7 +1194,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

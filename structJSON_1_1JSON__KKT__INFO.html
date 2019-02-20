@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1JSON__KKT__INFO.html">JSON_KKT_INFO</a></li>  </ul>
@@ -83,10 +106,7 @@ $(function() {
 <tr class="memitem:ad008f20224a7ba47dd411760a8264367"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__KKT__INFO.html#ad008f20224a7ba47dd411760a8264367">ffd_version</a></td></tr>
 <tr class="separator:ad008f20224a7ba47dd411760a8264367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00383">383</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a0f405595f9cc6f9b805f816af62aba79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f405595f9cc6f9b805f816af62aba79">&#9670;&nbsp;</a></span>JSON_KKT_INFO()</h2>
 
@@ -109,14 +129,12 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00390">390</a></p>
-<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        {</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <a class="code" href="classEncodeConvertor.html">EncodeConvertor</a> ec;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordtype">int</span> errP = 0;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <a class="code" href="structJSON_1_1JSON__KKT__INFO.html#a74dc9ed1d51c03507af9ef33cc89d35f">kkt_registry_name</a> = ec.<a class="code" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">CP866toUTF8</a>(<a class="code" href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a>, &amp;errP);</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div><div class="ttc" id="classEncodeConvertor_html"><div class="ttname"><a href="classEncodeConvertor.html">EncodeConvertor</a></div><div class="ttdef"><b>Definition:</b> <a href="EncodeConvertor_8h_source.html#l00018">EncodeConvertor.h:18</a></div></div>
-<div class="ttc" id="json_8h_html_ad84bd9667e172211497710f695b9539a"><div class="ttname"><a href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a></div><div class="ttdeci">#define KKT_REGISTRY_NAME</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00071">json.h:71</a></div></div>
-<div class="ttc" id="classEncodeConvertor_html_abc751a9512177eed813c00a8074197e3"><div class="ttname"><a href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">EncodeConvertor::CP866toUTF8</a></div><div class="ttdeci">string CP866toUTF8(const string &amp;val, int *err)</div><div class="ttdef"><b>Definition:</b> <a href="EncodeConvertor_8cpp_source.html#l00156">EncodeConvertor.cpp:156</a></div></div>
-<div class="ttc" id="structJSON_1_1JSON__KKT__INFO_html_a74dc9ed1d51c03507af9ef33cc89d35f"><div class="ttname"><a href="structJSON_1_1JSON__KKT__INFO.html#a74dc9ed1d51c03507af9ef33cc89d35f">JSON::JSON_KKT_INFO::kkt_registry_name</a></div><div class="ttdeci">string kkt_registry_name</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00385">json.h:385</a></div></div>
+<div class="fragment"><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        {</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <a class="code" href="classEncodeConvertor.html">EncodeConvertor</a> ec;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordtype">int</span> errP = 0;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <a class="code" href="structJSON_1_1JSON__KKT__INFO.html#a74dc9ed1d51c03507af9ef33cc89d35f">kkt_registry_name</a> = ec.<a class="code" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">CP866toUTF8</a>(<a class="code" href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a>, &amp;errP);</div><div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div><div class="ttc" id="classEncodeConvertor_html"><div class="ttname"><a href="classEncodeConvertor.html">EncodeConvertor</a></div><div class="ttdef"><b>Definition:</b> EncodeConvertor.h:18</div></div>
+<div class="ttc" id="json_8h_html_ad84bd9667e172211497710f695b9539a"><div class="ttname"><a href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a></div><div class="ttdeci">#define KKT_REGISTRY_NAME</div><div class="ttdef"><b>Definition:</b> json.h:71</div></div>
+<div class="ttc" id="classEncodeConvertor_html_abc751a9512177eed813c00a8074197e3"><div class="ttname"><a href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">EncodeConvertor::CP866toUTF8</a></div><div class="ttdeci">string CP866toUTF8(const string &amp;val, int *err)</div><div class="ttdef"><b>Definition:</b> EncodeConvertor.cpp:156</div></div>
+<div class="ttc" id="structJSON_1_1JSON__KKT__INFO_html_a74dc9ed1d51c03507af9ef33cc89d35f"><div class="ttname"><a href="structJSON_1_1JSON__KKT__INFO.html#a74dc9ed1d51c03507af9ef33cc89d35f">JSON::JSON_KKT_INFO::kkt_registry_name</a></div><div class="ttdeci">string kkt_registry_name</div><div class="ttdef"><b>Definition:</b> json.h:385</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="EncodeConvertor_8cpp_source.html#l00156">EncodeConvertor::CP866toUTF8()</a> и <a class="el" href="json_8h_source.html#l00071">KKT_REGISTRY_NAME</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">EncodeConvertor::CP866toUTF8()</a> и <a class="el" href="json_8h.html#ad84bd9667e172211497710f695b9539a">KKT_REGISTRY_NAME</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -124,11 +142,8 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1JSON__KKT__INFO_a0f405595f9cc6f9b805f816af62aba79_cgraph.png" border="0" usemap="#structJSON_1_1JSON__KKT__INFO_a0f405595f9cc6f9b805f816af62aba79_cgraph" alt=""/></div>
 <map name="structJSON_1_1JSON__KKT__INFO_a0f405595f9cc6f9b805f816af62aba79_cgraph" id="structJSON_1_1JSON__KKT__INFO_a0f405595f9cc6f9b805f816af62aba79_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,23,180,65"/>
-<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="228,31,443,57"/>
-<area shape="rect"  href="classEncodeConvertor.html#a446a3149c95493a817adcf5b6a7e5fca" title=" " alt="" coords="491,31,649,57"/>
-<area shape="rect"  href="classEncodeConvertor.html#aec7e4a8301ba943d46155bdb1556a47f" title=" " alt="" coords="697,5,872,32"/>
-<area shape="rect"  href="classConvert.html#a4b693c16383ba0f789f5a75f83f74b7e" title=" " alt="" coords="700,56,869,83"/>
+<area shape="rect"  title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect"  href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="228,13,443,39"/>
 </map>
 </div>
 
@@ -147,8 +162,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00385">385</a></p>
-
 </div>
 </div>
 <a id="abb11980eb0575acb7173ec81023fcd22"></a>
@@ -162,8 +175,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00385">385</a></p>
 
 </div>
 </div>
@@ -179,8 +190,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00385">385</a></p>
-
 </div>
 </div>
 <a id="a03591252282e29ea3afc38c4ffe3e0a8"></a>
@@ -194,8 +203,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00385">385</a></p>
 
 </div>
 </div>
@@ -211,8 +218,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00385">385</a></p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -221,7 +226,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

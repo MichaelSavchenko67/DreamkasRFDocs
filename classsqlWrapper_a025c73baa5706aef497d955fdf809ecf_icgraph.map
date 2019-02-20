@@ -1,21 +1,20 @@
 <map id="sqlWrapper::makeConfigRequest" name="sqlWrapper::makeConfigRequest">
-<area shape="rect" id="node1" title=" " alt="" coords="772,416,987,443"/>
-<area shape="rect" id="node2" href="$classsqlWrapper.html#aab5548586188091ca8b434e6c0a1e38a" title="addImageTable Сохранение в таблицу image_config uuid, article, kkt_plant_num" alt="" coords="524,5,709,32"/>
-<area shape="rect" id="node4" href="$classsqlWrapper.html#ae397823c915158c4014134a422e4a838" title=" " alt="" coords="528,57,705,98"/>
-<area shape="rect" id="node5" href="$classsqlWrapper.html#a556a858c87a1703e9b2d6caaddfc5f31" title=" " alt="" coords="523,122,711,163"/>
-<area shape="rect" id="node6" href="$classsqlWrapper.html#a640efd257edce3f13d34fb5268606518" title="configDrop Удаление таблицы config" alt="" coords="285,340,443,367"/>
-<area shape="rect" id="node8" href="$classsqlWrapper.html#a923dff11016a4722ee62ef89fa2d4b37" title=" " alt="" coords="509,239,724,265"/>
-<area shape="rect" id="node9" href="$classsqlWrapper.html#ac7810c2123e16d1aca739d6271388b9c" title="configImageDrop Удаление таблицы image_config" alt="" coords="267,391,461,417"/>
-<area shape="rect" id="node10" href="$classsqlWrapper.html#aa8ffa3bcaffadc848702b0569c17025f" title=" " alt="" coords="515,492,718,519"/>
-<area shape="rect" id="node11" href="$classsqlWrapper.html#a263d39001854bdc6fdb64b282ec7cd81" title=" " alt="" coords="271,441,457,468"/>
-<area shape="rect" id="node12" href="$classsqlWrapper.html#a560cd44c3443f524a25aee6d29397c53" title="createImageTable Создание таблицы для хранения uuid, article, kkt_plant_num" alt="" coords="517,188,717,215"/>
-<area shape="rect" id="node13" href="$classsqlWrapper.html#a1ec3604d2b596e5afe1bfc09da794481" title="getImageTable Получение полей uuid, article, kkt_plant_num" alt="" coords="273,652,455,679"/>
-<area shape="rect" id="node14" href="$classsqlWrapper.html#a91774c0c39cf68c62fc8e53866c56cb4" title=" " alt="" coords="513,543,720,569"/>
-<area shape="rect" id="node15" href="$classsqlWrapper.html#a605aa615d42680eac74bfab847b97334" title=" " alt="" coords="529,593,705,620"/>
-<area shape="rect" id="node16" href="$classsqlWrapper.html#a3c3f70ba7842605aa3a82e8036136fff" title=" " alt="" coords="529,644,704,671"/>
-<area shape="rect" id="node17" href="$classsqlWrapper.html#a5156f081e134a9b95de582bfe5b125d8" title=" " alt="" coords="532,695,701,721"/>
-<area shape="rect" id="node18" href="$classsqlWrapper.html#a3674a2ae0f86bed4a962b4948d47000c" title=" " alt="" coords="530,746,703,787"/>
-<area shape="rect" id="node19" href="$classsqlWrapper.html#af7cc18b966c2c270f49163ebe958e9d2" title=" " alt="" coords="267,289,461,316"/>
-<area shape="rect" id="node3" href="$classsqlWrapper.html#a5a19c715443cdb9cf3ae98ceb4060cf3" title="copyConfigToImage Копирование полей uuid, article, kkt_plant_num в IMAGE_CONFIG" alt="" coords="275,90,453,131"/>
+<area shape="rect" id="node1" title=" " alt="" coords="529,391,744,417"/>
+<area shape="rect" id="node2" href="$classsqlWrapper.html#aab5548586188091ca8b434e6c0a1e38a" title="addImageTable Сохранение в таблицу image_config uuid, article, kkt_plant_num" alt="" coords="281,188,467,215"/>
+<area shape="rect" id="node4" href="$classsqlWrapper.html#ae397823c915158c4014134a422e4a838" title=" " alt="" coords="285,57,463,98"/>
+<area shape="rect" id="node5" href="$classsqlWrapper.html#a556a858c87a1703e9b2d6caaddfc5f31" title=" " alt="" coords="280,122,468,163"/>
+<area shape="rect" id="node6" href="$classsqlWrapper.html#a640efd257edce3f13d34fb5268606518" title="configDrop Удаление таблицы config" alt="" coords="295,761,453,788"/>
+<area shape="rect" id="node8" href="$classsqlWrapper.html#a923dff11016a4722ee62ef89fa2d4b37" title=" " alt="" coords="267,239,481,265"/>
+<area shape="rect" id="node9" href="$classsqlWrapper.html#ac7810c2123e16d1aca739d6271388b9c" title="configImageDrop Удаление таблицы image_config" alt="" coords="277,340,471,367"/>
+<area shape="rect" id="node10" href="$classsqlWrapper.html#a263d39001854bdc6fdb64b282ec7cd81" title=" " alt="" coords="281,391,467,417"/>
+<area shape="rect" id="node11" href="$classsqlWrapper.html#a560cd44c3443f524a25aee6d29397c53" title="createImageTable Создание таблицы для хранения uuid, article, kkt_plant_num" alt="" coords="274,5,474,32"/>
+<area shape="rect" id="node12" href="$classsqlWrapper.html#a1ec3604d2b596e5afe1bfc09da794481" title="getImageTable Получение полей uuid, article, kkt_plant_num" alt="" coords="283,441,465,468"/>
+<area shape="rect" id="node13" href="$classsqlWrapper.html#a91774c0c39cf68c62fc8e53866c56cb4" title=" " alt="" coords="271,492,477,519"/>
+<area shape="rect" id="node14" href="$classsqlWrapper.html#a605aa615d42680eac74bfab847b97334" title=" " alt="" coords="286,543,462,569"/>
+<area shape="rect" id="node15" href="$classsqlWrapper.html#a3c3f70ba7842605aa3a82e8036136fff" title=" " alt="" coords="287,593,461,620"/>
+<area shape="rect" id="node16" href="$classsqlWrapper.html#a5156f081e134a9b95de582bfe5b125d8" title=" " alt="" coords="289,644,459,671"/>
+<area shape="rect" id="node17" href="$classsqlWrapper.html#a3674a2ae0f86bed4a962b4948d47000c" title=" " alt="" coords="287,695,461,737"/>
+<area shape="rect" id="node18" href="$classsqlWrapper.html#af7cc18b966c2c270f49163ebe958e9d2" title=" " alt="" coords="277,289,471,316"/>
+<area shape="rect" id="node3" href="$classsqlWrapper.html#a5a19c715443cdb9cf3ae98ceb4060cf3" title="copyConfigToImage Копирование полей uuid, article, kkt_plant_num в IMAGE_CONFIG" alt="" coords="23,90,201,131"/>
 <area shape="rect" id="node7" href="$classsqlWrapper.html#aa01254ac63993cebca319f7f357bcd56" title="copyImageToConfig Копирование полей uuid, article, kkt_plant_num в CONFIG" alt="" coords="5,391,219,417"/>
 </map>

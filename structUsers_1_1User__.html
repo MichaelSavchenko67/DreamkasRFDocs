@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classUsers.html">Users</a></li><li class="navelem"><a class="el" href="structUsers_1_1User__.html">User_</a></li>  </ul>
@@ -85,10 +108,7 @@ $(function() {
 <tr class="memitem:a7e9c8316c1ed6d9e8db2fc65a79da3f8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUsers_1_1User__.html#a7e9c8316c1ed6d9e8db2fc65a79da3f8">options</a></td></tr>
 <tr class="separator:a7e9c8316c1ed6d9e8db2fc65a79da3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00028">28</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="ab0cb6a489bda8e2fd27f446645ff4bd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0cb6a489bda8e2fd27f446645ff4bd6">&#9670;&nbsp;</a></span>faculty</h2>
 
@@ -101,9 +121,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00030">30</a></p>
-
-<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l03090">Menu::createDefaultUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#a772d853fef1e78ed0423b8091d420a8b">Menu::createDefaultUser()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -119,9 +137,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00030">30</a></p>
-
-<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l03090">Menu::createDefaultUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00344">sqlWrapper::deleteUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00673">sqlWrapper::findAndGetUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00382">sqlWrapper::findUser()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#a772d853fef1e78ed0423b8091d420a8b">Menu::createDefaultUser()</a>, <a class="el" href="classsqlWrapper.html#a4fe3c2771101002cae21a44ccb581856">sqlWrapper::deleteUser()</a>, <a class="el" href="classsqlWrapper.html#a9c50e028a56ec0ba3b568a1702dc5406">sqlWrapper::findAndGetUser()</a>, <a class="el" href="classsqlWrapper.html#adb5eca12d822d021871210ba5407dcc1">sqlWrapper::findUser()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -137,9 +153,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l04424">Menu::ExternalReceiptTask()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="printer_8cpp_source.html#l00974">Printer::user_init()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#acc22560f1e3315c1c223109b02c21697">Menu::ExternalReceiptTask()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classPrinter.html#a3e8fde1f1aab349ed86e731478508998">Printer::user_init()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -155,9 +169,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l04424">Menu::ExternalReceiptTask()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="printer_8cpp_source.html#l00974">Printer::user_init()</a>, <a class="el" href="users_8cpp_source.html#l00056">Users::user_name_parse()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#acc22560f1e3315c1c223109b02c21697">Menu::ExternalReceiptTask()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classPrinter.html#a3e8fde1f1aab349ed86e731478508998">Printer::user_init()</a>, <a class="el" href="classUsers.html#ad2edc00ddc6d2dec05f1895fa16579b5">Users::user_name_parse()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -173,9 +185,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l08839">Menu::action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l03090">Menu::createDefaultUser()</a>, <a class="el" href="menu_8cpp_source.html#l08934">Menu::external_action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l04424">Menu::ExternalReceiptTask()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00382">sqlWrapper::findUser()</a>, <a class="el" href="menu_8cpp_source.html#l02751">Menu::fn_shift_open_action()</a>, <a class="el" href="menu_8cpp_source.html#l08380">Menu::fs_close_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14967">Menu::fsCloseFromHub()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>, <a class="el" href="menu_8cpp_source.html#l18840">Menu::receipt_cancel_rb()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l27616">Menu::res_insert()</a>, <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="printer_8cpp_source.html#l00974">Printer::user_init()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a>, <a class="el" href="users_8cpp_source.html#l00056">Users::user_name_parse()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#a772d853fef1e78ed0423b8091d420a8b">Menu::createDefaultUser()</a>, <a class="el" href="classMenu.html#a0fbb7da416573956bd199fbe0af5f433">Menu::external_action_close_shift()</a>, <a class="el" href="classMenu.html#acc22560f1e3315c1c223109b02c21697">Menu::ExternalReceiptTask()</a>, <a class="el" href="classsqlWrapper.html#adb5eca12d822d021871210ba5407dcc1">sqlWrapper::findUser()</a>, <a class="el" href="classMenu.html#aefb0f41baad8d92b24bd5edce166d4cf">Menu::fn_shift_open_action()</a>, <a class="el" href="classMenu.html#af1a2f9a7f50250540af33ddef51253fc">Menu::fs_close_mode()</a>, <a class="el" href="classMenu.html#ab051b24d9b88019d2c3c6ef169277619">Menu::fsCloseFromHub()</a>, <a class="el" href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c">Menu::item_action_by_id()</a>, <a class="el" href="classMenu.html#a736f9723ede4118ebc9dd04f07968f4b">Menu::money_rep_send_to_cab()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec">Menu::print_report_mem_unit()</a>, <a class="el" href="classMenu.html#abde1554e0d2b1de7a5e5830fc0b57133">Menu::receipt_cancel_rb()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a>, <a class="el" href="classMenu.html#a1254a7fc6563df9f5f43bf4672d94ef5">Menu::receipt_send_rf()</a>, <a class="el" href="classMenu.html#a8141888afc9d54439ecd60f9967c0ef1">Menu::reg_struct_init()</a>, <a class="el" href="classMenu.html#a388408e334a3d996894a88518e74751e">Menu::res_insert()</a>, <a class="el" href="classMenu.html#a9eb7efadef24f374d46585a187ebe036">Menu::shift_rep_send_to_cab()</a>, <a class="el" href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9">Menu::task_manager()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classPrinter.html#a3e8fde1f1aab349ed86e731478508998">Printer::user_init()</a>, <a class="el" href="classUsers.html#ad2edc00ddc6d2dec05f1895fa16579b5">Users::user_name_parse()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -191,9 +201,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -209,9 +217,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00032">32</a></p>
-
-<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l03090">Menu::createDefaultUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00673">sqlWrapper::findAndGetUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00382">sqlWrapper::findUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00601">sqlWrapper::findUserByPasswd()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="menu_8cpp_source.html#l08610">Menu::passwd_test()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#a772d853fef1e78ed0423b8091d420a8b">Menu::createDefaultUser()</a>, <a class="el" href="classsqlWrapper.html#a9c50e028a56ec0ba3b568a1702dc5406">sqlWrapper::findAndGetUser()</a>, <a class="el" href="classsqlWrapper.html#adb5eca12d822d021871210ba5407dcc1">sqlWrapper::findUser()</a>, <a class="el" href="classsqlWrapper.html#a6868fae421412fa7f2e74cbe85ffbe59">sqlWrapper::findUserByPasswd()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classMenu.html#a2d2617b490d97afcbc122344e1ecc36f">Menu::user_init()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -227,9 +233,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00032">32</a></p>
-
-<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00382">sqlWrapper::findUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="menu_8cpp_source.html#l26890">Menu::user_init()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classsqlWrapper.html#adb5eca12d822d021871210ba5407dcc1">sqlWrapper::findUser()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -245,9 +249,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="users_8h_source.html">users.h</a> строка <a class="el" href="users_8h_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00289">sqlWrapper::addUser()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00323">sqlWrapper::createBlankUser()</a>, <a class="el" href="menu_8cpp_source.html#l04424">Menu::ExternalReceiptTask()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00612">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="menu_8cpp_source.html#l08610">Menu::passwd_test()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00492">sqlWrapper::updateUser()</a>, <a class="el" href="users_8cpp_source.html#l00016">Users::user_clear()</a>, <a class="el" href="users_8cpp_source.html#l00029">Users::user_copy()</a>, <a class="el" href="printer_8cpp_source.html#l00974">Printer::user_init()</a>, <a class="el" href="users_8cpp_source.html#l00056">Users::user_name_parse()</a> и <a class="el" href="users_8cpp_source.html#l00043">Users::user_view()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classsqlWrapper.html#a3c11cdb8d66d4fdd213fecb4ea2f3d1f">sqlWrapper::addUser()</a>, <a class="el" href="classsqlWrapper.html#a757e79456bd520d83410ba70c7345bcd">sqlWrapper::createBlankUser()</a>, <a class="el" href="classMenu.html#acc22560f1e3315c1c223109b02c21697">Menu::ExternalReceiptTask()</a>, <a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">sqlWrapper::parseUsersAnswer()</a>, <a class="el" href="classMenu.html#af9ba63691b715db1c69e7a24bdf9a561">Menu::passwd_test()</a>, <a class="el" href="classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd">Menu::receipt_correction_step()</a>, <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper::updateUser()</a>, <a class="el" href="classUsers.html#a56f7251f02d59fe193832672dc138c41">Users::user_clear()</a>, <a class="el" href="classUsers.html#af351bcd6f1182f1df0839214eb351120">Users::user_copy()</a>, <a class="el" href="classPrinter.html#a3e8fde1f1aab349ed86e731478508998">Printer::user_init()</a>, <a class="el" href="classUsers.html#ad2edc00ddc6d2dec05f1895fa16579b5">Users::user_name_parse()</a> и <a class="el" href="classUsers.html#a147fe3e52919fa4d74166ab8b782b3ba">Users::user_view()</a>.</p>
 
 </div>
 </div>
@@ -257,7 +259,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

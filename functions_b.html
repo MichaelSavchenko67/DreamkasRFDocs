@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,25 +32,42 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>back()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a011397134847f36db0ed7d7a93753677">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>BACKLOG
-: <a class="el" href="classFISGO__TEST__API.html#aa87218e0ffb890c4b1b4463808567d28">FISGO_TEST_API</a>
 </li>
 <li>BAD_ACTIVATE
 : <a class="el" href="structJSON_1_1POLL__PARSE__ERRORS.html#ab85725b281e124d9caf278937222ecc5a3f5cdb7c0680f1428a529b85dd4395d0">JSON::POLL_PARSE_ERRORS</a>
@@ -126,9 +146,6 @@ $(function() {
 <li>barcodeMutex
 : <a class="el" href="classMenu.html#a9af0f11addd80e9f2986a05f83797870">Menu</a>
 </li>
-<li>barcodeReader
-: <a class="el" href="classBarcodeScanner.html#ab52d51a963a5e3c02d3755041819daf2">BarcodeScanner</a>
-</li>
 <li>BarcodeScanner()
 : <a class="el" href="classBarcodeScanner.html#ac618efa2e7971228c379cdfb3c213faf">BarcodeScanner</a>
 </li>
@@ -144,12 +161,6 @@ $(function() {
 <li>basic_json()
 : <a class="el" href="classnlohmann_1_1basic__json.html#aed115142bd0c6c66c864700e0467df55">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1json__pointer.html#ada3100cdb8700566051828f1355fa745">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
-<li>basic_json_t
-: <a class="el" href="classnlohmann_1_1basic__json.html#afff7860310ae69f29f8158a77ec0ef13">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>BasicJsonType
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abf18f18793f84b0222aebb5a2a87da7a">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>batteryVoltage
 : <a class="el" href="structConfig.html#a654a54e49edc9ab9ce4b073b93c08d16">Config</a>
@@ -170,9 +181,6 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a0ff28dac23f2bdecee9564d07f51dcdc">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a43612db469c82118fc648c3729e40cee">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</a>
 </li>
-<li>begin_value
-: <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#afcb3bcf9da8aa95bd82067d1a67c2326">nlohmann::detail::primitive_iterator_t</a>
-</li>
 <li>BEL()
 : <a class="el" href="classBIOS_1_1BEL.html#a06dd245b8f8e8e72c9c7b450f94c0d63">BIOS::BEL</a>
 </li>
@@ -192,13 +200,11 @@ $(function() {
 : <a class="el" href="structAGENT.html#ac0c4ffe4faac62f5d3c46c30eeaf82f3">AGENT</a>
 , <a class="el" href="structAGENTS__REQUISITES.html#a1f240186fbbb292c5c186bdfa8a11a74">AGENTS_REQUISITES</a>
 </li>
-<li>binary_reader
-: <a class="el" href="classnlohmann_1_1basic__json.html#a7e06ed27ff517575ccb23fc23fca2b8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aed84f0302eb232d3b69f7653bef2337a">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+<li>binary_reader()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aed84f0302eb232d3b69f7653bef2337a">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 </li>
-<li>binary_writer
-: <a class="el" href="classnlohmann_1_1basic__json.html#af32e8be561b513f946e3ca511e968d58">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a373289af95a946c19bb4a58a5df71a78">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
+<li>binary_writer()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a373289af95a946c19bb4a58a5df71a78">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
 </li>
 <li>BIND_ERROR
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea756765cdd820bc4879bbb2ac5a15a641">FISGO_TEST_API</a>
@@ -215,9 +221,6 @@ $(function() {
 <li>bind_products_clear()
 : <a class="el" href="classJSON.html#ab7bd14a94b0b194c9e7ff1dd028aaa28">JSON</a>
 </li>
-<li>bind_server()
-: <a class="el" href="classFISGO__TEST__API.html#a0ff40d6247470269ba7aab459176850c">FISGO_TEST_API</a>
-</li>
 <li>BIOS()
 : <a class="el" href="classBIOS.html#a9a970ada931be8e1006afa656f24c80e">BIOS</a>
 </li>
@@ -232,12 +235,6 @@ $(function() {
 </li>
 <li>black_mode
 : <a class="el" href="structfiscal__doc.html#afab9f4307a5fecbf0a280f70b44f6b6f">fiscal_doc</a>
-</li>
-<li>blkidFile
-: <a class="el" href="classFlashMounter.html#aa063b0d783d1260c4ab274e4bd7e2698">FlashMounter</a>
-</li>
-<li>block
-: <a class="el" href="classMenu.html#a7afead7a78341770ab743a7223570ec0">Menu</a>
 </li>
 <li>bmp_cashier_draw()
 : <a class="el" href="classLcd.html#acd7cfb62db93982c64cdfa0b37dea1fd">Lcd</a>
@@ -260,10 +257,8 @@ $(function() {
 <li>BOLD_LINE_HORIZONTAL
 : <a class="el" href="classLcd.html#a0a2f9de9a394cdede40b603994658cd9">Lcd</a>
 </li>
-<li>boolean
-: <a class="el" href="structJSON_1_1TAG__VALUE.html#a12efd54c55b6a73834d67dbeb6fcf564">JSON::TAG_VALUE</a>
-, <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#afd0f8ec00c40301efffd01a276959371">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a3f5fe42a9b195de8d251d6d98d5ee92c">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
+<li>boolean()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a3f5fe42a9b195de8d251d6d98d5ee92c">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#ab7d8db672189164a8c0731e65ada1b45">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a476c4634b93546a1a555725e551c2b33">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a82ed080814fa656191a537284bb0c575">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
@@ -293,9 +288,6 @@ $(function() {
 : <a class="el" href="structConfig.html#a91e4b915dbee1727cc7ffd43fc37fcb7">Config</a>
 , <a class="el" href="structJSONKKTRegInfo.html#a805fe9d2a707ec808ea324d0edc94c01">JSONKKTRegInfo</a>
 </li>
-<li>bso_choose()
-: <a class="el" href="classMenu.html#a073bf841172bd979cf2f267a6005ebfe">Menu</a>
-</li>
 <li>BSO_OFF
 : <a class="el" href="classBIOS_1_1RUS.html#a3cd92330ad9aa343cf0565697b5bea3b">BIOS::RUS</a>
 </li>
@@ -323,17 +315,8 @@ $(function() {
 <li>BUF_OVERFLOW
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deaf7a60fc2b26f7d5f64af87440745038c">FISGO_TEST_API</a>
 </li>
-<li>BUF_POLLING_US
-: <a class="el" href="classPrinter.html#a6af065143914ac0858c17b4689efbfa5">Printer</a>
-</li>
 <li>buf_screen_saver
 : <a class="el" href="classLcd.html#ab903a5541f872674662d068843c06491">Lcd</a>
-</li>
-<li>BUF_SIZE
-: <a class="el" href="classFISGO__TEST__API.html#a327444f80e220e344d38909318084008">FISGO_TEST_API</a>
-</li>
-<li>buf_size
-: <a class="el" href="classMenu.html#ae9f68d5b06d2ac9913f99e72af82d12b">Menu</a>
 </li>
 <li>buf_tmp
 : <a class="el" href="classLcd.html#a1f3e8010ddfab3b99ed38ef4b3e970ab">Lcd</a>
@@ -377,7 +360,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

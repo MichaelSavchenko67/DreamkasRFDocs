@@ -1,52 +1,14 @@
 <map id="Menu::action_open_shift" name="Menu::action_open_shift">
-<area shape="rect" id="node1" title=" " alt="" coords="5,939,169,965"/>
-<area shape="rect" id="node2" href="$classMenu.html#acbe28e262a4d9ebba4fce48da249a0fa" title=" " alt="" coords="257,825,404,866"/>
-<area shape="rect" id="node3" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="548,545,635,572"/>
-<area shape="rect" id="node4" href="$dynamic__mask_8h.html#a8c577d3e91e5687e214179d4f8eb22fb" title=" " alt="" coords="522,967,661,993"/>
-<area shape="rect" id="node5" href="$dynamic__mask_8h.html#a0e80758225c548dd7d15bbc23c316b8b" title=" " alt="" coords="552,1017,631,1044"/>
-<area shape="rect" id="node6" href="$dynamic__mask_8h.html#a07e34b163ff4b9bd28fbe65515eaf216" title=" " alt="" coords="548,1068,635,1095"/>
-<area shape="rect" id="node7" href="$dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46" title=" " alt="" coords="795,56,921,83"/>
-<area shape="rect" id="node8" href="$dynamic__mask_8h.html#af053bcb326e6a6288279381a5a0820d0" title=" " alt="" coords="797,1456,919,1483"/>
-<area shape="rect" id="node11" href="$dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2" title=" " alt="" coords="536,596,647,623"/>
-<area shape="rect" id="node12" href="$classMenu.html#a9eb7efadef24f374d46585a187ebe036" title=" " alt="" coords="518,698,665,739"/>
-<area shape="rect" id="node41" href="$classMenu.html#ad83512893bb284304d9fefad779a0471" title="checkCurDate &#45; Проверка текущей даты" alt="" coords="257,444,404,471"/>
-<area shape="rect" id="node43" href="$dynamic__mask_8h.html#ac1a34708de1abe6f6b44920de9458025" title=" " alt="" coords="257,1141,404,1168"/>
-<area shape="rect" id="node44" href="$classMenu.html#aefb0f41baad8d92b24bd5edce166d4cf" title=" " alt="" coords="261,597,401,638"/>
-<area shape="rect" id="node45" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="282,1192,379,1219"/>
-<area shape="rect" id="node46" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title=" " alt="" coords="217,1243,444,1269"/>
-<area shape="rect" id="node49" href="$classMenu.html#a15040ac3df50a2dc328b4da7350b41c6" title=" " alt="" coords="241,1294,420,1335"/>
-<area shape="rect" id="node9" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="541,815,642,841"/>
-<area shape="rect" id="node10" href="$classMenu.html#a6248d4a0321b24500ab543a9088c0aee" title=" " alt="" coords="509,865,674,892"/>
-<area shape="rect" id="node40" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="522,764,661,791"/>
-<area shape="rect" id="node13" href="$classJSON.html#a7dd07dbdc50b7a2ccbc26686164bfb0f" title=" " alt="" coords="786,209,930,250"/>
-<area shape="rect" id="node14" href="$classConvert.html#a224bfb87755e0b4c8eb3f76edeb817c2" title=" " alt="" coords="767,275,949,301"/>
-<area shape="rect" id="node15" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="771,5,945,32"/>
-<area shape="rect" id="node16" href="$classConvert.html#aa5a254b23335ed91459732aafd5a5db0" title=" " alt="" coords="782,325,934,352"/>
-<area shape="rect" id="node17" href="$dynamic__mask_8h.html#a1e9501a3a115e9d6a7bfb8fe1855c6f7" title=" " alt="" coords="797,376,919,403"/>
-<area shape="rect" id="node18" href="$dynamic__mask_8h.html#a46d19c6a6f67cc57d36eb67f86f0f2ae" title=" " alt="" coords="793,427,923,453"/>
-<area shape="rect" id="node19" href="$dynamic__mask_8h.html#adc7358205e5fefb896b129d0ef7d7f10" title=" " alt="" coords="795,477,921,504"/>
-<area shape="rect" id="node20" href="$dynamic__mask_8h.html#a04b1ea7997c5ad60d340774969964a1f" title=" " alt="" coords="802,528,914,555"/>
-<area shape="rect" id="node21" href="$dynamic__mask_8h.html#afe325fbd7cb74fd18fa759e766bc82e3" title=" " alt="" coords="819,579,897,605"/>
-<area shape="rect" id="node22" href="$dynamic__mask_8h.html#aeb994cdf84f880a9d3c5dad68ce307a5" title=" " alt="" coords="779,629,937,656"/>
-<area shape="rect" id="node23" href="$dynamic__mask_8h.html#a6e40b360605f052b570c71f8ca2229da" title=" " alt="" coords="797,680,919,707"/>
-<area shape="rect" id="node24" href="$dynamic__mask_8h.html#afc579ac6a671c874eea4434e25e5c5aa" title=" " alt="" coords="763,731,953,757"/>
-<area shape="rect" id="node25" href="$dynamic__mask_8h.html#a36970e3d2b65f0aba867861ec7fecdea" title=" " alt="" coords="770,781,946,808"/>
-<area shape="rect" id="node26" href="$dynamic__mask_8h.html#a06c40fc08ae5c29a76b9fceb75387258" title=" " alt="" coords="787,832,929,859"/>
-<area shape="rect" id="node27" href="$dynamic__mask_8h.html#a2b6171581b5ab89944b4a44a079d5033" title=" " alt="" coords="747,883,969,909"/>
-<area shape="rect" id="node28" href="$dynamic__mask_8h.html#aa9970c5af5f4664dbef2ee0e886870d6" title=" " alt="" coords="765,933,951,960"/>
-<area shape="rect" id="node29" href="$dynamic__mask_8h.html#a0fe21631e28978892bf1b78a9e49c97f" title=" " alt="" coords="772,984,944,1011"/>
-<area shape="rect" id="node30" href="$dynamic__mask_8h.html#a56d5a114b75d7df11fa7041a7428d1e1" title=" " alt="" coords="779,1035,937,1061"/>
-<area shape="rect" id="node31" href="$dynamic__mask_8h.html#af9305f94a1980ba9185359db20889ca1" title=" " alt="" coords="797,1085,919,1112"/>
-<area shape="rect" id="node32" href="$dynamic__mask_8h.html#a048b078f68840f2f4410f6e08901f183" title=" " alt="" coords="756,1136,960,1163"/>
-<area shape="rect" id="node33" href="$dynamic__mask_8h.html#ae252e35d44c4b64bfb8e976c1d2e4e64" title=" " alt="" coords="773,1187,943,1213"/>
-<area shape="rect" id="node34" href="$dynamic__mask_8h.html#a544147e43a3a468433ba56037508ea5c" title=" " alt="" coords="765,1238,951,1279"/>
-<area shape="rect" id="node35" href="$dynamic__mask_8h.html#a665937ab277a36906eb12d923fc9419e" title=" " alt="" coords="747,1304,969,1331"/>
-<area shape="rect" id="node36" href="$dynamic__mask_8h.html#a2ec9786124161bebcb16949ff09136b3" title=" " alt="" coords="765,1355,951,1381"/>
-<area shape="rect" id="node37" href="$dynamic__mask_8h.html#afb8cfbb087ec2096e8f17f89dda71184" title=" " alt="" coords="739,1405,977,1432"/>
-<area shape="rect" id="node38" href="$dynamic__mask_8h.html#a3d361cbe400b305675d3f443ea5564f4" title=" " alt="" coords="757,107,959,133"/>
-<area shape="rect" id="node39" href="$classMenu.html#aef7ebc14f9cb1e3ea71dc28404adca7b" title=" " alt="" coords="779,157,937,184"/>
-<area shape="rect" id="node42" href="$classConvert.html#a78813c1afce96d9a4ffb4bb77995d0e6" title=" " alt="" coords="492,444,691,471"/>
-<area shape="rect" id="node47" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="515,1196,668,1223"/>
-<area shape="rect" id="node48" href="$classMenu.html#a1e798b0d7908d29bb32d351c01efa44f" title="showLicenseList &#45; вывод списка фич на экран с заголовком" alt="" coords="512,1247,671,1273"/>
-<area shape="rect" id="node50" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="503,1301,679,1328"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,169,159"/>
+<area shape="rect" id="node2" href="$classMenu.html#ad83512893bb284304d9fefad779a0471" title="checkCurDate &#45; Проверка текущей даты" alt="" coords="257,56,404,83"/>
+<area shape="rect" id="node6" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="282,107,379,133"/>
+<area shape="rect" id="node7" href="$classMenu.html#ae8300ea564716ac0a21f339086bb7998" title=" " alt="" coords="217,157,444,184"/>
+<area shape="rect" id="node10" href="$classMenu.html#a15040ac3df50a2dc328b4da7350b41c6" title=" " alt="" coords="241,209,420,250"/>
+<area shape="rect" id="node3" href="$classConvert.html#a78813c1afce96d9a4ffb4bb77995d0e6" title=" " alt="" coords="492,5,691,32"/>
+<area shape="rect" id="node4" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="504,56,679,83"/>
+<area shape="rect" id="node5" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="548,107,635,133"/>
+<area shape="rect" id="node8" href="$classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; получить список фич, скор действия которых заканчивается" alt="" coords="515,157,668,184"/>
+<area shape="rect" id="node9" href="$classLicense.html#a11131246592e58f1e238b0c2ba2d3c1c" title="getLicList &#45; получить копию списка тэгов" alt="" coords="739,157,869,184"/>
+<area shape="rect" id="node11" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="503,212,679,239"/>
+<area shape="rect" id="node12" href="$classMenu.html#a05da5743929b000b220fdac83a09da8a" title=" " alt="" coords="524,263,659,289"/>
 </map>

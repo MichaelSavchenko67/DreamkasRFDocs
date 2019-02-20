@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,23 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>G()
-: <a class="el" href="classCMd5Sum.html#af5bd1db222a723cfcc2ce6a59275cab3">CMd5Sum</a>
-</li>
 <li>Gen_uuid()
 : <a class="el" href="classGen__uuid.html#a0f767db6bec06d28cf1367350c1ced89">Gen_uuid</a>
 </li>
@@ -54,33 +74,16 @@ $(function() {
 </li>
 <li>get()
 : <a class="el" href="classCounters.html#a445befd237bf6a05274811e3a8aa4a66">Counters</a>
-, <a class="el" href="classnlohmann_1_1basic__json.html#a30ff63a4d671eb14f652356cd934320c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#af70e7d5f19a2ee196e24f58acf579411">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#a6b187a22994c12c8cae0dd5ee99dc85e">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>get_allocator()
 : <a class="el" href="classnlohmann_1_1basic__json.html#af4ac14224fbdd29d3547fcb11bb55c8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>get_and_create()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
 <li>get_cash()
-: <a class="el" href="classMenu.html#ac81fc27b0289eda493c1836f2ce3ea4a">Menu</a>
+: <a class="el" href="classMenu.html#ad8e6a89a4a9ee495d156b9b8d91f71b7">Menu</a>
 </li>
 <li>get_cash_from_buyer()
 : <a class="el" href="classMenu.html#a333e95e2fee06fbd73394f1dd5eb1342">Menu</a>
-</li>
-<li>get_cbor_array()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ac3dc99d36754aa0beac506b30604a8ed">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_cbor_float_prefix()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a2b5cb010077da6241a18bb334736464c">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
-</li>
-<li>get_cbor_object()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a2fcc776cd2c7bb52bbc511e97d36978a">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_cbor_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#acca76844160000e1d8215cb5c7afbba1">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 </li>
 <li>get_character()
 : <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>
@@ -88,20 +91,11 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#ae0760af923583de6354725e901d1869d">nlohmann::detail::input_stream_adapter</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#abb62b34cf77e557ce5321b7f2490c3b0">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
 </li>
-<li>get_checked()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
-<li>get_codepoint()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>get_data_int()
 : <a class="el" href="classMenu.html#aad79e98552f82d7cc862f52b62058de4">Menu</a>
 </li>
 <li>get_data_int_pro()
 : <a class="el" href="classMenu.html#a463fd46ee68fe3d818ccda9e54584a28">Menu</a>
-</li>
-<li>get_decimal_point()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ae545b0856f57220645d749ab8c494f47">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_error_message()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
@@ -111,30 +105,6 @@ $(function() {
 </li>
 <li>get_goods_type()
 : <a class="el" href="classPositions_1_1Position.html#a9ffa06f06896b25816ecd19646f2c2a8">Positions::Position</a>
-</li>
-<li>get_ignore_noop()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a11a145292c1cc44656c34a6aef38759c">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_impl()
-: <a class="el" href="classnlohmann_1_1basic__json.html#ac686d87a2261f85f1df97035b14a6e3a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>get_impl_ptr()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a58b65f595883fb93333423ec5e3bafee">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>get_msgpack_array()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a09d3eed7523da6f61e7ffa98823aae2b">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_msgpack_float_prefix()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#ad452d114696407b98abc69b6001c270e">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
-</li>
-<li>get_msgpack_object()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ad1190bb3499e243b0bbf795743a35563">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_msgpack_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a5526ed98ca4c436cbae6f8a77ea207b8">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_number()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a66b03a2376bfe1aa9ec28ec983e714ea">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 </li>
 <li>get_number_float()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
@@ -163,9 +133,6 @@ $(function() {
 <li>get_ref()
 : <a class="el" href="classnlohmann_1_1basic__json.html#afbd800010b67619463c0fce6e74f7878">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
-<li>get_ref_impl()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a040a5feb1eb48da9134924217b25bcf6">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
 <li>get_reg_data_ext()
 : <a class="el" href="classMenu.html#a25a3c0eef455a419eddb1baedc91a0e6">Menu</a>
 </li>
@@ -173,8 +140,7 @@ $(function() {
 : <a class="el" href="classCounters.html#a1e10d9f1b55e2c09dc92d60f521d229b">Counters</a>
 </li>
 <li>get_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a5083d0b94f560550676a03e238ebe716">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_tax_name()
 : <a class="el" href="classTaxes.html#a619786aa6f70d5df56ed121af99b760d">Taxes</a>
@@ -188,12 +154,8 @@ $(function() {
 <li>get_tax_sys_name()
 : <a class="el" href="classTaxes.html#a30e35f00f7deb950c2748c12055effc3">Taxes</a>
 </li>
-<li>get_token()
-: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>get_token_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#acf8d3f7b17efd05655fcb6f47a2eaa79">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_total_sum_position()
 : <a class="el" href="classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf">Positions::Position</a>
@@ -206,30 +168,6 @@ $(function() {
 </li>
 <li>get_total_tax_sum()
 : <a class="el" href="classPositions.html#a104d403cfdd03ff3181994544ecbefd1">Positions</a>
-</li>
-<li>get_ubjson_array()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a4e8ef9561d4403ea68e3c2712fd289e2">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_ubjson_float_prefix()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a6837b20574152f7f645d0f6cd9fafdeb">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
-</li>
-<li>get_ubjson_object()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ad0932dd568fcbbd2b4c2ccf9122544a5">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_ubjson_size_type()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a4eae4604064b5dfe6d04e42ffc9e0753">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_ubjson_size_value()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a435be58e83c8491556d8f1a1b3439155">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_ubjson_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a2e01eab458020d18c975e8df55b20eca">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_ubjson_value()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a5f425199a77f403e32f076ff8487f853">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>get_unchecked()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>get_value()
 : <a class="el" href="classMenu.html#a3f1fbe87fa6eb94a671a6d2188c96074">Menu</a>
@@ -350,9 +288,6 @@ $(function() {
 </li>
 <li>getCounters_XZ()
 : <a class="el" href="classBIOS.html#a863b43a3c51e47b99fd8dbb9be7ef1a9">BIOS</a>
-</li>
-<li>getCounterVal()
-: <a class="el" href="classCounters.html#a1a57fbb83510f7e1b88170afda1baa03">Counters</a>
 </li>
 <li>getCrCanceled()
 : <a class="el" href="classHttpsExchange.html#a6c760a2e1e881e6111da57959a13b4ef">HttpsExchange</a>
@@ -564,9 +499,6 @@ $(function() {
 <li>getNumber()
 : <a class="el" href="structJSON_1_1TAG__VALUE.html#a94df919561bf098f581f5292ce503a29">JSON::TAG_VALUE</a>
 </li>
-<li>getNumFDofReg()
-: <a class="el" href="classBIOS_1_1RUS.html#a580fdc35ce287ae2b58151a3f1971562">BIOS::RUS</a>
-</li>
 <li>getOFDAddress()
 : <a class="el" href="classBIOS.html#ab04b28eb9feaf33a536d5499201a8a9f">BIOS</a>
 </li>
@@ -700,9 +632,6 @@ $(function() {
 <li>getStrFullDateTime()
 : <a class="el" href="classConvert.html#adbccac6d1597ebd523710b4a9ddfd40f">Convert</a>
 </li>
-<li>GetStrIndex()
-: <a class="el" href="classMenuItem.html#a504bce1d2c86a81d5923a23f5948a119">MenuItem</a>
-</li>
 <li>getString()
 : <a class="el" href="structJSON_1_1TAG__VALUE.html#a0b224e06f6b4aa14e7577cf14987b8b9">JSON::TAG_VALUE</a>
 </li>
@@ -797,9 +726,6 @@ $(function() {
 <li>getUuid()
 : <a class="el" href="classHttpsExchange.html#a9d5efcab0cdc079a28c233d61ee1c0fa">HttpsExchange</a>
 </li>
-<li>getVendor()
-: <a class="el" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">NodeConflictResolver</a>
-</li>
 <li>getVersion()
 : <a class="el" href="classHttpsExchange.html#a4ae3aef040d97603a0cfe982939cc357">HttpsExchange</a>
 , <a class="el" href="classScaleProtocolInterface.html#ac21c401c4904bdaa62399e8fdda6f369">ScaleProtocolInterface</a>
@@ -834,9 +760,6 @@ $(function() {
 </li>
 <li>getZoneinfo()
 : <a class="el" href="classTimeSync.html#a4002be2e1a3c74099fb0d7b642c09053">TimeSync</a>
-</li>
-<li>GG()
-: <a class="el" href="classCMd5Sum.html#a27966767054d9861972e1a005d5c5f9c">CMd5Sum</a>
 </li>
 <li>GoDown()
 : <a class="el" href="classMenuTree.html#ac50897814305d7f0202c7c0ac203847a">MenuTree</a>
@@ -875,7 +798,7 @@ $(function() {
 : <a class="el" href="classLcd.html#ab456f8af3f7f01f9a8317221fcbb014b">Lcd</a>
 </li>
 <li>GoodsData()
-: <a class="el" href="classGoodsData.html#aa53200c187dd73c086eb311d1adb8174">GoodsData</a>
+: <a class="el" href="classGoodsData.html#a6441dfad33d88d2b83602eeb7533ccd1">GoodsData</a>
 </li>
 <li>GoodsDataJsonCreate()
 : <a class="el" href="classFISGO__TEST__API.html#a9171fc61c0c0f89366d8a458e58190d8">FISGO_TEST_API</a>
@@ -899,7 +822,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

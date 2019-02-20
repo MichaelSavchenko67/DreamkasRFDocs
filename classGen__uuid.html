@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,20 +32,39 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
 <a href="classGen__uuid-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс Gen_uuid</div>  </div>
@@ -57,7 +79,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classGen__uuid__coll__graph.png" border="0" usemap="#Gen__uuid_coll__map" alt="Collaboration graph"/></div>
 <map name="Gen__uuid_coll__map" id="Gen__uuid_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,145,141"/>
+<area shape="rect"  title=" " alt="" coords="5,5,111,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -69,20 +91,8 @@ $(function() {
 <tr class="separator:a3ffa9951d4415ea22ffff656ae84b449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73e0b33921bae6aa6cd8bdb3a11761c7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGen__uuid.html#a73e0b33921bae6aa6cd8bdb3a11761c7">genUuid</a> (string factoryNumber)</td></tr>
 <tr class="separator:a73e0b33921bae6aa6cd8bdb3a11761c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Закрытые статические данные</h2></td></tr>
-<tr class="memitem:aca5750ff3c9dd1582b505e0ff35bfdd4"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGen__uuid.html#aca5750ff3c9dd1582b505e0ff35bfdd4">FACT_NUM_LEN</a> = 10</td></tr>
-<tr class="separator:aca5750ff3c9dd1582b505e0ff35bfdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8d36ee220d42bfeb10d4075a608f02"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGen__uuid.html#afe8d36ee220d42bfeb10d4075a608f02">UUID_LEN</a> = 36</td></tr>
-<tr class="separator:afe8d36ee220d42bfeb10d4075a608f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c83d208e6564560dd0e14e675cf28f"><td class="memItemLeft" align="right" valign="top">static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGen__uuid.html#a17c83d208e6564560dd0e14e675cf28f">UUID_PART_LEN</a> = 26</td></tr>
-<tr class="separator:a17c83d208e6564560dd0e14e675cf28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8h_source.html">gen_uuid.h</a> строка <a class="el" href="gen__uuid_8h_source.html#l00016">16</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a0f767db6bec06d28cf1367350c1ced89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f767db6bec06d28cf1367350c1ced89">&#9670;&nbsp;</a></span>Gen_uuid()</h2>
 
@@ -97,8 +107,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8cpp_source.html">gen_uuid.cpp</a> строка <a class="el" href="gen__uuid_8cpp_source.html#l00013">13</a></p>
 <div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                   {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// TODO Auto-generated constructor stub</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -124,8 +132,6 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8cpp_source.html">gen_uuid.cpp</a> строка <a class="el" href="gen__uuid_8cpp_source.html#l00018">18</a></p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -145,12 +151,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8cpp_source.html">gen_uuid.cpp</a> строка <a class="el" href="gen__uuid_8cpp_source.html#l00026">26</a></p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">string</span> result = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(factoryNumber.size() != <a class="code" href="classGen__uuid.html#aca5750ff3c9dd1582b505e0ff35bfdd4">FACT_NUM_LEN</a>)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    random_generator gen;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uuid <span class="keywordtype">id</span> = gen();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">string</span> generatedUuid = to_string(<span class="keywordtype">id</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">string</span> uuidSubstr = generatedUuid.substr(0, <a class="code" href="classGen__uuid.html#a17c83d208e6564560dd0e14e675cf28f">UUID_PART_LEN</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    result = uuidSubstr + factoryNumber;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="classGen__uuid_html_aca5750ff3c9dd1582b505e0ff35bfdd4"><div class="ttname"><a href="classGen__uuid.html#aca5750ff3c9dd1582b505e0ff35bfdd4">Gen_uuid::FACT_NUM_LEN</a></div><div class="ttdeci">static const uint16_t FACT_NUM_LEN</div><div class="ttdef"><b>Definition:</b> <a href="gen__uuid_8h_source.html#l00019">gen_uuid.h:19</a></div></div>
-<div class="ttc" id="classGen__uuid_html_a17c83d208e6564560dd0e14e675cf28f"><div class="ttname"><a href="classGen__uuid.html#a17c83d208e6564560dd0e14e675cf28f">Gen_uuid::UUID_PART_LEN</a></div><div class="ttdeci">static const uint16_t UUID_PART_LEN</div><div class="ttdef"><b>Definition:</b> <a href="gen__uuid_8h_source.html#l00021">gen_uuid.h:21</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24790">Menu::factory()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">string</span> result = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span>(factoryNumber.size() != FACT_NUM_LEN)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    random_generator gen;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uuid <span class="keywordtype">id</span> = gen();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">string</span> generatedUuid = to_string(<span class="keywordtype">id</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">string</span> uuidSubstr = generatedUuid.substr(0, UUID_PART_LEN);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    result = uuidSubstr + factoryNumber;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="classMenu.html#a92c46de72491349b04010174ab88fb38">Menu::factory()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -158,98 +160,21 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classGen__uuid_a73e0b33921bae6aa6cd8bdb3a11761c7_icgraph.png" border="0" usemap="#classGen__uuid_a73e0b33921bae6aa6cd8bdb3a11761c7_icgraph" alt=""/></div>
 <map name="classGen__uuid_a73e0b33921bae6aa6cd8bdb3a11761c7_icgraph" id="classGen__uuid_a73e0b33921bae6aa6cd8bdb3a11761c7_icgraph">
-<area shape="rect"  title=" " alt="" coords="636,5,769,32"/>
-<area shape="rect"  href="classMenu.html#a92c46de72491349b04010174ab88fb38" title="factory &#45; Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ð¾" alt="" coords="485,5,588,32"/>
-<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
-<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
-<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
-<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect"  title=" " alt="" coords="156,5,289,32"/>
+<area shape="rect"  href="classMenu.html#a92c46de72491349b04010174ab88fb38" title="factory &#45; Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ð¾" alt="" coords="5,5,108,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="aca5750ff3c9dd1582b505e0ff35bfdd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca5750ff3c9dd1582b505e0ff35bfdd4">&#9670;&nbsp;</a></span>FACT_NUM_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint16_t Gen_uuid::FACT_NUM_LEN = 10</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8h_source.html">gen_uuid.h</a> строка <a class="el" href="gen__uuid_8h_source.html#l00019">19</a></p>
-
-</div>
-</div>
-<a id="afe8d36ee220d42bfeb10d4075a608f02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8d36ee220d42bfeb10d4075a608f02">&#9670;&nbsp;</a></span>UUID_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint16_t Gen_uuid::UUID_LEN = 36</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8h_source.html">gen_uuid.h</a> строка <a class="el" href="gen__uuid_8h_source.html#l00020">20</a></p>
-
-</div>
-</div>
-<a id="a17c83d208e6564560dd0e14e675cf28f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c83d208e6564560dd0e14e675cf28f">&#9670;&nbsp;</a></span>UUID_PART_LEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint16_t Gen_uuid::UUID_PART_LEN = 26</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="gen__uuid_8h_source.html">gen_uuid.h</a> строка <a class="el" href="gen__uuid_8h_source.html#l00021">21</a></p>
-
-</div>
-</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="gen__uuid_8h_source.html">gen_uuid.h</a></li>
-<li>src/appl/<a class="el" href="gen__uuid_8cpp_source.html">gen_uuid.cpp</a></li>
+<li>src/appl/<a class="el" href="gen__uuid_8cpp.html">gen_uuid.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

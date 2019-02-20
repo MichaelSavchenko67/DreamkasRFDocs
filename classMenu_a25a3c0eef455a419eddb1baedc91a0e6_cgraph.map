@@ -1,52 +1,17 @@
 <map id="Menu::get_reg_data_ext" name="Menu::get_reg_data_ext">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1373,168,1400"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a148263cdb4aa96a3ff8e871b4aaba1cf" title=" " alt="" coords="260,537,359,564"/>
-<area shape="rect" id="node3" href="$classFilesFG.html#a39e5e53c511abb3058e9c71cfc3a15a4" title=" " alt="" coords="229,588,390,615"/>
-<area shape="rect" id="node26" href="$classConvert.html#a8b00e2b4e043b342735ee8697eade0de" title=" " alt="" coords="244,800,375,827"/>
-<area shape="rect" id="node27" href="$classMenu.html#aa8a2ab97a638fd23cdd112e740e95bef" title=" " alt="" coords="217,851,402,877"/>
-<area shape="rect" id="node28" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="512,1120,599,1147"/>
-<area shape="rect" id="node29" href="$classMenu.html#a282c0a5c047b556a3c3098524455ad0a" title=" " alt="" coords="240,953,379,994"/>
-<area shape="rect" id="node30" href="$classMenu.html#ab7cd2fee1108066b9af9009c4c6d2603" title=" " alt="" coords="220,1019,399,1045"/>
-<area shape="rect" id="node31" href="$classMenu.html#adca6c604c8e381a29875aeccab7756c2" title=" " alt="" coords="223,1069,395,1096"/>
-<area shape="rect" id="node32" href="$classMenu.html#ade7fa0eb23cdfe5bbde28232c477ac81" title=" " alt="" coords="242,1120,377,1147"/>
-<area shape="rect" id="node33" href="$classMenu.html#aad79e98552f82d7cc862f52b62058de4" title=" " alt="" coords="489,1171,622,1197"/>
-<area shape="rect" id="node34" href="$classFiscalDocDb.html#ae80f41a7cecbce0ecef83b6142afffc6" title="clearFiscalDb очистка таблицы фискальных документов" alt="" coords="216,1221,403,1248"/>
-<area shape="rect" id="node35" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="259,1272,360,1299"/>
-<area shape="rect" id="node36" href="$classMenu.html#a59aa729e4e60ee06c417d4410c7764df" title=" " alt="" coords="235,1323,384,1349"/>
-<area shape="rect" id="node37" href="$classMenu.html#a29dbc71c031e13554911d060a216822d" title=" " alt="" coords="240,1373,379,1400"/>
-<area shape="rect" id="node38" href="$classMenu.html#ae968d9a2f848eb7e1783c798079f6dfd" title=" " alt="" coords="233,1425,386,1466"/>
-<area shape="rect" id="node39" href="$classNet.html#af97b6ac4bb90203f43ce3f35f08aa156" title=" " alt="" coords="235,1491,383,1517"/>
-<area shape="rect" id="node40" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="232,1541,387,1568"/>
-<area shape="rect" id="node41" href="$classBIOS.html#ac2f5be6f8fde04a0eee16f2c349ef644" title=" " alt="" coords="237,1592,381,1619"/>
-<area shape="rect" id="node42" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="507,1668,604,1695"/>
-<area shape="rect" id="node43" href="$classMenu.html#a4145ff5326c102dd55b1fa5d8668bc67" title=" " alt="" coords="226,1693,393,1720"/>
-<area shape="rect" id="node44" href="$classMenu.html#aca966cfad68c6131500b8f65c8120cc8" title=" " alt="" coords="468,1769,643,1796"/>
-<area shape="rect" id="node45" href="$classMenu.html#a8141888afc9d54439ecd60f9967c0ef1" title=" " alt="" coords="237,1795,381,1821"/>
-<area shape="rect" id="node46" href="$classMenu.html#a12ac9da969661bb914c183ed0c7824c8" title=" " alt="" coords="250,1845,369,1872"/>
-<area shape="rect" id="node47" href="$classMenu.html#adf4a1a8aa7cb089f745b607b7704c633" title=" " alt="" coords="234,1897,385,1938"/>
-<area shape="rect" id="node48" href="$classMenu.html#aadad8726e108b98dfe1db8c2fa5b69ab" title=" " alt="" coords="235,1963,383,1989"/>
-<area shape="rect" id="node49" href="$classMenu.html#ab2767c2d9adcc71ee45afa2f8667b1ac" title=" " alt="" coords="232,2013,387,2040"/>
-<area shape="rect" id="node50" href="$classConvert.html#a17a5100e11843e35ddd80088e77360bf" title=" " alt="" coords="239,2064,379,2091"/>
-<area shape="rect" id="node4" href="$dynamic__mask_8h.html#ac0c19f4f5e9c5f0ef62c4bf8e1e33b3b" title=" " alt="" coords="489,5,622,32"/>
-<area shape="rect" id="node5" href="$dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="499,56,612,83"/>
-<area shape="rect" id="node6" href="$dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567" title=" " alt="" coords="516,107,595,133"/>
-<area shape="rect" id="node7" href="$dynamic__mask_8h.html#a8c577d3e91e5687e214179d4f8eb22fb" title=" " alt="" coords="486,157,625,184"/>
-<area shape="rect" id="node8" href="$dynamic__mask_8h.html#a989b17a1faad5d2c7c0224e72be6c925" title=" " alt="" coords="480,208,631,235"/>
-<area shape="rect" id="node9" href="$dynamic__mask_8h.html#a7d36c5398e4cb5f15e0fe4c3a5b0cf9f" title=" " alt="" coords="473,259,637,285"/>
-<area shape="rect" id="node10" href="$dynamic__mask_8h.html#af0cc14ce6d7b3002c40b4fdcdba49c89" title=" " alt="" coords="530,309,581,336"/>
-<area shape="rect" id="node11" href="$dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020" title=" " alt="" coords="473,360,637,387"/>
-<area shape="rect" id="node12" href="$dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876" title=" " alt="" coords="461,411,650,437"/>
-<area shape="rect" id="node13" href="$dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432" title=" " alt="" coords="472,461,639,488"/>
-<area shape="rect" id="node14" href="$dynamic__mask_8h.html#af739b51418143306512c731ab708edc4" title=" " alt="" coords="498,512,613,539"/>
-<area shape="rect" id="node15" href="$dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4" title=" " alt="" coords="451,563,660,589"/>
-<area shape="rect" id="node16" href="$dynamic__mask_8h.html#a645279b08c55617a05f3342afdb50604" title=" " alt="" coords="477,613,633,640"/>
-<area shape="rect" id="node17" href="$dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2" title=" " alt="" coords="468,664,643,691"/>
-<area shape="rect" id="node18" href="$dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa" title=" " alt="" coords="466,715,645,741"/>
-<area shape="rect" id="node19" href="$dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2" title=" " alt="" coords="506,765,605,792"/>
-<area shape="rect" id="node20" href="$dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8" title=" " alt="" coords="473,816,638,843"/>
-<area shape="rect" id="node21" href="$dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194" title=" " alt="" coords="505,867,605,893"/>
-<area shape="rect" id="node22" href="$dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6" title=" " alt="" coords="501,917,610,944"/>
-<area shape="rect" id="node23" href="$dynamic__mask_8h.html#a487f22b7f80c7080eb33530d494ef3b1" title=" " alt="" coords="498,968,613,995"/>
-<area shape="rect" id="node24" href="$dynamic__mask_8h.html#a921ed59afb72f6cd825dcba793a4aed1" title=" " alt="" coords="479,1019,631,1045"/>
-<area shape="rect" id="node25" href="$dynamic__mask_8h.html#a70f5f4df2d5a722308d5b84c55d561df" title=" " alt="" coords="482,1069,629,1096"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,257,168,284"/>
+<area shape="rect" id="node2" href="$classMenu.html#ab7cd2fee1108066b9af9009c4c6d2603" title=" " alt="" coords="216,64,395,91"/>
+<area shape="rect" id="node7" href="$classMenu.html#ade7fa0eb23cdfe5bbde28232c477ac81" title=" " alt="" coords="238,217,373,244"/>
+<area shape="rect" id="node10" href="$classMenu.html#aad79e98552f82d7cc862f52b62058de4" title=" " alt="" coords="471,123,604,149"/>
+<area shape="rect" id="node11" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="494,291,581,317"/>
+<area shape="rect" id="node12" href="$classMenu.html#aca966cfad68c6131500b8f65c8120cc8" title=" " alt="" coords="218,341,393,368"/>
+<area shape="rect" id="node15" href="$classConvert.html#a17a5100e11843e35ddd80088e77360bf" title=" " alt="" coords="235,392,375,419"/>
+<area shape="rect" id="node3" href="$classMenu.html#a05203c188dcd29c53f38370dc8e32def" title=" " alt="" coords="456,57,619,98"/>
+<area shape="rect" id="node6" href="$classTaxes.html#a30e35f00f7deb950c2748c12055effc3" title=" " alt="" coords="449,5,625,32"/>
+<area shape="rect" id="node4" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="680,64,813,91"/>
+<area shape="rect" id="node5" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="683,119,811,145"/>
+<area shape="rect" id="node8" href="$classMenu.html#a36df8d35739295add4f09ee848d8739f" title=" " alt="" coords="443,173,632,200"/>
+<area shape="rect" id="node9" href="$classMenu.html#ad4936d5dc8350ec7e1dd3e0180cb430d" title=" " alt="" coords="469,225,605,266"/>
+<area shape="rect" id="node13" href="$classConvert.html#a9e6122823cae3f484ad2df4f600cbb7d" title=" " alt="" coords="461,342,614,383"/>
+<area shape="rect" id="node14" href="$classConvert.html#a4b8ff1a399f2fcd85dde951479728adc" title=" " alt="" coords="456,408,619,435"/>
 </map>

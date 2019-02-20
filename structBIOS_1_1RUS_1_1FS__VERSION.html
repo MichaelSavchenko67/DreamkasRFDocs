@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1RUS.html">RUS</a></li><li class="navelem"><a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html">FS_VERSION</a></li>  </ul>
@@ -79,10 +102,7 @@ $(function() {
 <tr class="memitem:a2945eb09349a538f557210fda08cd80f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">program_type</a></td></tr>
 <tr class="separator:a2945eb09349a538f557210fda08cd80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00556">556</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a85ca20029259f813efa59be73f984bf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85ca20029259f813efa59be73f984bf5">&#9670;&nbsp;</a></span>FS_VERSION()</h2>
 
@@ -97,12 +117,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00050">50</a></p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a799fd4c31e7ab6fa8fd385bb9ceec367">version</a>.     clear();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">program_type</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="structBIOS_1_1RUS_1_1FS__VERSION_html_a799fd4c31e7ab6fa8fd385bb9ceec367"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VERSION.html#a799fd4c31e7ab6fa8fd385bb9ceec367">BIOS::RUS::FS_VERSION::version</a></div><div class="ttdeci">string version</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00560">FisGo_BIOS.h:560</a></div></div>
-<div class="ttc" id="structBIOS_1_1RUS_1_1FS__VERSION_html_a2945eb09349a538f557210fda08cd80f"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">BIOS::RUS::FS_VERSION::program_type</a></div><div class="ttdeci">bool program_type</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00561">FisGo_BIOS.h:561</a></div></div>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a799fd4c31e7ab6fa8fd385bb9ceec367">version</a>.     clear();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">program_type</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="structBIOS_1_1RUS_1_1FS__VERSION_html_a799fd4c31e7ab6fa8fd385bb9ceec367"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VERSION.html#a799fd4c31e7ab6fa8fd385bb9ceec367">BIOS::RUS::FS_VERSION::version</a></div><div class="ttdeci">string version</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:560</div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1FS__VERSION_html_a2945eb09349a538f557210fda08cd80f"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">BIOS::RUS::FS_VERSION::program_type</a></div><div class="ttdeci">bool program_type</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:561</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="FisGo__BIOS_8h_source.html#l00561">program_type</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00560">version</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a2945eb09349a538f557210fda08cd80f">program_type</a> и <a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a799fd4c31e7ab6fa8fd385bb9ceec367">version</a>.</p>
 
 </div>
 </div>
@@ -120,8 +138,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00056">56</a></p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -138,9 +154,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00561">561</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l00050">FS_VERSION()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a85ca20029259f813efa59be73f984bf5">FS_VERSION()</a>.</p>
 
 </div>
 </div>
@@ -156,20 +170,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00560">560</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l00050">FS_VERSION()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structBIOS_1_1RUS_1_1FS__VERSION.html#a85ca20029259f813efa59be73f984bf5">FS_VERSION()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a></li>
-<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a></li>
+<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

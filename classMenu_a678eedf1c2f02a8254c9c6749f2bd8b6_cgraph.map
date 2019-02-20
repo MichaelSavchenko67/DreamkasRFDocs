@@ -1,13 +1,9 @@
 <map id="Menu::printFiscalDocFromDB" name="Menu::printFiscalDocFromDB">
-<area shape="rect" id="node1" title=" " alt="" coords="5,139,200,166"/>
-<area shape="rect" id="node2" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="265,13,420,39"/>
-<area shape="rect" id="node6" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="294,63,391,90"/>
-<area shape="rect" id="node7" href="$classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9" title="loadFiscalDoc загрузить из базы данные фискального документа" alt="" coords="248,114,437,141"/>
-<area shape="rect" id="node9" href="$classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a" title="max_fd получить максимальный номер ФД в БД" alt="" coords="268,165,417,191"/>
-<area shape="rect" id="node10" href="$classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda" title="min_fd получить минимальный номер ФД в БД" alt="" coords="270,215,415,242"/>
-<area shape="rect" id="node11" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="299,266,386,293"/>
-<area shape="rect" id="node3" href="$classFiscalDocDb.html#ace50f83efee9023d35a697c913ead224" title=" " alt="" coords="503,13,685,39"/>
-<area shape="rect" id="node4" href="$classFiscalDocDb.html#ae385187f0caf76ce571b0b2547a4b389" title="createTable Создание таблицы, если ее нет" alt="" coords="751,13,925,39"/>
-<area shape="rect" id="node5" href="$classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83" title="makeRequestNotSave выполнить запрос без сохранения результата (не SELECT запрос)" alt="" coords="973,5,1160,47"/>
-<area shape="rect" id="node8" href="$classFiscalDocDb.html#af9d4a431972bc0bdf55d3d92a0515015" title="makeRequestSave выполнить запрос с сохранением результата (SELECT)" alt="" coords="485,114,703,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,200,159"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#a145e2fdfb871d410a871a79c0ce26e12" title="instance Получить указатель на экземпляр" alt="" coords="265,5,420,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="294,56,391,83"/>
+<area shape="rect" id="node4" href="$classFiscalDocDb.html#a15a2c78cfdb94a4cff4ae39cea77f2c9" title="loadFiscalDoc загрузить из базы данные фискального документа" alt="" coords="248,107,437,133"/>
+<area shape="rect" id="node5" href="$classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a" title="max_fd получить максимальный номер ФД в БД" alt="" coords="268,157,417,184"/>
+<area shape="rect" id="node6" href="$classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda" title="min_fd получить минимальный номер ФД в БД" alt="" coords="270,208,415,235"/>
+<area shape="rect" id="node7" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="299,259,386,285"/>
 </map>

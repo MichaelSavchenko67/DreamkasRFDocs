@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -49,8 +72,6 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">answer</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScalePos2.html#a79c5f406738f9f82a21a029fd9037503">closePort</a>() override</td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScalePos2.html#a97d4ad610258531e4a2fd0a2232aeb0f">closePortRc</a></td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolPos2.html#ae1b5da320256c8928d065f5d6dbca7f2">cmdGetCalCode</a>(int32_t &amp;calCode) override</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372">cmdGetScaleParam</a>() override</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -78,8 +99,6 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a45beceba44f715cf793b0dc6cb22587e">getWeightTare</a>() const</td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">header</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a0f1dbfa3696c2ca3ea088cc5757ae23f">MAX_PACKET_ANSWER</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScalePos2.html#aa4b42814a9e58804be5977d041c33406">openPort</a>() override</td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScalePos2.html#a7d9d8a6765055450ebf702f4d2cb79c1">openPortRc</a></td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#ae38cb01861f8d2a8f4c4a280f3bbf8b6">packet</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0">packetCreate</a>()</td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#afce2af7c7b982798a16d64b8759e4edf">packetFormat</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -90,8 +109,6 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">PRECISION_10_1</a> элементы перечисления</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">PRECISION_1_1</a> элементы перечисления</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">PRECISION_1_10</a> элементы перечисления</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classScalePos2.html#a4151070730717013a7b7bba03f56f9e6">readAnswer</a>() override</td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScalePos2.html#a87d53b91e0fe741a716330d4f400b2a9">readAnswerRc</a></td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScalePos2.html#a5539ae46b170dd7b48ba76a36dca4ccb">reset</a>()</td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a63ef31f5bead7c8b3436e66db713c965">scaleErr</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a4c466c5b4b045c1d6bbb8ab4fbeaa8e1">scaleFd</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"></td></tr>
@@ -110,15 +127,13 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#aebd2b09cf039748d40c0f1e23b211f0f">version</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#abbb8759cd430de1d5652d0e3aae8cb1e">weight</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a6f01d527a22c98950e9399908fad7eb1">weightTare</a></td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classScalePos2.html#acd8ffe2d3b137c1fc60273af4d0bf75e">writeCmd</a>()</td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classScalePos2.html#ac814ce1b4824677ba862501a9fbbbcaf">writeCmdRc</a></td><td class="entry"><a class="el" href="classScalePos2.html">ScalePos2</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625">WriteInScale</a>(int, const void *, size_t)</td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classScaleProtocolInterface.html#ad4285ea3b1343c2505aa76105f4de375">~ScaleProtocolInterface</a>()</td><td class="entry"><a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classScaleProtocolPos2.html#afbdaa644d126e2272f092a9a96907e38">~ScaleProtocolPos2</a>() override</td><td class="entry"><a class="el" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

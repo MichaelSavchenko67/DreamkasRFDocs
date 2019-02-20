@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_0937102de6aefa85ea195f3f88a55c7c.html">bsp</a></li><li class="navelem"><a class="el" href="dir_50beb8cb9e45d74f64e800a01a73d201.html">include</a></li>  </ul>
@@ -120,8 +143,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00043">43</a></p>
-
 </div>
 </div>
 <a id="abb24291b4f30920c2af65a89b28261d8"></a>
@@ -139,8 +160,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00040">40</a></p>
-
 </div>
 </div>
 <a id="afa59a98a1ec0b6898f01ac8f3ae5e47d"></a>
@@ -154,8 +173,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00036">36</a></p>
 
 </div>
 </div>
@@ -171,8 +188,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00035">35</a></p>
-
 </div>
 </div>
 <a id="a81f061a7c989a1b56de1a2655ac97011"></a>
@@ -186,8 +201,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00034">34</a></p>
 
 </div>
 </div>
@@ -217,8 +230,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00037">37</a></p>
-
 </div>
 </div>
 <a id="a8900f88b990104ed2ce9a849d9353489"></a>
@@ -233,8 +244,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00029">29</a></p>
-
 </div>
 </div>
 <a id="aa5f6736d2835324524b4b25914de8ce7"></a>
@@ -248,8 +257,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00031">31</a></p>
 
 </div>
 </div>
@@ -268,8 +275,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00028">28</a></p>
-
 </div>
 </div>
 <a id="a222a79c14cc32d32d2a773237ffd8978"></a>
@@ -284,14 +289,12 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="bsp__aliases_8h_source.html">bsp_aliases.h</a> строка <a class="el" href="bsp__aliases_8h_source.html#l00030">30</a></p>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

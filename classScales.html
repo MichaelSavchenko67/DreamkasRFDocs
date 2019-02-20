@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,22 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="#pri-methods">Закрытые члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classScales-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс Scales</div>  </div>
@@ -62,8 +83,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classScales__coll__graph.png" border="0" usemap="#Scales_coll__map" alt="Collaboration graph"/></div>
 <map name="Scales_coll__map" id="Scales_coll__map">
-<area shape="rect"  title="The Scales class &#45; ÐºÐ»Ð°ÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="15,321,179,824"/>
-<area shape="rect"  href="structScaleProtocolInterface_1_1Param.html" title="The Param struct &#45; Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,188,259"/>
+<area shape="rect"  title="The Scales class &#45; ÐºÐ»Ð°ÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,169,273"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -114,58 +134,9 @@ $(function() {
 <tr class="memitem:a7cce4659682d6a3bef0bf93b48ccf2c1"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classScaleProtocolInterface.html">ScaleProtocolInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a></td></tr>
 <tr class="memdesc:a7cce4659682d6a3bef0bf93b48ccf2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">scaleProtocolInterface - класс протокола  <a href="#a7cce4659682d6a3bef0bf93b48ccf2c1">Подробнее...</a><br /></td></tr>
 <tr class="separator:a7cce4659682d6a3bef0bf93b48ccf2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Закрытые члены</h2></td></tr>
-<tr class="memitem:a7b7f3fef5f8ca7f55a8b32ce599f036a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a7b7f3fef5f8ca7f55a8b32ce599f036a">readNameId</a> ()</td></tr>
-<tr class="memdesc:a7b7f3fef5f8ca7f55a8b32ce599f036a"><td class="mdescLeft">&#160;</td><td class="mdescRight">readNameId - чтение идентификационного номера и имени весов  <a href="#a7b7f3fef5f8ca7f55a8b32ce599f036a">Подробнее...</a><br /></td></tr>
-<tr class="separator:a7b7f3fef5f8ca7f55a8b32ce599f036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2458ed508c9f91ae51ec0d586f2ccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a2f2458ed508c9f91ae51ec0d586f2ccb">readWeight</a> ()</td></tr>
-<tr class="memdesc:a2f2458ed508c9f91ae51ec0d586f2ccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">readWeight - чтение веса  <a href="#a2f2458ed508c9f91ae51ec0d586f2ccb">Подробнее...</a><br /></td></tr>
-<tr class="separator:a2f2458ed508c9f91ae51ec0d586f2ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a608a169a5c721a1f6f0ae3ee95306b14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a608a169a5c721a1f6f0ae3ee95306b14">writeTare</a> (int32_t tareWeight)</td></tr>
-<tr class="memdesc:a608a169a5c721a1f6f0ae3ee95306b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">writeTare - запись веса тары  <a href="#a608a169a5c721a1f6f0ae3ee95306b14">Подробнее...</a><br /></td></tr>
-<tr class="separator:a608a169a5c721a1f6f0ae3ee95306b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada277e5b30d91967608d07dde9d98e5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#ada277e5b30d91967608d07dde9d98e5f">readTare</a> ()</td></tr>
-<tr class="memdesc:ada277e5b30d91967608d07dde9d98e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">readTare - чтения признака тарирования  <a href="#ada277e5b30d91967608d07dde9d98e5f">Подробнее...</a><br /></td></tr>
-<tr class="separator:ada277e5b30d91967608d07dde9d98e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5759e417b12df06a987a93d363ffecbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a5759e417b12df06a987a93d363ffecbe">writeZero</a> ()</td></tr>
-<tr class="memdesc:a5759e417b12df06a987a93d363ffecbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">writeZero - запись нуля  <a href="#a5759e417b12df06a987a93d363ffecbe">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5759e417b12df06a987a93d363ffecbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b9afce724d4933d1949d1286fd619f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a84b9afce724d4933d1949d1286fd619f">readCalCode</a> ()</td></tr>
-<tr class="memdesc:a84b9afce724d4933d1949d1286fd619f"><td class="mdescLeft">&#160;</td><td class="mdescRight">readCalCode - чтение кода юстировки  <a href="#a84b9afce724d4933d1949d1286fd619f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a84b9afce724d4933d1949d1286fd619f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78537197169d44083dc25c05de3b1631"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a78537197169d44083dc25c05de3b1631">readParam</a> ()</td></tr>
-<tr class="memdesc:a78537197169d44083dc25c05de3b1631"><td class="mdescLeft">&#160;</td><td class="mdescRight">readParam - чтение параметров  <a href="#a78537197169d44083dc25c05de3b1631">Подробнее...</a><br /></td></tr>
-<tr class="separator:a78537197169d44083dc25c05de3b1631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:a42c0f521851401aff08b47befa7a1201"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a42c0f521851401aff08b47befa7a1201">_name</a></td></tr>
-<tr class="separator:a42c0f521851401aff08b47befa7a1201"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35846ebc6b52ddf0068745e1b10c572e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a35846ebc6b52ddf0068745e1b10c572e">_id</a> = -1</td></tr>
-<tr class="separator:a35846ebc6b52ddf0068745e1b10c572e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6c5e9e622980edb857465dfd61cb5d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#aef6c5e9e622980edb857465dfd61cb5d">_weight</a> = 0</td></tr>
-<tr class="separator:aef6c5e9e622980edb857465dfd61cb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb596df8127273525e174cbca6b745d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a7fb596df8127273525e174cbca6b745d">_stable</a> = false</td></tr>
-<tr class="separator:a7fb596df8127273525e174cbca6b745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf4aa7b7810edece57c027c9f0480b07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#abf4aa7b7810edece57c027c9f0480b07">_tare</a> = false</td></tr>
-<tr class="separator:abf4aa7b7810edece57c027c9f0480b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7401366ee00a537a92c5b3e843edb872"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a7401366ee00a537a92c5b3e843edb872">_zero</a> = false</td></tr>
-<tr class="separator:a7401366ee00a537a92c5b3e843edb872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a761f46cf6f747b542de7906872c11cab"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#a761f46cf6f747b542de7906872c11cab">_calCode</a> = -1</td></tr>
-<tr class="separator:a761f46cf6f747b542de7906872c11cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf07bc79a4f7b486f4e2088a2489ec24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1Param.html">ScaleProtocolInterface::Param</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#acf07bc79a4f7b486f4e2088a2489ec24">_param</a></td></tr>
-<tr class="separator:acf07bc79a4f7b486f4e2088a2489ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad560361464749f8c7bb0cba644ca150"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#aad560361464749f8c7bb0cba644ca150">_errMsg</a></td></tr>
-<tr class="separator:aad560361464749f8c7bb0cba644ca150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8621e792fcb8d783dce123f2784583"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScales.html#aec8621e792fcb8d783dce123f2784583">_errCode</a> = 0</td></tr>
-<tr class="separator:aec8621e792fcb8d783dce123f2784583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>The <a class="el" href="classScales.html" title="The Scales class - класс весов">Scales</a> class - класс весов </p>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00015">15</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a30e1e05ef721a480c9857a1925480fb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30e1e05ef721a480c9857a1925480fb4">&#9670;&nbsp;</a></span>Scales()</h2>
@@ -181,8 +152,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00003">3</a></p>
 <div class="fragment"><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -208,8 +177,6 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00008">8</a></p>
 <div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -231,12 +198,7 @@ $(function() {
 
 <p>getCalCode - получить код юстировки </p>
 <dl class="section return"><dt>Возвращает</dt><dd>код юстировки </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00103">103</a></p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a761f46cf6f747b542de7906872c11cab">_calCode</a>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="ttc" id="classScales_html_a761f46cf6f747b542de7906872c11cab"><div class="ttname"><a href="classScales.html#a761f46cf6f747b542de7906872c11cab">Scales::_calCode</a></div><div class="ttdeci">int32_t _calCode</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00090">scales.h:90</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00090">_calCode</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> _calCode;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a781dcf6f576f7771c4d67a7f36d98b98"></a>
@@ -256,12 +218,7 @@ $(function() {
 
 <p>getErrCode - получить код ошибки </p>
 <dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00098">98</a></p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#aec8621e792fcb8d783dce123f2784583">_errCode</a>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div><div class="ttc" id="classScales_html_aec8621e792fcb8d783dce123f2784583"><div class="ttname"><a href="classScales.html#aec8621e792fcb8d783dce123f2784583">Scales::_errCode</a></div><div class="ttdeci">uint8_t _errCode</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00094">scales.h:94</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00094">_errCode</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> _errCode;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="af074f197bd8435fb8e98ff8e88ab9444"></a>
@@ -281,12 +238,7 @@ $(function() {
 
 <p>getErrMsg - получить расшифровку ошибки </p>
 <dl class="section return"><dt>Возвращает</dt><dd>расшифровку ошибки </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00093">93</a></p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#aad560361464749f8c7bb0cba644ca150">_errMsg</a>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div><div class="ttc" id="classScales_html_aad560361464749f8c7bb0cba644ca150"><div class="ttname"><a href="classScales.html#aad560361464749f8c7bb0cba644ca150">Scales::_errMsg</a></div><div class="ttdeci">string _errMsg</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00093">scales.h:93</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00093">_errMsg</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> _errMsg;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8634331ead4ecada9c020b745f0afd71"></a>
@@ -306,12 +258,7 @@ $(function() {
 
 <p>getId - получить идентификационный номер </p>
 <dl class="section return"><dt>Возвращает</dt><dd>идентификационный номер </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00061">61</a></p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a35846ebc6b52ddf0068745e1b10c572e">_id</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classScales_html_a35846ebc6b52ddf0068745e1b10c572e"><div class="ttname"><a href="classScales.html#a35846ebc6b52ddf0068745e1b10c572e">Scales::_id</a></div><div class="ttdeci">int32_t _id</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00085">scales.h:85</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00085">_id</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> _id;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa7a4bf83678bc8aa6331c5e5eeccd7cf"></a>
@@ -331,12 +278,7 @@ $(function() {
 
 <p>getName - получить имя весов </p>
 <dl class="section return"><dt>Возвращает</dt><dd>имя весов </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00056">56</a></p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a42c0f521851401aff08b47befa7a1201">_name</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="classScales_html_a42c0f521851401aff08b47befa7a1201"><div class="ttname"><a href="classScales.html#a42c0f521851401aff08b47befa7a1201">Scales::_name</a></div><div class="ttdeci">string _name</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00084">scales.h:84</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00084">_name</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> _name;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa2a27eff5ec04c0b329df22bd67fee49"></a>
@@ -356,12 +298,7 @@ $(function() {
 
 <p>getStable - получить признак фиксации веса </p>
 <dl class="section return"><dt>Возвращает</dt><dd>признак фиксации веса </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00078">78</a></p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a7fb596df8127273525e174cbca6b745d">_stable</a>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div><div class="ttc" id="classScales_html_a7fb596df8127273525e174cbca6b745d"><div class="ttname"><a href="classScales.html#a7fb596df8127273525e174cbca6b745d">Scales::_stable</a></div><div class="ttdeci">bool _stable</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00087">scales.h:87</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00087">_stable</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> _stable;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a431210a12e6151b6edff9f041bfd41f0"></a>
@@ -381,12 +318,7 @@ $(function() {
 
 <p>getTare - получить признак тарирования </p>
 <dl class="section return"><dt>Возвращает</dt><dd>признак тарирования </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00083">83</a></p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#abf4aa7b7810edece57c027c9f0480b07">_tare</a>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div><div class="ttc" id="classScales_html_abf4aa7b7810edece57c027c9f0480b07"><div class="ttname"><a href="classScales.html#abf4aa7b7810edece57c027c9f0480b07">Scales::_tare</a></div><div class="ttdeci">bool _tare</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00088">scales.h:88</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00088">_tare</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> _tare;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0bf37d26fe6fab594ac5206659c11d6f"></a>
@@ -406,14 +338,12 @@ $(function() {
 
 <p>getWeight - получить вес (грамм) </p>
 <dl class="section return"><dt>Возвращает</dt><dd>вес (грамм) </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00066">66</a></p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Null ptr&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;cmdGetScaleParam();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;cmdGetWeight();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;getWeight();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="ttc" id="classScales_html_a7cce4659682d6a3bef0bf93b48ccf2c1"><div class="ttname"><a href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">Scales::scaleProtocolInterface</a></div><div class="ttdeci">unique_ptr&lt; ScaleProtocolInterface &gt; scaleProtocolInterface</div><div class="ttdoc">scaleProtocolInterface - класс протокола</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00023">scales.h:23</a></div></div>
-<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Null ptr&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;cmdGetScaleParam();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;cmdGetWeight();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>-&gt;getWeight();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="ttc" id="classScales_html_a7cce4659682d6a3bef0bf93b48ccf2c1"><div class="ttname"><a href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">Scales::scaleProtocolInterface</a></div><div class="ttdeci">unique_ptr&lt; ScaleProtocolInterface &gt; scaleProtocolInterface</div><div class="ttdoc">scaleProtocolInterface - класс протокола</div><div class="ttdef"><b>Definition:</b> scales.h:23</div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00033">logERR</a> и <a class="el" href="scales_8h_source.html#l00023">scaleProtocolInterface</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a> и <a class="el" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l26573">Menu::getWeightScale()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e">Menu::getWeightScale()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -448,12 +378,7 @@ $(function() {
 
 <p>getZero - получить признак зануления </p>
 <dl class="section return"><dt>Возвращает</dt><dd>признак зануления </dd></dl>
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00088">88</a></p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classScales.html#a7401366ee00a537a92c5b3e843edb872">_zero</a>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div><div class="ttc" id="classScales_html_a7401366ee00a537a92c5b3e843edb872"><div class="ttname"><a href="classScales.html#a7401366ee00a537a92c5b3e843edb872">Scales::_zero</a></div><div class="ttdeci">bool _zero</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00089">scales.h:89</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scales_8h_source.html#l00089">_zero</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> _zero;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a845bce2ac5ab0be57735bca14c79cd11"></a>
@@ -478,22 +403,20 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8cpp_source.html">scales.cpp</a> строка <a class="el" href="scales_8cpp_source.html#l00013">13</a></p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> portName = <a class="code" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a>()-&gt;<a class="code" href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">getScaleNode</a>().first;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(portName.empty())</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Port is empty&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a> scaleType = <a class="code" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a>()-&gt;<a class="code" href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">getScaleNode</a>().second;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> PORT = <span class="stringliteral">&quot;/dev/&quot;</span> + portName;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">switch</span>(scaleType)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SCALE::SHTRIH</a>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s SCALE : SHTRIH&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset( <span class="keyword">new</span> <a class="code" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a>( PORT ) );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">SCALE::MASSAK</a>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s MASSAK&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset( <span class="keyword">new</span> <a class="code" href="classScaleProtocolMassak.html">ScaleProtocolMassak</a>( PORT ) );</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">default</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Unknown scale type!&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s PORT_NAME : %s&quot;</span>, __PRETTY_FUNCTION__, PORT.c_str() );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="classScaleProtocolMassak_html"><div class="ttname"><a href="classScaleProtocolMassak.html">ScaleProtocolMassak</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolMassak_8h_source.html#l00013">scaleProtocolMassak.h:13</a></div></div>
-<div class="ttc" id="classScales_html_a7cce4659682d6a3bef0bf93b48ccf2c1"><div class="ttname"><a href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">Scales::scaleProtocolInterface</a></div><div class="ttdeci">unique_ptr&lt; ScaleProtocolInterface &gt; scaleProtocolInterface</div><div class="ttdoc">scaleProtocolInterface - класс протокола</div><div class="ttdef"><b>Definition:</b> <a href="scales_8h_source.html#l00023">scales.h:23</a></div></div>
-<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
-<div class="ttc" id="classNodeConflictResolver_html_a6ea7fc4ab55c437f6502616769c15acd"><div class="ttname"><a href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a></div><div class="ttdeci">static NodeConflictResolver * instance()</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00012">NodeConflictResolver.cpp:12</a></div></div>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> portName = <a class="code" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a>()-&gt;<a class="code" href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">getScaleNode</a>().first;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(portName.empty())</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Port is empty&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a> scaleType = <a class="code" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a>()-&gt;<a class="code" href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">getScaleNode</a>().second;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span> PORT = <span class="stringliteral">&quot;/dev/&quot;</span> + portName;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">switch</span>(scaleType)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SCALE::SHTRIH</a>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s SCALE : SHTRIH&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset( <span class="keyword">new</span> <a class="code" href="classScaleProtocolPos2.html">ScaleProtocolPos2</a>( PORT ) );</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">SCALE::MASSAK</a>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s MASSAK&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset( <span class="keyword">new</span> <a class="code" href="classScaleProtocolMassak.html">ScaleProtocolMassak</a>( PORT ) );</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">default</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s Unknown scale type!&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a>.reset();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s PORT_NAME : %s&quot;</span>, __PRETTY_FUNCTION__, PORT.c_str() );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="classScaleProtocolMassak_html"><div class="ttname"><a href="classScaleProtocolMassak.html">ScaleProtocolMassak</a></div><div class="ttdef"><b>Definition:</b> scaleProtocolMassak.h:13</div></div>
+<div class="ttc" id="classScales_html_a7cce4659682d6a3bef0bf93b48ccf2c1"><div class="ttname"><a href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">Scales::scaleProtocolInterface</a></div><div class="ttdeci">unique_ptr&lt; ScaleProtocolInterface &gt; scaleProtocolInterface</div><div class="ttdoc">scaleProtocolInterface - класс протокола</div><div class="ttdef"><b>Definition:</b> scales.h:23</div></div>
+<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:31</div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a6ea7fc4ab55c437f6502616769c15acd"><div class="ttname"><a href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance</a></div><div class="ttdeci">static NodeConflictResolver * instance()</div><div class="ttdef"><b>Definition:</b> NodeConflictResolver.cpp:12</div></div>
 <div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">SCALE::MASSAK</a></div></div>
-<div class="ttc" id="classScaleProtocolPos2_html"><div class="ttname"><a href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00017">scaleProtocolPos2.h:17</a></div></div>
-<div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6c"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a></div><div class="ttdeci">SCALE</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00016">NodeConflictResolver.h:16</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html"><div class="ttname"><a href="classScaleProtocolPos2.html">ScaleProtocolPos2</a></div><div class="ttdef"><b>Definition:</b> scaleProtocolPos2.h:17</div></div>
+<div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6c"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a></div><div class="ttdeci">SCALE</div><div class="ttdef"><b>Definition:</b> NodeConflictResolver.h:16</div></div>
 <div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SCALE::SHTRIH</a></div></div>
-<div class="ttc" id="classNodeConflictResolver_html_a62f3cafb41f368abce8aa7136ef3a03f"><div class="ttname"><a href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">NodeConflictResolver::getScaleNode</a></div><div class="ttdeci">pair&lt; string, SCALE &gt; getScaleNode()</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00125">NodeConflictResolver.cpp:125</a></div></div>
-<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a62f3cafb41f368abce8aa7136ef3a03f"><div class="ttname"><a href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">NodeConflictResolver::getScaleNode</a></div><div class="ttdeci">pair&lt; string, SCALE &gt; getScaleNode()</div><div class="ttdef"><b>Definition:</b> NodeConflictResolver.cpp:125</div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> log.h:33</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8cpp_source.html#l00125">NodeConflictResolver::getScaleNode()</a>, <a class="el" href="NodeConflictResolver_8cpp_source.html#l00012">NodeConflictResolver::instance()</a>, <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="log_8h_source.html#l00031">logINFO</a>, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">MASSAK</a>, <a class="el" href="scales_8h_source.html#l00023">scaleProtocolInterface</a> и <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SHTRIH</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f">NodeConflictResolver::getScaleNode()</a>, <a class="el" href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd">NodeConflictResolver::instance()</a>, <a class="el" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>, <a class="el" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">MASSAK</a>, <a class="el" href="classScales.html#a7cce4659682d6a3bef0bf93b48ccf2c1">scaleProtocolInterface</a> и <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SHTRIH</a>.</p>
 
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l26573">Menu::getWeightScale()</a> и <a class="el" href="menu_8cpp_source.html#l26502">Menu::weight_price()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e">Menu::getWeightScale()</a> и <a class="el" href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc">Menu::weight_price()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -504,9 +427,6 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="5,46,148,73"/>
 <area shape="rect"  href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f" title=" " alt="" coords="196,5,347,47"/>
 <area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="196,71,347,112"/>
-<area shape="rect"  href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="399,5,549,47"/>
-<area shape="rect"  href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="601,5,752,47"/>
-<area shape="rect"  href="classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a" title=" " alt="" coords="395,71,553,112"/>
 </map>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -523,146 +443,6 @@ $(function() {
 <area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,31,148,57"/>
 </map>
 </div>
-
-</div>
-</div>
-<a id="a84b9afce724d4933d1949d1286fd619f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84b9afce724d4933d1949d1286fd619f">&#9670;&nbsp;</a></span>readCalCode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::readCalCode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readCalCode - чтение кода юстировки </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
-<a id="a7b7f3fef5f8ca7f55a8b32ce599f036a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b7f3fef5f8ca7f55a8b32ce599f036a">&#9670;&nbsp;</a></span>readNameId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::readNameId </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readNameId - чтение идентификационного номера и имени весов </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
-<a id="a78537197169d44083dc25c05de3b1631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78537197169d44083dc25c05de3b1631">&#9670;&nbsp;</a></span>readParam()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::readParam </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readParam - чтение параметров </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
-<a id="ada277e5b30d91967608d07dde9d98e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada277e5b30d91967608d07dde9d98e5f">&#9670;&nbsp;</a></span>readTare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::readTare </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readTare - чтения признака тарирования </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
-<a id="a2f2458ed508c9f91ae51ec0d586f2ccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f2458ed508c9f91ae51ec0d586f2ccb">&#9670;&nbsp;</a></span>readWeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::readWeight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readWeight - чтение веса </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
 
 </div>
 </div>
@@ -713,326 +493,7 @@ $(function() {
 
 </div>
 </div>
-<a id="a608a169a5c721a1f6f0ae3ee95306b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a608a169a5c721a1f6f0ae3ee95306b14">&#9670;&nbsp;</a></span>writeTare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::writeTare </td>
-          <td>(</td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>tareWeight</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>writeTare - запись веса тары </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tareWeight</td><td>- вес тары (грамм) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
-<a id="a5759e417b12df06a987a93d363ffecbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5759e417b12df06a987a93d363ffecbe">&#9670;&nbsp;</a></span>writeZero()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::writeZero </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>writeZero - запись нуля </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Данные класса</h2>
-<a id="a761f46cf6f747b542de7906872c11cab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a761f46cf6f747b542de7906872c11cab">&#9670;&nbsp;</a></span>_calCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t Scales::_calCode = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00090">90</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00103">getCalCode()</a>.</p>
-
-</div>
-</div>
-<a id="aec8621e792fcb8d783dce123f2784583"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec8621e792fcb8d783dce123f2784583">&#9670;&nbsp;</a></span>_errCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t Scales::_errCode = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00094">94</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00098">getErrCode()</a>.</p>
-
-</div>
-</div>
-<a id="aad560361464749f8c7bb0cba644ca150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad560361464749f8c7bb0cba644ca150">&#9670;&nbsp;</a></span>_errMsg</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Scales::_errMsg</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00093">93</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00093">getErrMsg()</a>.</p>
-
-</div>
-</div>
-<a id="a35846ebc6b52ddf0068745e1b10c572e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35846ebc6b52ddf0068745e1b10c572e">&#9670;&nbsp;</a></span>_id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t Scales::_id = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00085">85</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00061">getId()</a>.</p>
-
-</div>
-</div>
-<a id="a42c0f521851401aff08b47befa7a1201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42c0f521851401aff08b47befa7a1201">&#9670;&nbsp;</a></span>_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Scales::_name</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00084">84</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00056">getName()</a>.</p>
-
-</div>
-</div>
-<a id="acf07bc79a4f7b486f4e2088a2489ec24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf07bc79a4f7b486f4e2088a2489ec24">&#9670;&nbsp;</a></span>_param</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structScaleProtocolInterface_1_1Param.html">ScaleProtocolInterface::Param</a> Scales::_param</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00091">91</a></p>
-
-</div>
-</div>
-<a id="a7fb596df8127273525e174cbca6b745d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fb596df8127273525e174cbca6b745d">&#9670;&nbsp;</a></span>_stable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::_stable = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00087">87</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00078">getStable()</a>.</p>
-
-</div>
-</div>
-<a id="abf4aa7b7810edece57c027c9f0480b07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf4aa7b7810edece57c027c9f0480b07">&#9670;&nbsp;</a></span>_tare</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::_tare = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00088">88</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00083">getTare()</a>.</p>
-
-</div>
-</div>
-<a id="aef6c5e9e622980edb857465dfd61cb5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6c5e9e622980edb857465dfd61cb5d">&#9670;&nbsp;</a></span>_weight</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t Scales::_weight = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00086">86</a></p>
-
-</div>
-</div>
-<a id="a7401366ee00a537a92c5b3e843edb872"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7401366ee00a537a92c5b3e843edb872">&#9670;&nbsp;</a></span>_zero</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Scales::_zero = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00089">89</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00088">getZero()</a>.</p>
-
-</div>
-</div>
 <a id="a7cce4659682d6a3bef0bf93b48ccf2c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cce4659682d6a3bef0bf93b48ccf2c1">&#9670;&nbsp;</a></span>scaleProtocolInterface</h2>
 
@@ -1047,20 +508,18 @@ $(function() {
 
 <p>scaleProtocolInterface - класс протокола </p>
 
-<p class="definition">См. определение в файле <a class="el" href="scales_8h_source.html">scales.h</a> строка <a class="el" href="scales_8h_source.html#l00023">23</a></p>
-
-<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00066">getWeight()</a> и <a class="el" href="scales_8cpp_source.html#l00013">isConnected()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classScales.html#a0bf37d26fe6fab594ac5206659c11d6f">getWeight()</a> и <a class="el" href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11">isConnected()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="scales_8h_source.html">scales.h</a></li>
-<li>src/appl/<a class="el" href="scales_8cpp_source.html">scales.cpp</a></li>
+<li>src/appl/<a class="el" href="scales_8cpp.html">scales.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -113,9 +136,7 @@ $(function() {
 <area shape="rect"  href="receipt_8h.html" title=" " alt="" coords="2075,393,2147,420"/>
 </map>
 </div>
-</div>
-<p><a href="main_8cpp_source.html">См. исходные тексты.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> argc, char **argv)</td></tr>
@@ -147,81 +168,17 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="main_8cpp_source.html">main.cpp</a> строка <a class="el" href="main_8cpp_source.html#l00007">7</a></p>
-<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="classMenu.html">Menu</a> l;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">if</span> ( argc &gt;= 2 )</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordtype">string</span> arg = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(argv[1]);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-v&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;--version&quot;</span>) == 0) )</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Version : &quot;</span> &lt;&lt; <a class="code" href="config_8h.html#a68bebfddcec80faca79d1b77dbec6ab8">fisgo_cur_version</a> &lt;&lt; endl;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            }</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-t&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;-testing-auto&quot;</span>) == 0) )</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                l.<a class="code" href="classMenu.html#ab2949a5f49ac325e97f04d4d44542565">needStartTestServer</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-h&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;--help&quot;</span>) == 0) || (argc &gt; 2) )</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Usage : &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; [COMMAND] &quot;</span>             &lt;&lt; endl;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -h (--help)         - display usage&quot;</span>             &lt;&lt; endl;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -v (--version)      - get current FisGo version&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -t (--testing-auto) - start thread test API&quot;</span>     &lt;&lt; endl;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a">threads_init</a>(l);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">catch</span> (exception&amp; ex)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;Exception: &quot;</span> &lt;&lt; ex.what() &lt;&lt; endl;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">catch</span> (...)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;Unknown exception!&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="threads_8h_html_a86a3a06d15ddac5702d1c79f9bac7c7a"><div class="ttname"><a href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a">threads_init</a></div><div class="ttdeci">void threads_init(Menu &amp;menu)</div><div class="ttdef"><b>Definition:</b> <a href="threads_8h_source.html#l00504">threads.h:504</a></div></div>
-<div class="ttc" id="classMenu_html_ab2949a5f49ac325e97f04d4d44542565"><div class="ttname"><a href="classMenu.html#ab2949a5f49ac325e97f04d4d44542565">Menu::needStartTestServer</a></div><div class="ttdeci">bool needStartTestServer</div><div class="ttdef"><b>Definition:</b> <a href="menu_8h_source.html#l00094">menu.h:94</a></div></div>
-<div class="ttc" id="classMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> <a href="menu_8h_source.html#l00089">menu.h:89</a></div></div>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="classMenu.html">Menu</a> l;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">if</span> ( argc &gt;= 2 )</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            <span class="keywordtype">string</span> arg = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>(argv[1]);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-v&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;--version&quot;</span>) == 0) )</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Version : &quot;</span> &lt;&lt; fisgo_cur_version &lt;&lt; endl;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            }</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-t&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;-testing-auto&quot;</span>) == 0) )</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                l.<a class="code" href="classMenu.html#ab2949a5f49ac325e97f04d4d44542565">needStartTestServer</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">if</span> ( (arg.compare(<span class="stringliteral">&quot;-h&quot;</span>) == 0) || (arg.compare(<span class="stringliteral">&quot;--help&quot;</span>) == 0) || (argc &gt; 2) )</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;Usage : &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; [COMMAND] &quot;</span>             &lt;&lt; endl;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -h (--help)         - display usage&quot;</span>             &lt;&lt; endl;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -v (--version)      - get current FisGo version&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;      -t (--testing-auto) - start thread test API&quot;</span>     &lt;&lt; endl;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">try</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a">threads_init</a>(l);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">catch</span> (exception&amp; ex)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;Exception: &quot;</span> &lt;&lt; ex.what() &lt;&lt; endl;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">catch</span> (...)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;Unknown exception!&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="ttc" id="threads_8h_html_a86a3a06d15ddac5702d1c79f9bac7c7a"><div class="ttname"><a href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a">threads_init</a></div><div class="ttdeci">void threads_init(Menu &amp;menu)</div><div class="ttdef"><b>Definition:</b> threads.h:504</div></div>
+<div class="ttc" id="classMenu_html_ab2949a5f49ac325e97f04d4d44542565"><div class="ttname"><a href="classMenu.html#ab2949a5f49ac325e97f04d4d44542565">Menu::needStartTestServer</a></div><div class="ttdeci">bool needStartTestServer</div><div class="ttdef"><b>Definition:</b> menu.h:94</div></div>
+<div class="ttc" id="classMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> menu.h:89</div></div>
 <div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
-<div class="ttc" id="config_8h_html_a68bebfddcec80faca79d1b77dbec6ab8"><div class="ttname"><a href="config_8h.html#a68bebfddcec80faca79d1b77dbec6ab8">fisgo_cur_version</a></div><div class="ttdeci">static const string fisgo_cur_version</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00029">config.h:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="config_8h_source.html#l00029">fisgo_cur_version</a>, <a class="el" href="menu_8h_source.html#l00094">Menu::needStartTestServer</a> и <a class="el" href="threads_8h_source.html#l00504">threads_init()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
-<map name="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,1134,56,1161"/>
-<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,1134,193,1161"/>
-<area shape="rect"  href="threads_8h.html#a3723d3ddd4c5b02c5e1f3c4933b3c136" title=" " alt="" coords="261,139,404,166"/>
-<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="251,413,414,439"/>
-<area shape="rect"  href="threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="263,329,403,355"/>
-<area shape="rect"  href="threads_8h.html#a8c844a866e48badcc4145b6560d917d1" title=" " alt="" coords="291,501,375,527"/>
-<area shape="rect"  href="threads_8h.html#a7b93566c6f56031bcfd3d64df5786505" title=" " alt="" coords="289,805,377,831"/>
-<area shape="rect"  href="classBIOS.html#a204f07296f285611e8b9d915089957da" title=" " alt="" coords="724,703,880,730"/>
-<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="269,1083,397,1110"/>
-<area shape="rect"  href="threads_8h.html#a750c6f52c7d659d7ec53a3cce5359a0a" title=" " alt="" coords="257,1134,409,1161"/>
-<area shape="rect"  href="threads_8h.html#a4d430d9ccb21bbe403a17783f7f97577" title=" " alt="" coords="301,1185,365,1211"/>
-<area shape="rect"  href="threads_8h.html#afab08de41033facb3e1e21893f455044" title=" " alt="" coords="277,1235,388,1262"/>
-<area shape="rect"  href="threads_8h.html#ab00d87b3d77d4c6d03f5ac0258df053d" title=" " alt="" coords="263,1033,402,1059"/>
-<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="304,982,361,1009"/>
-<area shape="rect"  href="threads_8h.html#a2de4a71e222156bc6db4f61396d6e511" title=" " alt="" coords="274,1286,391,1313"/>
-<area shape="rect"  href="classMenu.html#aa14f1c2b6ef85fe02fa6f2291a1bd6b7" title="queuePurchasesUp &#45; ÑÑÐ°ÑÑ Ð¿Ð¾ÑÐ¾ÐºÐ° Ð¾ÑÐµÑÐµÐ´Ð¸ ÑÐµÐºÐ¾Ð² Ð² Ð±Ð°Ð·Ñ" alt="" coords="245,1337,421,1363"/>
-<area shape="rect"  href="threads_8h.html#a856a9a157dbf1188858061e0a2842897" title=" " alt="" coords="241,1387,424,1414"/>
-<area shape="rect"  href="threads_8h.html#ade37d508fb463321815e016967362fa8" title=" " alt="" coords="275,1438,390,1465"/>
-<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="261,1489,405,1515"/>
-<area shape="rect"  href="threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5" title=" " alt="" coords="273,1539,392,1566"/>
-<area shape="rect"  href="threads_8h.html#a4ace1168749fab432b0a009c631be836" title=" " alt="" coords="281,1590,384,1617"/>
-<area shape="rect"  href="classMenu.html#a470a649d94e8dc05b3937ce4146e7b5f" title=" " alt="" coords="504,13,644,39"/>
-<area shape="rect"  href="classMenu.html#a276c2f9b8b3a216347a756d8b8c10116" title=" " alt="" coords="475,63,673,90"/>
-<area shape="rect"  href="classMenu.html#a9b4b9098323bce89c75588ed806b3744" title=" " alt="" coords="493,114,655,141"/>
-<area shape="rect"  href="classMenu.html#acf6016610407e064f09957bba8a90ba4" title=" " alt="" coords="497,165,651,191"/>
-<area shape="rect"  href="classMenu.html#a30e8f8ed98f23626037833ff442cfbdf" title=" " alt="" coords="739,241,865,267"/>
-<area shape="rect"  href="classMenu.html#a96b8082e6ccce216452c41838b415b56" title=" " alt="" coords="729,5,875,47"/>
-<area shape="rect"  href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4" title="dataMatrixParse &#45; Ð¿Ð°ÑÑ DataMatrix" alt="" coords="481,317,667,359"/>
-<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="482,383,666,410"/>
-<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="483,435,665,476"/>
-<area shape="rect"  href="classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="506,266,642,293"/>
-<area shape="rect"  href="classMenu.html#a1d24b01ce0f5b83b32bd19ff12f816ef" title=" " alt="" coords="496,501,652,527"/>
-<area shape="rect"  href="classBIOS.html#a324cf6cc38e988e342df6aeed1908e19" title=" " alt="" coords="499,602,649,629"/>
-<area shape="rect"  href="classBIOS.html#a688323e71bc05876290c7cc5a5041136" title=" " alt="" coords="501,653,647,679"/>
-<area shape="rect"  href="classBIOS.html#a345080151381f8ff0c8da8d149da837f" title=" " alt="" coords="503,754,645,781"/>
-<area shape="rect"  href="classBIOS.html#a75920c7cdb3325fc7a79d9ba047a7a30" title=" " alt="" coords="517,805,631,831"/>
-<area shape="rect"  href="classBIOS.html#a992b0eb58044e97fe56a4046cb00c7d3" title=" " alt="" coords="527,855,621,882"/>
-<area shape="rect"  href="classBIOS.html#a3327ba8a216748f9c4daf0ca092f3ef3" title=" " alt="" coords="519,906,629,933"/>
-<area shape="rect"  href="classBIOS.html#a79aadb0ed1de220ffbbd6b2f97147c60" title=" " alt="" coords="522,957,626,983"/>
-<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="495,1261,653,1287"/>
-<area shape="rect"  href="classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4" title=" " alt="" coords="501,1159,647,1186"/>
-<area shape="rect"  href="classLogServant.html#a4c46a0f164b67b4a3149a8eefd50f808" title=" " alt="" coords="490,1210,658,1237"/>
-<area shape="rect"  href="log_8h.html#a02ba13b54a5d46206d2dbdc30915ea21" title=" " alt="" coords="756,1058,848,1085"/>
-<area shape="rect"  href="keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="510,1058,638,1085"/>
-<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="529,1007,619,1034"/>
-<area shape="rect"  href="classMenu.html#af4106647d84a51e7f1e4a1fbbf69d313" title="queuePurchasesRoutine &#45; ÑÐ¸ÐºÐ» ÑÐ¾ÑÑÐ°Ð½ÐµÐ½Ð¸Ñ ÑÐµÐºÐ¾Ð² Ð² Ð±Ð°Ð·Ñ" alt="" coords="472,1337,676,1363"/>
-<area shape="rect"  href="classMenu.html#a01055d22b4ff7219c63941cd7c28e9cd" title=" " alt="" coords="501,1438,647,1465"/>
-<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="502,1489,646,1515"/>
-<area shape="rect"  href="classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="495,1539,653,1566"/>
-<area shape="rect"  href="classMenu.html#a2ab76908e70209a0ffbc53c6938c6e77" title=" " alt="" coords="501,1590,647,1617"/>
-</map>
-</div>
-
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

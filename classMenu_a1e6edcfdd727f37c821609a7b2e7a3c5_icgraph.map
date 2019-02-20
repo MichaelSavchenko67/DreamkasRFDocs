@@ -1,12 +1,11 @@
 <map id="Menu::getCurMenu" name="Menu::getCurMenu">
-<area shape="rect" id="node1" title=" " alt="" coords="828,56,961,83"/>
-<area shape="rect" id="node2" href="$classMenu.html#a575c29fe812806522677f4a24c55c745" title=" " alt="" coords="640,5,779,32"/>
-<area shape="rect" id="node7" href="$classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae" title=" " alt="" coords="639,56,780,83"/>
-<area shape="rect" id="node8" href="$classMenu.html#a9b394e4ec2f8c9a91bc252d840bc41bf" title="regFromHub Регистрация из HUB" alt="" coords="642,107,777,133"/>
-<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="433,56,591,83"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="249,56,377,83"/>
-<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,81,193,108"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node9" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="440,107,584,133"/>
-<area shape="rect" id="node10" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="241,107,385,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="729,56,863,83"/>
+<area shape="rect" id="node2" href="$classMenu.html#a575c29fe812806522677f4a24c55c745" title=" " alt="" coords="541,5,680,32"/>
+<area shape="rect" id="node6" href="$classMenu.html#a59f7ee2dc33d2adf3e33fba96ea833ae" title=" " alt="" coords="540,56,681,83"/>
+<area shape="rect" id="node7" href="$classMenu.html#a9b394e4ec2f8c9a91bc252d840bc41bf" title="regFromHub Регистрация из HUB" alt="" coords="543,107,678,133"/>
+<area shape="rect" id="node3" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="335,56,492,83"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="151,56,279,83"/>
+<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,81,95,108"/>
+<area shape="rect" id="node8" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="341,107,485,133"/>
+<area shape="rect" id="node9" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="143,107,287,133"/>
 </map>

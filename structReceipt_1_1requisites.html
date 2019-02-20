@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classReceipt.html">Receipt</a></li><li class="navelem"><a class="el" href="structReceipt_1_1requisites.html">requisites</a></li>  </ul>
@@ -85,10 +108,7 @@ $(function() {
 <tr class="memitem:a4edb9587a2858448f79f31e7239ea388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structReceipt_1_1requisites.html#a4edb9587a2858448f79f31e7239ea388">tag</a></td></tr>
 <tr class="separator:a4edb9587a2858448f79f31e7239ea388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00037">37</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="aaab1efbe5ea633061b98a632a9bb6743"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaab1efbe5ea633061b98a632a9bb6743">&#9670;&nbsp;</a></span>fix_size</h2>
 
@@ -100,8 +120,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00040">40</a></p>
 
 </div>
 </div>
@@ -117,8 +135,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00043">43</a></p>
-
 </div>
 </div>
 <a id="a90c9f78eac1136361f10b46b04006091"></a>
@@ -132,8 +148,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00041">41</a></p>
 
 </div>
 </div>
@@ -149,8 +163,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00042">42</a></p>
-
 </div>
 </div>
 <a id="a9b40f30d6dfbd791efc8681cdce93e8e"></a>
@@ -164,8 +176,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00039">39</a></p>
 
 </div>
 </div>
@@ -181,8 +191,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00047">47</a></p>
-
 </div>
 </div>
 <a id="af8be3bb4fc028ec9f992cf29312a0293"></a>
@@ -196,8 +204,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00044">44</a></p>
 
 </div>
 </div>
@@ -213,8 +219,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00045">45</a></p>
-
 </div>
 </div>
 <a id="a70b5c57717beb516f8526efc6e873918"></a>
@@ -229,8 +233,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="receipt_8h_source.html">receipt.h</a> строка <a class="el" href="receipt_8h_source.html#l00046">46</a></p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -239,7 +241,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,20 +32,39 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classSqlWrapperInterface-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс SqlWrapperInterface</div>  </div>
@@ -57,7 +79,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSqlWrapperInterface__inherit__graph.png" border="0" usemap="#SqlWrapperInterface_inherit__map" alt="Inheritance graph"/></div>
 <map name="SqlWrapperInterface_inherit__map" id="SqlWrapperInterface_inherit__map">
-<area shape="rect"  title=" " alt="" coords="13,1084,184,1235"/>
+<area shape="rect"  title=" " alt="" coords="13,1084,184,1220"/>
 <area shape="rect"  href="classsqlWrapper.html" title=" " alt="" coords="5,5,192,1036"/>
 </map>
 </div>
@@ -68,7 +90,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classSqlWrapperInterface__coll__graph.png" border="0" usemap="#SqlWrapperInterface_coll__map" alt="Collaboration graph"/></div>
 <map name="SqlWrapperInterface_coll__map" id="SqlWrapperInterface_coll__map">
-<area shape="rect"  title=" " alt="" coords="13,1084,184,1235"/>
+<area shape="rect"  title=" " alt="" coords="13,1084,184,1220"/>
 <area shape="rect"  href="classsqlWrapper.html" title=" " alt="" coords="5,5,192,1036"/>
 </map>
 </div>
@@ -174,13 +196,6 @@ $(function() {
 <tr class="memitem:ac813e4150d9574c68db72281eda42868 inherit pub_methods_classsqlWrapper"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsqlWrapper.html#ac813e4150d9574c68db72281eda42868">getAllHotkeysFromDB</a> ()</td></tr>
 <tr class="separator:ac813e4150d9574c68db72281eda42868 inherit pub_methods_classsqlWrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:a95b73ebb8b0f4aa3dc9926dbb3cd5f58"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">foundConfigValue</a></td></tr>
-<tr class="separator:a95b73ebb8b0f4aa3dc9926dbb3cd5f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1887f032a9de35cc855b43f6d1430078"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">queryConfigReady</a></td></tr>
-<tr class="separator:a1887f032a9de35cc855b43f6d1430078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
 <tr class="inherit_header pub_attribs_classsqlWrapper"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classsqlWrapper')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="classsqlWrapper.html">sqlWrapper</a></td></tr>
@@ -239,10 +254,7 @@ $(function() {
 <tr class="memitem:ac44ac0c35615708c2dcc5e94c9b86311 inherit pro_attribs_classsqlWrapper"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsqlWrapper.html#ac44ac0c35615708c2dcc5e94c9b86311">configBaseMutex</a></td></tr>
 <tr class="separator:ac44ac0c35615708c2dcc5e94c9b86311 inherit pro_attribs_classsqlWrapper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00018">18</a></p>
-</div><h2 class="groupheader">Методы</h2>
+<h2 class="groupheader">Методы</h2>
 <a id="a634fa7f4e75abac0cc4b3c2e3a811f63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a634fa7f4e75abac0cc4b3c2e3a811f63">&#9670;&nbsp;</a></span>getFoundConfigValue()</h2>
 
@@ -265,12 +277,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00028">28</a></p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">foundConfigValue</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html_a95b73ebb8b0f4aa3dc9926dbb3cd5f58"><div class="ttname"><a href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">SqlWrapperInterface::foundConfigValue</a></div><div class="ttdeci">vector&lt; string &gt; foundConfigValue</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00049">testSqlWrapper.h:49</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h_source.html#l00049">foundConfigValue</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> foundConfigValue;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2b77041c69c7e3af4892c75286de6c30"></a>
@@ -295,12 +302,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00038">38</a></p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">queryConfigReady</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html_a1887f032a9de35cc855b43f6d1430078"><div class="ttname"><a href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">SqlWrapperInterface::queryConfigReady</a></div><div class="ttdeci">bool queryConfigReady</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00050">testSqlWrapper.h:50</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h_source.html#l00050">queryConfigReady</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> queryConfigReady;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2b713fe6cd1e02902ae6421be2b041d5"></a>
@@ -327,14 +329,10 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classsqlWrapper.html#a025c73baa5706aef497d955fdf809ecf">sqlWrapper</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00021">21</a></p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="testSqlWrapper_8h.html#a09672d22cca0f2b76d1aea474a1ac201">queryConfigRdy</a> = <a class="code" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">queryConfigReady</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="testSqlWrapper_8h.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a> = <a class="code" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">foundConfigValue</a>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html_a95b73ebb8b0f4aa3dc9926dbb3cd5f58"><div class="ttname"><a href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">SqlWrapperInterface::foundConfigValue</a></div><div class="ttdeci">vector&lt; string &gt; foundConfigValue</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00049">testSqlWrapper.h:49</a></div></div>
-<div class="ttc" id="classSqlWrapperInterface_html_a1887f032a9de35cc855b43f6d1430078"><div class="ttname"><a href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">SqlWrapperInterface::queryConfigReady</a></div><div class="ttdeci">bool queryConfigReady</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00050">testSqlWrapper.h:50</a></div></div>
-<div class="ttc" id="testSqlWrapper_8h_html_a09672d22cca0f2b76d1aea474a1ac201"><div class="ttname"><a href="testSqlWrapper_8h.html#a09672d22cca0f2b76d1aea474a1ac201">queryConfigRdy</a></div><div class="ttdeci">bool queryConfigRdy</div><div class="ttdef"><b>Definition:</b> <a href="sqlWrapper_8cpp_source.html#l00149">sqlWrapper.cpp:149</a></div></div>
-<div class="ttc" id="testSqlWrapper_8h_html_a39d4279804703cdb6f7e214553be85c5"><div class="ttname"><a href="testSqlWrapper_8h.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a></div><div class="ttdeci">vector&lt; string &gt; foundCfgValue</div><div class="ttdef"><b>Definition:</b> <a href="sqlWrapper_8cpp_source.html#l00153">sqlWrapper.cpp:153</a></div></div>
+<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="testSqlWrapper_8h.html#a09672d22cca0f2b76d1aea474a1ac201">queryConfigRdy</a> = queryConfigReady;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="testSqlWrapper_8h.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a> = foundConfigValue;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div><div class="ttc" id="testSqlWrapper_8h_html_a09672d22cca0f2b76d1aea474a1ac201"><div class="ttname"><a href="testSqlWrapper_8h.html#a09672d22cca0f2b76d1aea474a1ac201">queryConfigRdy</a></div><div class="ttdeci">bool queryConfigRdy</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:149</div></div>
+<div class="ttc" id="testSqlWrapper_8h_html_a39d4279804703cdb6f7e214553be85c5"><div class="ttname"><a href="testSqlWrapper_8h.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a></div><div class="ttdeci">vector&lt; string &gt; foundCfgValue</div><div class="ttdef"><b>Definition:</b> sqlWrapper.cpp:153</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="sqlWrapper_8cpp_source.html#l00153">foundCfgValue</a>, <a class="el" href="testSqlWrapper_8h_source.html#l00049">foundConfigValue</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l00149">queryConfigRdy</a> и <a class="el" href="testSqlWrapper_8h_source.html#l00050">queryConfigReady</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h.html#a39d4279804703cdb6f7e214553be85c5">foundCfgValue</a> и <a class="el" href="testSqlWrapper_8h.html#a09672d22cca0f2b76d1aea474a1ac201">queryConfigRdy</a>.</p>
 
 </div>
 </div>
@@ -361,12 +359,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00033">33</a></p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">foundConfigValue</a> = value;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html_a95b73ebb8b0f4aa3dc9926dbb3cd5f58"><div class="ttname"><a href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">SqlWrapperInterface::foundConfigValue</a></div><div class="ttdeci">vector&lt; string &gt; foundConfigValue</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00049">testSqlWrapper.h:49</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h_source.html#l00049">foundConfigValue</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        foundConfigValue = value;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aa1d5fd8f51c825f9bab56312cd5e1b38"></a>
@@ -392,65 +385,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00043">43</a></p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">queryConfigReady</a> = value;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html_a1887f032a9de35cc855b43f6d1430078"><div class="ttname"><a href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">SqlWrapperInterface::queryConfigReady</a></div><div class="ttdeci">bool queryConfigReady</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00050">testSqlWrapper.h:50</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h_source.html#l00050">queryConfigReady</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="a95b73ebb8b0f4aa3dc9926dbb3cd5f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">&#9670;&nbsp;</a></span>foundConfigValue</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;string&gt; SqlWrapperInterface::foundConfigValue</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00049">49</a></p>
-
-<p class="reference">Используется в <a class="el" href="testSqlWrapper_8h_source.html#l00028">getFoundConfigValue()</a>, <a class="el" href="testSqlWrapper_8h_source.html#l00021">makeConfigRequest()</a> и <a class="el" href="testSqlWrapper_8h_source.html#l00033">setFoundConfigValue()</a>.</p>
-
-</div>
-</div>
-<a id="a1887f032a9de35cc855b43f6d1430078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1887f032a9de35cc855b43f6d1430078">&#9670;&nbsp;</a></span>queryConfigReady</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool SqlWrapperInterface::queryConfigReady</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00050">50</a></p>
-
-<p class="reference">Используется в <a class="el" href="testSqlWrapper_8h_source.html#l00038">getQueryConfigReady()</a>, <a class="el" href="testSqlWrapper_8h_source.html#l00021">makeConfigRequest()</a> и <a class="el" href="testSqlWrapper_8h_source.html#l00043">setQueryConfigReady()</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        queryConfigReady = value;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -459,7 +394,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

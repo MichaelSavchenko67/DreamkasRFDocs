@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -82,26 +105,24 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#aac5cf4fa6a9db6e49c1bbe03af8656a2">findHotkey</a>(int num_key)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsqlWrapper.html#adb5eca12d822d021871210ba5407dcc1">findUser</a>(Users::User_ *user)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a6868fae421412fa7f2e74cbe85ffbe59">findUserByPasswd</a>(string passwd)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">foundConfigValue</a></td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#ac813e4150d9574c68db72281eda42868">getAllHotkeysFromDB</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#acc1b47a3c25a4ced21eeed7e12c5c753">getConfigBaseMutex</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a634fa7f4e75abac0cc4b3c2e3a811f63">getFoundConfigValue</a>() const</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a1ec3604d2b596e5afe1bfc09da794481">getImageTable</a>(Config &amp;image_config)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a91774c0c39cf68c62fc8e53866c56cb4">getLastUpdVersion</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a2b77041c69c7e3af4892c75286de6c30">getQueryConfigReady</a>() const</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a20260500166f706705037fd28441a12f">getUserNameIdPairs</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#ad2d736dec5f43ec5c99b9eecdfa79bd6">hotkeyDb</a></td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a637f58305eb0a2fdcc0d55db123c4faf">hotkeyQuery</a></td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a2b713fe6cd1e02902ae6421be2b041d5">makeConfigRequest</a>() override</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a5166c2898641177f9bb26258e2a70d7f">makeHotkeyRequest</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a9be91c10b49499007502566f2718c4de">makeUsersRequest</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a249e07be884932daf95a60af7d64aee0">parseMask</a>(const DYNAMIC_MASK &amp;mask)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a0bbf40461e4d9b11fe7751a65cb4c6e4">parseSelectedValue</a>(const DYNAMIC_MASK &amp;mask, vector&lt; string &gt; &amp;values, Config *configStruce)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a98ef853e1c91e96ca3888f8bf127a754">parseUpdateValue</a>(vector&lt; string &gt; updFields, Config *configStruce)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">parseUsersAnswer</a>(Users::User_ *user)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a605aa615d42680eac74bfab847b97334">printConfigDb</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#ad4f255465a1ce31d11daa75aeb677f10">printUsersDb</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">queryConfigReady</a></td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#ac813e4150d9574c68db72281eda42868">getAllHotkeysFromDB</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#acc1b47a3c25a4ced21eeed7e12c5c753">getConfigBaseMutex</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a634fa7f4e75abac0cc4b3c2e3a811f63">getFoundConfigValue</a>() const</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a1ec3604d2b596e5afe1bfc09da794481">getImageTable</a>(Config &amp;image_config)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a91774c0c39cf68c62fc8e53866c56cb4">getLastUpdVersion</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a2b77041c69c7e3af4892c75286de6c30">getQueryConfigReady</a>() const</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a20260500166f706705037fd28441a12f">getUserNameIdPairs</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#ad2d736dec5f43ec5c99b9eecdfa79bd6">hotkeyDb</a></td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a637f58305eb0a2fdcc0d55db123c4faf">hotkeyQuery</a></td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSqlWrapperInterface.html#a2b713fe6cd1e02902ae6421be2b041d5">makeConfigRequest</a>() override</td><td class="entry"><a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a5166c2898641177f9bb26258e2a70d7f">makeHotkeyRequest</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a9be91c10b49499007502566f2718c4de">makeUsersRequest</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a249e07be884932daf95a60af7d64aee0">parseMask</a>(const DYNAMIC_MASK &amp;mask)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a0bbf40461e4d9b11fe7751a65cb4c6e4">parseSelectedValue</a>(const DYNAMIC_MASK &amp;mask, vector&lt; string &gt; &amp;values, Config *configStruce)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a98ef853e1c91e96ca3888f8bf127a754">parseUpdateValue</a>(vector&lt; string &gt; updFields, Config *configStruce)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a44103cb076b39837e6e7910b92a355ae">parseUsersAnswer</a>(Users::User_ *user)</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a605aa615d42680eac74bfab847b97334">printConfigDb</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#ad4f255465a1ce31d11daa75aeb677f10">printUsersDb</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsqlWrapper.html#abba3f7ee664e469549fc9f22f149a461">releaseConfigMemory</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsqlWrapper.html#a2fdf8e2cebe44eba2ab359da0b4e22d1">releaseHotkeyMemory</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsqlWrapper.html#a3d37397cfa8014b8a1505fcf24102ebf">releaseUsersMemory</a>()</td><td class="entry"><a class="el" href="classsqlWrapper.html">sqlWrapper</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -123,7 +144,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

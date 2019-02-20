@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -46,7 +69,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Макросы</a> &#124;
-<a href="#func-members">Функции</a> &#124;
 <a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Файл CabinetBase.cpp</div>  </div>
@@ -118,18 +140,11 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="1386,304,1465,331"/>
 </map>
 </div>
-</div>
-<p><a href="CabinetBase_8cpp_source.html">См. исходные тексты.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a15ef99ffddb4f590cea3ad23d5440f9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a15ef99ffddb4f590cea3ad23d5440f9e">USLEEP_WHILE_1</a>&#160;&#160;&#160;1000</td></tr>
 <tr class="separator:a15ef99ffddb4f590cea3ad23d5440f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:a8f06885ff88b85a906d1809ce505debe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CabinetBase_8cpp.html#a8f06885ff88b85a906d1809ce505debe">callbackCabinet</a> (void *data, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> argc, char **argv, char **azColName)</td></tr>
-<tr class="separator:a8f06885ff88b85a906d1809ce505debe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Переменные</h2></td></tr>
@@ -169,102 +184,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00014">14</a></p>
-
-</div>
-</div>
-<h2 class="groupheader">Функции</h2>
-<a id="a8f06885ff88b85a906d1809ce505debe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f06885ff88b85a906d1809ce505debe">&#9670;&nbsp;</a></span>callbackCabinet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> callbackCabinet </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>argv</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>azColName</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00042">42</a></p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;CALLBACK RECEIPTS!&quot;</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;Error %s: &quot;</span> , (<span class="keyword">const</span> <span class="keywordtype">char</span>*) data);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    vector&lt;string&gt; fieldList;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; argc; i++)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;%s = %s&quot;</span>, azColName[i], argv[i] ? argv[i] : <span class="stringliteral">&quot;NULL&quot;</span>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">string</span> column = <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>((<span class="keywordtype">char</span> *)(azColName[i]));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">string</span> value  = <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>((<span class="keywordtype">char</span> *)(argv[i] ? argv[i] : <span class="stringliteral">&quot;NULL&quot;</span>));</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//получить имена всех таблиц базы</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#a21521422a63a92f5480ebd7d3e0c3714">opGetBaseTablesNames</a>)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span>(column.compare(<span class="stringliteral">&quot;date&quot;</span>) == 0)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a>.insert(<a class="code" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a>.begin(), value);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a>.insert(<a class="code" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a>.begin(), column);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a>.push_back(value);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//получить последний самый свежий неотправленный документ</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#abb31affdc162e326859ff74760122bfa">opGetLastDocument</a>)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            fieldList.push_back(column);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            fieldList.push_back(value);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//получить id последнего добавленного чека</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#a76256f586db75fa2a9181b2bd2af5693">opCabinetGetLastReceiptId</a>)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">if</span>(value.compare(<span class="stringliteral">&quot;NULL&quot;</span>) == 0)</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#ad549dd6d8f731a00b4b790876682dafc">lastAddedReceiptIdCabinet</a> = -1;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#ad549dd6d8f731a00b4b790876682dafc">lastAddedReceiptIdCabinet</a> = atoi(value.c_str());</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="CabinetBase_8cpp.html#a76256f586db75fa2a9181b2bd2af5693">opCabinetGetLastReceiptId</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">//получить id последней добавленной смены</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#a57f57908aeebf38258a0d3030013486d">opCabinetGetLastShiftId</a>)</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span>(value.compare(<span class="stringliteral">&quot;NULL&quot;</span>) == 0)</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#a0ad7a56af1ce9d867a36133a45dc7ce7">lastAddedShiftIdCabinet</a> = -1;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#a0ad7a56af1ce9d867a36133a45dc7ce7">lastAddedShiftIdCabinet</a> = atoi(value.c_str());</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="CabinetBase_8cpp.html#a57f57908aeebf38258a0d3030013486d">opCabinetGetLastShiftId</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//получить id последнего добавленного счетчика</span></div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#aaa793609f051127de4b3e6a99cea6e1b">opCabinetGetLastCountersId</a>)</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span>(value.compare(<span class="stringliteral">&quot;NULL&quot;</span>) == 0)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#ae7d524c45e608b66b8cb4224130df8ab">lastAddedCountersIdCabinet</a> = -1;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="CabinetBase_8cpp.html#ae7d524c45e608b66b8cb4224130df8ab">lastAddedCountersIdCabinet</a> = atoi(value.c_str());</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="CabinetBase_8cpp.html#aaa793609f051127de4b3e6a99cea6e1b">opCabinetGetLastCountersId</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//получить последний самый свежий неотправленный документ</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="CabinetBase_8cpp.html#abb31affdc162e326859ff74760122bfa">opGetLastDocument</a>)</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="CabinetBase_8cpp.html#abbc331feaaf3de22ed4585ba246fa967">lastDocuments</a>.push_back(fieldList);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="CabinetBase_8cpp.html#ad6d02595f53e795bf4766d7ce7f0ed73">queryCabinetRdy</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="ttc" id="CabinetBase_8cpp_html_a57f57908aeebf38258a0d3030013486d"><div class="ttname"><a href="CabinetBase_8cpp.html#a57f57908aeebf38258a0d3030013486d">opCabinetGetLastShiftId</a></div><div class="ttdeci">bool opCabinetGetLastShiftId</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00033">CabinetBase.cpp:33</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_a21521422a63a92f5480ebd7d3e0c3714"><div class="ttname"><a href="CabinetBase_8cpp.html#a21521422a63a92f5480ebd7d3e0c3714">opGetBaseTablesNames</a></div><div class="ttdeci">bool opGetBaseTablesNames</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00030">CabinetBase.cpp:30</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_a0ad7a56af1ce9d867a36133a45dc7ce7"><div class="ttname"><a href="CabinetBase_8cpp.html#a0ad7a56af1ce9d867a36133a45dc7ce7">lastAddedShiftIdCabinet</a></div><div class="ttdeci">int lastAddedShiftIdCabinet</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00036">CabinetBase.cpp:36</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_a5d266635c574c60d34f4010876e2b725"><div class="ttname"><a href="CabinetBase_8cpp.html#a5d266635c574c60d34f4010876e2b725">tableNames</a></div><div class="ttdeci">vector&lt; string &gt; tableNames</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00038">CabinetBase.cpp:38</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_ae7d524c45e608b66b8cb4224130df8ab"><div class="ttname"><a href="CabinetBase_8cpp.html#ae7d524c45e608b66b8cb4224130df8ab">lastAddedCountersIdCabinet</a></div><div class="ttdeci">int lastAddedCountersIdCabinet</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00037">CabinetBase.cpp:37</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_ad549dd6d8f731a00b4b790876682dafc"><div class="ttname"><a href="CabinetBase_8cpp.html#ad549dd6d8f731a00b4b790876682dafc">lastAddedReceiptIdCabinet</a></div><div class="ttdeci">int lastAddedReceiptIdCabinet</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00035">CabinetBase.cpp:35</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_ad6d02595f53e795bf4766d7ce7f0ed73"><div class="ttname"><a href="CabinetBase_8cpp.html#ad6d02595f53e795bf4766d7ce7f0ed73">queryCabinetRdy</a></div><div class="ttdeci">volatile bool queryCabinetRdy</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00029">CabinetBase.cpp:29</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_a76256f586db75fa2a9181b2bd2af5693"><div class="ttname"><a href="CabinetBase_8cpp.html#a76256f586db75fa2a9181b2bd2af5693">opCabinetGetLastReceiptId</a></div><div class="ttdeci">bool opCabinetGetLastReceiptId</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00032">CabinetBase.cpp:32</a></div></div>
-<div class="ttc" id="classConvert_html_a9d413a4d0ae48dd4817751ed9cbce859"><div class="ttname"><a href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a></div><div class="ttdeci">static string charToString(const char *source)</div><div class="ttdef"><b>Definition:</b> <a href="convert_8cpp_source.html#l00204">convert.cpp:204</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_aaa793609f051127de4b3e6a99cea6e1b"><div class="ttname"><a href="CabinetBase_8cpp.html#aaa793609f051127de4b3e6a99cea6e1b">opCabinetGetLastCountersId</a></div><div class="ttdeci">bool opCabinetGetLastCountersId</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00034">CabinetBase.cpp:34</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_abb31affdc162e326859ff74760122bfa"><div class="ttname"><a href="CabinetBase_8cpp.html#abb31affdc162e326859ff74760122bfa">opGetLastDocument</a></div><div class="ttdeci">bool opGetLastDocument</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00031">CabinetBase.cpp:31</a></div></div>
-<div class="ttc" id="CabinetBase_8cpp_html_abbc331feaaf3de22ed4585ba246fa967"><div class="ttname"><a href="CabinetBase_8cpp.html#abbc331feaaf3de22ed4585ba246fa967">lastDocuments</a></div><div class="ttdeci">vector&lt; vector&lt; string &gt; &gt; lastDocuments</div><div class="ttdef"><b>Definition:</b> <a href="CabinetBase_8cpp_source.html#l00039">CabinetBase.cpp:39</a></div></div>
-<div class="ttc" id="log_8h_html_ab00dd66449102a6d5f35f8c9687892f7"><div class="ttname"><a href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a></div><div class="ttdeci">#define logDBG( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="convert_8cpp_source.html#l00204">Convert::charToString()</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00037">lastAddedCountersIdCabinet</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00035">lastAddedReceiptIdCabinet</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00036">lastAddedShiftIdCabinet</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00039">lastDocuments</a>, <a class="el" href="log_8h_source.html#l00034">logDBG</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00034">opCabinetGetLastCountersId</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00032">opCabinetGetLastReceiptId</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00033">opCabinetGetLastShiftId</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00030">opGetBaseTablesNames</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00031">opGetLastDocument</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00029">queryCabinetRdy</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00038">tableNames</a>.</p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00127">CabinetBase::makeCabinetRequest()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_cgraph.png" border="0" usemap="#CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_cgraph" alt=""/></div>
-<map name="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_cgraph" id="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,120,32"/>
-<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="168,5,319,32"/>
-</map>
-</div>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_icgraph.png" border="0" usemap="#CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_icgraph" alt=""/></div>
-<map name="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_icgraph" id="CabinetBase_8cpp_a8f06885ff88b85a906d1809ce505debe_icgraph">
-<area shape="rect"  title=" " alt="" coords="492,81,607,108"/>
-<area shape="rect"  href="classCabinetBase.html#a391039ce5179aebbd5e936f88c7e3fec" title=" " alt="" coords="261,74,444,115"/>
-<area shape="rect"  href="classCabinetBase.html#ab1d39708e5a75823afcd372c97856bed" title=" " alt="" coords="30,5,189,32"/>
-<area shape="rect"  href="classCabinetBase.html#adaccf3be8aa0bbdda752b3e76267efd3" title=" " alt="" coords="27,56,192,83"/>
-<area shape="rect"  href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7" title=" " alt="" coords="13,107,206,133"/>
-<area shape="rect"  href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c" title=" " alt="" coords="5,157,213,184"/>
-</map>
-</div>
-
 </div>
 </div>
 <h2 class="groupheader">Переменные</h2>
@@ -280,9 +199,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00037">37</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -298,9 +215,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00035">35</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -316,9 +231,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00036">36</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +247,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00039">39</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00631">CabinetBase::getLastDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c">CabinetBase::getLastDocument()</a>.</p>
 
 </div>
 </div>
@@ -352,9 +263,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00034">34</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -370,9 +279,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00032">32</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +295,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00033">33</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -406,9 +311,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00030">30</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00314">CabinetBase::prepareDb()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#adaccf3be8aa0bbdda752b3e76267efd3">CabinetBase::prepareDb()</a>.</p>
 
 </div>
 </div>
@@ -424,9 +327,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00031">31</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00631">CabinetBase::getLastDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c">CabinetBase::getLastDocument()</a>.</p>
 
 </div>
 </div>
@@ -442,9 +343,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00029">29</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00631">CabinetBase::getLastDocument()</a>, <a class="el" href="CabinetBase_8cpp_source.html#l00314">CabinetBase::prepareDb()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00349">CabinetBase::saveDocument()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c">CabinetBase::getLastDocument()</a>, <a class="el" href="classCabinetBase.html#adaccf3be8aa0bbdda752b3e76267efd3">CabinetBase::prepareDb()</a> и <a class="el" href="classCabinetBase.html#afb09a94e491d8a2b6d966cedf10788c7">CabinetBase::saveDocument()</a>.</p>
 
 </div>
 </div>
@@ -460,16 +359,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="CabinetBase_8cpp_source.html">CabinetBase.cpp</a> строка <a class="el" href="CabinetBase_8cpp_source.html#l00038">38</a></p>
-
-<p class="reference">Используется в <a class="el" href="CabinetBase_8cpp_source.html#l00042">callbackCabinet()</a> и <a class="el" href="CabinetBase_8cpp_source.html#l00314">CabinetBase::prepareDb()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classCabinetBase.html#adaccf3be8aa0bbdda752b3e76267efd3">CabinetBase::prepareDb()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

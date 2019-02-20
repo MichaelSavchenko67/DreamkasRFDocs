@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -46,12 +69,6 @@ $(function() {
 <li>f
 : <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power.html#a56a47ff88dce47986dd938f2ccb2abbf">nlohmann::detail::dtoa_impl::cached_power</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a90f04c892ac1e707fdb50b0e1eb59030">nlohmann::detail::dtoa_impl::diyfp</a>
-</li>
-<li>FACT_NUM_LEN
-: <a class="el" href="classGen__uuid.html#aca5750ff3c9dd1582b505e0ff35bfdd4">Gen_uuid</a>
-</li>
-<li>factoryNumber
-: <a class="el" href="classHttpsExchange.html#ab181cd3f2da36ea731769c60787629de">HttpsExchange</a>
 </li>
 <li>FACULTY
 : <a class="el" href="classUsers.html#ad5b2ce3f0dc3be2c6e790732c6eb2fa8">Users</a>
@@ -78,10 +95,6 @@ $(function() {
 : <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT.html#acf20c2a1347254d1dad3b3e98c19e7b9">BIOS::RUS::FISCAL_RESULT</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT__1__1.html#a9b3bc30981bbc927666f94b0d283e465">BIOS::RUS::FISCAL_RESULT_1_1</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1RECEIPT__FIS__DATA.html#a83684af57779de5809733de2dd01aff6">BIOS::RUS::RECEIPT_FIS_DATA</a>
-, <a class="el" href="classPrinter.html#a43cbd9579290aadd728b875f063cd083">Printer</a>
-</li>
-<li>fd_dotlcd_drawer
-: <a class="el" href="classLcd.html#a4ead1547d6eec853e5147777915c25c9">Lcd</a>
 </li>
 <li>fd_in_shift
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#a276e6c6c512fc123cba7b766655ec3d5">Receipt::Fiscal_data</a>
@@ -92,8 +105,7 @@ $(function() {
 , <a class="el" href="classReceipt.html#aff7381b69baf9b1cc2dba280e707e80d">Receipt</a>
 </li>
 <li>fd_number
-: <a class="el" href="classBIOS_1_1RUS.html#a874c1a00a9d6c8328e4314f4f1b7aa1a">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#a6d07a47e556bed9c76f74568502dd827">Receipt::Fiscal_data</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#a6d07a47e556bed9c76f74568502dd827">Receipt::Fiscal_data</a>
 , <a class="el" href="classReceipt__new.html#a2e90510c2a3eac19cc563e1798c2455f">Receipt_new</a>
 </li>
 <li>FD_NUMBER
@@ -119,9 +131,6 @@ $(function() {
 </li>
 <li>FFD_VERSION_CHANGE
 : <a class="el" href="classBIOS_1_1RUS.html#a09472c538ab637aba29e7c7c02122d45">BIOS::RUS</a>
-</li>
-<li>ffdVer
-: <a class="el" href="classHttpsExchange.html#a6910e60b3e72d112ad9b91c8d8e1e38c">HttpsExchange</a>
 </li>
 <li>fg
 : <a class="el" href="classBIOS.html#a1f5a327846688e54ee22929291caab62">BIOS</a>
@@ -156,18 +165,9 @@ $(function() {
 : <a class="el" href="classPosition__new.html#a7dd7ca62426b65ffbd886657496db80d">Position_new</a>
 , <a class="el" href="classReceipt__new.html#a641620961cce03cec80ee0d9f967abf1">Receipt_new</a>
 </li>
-<li>fileName
-: <a class="el" href="classFiscalDocDb.html#abc6ed31415cc288f7015859b83a3a162">FiscalDocDb</a>
-</li>
 <li>fileSize
 : <a class="el" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">JSONUpdate</a>
 , <a class="el" href="structJSONUpdateStr.html#a62d9dc01eb93f74ba9c4888feac72bc1">JSONUpdateStr</a>
-</li>
-<li>fileTime
-: <a class="el" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">TimeSync</a>
-</li>
-<li>fileTZ
-: <a class="el" href="classTimeSync.html#af52323f74ce061e44276016c7fd69208">TimeSync</a>
 </li>
 <li>FINISH_ON_DATE
 : <a class="el" href="classTestJSON_1_1MockJson.html#a0a076334b842cf7e87b3b04e22fa87c3">TestJSON::MockJson</a>
@@ -175,17 +175,11 @@ $(function() {
 <li>finishOnDate
 : <a class="el" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">Discount</a>
 </li>
-<li>first_connect
-: <a class="el" href="classMenu.html#ab33a154f780f1b73b154c3459c727401">Menu</a>
-</li>
 <li>first_in_queue_doc_num
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#a0df389ab8575b9bae0fefbb093d2c2a5">Receipt::Fiscal_data</a>
 </li>
 <li>first_symbol
 : <a class="el" href="classLcd.html#a51ab6936dd11017b9fbbd8b8895153cf">Lcd</a>
-</li>
-<li>first_undelegated_doc_num
-: <a class="el" href="classBIOS_1_1RUS.html#aa5320f4646731c2c487456b6d3a28ea0">BIOS::RUS</a>
 </li>
 <li>fiscal_doc_storage
 : <a class="el" href="classPrinter.html#ad5c06c3764b9e04352dc58358caaa32d">Printer</a>
@@ -210,27 +204,6 @@ $(function() {
 </li>
 <li>fix_size
 : <a class="el" href="structReceipt_1_1requisites.html#aaab1efbe5ea633061b98a632a9bb6743">Receipt::requisites</a>
-</li>
-<li>flag_change_user
-: <a class="el" href="classMenu.html#abf8dc9f56f53e5a3b66cf269761c484d">Menu</a>
-</li>
-<li>flag_fn_connection_status_OK
-: <a class="el" href="classMenu.html#a865cd121894a7e017e8bebdf294c93f8">Menu</a>
-</li>
-<li>flag_key_connect_mask
-: <a class="el" href="classMenu.html#a2a6cbfbe93f60f2cda508f1737618b03">Menu</a>
-</li>
-<li>flag_lcd_connect_mask
-: <a class="el" href="classMenu.html#afdd682f9158159cf70bc08a570581d41">Menu</a>
-</li>
-<li>flag_paper_out_mask
-: <a class="el" href="classMenu.html#a3868d74e163ecb6aeef15dec032db7de">Menu</a>
-</li>
-<li>flag_printer_connect_mask
-: <a class="el" href="classMenu.html#ab154c27be451c8d00fbfc4f28ac2e717">Menu</a>
-</li>
-<li>flag_printer_high_temp_mask
-: <a class="el" href="classMenu.html#ac2fbb715af5c4ea1db55eeeab10eb12c">Menu</a>
 </li>
 <li>flag_scan_en
 : <a class="el" href="classMenu.html#a5bb7a9f8b70167aa0d88e90b821bf26b">Menu</a>
@@ -261,9 +234,6 @@ $(function() {
 <li>fn_registry_name
 : <a class="el" href="structJSON_1_1JSON__KKT__INFO.html#a51915736aa18d5a8e438179534897a8d">JSON::JSON_KKT_INFO</a>
 </li>
-<li>FNnumber
-: <a class="el" href="classHttpsExchange.html#ab85904cb18a7e01b8f48c0dbe78ac534">HttpsExchange</a>
-</li>
 <li>fnNumber
 : <a class="el" href="structJSON_1_1JSON__REGISTRATION.html#a9757f6ecb764efd3aa2650f98aafbba2">JSON::JSON_REGISTRATION</a>
 </li>
@@ -279,12 +249,6 @@ $(function() {
 <li>font
 : <a class="el" href="structfiscal__doc.html#a088aefa8a0cf6f6d5f9d56450ff2247f">fiscal_doc</a>
 </li>
-<li>font_table
-: <a class="el" href="classLcd.html#ab7316d7ebf258b9ae1c5cccb35d7c7ed">Lcd</a>
-</li>
-<li>font_table_size
-: <a class="el" href="classLcd.html#a2b789e8e62841bfcc21b9dbd5e18a091">Lcd</a>
-</li>
 <li>fontSize
 : <a class="el" href="structFontStruct.html#afae8102aac34cfb97a40901bdc8cda60">FontStruct</a>
 </li>
@@ -294,9 +258,6 @@ $(function() {
 <li>FORMAT_CMD
 : <a class="el" href="classBIOS_1_1RUS.html#a9b6709ba4d8f7ff9c82c2f184dfc9d6d">BIOS::RUS</a>
 </li>
-<li>foundConfigValue
-: <a class="el" href="classSqlWrapperInterface.html#a95b73ebb8b0f4aa3dc9926dbb3cd5f58">SqlWrapperInterface</a>
-</li>
 <li>fpd
 : <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT.html#a31804d38f63f28730d2ee14c6c461997">BIOS::RUS::FISCAL_RESULT</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT__1__1.html#a08e01fd33ec6c29e6f8314153a77288e">BIOS::RUS::FISCAL_RESULT_1_1</a>
@@ -305,8 +266,7 @@ $(function() {
 , <a class="el" href="classReceipt.html#a4a69877cdbd35045601d9cc46c5639ff">Receipt</a>
 </li>
 <li>fpd_number
-: <a class="el" href="classBIOS_1_1RUS.html#a3de3b7845ed5a78676e5733ec4668a88">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#a412e3ae64c5352b57fe251236a979076">Receipt::Fiscal_data</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#a412e3ae64c5352b57fe251236a979076">Receipt::Fiscal_data</a>
 </li>
 <li>FPD_NUMBER
 : <a class="el" href="classReceipt__new.html#ac974d3b9edf7cf99e7665b9e780bbdd9">Receipt_new</a>
@@ -322,9 +282,6 @@ $(function() {
 </li>
 <li>FREE_MEM_CMD
 : <a class="el" href="classBIOS_1_1RUS.html#a3d58e17d987503cb9b585ef2fb321293">BIOS::RUS</a>
-</li>
-<li>fs_change_kkt_mode
-: <a class="el" href="classBIOS_1_1RUS.html#ac83a4ad0f5b405ca95be85ba2f0f1331">BIOS::RUS</a>
 </li>
 <li>FS_CNTS
 : <a class="el" href="classBIOS_1_1RUS.html#a3d850a8176ddb5d9a622bec77f3cdeaf">BIOS::RUS</a>
@@ -342,14 +299,15 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#afcc0daf8dd393df2bce7b3ba7799bbf2">BIOS::RUS</a>
 </li>
 <li>fs_number
-: <a class="el" href="classBIOS_1_1RUS.html#a7c71c7f7cc6575e28aa9d86e89ccb3cd">BIOS::RUS</a>
-, <a class="el" href="structConfig.html#adab4f288e8f4264ada28506948fdd785">Config</a>
+: <a class="el" href="structConfig.html#adab4f288e8f4264ada28506948fdd785">Config</a>
 , <a class="el" href="structPrinter_1_1technical__report.html#aee6c92da7e35fc5014cb21c4ad61a454">Printer::technical_report</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a18f61c8221de03401beebcb1168066b4">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#a191c31ad403ff94bbeecb61fafaa7029">Receipt_new</a>
 </li>
 <li>FS_NUMBER
 : <a class="el" href="classReceipt__new.html#a4b741d1743cdf1951afc368322bc646d">Receipt_new</a>
+</li>
+<li>fs_number
+: <a class="el" href="classReceipt__new.html#a191c31ad403ff94bbeecb61fafaa7029">Receipt_new</a>
 </li>
 <li>fs_number_count
 : <a class="el" href="structConfig.html#ac77f465d0966fb0b7bf65aa51556958c">Config</a>
@@ -360,9 +318,6 @@ $(function() {
 <li>fs_numbers_table
 : <a class="el" href="structConfig.html#ae7ea2e465584dc7bb5d273e8bb52d70e">Config</a>
 </li>
-<li>fs_offline_kkt_mode
-: <a class="el" href="classBIOS_1_1RUS.html#a547eadb89d90314ad538239d34a19eb6">BIOS::RUS</a>
-</li>
 <li>FS_PATENT
 : <a class="el" href="classBIOS_1_1RUS.html#a51b99f089f5dfc66055bf2ce01c24a37">BIOS::RUS</a>
 </li>
@@ -370,8 +325,7 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#a67408daf78d45dcc25069fd4e1449b65">BIOS::RUS</a>
 </li>
 <li>fs_replace_mode
-: <a class="el" href="classBIOS_1_1RUS.html#a0bb9725c7578d540b236e6ad69f608d2">BIOS::RUS</a>
-, <a class="el" href="structConfig.html#ab646a37d2085c71428d5c770a7a6d812">Config</a>
+: <a class="el" href="structConfig.html#ab646a37d2085c71428d5c770a7a6d812">Config</a>
 </li>
 <li>FS_REPLACE_REG
 : <a class="el" href="classBIOS_1_1RUS.html#a4564f97f6a5b2b30771adf5b254d15c2">BIOS::RUS</a>
@@ -393,9 +347,6 @@ $(function() {
 </li>
 <li>FS_TIMEOUT
 : <a class="el" href="classMenu.html#a3a356ee30a69657302b23a1ed79bf584">Menu</a>
-</li>
-<li>fs_timer
-: <a class="el" href="classBIOS_1_1RUS.html#a9151517606e82706b8dacce50641cc91">BIOS::RUS</a>
 </li>
 <li>FS_TOTAL
 : <a class="el" href="classBIOS_1_1RUS.html#ad9ce90f6947d823390ae923c8fa5449e">BIOS::RUS</a>
@@ -437,7 +388,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

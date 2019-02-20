@@ -1,8 +1,7 @@
 <map id="NodeConflictResolver::getScanerNode" name="NodeConflictResolver::getScanerNode">
-<area shape="rect" id="node1" title=" " alt="" coords="684,27,835,69"/>
-<area shape="rect" id="node2" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="452,5,636,32"/>
-<area shape="rect" id="node6" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="453,57,635,98"/>
-<area shape="rect" id="node3" href="$threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="241,35,404,61"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,35,193,61"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,35,56,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="585,27,736,69"/>
+<area shape="rect" id="node2" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="353,5,537,32"/>
+<area shape="rect" id="node5" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="354,57,537,98"/>
+<area shape="rect" id="node3" href="$threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="143,35,305,61"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,35,95,61"/>
 </map>

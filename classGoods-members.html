@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -47,23 +70,22 @@ $(function() {
 
 <p>Полный список членов класса <a class="el" href="classGoods.html">Goods</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#a41c68cc7e8a1330645f9f2c0ee658e4c">good_init</a>(Positions &amp;p, int64_t &amp;unit_price, Position_new *pos_new, Receipt_new *rec_new)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a11ec1c9d1cf7df8c07419e3cbec4ccf3">Goods</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#aa0d7d9c73da3469c6d1df345ff1192de">goods_clean</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#a1872dd58c62b26c8478accb51203649a">goods_data_get</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a0d1eddfd59cf73d9209ae4a5ff82a092">goods_exist</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#a9b736722c02d09888c6279ec6c9aaffd">operator=</a>(const Goods &amp;)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#acf06505a515ee936fc29fcefde76c0ba">print_list</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a322f31d22767d88dfbe9c41912196bfb">setTaxes</a>(const shared_ptr&lt; Taxes &gt; &amp;taxes)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classGoods.html#aa16062527df573298f13406c1cfdd635">size_of_goods_data</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#adf08e7fc1cf8f6520609192b3188775f">~Goods</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a41c68cc7e8a1330645f9f2c0ee658e4c">good_init</a>(Positions &amp;p, int64_t &amp;unit_price, Position_new *pos_new, Receipt_new *rec_new)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#a11ec1c9d1cf7df8c07419e3cbec4ccf3">Goods</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#aa0d7d9c73da3469c6d1df345ff1192de">goods_clean</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a1872dd58c62b26c8478accb51203649a">goods_data_get</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#a0d1eddfd59cf73d9209ae4a5ff82a092">goods_exist</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#a9b736722c02d09888c6279ec6c9aaffd">operator=</a>(const Goods &amp;)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#acf06505a515ee936fc29fcefde76c0ba">print_list</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#a322f31d22767d88dfbe9c41912196bfb">setTaxes</a>(const shared_ptr&lt; Taxes &gt; &amp;taxes)</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classGoods.html#aa16062527df573298f13406c1cfdd635">size_of_goods_data</a></td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classGoods.html#adf08e7fc1cf8f6520609192b3188775f">~Goods</a>()</td><td class="entry"><a class="el" href="classGoods.html">Goods</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

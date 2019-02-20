@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -62,9 +85,6 @@ $(function() {
 <li>packetSize
 : <a class="el" href="classScaleProtocolInterface.html#ad66ff65c065ea9afdbec731a909843a7">ScaleProtocolInterface</a>
 </li>
-<li>PADDING
-: <a class="el" href="classCMd5Sum.html#a5d6f725fda364d51ab034a9479646894">CMd5Sum</a>
-</li>
 <li>PAN
 : <a class="el" href="structSlip.html#a58cef03b4f988afa9cd5612b34e03a19">Slip</a>
 </li>
@@ -79,7 +99,6 @@ $(function() {
 </li>
 <li>parent
 : <a class="el" href="structJSON_1_1JSON__META.html#a0c760ecc115ff839cf503cd1f37ec977">JSON::JSON_META</a>
-, <a class="el" href="classMenuItem.html#a7514ab030c91963292036dda32d0b0cc">MenuItem</a>
 </li>
 <li>parentID
 : <a class="el" href="structWearAttr.html#a6fceaa702852a9c518a2951a6bcadbf7">WearAttr</a>
@@ -103,9 +122,6 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
-<li>parse_cbor_internal()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a2fc47768d484a22fcd04e20106da1399">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
 <li>PARSE_ERROR
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27deae9f42cb74518d8ceeb4610c83f4b874c">FISGO_TEST_API</a>
 </li>
@@ -114,7 +130,6 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a95bb3e8b6feaa523ecda8106fb5e38e3">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7">nlohmann::detail::parse_error</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a60287e3bd85f489e04c83f7e3b76e613">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 <li>parse_event_t
@@ -122,20 +137,8 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6d706967b2ecc2510e172577d8550b">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a37ac88c864dda495f72cb62776b0bebe">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
-<li>parse_msgpack_internal()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a81611d8a5faec1348d31f7e98fcd05ef">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
-<li>parse_ubjson_internal()
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#af60c6bba6f1301cb02e0186c99e25751">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
 <li>parseActivationKey()
 : <a class="el" href="classJSON.html#a953eaebf5c99a886ae4e32894c7a9ca4">JSON</a>
-</li>
-<li>parseAnswer()
-: <a class="el" href="classSlipsDB.html#a4a89ddc3ed694eba59d57e9b977fa751">SlipsDB</a>
-</li>
-<li>parseBaseAnswer()
-: <a class="el" href="classCounters.html#a9866a9fe4d17e2ede89623a16d1d5035">Counters</a>
 </li>
 <li>parseBindProduct()
 : <a class="el" href="classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb">JSON</a>
@@ -146,23 +149,11 @@ $(function() {
 <li>parseDeleteProduct()
 : <a class="el" href="classJSON.html#ac857adf6f636e0608fae1c073f6a568e">JSON</a>
 </li>
-<li>parseErrorCode()
-: <a class="el" href="classScaleProtocolMassak.html#a36258a7cd2078c931a77a2bd29fc8e63">ScaleProtocolMassak</a>
-</li>
 <li>parseExternalPurchase()
 : <a class="el" href="classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f">JSON</a>
 </li>
 <li>parseFromBaseFields()
 : <a class="el" href="classReceiptsDb.html#aeb79669c4aed04e7c96ddaec1361f14e">ReceiptsDb</a>
-</li>
-<li>parseGoodsAnswer()
-: <a class="el" href="classGoods__new.html#a35f5c614ff6d791859151ffa86d41edd">Goods_new</a>
-</li>
-<li>parseGoodsAnswer_new()
-: <a class="el" href="classGoods__new.html#abf73c64e6ab3d95397c8d1907eb0ea6f">Goods_new</a>
-</li>
-<li>parseGoodsAnswerOne()
-: <a class="el" href="classGoods__new.html#a4a25d4b6d84ce709581d20181a9478a4">Goods_new</a>
 </li>
 <li>parseIntegerValue()
 : <a class="el" href="classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03">ScaleProtocolInterface</a>
@@ -173,9 +164,8 @@ $(function() {
 <li>parseMask()
 : <a class="el" href="classsqlWrapper.html#a249e07be884932daf95a60af7d64aee0">sqlWrapper</a>
 </li>
-<li>parser
-: <a class="el" href="classnlohmann_1_1basic__json.html#aba9704e82d18f8954f9925e26cec7a51">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a1a2bd258b7e99f86b7e6a3c41373ba55">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+<li>parser()
+: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a1a2bd258b7e99f86b7e6a3c41373ba55">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>parser_callback_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#ab4f78c5f9fd25172eeec84482e03f5b7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -206,14 +196,8 @@ $(function() {
 <li>part_pay()
 : <a class="el" href="classMenu.html#a8071c993ac3a17477251d0b9c02110f5">Menu</a>
 </li>
-<li>partNumber
-: <a class="el" href="classHttpsExchange.html#adabf14e07e38301b57a37493e96c1716">HttpsExchange</a>
-</li>
 <li>pass
 : <a class="el" href="structUsers_1_1User__.html#ab8aed5ca81c0e602b392f0db28129b1d">Users::User_</a>
-</li>
-<li>pass_tmp_buf
-: <a class="el" href="classMenu.html#afbec01ae953c1e7fb1224eaa28428cdf">Menu</a>
 </li>
 <li>passwd_get()
 : <a class="el" href="classMenu.html#a45bdf5c289b001b541cdd5c8543a055d">Menu</a>
@@ -370,12 +354,10 @@ $(function() {
 </li>
 <li>payment_type
 : <a class="el" href="classReceipt.html#a2f870dad94d412e6a2a962f89fdc6761">Receipt</a>
+, <a class="el" href="classReceipt__new.html#a87f7d6906a85e2515cbc7f72ab739601">Receipt_new</a>
 </li>
 <li>PAYMENT_TYPE
 : <a class="el" href="classReceipt__new.html#a1751f267d04a5404de6f554fb65a2b46">Receipt_new</a>
-</li>
-<li>payment_type
-: <a class="el" href="classReceipt__new.html#a87f7d6906a85e2515cbc7f72ab739601">Receipt_new</a>
 </li>
 <li>payment_type_get()
 : <a class="el" href="classMenu.html#ac44c11b1d0233bd4c1f13e7985ab278f">Menu</a>
@@ -420,9 +402,6 @@ $(function() {
 : <a class="el" href="classPosition__new.html#a4446d71ddd8487c86244cbbdb050dafe">Position_new</a>
 , <a class="el" href="classPositions.html#aa417fad8f59ccd7569f09499b163d547">Positions</a>
 </li>
-<li>place
-: <a class="el" href="classHttpsExchange.html#a89641a86332d61b8cece442ea5c6c2e9">HttpsExchange</a>
-</li>
 <li>PLACE_MAX_SIZE
 : <a class="el" href="classBIOS_1_1RUS.html#a6adfa9f618abf40455d78c570fcccdd3a1d92884f599bf3a113f3d373c7f853f8">BIOS::RUS</a>
 </li>
@@ -438,13 +417,9 @@ $(function() {
 <li>POINT
 : <a class="el" href="classLcd.html#a29c57ca41a4789959e99b579262323e8">Lcd</a>
 </li>
-<li>POINTER
-: <a class="el" href="classCMd5Sum.html#af4af7539a181ba448706a6fb735aa37c">CMd5Sum</a>
-</li>
 <li>pointer
 : <a class="el" href="classnlohmann_1_1basic__json.html#aefee1f777198c68724bd127e0c8abbe4">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#af45c7d41037b5461d7547d6fb7f3b703">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 </li>
 <li>POLL
 : <a class="el" href="classHttpsExchange.html#a8d67821f75e87d148da02420bd11f09da49746ecce16a20d3950f39fb91de2466">HttpsExchange</a>
@@ -462,17 +437,8 @@ $(function() {
 <li>POLL_VER
 : <a class="el" href="classJSON.html#aadc79c3e9b48fb1e0b173b9c52415ca7a5308f8cefdc2b440d26f0d812b14a680">JSON</a>
 </li>
-<li>pollStr
-: <a class="el" href="classHttpsExchange.html#a642ca5602eec5b6f779646522f0ecb14">HttpsExchange</a>
-</li>
 <li>pollTime
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#a9be2b510675ac8fca69eae2118dedc6d">FISGO_TEST_API::TASK</a>
-</li>
-<li>pop_back()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#a4d523606a8b40cef73e976e61b6fd383">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
-<li>port
-: <a class="el" href="classBIOS.html#a449247723e9a6439c1a48e375b4469cb">BIOS</a>
 </li>
 <li>PORT
 : <a class="el" href="classTestScaleProtocolPos2.html#acfe5d4fbd7af256dbd513a9c277406b6">TestScaleProtocolPos2</a>
@@ -539,9 +505,6 @@ $(function() {
 <li>pos_clc_mthd_set()
 : <a class="el" href="classPositions.html#a3b0474eaa63c2b9b2aada239eb42f908">Positions</a>
 </li>
-<li>pos_cost
-: <a class="el" href="classPosition__new.html#a8d103f353d2caa535f77e2a34695fa11">Position_new</a>
-</li>
 <li>POS_COST
 : <a class="el" href="classPosition__new.html#abff8d514e34d942a2051c67359cb884d">Position_new</a>
 </li>
@@ -581,9 +544,6 @@ $(function() {
 </li>
 <li>POS_SOURCE
 : <a class="el" href="classFISGO__TEST__API.html#a1728e5126cfcb1f85bd4416bead35ba1">FISGO_TEST_API</a>
-</li>
-<li>pos_sum_display
-: <a class="el" href="classPosition__new.html#aad94454a7038b4ab7d3da6679ae5eb8f">Position_new</a>
 </li>
 <li>POS_SUM_DISPLAY
 : <a class="el" href="classPosition__new.html#a6f9d3c384159e477fb557fc29daddc8e">Position_new</a>
@@ -632,7 +592,7 @@ $(function() {
 : <a class="el" href="classMenu.html#a903602f6020e4fc2589fa49b14ebc84a">Menu</a>
 </li>
 <li>Position_new()
-: <a class="el" href="classPosition__new.html#a02d14325625ad89b6854c8411090e049">Position_new</a>
+: <a class="el" href="classPosition__new.html#ac2e51c575e456b0c4625be1be6f1600e">Position_new</a>
 </li>
 <li>positions
 : <a class="el" href="structBIOS_1_1BEL_1_1RECEIPT.html#aa7ff877c6bdbe5dd7a11c554b230ab83">BIOS::BEL::RECEIPT</a>
@@ -641,13 +601,13 @@ $(function() {
 </li>
 <li>Positions
 : <a class="el" href="classPositions_1_1Position.html#ad19e3a61503f81738f4b7f4cb5e8a435">Positions::Position</a>
-, <a class="el" href="classPositions.html#a5efd80e75f6ac27a86df19b74d325720">Positions</a>
-</li>
-<li>positions
-: <a class="el" href="classReceipt__new.html#aef9f99404b202647a0e3f3a8ee3a8986">Receipt_new</a>
+, <a class="el" href="classPositions.html#abe551b3b660d6d272feb42ba3cc54cae">Positions</a>
 </li>
 <li>POSITIONS
 : <a class="el" href="classReceipt__new.html#a406d76150dcac7ab824134e881cc6c76">Receipt_new</a>
+</li>
+<li>positions
+: <a class="el" href="classReceipt__new.html#aef9f99404b202647a0e3f3a8ee3a8986">Receipt_new</a>
 </li>
 <li>positions_clear()
 : <a class="el" href="classJSON.html#a0ce67683a705b0ba25dd33ca174505e5">JSON</a>
@@ -723,21 +683,27 @@ $(function() {
 </li>
 <li>PREPAYMENT
 : <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daa9d63b585ee732b9332eaf637c3872432">Lcd</a>
-, <a class="el" href="classPosition__new.html#a20e8aadba0523c6f4d7f98f5071dd11b">Position_new</a>
 </li>
 <li>prepayment
 : <a class="el" href="classPosition__new.html#a3127b3b6ca599ceb45f1b2cf3d6d3a23">Position_new</a>
-, <a class="el" href="classPositions_1_1Position.html#a9ee63fda847e6f9e5b6d70df9b67feea">Positions::Position</a>
+</li>
+<li>PREPAYMENT
+: <a class="el" href="classPosition__new.html#a20e8aadba0523c6f4d7f98f5071dd11b">Position_new</a>
+</li>
+<li>prepayment
+: <a class="el" href="classPositions_1_1Position.html#a9ee63fda847e6f9e5b6d70df9b67feea">Positions::Position</a>
 </li>
 <li>PREPAYMENT
 : <a class="el" href="classPositions.html#a6e2c4213948129cb9ba416f53a6cd212">Positions</a>
 </li>
 <li>prepayment
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#af30be342767175a54ad36b4d960b5509">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#adb39a8a1edd42276a3448438e83a0ec4">Receipt_new</a>
 </li>
 <li>PREPAYMENT
 : <a class="el" href="classReceipt__new.html#afe46ea7d83699389c5768ff69a153b89">Receipt_new</a>
+</li>
+<li>prepayment
+: <a class="el" href="classReceipt__new.html#adb39a8a1edd42276a3448438e83a0ec4">Receipt_new</a>
 </li>
 <li>PREPAYMENT_CREDIT
 : <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daab01601fda2b76df09b5f3fd48a4a2546">Lcd</a>
@@ -767,9 +733,6 @@ $(function() {
 </li>
 <li>primitive_iterator
 : <a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html#a2b3bb45f968210e42c282017eeeb63a8">nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;</a>
-</li>
-<li>primitive_iterator_t
-: <a class="el" href="classnlohmann_1_1basic__json.html#a2b38de408edf89649e8bd3abcfdff038">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>print
 : <a class="el" href="classPrinter.html#a61f8168358ac8e8534e377ccf54a233e">Printer</a>
@@ -833,17 +796,8 @@ $(function() {
 <li>printer_board_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a4af3ed83626d8cc1fa95914785d7e1c0">Printer::technical_report</a>
 </li>
-<li>printer_buf
-: <a class="el" href="classPrinter.html#af6e93f9a5bfae2302e57d244a10b5402">Printer</a>
-</li>
-<li>printer_buf_ind
-: <a class="el" href="classPrinter.html#a8131d7ed9d3fa0b6d3f22ca2c3764586">Printer</a>
-</li>
 <li>printer_buf_load()
-: <a class="el" href="classPrinter.html#a03c4f847e9e2125a484956ed734446b7">Printer</a>
-</li>
-<li>printer_buf_size
-: <a class="el" href="classPrinter.html#aaf99c99cc085757c6965aa14f12c8d35">Printer</a>
+: <a class="el" href="classPrinter.html#a627bb40d5bb3d78a447480010268b663">Printer</a>
 </li>
 <li>printer_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a018bc07d3383712df1d38364794ba2fd">Printer::technical_report</a>
@@ -1009,9 +963,6 @@ $(function() {
 <li>PURCHASE_SUMS_
 : <a class="el" href="classFISGO__TEST__API.html#ade472204169032f1c3d5225f7768bdd1">FISGO_TEST_API</a>
 </li>
-<li>purchaseJsonCreate()
-: <a class="el" href="classFISGO__TEST__API.html#aae335f4e9361159513edac7d0bd070f2">FISGO_TEST_API</a>
-</li>
 <li>purchases
 : <a class="el" href="structJSON_1_1JSON__PURCHASE__DOCUMENT__REPORT_1_1REQUEST.html#a8ddfcbd63e35b7d643b9cd50e493175a">JSON::JSON_PURCHASE_DOCUMENT_REPORT::REQUEST</a>
 </li>
@@ -1019,7 +970,7 @@ $(function() {
 : <a class="el" href="classReceipt__new.html#a2f9a1600940ad1a40985f4421c1b7e72a9e0be1f3005eb253b7bec3de6a98c856">Receipt_new</a>
 </li>
 <li>push_back()
-: <a class="el" href="classnlohmann_1_1basic__json.html#ab4384af330b79de0e5f279576803a2c7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#ae11a3a51782c058fff2f6550cdfb9b3c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>pushTags()
 : <a class="el" href="classJSON.html#a2a0e43b55a3febb7e377c956e0659605">JSON</a>
@@ -1028,7 +979,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,68 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
 <h3><a id="index_s"></a>- s -</h3><ul>
-<li>S11
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a5f84ffd952a65c3643ecb85f4b53b83f">CMd5Sum</a>
-</li>
-<li>S12
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4aaf2b263d16005ed000dcd68da4dcdad6">CMd5Sum</a>
-</li>
-<li>S13
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a8f30c7a066d445605070ed7797a2d161">CMd5Sum</a>
-</li>
-<li>S14
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a41ed3ba2a7a374cd5e0b1de6c6ada5af">CMd5Sum</a>
-</li>
-<li>S21
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a8e7c5c0dcee2261a0cbf1745ff87c4ca">CMd5Sum</a>
-</li>
-<li>S22
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a800b8ec718561f29d01d10db42198a4e">CMd5Sum</a>
-</li>
-<li>S23
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4ab72ba72b4f25a1da30879338c7e59904">CMd5Sum</a>
-</li>
-<li>S24
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a6647a1419341573c6807eb8840d0d7fd">CMd5Sum</a>
-</li>
-<li>S31
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a59ddd661586ededb9e77e451dd5e8d2c">CMd5Sum</a>
-</li>
-<li>S32
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4af78a20417366bc37263a99b5595db4fa">CMd5Sum</a>
-</li>
-<li>S33
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4acee9cb376c60428a340373c9da78f59c">CMd5Sum</a>
-</li>
-<li>S34
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4ae836692efffc4001aa15d4fcc8c265c4">CMd5Sum</a>
-</li>
-<li>S41
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a4fa7d7d474073ab69e4fc821a5322345">CMd5Sum</a>
-</li>
-<li>S42
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4ad79e8ee112e296f15934d67f0dafb0dd">CMd5Sum</a>
-</li>
-<li>S43
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4ac86275bf20286bf5c52742ece43fa07c">CMd5Sum</a>
-</li>
-<li>S44
-: <a class="el" href="classCMd5Sum.html#abd358392ba91d5a012af7fed92f52ef4a10621f8942a20665eb09d112c749fb05">CMd5Sum</a>
-</li>
 <li>SALE
 : <a class="el" href="classBIOS_1_1RUS.html#a08665a35af9578ed982253231218383d">BIOS::RUS</a>
 , <a class="el" href="classJSON.html#af4f1aca8e94820a905d1e619ad5fef43">JSON</a>
@@ -168,28 +143,13 @@ $(function() {
 <li>saveTaskDb()
 : <a class="el" href="classReceiptsDb.html#af84b89cad775bc255e7150021df59a61">ReceiptsDb</a>
 </li>
-<li>sax
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ac9313177e414403e3e5784340d838b3f">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-</li>
 <li>sax_parse()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
-<li>sax_parse_internal()
-: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
-<li>sb
-: <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#addd96de4b5cbd9925ed5d8a0f0261143">nlohmann::detail::input_stream_adapter</a>
-</li>
 <li>scale
 : <a class="el" href="structJSON_1_1JSON__META.html#a0ced7d099660de736d59949ad4a3d74b">JSON::JSON_META</a>
-</li>
-<li>SCALE_VEND_CONST_MASSAK
-: <a class="el" href="classNodeConflictResolver.html#a4619258157af880ff9caebfcc3d7eb88">NodeConflictResolver</a>
-</li>
-<li>SCALE_VEND_CONST_SHTRIH
-: <a class="el" href="classNodeConflictResolver.html#af7d4794f17614377120b6e252cf00383">NodeConflictResolver</a>
 </li>
 <li>scaleConfig
 : <a class="el" href="structConfig.html#ab37a0d6a9fb025f629f4c6672daadda2">Config</a>
@@ -202,9 +162,6 @@ $(function() {
 </li>
 <li>scaleParam
 : <a class="el" href="classScaleProtocolInterface.html#a19625d70c67e8d19f74f35986150549c">ScaleProtocolInterface</a>
-</li>
-<li>scaleParamParse()
-: <a class="el" href="classScaleProtocolPos2.html#aeb70fdf0739ef053256a65e44dd57425">ScaleProtocolPos2</a>
 </li>
 <li>ScalePos2()
 : <a class="el" href="classScalePos2.html#a5f68c7823298b931701f7fa34b544d5e">ScalePos2</a>
@@ -239,32 +196,11 @@ $(function() {
 <li>scan()
 : <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
-<li>scan_literal()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>scan_number()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>scan_string()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
 <li>SCANNER
 : <a class="el" href="classFISGO__TEST__API.html#aeb12e5dac91107d8ba986141dde066ada25f36ba371e31c07c106db3a41c31806">FISGO_TEST_API</a>
 </li>
 <li>scanner
 : <a class="el" href="classTestBarcodeScanner.html#a0960c28b86c98a43a2548e380cde5d16">TestBarcodeScanner</a>
-</li>
-<li>SCANNER_OFF
-: <a class="el" href="classBarcodeScanner.html#ad0f131fbbf18196dba55fee01d0d99eaa523d6a774d8f02ce59a5ce5cd63b6993">BarcodeScanner</a>
-</li>
-<li>SCANNER_TYPE
-: <a class="el" href="classBarcodeScanner.html#ad0f131fbbf18196dba55fee01d0d99ea">BarcodeScanner</a>
-</li>
-<li>SCANNER_USB_HID
-: <a class="el" href="classBarcodeScanner.html#ad0f131fbbf18196dba55fee01d0d99eaa1ba4e4de6e2522886868cf818be627b1">BarcodeScanner</a>
-</li>
-<li>SCANNER_USB_SERIAL
-: <a class="el" href="classBarcodeScanner.html#ad0f131fbbf18196dba55fee01d0d99eaa5902ed22830d9be5ee52428fc9e75daf">BarcodeScanner</a>
 </li>
 <li>scannerCode
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#a24385e2e0934f21a16be644a068eae2d">FISGO_TEST_API::TASK</a>
@@ -274,9 +210,6 @@ $(function() {
 </li>
 <li>scannerEmulate()
 : <a class="el" href="classMenu.html#aece481d9e2cf80d9d415b2a973c5cd53">Menu</a>
-</li>
-<li>scno_state
-: <a class="el" href="classBIOS_1_1BEL.html#a72477a6e8faafbc15220b425681ebdf6">BIOS::BEL</a>
 </li>
 <li>screen_create()
 : <a class="el" href="classLcd.html#a3ea6acaf7245c4a2bee97d57fc3c0fff">Lcd</a>
@@ -341,7 +274,6 @@ $(function() {
 </li>
 <li>seconds
 : <a class="el" href="structConvert_1_1DATE__ISO__8601.html#a0e8637995ed3e52d3e36b04e53271c7d">Convert::DATE_ISO_8601</a>
-, <a class="el" href="classHttpsExchange.html#ae64cdc57085410545d92ce848e182975">HttpsExchange</a>
 , <a class="el" href="classReceipt__new.html#a17ea7f31b8079b82ce17cd0b86fe3610">Receipt_new</a>
 </li>
 <li>SECONDS
@@ -361,9 +293,6 @@ $(function() {
 </li>
 <li>SEND_STATISTICS
 : <a class="el" href="classMenu.html#a42b62fc0c612bb89745d5a83ff8fb36baf289e8029277dd8f4cebd78e2d666ad2">Menu</a>
-</li>
-<li>sendall()
-: <a class="el" href="classFISGO__TEST__API.html#acd016ee115c62e89137b344cc0a7da12">FISGO_TEST_API</a>
 </li>
 <li>sendCashInfoReport()
 : <a class="el" href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99">HttpsExchange</a>
@@ -388,8 +317,7 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#a6adfa9f618abf40455d78c570fcccdd3aeab3150ce5ab43a2f377d297b89bf3d5">BIOS::RUS</a>
 </li>
 <li>senderEmail
-: <a class="el" href="classHttpsExchange.html#adf7eef55b867294e4d038d1b7513528e">HttpsExchange</a>
-, <a class="el" href="structJSONKKTRegInfo.html#a9101be456f4d2806d53554ed0f589a78">JSONKKTRegInfo</a>
+: <a class="el" href="structJSONKKTRegInfo.html#a9101be456f4d2806d53554ed0f589a78">JSONKKTRegInfo</a>
 , <a class="el" href="structJSONKKTRegInfoStr.html#a129dbdfb8fa437d5ca4adef11adbe00b">JSONKKTRegInfoStr</a>
 </li>
 <li>senderEMAIL
@@ -471,9 +399,8 @@ $(function() {
 <li>serialBlock
 : <a class="el" href="structBarcodeScanner_1_1DATA__MATRIX.html#a8fdd2c8c81d43b371bf2c09d7df54e89">BarcodeScanner::DATA_MATRIX</a>
 </li>
-<li>serializer
-: <a class="el" href="classnlohmann_1_1basic__json.html#a68557c31b3bdf31c12e148baecec0d23">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a3076c4514179654cc81d17048439c24a">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+<li>serializer()
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a3076c4514179654cc81d17048439c24a">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
 <li>serialPack
 : <a class="el" href="structBarcodeScanner_1_1DATA__MATRIX.html#a733d804b69c8011a1a3fbc9ed3a3fccd">BarcodeScanner::DATA_MATRIX</a>
@@ -513,12 +440,10 @@ $(function() {
 : <a class="el" href="classCounters.html#aff1bf22b6379d4ea456e8d20c229383a">Counters</a>
 </li>
 <li>set_begin()
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42">nlohmann::detail::primitive_iterator_t</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>set_end()
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a23e50ad4c13aa62d9ac7f60a123823ee">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb">nlohmann::detail::primitive_iterator_t</a>
+: <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>set_goods_type()
 : <a class="el" href="classPositions_1_1Position.html#a5c24f6f785580ceb9d1afa6494766bba">Positions::Position</a>
@@ -729,16 +654,9 @@ $(function() {
 </li>
 <li>setScaleErr()
 : <a class="el" href="classScaleProtocolInterface.html#ac7a713d971c496e367379b0f29775a0e">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#afac2187d6420584791a3372f6dd6bdf6">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#a76f72420064803e277e6f381ace03c89">ScaleProtocolPos2</a>
-, <a class="el" href="classTestMassaK.html#a514b983200b55586ffc66ea2806337b2">TestMassaK</a>
-, <a class="el" href="classTestPos2.html#a5ae243453f44d9c3e8135993c9c179e3">TestPos2</a>
 </li>
 <li>setSenderEmail()
 : <a class="el" href="classHttpsExchange.html#a05053dc0da7a5ed03f93896b808592de">HttpsExchange</a>
-</li>
-<li>setSystemDate()
-: <a class="el" href="classMenu.html#a3ae698b21e4298d93c521705e7171198">Menu</a>
 </li>
 <li>setTare()
 : <a class="el" href="classScales.html#a600d17680fbbdfb39f8834709cbf51d4">Scales</a>
@@ -1138,9 +1056,6 @@ $(function() {
 <li>SHIFT_ID_X_REPORT
 : <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72daacaa4e06c50beb5da48b3635fa6103ae6">Lcd</a>
 </li>
-<li>shift_num
-: <a class="el" href="classBIOS_1_1RUS.html#a8d683269148a9d0dac9da7466a33a8b5">BIOS::RUS</a>
-</li>
 <li>SHIFT_NUM
 : <a class="el" href="classBIOS_1_1RUS.html#a7d382064155ea987a44178cf04f637e7a79c57a8e0e539ed666e4d59577b63778">BIOS::RUS</a>
 </li>
@@ -1215,9 +1130,6 @@ $(function() {
 <li>showLicense()
 : <a class="el" href="classLicense.html#a256cdc19062818167eb290fd49317d77">License</a>
 </li>
-<li>showLicenseList()
-: <a class="el" href="classMenu.html#a1e798b0d7908d29bb32d351c01efa44f">Menu</a>
-</li>
 <li>showNotificationFfdAndNdsLicense()
 : <a class="el" href="classMenu.html#a15040ac3df50a2dc328b4da7350b41c6">Menu</a>
 </li>
@@ -1254,12 +1166,6 @@ $(function() {
 <li>signMethodCalculation1
 : <a class="el" href="structBIOS_1_1RUS_1_1POSITION.html#ac535014953ac0710313f42d83e77f49c">BIOS::RUS::POSITION</a>
 </li>
-<li>siteServer
-: <a class="el" href="classHttpsExchange.html#a90ff97f18538599e771f0521491a1313">HttpsExchange</a>
-</li>
-<li>siteServerUpdate
-: <a class="el" href="classHttpsExchange.html#a7be24be067f4d9627fd7274682d44dbb">HttpsExchange</a>
-</li>
 <li>size
 : <a class="el" href="structDYNAMIC__MASK.html#a99f602677f0db61e1f786cfc85c09ef9">DYNAMIC_MASK</a>
 , <a class="el" href="classLicense.html#ad0f037a7fe472c26db3e1e5e763c001c">License</a>
@@ -1288,41 +1194,14 @@ $(function() {
 : <a class="el" href="classFISGO__TEST__API.html#af9559cb79d983267441a1aead6d04b35aad5e8ccc1ba9c9394bb5ff3531e30eaf">FISGO_TEST_API</a>
 , <a class="el" href="classMenu.html#ac46824c4e109b51d40e4a5c15439759faf29d217da44f872a4bf7485a99f82e25">Menu</a>
 </li>
-<li>slip_db
-: <a class="el" href="classMenu.html#aba3a4aeff831abcce12a83993080b71d">Menu</a>
-</li>
-<li>sms_sign_get()
-: <a class="el" href="classMenu.html#a864f75af07b26895a453bec628b2a796">Menu</a>
-</li>
-<li>snifferData
-: <a class="el" href="classHttpsExchange.html#a2fc608f57f61d68a33c4ddc2e3528df0">HttpsExchange</a>
-</li>
 <li>snifferDataGet()
 : <a class="el" href="classHttpsExchange.html#a8393ea5476148d7a43100124092953f3">HttpsExchange</a>
-</li>
-<li>snifferDataIns()
-: <a class="el" href="classHttpsExchange.html#afd68062b2af2f29fe539a7e5ffe149c5">HttpsExchange</a>
-</li>
-<li>snifferMutex
-: <a class="el" href="classHttpsExchange.html#af321a324c6ebd3120cf72c7ade303cba">HttpsExchange</a>
 </li>
 <li>sno
 : <a class="el" href="structBIOS_1_1RUS_1_1OPEN__DOC.html#a0cfabc23af8abca6aabd5f0e874a27cb">BIOS::RUS::OPEN_DOC</a>
 </li>
-<li>sock_accept()
-: <a class="el" href="classFISGO__TEST__API.html#af5f5121685545183488162a51612d2d6">FISGO_TEST_API</a>
-</li>
-<li>sock_close()
-: <a class="el" href="classFISGO__TEST__API.html#ae19d3415828b5926dd502eb54689e245">FISGO_TEST_API</a>
-</li>
 <li>SOCK_CREATE_ERROR
 : <a class="el" href="classFISGO__TEST__API.html#a908b3c67e49e7d73e0a1f7f0f62a27dea084a27f3261c5b4a4df4fc92ae108f50">FISGO_TEST_API</a>
-</li>
-<li>sock_listen()
-: <a class="el" href="classFISGO__TEST__API.html#a7aca948bd573d4af424cdc5b4a08ce15">FISGO_TEST_API</a>
-</li>
-<li>socket_create()
-: <a class="el" href="classFISGO__TEST__API.html#ad395c398e7b19399e39797851041da6d">FISGO_TEST_API</a>
 </li>
 <li>socket_reset()
 : <a class="el" href="classFISGO__TEST__API.html#af3d68391ff0de96a4bb9c12831322f5e">FISGO_TEST_API</a>
@@ -1385,9 +1264,6 @@ $(function() {
 : <a class="el" href="structScaleConfig.html#a148792c2be5df763ca24399463641b0c">ScaleConfig</a>
 , <a class="el" href="classScaleProtocolInterface.html#ab6c8854d5be99ddf9589b2fb226c3a8b">ScaleProtocolInterface</a>
 </li>
-<li>split()
-: <a class="el" href="classnlohmann_1_1json__pointer.html#ae01c32c6a071c2e5198d5dfcce290e50">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
-</li>
 <li>splitString()
 : <a class="el" href="classConvert.html#afcc16d4f5eb6e1281fe5745971a87275">Convert</a>
 </li>
@@ -1412,10 +1288,6 @@ $(function() {
 </li>
 <li>stage
 : <a class="el" href="structConfig.html#a404eac0b033c1d973eeae51ea1232168">Config</a>
-</li>
-<li>start
-: <a class="el" href="classLogDuration.html#a565290af5bf98e3713447889ca7b6087">LogDuration</a>
-, <a class="el" href="classMenu.html#a4426d47ad9b0c56ba2edecedf9d4af0b">Menu</a>
 </li>
 <li>start_array()
 : <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a8238e8090cbb4ed8a22cbc97bfb833a5">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
@@ -1510,77 +1382,11 @@ $(function() {
 , <a class="el" href="structMenu_1_1TaskVectSt.html#a7eb3ca539e14ffa8e1088ef147f2792c">Menu::TaskVectSt</a>
 , <a class="el" href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">StatusOp</a>
 </li>
-<li>statusBios
-: <a class="el" href="classBIOS.html#a416d06249e47adcc9bd566e7afe46ebb">BIOS</a>
-</li>
 <li>statusBIOS()
 : <a class="el" href="structstatusBIOS.html#a704579ab7cc929e56cf5ac1396c26b5b">statusBIOS</a>
 </li>
-<li>STEP_0
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeae2a5211250229886feb758ebb8cd63a6">Menu</a>
-</li>
-<li>STEP_1
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeab6b608103ec92e1b39ac35acd029685a">Menu</a>
-</li>
-<li>STEP_10
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeabd6bd593f889c17361ce6afa7eece84e">Menu</a>
-</li>
-<li>STEP_11
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeaadac808dd8b703d24a70dbbe20a1baa0">Menu</a>
-</li>
-<li>STEP_12
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea5daceaf12b8252135f355bbd57bf7b96">Menu</a>
-</li>
-<li>STEP_13
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea676ddbe557d64b86229f31afe39737b4">Menu</a>
-</li>
-<li>STEP_14
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfead69a2b18f2a5e907505bbfd057fc79b1">Menu</a>
-</li>
-<li>STEP_15
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea095cf41b8e784954c4d5ef55d6722183">Menu</a>
-</li>
-<li>STEP_16
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea04e467365697a9da86896e4739faba14">Menu</a>
-</li>
-<li>STEP_17
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea35822b1c61fb29ee2fcefc1eaf3580d8">Menu</a>
-</li>
-<li>STEP_18
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeaf2537b1eb300aae46402ee54e2285d36">Menu</a>
-</li>
-<li>STEP_2
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea4544a06068a26c172837d4f90934384d">Menu</a>
-</li>
-<li>STEP_3
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea487471ae51df0e20775b2d3109893349">Menu</a>
-</li>
-<li>STEP_4
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeaa952935c6741d700a1332548b9effa39">Menu</a>
-</li>
-<li>STEP_5
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea46be956cbfbff3bb336756cada0ea330">Menu</a>
-</li>
-<li>STEP_6
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeabe8d20e359a3172975ee4ee3c36d2c6f">Menu</a>
-</li>
-<li>STEP_7
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeab0ad95f44ef8e784563b330f2300fd16">Menu</a>
-</li>
-<li>STEP_8
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeaa5af2e4b5e7ba67c22ca769a5e591d88">Menu</a>
-</li>
-<li>STEP_9
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeac53d141cc951f174a3c9a3b66a805522">Menu</a>
-</li>
 <li>STEP_ADD_TO_CABINET
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356ae3fbb468bf555e9cbb7a5b9601646be2">Menu</a>
-</li>
-<li>STEP_AUTOMAT_NUM
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeab2f66c964d81f9160440d629020eea23">Menu</a>
-</li>
-<li>STEP_CLOUD_PIN
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfead36419b01c852bae2a9e0eb8d2ae90b1">Menu</a>
 </li>
 <li>STEP_COUNTERS_REPORT
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356ab5d2e8f0568bcf9e1a09fa8089bb1529">Menu</a>
@@ -1588,29 +1394,14 @@ $(function() {
 <li>STEP_DEL_FROM_CABINET
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356af9bb86c18bb758979dfddd85dc076361">Menu</a>
 </li>
-<li>STEP_ENTER_SENDER_EMAIL
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea272b1002008aeb1bdcfefdce678bd178">Menu</a>
-</li>
-<li>STEP_ENTER_SMS_CODE
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea57e39cc7d362cf3e5b7b1fe19a289a77">Menu</a>
-</li>
-<li>STEP_EXIT
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfeac6a2087c4b58670f8c93679293e8ff3a">Menu</a>
-</li>
 <li>STEP_HANDSHAKE
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356a0ac2fe59b7143ea7988f17caa952445e">Menu</a>
-</li>
-<li>STEP_KKT_FNS_NUM
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea4934e9e40661070701df6316725ccd1e">Menu</a>
 </li>
 <li>STEP_MONEY_DOC_REP
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356a6318f04ab8db9a34381d6100bf08a433">Menu</a>
 </li>
 <li>step_num
 : <a class="el" href="structMenu_1_1CorrectionData.html#a4c91a577c2b4605adeb806e0fe75a222">Menu::CorrectionData</a>
-</li>
-<li>STEP_ORG_FNS_NUM
-: <a class="el" href="classMenu.html#a759878c66e7b9b416540a5ff92959cfea10d246e71ed11944a6c6f1036ac24a87">Menu</a>
 </li>
 <li>STEP_POLL
 : <a class="el" href="classMenu.html#ad8a64379727dd155eb4da84071dfd356a0c6e654d3efe84636ea6f35439aeffd9">Menu</a>
@@ -1633,9 +1424,6 @@ $(function() {
 <li>stlv_len_clc()
 : <a class="el" href="classRequisites.html#a850cc2ddd94e29d9cc6e5fd94706482a">Requisites</a>
 </li>
-<li>stlv_parse()
-: <a class="el" href="classBIOS_1_1RUS.html#a7a9ea3f5ce26d8e0dacb8bdbf4f373a1">BIOS::RUS</a>
-</li>
 <li>stopNtpd()
 : <a class="el" href="classTimeSync.html#a3d40a1c60279db3ffef8b61467e7467c">TimeSync</a>
 </li>
@@ -1652,10 +1440,7 @@ $(function() {
 : <a class="el" href="classFlashMounter.html#aaf6cb3b1f2b059f1ce33b701c11fbd20">FlashMounter</a>
 </li>
 <li>str
-: <a class="el" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE</a>
-, <a class="el" href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">Lcd::KEY_SCREEN</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1output__string__adapter.html#ae57cf7d5c5ec641e25860bb9fb8e6cb9">nlohmann::detail::output_string_adapter&lt; CharType, StringType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1wide__string__input__adapter.html#a30fcb522f072d58eb0fb52cfb784e9c9">nlohmann::detail::wide_string_input_adapter&lt; WideStringType &gt;</a>
+: <a class="el" href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">Lcd::KEY_SCREEN</a>
 </li>
 <li>str1_loader
 : <a class="el" href="classLcd.html#ac805cde8aa67baa7bb3d5a2157a61b62">Lcd</a>
@@ -1693,9 +1478,6 @@ $(function() {
 <li>str_to_uint64_convert()
 : <a class="el" href="classPrinter.html#ae1e1457da706a3396af06e6977cd3159">Printer</a>
 </li>
-<li>stream
-: <a class="el" href="classnlohmann_1_1detail_1_1output__stream__adapter.html#aacc26af02e1e5a988bc5dbfb723b5562">nlohmann::detail::output_stream_adapter&lt; CharType &gt;</a>
-</li>
 <li>strFromErrCode()
 : <a class="el" href="classBIOS.html#af89cb3f3654af30a0dab255d74ffb048">BIOS</a>
 </li>
@@ -1705,15 +1487,11 @@ $(function() {
 <li>strikeout
 : <a class="el" href="structFontStruct.html#a4cf143af3adf4b727da82813c3df2f14">FontStruct</a>
 </li>
-<li>string
-: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#a9856fb4271b50d738e14c5a9a2f05118">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#aaa69255e757a6ecc4403a2aa4931fc60">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
+<li>string()
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#aaa69255e757a6ecc4403a2aa4931fc60">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#ad94e912a67c7b96158937236805b8b47">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a851d965082d20a726138f5d0330dc7d8">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a07eab82f6c82d606787eee9ad73d2bda">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
-</li>
-<li>string_buffer
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a9c9b7ca63a66e59e5e7ffe8a2acf5c8f">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
 <li>string_draw()
 : <a class="el" href="classLcd.html#ab08d9ce003e55dfd3728fdc3e4d1b2c3">Lcd</a>
@@ -1721,15 +1499,9 @@ $(function() {
 </li>
 <li>string_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a61f8566a1a85a424c7266fb531dca005">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aa0b9729917ca7ee6ed01e3792341316e">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#ad8e2e1427ff43536370b6db6ab83ae50">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#a067c98d2145bb54d862f4794ac1287bb">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a3a8078bbf865ec355106f6048241609a">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a00e7d95d82d5d8a43421526a42a8eabc">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#afd4d961ab2a6b01cbe6e840f7fb90cdc">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ab63d35c658887592a4b09ad26eb4c795">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#af67b9b0405262c40be2b13adaab8b046">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#ad08aa54fac1dd0a453320c54137d45ba">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#ae01977a9f3c5b3667b7a2929ed91061e">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 <li>stringDateTimeToTM()
@@ -1743,9 +1515,6 @@ $(function() {
 </li>
 <li>strLeftComplite()
 : <a class="el" href="classConvert.html#af49c970003b961fca69a3bc0f7e33aa4">Convert</a>
-</li>
-<li>strtof()
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a0e28dda9a1e007d55d03e8d39dd3b9fa">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>STUDY_MODE
 : <a class="el" href="classBIOS_1_1BEL.html#a186aa9072cccc2f878cb939ba5baa730a0ee9b7e04310a8ac1d16a6752bf4bbff">BIOS::BEL</a>
@@ -1801,9 +1570,6 @@ $(function() {
 <li>sum_without_discounts
 : <a class="el" href="structJSON_1_1JSON__PURCHASE.html#a31fcbda07e218aabd22dd304189097cd">JSON::JSON_PURCHASE</a>
 </li>
-<li>sumPosSale
-: <a class="el" href="classMenu.html#a5449681617f2067990df8889b5d73282">Menu</a>
-</li>
 <li>sumToString()
 : <a class="el" href="classConvert.html#a46680f3461deb20c9c111d23ce53cefb">Convert</a>
 </li>
@@ -1815,7 +1581,7 @@ $(function() {
 , <a class="el" href="structUsers_1_1User__.html#a2a0d0af79a5bda0cc437a0c6ddf27831">Users::User_</a>
 </li>
 <li>swap()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a65b0a24e1361a030ad0a661de22f6c8e">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#adaa1ed0a889d86c8e0216a3d66980f76">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>SWITCH_OFF
 : <a class="el" href="classLcd.html#a0f82fb3b40659ecbc1fa8cf1e199a7f7adf236e648177367caac38862ada8d499">Lcd</a>
@@ -1924,7 +1690,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

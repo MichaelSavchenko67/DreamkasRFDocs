@@ -1,12 +1,6 @@
 <map id="Goods_new::search" name="Goods_new::search">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,144,133"/>
-<area shape="rect" id="node2" href="$classGoods__new.html#adfa940838fb31612750b0599a64e8ec4" title=" " alt="" coords="194,56,377,83"/>
-<area shape="rect" id="node9" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="192,107,379,133"/>
-<area shape="rect" id="node10" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="219,158,352,199"/>
-<area shape="rect" id="node3" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="481,5,617,32"/>
-<area shape="rect" id="node4" href="$classGoods__new.html#abf73c64e6ab3d95397c8d1907eb0ea6f" title=" " alt="" coords="427,56,671,83"/>
-<area shape="rect" id="node6" href="$classGoods__new.html#a5767f844de7b473c7a6f20538830cc67" title=" " alt="" coords="449,107,648,133"/>
-<area shape="rect" id="node5" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="719,56,905,83"/>
-<area shape="rect" id="node7" href="$classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="745,107,879,133"/>
-<area shape="rect" id="node8" href="$goods__new_8cpp.html#aea08d0864e20eda0d0f252abc57bdf5d" title=" " alt="" coords="768,157,856,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,144,83"/>
+<area shape="rect" id="node2" href="$classGoods__new.html#adfa940838fb31612750b0599a64e8ec4" title=" " alt="" coords="194,5,377,32"/>
+<area shape="rect" id="node3" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="192,56,379,83"/>
+<area shape="rect" id="node4" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="219,107,352,149"/>
 </map>

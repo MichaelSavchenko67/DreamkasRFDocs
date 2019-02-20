@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,93 +32,61 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
 <h3><a id="index_m"></a>- m -</h3><ul>
-<li>m
-: <a class="el" href="classnlohmann_1_1detail_1_1exception.html#ad54778dc4f125488cbce8ec276dfdde2">nlohmann::detail::exception</a>
-</li>
-<li>m_buffer
-: <a class="el" href="classCMd5Sum.html#ac008c46d8cb4af4840d24b0f37fea5d4">CMd5Sum</a>
-</li>
-<li>m_complete
-: <a class="el" href="classCMd5Sum.html#aa66856a041d2b7fd30a4b39b29fb6775">CMd5Sum</a>
-</li>
-<li>m_count
-: <a class="el" href="classCMd5Sum.html#a7bbb1b988efdcdf4050841cf9c4e1e3d">CMd5Sum</a>
-</li>
-<li>m_digest
-: <a class="el" href="classCMd5Sum.html#abc9eb13d9b00776846f5591f3cad516e">CMd5Sum</a>
-</li>
-<li>m_it
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a8a86a7c0d4af0cc4ab345b6f0e13cdfa">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a4357355113b0cd7e12b15c2e93703510">nlohmann::detail::primitive_iterator_t</a>
-</li>
-<li>m_lexer
-: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
-</li>
-<li>m_object
-: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aca84f84be598bdfaaddd23d928c42bbb">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-</li>
-<li>m_state
-: <a class="el" href="classCMd5Sum.html#a0880297c17f2960ea3198bbcfc1a3b7e">CMd5Sum</a>
-</li>
-<li>m_type
-: <a class="el" href="classnlohmann_1_1basic__json.html#a91990b60d7d4d67968a2c1db677536e7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>m_value
-: <a class="el" href="classnlohmann_1_1basic__json.html#aeb0814f76966f99290cb29e127c90a77">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>makeCabinetRequest()
-: <a class="el" href="classCabinetBase.html#a391039ce5179aebbd5e936f88c7e3fec">CabinetBase</a>
-</li>
 <li>makeCmd()
 : <a class="el" href="classScaleProtocolInterface.html#a73127f92c83cf9cef88be9df7bd9fea1">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#a448026c215f85937e142181777d54106">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#a09d7d1bdc619f935d56b7e1bdb9b880e">ScaleProtocolPos2</a>
 </li>
 <li>makeConfigRequest()
 : <a class="el" href="classsqlWrapper.html#a025c73baa5706aef497d955fdf809ecf">sqlWrapper</a>
 , <a class="el" href="classSqlWrapperInterface.html#a2b713fe6cd1e02902ae6421be2b041d5">SqlWrapperInterface</a>
 </li>
-<li>makeCountersRequest()
-: <a class="el" href="classCounters.html#afa3518ef6d03452cd0f344327665e6e9">Counters</a>
-</li>
 <li>makeDataLen()
 : <a class="el" href="classScaleProtocolInterface.html#add128d8ba1370d36cadea79fe32c7144">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#a7b7119733ce5e4261af9d9688205def4">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#abaf29477a5514bf97a9f57d3393271c0">ScaleProtocolPos2</a>
 </li>
 <li>makeGoodsDbReady()
 : <a class="el" href="classGoods__new.html#a5f7b9568106bd0cda846778f6423aa66">Goods_new</a>
 </li>
 <li>makeHeader()
 : <a class="el" href="classScaleProtocolInterface.html#a63568dc5d3479ad19f45677161fc1dfa">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#adc8375f3f724edb437eb96f919923ff6">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#a0680e457fdb7dc34be5ba79b47b06341">ScaleProtocolPos2</a>
 </li>
 <li>makeHotkeyRequest()
 : <a class="el" href="classsqlWrapper.html#a5166c2898641177f9bb26258e2a70d7f">sqlWrapper</a>
 </li>
 <li>makeReceiptsRequest()
 : <a class="el" href="classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f">ReceiptsDb</a>
-</li>
-<li>makeRequestNotSave()
-: <a class="el" href="classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83">FiscalDocDb</a>
-</li>
-<li>makeRequestSave()
-: <a class="el" href="classFiscalDocDb.html#af9d4a431972bc0bdf55d3d92a0515015">FiscalDocDb</a>
 </li>
 <li>makeTasksRequest()
 : <a class="el" href="classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a">ReceiptsDb</a>
@@ -193,26 +164,11 @@ $(function() {
 <li>max
 : <a class="el" href="classLcd.html#a848c36f91ec715d497c820ff09134f94">Lcd</a>
 </li>
-<li>max_ch_in_inn
-: <a class="el" href="classMenu.html#aee1796c329f93010ff8e07f7bf64d4d9">Menu</a>
-</li>
-<li>max_ch_in_lcd
-: <a class="el" href="classMenu.html#af520ce889043c8139f2f8bde7a242f58">Menu</a>
-</li>
-<li>max_ch_in_port
-: <a class="el" href="classMenu.html#aef2ecddefb5050aa39c84466abdc8455">Menu</a>
-</li>
-<li>max_ch_in_reg_kkt_num
-: <a class="el" href="classMenu.html#a809ee82a0b11a2a0a0ad30bc41501031">Menu</a>
-</li>
 <li>max_fd()
 : <a class="el" href="classFiscalDocDb.html#a5c7ed161fcab759cb26257385278429a">FiscalDocDb</a>
 </li>
 <li>max_font_str_len_8x16
 : <a class="el" href="classLcd.html#a038525336a95c905d83efb6ec082f054">Lcd</a>
-</li>
-<li>max_input_ch
-: <a class="el" href="classMenu.html#a50b6b1a5c3a9812085a7652891869149">Menu</a>
 </li>
 <li>max_len
 : <a class="el" href="structReceipt_1_1requisites.html#a3fc69455a16cf2297bdd07029e583840">Receipt::requisites</a>
@@ -233,9 +189,6 @@ $(function() {
 <li>max_pos
 : <a class="el" href="classLcd.html#a90d2fc53d494ef9fb7a5f911d895cae0">Lcd</a>
 </li>
-<li>max_printer_str_len
-: <a class="el" href="classPrinter.html#acf08407ab5bdd58838f10bef9b799c6a">Printer</a>
-</li>
 <li>MAX_QR_CODE_LEN
 : <a class="el" href="classReceiptsDb.html#a3f985c8b07813c2e99cfe51b15ffa52c">ReceiptsDb</a>
 </li>
@@ -253,9 +206,6 @@ $(function() {
 </li>
 <li>MAX_TAXES
 : <a class="el" href="classTaxes.html#a14586876fd64afe7a06aff6b174b8836">Taxes</a>
-</li>
-<li>maxCountFD
-: <a class="el" href="classFiscalDocDb.html#a3b1b082440d5a74d88847b7079c12f24">FiscalDocDb</a>
 </li>
 <li>maxTareWeight
 : <a class="el" href="structScaleProtocolInterface_1_1Param.html#a885a0b4d81eff5d23ebe93aa7c84fb32">ScaleProtocolInterface::Param</a>
@@ -276,24 +226,6 @@ $(function() {
 : <a class="el" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">JSONUpdate</a>
 , <a class="el" href="structJSONUpdateStr.html#a96bafacfe8488eae91d5a1191edc70da">JSONUpdateStr</a>
 </li>
-<li>MD5_init()
-: <a class="el" href="classCMd5Sum.html#a0d19617f60246c7f00fb0f9686192697">CMd5Sum</a>
-</li>
-<li>MD5_memcpy()
-: <a class="el" href="classCMd5Sum.html#aedca82e7fc66117f0c325f7b3c4eb576">CMd5Sum</a>
-</li>
-<li>MD5_memset()
-: <a class="el" href="classCMd5Sum.html#ac58f260a5d0b48ed7ff1e43c64f4cc61">CMd5Sum</a>
-</li>
-<li>MD5Final()
-: <a class="el" href="classCMd5Sum.html#a796d5643694802df96778876169d58fc">CMd5Sum</a>
-</li>
-<li>MD5Transform()
-: <a class="el" href="classCMd5Sum.html#a7eb58088c6a50f4fd25df82aff621ec8">CMd5Sum</a>
-</li>
-<li>MD5Update()
-: <a class="el" href="classCMd5Sum.html#a8bfe11df40b08e9874675aa04f3d860f">CMd5Sum</a>
-</li>
 <li>measure
 : <a class="el" href="classGoodsStructure__new.html#ab650ec9fd870d0a182333fa332dcb837">GoodsStructure_new</a>
 , <a class="el" href="structJSON_1_1JSON__META.html#a93adc8463687ed573f9f719d93323692">JSON::JSON_META</a>
@@ -308,8 +240,7 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#a5ff11d1c62ced76a7b9b8c717c19920a">BIOS::RUS</a>
 </li>
 <li>MEMORY_OVERFLOW
-: <a class="el" href="classBIOS_1_1RUS.html#a6aa78debdc3385c3f20e0e6c6ec48497">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#abb23e0646fa5da997b6b7949438a2a9e">Receipt::Fiscal_data</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#abb23e0646fa5da997b6b7949438a2a9e">Receipt::Fiscal_data</a>
 </li>
 <li>MEMORY_OVERFLOW_FLG
 : <a class="el" href="classBIOS_1_1RUS.html#a7d382064155ea987a44178cf04f637e7a4b9e187655041057f0ada314865a4b54">BIOS::RUS</a>
@@ -329,44 +260,8 @@ $(function() {
 <li>MENU_ID
 : <a class="el" href="classLcd.html#a1eb88d4f3f81db32b4b119c8ecce72da">Lcd</a>
 </li>
-<li>menu_map_id
-: <a class="el" href="classLcd.html#aa0ece94f175a33edd1c07ca372d9e85e">Lcd</a>
-</li>
 <li>menu_map_id_size
 : <a class="el" href="classLcd.html#ad61adc9c5b0e59c33e6d25d6264c4fcb">Lcd</a>
-</li>
-<li>MENU_NUM
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935">Menu</a>
-</li>
-<li>MENU_NUM_1
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a31ea0f00782ce2e0984c56ce3cf9bf27">Menu</a>
-</li>
-<li>MENU_NUM_10
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a1654b69bcd84ce1577d1e8d449f46e2e">Menu</a>
-</li>
-<li>MENU_NUM_2
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935aeeecbff8a0dd16b886815d434a54ec40">Menu</a>
-</li>
-<li>MENU_NUM_3
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a1aabc5c53b5fd94fd6579e8ece305a1e">Menu</a>
-</li>
-<li>MENU_NUM_4
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a97667aef3b53bd9146f84414b6f6859a">Menu</a>
-</li>
-<li>MENU_NUM_5
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a72db070a6fbb2f673a517f363ea427aa">Menu</a>
-</li>
-<li>MENU_NUM_6
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935af654a7da647f4aca12eeb7de6b2e1924">Menu</a>
-</li>
-<li>MENU_NUM_7
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a2466cce6216f6197de9ba34fdee8fd25">Menu</a>
-</li>
-<li>MENU_NUM_8
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a8cd6d6aa7226957674ae4b5808ba9df6">Menu</a>
-</li>
-<li>MENU_NUM_9
-: <a class="el" href="classMenu.html#a05e25c6061d04f17e17929ee3a385935a19b00ad7fa9e629dd69cb124f8fb8686">Menu</a>
 </li>
 <li>menu_tree_create()
 : <a class="el" href="classMenu.html#a109eb9c9242a9b1dab69bbc4a1e6b935">Menu</a>
@@ -399,7 +294,6 @@ $(function() {
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#afcaa5719fa1bd330130861197531a7fe">FISGO_TEST_API::TASK</a>
 , <a class="el" href="structJSON_1_1JSON__TASK.html#a3356cb4236bc80ebf07ec66777d80ff3">JSON::JSON_TASK</a>
 , <a class="el" href="structJSON_1_1JSON__TASK__RESULTS.html#a83a0c384909a897eb70e9226ddcfe8db">JSON::JSON_TASK_RESULTS</a>
-, <a class="el" href="classLogDuration.html#a72f3f4e5570d940385d73750a1671d64">LogDuration</a>
 </li>
 <li>message_print()
 : <a class="el" href="classPrinter.html#aa46eaa5b499037baeea5864c3cf455e8">Printer</a>
@@ -410,9 +304,6 @@ $(function() {
 </li>
 <li>meta_clear()
 : <a class="el" href="classJSON.html#ae1f1dbaaa1cb398c20a3287474b9222d">JSON</a>
-</li>
-<li>methodNameGet()
-: <a class="el" href="classHttpsExchange.html#a08fc8929852596ceb85b71fa1d85dcd7">HttpsExchange</a>
 </li>
 <li>METHODS
 : <a class="el" href="classHttpsExchange.html#a8d67821f75e87d148da02420bd11f09d">HttpsExchange</a>
@@ -464,10 +355,10 @@ $(function() {
 </li>
 <li>MOCK_METHOD0()
 : <a class="el" href="classMenuTest_1_1MockKeypad.html#ac27787e5d61608bfecf9443bcaff0185">MenuTest::MockKeypad</a>
-, <a class="el" href="classMenuTest_1_1MockLcd.html#a0168e5fe8def12423f62857447e21900">MenuTest::MockLcd</a>
+, <a class="el" href="classMenuTest_1_1MockLcd.html#a4c9ef82961a2a54b0f2fa8385b887fdb">MenuTest::MockLcd</a>
 , <a class="el" href="classMenuTest_1_1MockPositions.html#a27efb35948b8bc9142e577be3f0cd04a">MenuTest::MockPositions</a>
 , <a class="el" href="classMenuTest_1_1MockRB.html#aeb7376b3dffb086aaa87ee93c1ead8f5">MenuTest::MockRB</a>
-, <a class="el" href="classMenuTest_1_1MockRF.html#a4ed631aace62167c5787ce3f5bda5d42">MenuTest::MockRF</a>
+, <a class="el" href="classMenuTest_1_1MockRF.html#a48c8179f376aa6db49ac2670d3c25be3">MenuTest::MockRF</a>
 , <a class="el" href="classTestJSON_1_1MockNet.html#a7ff30c34a49572a494cdb20d59cc22d1">TestJSON::MockNet</a>
 </li>
 <li>MOCK_METHOD1()
@@ -475,12 +366,12 @@ $(function() {
 , <a class="el" href="classMenuTest_1_1MockConvert.html#aa4d2f989ff1344fca389cc822b419e55">MenuTest::MockConvert</a>
 , <a class="el" href="classMenuTest_1_1MockFG.html#ac8d38d8970769e01f54ff2596675e540">MenuTest::MockFG</a>
 , <a class="el" href="classMenuTest_1_1MockHE.html#aaec9702f8876870836f64b29ddb1419f">MenuTest::MockHE</a>
-, <a class="el" href="classMenuTest_1_1MockKeypad.html#a1d2e6a4556d2fd48b142e38086569dd8">MenuTest::MockKeypad</a>
-, <a class="el" href="classMenuTest_1_1MockLcd.html#a1f84aca2597156432b14b5cbf91de5fd">MenuTest::MockLcd</a>
+, <a class="el" href="classMenuTest_1_1MockKeypad.html#a0c1f9fee085cf7e52c79438aa884a40b">MenuTest::MockKeypad</a>
+, <a class="el" href="classMenuTest_1_1MockLcd.html#ab03b7a76c2a90047c576e56567350a30">MenuTest::MockLcd</a>
 , <a class="el" href="classMenuTest_1_1MockPositions.html#ab669964388c1e07ccee923a5b6ce047b">MenuTest::MockPositions</a>
 , <a class="el" href="classMenuTest_1_1MockRB.html#ac5a6caa64f484b40ffce3bead82753de">MenuTest::MockRB</a>
 , <a class="el" href="classMenuTest_1_1MockRF.html#a1e9679b7b707675b865756d6d98ceacf">MenuTest::MockRF</a>
-, <a class="el" href="classTestJSON_1_1MockConvert.html#a93919cc95fa35fab3a425c18c75d6329">TestJSON::MockConvert</a>
+, <a class="el" href="classTestJSON_1_1MockConvert.html#a6dcc692ab530bf80deceeba515b3597e">TestJSON::MockConvert</a>
 , <a class="el" href="classTestJSON_1_1MockFg.html#a66d1127520da60b35e219562085674b7">TestJSON::MockFg</a>
 , <a class="el" href="classTestPrinter_1_1mockLicense.html#aa88143d52add004237f5d6f80da0f3ec">TestPrinter::mockLicense</a>
 </li>
@@ -489,7 +380,7 @@ $(function() {
 , <a class="el" href="classMenuTest_1_1MockBIOS.html#a8fda9603589ea7012ebe210066bbf004">MenuTest::MockBIOS</a>
 , <a class="el" href="classMenuTest_1_1MockFG.html#a1dc3b4d9dad8a2e57585cf7a037b26b7">MenuTest::MockFG</a>
 , <a class="el" href="classMenuTest_1_1MockGoods__new.html#ab89080c0cdb6ed15eb041c5e925c611a">MenuTest::MockGoods_new</a>
-, <a class="el" href="classMenuTest_1_1MockHE.html#a7ee4185d9dc1969015a61e0d66f34436">MenuTest::MockHE</a>
+, <a class="el" href="classMenuTest_1_1MockHE.html#a1c1bfd26e31dba733d98f5e34629f770">MenuTest::MockHE</a>
 , <a class="el" href="classMenuTest_1_1MockKeypad.html#a02a2f8746d29d14c68c282f1fb61bfbb">MenuTest::MockKeypad</a>
 , <a class="el" href="classMenuTest_1_1MockLcd.html#a45fa9f808e9c507afd259813d987c691">MenuTest::MockLcd</a>
 , <a class="el" href="classMenuTest_1_1MockNet.html#a76065ed8d83258be41a19b2f4e18419e">MenuTest::MockNet</a>
@@ -509,7 +400,7 @@ $(function() {
 , <a class="el" href="classMenuTest_1_1MockRF.html#afd52c539ac5252efb911858e7e9c0904">MenuTest::MockRF</a>
 </li>
 <li>MOCK_METHOD5()
-: <a class="el" href="classMenuTest_1_1MockLcd.html#a7d6b494eca460eb2e64091089500aede">MenuTest::MockLcd</a>
+: <a class="el" href="classMenuTest_1_1MockLcd.html#a0b6a342f05269ec966a1b85e2bbe894b">MenuTest::MockLcd</a>
 </li>
 <li>MOCK_METHOD7()
 : <a class="el" href="classHttpsExchangeTest_1_1MockConvert.html#a87886df174392c9b4802dfbe514fadef">HttpsExchangeTest::MockConvert</a>
@@ -577,20 +468,17 @@ $(function() {
 <li>MODE
 : <a class="el" href="classPosition__new.html#ae2715c87c85ad4507b2da5ca58de02ff">Position_new</a>
 </li>
-<li>mode_value
-: <a class="el" href="classPosition__new.html#ad8edcb99a01eb2da212283efc6ad80f7">Position_new</a>
-</li>
 <li>MODE_VALUE
 : <a class="el" href="classPosition__new.html#a03f3fd144f8af7779bdf53b5bbbc5770">Position_new</a>
+</li>
+<li>mode_value
+: <a class="el" href="classPosition__new.html#ad8edcb99a01eb2da212283efc6ad80f7">Position_new</a>
 </li>
 <li>model
 : <a class="el" href="structJSON_1_1JSON__REGISTER_1_1REQUEST.html#ae0d1086f703e4a37d0d8f7bb413aa9f1">JSON::JSON_REGISTER::REQUEST</a>
 </li>
 <li>MODEL_VERSION_CHANGE
 : <a class="el" href="classBIOS_1_1RUS.html#ab6288eb6e38d2c2783534345be9bb8a1">BIOS::RUS</a>
-</li>
-<li>modeWrite
-: <a class="el" href="classFlashMounter.html#a04edeeb5ff768458ed3ee9c53de08f45">FlashMounter</a>
 </li>
 <li>money_doc_rep_clear()
 : <a class="el" href="classJSON.html#aff70a8951f46e819c2444f396d9ad419">JSON</a>
@@ -617,9 +505,6 @@ $(function() {
 <li>MONEY_OUT
 : <a class="el" href="classJSON.html#a126918b89b30883320d5c7363b184546">JSON</a>
 </li>
-<li>money_rep_sec
-: <a class="el" href="classHttpsExchange.html#adeef7ac3e6ea3f21157d2bb3fac79675">HttpsExchange</a>
-</li>
 <li>money_rep_send_to_cab()
 : <a class="el" href="classMenu.html#a736f9723ede4118ebc9dd04f07968f4b">Menu</a>
 </li>
@@ -629,19 +514,15 @@ $(function() {
 <li>month
 : <a class="el" href="structConvert_1_1Date.html#a25593d678ccb8b45299d11d72d66e198">Convert::Date</a>
 , <a class="el" href="structConvert_1_1DATE__ISO__8601.html#af8134b5385abce45b3ad141e8296c6db">Convert::DATE_ISO_8601</a>
-, <a class="el" href="classReceipt__new.html#a5ff44c4a59fda77d3cf0c31c95185c61">Receipt_new</a>
 </li>
 <li>MONTH
 : <a class="el" href="classReceipt__new.html#a4157545346c1de39a18d6999395588e7">Receipt_new</a>
 </li>
+<li>month
+: <a class="el" href="classReceipt__new.html#a5ff44c4a59fda77d3cf0c31c95185c61">Receipt_new</a>
+</li>
 <li>MONTHS_IN_YEAR
 : <a class="el" href="classReceiptsDb.html#a70d5d3308e36175f41516811bd7c0e2b">ReceiptsDb</a>
-</li>
-<li>mounted
-: <a class="el" href="classFlashMounter.html#adba3e40781ac150ac76da82ac6e501a3">FlashMounter</a>
-</li>
-<li>mountPath
-: <a class="el" href="classFlashMounter.html#a1a677c0d7a8cb51c81ec234e57216580">FlashMounter</a>
 </li>
 <li>moveCodesToGoodsCodeTable()
 : <a class="el" href="classGoods__new.html#ae71de5660df6bd41e851b7db3ea77e13">Goods_new</a>
@@ -676,9 +557,6 @@ $(function() {
 <li>MULTIPLY
 : <a class="el" href="classCounters.html#a467afcee5ecb6a0cd251f9f8a128e8ec">Counters</a>
 </li>
-<li>mutex_bios
-: <a class="el" href="classBIOS.html#ad53bff2c93b1ec627a54e14a8904d97b">BIOS</a>
-</li>
 <li>mutex_get()
 : <a class="el" href="classBIOS_1_1BEL.html#a3964333516fa449acf1784943bc4b165">BIOS::BEL</a>
 , <a class="el" href="classBIOS.html#ac2f06e17a23d7f7962edb4a34e588032">BIOS</a>
@@ -689,12 +567,6 @@ $(function() {
 </li>
 <li>mutex_printer
 : <a class="el" href="classPrinter.html#a937c4c43840de543fce6267d5d4c4f7b">Printer</a>
-</li>
-<li>mutex_rb
-: <a class="el" href="classBIOS_1_1BEL.html#a8f79c963bbf6dc3c32102e24d362521d">BIOS::BEL</a>
-</li>
-<li>mutex_rf
-: <a class="el" href="classBIOS_1_1RUS.html#a25c0639db5dfee59c0e84c51b5d74b03">BIOS::RUS</a>
 </li>
 <li>mutex_set()
 : <a class="el" href="classBIOS_1_1BEL.html#acee99b18339be04682e974c4f5f06cd4">BIOS::BEL</a>
@@ -709,20 +581,14 @@ $(function() {
 <li>mutex_timer
 : <a class="el" href="classMenu.html#ae9d24ce6f63c8ca0462f84148b4ed6d4">Menu</a>
 </li>
-<li>mutexCurl
-: <a class="el" href="classHttpsExchange.html#a2c73e0e35270707e3be630ab033e7220">HttpsExchange</a>
-</li>
 <li>mutexLcd
 : <a class="el" href="classLcd.html#af083a415a3a2b02b6e54c67dc3d81adc">Lcd</a>
-</li>
-<li>mutexResolve
-: <a class="el" href="classHttpsExchange.html#a8105697b6671eb8130d3e8b67100bac6">HttpsExchange</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

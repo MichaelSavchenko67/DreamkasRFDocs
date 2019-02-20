@@ -1,13 +1,10 @@
 <map id="Menu::receipt_send_rb" name="Menu::receipt_send_rb">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,160,181"/>
-<area shape="rect" id="node2" href="$classMenu.html#a2a41ff45cbca2c29dd93b1cc4065340e" title="addPurchaseInQueue" alt="" coords="208,31,395,57"/>
-<area shape="rect" id="node5" href="$classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="236,82,367,123"/>
-<area shape="rect" id="node6" href="$classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="236,147,367,189"/>
-<area shape="rect" id="node7" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="209,213,394,240"/>
-<area shape="rect" id="node8" href="$classBIOS.html#ad950a845da18e29eac28097d8bc71d0d" title=" " alt="" coords="233,265,369,306"/>
-<area shape="rect" id="node3" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="449,5,624,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#a224bfb87755e0b4c8eb3f76edeb817c2" title=" " alt="" coords="445,56,628,83"/>
-<area shape="rect" id="node9" href="$classBIOS.html#a72f269d5d9e39b29d46ce9afc149a0af" title=" " alt="" coords="443,272,631,299"/>
-<area shape="rect" id="node10" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="682,247,830,273"/>
-<area shape="rect" id="node11" href="$classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="679,297,833,324"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,160,134"/>
+<area shape="rect" id="node2" href="$classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="235,5,366,47"/>
+<area shape="rect" id="node3" href="$classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="235,71,366,112"/>
+<area shape="rect" id="node4" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="208,137,393,163"/>
+<area shape="rect" id="node5" href="$classBIOS.html#ad950a845da18e29eac28097d8bc71d0d" title=" " alt="" coords="233,188,369,229"/>
+<area shape="rect" id="node6" href="$classBIOS.html#a72f269d5d9e39b29d46ce9afc149a0af" title=" " alt="" coords="441,195,629,222"/>
+<area shape="rect" id="node7" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="681,170,829,197"/>
+<area shape="rect" id="node8" href="$classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="677,221,832,247"/>
 </map>

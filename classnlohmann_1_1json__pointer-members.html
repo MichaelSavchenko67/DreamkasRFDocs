@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1json__pointer.html">json_pointer</a></li>  </ul>
@@ -53,30 +76,15 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4">array_index</a>(const std::string &amp;s)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ada3100cdb8700566051828f1355fa745">basic_json</a> class</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a8abf3577f9a0087f29a233893cdc73ad">escape</a>(std::string s)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ab0d7759d0caa6a0c0187916da28e6ee7">flatten</a>(const std::string &amp;reference_string, const BasicJsonType &amp;value, BasicJsonType &amp;result)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5">get_and_create</a>(BasicJsonType &amp;j) const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294">get_checked</a>(BasicJsonType *ptr) const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a55a5bbbc3007e479607304a3e8cb9bf5">get_checked</a>(const BasicJsonType *ptr) const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5">get_unchecked</a>(BasicJsonType *ptr) const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ad6a01f8e1556eef68e5a49b33fef1548">get_unchecked</a>(const BasicJsonType *ptr) const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#aa7cd421aaccabea7ffcf953f7ff96362">is_root</a>() const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a7f32d7c62841f0c4a6784cf741a6e4f8">json_pointer</a>(const std::string &amp;s=&quot;&quot;)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ae9015c658f99cf3d48a8563accc79988">operator std::string</a>() const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a6779edcf28e6f018a3bbb29c0b4b5e1e">operator!=</a>(json_pointer const &amp;lhs, json_pointer const &amp;rhs) noexcept</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a4667ef558c8c3f8a646bfda0c6654653">operator==</a>(json_pointer const &amp;lhs, json_pointer const &amp;rhs) noexcept</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a4d523606a8b40cef73e976e61b6fd383">pop_back</a>()</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a07a990a6838de4f38ee9d881e7b9fd61">reference_tokens</a></td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#aa7649d30da9fc10b0e20704a27aea2a9">replace_substring</a>(std::string &amp;s, const std::string &amp;f, const std::string &amp;t)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ae01c32c6a071c2e5198d5dfcce290e50">split</a>(const std::string &amp;reference_string)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ad7d3a3a215db8fe0964e644a918dcccb">to_string</a>() const noexcept</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a00eff109d9a0091e42ada9b16b90c8d9">top</a>() const</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#ab85442d5fbcc289b79beeefc2175446f">unescape</a>(std::string &amp;s)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html#a920065221e3c81676c3211c100d024a7">unflatten</a>(const BasicJsonType &amp;value)</td><td class="entry"><a class="el" href="classnlohmann_1_1json__pointer.html">nlohmann::json_pointer&lt; BasicJsonType &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

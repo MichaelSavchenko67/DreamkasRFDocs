@@ -1,5 +1,11 @@
 <map id="HttpsExchange::getTaxesArray" name="HttpsExchange::getTaxesArray">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,211,73"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,211,105"/>
 <area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#aa80485befaffcadaa39965494e0b4d2e" title="explicitly create an array from an initializer list" alt="" coords="283,5,431,47"/>
 <area shape="rect" id="node3" href="$classHttpsExchange.html#a1828eb4ed79df414aaecfe33a237614b" title=" " alt="" coords="259,71,455,112"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="283,136,431,177"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="504,37,652,79"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="504,103,652,144"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="503,168,653,209"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="504,233,652,275"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="701,168,883,209"/>
 </map>

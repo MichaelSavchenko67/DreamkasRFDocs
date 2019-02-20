@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">iteration_proxy</a></li>  </ul>
@@ -47,7 +70,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classnlohmann_1_1detail_1_1iteration__proxy-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</div>  </div>
@@ -69,37 +91,23 @@ $(function() {
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html">iteration_proxy_internal</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class for iteration  <a href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:afe257e972e3b4658ef2e355f7389d4a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#afe257e972e3b4658ef2e355f7389d4a5">iteration_proxy</a> (typename IteratorType::reference cont) noexcept</td></tr>
 <tr class="memdesc:afe257e972e3b4658ef2e355f7389d4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct iteration proxy from a container  <a href="#afe257e972e3b4658ef2e355f7389d4a5">Подробнее...</a><br /></td></tr>
 <tr class="separator:afe257e972e3b4658ef2e355f7389d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43612db469c82118fc648c3729e40cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html">iteration_proxy_internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a43612db469c82118fc648c3729e40cee">begin</a> () noexcept</td></tr>
+<tr class="memitem:a43612db469c82118fc648c3729e40cee"><td class="memItemLeft" align="right" valign="top">iteration_proxy_internal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a43612db469c82118fc648c3729e40cee">begin</a> () noexcept</td></tr>
 <tr class="memdesc:a43612db469c82118fc648c3729e40cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">return iterator begin (needed for range-based for)  <a href="#a43612db469c82118fc648c3729e40cee">Подробнее...</a><br /></td></tr>
 <tr class="separator:a43612db469c82118fc648c3729e40cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41303419d073f32fcf1956978410d816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html">iteration_proxy_internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a41303419d073f32fcf1956978410d816">end</a> () noexcept</td></tr>
+<tr class="memitem:a41303419d073f32fcf1956978410d816"><td class="memItemLeft" align="right" valign="top">iteration_proxy_internal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a41303419d073f32fcf1956978410d816">end</a> () noexcept</td></tr>
 <tr class="memdesc:a41303419d073f32fcf1956978410d816"><td class="mdescLeft">&#160;</td><td class="mdescRight">return iterator end (needed for range-based for)  <a href="#a41303419d073f32fcf1956978410d816">Подробнее...</a><br /></td></tr>
 <tr class="separator:a41303419d073f32fcf1956978410d816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:a88c0532ba4a5de1d527b18053b24fd19"><td class="memItemLeft" align="right" valign="top">IteratorType::reference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">container</a></td></tr>
-<tr class="memdesc:a88c0532ba4a5de1d527b18053b24fd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">the container to iterate  <a href="#a88c0532ba4a5de1d527b18053b24fd19">Подробнее...</a><br /></td></tr>
-<tr class="separator:a88c0532ba4a5de1d527b18053b24fd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><h3>template&lt;typename IteratorType&gt;<br />
 class nlohmann::detail::iteration_proxy&lt; IteratorType &gt;</h3>
 
 <p>proxy class for the items() function </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01375">1375</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="afe257e972e3b4658ef2e355f7389d4a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe257e972e3b4658ef2e355f7389d4a5">&#9670;&nbsp;</a></span>iteration_proxy()</h2>
@@ -128,10 +136,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>construct iteration proxy from a container </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01473">1473</a></p>
-<div class="fragment"><div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">container</a>(cont) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1iteration__proxy_html_a88c0532ba4a5de1d527b18053b24fd19"><div class="ttname"><a href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">nlohmann::detail::iteration_proxy::container</a></div><div class="ttdeci">IteratorType::reference container</div><div class="ttdoc">the container to iterate</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01469">jsonParser.h:1469</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        : container(cont) {}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -147,7 +152,7 @@ template&lt;typename IteratorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html">iteration_proxy_internal</a> <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::begin </td>
+          <td class="memname">iteration_proxy_internal <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -161,12 +166,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>return iterator begin (needed for range-based for) </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01477">1477</a></p>
-<div class="fragment"><div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    {</div><div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(<a class="code" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">container</a>.begin());</div><div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1iteration__proxy_html_a88c0532ba4a5de1d527b18053b24fd19"><div class="ttname"><a href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">nlohmann::detail::iteration_proxy::container</a></div><div class="ttdeci">IteratorType::reference container</div><div class="ttdoc">the container to iterate</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01469">jsonParser.h:1469</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l01469">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::container</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    {</div><div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.begin());</div><div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a41303419d073f32fcf1956978410d816"></a>
@@ -181,7 +181,7 @@ template&lt;typename IteratorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html">iteration_proxy_internal</a> <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::end </td>
+          <td class="memname">iteration_proxy_internal <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::end </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -195,43 +195,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><div class="memdoc">
 
 <p>return iterator end (needed for range-based for) </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01483">1483</a></p>
-<div class="fragment"><div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    {</div><div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(<a class="code" href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">container</a>.end());</div><div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1iteration__proxy_html_a88c0532ba4a5de1d527b18053b24fd19"><div class="ttname"><a href="classnlohmann_1_1detail_1_1iteration__proxy.html#a88c0532ba4a5de1d527b18053b24fd19">nlohmann::detail::iteration_proxy::container</a></div><div class="ttdeci">IteratorType::reference container</div><div class="ttdoc">the container to iterate</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01469">jsonParser.h:1469</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l01469">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::container</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="a88c0532ba4a5de1d527b18053b24fd19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88c0532ba4a5de1d527b18053b24fd19">&#9670;&nbsp;</a></span>container</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">IteratorType::reference <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy.html">nlohmann::detail::iteration_proxy</a>&lt; IteratorType &gt;::container</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>the container to iterate </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01469">1469</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l01477">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::begin()</a> и <a class="el" href="jsonParser_8h_source.html#l01483">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::end()</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    {</div><div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        <span class="keywordflow">return</span> iteration_proxy_internal(container.end());</div><div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -240,7 +204,7 @@ template&lt;typename IteratorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

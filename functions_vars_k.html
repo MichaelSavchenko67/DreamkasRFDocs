@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,25 +32,42 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_k"></a>- k -</h3><ul>
 <li>k
 : <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1cached__power.html#a8c1f2efed643eeaa8fae83c697a29c6a">nlohmann::detail::dtoa_impl::cached_power</a>
-</li>
-<li>keep_stack
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#ac24fd6c9f1b31b44328c16d65755ae76">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>key
 : <a class="el" href="structJSON_1_1JSON__KEY__ACTIVATION.html#aa1568b08d3f9aa9eb263333ac5c19b7a">JSON::JSON_KEY_ACTIVATION</a>
@@ -69,9 +89,6 @@ $(function() {
 </li>
 <li>KEY_HOLD
 : <a class="el" href="classFISGO__TEST__API.html#aa7897474ffb69b43250d3e4de2472e11">FISGO_TEST_API</a>
-</li>
-<li>key_keep_stack
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a8f0e96e8bc4f692169024105693f5706">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>keyboard_error
 : <a class="el" href="structPrinter_1_1technical__report.html#ab888176361f6cb8ce4c9ae097d5a252e">Printer::technical_report</a>
@@ -187,15 +204,8 @@ $(function() {
 : <a class="el" href="structConfig.html#ab632e228b5c6aa2f1fb8e8d955fc53f0">Config</a>
 , <a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html#a72e6e4ffce5f409c8c196041e3675865">JSON::JSON_OFD_REGISTER</a>
 </li>
-<li>kktAddSigns
-: <a class="el" href="classHttpsExchange.html#a9a429c3dbaa149fc177d6f4cbaf462c3">HttpsExchange</a>
-</li>
-<li>kktSigns
-: <a class="el" href="classHttpsExchange.html#ae0e1a73879fa3844618bf64b3c798a70">HttpsExchange</a>
-</li>
 <li>kpp
-: <a class="el" href="classHttpsExchange.html#a82ee3064b6c288da565624c5dc2863a3">HttpsExchange</a>
-, <a class="el" href="structJSON_1_1JSON__SHOP__INFO.html#a915f0e5a9e938987d01c1a96eef9943d">JSON::JSON_SHOP_INFO</a>
+: <a class="el" href="structJSON_1_1JSON__SHOP__INFO.html#a915f0e5a9e938987d01c1a96eef9943d">JSON::JSON_SHOP_INFO</a>
 </li>
 <li>kPrecision
 : <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a03682754b06ed4f30b263119eecc2d52">nlohmann::detail::dtoa_impl::diyfp</a>
@@ -204,7 +214,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

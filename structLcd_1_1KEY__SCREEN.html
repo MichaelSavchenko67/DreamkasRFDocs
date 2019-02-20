@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classLcd.html">Lcd</a></li><li class="navelem"><a class="el" href="structLcd_1_1KEY__SCREEN.html">KEY_SCREEN</a></li>  </ul>
@@ -89,10 +112,7 @@ $(function() {
 <tr class="memitem:ada86e29f054fdbdf2616f94c422b8df2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLcd.html#aaa012d17aa455e99b6f0fdae38ee537c">bright_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">highlight</a> = <a class="el" href="classLcd.html#aaa012d17aa455e99b6f0fdae38ee537ca0e14b28d568bc9cf62d0eb7b5b88a915">BRIGHT_OFF</a></td></tr>
 <tr class="separator:ada86e29f054fdbdf2616f94c422b8df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00823">823</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a5744a67f117f7d85c8f32c8325a4bb84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5744a67f117f7d85c8f32c8325a4bb84">&#9670;&nbsp;</a></span>KEY_SCREEN() <span class="overload">[1/3]</span></h2>
 
@@ -179,15 +199,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="lcd_8cpp_source.html">lcd.cpp</a> строка <a class="el" href="lcd_8cpp_source.html#l05312">5312</a></p>
-<div class="fragment"><div class="line"><a name="l05317"></a><span class="lineno"> 5317</span>&#160;{</div><div class="line"><a name="l05318"></a><span class="lineno"> 5318</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#aa8f7c211f0f26b66f378afc4fcff5599">keyName</a>   =   keyNameNew;</div><div class="line"><a name="l05319"></a><span class="lineno"> 5319</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#afd5ffbda5c1c1c8ada49f47c2b7af15c">num</a>       =       numNew;</div><div class="line"><a name="l05320"></a><span class="lineno"> 5320</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">str</a>       =       strNew;</div><div class="line"><a name="l05321"></a><span class="lineno"> 5321</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">pos</a>       =       posNew;</div><div class="line"><a name="l05322"></a><span class="lineno"> 5322</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">highlight</a> = highlightNew;</div><div class="line"><a name="l05323"></a><span class="lineno"> 5323</span>&#160;}</div><div class="ttc" id="structLcd_1_1KEY__SCREEN_html_afd5ffbda5c1c1c8ada49f47c2b7af15c"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#afd5ffbda5c1c1c8ada49f47c2b7af15c">Lcd::KEY_SCREEN::num</a></div><div class="ttdeci">int num</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00834">lcd.h:834</a></div></div>
-<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_ada86e29f054fdbdf2616f94c422b8df2"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">Lcd::KEY_SCREEN::highlight</a></div><div class="ttdeci">bright_t highlight</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00837">lcd.h:837</a></div></div>
-<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_a4e0b69f324f69815ff361a6df626130b"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">Lcd::KEY_SCREEN::str</a></div><div class="ttdeci">N_STR str</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00835">lcd.h:835</a></div></div>
-<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_aea89abe0c7e1e3f79486bad8243564c6"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">Lcd::KEY_SCREEN::pos</a></div><div class="ttdeci">pos_t pos</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00836">lcd.h:836</a></div></div>
-<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_aa8f7c211f0f26b66f378afc4fcff5599"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#aa8f7c211f0f26b66f378afc4fcff5599">Lcd::KEY_SCREEN::keyName</a></div><div class="ttdeci">string keyName</div><div class="ttdef"><b>Definition:</b> <a href="lcd_8h_source.html#l00833">lcd.h:833</a></div></div>
+<div class="fragment"><div class="line"><a name="l05317"></a><span class="lineno"> 5317</span>&#160;{</div><div class="line"><a name="l05318"></a><span class="lineno"> 5318</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#aa8f7c211f0f26b66f378afc4fcff5599">keyName</a>   =   keyNameNew;</div><div class="line"><a name="l05319"></a><span class="lineno"> 5319</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#afd5ffbda5c1c1c8ada49f47c2b7af15c">num</a>       =       numNew;</div><div class="line"><a name="l05320"></a><span class="lineno"> 5320</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">str</a>       =       strNew;</div><div class="line"><a name="l05321"></a><span class="lineno"> 5321</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">pos</a>       =       posNew;</div><div class="line"><a name="l05322"></a><span class="lineno"> 5322</span>&#160;    <a class="code" href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">highlight</a> = highlightNew;</div><div class="line"><a name="l05323"></a><span class="lineno"> 5323</span>&#160;}</div><div class="ttc" id="structLcd_1_1KEY__SCREEN_html_afd5ffbda5c1c1c8ada49f47c2b7af15c"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#afd5ffbda5c1c1c8ada49f47c2b7af15c">Lcd::KEY_SCREEN::num</a></div><div class="ttdeci">int num</div><div class="ttdef"><b>Definition:</b> lcd.h:834</div></div>
+<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_ada86e29f054fdbdf2616f94c422b8df2"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">Lcd::KEY_SCREEN::highlight</a></div><div class="ttdeci">bright_t highlight</div><div class="ttdef"><b>Definition:</b> lcd.h:837</div></div>
+<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_a4e0b69f324f69815ff361a6df626130b"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">Lcd::KEY_SCREEN::str</a></div><div class="ttdeci">N_STR str</div><div class="ttdef"><b>Definition:</b> lcd.h:835</div></div>
+<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_aea89abe0c7e1e3f79486bad8243564c6"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">Lcd::KEY_SCREEN::pos</a></div><div class="ttdeci">pos_t pos</div><div class="ttdef"><b>Definition:</b> lcd.h:836</div></div>
+<div class="ttc" id="structLcd_1_1KEY__SCREEN_html_aa8f7c211f0f26b66f378afc4fcff5599"><div class="ttname"><a href="structLcd_1_1KEY__SCREEN.html#aa8f7c211f0f26b66f378afc4fcff5599">Lcd::KEY_SCREEN::keyName</a></div><div class="ttdeci">string keyName</div><div class="ttdef"><b>Definition:</b> lcd.h:833</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="lcd_8h_source.html#l00837">highlight</a>, <a class="el" href="lcd_8h_source.html#l00833">keyName</a>, <a class="el" href="lcd_8h_source.html#l00834">num</a>, <a class="el" href="lcd_8h_source.html#l00836">pos</a> и <a class="el" href="lcd_8h_source.html#l00835">str</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structLcd_1_1KEY__SCREEN.html#ada86e29f054fdbdf2616f94c422b8df2">highlight</a>, <a class="el" href="structLcd_1_1KEY__SCREEN.html#aa8f7c211f0f26b66f378afc4fcff5599">keyName</a>, <a class="el" href="structLcd_1_1KEY__SCREEN.html#afd5ffbda5c1c1c8ada49f47c2b7af15c">num</a>, <a class="el" href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">pos</a> и <a class="el" href="structLcd_1_1KEY__SCREEN.html#a4e0b69f324f69815ff361a6df626130b">str</a>.</p>
 
 </div>
 </div>
@@ -205,8 +223,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="lcd_8cpp_source.html">lcd.cpp</a> строка <a class="el" href="lcd_8cpp_source.html#l05324">5324</a></p>
 <div class="fragment"><div class="line"><a name="l05325"></a><span class="lineno"> 5325</span>&#160;{</div><div class="line"><a name="l05326"></a><span class="lineno"> 5326</span>&#160;</div><div class="line"><a name="l05327"></a><span class="lineno"> 5327</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -223,9 +239,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00837">837</a></p>
-
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l05312">KEY_SCREEN()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structLcd_1_1KEY__SCREEN.html#a271c5c28a8b8f90fa3501c7cb3e68733">KEY_SCREEN()</a>.</p>
 
 </div>
 </div>
@@ -241,9 +255,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00833">833</a></p>
-
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l05312">KEY_SCREEN()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structLcd_1_1KEY__SCREEN.html#a271c5c28a8b8f90fa3501c7cb3e68733">KEY_SCREEN()</a>.</p>
 
 </div>
 </div>
@@ -259,9 +271,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00834">834</a></p>
-
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l05312">KEY_SCREEN()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structLcd_1_1KEY__SCREEN.html#a271c5c28a8b8f90fa3501c7cb3e68733">KEY_SCREEN()</a>.</p>
 
 </div>
 </div>
@@ -277,9 +287,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00836">836</a></p>
-
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l05312">KEY_SCREEN()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structLcd_1_1KEY__SCREEN.html#a271c5c28a8b8f90fa3501c7cb3e68733">KEY_SCREEN()</a>.</p>
 
 </div>
 </div>
@@ -295,20 +303,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="lcd_8h_source.html">lcd.h</a> строка <a class="el" href="lcd_8h_source.html#l00835">835</a></p>
-
-<p class="reference">Используется в <a class="el" href="lcd_8cpp_source.html#l05312">KEY_SCREEN()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structLcd_1_1KEY__SCREEN.html#a271c5c28a8b8f90fa3501c7cb3e68733">KEY_SCREEN()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="lcd_8h_source.html">lcd.h</a></li>
-<li>src/appl/<a class="el" href="lcd_8cpp_source.html">lcd.cpp</a></li>
+<li>src/appl/<a class="el" href="lcd_8cpp.html">lcd.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

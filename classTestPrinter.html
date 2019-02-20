@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,22 +32,41 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classTestPrinter-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс TestPrinter</div>  </div>
@@ -59,7 +81,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestPrinter__inherit__graph.png" border="0" usemap="#TestPrinter_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestPrinter_inherit__map" id="TestPrinter_inherit__map">
-<area shape="rect"  title=" " alt="" coords="5,131,120,281"/>
+<area shape="rect"  title=" " alt="" coords="5,131,120,252"/>
 <area shape="rect"  title=" " alt="" coords="39,5,87,83"/>
 </map>
 </div>
@@ -70,10 +92,10 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestPrinter__coll__graph.png" border="0" usemap="#TestPrinter_coll__map" alt="Collaboration graph"/></div>
 <map name="TestPrinter_coll__map" id="TestPrinter_coll__map">
-<area shape="rect"  title=" " alt="" coords="16,492,131,628"/>
-<area shape="rect"  title=" " alt="" coords="5,352,53,429"/>
-<area shape="rect"  href="classTestPrinter_1_1mockLicense.html" title=" " alt="" coords="77,352,248,429"/>
-<area shape="rect"  href="classLicense.html" title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="53,5,273,303"/>
+<area shape="rect"  title=" " alt="" coords="16,448,131,555"/>
+<area shape="rect"  title=" " alt="" coords="5,308,53,385"/>
+<area shape="rect"  href="classTestPrinter_1_1mockLicense.html" title=" " alt="" coords="77,308,248,385"/>
+<area shape="rect"  href="classLicense.html" title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="53,5,273,259"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -97,18 +119,8 @@ $(function() {
 <tr class="separator:a2ff5966088e305dcf57ab05f7061e1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88fb172f1a32fd93191b8027cd88ff19"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classPrinter.html">Printer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a></td></tr>
 <tr class="separator:a88fb172f1a32fd93191b8027cd88ff19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:acb2ec56017808ae3fe50491012724179"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classFISGO__TEST__API.html">FISGO_TEST_API</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">_ftapi</a></td></tr>
-<tr class="separator:acb2ec56017808ae3fe50491012724179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36809bfd5f7c038eb54c7b44d8c7a6af"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classLicense.html">License</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">_license</a></td></tr>
-<tr class="separator:a36809bfd5f7c038eb54c7b44d8c7a6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00013">13</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a5a3cd9cd2aee5c710dcfe1f305f316fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a3cd9cd2aee5c710dcfe1f305f316fd">&#9670;&nbsp;</a></span>TestPrinter()</h2>
 
@@ -131,16 +143,12 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00016">16</a></p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        EXPECT_GLOBAL_CALL( access, access( _, F_OK ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        EXPECT_GLOBAL_CALL( system, system( _ ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">_ftapi</a> = make_shared&lt;FISGO_TEST_API&gt;();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">_license</a> = make_shared&lt;License&gt;();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">_license</a>.reset(&amp;<a class="code" href="classTestPrinter.html#a0efd70e809baa538a4758efb18eb7b97">mockLicense</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a> = make_shared&lt;Taxes&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>-&gt;setLicense(<a class="code" href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">_license</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>.reset(<span class="keyword">new</span> <a class="code" href="classPrinter.html">Printer</a>(<a class="code" href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">_ftapi</a>));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>-&gt;setTaxes(<a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="ttc" id="classPrinter_html"><div class="ttname"><a href="classPrinter.html">Printer</a></div><div class="ttdef"><b>Definition:</b> <a href="printer_8h_source.html#l00228">printer.h:228</a></div></div>
-<div class="ttc" id="classTestPrinter_html_a36809bfd5f7c038eb54c7b44d8c7a6af"><div class="ttname"><a href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">TestPrinter::_license</a></div><div class="ttdeci">shared_ptr&lt; License &gt; _license</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00048">testPrinter.h:48</a></div></div>
-<div class="ttc" id="classTestPrinter_html_acb2ec56017808ae3fe50491012724179"><div class="ttname"><a href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">TestPrinter::_ftapi</a></div><div class="ttdeci">shared_ptr&lt; FISGO_TEST_API &gt; _ftapi</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00047">testPrinter.h:47</a></div></div>
-<div class="ttc" id="classTestPrinter_html_a2ff5966088e305dcf57ab05f7061e1fa"><div class="ttname"><a href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">TestPrinter::taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; taxes</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00043">testPrinter.h:43</a></div></div>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        EXPECT_GLOBAL_CALL( access, access( _, F_OK ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        EXPECT_GLOBAL_CALL( system, system( _ ) ).WillRepeatedly( Return( 0 ) );</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        _ftapi = make_shared&lt;FISGO_TEST_API&gt;();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        _license = make_shared&lt;License&gt;();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        _license.reset(&amp;<a class="code" href="classTestPrinter.html#a0efd70e809baa538a4758efb18eb7b97">mockLicense</a>);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a> = make_shared&lt;Taxes&gt;();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>-&gt;setLicense(_license);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>.reset(<span class="keyword">new</span> <a class="code" href="classPrinter.html">Printer</a>(_ftapi));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>-&gt;setTaxes(<a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="ttc" id="classPrinter_html"><div class="ttname"><a href="classPrinter.html">Printer</a></div><div class="ttdef"><b>Definition:</b> printer.h:228</div></div>
+<div class="ttc" id="classTestPrinter_html_a2ff5966088e305dcf57ab05f7061e1fa"><div class="ttname"><a href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">TestPrinter::taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; taxes</div><div class="ttdef"><b>Definition:</b> testPrinter.h:43</div></div>
 <div class="ttc" id="classTestPrinter_html_a0efd70e809baa538a4758efb18eb7b97"><div class="ttname"><a href="classTestPrinter.html#a0efd70e809baa538a4758efb18eb7b97">TestPrinter::mockLicense</a></div><div class="ttdeci">TestPrinter::mockLicense mockLicense</div></div>
-<div class="ttc" id="classTestPrinter_html_a88fb172f1a32fd93191b8027cd88ff19"><div class="ttname"><a href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">TestPrinter::printer</a></div><div class="ttdeci">unique_ptr&lt; Printer &gt; printer</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00044">testPrinter.h:44</a></div></div>
+<div class="ttc" id="classTestPrinter_html_a88fb172f1a32fd93191b8027cd88ff19"><div class="ttname"><a href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">TestPrinter::printer</a></div><div class="ttdeci">unique_ptr&lt; Printer &gt; printer</div><div class="ttdef"><b>Definition:</b> testPrinter.h:44</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testPrinter_8h_source.html#l00047">_ftapi</a>, <a class="el" href="testPrinter_8h_source.html#l00048">_license</a>, <a class="el" href="testPrinter_8h_source.html#l00044">printer</a> и <a class="el" href="testPrinter_8h_source.html#l00043">taxes</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a> и <a class="el" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>.</p>
 
 </div>
 </div>
@@ -166,70 +174,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00029">29</a></p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">_license</a>.reset();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>.reset();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">_ftapi</a>.reset();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>.release();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div><div class="ttc" id="classTestPrinter_html_a36809bfd5f7c038eb54c7b44d8c7a6af"><div class="ttname"><a href="classTestPrinter.html#a36809bfd5f7c038eb54c7b44d8c7a6af">TestPrinter::_license</a></div><div class="ttdeci">shared_ptr&lt; License &gt; _license</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00048">testPrinter.h:48</a></div></div>
-<div class="ttc" id="classTestPrinter_html_acb2ec56017808ae3fe50491012724179"><div class="ttname"><a href="classTestPrinter.html#acb2ec56017808ae3fe50491012724179">TestPrinter::_ftapi</a></div><div class="ttdeci">shared_ptr&lt; FISGO_TEST_API &gt; _ftapi</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00047">testPrinter.h:47</a></div></div>
-<div class="ttc" id="classTestPrinter_html_a2ff5966088e305dcf57ab05f7061e1fa"><div class="ttname"><a href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">TestPrinter::taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; taxes</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00043">testPrinter.h:43</a></div></div>
-<div class="ttc" id="classTestPrinter_html_a88fb172f1a32fd93191b8027cd88ff19"><div class="ttname"><a href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">TestPrinter::printer</a></div><div class="ttdeci">unique_ptr&lt; Printer &gt; printer</div><div class="ttdef"><b>Definition:</b> <a href="testPrinter_8h_source.html#l00044">testPrinter.h:44</a></div></div>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        _license.reset();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>.reset();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        _ftapi.reset();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a>.release();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div><div class="ttc" id="classTestPrinter_html_a2ff5966088e305dcf57ab05f7061e1fa"><div class="ttname"><a href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">TestPrinter::taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; taxes</div><div class="ttdef"><b>Definition:</b> testPrinter.h:43</div></div>
+<div class="ttc" id="classTestPrinter_html_a88fb172f1a32fd93191b8027cd88ff19"><div class="ttname"><a href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">TestPrinter::printer</a></div><div class="ttdeci">unique_ptr&lt; Printer &gt; printer</div><div class="ttdef"><b>Definition:</b> testPrinter.h:44</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testPrinter_8h_source.html#l00047">_ftapi</a>, <a class="el" href="testPrinter_8h_source.html#l00048">_license</a>, <a class="el" href="testPrinter_8h_source.html#l00044">printer</a> и <a class="el" href="testPrinter_8h_source.html#l00043">taxes</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classTestPrinter.html#a88fb172f1a32fd93191b8027cd88ff19">printer</a> и <a class="el" href="classTestPrinter.html#a2ff5966088e305dcf57ab05f7061e1fa">taxes</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
-<a id="acb2ec56017808ae3fe50491012724179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb2ec56017808ae3fe50491012724179">&#9670;&nbsp;</a></span>_ftapi</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt;<a class="el" href="classFISGO__TEST__API.html">FISGO_TEST_API</a>&gt; TestPrinter::_ftapi</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00047">47</a></p>
-
-<p class="reference">Используется в <a class="el" href="testPrinter_8h_source.html#l00016">TestPrinter()</a> и <a class="el" href="testPrinter_8h_source.html#l00029">~TestPrinter()</a>.</p>
-
-</div>
-</div>
-<a id="a36809bfd5f7c038eb54c7b44d8c7a6af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36809bfd5f7c038eb54c7b44d8c7a6af">&#9670;&nbsp;</a></span>_license</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt;<a class="el" href="classLicense.html">License</a>&gt; TestPrinter::_license</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00048">48</a></p>
-
-<p class="reference">Используется в <a class="el" href="testPrinter_8h_source.html#l00016">TestPrinter()</a> и <a class="el" href="testPrinter_8h_source.html#l00029">~TestPrinter()</a>.</p>
-
-</div>
-</div>
 <a id="a0efd70e809baa538a4758efb18eb7b97"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0efd70e809baa538a4758efb18eb7b97">&#9670;&nbsp;</a></span>mockLicense</h2>
 
@@ -256,9 +208,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00044">44</a></p>
-
-<p class="reference">Используется в <a class="el" href="testPrinter_8h_source.html#l00016">TestPrinter()</a> и <a class="el" href="testPrinter_8h_source.html#l00029">~TestPrinter()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classTestPrinter.html#a5a3cd9cd2aee5c710dcfe1f305f316fd">TestPrinter()</a> и <a class="el" href="classTestPrinter.html#a808c8828eac8b6d6887c4c4f00b02e1f">~TestPrinter()</a>.</p>
 
 </div>
 </div>
@@ -274,9 +224,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00043">43</a></p>
-
-<p class="reference">Используется в <a class="el" href="testPrinter_8h_source.html#l00016">TestPrinter()</a> и <a class="el" href="testPrinter_8h_source.html#l00029">~TestPrinter()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classTestPrinter.html#a5a3cd9cd2aee5c710dcfe1f305f316fd">TestPrinter()</a> и <a class="el" href="classTestPrinter.html#a808c8828eac8b6d6887c4c4f00b02e1f">~TestPrinter()</a>.</p>
 
 </div>
 </div>
@@ -286,7 +234,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

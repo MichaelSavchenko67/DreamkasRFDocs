@@ -1,14 +1,12 @@
 <map id="MenuItem::GetName" name="MenuItem::GetName">
-<area shape="rect" id="node1" title=" " alt="" coords="669,183,813,209"/>
-<area shape="rect" id="node2" href="$classMenuItem.html#a7b347d0922bf28c78729f4ebf96c8c92" title=" " alt="" coords="468,56,609,83"/>
-<area shape="rect" id="node5" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="460,107,617,133"/>
-<area shape="rect" id="node9" href="$classMenuTree.html#aa00f52d581acef165d4f9dfea8062c87" title=" " alt="" coords="456,157,621,184"/>
-<area shape="rect" id="node10" href="$classMenuItem.html#a504bce1d2c86a81d5923a23f5948a119" title=" " alt="" coords="459,208,618,235"/>
-<area shape="rect" id="node11" href="$classMenuItem.html#a47cc3c3c5eec5b55b6155b0a00bd2721" title=" " alt="" coords="467,259,610,285"/>
-<area shape="rect" id="node12" href="$classMenuItem.html#a29eae36e67d83c0339701a4e39990cf2" title=" " alt="" coords="473,309,604,336"/>
-<area shape="rect" id="node3" href="$classMenuTree.html#a679a81b3c7a2fd3989a12bdb8290c47b" title=" " alt="" coords="241,5,408,32"/>
-<area shape="rect" id="node4" href="$classMenuItem.html#a39696552f3b69671c704f424f1e535a3" title=" " alt="" coords="251,56,398,83"/>
-<area shape="rect" id="node6" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="261,107,389,133"/>
-<area shape="rect" id="node7" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,107,193,133"/>
-<area shape="rect" id="node8" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,107,56,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="571,157,715,184"/>
+<area shape="rect" id="node2" href="$classMenuItem.html#a7b347d0922bf28c78729f4ebf96c8c92" title=" " alt="" coords="369,56,511,83"/>
+<area shape="rect" id="node5" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="361,107,519,133"/>
+<area shape="rect" id="node8" href="$classMenuTree.html#aa00f52d581acef165d4f9dfea8062c87" title=" " alt="" coords="357,157,523,184"/>
+<area shape="rect" id="node9" href="$classMenuItem.html#a47cc3c3c5eec5b55b6155b0a00bd2721" title=" " alt="" coords="369,208,511,235"/>
+<area shape="rect" id="node10" href="$classMenuItem.html#a29eae36e67d83c0339701a4e39990cf2" title=" " alt="" coords="375,259,505,285"/>
+<area shape="rect" id="node3" href="$classMenuTree.html#a679a81b3c7a2fd3989a12bdb8290c47b" title=" " alt="" coords="143,5,309,32"/>
+<area shape="rect" id="node4" href="$classMenuItem.html#a39696552f3b69671c704f424f1e535a3" title=" " alt="" coords="153,56,299,83"/>
+<area shape="rect" id="node6" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="162,107,290,133"/>
+<area shape="rect" id="node7" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,107,95,133"/>
 </map>

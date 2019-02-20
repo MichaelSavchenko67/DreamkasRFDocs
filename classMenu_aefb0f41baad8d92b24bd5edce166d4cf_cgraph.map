@@ -1,5 +1,4 @@
 <map id="Menu::fn_shift_open_action" name="Menu::fn_shift_open_action">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,145,65"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2" title=" " alt="" coords="193,5,304,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="205,56,292,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,145,47"/>
+<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="193,13,280,39"/>
 </map>

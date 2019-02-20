@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -138,12 +161,10 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a1fe4d118af14c717ede70f77159f8256">operator=</a>(const Position_new &amp;other)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPosition__new.html#a4446d71ddd8487c86244cbbdb050dafe">PL_AGENT</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#abff8d514e34d942a2051c67359cb884d">POS_COST</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#a8d103f353d2caa535f77e2a34695fa11">pos_cost</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3">pos_cost_get</a>() const</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39">pos_cost_set</a>(uint64_t cost)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#ada60dd729637c1e3e275764c1f1e7fa6">pos_num</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#a374be7342acfa3d00ff38680f2138f28">POS_NUM</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#aad94454a7038b4ab7d3da6679ae5eb8f">pos_sum_display</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3">pos_cost_get</a>() const</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39">pos_cost_set</a>(uint64_t cost)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#ada60dd729637c1e3e275764c1f1e7fa6">pos_num</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a374be7342acfa3d00ff38680f2138f28">POS_NUM</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPosition__new.html#a6f9d3c384159e477fb557fc29daddc8e">POS_SUM_DISPLAY</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a0150395b73c0568fa02bd30507ca2568">pos_sum_display_get</a>() const</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classPosition__new.html#ad564f96eb227c5eb67085d289f7e909d">pos_sum_display_set</a>(uint64_t sum)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -169,20 +190,19 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classPosition__new.html#a641736e23351c71e0f37808f28213250">TAX_NUMBER</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a3e8d3c60f81e6633b571d5d18a95126e">tax_sum</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classPosition__new.html#a04ff52b42a8e3e6b16842aecdba24408">TAX_SUM</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#af7d16e6bb3873270f65ecba1125397c7">total_pos_sum</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#af280478dcc3fc624edb35e3ee25473b6">TOTAL_POS_SUM</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb">total_pos_sum_get</a>() const</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779">total_pos_sum_set</a>(uint64_t sum)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a3c5a77bddfad836846f544269a175ea8">UNIT_NAME</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#aece00de9f95bf1313447e62e805b4ad3">unit_name</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a3f1e9b5e6897f3736a62f4ff11e273e9">UNIT_PRICE</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#a501ca3252970add07a7e61aaf2e7eebe">unit_price</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba">WEIGHT</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classPosition__new.html#aa9d29f7201f37cad53f637ded1ffd3b4">~Position_new</a>()</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#af280478dcc3fc624edb35e3ee25473b6">TOTAL_POS_SUM</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb">total_pos_sum_get</a>() const</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779">total_pos_sum_set</a>(uint64_t sum)</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#a3c5a77bddfad836846f544269a175ea8">UNIT_NAME</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#aece00de9f95bf1313447e62e805b4ad3">unit_name</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#a3f1e9b5e6897f3736a62f4ff11e273e9">UNIT_PRICE</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#a501ca3252970add07a7e61aaf2e7eebe">unit_price</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPosition__new.html#aca2b29ae973c5f98ab44ec3a4a0745ba">WEIGHT</a></td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPosition__new.html#aa9d29f7201f37cad53f637ded1ffd3b4">~Position_new</a>()</td><td class="entry"><a class="el" href="classPosition__new.html">Position_new</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

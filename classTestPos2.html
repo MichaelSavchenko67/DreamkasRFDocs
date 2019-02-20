@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,21 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="#pri-methods">Закрытые члены</a> &#124;
 <a href="classTestPos2-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс TestPos2</div>  </div>
@@ -58,8 +80,8 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestPos2__inherit__graph.png" border="0" usemap="#TestPos2_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestPos2_inherit__map" id="TestPos2_inherit__map">
-<area shape="rect"  title=" " alt="" coords="35,1180,166,1389"/>
-<area shape="rect"  href="classScaleProtocolPos2.html" title=" " alt="" coords="20,776,181,1132"/>
+<area shape="rect"  title=" " alt="" coords="35,1019,166,1169"/>
+<area shape="rect"  href="classScaleProtocolPos2.html" title=" " alt="" coords="20,776,181,971"/>
 <area shape="rect"  href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,196,728"/>
 </map>
 </div>
@@ -70,8 +92,8 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestPos2__coll__graph.png" border="0" usemap="#TestPos2_coll__map" alt="Collaboration graph"/></div>
 <map name="TestPos2_coll__map" id="TestPos2_coll__map">
-<area shape="rect"  title=" " alt="" coords="225,1455,355,1664"/>
-<area shape="rect"  href="classScaleProtocolPos2.html" title=" " alt="" coords="209,1049,371,1405"/>
+<area shape="rect"  title=" " alt="" coords="225,1293,355,1444"/>
+<area shape="rect"  href="classScaleProtocolPos2.html" title=" " alt="" coords="209,1049,371,1244"/>
 <area shape="rect"  href="classScaleProtocolInterface.html" title="The ScaleProtocolInterface class &#45; Ð±Ð°Ð·Ð¾Ð²ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð¿ÑÐ¾ÑÐ¾ÐºÐ¾Ð»Ð° Ð²ÐµÑÐ¾Ð²" alt="" coords="195,321,385,1000"/>
 <area shape="rect"  href="structScaleProtocolInterface_1_1Param.html" title="The Param struct &#45; Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÑ Ð²ÐµÑÐ¾Ð²" alt="" coords="5,5,188,259"/>
 <area shape="rect"  href="structScaleProtocolInterface_1_1PacketFormat.html" title="The PacketFormat struct &#45; ÑÐ¾ÑÐ¼Ð°Ñ Ð¿Ð°ÐºÐµÑÐ°" alt="" coords="213,64,367,200"/>
@@ -154,21 +176,6 @@ $(function() {
 <tr class="separator:a4c466c5b4b045c1d6bbb8ab4fbeaa8e1 inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63ef31f5bead7c8b3436e66db713c965 inherit pub_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structScaleProtocolInterface_1_1ScaleErr.html">ScaleErr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a63ef31f5bead7c8b3436e66db713c965">scaleErr</a></td></tr>
 <tr class="separator:a63ef31f5bead7c8b3436e66db713c965 inherit pub_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Закрытые члены</h2></td></tr>
-<tr class="memitem:a3fe64c2fc1b638c815930222aa2eda12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPos2.html#a3fe64c2fc1b638c815930222aa2eda12">openPort</a> () override</td></tr>
-<tr class="memdesc:a3fe64c2fc1b638c815930222aa2eda12"><td class="mdescLeft">&#160;</td><td class="mdescRight">openPort - открыть порт  <a href="#a3fe64c2fc1b638c815930222aa2eda12">Подробнее...</a><br /></td></tr>
-<tr class="separator:a3fe64c2fc1b638c815930222aa2eda12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3740dd654f14727e4d90ecf631d1e96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPos2.html#af3740dd654f14727e4d90ecf631d1e96">closePort</a> () override</td></tr>
-<tr class="memdesc:af3740dd654f14727e4d90ecf631d1e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">closePort - закрыть порт  <a href="#af3740dd654f14727e4d90ecf631d1e96">Подробнее...</a><br /></td></tr>
-<tr class="separator:af3740dd654f14727e4d90ecf631d1e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae243453f44d9c3e8135993c9c179e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPos2.html#a5ae243453f44d9c3e8135993c9c179e3">setScaleErr</a> () override</td></tr>
-<tr class="memdesc:a5ae243453f44d9c3e8135993c9c179e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">setScaleErr - установить ошибки  <a href="#a5ae243453f44d9c3e8135993c9c179e3">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5ae243453f44d9c3e8135993c9c179e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a543a48b6bfa9bff27ffa569b77a93992"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestPos2.html#a543a48b6bfa9bff27ffa569b77a93992">readAnswer</a> () override</td></tr>
-<tr class="memdesc:a543a48b6bfa9bff27ffa569b77a93992"><td class="mdescLeft">&#160;</td><td class="mdescRight">readAnswer - прочитать ответ от весов  <a href="#a543a48b6bfa9bff27ffa569b77a93992">Подробнее...</a><br /></td></tr>
-<tr class="separator:a543a48b6bfa9bff27ffa569b77a93992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
@@ -255,10 +262,7 @@ $(function() {
 <tr class="memitem:a0f1dbfa3696c2ca3ea088cc5757ae23f inherit pro_attribs_classScaleProtocolInterface"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScaleProtocolInterface.html#a0f1dbfa3696c2ca3ea088cc5757ae23f">MAX_PACKET_ANSWER</a> = 255</td></tr>
 <tr class="separator:a0f1dbfa3696c2ca3ea088cc5757ae23f inherit pro_attribs_classScaleProtocolInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00013">13</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a47cf4fdfdd096e5d56fc37b7cc318d4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47cf4fdfdd096e5d56fc37b7cc318d4a">&#9670;&nbsp;</a></span>TestPos2()</h2>
 
@@ -282,113 +286,11 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00016">16</a></p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;: <a class="code" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2</a> (port){};</div><div class="ttc" id="classScaleProtocolPos2_html_aafb92a2416ee79d8d2282054eda803a2"><div class="ttname"><a href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2</a></div><div class="ttdeci">ScaleProtocolPos2(const string &amp;port)</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8cpp_source.html#l00003">scaleProtocolPos2.cpp:3</a></div></div>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;: <a class="code" href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2</a> (port){};</div><div class="ttc" id="classScaleProtocolPos2_html_aafb92a2416ee79d8d2282054eda803a2"><div class="ttname"><a href="classScaleProtocolPos2.html#aafb92a2416ee79d8d2282054eda803a2">ScaleProtocolPos2::ScaleProtocolPos2</a></div><div class="ttdeci">ScaleProtocolPos2(const string &amp;port)</div><div class="ttdef"><b>Definition:</b> scaleProtocolPos2.cpp:3</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
-<a id="af3740dd654f14727e4d90ecf631d1e96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3740dd654f14727e4d90ecf631d1e96">&#9670;&nbsp;</a></span>closePort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TestPos2::closePort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>closePort - закрыть порт </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-<p>Переопределяет метод предка <a class="el" href="classScaleProtocolPos2.html#aebce5d9bde60462976e3dbe00e770530">ScaleProtocolPos2</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00031">31</a></p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{<span class="keywordflow">return</span> <span class="keyword">true</span>;}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a3fe64c2fc1b638c815930222aa2eda12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe64c2fc1b638c815930222aa2eda12">&#9670;&nbsp;</a></span>openPort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TestPos2::openPort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>openPort - открыть порт </p>
-<dl class="section return"><dt>Возвращает</dt><dd>результат выполнения команды </dd></dl>
-
-<p>Переопределяет метод предка <a class="el" href="classScaleProtocolPos2.html#a4dc9af0ebdf96829d77c327da90bc417">ScaleProtocolPos2</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00030">30</a></p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{<span class="keywordflow">return</span> <span class="keyword">true</span>;}</div></div><!-- fragment -->
-</div>
-</div>
-<a id="a543a48b6bfa9bff27ffa569b77a93992"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a543a48b6bfa9bff27ffa569b77a93992">&#9670;&nbsp;</a></span>readAnswer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TestPos2::readAnswer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>readAnswer - прочитать ответ от весов </p>
-<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
-
-<p>Переопределяет метод предка <a class="el" href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">ScaleProtocolInterface</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00033">33</a></p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a> = 20;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">answer</a>.reset(<span class="keyword">new</span> uint8_t[<a class="code" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a>]);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        memset( <a class="code" href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">answer</a>.get(), 0x01, <a class="code" href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">answerSize</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div><div class="ttc" id="classScaleProtocolInterface_html_a96fac136ed0bc8cd05db7974e33c3001"><div class="ttname"><a href="classScaleProtocolInterface.html#a96fac136ed0bc8cd05db7974e33c3001">ScaleProtocolInterface::answerSize</a></div><div class="ttdeci">uint8_t answerSize</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocol_8h_source.html#l00154">scaleProtocol.h:154</a></div></div>
-<div class="ttc" id="classScaleProtocolInterface_html_adcd257f97ebffe52880a3c6c48032403"><div class="ttname"><a href="classScaleProtocolInterface.html#adcd257f97ebffe52880a3c6c48032403">ScaleProtocolInterface::answer</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; answer</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocol_8h_source.html#l00166">scaleProtocol.h:166</a></div></div>
-</div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocol_8h_source.html#l00166">ScaleProtocolInterface::answer</a> и <a class="el" href="scaleProtocol_8h_source.html#l00154">ScaleProtocolInterface::answerSize</a>.</p>
-
-</div>
-</div>
 <a id="ab55aa6d76acd81ff20b730d63c5d2f39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab55aa6d76acd81ff20b730d63c5d2f39">&#9670;&nbsp;</a></span>resetCmd()</h2>
 
@@ -411,11 +313,9 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00019">19</a></p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_ad131c3472c0b49f723894061cf3b8f85"><div class="ttname"><a href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">ScaleProtocolInterface::cmd</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; cmd</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocol_8h_source.html#l00161">scaleProtocol.h:161</a></div></div>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">cmd</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_ad131c3472c0b49f723894061cf3b8f85"><div class="ttname"><a href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">ScaleProtocolInterface::cmd</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; cmd</div><div class="ttdef"><b>Definition:</b> scaleProtocol.h:161</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocol_8h_source.html#l00161">ScaleProtocolInterface::cmd</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#ad131c3472c0b49f723894061cf3b8f85">ScaleProtocolInterface::cmd</a>.</p>
 
 </div>
 </div>
@@ -441,11 +341,9 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00020">20</a></p>
-<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">crc</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_ad18a0885e7ec7d26592d390c5c61a89e"><div class="ttname"><a href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">ScaleProtocolInterface::crc</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; crc</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocol_8h_source.html#l00164">scaleProtocol.h:164</a></div></div>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">crc</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_ad18a0885e7ec7d26592d390c5c61a89e"><div class="ttname"><a href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">ScaleProtocolInterface::crc</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; crc</div><div class="ttdef"><b>Definition:</b> scaleProtocol.h:164</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocol_8h_source.html#l00164">ScaleProtocolInterface::crc</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#ad18a0885e7ec7d26592d390c5c61a89e">ScaleProtocolInterface::crc</a>.</p>
 
 </div>
 </div>
@@ -471,49 +369,10 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00018">18</a></p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">header</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_a6c8277e9d9634cf8a9dfa62892789a48"><div class="ttname"><a href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">ScaleProtocolInterface::header</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; header</div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocol_8h_source.html#l00160">scaleProtocol.h:160</a></div></div>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{<a class="code" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">header</a>.reset();}</div><div class="ttc" id="classScaleProtocolInterface_html_a6c8277e9d9634cf8a9dfa62892789a48"><div class="ttname"><a href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">ScaleProtocolInterface::header</a></div><div class="ttdeci">unique_ptr&lt; uint8_t[]&gt; header</div><div class="ttdef"><b>Definition:</b> scaleProtocol.h:160</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocol_8h_source.html#l00160">ScaleProtocolInterface::header</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#a6c8277e9d9634cf8a9dfa62892789a48">ScaleProtocolInterface::header</a>.</p>
 
-</div>
-</div>
-<a id="a5ae243453f44d9c3e8135993c9c179e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae243453f44d9c3e8135993c9c179e3">&#9670;&nbsp;</a></span>setScaleErr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TestPos2::setScaleErr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>setScaleErr - установить ошибки </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>- структура ошибок </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Переопределяет метод предка <a class="el" href="classScaleProtocolPos2.html#a76f72420064803e277e6f381ace03c89">ScaleProtocolPos2</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00032">32</a></p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{<span class="keywordflow">return</span> <span class="keyword">true</span>;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a0c54e1099cf22852178c34e386a30cdd"></a>
@@ -539,11 +398,9 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00023">23</a></p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{<a class="code" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a> = val;}</div><div class="ttc" id="classTestPos2_html_a0045a0fa9e42be52b0827ab845b000b4"><div class="ttname"><a href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">TestPos2::rval</a></div><div class="ttdeci">ssize_t rval</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00022">testScale.h:22</a></div></div>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{<a class="code" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a> = val;}</div><div class="ttc" id="classTestPos2_html_a0045a0fa9e42be52b0827ab845b000b4"><div class="ttname"><a href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">TestPos2::rval</a></div><div class="ttdeci">ssize_t rval</div><div class="ttdef"><b>Definition:</b> testScale.h:22</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testScale_8h_source.html#l00022">rval</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a>.</p>
 
 </div>
 </div>
@@ -588,11 +445,9 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Переопределяет метод предка <a class="el" href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625">ScaleProtocolInterface</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00024">24</a></p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="ttc" id="classTestPos2_html_a0045a0fa9e42be52b0827ab845b000b4"><div class="ttname"><a href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">TestPos2::rval</a></div><div class="ttdeci">ssize_t rval</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00022">testScale.h:22</a></div></div>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="ttc" id="classTestPos2_html_a0045a0fa9e42be52b0827ab845b000b4"><div class="ttname"><a href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">TestPos2::rval</a></div><div class="ttdeci">ssize_t rval</div><div class="ttdef"><b>Definition:</b> testScale.h:22</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="testScale_8h_source.html#l00022">rval</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">rval</a>.</p>
 
 </div>
 </div>
@@ -609,9 +464,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00022">22</a></p>
-
-<p class="reference">Используется в <a class="el" href="testScale_8h_source.html#l00023">setWriteRetVal()</a> и <a class="el" href="testScale_8h_source.html#l00024">WriteInScale()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classTestPos2.html#a0c54e1099cf22852178c34e386a30cdd">setWriteRetVal()</a> и <a class="el" href="classTestPos2.html#a9bb615d675507eb9ce6bb0b6b7f47a90">WriteInScale()</a>.</p>
 
 </div>
 </div>
@@ -621,7 +474,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

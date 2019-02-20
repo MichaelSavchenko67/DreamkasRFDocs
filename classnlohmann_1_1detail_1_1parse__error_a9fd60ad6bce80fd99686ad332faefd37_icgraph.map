@@ -1,33 +1,49 @@
 <map id="nlohmann::detail::parse_error::create" name="nlohmann::detail::parse_error::create">
-<area shape="rect" id="node1" title="create a parse error exception" alt="" coords="2063,932,2220,973"/>
-<area shape="rect" id="node2" href="$classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5" title="create and return a reference to the pointed to value" alt="" coords="1856,5,2012,47"/>
-<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1binary__reader.html#acca76844160000e1d8215cb5c7afbba1" title="reads a CBOR string" alt="" coords="1412,443,1575,484"/>
-<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2fc47768d484a22fcd04e20106da1399" title=" " alt="" coords="909,443,1096,484"/>
-<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256" title=" " alt="" coords="211,348,371,389"/>
-<area shape="rect" id="node9" href="$classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294" title=" " alt="" coords="1856,1067,2012,1108"/>
-<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5526ed98ca4c436cbae6f8a77ea207b8" title="reads a MessagePack string" alt="" coords="1398,356,1589,397"/>
-<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1binary__reader.html#a81611d8a5faec1348d31f7e98fcd05ef" title=" " alt="" coords="920,217,1085,273"/>
-<area shape="rect" id="node14" href="$classnlohmann_1_1detail_1_1binary__reader.html#a4eae4604064b5dfe6d04e42ffc9e0753" title="determine the type and size for a container" alt="" coords="1144,829,1343,871"/>
-<area shape="rect" id="node16" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5f425199a77f403e32f076ff8487f853" title=" " alt="" coords="681,771,855,812"/>
-<area shape="rect" id="node19" href="$classnlohmann_1_1detail_1_1binary__reader.html#a435be58e83c8491556d8f1a1b3439155" title=" " alt="" coords="1391,829,1596,871"/>
-<area shape="rect" id="node20" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2e01eab458020d18c975e8df55b20eca" title="reads a UBJSON string" alt="" coords="1406,712,1581,753"/>
-<area shape="rect" id="node21" href="$classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5" title="return a reference to the pointed to value" alt="" coords="1856,1132,2012,1173"/>
-<area shape="rect" id="node22" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1644,1213,1805,1255"/>
-<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="1860,1367,2008,1408"/>
-<area shape="rect" id="node25" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="1644,1289,1805,1331"/>
-<area shape="rect" id="node27" href="$classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="1853,1249,2015,1291"/>
-<area shape="rect" id="node28" href="$classnlohmann_1_1json__pointer.html#ae01c32c6a071c2e5198d5dfcce290e50" title="split the string input to reference tokens" alt="" coords="1856,1432,2012,1473"/>
-<area shape="rect" id="node29" href="$classnlohmann_1_1detail_1_1binary__reader.html#a607dda4be02684d89343b88da8d9b5c8" title=" " alt="" coords="1854,624,2014,665"/>
-<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2fcc776cd2c7bb52bbc511e97d36978a" title=" " alt="" coords="1161,443,1326,484"/>
-<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1binary__reader.html#ac3dc99d36754aa0beac506b30604a8ed" title=" " alt="" coords="688,413,848,455"/>
-<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="5,348,153,389"/>
-<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1binary__reader.html#ad1190bb3499e243b0bbf795743a35563" title=" " alt="" coords="1147,224,1340,265"/>
-<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1binary__reader.html#a09d3eed7523da6f61e7ffa98823aae2b" title=" " alt="" coords="675,253,861,295"/>
-<area shape="rect" id="node15" href="$classnlohmann_1_1detail_1_1binary__reader.html#a4e8ef9561d4403ea68e3c2712fd289e2" title=" " alt="" coords="917,712,1089,753"/>
-<area shape="rect" id="node17" href="$classnlohmann_1_1detail_1_1binary__reader.html#ad0932dd568fcbbd2b4c2ccf9122544a5" title=" " alt="" coords="201,775,380,816"/>
-<area shape="rect" id="node18" href="$classnlohmann_1_1detail_1_1binary__reader.html#af60c6bba6f1301cb02e0186c99e25751" title=" " alt="" coords="428,704,627,745"/>
-<area shape="rect" id="node24" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="1651,1367,1799,1408"/>
-<area shape="rect" id="node26" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="1413,1289,1574,1331"/>
-<area shape="rect" id="node30" href="$classnlohmann_1_1detail_1_1binary__reader.html#a66b03a2376bfe1aa9ec28ec983e714ea" title=" " alt="" coords="1645,595,1805,636"/>
-<area shape="rect" id="node31" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5083d0b94f560550676a03e238ebe716" title="create a string by reading characters from the input" alt="" coords="1645,529,1805,571"/>
+<area shape="rect" id="node1" title="create a parse error exception" alt="" coords="1652,866,1809,907"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="1443,738,1604,779"/>
+<area shape="rect" id="node37" href="$classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="1449,1029,1597,1070"/>
+<area shape="rect" id="node39" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="1443,833,1604,874"/>
+<area shape="rect" id="node44" href="$classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256" title=" " alt="" coords="1443,898,1603,939"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a5a0339361f3282cb8fd2f9ede6e17d72" title="deserialize from a compatible input" alt="" coords="1037,677,1185,718"/>
+<area shape="rect" id="node4" href="$classHttpsExchange.html#ad572931fd8ae1fb5f121d2efa6bbe3b5" title="hubModeAddRealUrl &#45; добавление в json поля real_url" alt="" coords="793,235,989,277"/>
+<area shape="rect" id="node13" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="815,811,966,837"/>
+<area shape="rect" id="node14" href="$classJSON.html#afbe68a62e809d131ffbe68f11db2c3ea" title=" " alt="" coords="792,557,989,584"/>
+<area shape="rect" id="node20" href="$classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; запрос ключа активации при производстве" alt="" coords="258,305,493,346"/>
+<area shape="rect" id="node31" href="$jsonParser_8h.html#ae90d59ab420a183cd5fb8588bdc95e06" title="user&#45;defined string literal for JSON values" alt="" coords="835,659,946,685"/>
+<area shape="rect" id="node32" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="559,912,732,939"/>
+<area shape="rect" id="node34" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="811,861,971,888"/>
+<area shape="rect" id="node35" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="797,760,984,787"/>
+<area shape="rect" id="node36" href="$testHttpsExchange_8h.html#a569611bfe66cc9c65129a67edd4cd580" title=" " alt="" coords="855,709,926,736"/>
+<area shape="rect" id="node5" href="$classHttpsExchange.html#a145cdf98aa0e70ac8622281ffd8bcbef" title=" " alt="" coords="557,152,733,179"/>
+<area shape="rect" id="node6" href="$classHttpsExchange.html#ab0babbd29470a4f28b93f04baf9fa50f" title=" " alt="" coords="279,174,472,215"/>
+<area shape="rect" id="node8" href="$classHttpsExchange.html#a2d11c809314dfe85283df6ae9ec596c1" title=" " alt="" coords="266,239,485,281"/>
+<area shape="rect" id="node9" href="$classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145" title=" " alt="" coords="277,5,474,32"/>
+<area shape="rect" id="node10" href="$classHttpsExchange.html#a22789e654b9265cca6904f8110252218" title=" " alt="" coords="277,57,474,98"/>
+<area shape="rect" id="node12" href="$classHttpsExchange.html#a3c419991d6243a6537b0fd17a69597b3" title=" " alt="" coords="274,123,477,149"/>
+<area shape="rect" id="node7" href="$classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="8,181,201,208"/>
+<area shape="rect" id="node11" href="$classHttpsExchange.html#a4a3f9ba78e0ba86618fb6f376eafdbc5" title=" " alt="" coords="5,64,204,91"/>
+<area shape="rect" id="node15" href="$classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="547,709,744,736"/>
+<area shape="rect" id="node16" href="$classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="275,487,476,529"/>
+<area shape="rect" id="node17" href="$classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="275,553,476,594"/>
+<area shape="rect" id="node18" href="$classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="275,618,476,659"/>
+<area shape="rect" id="node19" href="$classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="268,684,483,711"/>
+<area shape="rect" id="node21" href="$classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="256,735,495,761"/>
+<area shape="rect" id="node22" href="$classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="291,785,460,812"/>
+<area shape="rect" id="node23" href="$classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="282,837,469,878"/>
+<area shape="rect" id="node24" href="$classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="263,903,488,929"/>
+<area shape="rect" id="node25" href="$classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="252,954,499,995"/>
+<area shape="rect" id="node26" href="$classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="274,1020,477,1047"/>
+<area shape="rect" id="node27" href="$classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="277,1071,474,1097"/>
+<area shape="rect" id="node28" href="$classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="281,1122,470,1163"/>
+<area shape="rect" id="node29" href="$classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="288,370,463,411"/>
+<area shape="rect" id="node30" href="$classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="280,436,471,463"/>
+<area shape="rect" id="node33" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="274,1187,477,1229"/>
+<area shape="rect" id="node38" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="1240,1094,1388,1135"/>
+<area shape="rect" id="node40" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="1233,767,1395,809"/>
+<area shape="rect" id="node43" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="1240,833,1388,874"/>
+<area shape="rect" id="node41" href="$classnlohmann_1_1basic__json.html#a875585b0cb6133902066daccd7c9d420" title=" " alt="" coords="1037,803,1185,845"/>
+<area shape="rect" id="node42" href="$classJSON.html#afc337c57f7bc46999d31a71cc883e76b" title=" " alt="" coords="797,912,985,939"/>
+<area shape="rect" id="node45" href="$classnlohmann_1_1basic__json.html#a3d4b91e391612285bf834569edcc58e8" title="create a JSON value from an input in CBOR format" alt="" coords="1240,898,1388,939"/>
+<area shape="rect" id="node46" href="$classnlohmann_1_1basic__json.html#a7e724c9d881b953a5f1bff9fb6648d21" title="create a JSON value from an input in MessagePack format" alt="" coords="1240,963,1388,1005"/>
+<area shape="rect" id="node47" href="$classnlohmann_1_1basic__json.html#a98ef289216564da59a78903a5cabfc8a" title="create a JSON value from an input in UBJSON format" alt="" coords="1240,1029,1388,1070"/>
 </map>

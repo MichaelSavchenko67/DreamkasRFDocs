@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1BEL.html">BEL</a></li><li class="navelem"><a class="el" href="structBIOS_1_1BEL_1_1PAY__TYPE.html">PAY_TYPE</a></li>  </ul>
@@ -71,10 +94,7 @@ $(function() {
 <tr class="memitem:a6a76726c5343349ea68ae99016351057"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1BEL_1_1PAY__TYPE.html#a6a76726c5343349ea68ae99016351057">name</a></td></tr>
 <tr class="separator:a6a76726c5343349ea68ae99016351057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01155">1155</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a6a76726c5343349ea68ae99016351057"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a76726c5343349ea68ae99016351057">&#9670;&nbsp;</a></span>name</h2>
 
@@ -87,9 +107,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01158">1158</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l01405">Menu::counters_get()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l19778">Menu::payment_msg_get()</a>, <a class="el" href="menu_8cpp_source.html#l17539">Menu::payment_type_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04576">BIOS::BEL::readPayTypes()</a> и <a class="el" href="menu_8cpp_source.html#l18840">Menu::receipt_cancel_rb()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886">Menu::counters_get()</a>, <a class="el" href="classMenu.html#ade96004be1db66bac96eaa97ba0f13cf">Menu::payment_msg_get()</a>, <a class="el" href="classBIOS_1_1BEL.html#a6a8f435c0321b21ed86db398f776929f">BIOS::BEL::readPayTypes()</a> и <a class="el" href="classMenu.html#abde1554e0d2b1de7a5e5830fc0b57133">Menu::receipt_cancel_rb()</a>.</p>
 
 </div>
 </div>
@@ -105,9 +123,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01157">1157</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l19778">Menu::payment_msg_get()</a>, <a class="el" href="menu_8cpp_source.html#l17539">Menu::payment_type_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04576">BIOS::BEL::readPayTypes()</a> и <a class="el" href="menu_8cpp_source.html#l18840">Menu::receipt_cancel_rb()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#ade96004be1db66bac96eaa97ba0f13cf">Menu::payment_msg_get()</a>, <a class="el" href="classBIOS_1_1BEL.html#a6a8f435c0321b21ed86db398f776929f">BIOS::BEL::readPayTypes()</a> и <a class="el" href="classMenu.html#abde1554e0d2b1de7a5e5830fc0b57133">Menu::receipt_cancel_rb()</a>.</p>
 
 </div>
 </div>
@@ -117,7 +133,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

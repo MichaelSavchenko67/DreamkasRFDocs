@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="structnlohmann_1_1adl__serializer.html">adl_serializer</a></li>  </ul>
@@ -84,8 +107,6 @@ struct nlohmann::adl_serializer&lt; typename, typename &gt;</h3>
 
 <p>default JSONSerializer template argument </p>
 <p>This serializer ignores the template arguments and uses ADL (<a href="https://en.cppreference.com/w/cpp/language/adl">argument-dependent lookup</a>) for serialization. </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l00074">74</a></p>
 </div><h2 class="groupheader">Методы</h2>
 <a id="ab39cad07c1a2bf4414d6cae5215b4e7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab39cad07c1a2bf4414d6cae5215b4e7a">&#9670;&nbsp;</a></span>from_json()</h2>
@@ -134,11 +155,9 @@ template&lt;typename BasicJsonType , typename ValueType &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l11154">11154</a></p>
-<div class="fragment"><div class="line"><a name="l11156"></a><span class="lineno">11156</span>&#160;    {</div><div class="line"><a name="l11157"></a><span class="lineno">11157</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de">::nlohmann::from_json</a>(std::forward&lt;BasicJsonType&gt;(j), val);</div><div class="line"><a name="l11158"></a><span class="lineno">11158</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_aef5c8ea108f4d2b03fb4a635617510de"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de">nlohmann::detail::from_json</a></div><div class="ttdeci">void from_json(const BasicJsonType &amp;j, std::unordered_map&lt; Key, Value, Hash, KeyEqual, Allocator &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01284">jsonParser.h:1284</a></div></div>
+<div class="fragment"><div class="line"><a name="l11156"></a><span class="lineno">11156</span>&#160;    {</div><div class="line"><a name="l11157"></a><span class="lineno">11157</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de">::nlohmann::from_json</a>(std::forward&lt;BasicJsonType&gt;(j), val);</div><div class="line"><a name="l11158"></a><span class="lineno">11158</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_aef5c8ea108f4d2b03fb4a635617510de"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de">nlohmann::detail::from_json</a></div><div class="ttdeci">void from_json(const BasicJsonType &amp;j, std::unordered_map&lt; Key, Value, Hash, KeyEqual, Allocator &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:1284</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l01284">nlohmann::detail::from_json()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de">nlohmann::detail::from_json()</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -146,11 +165,10 @@ template&lt;typename BasicJsonType , typename ValueType &gt; </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structnlohmann_1_1adl__serializer_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph.png" border="0" usemap="#structnlohmann_1_1adl__serializer_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph" alt=""/></div>
 <map name="structnlohmann_1_1adl__serializer_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph" id="structnlohmann_1_1adl__serializer_ab39cad07c1a2bf4414d6cae5215b4e7a_cgraph">
-<area shape="rect"  title="convert a JSON value to any value type" alt="" coords="5,39,168,80"/>
-<area shape="rect"  href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de" title=" " alt="" coords="216,46,399,73"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="447,39,597,80"/>
+<area shape="rect"  title="convert a JSON value to any value type" alt="" coords="5,5,168,47"/>
+<area shape="rect"  href="namespacenlohmann_1_1detail.html#aef5c8ea108f4d2b03fb4a635617510de" title=" " alt="" coords="216,13,399,39"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="447,5,597,47"/>
 <area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="645,5,827,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="661,71,811,112"/>
 </map>
 </div>
 
@@ -203,11 +221,9 @@ template&lt;typename BasicJsonType , typename ValueType &gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l11170">11170</a></p>
-<div class="fragment"><div class="line"><a name="l11172"></a><span class="lineno">11172</span>&#160;    {</div><div class="line"><a name="l11173"></a><span class="lineno">11173</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#aa7a47b08eee864c2c108c04954919648">::nlohmann::to_json</a>(j, std::forward&lt;ValueType&gt;(val));</div><div class="line"><a name="l11174"></a><span class="lineno">11174</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_aa7a47b08eee864c2c108c04954919648"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa7a47b08eee864c2c108c04954919648">nlohmann::detail::to_json</a></div><div class="ttdeci">void to_json(BasicJsonType &amp;j, const std::tuple&lt; Args... &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01790">jsonParser.h:1790</a></div></div>
+<div class="fragment"><div class="line"><a name="l11172"></a><span class="lineno">11172</span>&#160;    {</div><div class="line"><a name="l11173"></a><span class="lineno">11173</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#aa7a47b08eee864c2c108c04954919648">::nlohmann::to_json</a>(j, std::forward&lt;ValueType&gt;(val));</div><div class="line"><a name="l11174"></a><span class="lineno">11174</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_aa7a47b08eee864c2c108c04954919648"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#aa7a47b08eee864c2c108c04954919648">nlohmann::detail::to_json</a></div><div class="ttdeci">void to_json(BasicJsonType &amp;j, const std::tuple&lt; Args... &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:1790</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l01790">nlohmann::detail::to_json()</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="namespacenlohmann_1_1detail.html#aa7a47b08eee864c2c108c04954919648">nlohmann::detail::to_json()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -229,7 +245,7 @@ template&lt;typename BasicJsonType , typename ValueType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

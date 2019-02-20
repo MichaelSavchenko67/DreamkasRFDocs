@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -79,10 +102,7 @@ $(function() {
 <tr class="memitem:a15f1cd5d4e613be6dac7b310d1cf9990"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAGENTS__REQUISITES.html#a15f1cd5d4e613be6dac7b310d1cf9990">transfer_operator_inn</a></td></tr>
 <tr class="separator:a15f1cd5d4e613be6dac7b310d1cf9990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00132">132</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a813ed7d2dabe8217f48041a9434d74e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a813ed7d2dabe8217f48041a9434d74e6">&#9670;&nbsp;</a></span>agent_tel_num</h2>
 
@@ -94,10 +114,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
 
 </div>
 </div>
@@ -113,10 +129,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
-
 </div>
 </div>
 <a id="ab143847352acf69f25f903771341b945"></a>
@@ -130,10 +142,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
 
 </div>
 </div>
@@ -149,10 +157,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
-
 </div>
 </div>
 <a id="ad871b21b3981e095e6bda38efb99ed64"></a>
@@ -166,10 +170,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
 
 </div>
 </div>
@@ -185,10 +185,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
-
 </div>
 </div>
 <a id="afc65b3226abd4f6b5d77a66885bf5477"></a>
@@ -202,10 +198,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
 
 </div>
 </div>
@@ -221,10 +213,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00134">134</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l25421">Menu::agent_init_step()</a> и <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>.</p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -233,7 +221,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:28. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

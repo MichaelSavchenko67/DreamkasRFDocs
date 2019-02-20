@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classPrinter.html">Printer</a></li><li class="navelem"><a class="el" href="structPrinter_1_1technical__report.html">technical_report</a></li>  </ul>
@@ -107,10 +130,7 @@ $(function() {
 <tr class="memitem:adafee08b1a3c92cf75d985f514de93eb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPrinter_1_1technical__report.html#adafee08b1a3c92cf75d985f514de93eb">wifi_ip</a></td></tr>
 <tr class="separator:adafee08b1a3c92cf75d985f514de93eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00268">268</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a00dd986dca999fbacfea7ebb3a5d5716"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00dd986dca999fbacfea7ebb3a5d5716">&#9670;&nbsp;</a></span>dns_add</h2>
 
@@ -122,8 +142,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00285">285</a></p>
 
 </div>
 </div>
@@ -139,8 +157,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00285">285</a></p>
-
 </div>
 </div>
 <a id="ac20a85601256081aac58ae26becfdeba"></a>
@@ -154,8 +170,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00283">283</a></p>
 
 </div>
 </div>
@@ -171,8 +185,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00282">282</a></p>
-
 </div>
 </div>
 <a id="a166f6a313ac2e0ea483768cf07fc1133"></a>
@@ -186,8 +198,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00272">272</a></p>
 
 </div>
 </div>
@@ -203,8 +213,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00271">271</a></p>
-
 </div>
 </div>
 <a id="a3a7981c7fcd2943f9c919b8af871d20e"></a>
@@ -218,8 +226,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00280">280</a></p>
 
 </div>
 </div>
@@ -235,8 +241,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00274">274</a></p>
-
 </div>
 </div>
 <a id="a5db7c6c4e5b2c5c451eadceb11a85a2c"></a>
@@ -250,8 +254,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00281">281</a></p>
 
 </div>
 </div>
@@ -267,8 +269,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00270">270</a></p>
-
 </div>
 </div>
 <a id="a761177e27148a375f3eb82d4847323dd"></a>
@@ -282,8 +282,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00275">275</a></p>
 
 </div>
 </div>
@@ -299,8 +297,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00284">284</a></p>
-
 </div>
 </div>
 <a id="a9848d0618a212e5b7ac73d56d32b22bc"></a>
@@ -314,8 +310,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00279">279</a></p>
 
 </div>
 </div>
@@ -331,8 +325,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00273">273</a></p>
-
 </div>
 </div>
 <a id="a018bc07d3383712df1d38364794ba2fd"></a>
@@ -346,8 +338,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00276">276</a></p>
 
 </div>
 </div>
@@ -363,8 +353,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00277">277</a></p>
-
 </div>
 </div>
 <a id="a203713afe8cac77dda7a94783668fcdd"></a>
@@ -378,8 +366,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00278">278</a></p>
 
 </div>
 </div>
@@ -395,8 +381,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00285">285</a></p>
-
 </div>
 </div>
 <a id="adafee08b1a3c92cf75d985f514de93eb"></a>
@@ -410,8 +394,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00289">289</a></p>
 
 </div>
 </div>
@@ -427,8 +409,6 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="printer_8h_source.html">printer.h</a> строка <a class="el" href="printer_8h_source.html#l00288">288</a></p>
-
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -437,7 +417,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

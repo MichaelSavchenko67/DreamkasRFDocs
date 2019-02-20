@@ -1,0 +1,52 @@
+<map id="Menu::loader" name="Menu::loader">
+<area shape="rect" id="node1" title=" " alt="" coords="517,1257,615,1284"/>
+<area shape="rect" id="node2" href="$classMenu.html#a32ea3fbe1094a2037dc2046a687c048b" title=" " alt="" coords="274,5,438,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="17,56,183,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a5112b233064a94694b8fc38ff9fe51db" title=" " alt="" coords="273,624,439,651"/>
+<area shape="rect" id="node6" href="$classMenu.html#a92c46de72491349b04010174ab88fb38" title="factory &#45; производство" alt="" coords="305,173,407,200"/>
+<area shape="rect" id="node7" href="$classMenu.html#afdb910ca85a33fd2162baac50c2660c2" title=" " alt="" coords="280,225,432,266"/>
+<area shape="rect" id="node8" href="$classMenu.html#a623f94c85c8ce8282851697edd7115ef" title=" " alt="" coords="280,290,432,331"/>
+<area shape="rect" id="node9" href="$classMenu.html#aae51f05c307cd7556ae71b40ba6b2def" title=" " alt="" coords="290,355,422,397"/>
+<area shape="rect" id="node10" href="$classMenu.html#a36928a60e5a940417665885410004a8e" title=" " alt="" coords="298,421,414,448"/>
+<area shape="rect" id="node11" href="$classMenu.html#aa1828ed265534295378090decc6d197b" title=" " alt="" coords="253,472,459,499"/>
+<area shape="rect" id="node12" href="$classMenu.html#af1a2f9a7f50250540af33ddef51253fc" title=" " alt="" coords="281,523,431,549"/>
+<area shape="rect" id="node13" href="$classMenu.html#a46a31292c8280d219ed2d404e9ac0d85" title=" " alt="" coords="249,573,463,600"/>
+<area shape="rect" id="node14" href="$classMenu.html#a6c17ba52d196222acff69fc26a6ea5ee" title="goodsFromCloud &#45; поиск товара в облаке" alt="" coords="275,1333,437,1360"/>
+<area shape="rect" id="node15" href="$classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="29,1004,171,1031"/>
+<area shape="rect" id="node16" href="$classMenu.html#afdb060b701867cd78675fe3143ee2bdf" title=" " alt="" coords="289,725,423,752"/>
+<area shape="rect" id="node17" href="$classMenu.html#ae1f0e0d9d81588ce686889a2063e9725" title=" " alt="" coords="275,776,437,803"/>
+<area shape="rect" id="node18" href="$classMenu.html#ae75e6d0418f8db0f779891c75d49b095" title=" " alt="" coords="273,827,439,853"/>
+<area shape="rect" id="node19" href="$classMenu.html#ac2a8dd279fc1d9eebbac1cb80ff44301" title=" " alt="" coords="269,877,443,904"/>
+<area shape="rect" id="node20" href="$classMenu.html#acfb9328267a7fc47b0528f1e7d03b5b4" title=" " alt="" coords="298,928,414,955"/>
+<area shape="rect" id="node21" href="$classMenu.html#ae114c5b25b12f5cae8ec1296e5fefbab" title=" " alt="" coords="286,979,426,1005"/>
+<area shape="rect" id="node22" href="$classMenu.html#a5eadaf6dc3df099148836e4b6c4b52ad" title=" " alt="" coords="283,1029,429,1056"/>
+<area shape="rect" id="node23" href="$classMenu.html#aeed0bec19f6bc736b4bc217a3fa9d653" title=" " alt="" coords="291,1080,421,1107"/>
+<area shape="rect" id="node24" href="$classMenu.html#a4145ff5326c102dd55b1fa5d8668bc67" title=" " alt="" coords="273,1131,439,1157"/>
+<area shape="rect" id="node25" href="$classMenu.html#aae79c2ff5870b33c1d30083edc49c76f" title=" " alt="" coords="291,1181,421,1208"/>
+<area shape="rect" id="node26" href="$classMenu.html#a353644ecbcdc204d2e6798969b04e71e" title=" " alt="" coords="260,1232,452,1259"/>
+<area shape="rect" id="node27" href="$classMenu.html#ac389a1ca1c9c4295fdaa70e6ba345e1f" title=" " alt="" coords="243,1283,469,1309"/>
+<area shape="rect" id="node28" href="$classMenu.html#ad164087e78b0d0c3ad9fb1fef6b2f08e" title=" " alt="" coords="31,1508,169,1535"/>
+<area shape="rect" id="node29" href="$classMenu.html#acf2ad7357dad32f66bdb7d32e03ec7d5" title=" " alt="" coords="269,1384,443,1411"/>
+<area shape="rect" id="node30" href="$classMenu.html#af054c15d1d81ddd2bd6af7679546d577" title=" " alt="" coords="267,1435,445,1477"/>
+<area shape="rect" id="node31" href="$classMenu.html#a51c797acce6aa7a1241b452e10f19d60" title=" " alt="" coords="267,1501,445,1542"/>
+<area shape="rect" id="node32" href="$classMenu.html#afbb5848f02f54d517df260bfa3658f11" title=" " alt="" coords="283,1566,429,1607"/>
+<area shape="rect" id="node33" href="$classMenu.html#af0b530a3e1cd21de4c85da208bc18379" title=" " alt="" coords="293,107,419,149"/>
+<area shape="rect" id="node34" href="$classMenu.html#a6b69fbe155d1ff87e58e0c578fda99ec" title=" " alt="" coords="293,1683,419,1725"/>
+<area shape="rect" id="node35" href="$classMenu.html#ae04ec9582b3d126535ebe400bff7a930" title=" " alt="" coords="294,1749,418,1776"/>
+<area shape="rect" id="node36" href="$classMenu.html#a678eedf1c2f02a8254c9c6749f2bd8b6" title=" " alt="" coords="259,1800,453,1827"/>
+<area shape="rect" id="node37" href="$classMenu.html#abde1554e0d2b1de7a5e5830fc0b57133" title=" " alt="" coords="274,1851,438,1877"/>
+<area shape="rect" id="node38" href="$classMenu.html#a9eda78534a04075d8d349e5bd10b4ccd" title=" " alt="" coords="257,1901,455,1928"/>
+<area shape="rect" id="node39" href="$classMenu.html#ab634abd6a24f9da5c128e2550c0db1e4" title=" " alt="" coords="275,1952,437,1979"/>
+<area shape="rect" id="node40" href="$classMenu.html#a01342ccb602fdb8c948d90a1824c157f" title=" " alt="" coords="45,1977,155,2004"/>
+<area shape="rect" id="node41" href="$classMenu.html#ac6ab550b11178939ebb5ab8c4e83dcbf" title=" " alt="" coords="275,2054,437,2095"/>
+<area shape="rect" id="node42" href="$classMenu.html#a999a8b12f7d1e6572c65f1a97cb3163a" title=" " alt="" coords="297,2120,415,2147"/>
+<area shape="rect" id="node43" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="284,2171,428,2197"/>
+<area shape="rect" id="node44" href="$classMenu.html#aeb866b6a915a73b8415d5ece37af73a1" title=" " alt="" coords="268,2221,444,2248"/>
+<area shape="rect" id="node45" href="$classMenu.html#aaee3f5f48366e4df856cc2670a222c94" title=" " alt="" coords="289,2272,423,2299"/>
+<area shape="rect" id="node46" href="$classMenu.html#a19d8a6c3c7a53f7f3b916a0bd71b6192" title=" " alt="" coords="270,2323,442,2349"/>
+<area shape="rect" id="node47" href="$classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="272,2373,440,2400"/>
+<area shape="rect" id="node48" href="$classMenu.html#a394cad128b19873bb99159d946f664a5" title=" " alt="" coords="273,2424,439,2451"/>
+<area shape="rect" id="node49" href="$classMenu.html#a0b15786d8bd7ba4ac015148b141b5ac2" title=" " alt="" coords="297,2475,415,2501"/>
+<area shape="rect" id="node50" href="$classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="311,2525,401,2552"/>
+<area shape="rect" id="node5" href="$classMenu.html#a8a56221c7c7708cc2beb2e79453a0fb5" title=" " alt="" coords="5,624,195,651"/>
+</map>

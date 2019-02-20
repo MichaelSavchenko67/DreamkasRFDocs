@@ -1,16 +1,7 @@
 <map id="Printer::shift_report_print" name="Printer::shift_report_print">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,139,90"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="421,5,523,32"/>
-<area shape="rect" id="node3" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="195,31,346,57"/>
-<area shape="rect" id="node4" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="187,81,355,108"/>
-<area shape="rect" id="node5" href="$classCounters.html#a9124d37fd8778ffe37a21ddef7de7f95" title=" " alt="" coords="209,132,332,159"/>
-<area shape="rect" id="node6" href="$classCounters.html#aae254f86db333187e0ec4fd0157a42f8" title=" " alt="" coords="403,81,541,108"/>
-<area shape="rect" id="node11" href="$classCounters.html#ad3ee95fcf85b6344ce212acf482baa10" title=" " alt="" coords="411,132,533,159"/>
-<area shape="rect" id="node14" href="$dynamic__mask_8h.html#a0e80758225c548dd7d15bbc23c316b8b" title=" " alt="" coords="433,183,511,209"/>
-<area shape="rect" id="node7" href="$classCounters.html#afa3518ef6d03452cd0f344327665e6e9" title=" " alt="" coords="589,81,807,108"/>
-<area shape="rect" id="node10" href="$classCounters.html#ab2c15ef63cb47e9855cfbd955879446e" title=" " alt="" coords="611,31,785,57"/>
-<area shape="rect" id="node8" href="$counters_8cpp.html#a18466960a7958b39feef020903ae9908" title=" " alt="" coords="855,81,977,108"/>
-<area shape="rect" id="node9" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="1025,81,1176,108"/>
-<area shape="rect" id="node12" href="$classCounters.html#a1a57fbb83510f7e1b88170afda1baa03" title=" " alt="" coords="615,132,781,159"/>
-<area shape="rect" id="node13" href="$classCounters.html#a9866a9fe4d17e2ede89623a16d1d5035" title=" " alt="" coords="603,183,793,209"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,139,115"/>
+<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a7589934b293c5c7ad7d21b53b04c356c" title=" " alt="" coords="220,5,321,32"/>
+<area shape="rect" id="node3" href="$classConvert.html#ab9efaa1a3caf2089c20c7504c973e2af" title=" " alt="" coords="195,56,346,83"/>
+<area shape="rect" id="node4" href="$classConvert.html#af7adfaad24f16701b5dc7f460f677d38" title=" " alt="" coords="187,107,355,133"/>
+<area shape="rect" id="node5" href="$classCounters.html#a9124d37fd8778ffe37a21ddef7de7f95" title=" " alt="" coords="209,157,332,184"/>
 </map>

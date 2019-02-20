@@ -1,13 +1,12 @@
 <map id="NodeConflictResolver::instance" name="NodeConflictResolver::instance">
 <area shape="rect" id="node1" title=" " alt="" coords="1032,57,1183,98"/>
 <area shape="rect" id="node2" href="$classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="800,5,984,32"/>
-<area shape="rect" id="node6" href="$classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,123,963,149"/>
-<area shape="rect" id="node11" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,57,983,98"/>
-<area shape="rect" id="node3" href="$threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,43,752,69"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,43,505,69"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="238,43,289,69"/>
-<area shape="rect" id="node7" href="$classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,119,331,145"/>
-<area shape="rect" id="node9" href="$classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; чтение веса" alt="" coords="593,144,748,171"/>
-<area shape="rect" id="node8" href="$classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,119,148,145"/>
-<area shape="rect" id="node10" href="$classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI чтения веса" alt="" coords="379,144,541,171"/>
+<area shape="rect" id="node5" href="$classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,123,963,149"/>
+<area shape="rect" id="node10" href="$classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,57,983,98"/>
+<area shape="rect" id="node3" href="$threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,24,752,51"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,24,505,51"/>
+<area shape="rect" id="node6" href="$classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,119,331,145"/>
+<area shape="rect" id="node8" href="$classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; чтение веса" alt="" coords="593,144,748,171"/>
+<area shape="rect" id="node7" href="$classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,119,148,145"/>
+<area shape="rect" id="node9" href="$classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI чтения веса" alt="" coords="379,144,541,171"/>
 </map>

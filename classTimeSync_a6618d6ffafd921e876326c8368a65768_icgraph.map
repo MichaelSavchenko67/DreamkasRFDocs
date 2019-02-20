@@ -1,9 +1,7 @@
 <map id="TimeSync::changeTimeZoneBy" name="TimeSync::changeTimeZoneBy">
-<area shape="rect" id="node1" title="changeTimeZoneBy обновление часового пояса для РБ" alt="" coords="688,56,893,83"/>
-<area shape="rect" id="node2" href="$classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="485,5,640,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,31,437,57"/>
-<area shape="rect" id="node7" href="$testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8" title=" " alt="" coords="535,107,591,133"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,31,299,57"/>
-<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,31,193,57"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node1" title="changeTimeZoneBy обновление часового пояса для РБ" alt="" coords="387,31,592,57"/>
+<area shape="rect" id="node2" href="$testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8" title=" " alt="" coords="265,5,321,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="248,56,339,83"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="143,56,200,83"/>
+<area shape="rect" id="node5" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,56,95,83"/>
 </map>

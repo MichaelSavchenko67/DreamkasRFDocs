@@ -1,7 +1,5 @@
 <map id="ReceiptsDb::addTextColumnToPositions" name="ReceiptsDb::addTextColumnToPositions">
-<area shape="rect" id="node1" title=" " alt="" coords="5,53,196,94"/>
-<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="247,23,429,65"/>
-<area shape="rect" id="node5" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="244,89,432,116"/>
-<area shape="rect" id="node3" href="$ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb" title=" " alt="" coords="480,5,603,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="651,31,801,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,196,76"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="247,5,429,47"/>
+<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="244,71,432,98"/>
 </map>

@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,34 +32,40 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_o"></a>- o -</h3><ul>
-<li>o
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#acf3c88660d3cbc65fc71c4d84f2a9f59">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>oa
-: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a6f15b782a7900f50ef37d123008e601b">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter&lt; CharType, StringType &gt;</a>
-</li>
-<li>object
-: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#a4a2209bb26e7088cd36bf24824ab5521">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
-</li>
-<li>object_element
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a2a8adecd936ba6ec187f1216241b508f">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
-</li>
 <li>object_iterator
 : <a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html#a8cb0af3498061426c1d0a65ad6220408">nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;</a>
 </li>
@@ -75,18 +84,8 @@ $(function() {
 <li>OFD_CLOSE
 : <a class="el" href="classBIOS_1_1RUS.html#a770788b5560085d02eb90926abac2718">BIOS::RUS</a>
 </li>
-<li>ofd_data_change
-: <a class="el" href="classBIOS_1_1RUS.html#a206367236aa85f8d400c8a74c61617fd">BIOS::RUS</a>
-</li>
 <li>OFD_DISCONNECT_05D
-: <a class="el" href="classBIOS_1_1RUS.html#a3f507308ed75b1b7127269bbc7752153">BIOS::RUS</a>
-, <a class="el" href="structReceipt_1_1Fiscal__data.html#a67ad89ac49f6ac4ba0d21cc300240e49">Receipt::Fiscal_data</a>
-</li>
-<li>OFD_DISCONNECT_20D
-: <a class="el" href="classBIOS_1_1RUS.html#ac47aade3f9ea668328d8d5c3ff17bd25">BIOS::RUS</a>
-</li>
-<li>OFD_DISCONNECT_30D
-: <a class="el" href="classBIOS_1_1RUS.html#a4662870489ff68d91720f1d2fe893fb0">BIOS::RUS</a>
+: <a class="el" href="structReceipt_1_1Fiscal__data.html#a67ad89ac49f6ac4ba0d21cc300240e49">Receipt::Fiscal_data</a>
 </li>
 <li>OFD_DISCONNECT_TEST_EN
 : <a class="el" href="classBIOS_1_1RUS.html#a98b5f5ecdcc9b6c45d34353ca6050db7">BIOS::RUS</a>
@@ -99,11 +98,15 @@ $(function() {
 , <a class="el" href="structConfig.html#ab7f4d3810d01262bdd4c0d04130e2373">Config</a>
 , <a class="el" href="structJSONKKTRegInfo.html#a6deebc74622331f243e696a0df8fc146">JSONKKTRegInfo</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a14292855e43586a45c3f024d535d1664">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#a8dc25a58211012f093f022f99ff4afbf">Receipt_new</a>
 </li>
 <li>OFD_INN
 : <a class="el" href="classReceipt__new.html#ad869ea7b6c65edb5f0ee923b375084b8">Receipt_new</a>
-, <a class="el" href="structregistrationStruct.html#aed075de23960c07920f963f3bf6ba0e0">registrationStruct</a>
+</li>
+<li>ofd_inn
+: <a class="el" href="classReceipt__new.html#a8dc25a58211012f093f022f99ff4afbf">Receipt_new</a>
+</li>
+<li>OFD_INN
+: <a class="el" href="structregistrationStruct.html#aed075de23960c07920f963f3bf6ba0e0">registrationStruct</a>
 </li>
 <li>ofd_name
 : <a class="el" href="structConfig.html#a4a5bc11c5a426221555fe5d057b3c86d">Config</a>
@@ -137,12 +140,10 @@ $(function() {
 <li>ofd_server_ip
 : <a class="el" href="structConfig.html#a558f7a56c1ffaac49d890a601b792f8b">Config</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a604171168461f2e0409e5b56110b7b6b">Receipt::Fiscal_data</a>
+, <a class="el" href="classReceipt__new.html#a73756cfe9a02f3c624dc3b763c25f91e">Receipt_new</a>
 </li>
 <li>OFD_SERVER_IP
 : <a class="el" href="classReceipt__new.html#a7dece05995a0955148742e8f9c2686b3">Receipt_new</a>
-</li>
-<li>ofd_server_ip
-: <a class="el" href="classReceipt__new.html#a73756cfe9a02f3c624dc3b763c25f91e">Receipt_new</a>
 </li>
 <li>ofd_server_port
 : <a class="el" href="structConfig.html#a03ce181a5a572f5ecdac8b78d9f66a9a">Config</a>
@@ -156,29 +157,20 @@ $(function() {
 <li>OFD_template
 : <a class="el" href="classMenu.html#aaf134a5298dd6fd3dfe0a1c0cedc7bb5">Menu</a>
 </li>
-<li>ofdCheckUrl
-: <a class="el" href="classHttpsExchange.html#a78e65f8aac129c5173f4da778e1c7994">HttpsExchange</a>
-</li>
 <li>ofdInn
-: <a class="el" href="classHttpsExchange.html#a5b2b3a0466815dff5e7c3ed203f3cdbe">HttpsExchange</a>
-, <a class="el" href="structJSONKKTRegInfoStr.html#a95b621d2c4c2441dc81a610ed3c4a78c">JSONKKTRegInfoStr</a>
+: <a class="el" href="structJSONKKTRegInfoStr.html#a95b621d2c4c2441dc81a610ed3c4a78c">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdName
-: <a class="el" href="classHttpsExchange.html#a8416c88a0bf1b43d71a59a1e3470f712">HttpsExchange</a>
-, <a class="el" href="structJSONKKTRegInfoStr.html#a63b9e4e5dc470cbe8206e17fe36afb5f">JSONKKTRegInfoStr</a>
+: <a class="el" href="structJSONKKTRegInfoStr.html#a63b9e4e5dc470cbe8206e17fe36afb5f">JSONKKTRegInfoStr</a>
 </li>
 <li>OFDName
 : <a class="el" href="structregistrationStruct.html#af6b061a92d19c5ea26bb7b6b52c66e44">registrationStruct</a>
-</li>
-<li>ofdServerAddress
-: <a class="el" href="classHttpsExchange.html#a701877abe1db49835561a3a5e8c3d250">HttpsExchange</a>
 </li>
 <li>ofdServerHost
 : <a class="el" href="structJSONKKTRegInfoStr.html#a775469d7ef53a1be3041022fbad16af0">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdServerPort
-: <a class="el" href="classHttpsExchange.html#a1ebd38f4b6cb3dd11b253db69df6f8b0">HttpsExchange</a>
-, <a class="el" href="structJSONKKTRegInfoStr.html#a92c4d7de97a758cf14066e62b6109f87">JSONKKTRegInfoStr</a>
+: <a class="el" href="structJSONKKTRegInfoStr.html#a92c4d7de97a758cf14066e62b6109f87">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdUrl
 : <a class="el" href="structJSONKKTRegInfoStr.html#a011d9e3717c85a33a7faac6947574b44">JSONKKTRegInfoStr</a>
@@ -188,13 +180,12 @@ $(function() {
 </li>
 <li>offline_mode
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#a54640fb6d88357147855efcc48845bc4">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#a0ce9ccebfb19d4e30138363c4e723333">Receipt_new</a>
 </li>
 <li>OFFLINE_MODE
 : <a class="el" href="classReceipt__new.html#a0bd904407d0b60f0332a75606c9f6292">Receipt_new</a>
 </li>
-<li>OFFSET
-: <a class="el" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">NodeConflictResolver</a>
+<li>offline_mode
+: <a class="el" href="classReceipt__new.html#a0ce9ccebfb19d4e30138363c4e723333">Receipt_new</a>
 </li>
 <li>OFFSET_OUTPUT
 : <a class="el" href="classJSON.html#a11332f41d4ae02d17c9959804f7d9f0e">JSON</a>
@@ -210,9 +201,6 @@ $(function() {
 </li>
 <li>open_shift_date
 : <a class="el" href="structConfig.html#a1397351ba2cc9796bfbe77a74401a241">Config</a>
-</li>
-<li>openPortRc
-: <a class="el" href="classScalePos2.html#a7d9d8a6765055450ebf702f4d2cb79c1">ScalePos2</a>
 </li>
 <li>openShift
 : <a class="el" href="structReceipt_1_1Fiscal__data.html#a214cf830873afe965cf58ba2ec67fc27">Receipt::Fiscal_data</a>
@@ -252,14 +240,15 @@ $(function() {
 : <a class="el" href="structConfig.html#aefaf1cb312b63d2c0514f7e8ad743a0d">Config</a>
 , <a class="el" href="structJSONKKTRegInfo.html#aaab8842c21ead4df0d0c61ffd40ef258">JSONKKTRegInfo</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#aece405aaae1e4ff5a3a93dced927d1ed">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#afda662f42e005fa3fe37392e7e7f82ab">Receipt_new</a>
 </li>
 <li>ORGANIZATION_NAME
 : <a class="el" href="classReceipt__new.html#a6b8d3405ad0e693f4c539082d7e60f50">Receipt_new</a>
 </li>
+<li>organization_name
+: <a class="el" href="classReceipt__new.html#afda662f42e005fa3fe37392e7e7f82ab">Receipt_new</a>
+</li>
 <li>organizationName
-: <a class="el" href="classHttpsExchange.html#a904fec5fe71a84d2364b48143afa3cf6">HttpsExchange</a>
-, <a class="el" href="structJSONKKTRegInfoStr.html#ac9a35166e11959a62ebe3a93a2adfd4f">JSONKKTRegInfoStr</a>
+: <a class="el" href="structJSONKKTRegInfoStr.html#ac9a35166e11959a62ebe3a93a2adfd4f">JSONKKTRegInfoStr</a>
 </li>
 <li>otdel
 : <a class="el" href="structBIOS_1_1BEL_1_1OPEN__DOC.html#a8c4882e119b9674368553f786de512ca">BIOS::BEL::OPEN_DOC</a>
@@ -277,9 +266,6 @@ $(function() {
 <li>overlining
 : <a class="el" href="classLcd.html#aafb4c1cd320bf1b0a8d492e82a093515">Lcd</a>
 </li>
-<li>owned_value
-: <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a5d7bd67a5ab713d9be1e248cf9d509cd">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
-</li>
 <li>owner
 : <a class="el" href="structJSON_1_1JSON__REGISTER_1_1RESPONSE.html#a622073b0e5e4a9fafb7d24c0e1b58e25">JSON::JSON_REGISTER::RESPONSE</a>
 </li>
@@ -287,7 +273,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

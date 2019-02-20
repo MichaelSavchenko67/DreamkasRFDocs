@@ -3,17 +3,15 @@
 <area shape="rect" id="node2" href="$classMenu.html#aa877cf12d4875449cc7bb79c2f63871c" title=" " alt="" coords="197,5,323,32"/>
 <area shape="rect" id="node3" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="435,157,521,184"/>
 <area shape="rect" id="node4" href="$classMenu.html#a36928a60e5a940417665885410004a8e" title=" " alt="" coords="202,309,318,336"/>
-<area shape="rect" id="node11" href="$classMenu.html#afc018231236275193ad8e42db68a945e" title=" " alt="" coords="175,107,345,133"/>
-<area shape="rect" id="node12" href="$classMenu.html#acfb9328267a7fc47b0528f1e7d03b5b4" title=" " alt="" coords="202,259,318,285"/>
-<area shape="rect" id="node13" href="$classMenu.html#ae04ec9582b3d126535ebe400bff7a930" title=" " alt="" coords="198,208,322,235"/>
-<area shape="rect" id="node14" href="$classMenu.html#aaee3f5f48366e4df856cc2670a222c94" title=" " alt="" coords="193,56,327,83"/>
+<area shape="rect" id="node9" href="$classMenu.html#afc018231236275193ad8e42db68a945e" title=" " alt="" coords="175,107,345,133"/>
+<area shape="rect" id="node10" href="$classMenu.html#acfb9328267a7fc47b0528f1e7d03b5b4" title=" " alt="" coords="202,259,318,285"/>
+<area shape="rect" id="node11" href="$classMenu.html#ae04ec9582b3d126535ebe400bff7a930" title=" " alt="" coords="198,208,322,235"/>
+<area shape="rect" id="node12" href="$classMenu.html#aaee3f5f48366e4df856cc2670a222c94" title=" " alt="" coords="193,56,327,83"/>
 <area shape="rect" id="node5" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="429,208,527,235"/>
 <area shape="rect" id="node6" href="$classFlashMounter.html#adac8e2dd1b3f49e2c7f4f1a17a821047" title="isMounted получение флага смонтирована ли флешка" alt="" coords="393,309,563,336"/>
-<area shape="rect" id="node10" href="$classFlashMounter.html#a882dacdff7441bcfb9ffbfd08787207b" title="testFlash тестирование флешки" alt="" coords="397,259,559,285"/>
+<area shape="rect" id="node8" href="$classFlashMounter.html#a882dacdff7441bcfb9ffbfd08787207b" title="testFlash тестирование флешки" alt="" coords="397,259,559,285"/>
 <area shape="rect" id="node7" href="$classFlashMounter.html#a6e9b5b794727b91e9b36e2577a5d20b5" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="611,309,797,336"/>
-<area shape="rect" id="node8" href="$classFlashMounter.html#a1fdf174486adf03846c0d136b0ce94c3" title="clearAll очистить данные" alt="" coords="869,284,1021,311"/>
-<area shape="rect" id="node9" href="$classFlashMounter.html#a33f4cac9ab669913d78a9e311fe6c93d" title="findDevicePath поиск подключенных устройств" alt="" coords="845,335,1044,361"/>
-<area shape="rect" id="node15" href="$classMenu.html#a05203c188dcd29c53f38370dc8e32def" title=" " alt="" coords="397,49,559,90"/>
-<area shape="rect" id="node16" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="637,31,771,57"/>
-<area shape="rect" id="node17" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="640,81,768,108"/>
+<area shape="rect" id="node13" href="$classMenu.html#a05203c188dcd29c53f38370dc8e32def" title=" " alt="" coords="397,49,559,90"/>
+<area shape="rect" id="node14" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="637,31,771,57"/>
+<area shape="rect" id="node15" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="640,81,768,108"/>
 </map>

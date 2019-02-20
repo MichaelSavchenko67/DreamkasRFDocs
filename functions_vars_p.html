@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -56,9 +79,6 @@ $(function() {
 <li>packetSize
 : <a class="el" href="classScaleProtocolInterface.html#ad66ff65c065ea9afdbec731a909843a7">ScaleProtocolInterface</a>
 </li>
-<li>PADDING
-: <a class="el" href="classCMd5Sum.html#a5d6f725fda364d51ab034a9479646894">CMd5Sum</a>
-</li>
 <li>PAN
 : <a class="el" href="structSlip.html#a58cef03b4f988afa9cd5612b34e03a19">Slip</a>
 </li>
@@ -67,7 +87,6 @@ $(function() {
 </li>
 <li>parent
 : <a class="el" href="structJSON_1_1JSON__META.html#a0c760ecc115ff839cf503cd1f37ec977">JSON::JSON_META</a>
-, <a class="el" href="classMenuItem.html#a7514ab030c91963292036dda32d0b0cc">MenuItem</a>
 </li>
 <li>parentID
 : <a class="el" href="structWearAttr.html#a6fceaa702852a9c518a2951a6bcadbf7">WearAttr</a>
@@ -81,14 +100,8 @@ $(function() {
 : <a class="el" href="structJSON_1_1JSON__WEAR__PARENT__META.html#a5eeab0429edba2bd318b21858fe64459">JSON::JSON_WEAR_PARENT_META</a>
 , <a class="el" href="structWearAttr.html#ab2a5809434fc19b9e1dca333d38abdca">WearAttr</a>
 </li>
-<li>partNumber
-: <a class="el" href="classHttpsExchange.html#adabf14e07e38301b57a37493e96c1716">HttpsExchange</a>
-</li>
 <li>pass
 : <a class="el" href="structUsers_1_1User__.html#ab8aed5ca81c0e602b392f0db28129b1d">Users::User_</a>
-</li>
-<li>pass_tmp_buf
-: <a class="el" href="classMenu.html#afbec01ae953c1e7fb1224eaa28428cdf">Menu</a>
 </li>
 <li>PASSWORD
 : <a class="el" href="classUsers.html#a7595ad53fd85864e162dfbb45aacebd9">Users</a>
@@ -171,9 +184,6 @@ $(function() {
 : <a class="el" href="classPosition__new.html#a4446d71ddd8487c86244cbbdb050dafe">Position_new</a>
 , <a class="el" href="classPositions.html#aa417fad8f59ccd7569f09499b163d547">Positions</a>
 </li>
-<li>place
-: <a class="el" href="classHttpsExchange.html#a89641a86332d61b8cece442ea5c6c2e9">HttpsExchange</a>
-</li>
 <li>placeSettle
 : <a class="el" href="structregistrationStruct.html#a8acf3e6635ce921fe41850a92352b27c">registrationStruct</a>
 </li>
@@ -192,14 +202,8 @@ $(function() {
 <li>POLL_TIME
 : <a class="el" href="classMenu.html#a9b6ef6366d1606bd962732fd319b8416">Menu</a>
 </li>
-<li>pollStr
-: <a class="el" href="classHttpsExchange.html#a642ca5602eec5b6f779646522f0ecb14">HttpsExchange</a>
-</li>
 <li>pollTime
 : <a class="el" href="structFISGO__TEST__API_1_1TASK.html#a9be2b510675ac8fca69eae2118dedc6d">FISGO_TEST_API::TASK</a>
-</li>
-<li>port
-: <a class="el" href="classBIOS.html#a449247723e9a6439c1a48e375b4469cb">BIOS</a>
 </li>
 <li>PORT
 : <a class="el" href="classTestScaleProtocolPos2.html#acfe5d4fbd7af256dbd513a9c277406b6">TestScaleProtocolPos2</a>
@@ -211,9 +215,6 @@ $(function() {
 <li>pos
 : <a class="el" href="structLcd_1_1KEY__SCREEN.html#aea89abe0c7e1e3f79486bad8243564c6">Lcd::KEY_SCREEN</a>
 , <a class="el" href="structTestLcd_1_1mockLcd_1_1LastStringDraw.html#ac9f3380d07b46de94a43d4e77fbc137a">TestLcd::mockLcd::LastStringDraw</a>
-</li>
-<li>pos_cost
-: <a class="el" href="classPosition__new.html#a8d103f353d2caa535f77e2a34695fa11">Position_new</a>
 </li>
 <li>POS_COST
 : <a class="el" href="classPosition__new.html#abff8d514e34d942a2051c67359cb884d">Position_new</a>
@@ -245,9 +246,6 @@ $(function() {
 </li>
 <li>POS_SUM_DISPLAY
 : <a class="el" href="classPosition__new.html#a6f9d3c384159e477fb557fc29daddc8e">Position_new</a>
-</li>
-<li>pos_sum_display
-: <a class="el" href="classPosition__new.html#aad94454a7038b4ab7d3da6679ae5eb8f">Position_new</a>
 </li>
 <li>posInNetwList
 : <a class="el" href="structNet__conf.html#a085f18a25276de943ddf30f6bf50ab80">Net_conf</a>
@@ -357,15 +355,6 @@ $(function() {
 <li>printer_board_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a4af3ed83626d8cc1fa95914785d7e1c0">Printer::technical_report</a>
 </li>
-<li>printer_buf
-: <a class="el" href="classPrinter.html#af6e93f9a5bfae2302e57d244a10b5402">Printer</a>
-</li>
-<li>printer_buf_ind
-: <a class="el" href="classPrinter.html#a8131d7ed9d3fa0b6d3f22ca2c3764586">Printer</a>
-</li>
-<li>printer_buf_size
-: <a class="el" href="classPrinter.html#aaf99c99cc085757c6965aa14f12c8d35">Printer</a>
-</li>
 <li>printer_error
 : <a class="el" href="structPrinter_1_1technical__report.html#a018bc07d3383712df1d38364794ba2fd">Printer::technical_report</a>
 </li>
@@ -438,7 +427,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

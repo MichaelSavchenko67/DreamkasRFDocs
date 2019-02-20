@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classConvert.html">Convert</a></li><li class="navelem"><a class="el" href="structConvert_1_1Date.html">Date</a></li>  </ul>
@@ -77,10 +100,7 @@ $(function() {
 <tr class="memitem:af57bc8e4d34f722d51b704cca26983bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConvert_1_1Date.html#af57bc8e4d34f722d51b704cca26983bf">minutes</a></td></tr>
 <tr class="separator:af57bc8e4d34f722d51b704cca26983bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00045">45</a></p>
-</div><h2 class="groupheader">Данные класса</h2>
+<h2 class="groupheader">Данные класса</h2>
 <a id="a933ea94e44d8627db52b6f08e72756c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a933ea94e44d8627db52b6f08e72756c1">&#9670;&nbsp;</a></span>day</h2>
 
@@ -93,9 +113,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00047">47</a></p>
-
-<p class="reference">Используется в <a class="el" href="convert_8cpp_source.html#l00882">Convert::date_convert()</a> и <a class="el" href="convert_8cpp_source.html#l00139">Convert::date_difference()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classConvert.html#a819792680b966a003172dba240131666">Convert::date_convert()</a> и <a class="el" href="classConvert.html#a1378c17630094763bd9bcc99d218f31c">Convert::date_difference()</a>.</p>
 
 </div>
 </div>
@@ -111,9 +129,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00050">50</a></p>
-
-<p class="reference">Используется в <a class="el" href="convert_8cpp_source.html#l00882">Convert::date_convert()</a> и <a class="el" href="convert_8cpp_source.html#l00139">Convert::date_difference()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classConvert.html#a819792680b966a003172dba240131666">Convert::date_convert()</a> и <a class="el" href="classConvert.html#a1378c17630094763bd9bcc99d218f31c">Convert::date_difference()</a>.</p>
 
 </div>
 </div>
@@ -129,9 +145,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00051">51</a></p>
-
-<p class="reference">Используется в <a class="el" href="convert_8cpp_source.html#l00882">Convert::date_convert()</a> и <a class="el" href="convert_8cpp_source.html#l00139">Convert::date_difference()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classConvert.html#a819792680b966a003172dba240131666">Convert::date_convert()</a> и <a class="el" href="classConvert.html#a1378c17630094763bd9bcc99d218f31c">Convert::date_difference()</a>.</p>
 
 </div>
 </div>
@@ -147,9 +161,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00048">48</a></p>
-
-<p class="reference">Используется в <a class="el" href="convert_8cpp_source.html#l00882">Convert::date_convert()</a> и <a class="el" href="convert_8cpp_source.html#l00139">Convert::date_difference()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classConvert.html#a819792680b966a003172dba240131666">Convert::date_convert()</a> и <a class="el" href="classConvert.html#a1378c17630094763bd9bcc99d218f31c">Convert::date_difference()</a>.</p>
 
 </div>
 </div>
@@ -165,9 +177,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="convert_8h_source.html">convert.h</a> строка <a class="el" href="convert_8h_source.html#l00049">49</a></p>
-
-<p class="reference">Используется в <a class="el" href="convert_8cpp_source.html#l00882">Convert::date_convert()</a> и <a class="el" href="convert_8cpp_source.html#l00139">Convert::date_difference()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classConvert.html#a819792680b966a003172dba240131666">Convert::date_convert()</a> и <a class="el" href="classConvert.html#a1378c17630094763bd9bcc99d218f31c">Convert::date_difference()</a>.</p>
 
 </div>
 </div>
@@ -177,7 +187,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

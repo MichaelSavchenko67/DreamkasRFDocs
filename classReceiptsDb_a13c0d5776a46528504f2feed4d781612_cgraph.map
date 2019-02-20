@@ -1,6 +1,4 @@
 <map id="ReceiptsDb::updateTablePositionsAndReceipts" name="ReceiptsDb::updateTablePositionsAndReceipts">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,229,65"/>
-<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="277,23,460,65"/>
-<area shape="rect" id="node3" href="$ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb" title=" " alt="" coords="508,5,631,32"/>
-<area shape="rect" id="node4" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="679,31,829,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,229,47"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="277,5,460,47"/>
 </map>

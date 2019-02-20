@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html">input_buffer_adapter</a></li>  </ul>
@@ -46,7 +69,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classnlohmann_1_1detail_1_1input__buffer__adapter-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс nlohmann::detail::input_buffer_adapter</div>  </div>
@@ -64,7 +86,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__buffer__adapter__inherit__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map" alt="Inheritance graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map" id="nlohmann_1_1detail_1_1input__buffer__adapter_inherit__map">
-<area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,311"/>
+<area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,296"/>
 <area shape="rect"  href="structnlohmann_1_1detail_1_1input__adapter__protocol.html" title="abstract input adapter interface" alt="" coords="5,5,187,112"/>
 </map>
 </div>
@@ -75,7 +97,7 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1input__buffer__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1input__buffer__adapter_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1input__buffer__adapter_coll__map" id="nlohmann_1_1detail_1_1input__buffer__adapter_coll__map">
-<area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,311"/>
+<area shape="rect"  title="input adapter for buffer input" alt="" coords="16,160,176,296"/>
 <area shape="rect"  href="structnlohmann_1_1detail_1_1input__adapter__protocol.html" title="abstract input adapter interface" alt="" coords="5,5,187,112"/>
 </map>
 </div>
@@ -94,20 +116,9 @@ $(function() {
 <tr class="inherit_header pub_methods_structnlohmann_1_1detail_1_1input__adapter__protocol"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structnlohmann_1_1detail_1_1input__adapter__protocol')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html">nlohmann::detail::input_adapter_protocol</a></td></tr>
 <tr class="memitem:a92dac74def4ac5adacd0684088bd4082 inherit pub_methods_structnlohmann_1_1detail_1_1input__adapter__protocol"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#a92dac74def4ac5adacd0684088bd4082">~input_adapter_protocol</a> ()=default</td></tr>
 <tr class="separator:a92dac74def4ac5adacd0684088bd4082 inherit pub_methods_structnlohmann_1_1detail_1_1input__adapter__protocol"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:a49e6c8b6555af489a45ef51737eafa1c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">cursor</a></td></tr>
-<tr class="memdesc:a49e6c8b6555af489a45ef51737eafa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the current character  <a href="#a49e6c8b6555af489a45ef51737eafa1c">Подробнее...</a><br /></td></tr>
-<tr class="separator:a49e6c8b6555af489a45ef51737eafa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbea9cdb1862e55bc1e142a72a947da4"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">limit</a></td></tr>
-<tr class="memdesc:abbea9cdb1862e55bc1e142a72a947da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer past the last character  <a href="#abbea9cdb1862e55bc1e142a72a947da4">Подробнее...</a><br /></td></tr>
-<tr class="separator:abbea9cdb1862e55bc1e142a72a947da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>input adapter for buffer input </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01927">1927</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="aee9d094d369bcd8f110eae4a175a8fa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee9d094d369bcd8f110eae4a175a8fa9">&#9670;&nbsp;</a></span>input_buffer_adapter() <span class="overload">[1/2]</span></h2>
@@ -142,11 +153,7 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01930">1930</a></p>
-<div class="fragment"><div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">cursor</a>(b), <a class="code" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">limit</a>(b + l)</div><div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1input__buffer__adapter_html_a49e6c8b6555af489a45ef51737eafa1c"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">nlohmann::detail::input_buffer_adapter::cursor</a></div><div class="ttdeci">const char * cursor</div><div class="ttdoc">pointer to the current character</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01950">jsonParser.h:1950</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1input__buffer__adapter_html_abbea9cdb1862e55bc1e142a72a947da4"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">nlohmann::detail::input_buffer_adapter::limit</a></div><div class="ttdeci">const char *const limit</div><div class="ttdoc">pointer past the last character</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01952">jsonParser.h:1952</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;        : cursor(b), limit(b + l)</div><div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;    {}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ada76d7b75c5d6b989af0e18687ef07b6"></a>
@@ -202,13 +209,9 @@ $(function() {
 <p>get a character [0,255] or std::char_traits&lt;char&gt;::eof(). </p>
 
 <p>Замещает <a class="el" href="structnlohmann_1_1detail_1_1input__adapter__protocol.html#aac10a6a4048a8ce8e2ed50277692a3ca">nlohmann::detail::input_adapter_protocol</a>.</p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01938">1938</a></p>
-<div class="fragment"><div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;    {</div><div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">cursor</a> &lt; <a class="code" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">limit</a>))</div><div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;        {</div><div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;            <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::to_int_type(*(<a class="code" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">cursor</a>++));</div><div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;        }</div><div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;</div><div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;        <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::eof();</div><div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00192">jsonParser.h:192</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1input__buffer__adapter_html_a49e6c8b6555af489a45ef51737eafa1c"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a49e6c8b6555af489a45ef51737eafa1c">nlohmann::detail::input_buffer_adapter::cursor</a></div><div class="ttdeci">const char * cursor</div><div class="ttdoc">pointer to the current character</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01950">jsonParser.h:1950</a></div></div>
-<div class="ttc" id="classnlohmann_1_1detail_1_1input__buffer__adapter_html_abbea9cdb1862e55bc1e142a72a947da4"><div class="ttname"><a href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#abbea9cdb1862e55bc1e142a72a947da4">nlohmann::detail::input_buffer_adapter::limit</a></div><div class="ttdeci">const char *const limit</div><div class="ttdoc">pointer past the last character</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01952">jsonParser.h:1952</a></div></div>
+<div class="fragment"><div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;    {</div><div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(cursor &lt; limit))</div><div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;        {</div><div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;            <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::to_int_type(*(cursor++));</div><div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;        }</div><div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;</div><div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;        <span class="keywordflow">return</span> std::char_traits&lt;char&gt;::eof();</div><div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;    }</div><div class="ttc" id="jsonParser_8h_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> jsonParser.h:192</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l01950">cursor</a>, <a class="el" href="jsonParser_8h_source.html#l00192">JSON_LIKELY</a> и <a class="el" href="jsonParser_8h_source.html#l01952">limit</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>.</p>
 
 </div>
 </div>
@@ -238,70 +241,13 @@ $(function() {
 
 </div>
 </div>
-<h2 class="groupheader">Данные класса</h2>
-<a id="a49e6c8b6555af489a45ef51737eafa1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49e6c8b6555af489a45ef51737eafa1c">&#9670;&nbsp;</a></span>cursor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* nlohmann::detail::input_buffer_adapter::cursor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>pointer to the current character </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01950">1950</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l01938">get_character()</a>.</p>
-
-</div>
-</div>
-<a id="abbea9cdb1862e55bc1e142a72a947da4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbea9cdb1862e55bc1e142a72a947da4">&#9670;&nbsp;</a></span>limit</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* const nlohmann::detail::input_buffer_adapter::limit</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>pointer past the last character </p>
-
-<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01952">1952</a></p>
-
-<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l01938">get_character()</a>.</p>
-
-</div>
-</div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
 <li>src/appl/include/<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:31. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

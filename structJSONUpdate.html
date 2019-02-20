@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -83,10 +106,7 @@ $(function() {
 <tr class="memitem:a147e8cbc5b408718bc539dc55dc04f41"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a></td></tr>
 <tr class="separator:a147e8cbc5b408718bc539dc55dc04f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00097">97</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="ab3588fb6853006804e1fbb7e8f00aedf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3588fb6853006804e1fbb7e8f00aedf">&#9670;&nbsp;</a></span>JSONUpdate() <span class="overload">[1/2]</span></h2>
 
@@ -101,13 +121,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02612">2612</a></p>
-<div class="fragment"><div class="line"><a name="l02613"></a><span class="lineno"> 2613</span>&#160;{</div><div class="line"><a name="l02614"></a><span class="lineno"> 2614</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, 0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>) );</div><div class="line"><a name="l02615"></a><span class="lineno"> 2615</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>,     0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>) );</div><div class="line"><a name="l02616"></a><span class="lineno"> 2616</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>,     0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>) );</div><div class="line"><a name="l02617"></a><span class="lineno"> 2617</span>&#160;    <a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a>   = -1;</div><div class="line"><a name="l02618"></a><span class="lineno"> 2618</span>&#160;    <a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a> =  0;</div><div class="line"><a name="l02619"></a><span class="lineno"> 2619</span>&#160;}</div><div class="ttc" id="structJSONUpdate_html_a47d3f32b03f752174d0f2e0d125fe096"><div class="ttname"><a href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">JSONUpdate::version</a></div><div class="ttdeci">char version[20]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00102">json.h:102</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_a11697a45915d6300e2b90c814750ac02"><div class="ttname"><a href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">JSONUpdate::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00105">json.h:105</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_af41a30ab0a7b2abb6dccb88f17972841"><div class="ttname"><a href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">JSONUpdate::md5</a></div><div class="ttdeci">char md5[80]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00104">json.h:104</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_a147e8cbc5b408718bc539dc55dc04f41"><div class="ttname"><a href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">JSONUpdate::fileSize</a></div><div class="ttdeci">long fileSize</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00106">json.h:106</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_aa6f64e2602add27e20b08eb2db8c186c"><div class="ttname"><a href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">JSONUpdate::url</a></div><div class="ttdeci">char url[400]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00103">json.h:103</a></div></div>
+<div class="fragment"><div class="line"><a name="l02613"></a><span class="lineno"> 2613</span>&#160;{</div><div class="line"><a name="l02614"></a><span class="lineno"> 2614</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, 0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>) );</div><div class="line"><a name="l02615"></a><span class="lineno"> 2615</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>,     0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>) );</div><div class="line"><a name="l02616"></a><span class="lineno"> 2616</span>&#160;    memset( <a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>,     0x00, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>) );</div><div class="line"><a name="l02617"></a><span class="lineno"> 2617</span>&#160;    <a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a>   = -1;</div><div class="line"><a name="l02618"></a><span class="lineno"> 2618</span>&#160;    <a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a> =  0;</div><div class="line"><a name="l02619"></a><span class="lineno"> 2619</span>&#160;}</div><div class="ttc" id="structJSONUpdate_html_a47d3f32b03f752174d0f2e0d125fe096"><div class="ttname"><a href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">JSONUpdate::version</a></div><div class="ttdeci">char version[20]</div><div class="ttdef"><b>Definition:</b> json.h:102</div></div>
+<div class="ttc" id="structJSONUpdate_html_a11697a45915d6300e2b90c814750ac02"><div class="ttname"><a href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">JSONUpdate::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> json.h:105</div></div>
+<div class="ttc" id="structJSONUpdate_html_af41a30ab0a7b2abb6dccb88f17972841"><div class="ttname"><a href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">JSONUpdate::md5</a></div><div class="ttdeci">char md5[80]</div><div class="ttdef"><b>Definition:</b> json.h:104</div></div>
+<div class="ttc" id="structJSONUpdate_html_a147e8cbc5b408718bc539dc55dc04f41"><div class="ttname"><a href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">JSONUpdate::fileSize</a></div><div class="ttdeci">long fileSize</div><div class="ttdef"><b>Definition:</b> json.h:106</div></div>
+<div class="ttc" id="structJSONUpdate_html_aa6f64e2602add27e20b08eb2db8c186c"><div class="ttname"><a href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">JSONUpdate::url</a></div><div class="ttdeci">char url[400]</div><div class="ttdef"><b>Definition:</b> json.h:103</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -153,15 +171,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02598">2598</a></p>
-<div class="fragment"><div class="line"><a name="l02599"></a><span class="lineno"> 2599</span>&#160;{</div><div class="line"><a name="l02600"></a><span class="lineno"> 2600</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">this</span> != &amp;other )</div><div class="line"><a name="l02601"></a><span class="lineno"> 2601</span>&#160;    {</div><div class="line"><a name="l02602"></a><span class="lineno"> 2602</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, other.<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>) );</div><div class="line"><a name="l02603"></a><span class="lineno"> 2603</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>,     other.<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>) );</div><div class="line"><a name="l02604"></a><span class="lineno"> 2604</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>,     other.<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>) );</div><div class="line"><a name="l02605"></a><span class="lineno"> 2605</span>&#160;        <a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a> = other.<a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a>;</div><div class="line"><a name="l02606"></a><span class="lineno"> 2606</span>&#160;        <a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a> = other.<a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a>;</div><div class="line"><a name="l02607"></a><span class="lineno"> 2607</span>&#160;    }</div><div class="line"><a name="l02608"></a><span class="lineno"> 2608</span>&#160;</div><div class="line"><a name="l02609"></a><span class="lineno"> 2609</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l02610"></a><span class="lineno"> 2610</span>&#160;}</div><div class="ttc" id="structJSONUpdate_html_a47d3f32b03f752174d0f2e0d125fe096"><div class="ttname"><a href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">JSONUpdate::version</a></div><div class="ttdeci">char version[20]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00102">json.h:102</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_a11697a45915d6300e2b90c814750ac02"><div class="ttname"><a href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">JSONUpdate::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00105">json.h:105</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_af41a30ab0a7b2abb6dccb88f17972841"><div class="ttname"><a href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">JSONUpdate::md5</a></div><div class="ttdeci">char md5[80]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00104">json.h:104</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_a147e8cbc5b408718bc539dc55dc04f41"><div class="ttname"><a href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">JSONUpdate::fileSize</a></div><div class="ttdeci">long fileSize</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00106">json.h:106</a></div></div>
-<div class="ttc" id="structJSONUpdate_html_aa6f64e2602add27e20b08eb2db8c186c"><div class="ttname"><a href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">JSONUpdate::url</a></div><div class="ttdeci">char url[400]</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00103">json.h:103</a></div></div>
+<div class="fragment"><div class="line"><a name="l02599"></a><span class="lineno"> 2599</span>&#160;{</div><div class="line"><a name="l02600"></a><span class="lineno"> 2600</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">this</span> != &amp;other )</div><div class="line"><a name="l02601"></a><span class="lineno"> 2601</span>&#160;    {</div><div class="line"><a name="l02602"></a><span class="lineno"> 2602</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, other.<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>) );</div><div class="line"><a name="l02603"></a><span class="lineno"> 2603</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>,     other.<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a>) );</div><div class="line"><a name="l02604"></a><span class="lineno"> 2604</span>&#160;        memcpy( <a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>,     other.<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>, <span class="keyword">sizeof</span>(<a class="code" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>) );</div><div class="line"><a name="l02605"></a><span class="lineno"> 2605</span>&#160;        <a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a> = other.<a class="code" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a>;</div><div class="line"><a name="l02606"></a><span class="lineno"> 2606</span>&#160;        <a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a> = other.<a class="code" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a>;</div><div class="line"><a name="l02607"></a><span class="lineno"> 2607</span>&#160;    }</div><div class="line"><a name="l02608"></a><span class="lineno"> 2608</span>&#160;</div><div class="line"><a name="l02609"></a><span class="lineno"> 2609</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l02610"></a><span class="lineno"> 2610</span>&#160;}</div><div class="ttc" id="structJSONUpdate_html_a47d3f32b03f752174d0f2e0d125fe096"><div class="ttname"><a href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">JSONUpdate::version</a></div><div class="ttdeci">char version[20]</div><div class="ttdef"><b>Definition:</b> json.h:102</div></div>
+<div class="ttc" id="structJSONUpdate_html_a11697a45915d6300e2b90c814750ac02"><div class="ttname"><a href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">JSONUpdate::status</a></div><div class="ttdeci">int status</div><div class="ttdef"><b>Definition:</b> json.h:105</div></div>
+<div class="ttc" id="structJSONUpdate_html_af41a30ab0a7b2abb6dccb88f17972841"><div class="ttname"><a href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">JSONUpdate::md5</a></div><div class="ttdeci">char md5[80]</div><div class="ttdef"><b>Definition:</b> json.h:104</div></div>
+<div class="ttc" id="structJSONUpdate_html_a147e8cbc5b408718bc539dc55dc04f41"><div class="ttname"><a href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">JSONUpdate::fileSize</a></div><div class="ttdeci">long fileSize</div><div class="ttdef"><b>Definition:</b> json.h:106</div></div>
+<div class="ttc" id="structJSONUpdate_html_aa6f64e2602add27e20b08eb2db8c186c"><div class="ttname"><a href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">JSONUpdate::url</a></div><div class="ttdeci">char url[400]</div><div class="ttdef"><b>Definition:</b> json.h:103</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="json_8h_source.html#l00106">fileSize</a>, <a class="el" href="json_8h_source.html#l00104">md5</a>, <a class="el" href="json_8h_source.html#l00105">status</a>, <a class="el" href="json_8h_source.html#l00103">url</a> и <a class="el" href="json_8h_source.html#l00102">version</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structJSONUpdate.html#a147e8cbc5b408718bc539dc55dc04f41">fileSize</a>, <a class="el" href="structJSONUpdate.html#af41a30ab0a7b2abb6dccb88f17972841">md5</a>, <a class="el" href="structJSONUpdate.html#a11697a45915d6300e2b90c814750ac02">status</a>, <a class="el" href="structJSONUpdate.html#aa6f64e2602add27e20b08eb2db8c186c">url</a> и <a class="el" href="structJSONUpdate.html#a47d3f32b03f752174d0f2e0d125fe096">version</a>.</p>
 
 </div>
 </div>
@@ -178,9 +194,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00106">106</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02598">operator=()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structJSONUpdate.html#ae096ea8495615e159990da1312280a4d">operator=()</a>.</p>
 
 </div>
 </div>
@@ -196,9 +210,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00104">104</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02598">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l29289">Menu::updateDownload()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structJSONUpdate.html#ae096ea8495615e159990da1312280a4d">operator=()</a> и <a class="el" href="classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c">Menu::updateDownload()</a>.</p>
 
 </div>
 </div>
@@ -214,9 +226,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00105">105</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02598">operator=()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structJSONUpdate.html#ae096ea8495615e159990da1312280a4d">operator=()</a>.</p>
 
 </div>
 </div>
@@ -232,9 +242,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00103">103</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02598">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l29289">Menu::updateDownload()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structJSONUpdate.html#ae096ea8495615e159990da1312280a4d">operator=()</a> и <a class="el" href="classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c">Menu::updateDownload()</a>.</p>
 
 </div>
 </div>
@@ -250,20 +258,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00102">102</a></p>
-
-<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02598">operator=()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01293">HttpsExchange::sendUpdate()</a>.</p>
+<p class="reference">Используется в <a class="el" href="structJSONUpdate.html#ae096ea8495615e159990da1312280a4d">operator=()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="json_8h_source.html">json.h</a></li>
-<li>src/appl/<a class="el" href="json_8cpp_source.html">json.cpp</a></li>
+<li>src/appl/<a class="el" href="json_8cpp.html">json.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

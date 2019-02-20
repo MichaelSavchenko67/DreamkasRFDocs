@@ -1,20 +1,18 @@
 <map id="Menu::Correct_tree_visibility" name="Menu::Correct_tree_visibility">
-<area shape="rect" id="node1" title=" " alt="" coords="5,226,140,267"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="227,5,340,32"/>
-<area shape="rect" id="node3" href="$classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="205,56,362,83"/>
-<area shape="rect" id="node4" href="$classMenuTree.html#a4e8f17f54eb880f5acc283cd538c287f" title=" " alt="" coords="477,132,625,159"/>
-<area shape="rect" id="node6" href="$classMenuItem.html#a75cd43978e4c9ba8c207210bdb5398c5" title=" " alt="" coords="209,157,357,184"/>
-<area shape="rect" id="node7" href="$classMenuTree.html#abf311c36141820335205f98043044ffb" title=" " alt="" coords="222,208,345,235"/>
-<area shape="rect" id="node9" href="$classMenu.html#af04e0207644ee7559acd6e90b2853246" title=" " alt="" coords="188,259,379,285"/>
-<area shape="rect" id="node11" href="$classMenuTree.html#a2f54c26048b54be44a43209728d14141" title=" " alt="" coords="220,309,347,336"/>
-<area shape="rect" id="node12" href="$dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf" title=" " alt="" coords="224,360,343,387"/>
-<area shape="rect" id="node13" href="$classMenuTree.html#af7e756fc557e6cc0e7f36d3ddde90ab7" title=" " alt="" coords="192,411,375,453"/>
-<area shape="rect" id="node17" href="$classMenuTree.html#ad4739105350f6beed5592d1bfcdfa462" title=" " alt="" coords="189,477,377,504"/>
-<area shape="rect" id="node5" href="$classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="746,265,869,292"/>
-<area shape="rect" id="node8" href="$classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="478,208,625,235"/>
-<area shape="rect" id="node10" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="463,259,639,285"/>
-<area shape="rect" id="node14" href="$classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="472,372,631,399"/>
-<area shape="rect" id="node16" href="$classMenuItem.html#af867942c91e584773df5705b5267d430" title=" " alt="" coords="427,423,676,449"/>
-<area shape="rect" id="node15" href="$classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="724,423,891,449"/>
-<area shape="rect" id="node18" href="$classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b" title=" " alt="" coords="431,475,671,501"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,140,242"/>
+<area shape="rect" id="node2" href="$dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="225,5,339,32"/>
+<area shape="rect" id="node3" href="$classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="203,56,361,83"/>
+<area shape="rect" id="node4" href="$classMenuTree.html#a4e8f17f54eb880f5acc283cd538c287f" title=" " alt="" coords="475,132,623,159"/>
+<area shape="rect" id="node6" href="$classMenuItem.html#a75cd43978e4c9ba8c207210bdb5398c5" title=" " alt="" coords="208,157,356,184"/>
+<area shape="rect" id="node7" href="$classMenuTree.html#abf311c36141820335205f98043044ffb" title=" " alt="" coords="221,208,343,235"/>
+<area shape="rect" id="node9" href="$classMenuTree.html#a2f54c26048b54be44a43209728d14141" title=" " alt="" coords="219,259,345,285"/>
+<area shape="rect" id="node10" href="$dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf" title=" " alt="" coords="223,309,341,336"/>
+<area shape="rect" id="node11" href="$classMenuTree.html#af7e756fc557e6cc0e7f36d3ddde90ab7" title=" " alt="" coords="191,361,373,402"/>
+<area shape="rect" id="node15" href="$classMenuTree.html#ad4739105350f6beed5592d1bfcdfa462" title=" " alt="" coords="188,427,376,453"/>
+<area shape="rect" id="node5" href="$classMenuItem.html#a7b65ae40397c8131c28e213f73e2fe45" title=" " alt="" coords="743,240,866,267"/>
+<area shape="rect" id="node8" href="$classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="475,208,622,235"/>
+<area shape="rect" id="node12" href="$classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="469,321,628,348"/>
+<area shape="rect" id="node14" href="$classMenuItem.html#af867942c91e584773df5705b5267d430" title=" " alt="" coords="424,372,673,399"/>
+<area shape="rect" id="node13" href="$classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="721,372,888,399"/>
+<area shape="rect" id="node16" href="$classMenuItem.html#ae1f8e92fbd46aa798f8e62ccd1c9695b" title=" " alt="" coords="429,424,669,451"/>
 </map>

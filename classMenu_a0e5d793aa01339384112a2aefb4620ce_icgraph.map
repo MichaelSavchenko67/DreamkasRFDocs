@@ -1,13 +1,10 @@
 <map id="Menu::sendStatistics" name="Menu::sendStatistics">
-<area shape="rect" id="node1" title="sendStatistics &#45; обновить данные и отправить статистику" alt="" coords="640,81,785,108"/>
-<area shape="rect" id="node2" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="441,5,585,32"/>
-<area shape="rect" id="node6" href="$classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="445,56,581,83"/>
-<area shape="rect" id="node8" href="$classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="433,107,592,133"/>
-<area shape="rect" id="node10" href="$classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="467,157,558,184"/>
-<area shape="rect" id="node3" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="241,5,385,32"/>
-<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,81,193,108"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,81,56,108"/>
-<area shape="rect" id="node7" href="$threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="243,56,383,83"/>
-<area shape="rect" id="node9" href="$threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5" title=" " alt="" coords="254,107,373,133"/>
-<area shape="rect" id="node11" href="$threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="285,157,342,184"/>
+<area shape="rect" id="node1" title="sendStatistics &#45; обновить данные и отправить статистику" alt="" coords="541,56,687,83"/>
+<area shape="rect" id="node2" href="$classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="342,5,486,32"/>
+<area shape="rect" id="node5" href="$classMenu.html#a8f7b7ca92f1fcbabc2a873e1d95b799f" title=" " alt="" coords="346,56,482,83"/>
+<area shape="rect" id="node7" href="$classMenu.html#a41ec68913c5c3a87d5caf3c5387afc5c" title=" " alt="" coords="335,107,493,133"/>
+<area shape="rect" id="node3" href="$threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="143,5,287,32"/>
+<area shape="rect" id="node4" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="5,56,95,83"/>
+<area shape="rect" id="node6" href="$threads_8h.html#a23a117c3242a071a6a18f61f41072c38" title=" " alt="" coords="145,56,285,83"/>
+<area shape="rect" id="node8" href="$threads_8h.html#a7412686a6381a5b34ddcd5f459dd81a5" title=" " alt="" coords="155,107,274,133"/>
 </map>

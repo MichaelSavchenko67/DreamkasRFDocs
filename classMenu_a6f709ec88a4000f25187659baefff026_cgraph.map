@@ -1,52 +1,13 @@
 <map id="Menu::work" name="Menu::work">
-<area shape="rect" id="node1" title=" " alt="" coords="5,1153,96,1179"/>
-<area shape="rect" id="node2" href="$classMenu.html#ab146a1d385f6f7606d9c1b8e506f29c9" title=" " alt="" coords="163,13,313,39"/>
-<area shape="rect" id="node4" href="$dynamic__mask_8h.html#aae0dfab32ea6b303e94214a8dd2d84cb" title=" " alt="" coords="215,63,261,90"/>
-<area shape="rect" id="node5" href="$dynamic__mask_8h.html#a148263cdb4aa96a3ff8e871b4aaba1cf" title=" " alt="" coords="189,114,287,141"/>
-<area shape="rect" id="node6" href="$dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567" title=" " alt="" coords="443,114,522,141"/>
-<area shape="rect" id="node7" href="$classFilesFG.html#a39e5e53c511abb3058e9c71cfc3a15a4" title=" " alt="" coords="157,367,319,394"/>
-<area shape="rect" id="node10" href="$dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6" title=" " alt="" coords="428,165,537,191"/>
-<area shape="rect" id="node11" href="$dynamic__mask_8h.html#ad1f2dbd7a665455abef7fa36360d8a4c" title=" " alt="" coords="417,215,548,242"/>
-<area shape="rect" id="node12" href="$dynamic__mask_8h.html#abd761bfaa22693e13ada42e3e052cc72" title=" " alt="" coords="442,266,523,293"/>
-<area shape="rect" id="node13" href="$dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1" title=" " alt="" coords="415,418,551,445"/>
-<area shape="rect" id="node14" href="$dynamic__mask_8h.html#a9792a7d8bccee267c319e212dd4013b4" title=" " alt="" coords="437,469,528,495"/>
-<area shape="rect" id="node15" href="$dynamic__mask_8h.html#a310f0d37da402f52f423c94125b79403" title=" " alt="" coords="416,519,549,546"/>
-<area shape="rect" id="node16" href="$dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd" title=" " alt="" coords="449,570,516,597"/>
-<area shape="rect" id="node17" href="$dynamic__mask_8h.html#acb81763325adcaf21a94f89a5ed351c7" title=" " alt="" coords="430,621,535,647"/>
-<area shape="rect" id="node18" href="$dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a" title=" " alt="" coords="455,671,511,698"/>
-<area shape="rect" id="node19" href="$classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy обновление часового пояса для РБ" alt="" coords="380,747,585,774"/>
-<area shape="rect" id="node20" href="$classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="161,823,315,850"/>
-<area shape="rect" id="node21" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="395,811,570,838"/>
-<area shape="rect" id="node22" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="413,869,552,895"/>
-<area shape="rect" id="node23" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="434,975,531,1002"/>
-<area shape="rect" id="node24" href="$classMenu.html#aa834eb0da9a97bce8f5885db46d9f975" title=" " alt="" coords="165,975,311,1002"/>
-<area shape="rect" id="node25" href="$classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="415,1365,550,1407"/>
-<area shape="rect" id="node26" href="$classMenuTree.html#a2e324c3a561efb70d49f5b1b8dcf8283" title=" " alt="" coords="633,1431,791,1458"/>
-<area shape="rect" id="node27" href="$classMenu.html#aa906d50dadf131d6160a0f7cfd4eba88" title=" " alt="" coords="167,1026,309,1053"/>
-<area shape="rect" id="node28" href="$classMenu.html#a772d853fef1e78ed0423b8091d420a8b" title=" " alt="" coords="154,1178,322,1205"/>
-<area shape="rect" id="node29" href="$classMenu.html#ac5b1c7dbdba5818c28801576370d1f88" title=" " alt="" coords="177,1229,299,1255"/>
-<area shape="rect" id="node30" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="439,1254,526,1281"/>
-<area shape="rect" id="node31" href="$classFilesFG.html#a920dafbb9906b83c9915f8ac8881a294" title=" " alt="" coords="144,1330,332,1357"/>
-<area shape="rect" id="node32" href="$classMenu.html#a92c46de72491349b04010174ab88fb38" title="factory &#45; производство" alt="" coords="187,1127,289,1154"/>
-<area shape="rect" id="node33" href="$classBIOS.html#ae5417f441bde9d68a003bb9000030cfc" title=" " alt="" coords="402,1102,563,1129"/>
-<area shape="rect" id="node34" href="$classMenuItem.html#abe368d153f44d8aa5e44b9fcef003f9f" title=" " alt="" coords="403,1539,562,1566"/>
-<area shape="rect" id="node35" href="$classMenu.html#ac273c6e21d719f2c19c7bde2a9262d95" title=" " alt="" coords="187,1533,289,1559"/>
-<area shape="rect" id="node36" href="$classMenu.html#a59aa729e4e60ee06c417d4410c7764df" title=" " alt="" coords="163,1583,313,1610"/>
-<area shape="rect" id="node37" href="$classBIOS.html#afa3059032ba64d091850fceb14e9ae24" title=" " alt="" coords="156,1634,320,1661"/>
-<area shape="rect" id="node38" href="$classBIOS.html#ae5aac61e2d63babf8fdf36c50bd90c95" title=" " alt="" coords="147,1685,329,1711"/>
-<area shape="rect" id="node39" href="$classBIOS.html#a204f07296f285611e8b9d915089957da" title=" " alt="" coords="160,1735,316,1762"/>
-<area shape="rect" id="node40" href="$classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="386,1811,579,1838"/>
-<area shape="rect" id="node41" href="$classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="174,1786,302,1813"/>
-<area shape="rect" id="node42" href="$classMenuItem.html#a6570462714c154bc3f4a981df0d7a7ca" title=" " alt="" coords="411,1874,554,1901"/>
-<area shape="rect" id="node43" href="$classMenu.html#aca8555c864ae3ba22ba16a32188251c2" title=" " alt="" coords="175,1938,301,1965"/>
-<area shape="rect" id="node44" href="$classMenu.html#a119cfb26034aa7983439ac66630a623c" title=" " alt="" coords="183,1989,293,2015"/>
-<area shape="rect" id="node45" href="$classMenu.html#ad89bd15eabb5d50fdc37837216370c15" title=" " alt="" coords="166,2039,310,2066"/>
-<area shape="rect" id="node46" href="$classMenu.html#adf4a1a8aa7cb089f745b607b7704c633" title=" " alt="" coords="163,2091,313,2132"/>
-<area shape="rect" id="node47" href="$classMenu.html#a0e5d793aa01339384112a2aefb4620ce" title="sendStatistics &#45; обновить данные и отправить статистику" alt="" coords="165,2157,311,2183"/>
-<area shape="rect" id="node48" href="$log_8h.html#a02ba13b54a5d46206d2dbdc30915ea21" title=" " alt="" coords="192,2207,284,2234"/>
-<area shape="rect" id="node49" href="$classBIOS.html#ace050c1e3b5cc523d691428371b38bf5" title=" " alt="" coords="147,2258,329,2285"/>
-<area shape="rect" id="node50" href="$classMenu.html#a51ffa6179b97f8b5f04d84da6d2e6b12" title=" " alt="" coords="170,2309,306,2335"/>
-<area shape="rect" id="node3" href="$classFilesFG.html#ab0772e0846c4f2728ff002c1da8b9751" title=" " alt="" coords="414,5,551,47"/>
-<area shape="rect" id="node8" href="$dynamic__mask_8h.html#ac0c19f4f5e9c5f0ef62c4bf8e1e33b3b" title=" " alt="" coords="416,367,549,394"/>
-<area shape="rect" id="node9" href="$dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9" title=" " alt="" coords="655,845,769,871"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,96,159"/>
+<area shape="rect" id="node2" href="$classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy обновление часового пояса для РБ" alt="" coords="144,5,349,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a772d853fef1e78ed0423b8091d420a8b" title=" " alt="" coords="163,56,331,83"/>
+<area shape="rect" id="node5" href="$classFilesFG.html#a920dafbb9906b83c9915f8ac8881a294" title=" " alt="" coords="153,107,341,133"/>
+<area shape="rect" id="node8" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="177,157,316,184"/>
+<area shape="rect" id="node10" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="198,208,295,235"/>
+<area shape="rect" id="node11" href="$classMenu.html#aca8555c864ae3ba22ba16a32188251c2" title=" " alt="" coords="183,259,310,285"/>
+<area shape="rect" id="node4" href="$classUsers.html#a56f7251f02d59fe193832672dc138c41" title=" " alt="" coords="409,31,534,57"/>
+<area shape="rect" id="node6" href="$classFilesFG.html#a5fa59a4738fd9525487b29c415cc1ca5" title=" " alt="" coords="407,81,536,108"/>
+<area shape="rect" id="node7" href="$classFilesFG.html#a8c83d9691042581eea5a688447b3ae1f" title=" " alt="" coords="405,132,538,159"/>
+<area shape="rect" id="node9" href="$classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="397,183,545,209"/>
 </map>

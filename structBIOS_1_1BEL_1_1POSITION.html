@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1BEL.html">BEL</a></li><li class="navelem"><a class="el" href="structBIOS_1_1BEL_1_1POSITION.html">POSITION</a></li>  </ul>
@@ -99,10 +122,7 @@ $(function() {
 <tr class="memitem:a1421b0296234a7f21b00f7b12b63eeeb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1BEL_1_1POSITION.html#a1421b0296234a7f21b00f7b12b63eeeb">marginRubSum</a></td></tr>
 <tr class="separator:a1421b0296234a7f21b00f7b12b63eeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01077">1077</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a1c638ab2d6e64a097275857d0c2bd624"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c638ab2d6e64a097275857d0c2bd624">&#9670;&nbsp;</a></span>POSITION()</h2>
 
@@ -117,21 +137,19 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00717">717</a></p>
-<div class="fragment"><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;{</div><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a0f93bf507e2c86f1ee6292c66b99f6a2">name</a>                   =         <span class="stringliteral">&quot;Товар не задан&quot;</span>;</div><div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a58f72bce9f6833287505613f03dcb8cd">barcode</a>                =     <span class="stringliteral">&quot;000000000000000000&quot;</span>;</div><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#abfcc5453be3daeda7796d256ed33f414">quantity</a>               =                      0.0;</div><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a3cb9de99ae68309935552feb8b032b5e">price</a>                  =                      0.0;</div><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a5b3bda0602ead9536603479e313b97c4">taxNumber</a>              =                  SNO_OSN;</div><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a727ef1f3e9fb8d71acff353b2019bc31">numGoodsPos</a>            =                        1;</div><div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a58987588d4ee4868ffe3c6672e0366bd">numDepart</a>              =                        1;</div><div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div><div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#ae8b1dbfd5142b7c8c05f068be9dcf9cc">discountRubSum</a>         =                        0;</div><div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a52757bd593056148acce4bb9743e3a2e">discountType</a>           = <a class="code" href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">DISCOUNT_TYPE_ABSOLUTE</a>;</div><div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a1421b0296234a7f21b00f7b12b63eeeb">marginRubSum</a>           =                        0;</div><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;}</div><div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a58f72bce9f6833287505613f03dcb8cd"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a58f72bce9f6833287505613f03dcb8cd">BIOS::BEL::POSITION::barcode</a></div><div class="ttdeci">string barcode</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01082">FisGo_BIOS.h:1082</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_abfcc5453be3daeda7796d256ed33f414"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#abfcc5453be3daeda7796d256ed33f414">BIOS::BEL::POSITION::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01083">FisGo_BIOS.h:1083</a></div></div>
-<div class="ttc" id="classBIOS_html_a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160"><div class="ttname"><a href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">BIOS::DISCOUNT_TYPE_ABSOLUTE</a></div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00306">FisGo_BIOS.h:306</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a58987588d4ee4868ffe3c6672e0366bd"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a58987588d4ee4868ffe3c6672e0366bd">BIOS::BEL::POSITION::numDepart</a></div><div class="ttdeci">unsigned char numDepart</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01087">FisGo_BIOS.h:1087</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a0f93bf507e2c86f1ee6292c66b99f6a2"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a0f93bf507e2c86f1ee6292c66b99f6a2">BIOS::BEL::POSITION::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01081">FisGo_BIOS.h:1081</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a1421b0296234a7f21b00f7b12b63eeeb"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a1421b0296234a7f21b00f7b12b63eeeb">BIOS::BEL::POSITION::marginRubSum</a></div><div class="ttdeci">uint64_t marginRubSum</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01094">FisGo_BIOS.h:1094</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a5b3bda0602ead9536603479e313b97c4"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a5b3bda0602ead9536603479e313b97c4">BIOS::BEL::POSITION::taxNumber</a></div><div class="ttdeci">unsigned char taxNumber</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01085">FisGo_BIOS.h:1085</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a3cb9de99ae68309935552feb8b032b5e"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a3cb9de99ae68309935552feb8b032b5e">BIOS::BEL::POSITION::price</a></div><div class="ttdeci">double price</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01084">FisGo_BIOS.h:1084</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a52757bd593056148acce4bb9743e3a2e"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a52757bd593056148acce4bb9743e3a2e">BIOS::BEL::POSITION::discountType</a></div><div class="ttdeci">DISCOUNT_TYPE_BIOS discountType</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01091">FisGo_BIOS.h:1091</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_ae8b1dbfd5142b7c8c05f068be9dcf9cc"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#ae8b1dbfd5142b7c8c05f068be9dcf9cc">BIOS::BEL::POSITION::discountRubSum</a></div><div class="ttdeci">uint64_t discountRubSum</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01090">FisGo_BIOS.h:1090</a></div></div>
-<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a727ef1f3e9fb8d71acff353b2019bc31"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a727ef1f3e9fb8d71acff353b2019bc31">BIOS::BEL::POSITION::numGoodsPos</a></div><div class="ttdeci">int numGoodsPos</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l01086">FisGo_BIOS.h:1086</a></div></div>
+<div class="fragment"><div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;{</div><div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a0f93bf507e2c86f1ee6292c66b99f6a2">name</a>                   =         <span class="stringliteral">&quot;Товар не задан&quot;</span>;</div><div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a58f72bce9f6833287505613f03dcb8cd">barcode</a>                =     <span class="stringliteral">&quot;000000000000000000&quot;</span>;</div><div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#abfcc5453be3daeda7796d256ed33f414">quantity</a>               =                      0.0;</div><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a3cb9de99ae68309935552feb8b032b5e">price</a>                  =                      0.0;</div><div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a5b3bda0602ead9536603479e313b97c4">taxNumber</a>              =                  SNO_OSN;</div><div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a727ef1f3e9fb8d71acff353b2019bc31">numGoodsPos</a>            =                        1;</div><div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a58987588d4ee4868ffe3c6672e0366bd">numDepart</a>              =                        1;</div><div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div><div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#ae8b1dbfd5142b7c8c05f068be9dcf9cc">discountRubSum</a>         =                        0;</div><div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a52757bd593056148acce4bb9743e3a2e">discountType</a>           = <a class="code" href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">DISCOUNT_TYPE_ABSOLUTE</a>;</div><div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <a class="code" href="structBIOS_1_1BEL_1_1POSITION.html#a1421b0296234a7f21b00f7b12b63eeeb">marginRubSum</a>           =                        0;</div><div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;}</div><div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a58f72bce9f6833287505613f03dcb8cd"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a58f72bce9f6833287505613f03dcb8cd">BIOS::BEL::POSITION::barcode</a></div><div class="ttdeci">string barcode</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1082</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_abfcc5453be3daeda7796d256ed33f414"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#abfcc5453be3daeda7796d256ed33f414">BIOS::BEL::POSITION::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1083</div></div>
+<div class="ttc" id="classBIOS_html_a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160"><div class="ttname"><a href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">BIOS::DISCOUNT_TYPE_ABSOLUTE</a></div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:306</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a58987588d4ee4868ffe3c6672e0366bd"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a58987588d4ee4868ffe3c6672e0366bd">BIOS::BEL::POSITION::numDepart</a></div><div class="ttdeci">unsigned char numDepart</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1087</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a0f93bf507e2c86f1ee6292c66b99f6a2"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a0f93bf507e2c86f1ee6292c66b99f6a2">BIOS::BEL::POSITION::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1081</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a1421b0296234a7f21b00f7b12b63eeeb"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a1421b0296234a7f21b00f7b12b63eeeb">BIOS::BEL::POSITION::marginRubSum</a></div><div class="ttdeci">uint64_t marginRubSum</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1094</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a5b3bda0602ead9536603479e313b97c4"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a5b3bda0602ead9536603479e313b97c4">BIOS::BEL::POSITION::taxNumber</a></div><div class="ttdeci">unsigned char taxNumber</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1085</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a3cb9de99ae68309935552feb8b032b5e"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a3cb9de99ae68309935552feb8b032b5e">BIOS::BEL::POSITION::price</a></div><div class="ttdeci">double price</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1084</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a52757bd593056148acce4bb9743e3a2e"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a52757bd593056148acce4bb9743e3a2e">BIOS::BEL::POSITION::discountType</a></div><div class="ttdeci">DISCOUNT_TYPE_BIOS discountType</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1091</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_ae8b1dbfd5142b7c8c05f068be9dcf9cc"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#ae8b1dbfd5142b7c8c05f068be9dcf9cc">BIOS::BEL::POSITION::discountRubSum</a></div><div class="ttdeci">uint64_t discountRubSum</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1090</div></div>
+<div class="ttc" id="structBIOS_1_1BEL_1_1POSITION_html_a727ef1f3e9fb8d71acff353b2019bc31"><div class="ttname"><a href="structBIOS_1_1BEL_1_1POSITION.html#a727ef1f3e9fb8d71acff353b2019bc31">BIOS::BEL::POSITION::numGoodsPos</a></div><div class="ttdeci">int numGoodsPos</div><div class="ttdef"><b>Definition:</b> FisGo_BIOS.h:1086</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="FisGo__BIOS_8h_source.html#l00306">BIOS::DISCOUNT_TYPE_ABSOLUTE</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">BIOS::DISCOUNT_TYPE_ABSOLUTE</a>.</p>
 
 </div>
 </div>
@@ -149,8 +167,6 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00731">731</a></p>
 <div class="fragment"><div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;{</div><div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div><div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
@@ -167,9 +183,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01082">1082</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -185,9 +199,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01089">1089</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -203,9 +215,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01090">1090</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -221,9 +231,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01091">1091</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -239,9 +247,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01093">1093</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -257,9 +263,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01094">1094</a></p>
-
-<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a>.</p>
 
 </div>
 </div>
@@ -275,9 +279,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01081">1081</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a>, <a class="el" href="classBIOS.html#ad950a845da18e29eac28097d8bc71d0d">BIOS::receipt_send_rb_bios()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -293,9 +295,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01087">1087</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a> и <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a> и <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a>.</p>
 
 </div>
 </div>
@@ -311,9 +311,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01086">1086</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -329,9 +327,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01084">1084</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -347,9 +343,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01083">1083</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
@@ -365,20 +359,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l01085">1085</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a> и <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classBIOS_1_1BEL.html#a19355a4c72620a829a3ddc949846d1ce">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="classMenu.html#a09dae3926e6c4f752b7453a6f91ad08e">Menu::receipt_send_rb()</a> и <a class="el" href="classMenu.html#adc01decd0b1a515788d8c8b366d6a618">Menu::receipt_send_rb_ext()</a>.</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a></li>
-<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a></li>
+<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:29. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

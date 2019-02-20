@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,15 +32,35 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -71,10 +94,7 @@ $(function() {
 <tr class="memitem:aaa5863d28846ee4f7dc55ccc3dde6164"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a> [19]</td></tr>
 <tr class="separator:aaa5863d28846ee4f7dc55ccc3dde6164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock">
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00082">82</a></p>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
+<h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a7580acdb840d78d656f9e2a3af70d181"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7580acdb840d78d656f9e2a3af70d181">&#9670;&nbsp;</a></span>SPEC_AGENT()</h2>
 
@@ -97,11 +117,9 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00084">84</a></p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        memset( <a class="code" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a>) );</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="ttc" id="structSPEC__AGENT_html_aaa5863d28846ee4f7dc55ccc3dde6164"><div class="ttname"><a href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">SPEC_AGENT::provider_tel_num</a></div><div class="ttdeci">char provider_tel_num[19]</div><div class="ttdef"><b>Definition:</b> <a href="agents_8h_source.html#l00090">agents.h:90</a></div></div>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        memset( <a class="code" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a>) );</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="ttc" id="structSPEC__AGENT_html_aaa5863d28846ee4f7dc55ccc3dde6164"><div class="ttname"><a href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">SPEC_AGENT::provider_tel_num</a></div><div class="ttdeci">char provider_tel_num[19]</div><div class="ttdef"><b>Definition:</b> agents.h:90</div></div>
 </div><!-- fragment -->
-<p class="reference">Перекрестные ссылки <a class="el" href="agents_8h_source.html#l00090">provider_tel_num</a>.</p>
+<p class="reference">Перекрестные ссылки <a class="el" href="structSPEC__AGENT.html#aaa5863d28846ee4f7dc55ccc3dde6164">provider_tel_num</a>.</p>
 
 </div>
 </div>
@@ -118,9 +136,7 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
-<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00090">90</a></p>
-
-<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a>, <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a> и <a class="el" href="agents_8h_source.html#l00084">SPEC_AGENT()</a>.</p>
+<p class="reference">Используется в <a class="el" href="classJSON.html#a6cf937ba735aa8d3da55642ba1a30a60">JSON::agents_get()</a>, <a class="el" href="classJSON.html#a7ebe63adaf7688c63c59ec0df199c909">JSON::agents_JSON_create()</a> и <a class="el" href="structSPEC__AGENT.html#a7580acdb840d78d656f9e2a3af70d181">SPEC_AGENT()</a>.</p>
 
 </div>
 </div>
@@ -130,7 +146,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:31:49. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:02:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

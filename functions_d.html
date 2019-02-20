@@ -9,6 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -29,16 +32,36 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',false,true,'search.html','Поиск');
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -95,8 +118,6 @@ $(function() {
 </li>
 <li>dataCreate()
 : <a class="el" href="classScaleProtocolInterface.html#abc168b4863ed535f527c86cde480e9e3">ScaleProtocolInterface</a>
-, <a class="el" href="classScaleProtocolMassak.html#ae8cdcf000fbdfb11f0efa934700cec77">ScaleProtocolMassak</a>
-, <a class="el" href="classScaleProtocolPos2.html#a5a4f81a77da8d19056825c2e0db1fc40">ScaleProtocolPos2</a>
 </li>
 <li>dataMatrix
 : <a class="el" href="classMenu.html#a60fe3116f26fe03d87d400d74d6e9e82">Menu</a>
@@ -104,9 +125,6 @@ $(function() {
 </li>
 <li>dataMatrixParse()
 : <a class="el" href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4">BarcodeScanner</a>
-</li>
-<li>dataMount
-: <a class="el" href="classFlashMounter.html#aadc3e28815d074c13214841d1d036845">FlashMounter</a>
 </li>
 <li>dataSize
 : <a class="el" href="classScaleProtocolInterface.html#aa32d847d1e9837fe1f1441e9e5f280ce">ScaleProtocolInterface</a>
@@ -196,32 +214,11 @@ $(function() {
 <li>daysLeft()
 : <a class="el" href="classLicense.html#a613066d94ecbf5a1ffba46bb1ff87886">License</a>
 </li>
-<li>db
-: <a class="el" href="classSlipsDB.html#a4ddb1fc64948704c0050f268b27b3eed">SlipsDB</a>
-</li>
-<li>decimal_point
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a311e5d6f4b31d5be0eb3c0cb20b6965a">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>decimal_point_char
-: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a16593b0475f6d1cddd5eaf7c045771f3">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
-</li>
-<li>Decode()
-: <a class="el" href="classCMd5Sum.html#ad3408792dc96dfa7a0df0092dd482c27">CMd5Sum</a>
-</li>
-<li>decode()
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a1cc5cb2f6993cefedad087a6cef0e8fb">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
 <li>DEFAULT_DEPS_CNT
 : <a class="el" href="classBIOS_1_1BEL.html#a58df6fc9cc84a7c22a6459b73096affb">BIOS::BEL</a>
 </li>
 <li>DEFFERED_
 : <a class="el" href="classFISGO__TEST__API.html#a69a9c6ae373bd7fc5d099aa88067bab9">FISGO_TEST_API</a>
-</li>
-<li>defZone
-: <a class="el" href="classTimeSync.html#a1be06f6137b1d312d13c7414801d0ba4">TimeSync</a>
-</li>
-<li>defZoneBy
-: <a class="el" href="classTimeSync.html#a2ca8b2ebcd470887bb0380c32e9da06e">TimeSync</a>
 </li>
 <li>del
 : <a class="el" href="structJSON_1_1JSON__LOGS.html#a2126938f374ae15d63b10fa735000c22">JSON::JSON_LOGS</a>
@@ -341,25 +338,8 @@ $(function() {
 <li>deps_read()
 : <a class="el" href="classBIOS_1_1BEL.html#a8f60de3302419c1de9d11c67cf8871da">BIOS::BEL</a>
 </li>
-<li>destroy()
-: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#ad54d0055a5cbb83b7ebe9c0950afd398">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
-</li>
 <li>detail::external_constructor
 : <a class="el" href="classnlohmann_1_1basic__json.html#a6275ed57bae6866cdf5db5370a7ad47c">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
-</li>
-<li>detect()
-: <a class="el" href="structnlohmann_1_1detail_1_1has__from__json.html#a94e93c638429df773f948f5243fd304b">nlohmann::detail::has_from_json&lt; BasicJsonType, T &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1has__non__default__from__json.html#a87428058d4e01d8f034ec5b2574795a3">nlohmann::detail::has_non_default_from_json&lt; BasicJsonType, T &gt;</a>
-, <a class="el" href="structnlohmann_1_1detail_1_1has__to__json.html#af087d9dfdab8443f2b95e8b6c8612742">nlohmann::detail::has_to_json&lt; BasicJsonType, T &gt;</a>
-</li>
-<li>deviceMountPath
-: <a class="el" href="classFlashMounter.html#ac72537ffc8283b6c264929f506b11d2d">FlashMounter</a>
-</li>
-<li>deviceName
-: <a class="el" href="classFlashMounter.html#af06a69216d275531efb8c0a91c041990">FlashMounter</a>
-</li>
-<li>devicePath
-: <a class="el" href="classFlashMounter.html#ab0dee2e2729131dded45dd71c6d53ee1">FlashMounter</a>
 </li>
 <li>diagnostic()
 : <a class="el" href="classMenu.html#ac5b1c7dbdba5818c28801576370d1f88">Menu</a>
@@ -394,9 +374,7 @@ $(function() {
 <li>difference_type
 : <a class="el" href="classnlohmann_1_1basic__json.html#afe7c1303357e19cea9527af4e9a31d8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a05fc153aa6d50409fc63ec68e54addb4">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a9ab55987c05ec6427ad36082e351cc45">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#af3db0d5c90de427d51645fe73a015553">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>DIR_IS_EXIST
 : <a class="el" href="classFilesFG.html#a0ccea934714d715d60abdf0c2e1b44aaa50ca87d006a5e511ecd096768ea1edca">FilesFG</a>
@@ -415,18 +393,13 @@ $(function() {
 </li>
 <li>directory_code
 : <a class="el" href="classGoodsData.html#ae1255b007f7e60a75ac54dd2b6c3054c">GoodsData</a>
+, <a class="el" href="classPosition__new.html#ae77ba11cfea877fe7366e71baa3d4b13">Position_new</a>
 </li>
 <li>DIRECTORY_CODE
 : <a class="el" href="classPosition__new.html#a9ff52acfebf7a9678dbf055e53be757a">Position_new</a>
 </li>
-<li>directory_code
-: <a class="el" href="classPosition__new.html#ae77ba11cfea877fe7366e71baa3d4b13">Position_new</a>
-</li>
 <li>disableCallbackOut()
 : <a class="el" href="classReceiptsDb.html#a588f5cb311e4be3cd6d3c4d11498d750">ReceiptsDb</a>
-</li>
-<li>discarded
-: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a8997ee6dc3bd39116b951465b946445e">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>discount
 : <a class="el" href="structBIOS_1_1BEL_1_1RECEIPT__FIS__DATA.html#ae079437a13b2b2c36bfcad3ad6e48a2a">BIOS::BEL::RECEIPT_FIS_DATA</a>
@@ -625,7 +598,7 @@ $(function() {
 : <a class="el" href="classScaleProtocolMassak.html#a525c335ea4d452aebccadfe2276b31d3">ScaleProtocolMassak</a>
 </li>
 <li>diyfp()
-: <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a332ba792e67dd40cd99a23f6dceb7792">nlohmann::detail::dtoa_impl::diyfp</a>
+: <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a23d25b3ad4527270a6e3f2a0bcca11e6">nlohmann::detail::dtoa_impl::diyfp</a>
 </li>
 <li>dns_add
 : <a class="el" href="structConfig.html#abb1d8156781dd33a366c7726d2be856d">Config</a>
@@ -660,12 +633,8 @@ $(function() {
 <li>DOC_NUM_
 : <a class="el" href="classFISGO__TEST__API.html#a31fde82cce59ce151c8d6bb4bc8bb434">FISGO_TEST_API</a>
 </li>
-<li>doc_state
-: <a class="el" href="classBIOS_1_1BEL.html#aa3ca4c97b5a10f30caa7409e403020fc">BIOS::BEL</a>
-</li>
 <li>doc_type
-: <a class="el" href="classBIOS_1_1BEL.html#acb95096f26c36a9d398b518527b342d8">BIOS::BEL</a>
-, <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT</a>
+: <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT</a>
 , <a class="el" href="structJSON_1_1SHIFTS.html#a4968fa8c99a0f8d0185195930cc29650">JSON::SHIFTS</a>
 </li>
 <li>docNumGet()
@@ -796,23 +765,14 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
-<li>dump_escaped()
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#ac1f8d1165b44149bd8be397dce68ea05">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>dump_float()
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a6d652a3bfa581cf1cd7790d6d11ea52f">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
-<li>dump_integer()
-: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a944f6dea8dbe2961da145d2f62fa2c2f">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
-</li>
 <li>DYNAMIC_MASK()
-: <a class="el" href="structDYNAMIC__MASK.html#a3e05d66e0a79117a44f6469715498721">DYNAMIC_MASK</a>
+: <a class="el" href="structDYNAMIC__MASK.html#ab445d3d8213aa1088ae53df6279dfa43">DYNAMIC_MASK</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:33:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 11:04:21. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
