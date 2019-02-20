@@ -1,5 +1,8 @@
 <map id="BIOS::RUS::getFDandFPDofReg" name="BIOS::RUS::getFDandFPDofReg">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,224,61"/>
-<area shape="rect" id="node2" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="291,5,439,32"/>
-<area shape="rect" id="node3" href="$classConvert.html#a2c094a805c870159901cd90112b966af" title=" " alt="" coords="272,57,459,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,224,98"/>
+<area shape="rect" id="node2" href="$classConvert.html#a2c094a805c870159901cd90112b966af" title=" " alt="" coords="272,5,459,47"/>
+<area shape="rect" id="node3" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="291,71,439,98"/>
+<area shape="rect" id="node4" href="$classBIOS_1_1RUS.html#ae83c0ea3747c916d2b869df9924a0270" title=" " alt="" coords="289,122,441,149"/>
+<area shape="rect" id="node5" href="$classRequisites.html#a4461a99fef4a54c9a93cef1a421012a3" title=" " alt="" coords="713,97,869,123"/>
+<area shape="rect" id="node6" href="$classBIOS_1_1RUS.html#a7a9ea3f5ce26d8e0dacb8bdbf4f373a1" title=" " alt="" coords="507,122,665,149"/>
 </map>

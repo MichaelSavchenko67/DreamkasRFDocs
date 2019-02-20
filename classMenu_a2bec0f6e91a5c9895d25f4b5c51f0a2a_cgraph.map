@@ -1,5 +1,5 @@
 <map id="Menu::addDiscountPer" name="Menu::addDiscountPer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,160,61"/>
-<area shape="rect" id="node2" href="$classMenu.html#aa2275557cfb584a05755973d8f37ecb0" title=" " alt="" coords="208,5,367,32"/>
-<area shape="rect" id="node3" href="$classConvert.html#a9e6122823cae3f484ad2df4f600cbb7d" title=" " alt="" coords="211,57,364,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,160,69"/>
+<area shape="rect" id="node2" href="$classConvert.html#a9e6122823cae3f484ad2df4f600cbb7d" title=" " alt="" coords="211,5,364,47"/>
+<area shape="rect" id="node3" href="$classMenu.html#aa2275557cfb584a05755973d8f37ecb0" title=" " alt="" coords="208,71,367,98"/>
 </map>

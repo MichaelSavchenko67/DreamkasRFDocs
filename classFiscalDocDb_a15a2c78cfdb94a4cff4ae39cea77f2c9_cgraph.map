@@ -1,0 +1,4 @@
+<map id="FiscalDocDb::loadFiscalDoc" name="FiscalDocDb::loadFiscalDoc">
+<area shape="rect" id="node1" title="loadFiscalDoc загрузить из базы данные фискального документа" alt="" coords="5,5,195,32"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#af9d4a431972bc0bdf55d3d92a0515015" title="makeRequestSave выполнить запрос с сохранением результата (SELECT)" alt="" coords="243,5,460,32"/>
+</map>

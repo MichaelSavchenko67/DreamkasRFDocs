@@ -1,0 +1,11 @@
+<map id="nlohmann::basic_json::is_string" name="nlohmann::basic_json::is_string">
+<area shape="rect" id="node1" title="return whether value is a string" alt="" coords="432,195,580,236"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="219,5,367,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#a955d7098e5b43ee0dd8cce5f707eeb5c" title="get a pointer to the value (string)" alt="" coords="219,71,367,112"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a6362b88718eb5c6d4fed6a61eed44b95" title="return whether type is primitive" alt="" coords="219,136,367,177"/>
+<area shape="rect" id="node6" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="208,202,377,229"/>
+<area shape="rect" id="node7" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="201,253,384,279"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a1be31ef2d2934d37a818083a4af44f99" title="add an object to an object" alt="" coords="219,304,367,345"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#adaa1ed0a889d86c8e0216a3d66980f76" title="exchanges the values" alt="" coords="219,369,367,411"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="5,5,153,47"/>
+</map>

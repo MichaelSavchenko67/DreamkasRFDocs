@@ -1,0 +1,5 @@
+<map id="nlohmann::json_pointer::is_root" name="nlohmann::json_pointer::is_root">
+<area shape="rect" id="node1" title="return whether pointer points to the root document" alt="" coords="236,35,392,76"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1json__pointer.html#a4d523606a8b40cef73e976e61b6fd383" title="remove and return last reference pointer" alt="" coords="19,5,175,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1json__pointer.html#a00eff109d9a0091e42ada9b16b90c8d9" title=" " alt="" coords="5,71,188,98"/>
+</map>

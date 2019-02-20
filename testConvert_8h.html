@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
 <code>#include &lt;gmock/gmock.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для testConvert.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testConvert.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testConvert_8h__incl.png" border="0" usemap="#src_2tests_2include_2testConvert_8h" alt=""/></div>
 <map name="src_2tests_2include_2testConvert_8h" id="src_2tests_2include_2testConvert_8h">
 <area shape="rect"  title=" " alt="" coords="422,5,623,32"/>
@@ -200,6 +179,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00028">28</a></p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    EXPECT_TRUE(convert.isMacValid( VALID_MAC ));</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a040009cc0c6d29ad148603ac2a960802"></a>
@@ -228,6 +209,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00033">33</a></p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_1 ));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_2 ));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_3 ));</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_4 ));</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_5 ));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_6 ));</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_7 ));</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_8 ));</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_9 ));</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_10 ));</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    EXPECT_FALSE(convert.isMacValid( INVALID_MAC_11 ));</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a35c809fca62d25ff1d021844e73839fd"></a>
@@ -256,6 +239,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00048">48</a></p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;0101010101&quot;</span>; <span class="comment">// 01.01.01 01:01</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    EXPECT_TRUE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    EXPECT_EQ(calendareDate.tm_mday, 1);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    EXPECT_EQ(calendareDate.tm_mon,  0);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    EXPECT_EQ(calendareDate.tm_year, 101);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    EXPECT_EQ(calendareDate.tm_hour, 1);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    EXPECT_EQ(calendareDate.tm_min,  1);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1683ae44539fc5d2634b276c847347aa"></a>
@@ -284,6 +269,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00063">63</a></p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;010120010101&quot;</span>; <span class="comment">// 01.01.2001 01:01</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    EXPECT_TRUE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    EXPECT_EQ(calendareDate.tm_mday, 1);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    EXPECT_EQ(calendareDate.tm_mon,  0);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    EXPECT_EQ(calendareDate.tm_year, 101);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    EXPECT_EQ(calendareDate.tm_hour, 1);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    EXPECT_EQ(calendareDate.tm_min,  1);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a622594873763d09aa01a886038a8dfaa"></a>
@@ -312,6 +299,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00078">78</a></p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;01012001010101&quot;</span>; <span class="comment">// 01.01.2001 01:01:01</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    EXPECT_TRUE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    EXPECT_EQ(calendareDate.tm_mday, 1);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    EXPECT_EQ(calendareDate.tm_mon,  0);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    EXPECT_EQ(calendareDate.tm_year, 101);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    EXPECT_EQ(calendareDate.tm_hour, 1);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    EXPECT_EQ(calendareDate.tm_min,  1);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    EXPECT_EQ(calendareDate.tm_sec,  1);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="afe2ed2d22f37c70b201d91cb1328af62"></a>
@@ -340,6 +329,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00094">94</a></p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;010101&quot;</span>; <span class="comment">// 01.01.01</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    EXPECT_TRUE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    EXPECT_EQ(calendareDate.tm_mday, 1);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    EXPECT_EQ(calendareDate.tm_mon,  0);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    EXPECT_EQ(calendareDate.tm_year, 101);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6978a0a022604fe5fa34752668e32926"></a>
@@ -368,6 +359,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00106">106</a></p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;01012001&quot;</span>; <span class="comment">// 01.01.2001</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    EXPECT_TRUE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    EXPECT_EQ(calendareDate.tm_mday, 1);</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    EXPECT_EQ(calendareDate.tm_mon,  0);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    EXPECT_EQ(calendareDate.tm_year, 101);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4bcac9567ca071ab4bece046f1950842"></a>
@@ -396,6 +389,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00118">118</a></p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;010110101&quot;</span>; <span class="comment">// 01.01.1 01:01</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    EXPECT_FALSE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae734869dc7aeef046d0a0b504a5e1b96"></a>
@@ -424,6 +419,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00126">126</a></p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;01012010101&quot;</span>; <span class="comment">// 01.01.201 01:01</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    EXPECT_FALSE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a595ea804195afdd207b6cdac96000432"></a>
@@ -452,6 +449,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00134">134</a></p>
+<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;{</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;0101200101011&quot;</span>; <span class="comment">// 01.01.2001 01:01:1</span></div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    EXPECT_FALSE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9cc9b71743932ac6c95e62ec45362c0d"></a>
@@ -480,6 +479,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00142">142</a></p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;01011&quot;</span>; <span class="comment">// 01.01.1</span></div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    EXPECT_FALSE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6a247dbf43451f1a53eb3341141c81da"></a>
@@ -508,6 +509,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00150">150</a></p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">string</span> dateTime = <span class="stringliteral">&quot;0101001&quot;</span>; <span class="comment">// 01.01.001</span></div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">struct </span>tm calendareDate;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    EXPECT_FALSE(convert.stringDateTimeToTM(dateTime, calendareDate));</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a914b055e279bdd2a4b23037560eb37e0"></a>
@@ -535,6 +538,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00158">158</a></p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">string</span> dateTimeStart = <span class="stringliteral">&quot;0101010101&quot;</span>; <span class="comment">// 01.01.01 01:01</span></div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">string</span> dateTimeEnd   = <span class="stringliteral">&quot;1101010101&quot;</span>; <span class="comment">// 11.01.01 01:01</span></div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">const</span> int64_t diffTime = 10 * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a>;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    int64_t realDiff = 0;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    EXPECT_TRUE(convert.dateLessSelected(dateTimeStart, dateTimeEnd, diffTime, realDiff));</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div><div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00033">convert.h:33</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00034">convert.h:34</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00035">convert.h:35</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8h_source.html#l00035">Convert::TIME_HOUR_IN_DAY</a>, <a class="el" href="convert_8h_source.html#l00034">Convert::TIME_MIN_IN_HOUR</a> и <a class="el" href="convert_8h_source.html#l00033">Convert::TIME_SEC_IN_MIN</a>.</p>
 
 </div>
 </div>
@@ -564,6 +574,13 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00169">169</a></p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">string</span> dateTimeStart = <span class="stringliteral">&quot;0101010101&quot;</span>; <span class="comment">// 01.01.01 01:01</span></div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">string</span> dateTimeEnd   = <span class="stringliteral">&quot;1101010101&quot;</span>; <span class="comment">// 11.01.01 01:01</span></div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">const</span> int64_t diffTime = 15 * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a>;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    int64_t realDiff = 0;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    EXPECT_TRUE(convert.dateLessSelected(dateTimeStart, dateTimeEnd, diffTime, realDiff));</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div><div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00033">convert.h:33</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00034">convert.h:34</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00035">convert.h:35</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8h_source.html#l00035">Convert::TIME_HOUR_IN_DAY</a>, <a class="el" href="convert_8h_source.html#l00034">Convert::TIME_MIN_IN_HOUR</a> и <a class="el" href="convert_8h_source.html#l00033">Convert::TIME_SEC_IN_MIN</a>.</p>
+
 </div>
 </div>
 <a id="a9ea73d0360ae9d9e37284f5ba4d2ee5f"></a>
@@ -591,6 +608,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00180">180</a></p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">string</span> dateTimeStart = <span class="stringliteral">&quot;0101010101&quot;</span>; <span class="comment">// 01.01.01 01:01</span></div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">string</span> dateTimeEnd   = <span class="stringliteral">&quot;1101010101&quot;</span>; <span class="comment">// 11.01.01 01:01</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keyword">const</span> int64_t diffTime = 10 * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a> - 5;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    int64_t realDiff = 0;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    EXPECT_FALSE(convert.dateLessSelected(dateTimeStart, dateTimeEnd, diffTime, realDiff));</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div><div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00033">convert.h:33</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00034">convert.h:34</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00035">convert.h:35</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8h_source.html#l00035">Convert::TIME_HOUR_IN_DAY</a>, <a class="el" href="convert_8h_source.html#l00034">Convert::TIME_MIN_IN_HOUR</a> и <a class="el" href="convert_8h_source.html#l00033">Convert::TIME_SEC_IN_MIN</a>.</p>
 
 </div>
 </div>
@@ -620,6 +644,13 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00191">191</a></p>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">string</span> dateTimeStart = <span class="stringliteral">&quot;1101010101&quot;</span>; <span class="comment">// 11.01.01 01:01</span></div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">string</span> dateTimeEnd   = <span class="stringliteral">&quot;0101010101&quot;</span>; <span class="comment">// 01.01.01 01:01</span></div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">const</span> int64_t diffTime = 11 * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a> * <a class="code" href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a>;</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    int64_t realDiff = 0;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    EXPECT_FALSE(convert.dateLessSelected(dateTimeStart, dateTimeEnd, diffTime, realDiff));</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div><div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a10754cc0144fae99de378646bceea691">Convert::TIME_SEC_IN_MIN</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00033">convert.h:33</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a5b5e3d50b0d6cb2a589f6a4402c034a5">Convert::TIME_MIN_IN_HOUR</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00034">convert.h:34</a></div></div>
+<div class="ttc" id="classConvert_html_ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c"><div class="ttname"><a href="classConvert.html#ac6e84925add552a23fadcd8a177975e7a98ca94d876c1facc6cd88204e1c8932c">Convert::TIME_HOUR_IN_DAY</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00035">convert.h:35</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8h_source.html#l00035">Convert::TIME_HOUR_IN_DAY</a>, <a class="el" href="convert_8h_source.html#l00034">Convert::TIME_MIN_IN_HOUR</a> и <a class="el" href="convert_8h_source.html#l00033">Convert::TIME_SEC_IN_MIN</a>.</p>
+
 </div>
 </div>
 <a id="a9b5ed37ca7dce45beb13d03530e40487"></a>
@@ -648,6 +679,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00202">202</a></p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.155;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1216;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    EXPECT_EQ(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a26f492def4f7b70caea69a80bbd37942"></a>
@@ -676,6 +709,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00210">210</a></p>
+<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;{</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1561;</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1216;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    EXPECT_EQ(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a3b6d503fea41f7786224d7f8c4d0544f"></a>
@@ -704,6 +739,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00218">218</a></p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1549;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1215;</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    EXPECT_EQ(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a2f18aa0bd6ec3f12c5cca34bed0a9545"></a>
@@ -732,6 +769,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00226">226</a></p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.15;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1215;</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    EXPECT_EQ(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aeed08b2647b1e7486a6b4650ed9a85c1"></a>
@@ -760,6 +799,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00234">234</a></p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1599;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1216;</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    EXPECT_EQ(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a4f7a9b133974dbb3bc025fee95e879f4"></a>
@@ -788,6 +829,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00242">242</a></p>
+<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;{</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1549;</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1216;</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    EXPECT_NE(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a6cae2dd51f00890f7fdbb9d7be5095dc"></a>
@@ -816,6 +859,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00250">250</a></p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;{</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1549;</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1214;</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    EXPECT_NE(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ab8c9bd058e9e30c73f4aebcf665f5617"></a>
@@ -844,6 +889,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00258">258</a></p>
+<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> testVal      = 12.1599;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">const</span> uint64_t testResult = 1215;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    EXPECT_NE(convert.doubleToUint64ArithmeticRound(testVal), testResult);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a1dfdeac1bda9f860190d68db4fe66c2b"></a>
@@ -872,6 +919,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00266">266</a></p>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    ASSERT_EQ(convert.hex2str(0xff), <span class="stringliteral">&quot;$ff&quot;</span>);</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    ASSERT_EQ(convert.hex2str(0x0f), <span class="stringliteral">&quot;$0f&quot;</span>);</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    ASSERT_EQ(convert.hex2str(255), <span class="stringliteral">&quot;$ff&quot;</span>);</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="ae59dfe767d3408a0ef2cf6a80878b2e7"></a>
@@ -899,6 +948,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00273">273</a></p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">string</span> dest = <span class="stringliteral">&quot;$aa&quot;</span>;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    convert.strLeftComplite(dest, <span class="stringliteral">&quot;$bb&quot;</span>, 3 * <a class="code" href="classConvert.html#a84ba2d66e67da2ec619245d7f4820eb0">Convert::BIOS_BYTE_LEN</a>);</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    ASSERT_EQ(dest, <span class="stringliteral">&quot;$bb$bb$aa&quot;</span>);</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    convert.strLeftComplite(dest, <span class="stringliteral">&quot;$bb&quot;</span>, 2 * <a class="code" href="classConvert.html#a84ba2d66e67da2ec619245d7f4820eb0">Convert::BIOS_BYTE_LEN</a>);</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    ASSERT_EQ(dest, <span class="stringliteral">&quot;$bb$bb$aa&quot;</span>);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    convert.strLeftComplite(dest, <span class="stringliteral">&quot;$bb&quot;</span>, 3 * <a class="code" href="classConvert.html#a84ba2d66e67da2ec619245d7f4820eb0">Convert::BIOS_BYTE_LEN</a>);</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    ASSERT_EQ(dest, <span class="stringliteral">&quot;$bb$bb$aa&quot;</span>);</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    convert.strLeftComplite(dest, <span class="stringliteral">&quot;$bb&quot;</span>, 3 * <a class="code" href="classConvert.html#a84ba2d66e67da2ec619245d7f4820eb0">Convert::BIOS_BYTE_LEN</a> + 2);</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    ASSERT_EQ(dest, <span class="stringliteral">&quot;bb$bb$bb$aa&quot;</span>);</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div><div class="ttc" id="classConvert_html_a84ba2d66e67da2ec619245d7f4820eb0"><div class="ttname"><a href="classConvert.html#a84ba2d66e67da2ec619245d7f4820eb0">Convert::BIOS_BYTE_LEN</a></div><div class="ttdeci">static const uint8_t BIOS_BYTE_LEN</div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00107">convert.h:107</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8h_source.html#l00107">Convert::BIOS_BYTE_LEN</a>.</p>
 
 </div>
 </div>
@@ -928,12 +982,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testConvert_8h_source.html">testConvert.h</a> строка <a class="el" href="testConvert_8h_source.html#l00290">290</a></p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    ASSERT_EQ(convert.hexStrGet(<span class="stringliteral">&quot;123456789&quot;</span>, 5), <span class="stringliteral">&quot;$00$07$5b$cd$15&quot;</span>);</div><div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    ASSERT_EQ(convert.hexStrGet(<span class="stringliteral">&quot;123456789&quot;</span>, 4), <span class="stringliteral">&quot;$07$5b$cd$15&quot;</span>);</div><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    ASSERT_EQ(convert.hexStrGet(<span class="stringliteral">&quot;123456789&quot;</span>, 3), <span class="stringliteral">&quot;$07$5b$cd$15&quot;</span>);</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ASSERT_EQ(convert.hexStrGet(<span class="stringliteral">&quot;123456789&quot;</span>), <span class="stringliteral">&quot;$07$5b$cd$15&quot;</span>);</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -130,13 +107,17 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classBIOS.html#a324cf6cc38e988e342df6aeed1908e19">getStatusBIOS</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a2a92225e337092c493f395582ee12b4b">getTaxSystems</a>(uint8_t &amp;taxes)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#a688323e71bc05876290c7cc5a5041136">initConnection</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#ac2f5be6f8fde04a0eee16f2c349ef644">is_email_valid</a>(string)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#aa138a377a9af190df42bbc674886d46c">ip</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#ac2f5be6f8fde04a0eee16f2c349ef644">is_email_valid</a>(string)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a88ee9b8711821309b39a71047c03a64c">isConnected</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#a204f07296f285611e8b9d915089957da">isConnectedGet</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a3b45144f8533af7c25c11619d4dbf5e6">leap_valid</a>(int, int, int)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#aba245b4717a9765973d96b5c1500e60f">MAX_PAY_TYPE_NAME_LEN</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#ab63075fc5dde5eddbf12333326bbaafe">MAX_PAY_TYPES</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#ac2f06e17a23d7f7962edb4a34e588032">mutex_get</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a0cd06b6d8bce7bc2b7af4be969bd8298">PAY_TYPE_NONE</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#ad53bff2c93b1ec627a54e14a8904d97b">mutex_bios</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#ac2f06e17a23d7f7962edb4a34e588032">mutex_get</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a0cd06b6d8bce7bc2b7af4be969bd8298">PAY_TYPE_NONE</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a449247723e9a6439c1a48e375b4469cb">port</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#ae43916e58bf9835b0eee250f07aad61e">printBIOSTechReport</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a29dbbe050672c8b21cc681e89d6ce5ae">printFnDocs</a>(int numberOfDoc)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#aaf0f3c5928ce0fa871a4ed1f40c3010d">printLastFiscalReport</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
@@ -161,21 +142,22 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a015be1fe6f8416f396a1162e1ceaa132">STATE_DOC_DOC_IS_PRE_RESULT_1</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classBIOS.html#aa7931ed816fd003a427a10748fd3ee56">STATE_DOC_DOC_IS_PRE_RESULT_2</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#aa9d0791e33947b6a12f3b72107ae6d19">STATE_DOC_NEED_CLOSE</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#af89cb3f3654af30a0dab255d74ffb048">strFromErrCode</a>(int errorCode)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a680c60793a59d3d389a18f187bfb7992">techZeroing</a>(string zavNum=&quot;0497000001    &quot;)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#abcf617ae7ac77f6a277b5ad61c594266">TYPE_DOC_CHECK_CONSUMPTION</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a6db79dcc4324f62611576880dd040d0b">TYPE_DOC_CHECK_CONSUMPTION_RET</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#a0a70ca1cdc234e5ad42f4ad1947a7267">TYPE_DOC_CHECK_SALE</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a12a64009201291c9249af24f0ded204f">TYPE_DOC_CHECK_SALE_RET</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#ada79562302bb2cf84c63d445608c7961">TYPE_DOC_DOC_IS_CLOSED</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a0ecdb80a0c5fa1de81f752462eff9835">TYPE_DOC_INSERTION</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#a7019e290d960fc60f17b9821c631953e">TYPE_DOC_RESERVED</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a11bd9a8c1a4da1afca509f2ee714c1f7">TYPE_DOC_SERVICE_DOC</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classBIOS.html#ac4c5b6b74bf055559eba056d03001648">~BIOS</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a416d06249e47adcc9bd566e7afe46ebb">statusBios</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#af89cb3f3654af30a0dab255d74ffb048">strFromErrCode</a>(int errorCode)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a680c60793a59d3d389a18f187bfb7992">techZeroing</a>(string zavNum=&quot;0497000001    &quot;)</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#abcf617ae7ac77f6a277b5ad61c594266">TYPE_DOC_CHECK_CONSUMPTION</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a6db79dcc4324f62611576880dd040d0b">TYPE_DOC_CHECK_CONSUMPTION_RET</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a0a70ca1cdc234e5ad42f4ad1947a7267">TYPE_DOC_CHECK_SALE</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a12a64009201291c9249af24f0ded204f">TYPE_DOC_CHECK_SALE_RET</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#ada79562302bb2cf84c63d445608c7961">TYPE_DOC_DOC_IS_CLOSED</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a0ecdb80a0c5fa1de81f752462eff9835">TYPE_DOC_INSERTION</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#a7019e290d960fc60f17b9821c631953e">TYPE_DOC_RESERVED</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classBIOS.html#a11bd9a8c1a4da1afca509f2ee714c1f7">TYPE_DOC_SERVICE_DOC</a></td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBIOS.html#ac4c5b6b74bf055559eba056d03001648">~BIOS</a>()</td><td class="entry"><a class="el" href="classBIOS.html">BIOS</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

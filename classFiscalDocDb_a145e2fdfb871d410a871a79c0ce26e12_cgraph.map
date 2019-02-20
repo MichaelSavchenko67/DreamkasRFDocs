@@ -1,0 +1,6 @@
+<map id="FiscalDocDb::instance" name="FiscalDocDb::instance">
+<area shape="rect" id="node1" title="instance Получить указатель на экземпляр" alt="" coords="5,13,160,39"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#ace50f83efee9023d35a697c913ead224" title=" " alt="" coords="208,13,391,39"/>
+<area shape="rect" id="node3" href="$classFiscalDocDb.html#ae385187f0caf76ce571b0b2547a4b389" title="createTable Создание таблицы, если ее нет" alt="" coords="439,13,613,39"/>
+<area shape="rect" id="node4" href="$classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83" title="makeRequestNotSave выполнить запрос без сохранения результата (не SELECT запрос)" alt="" coords="661,5,848,47"/>
+</map>

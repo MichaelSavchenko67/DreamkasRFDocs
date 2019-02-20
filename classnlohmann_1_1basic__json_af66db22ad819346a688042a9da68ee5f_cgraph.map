@@ -1,4 +1,8 @@
 <map id="nlohmann::basic_json::to_ubjson" name="nlohmann::basic_json::to_ubjson">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,153,47"/>
-<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060" title=" " alt="" coords="201,5,361,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,43,153,84"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060" title=" " alt="" coords="201,43,361,84"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1binary__writer.html#a0ea6745f944c0c61672146886b4ee90f" title=" " alt="" coords="409,71,588,127"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1binary__writer.html#a4c129249a5aee8e4ec8add6c6184e4f7" title="determine the type prefix of container values" alt="" coords="419,5,579,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1binary__writer.html#a6837b20574152f7f645d0f6cd9fafdeb" title=" " alt="" coords="636,9,839,51"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1binary__writer.html#a62cfd50a511371e718f37ad7bb29ae9d" title=" " alt="" coords="657,79,817,120"/>
 </map>

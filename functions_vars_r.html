@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -85,12 +62,25 @@ $(function() {
 : <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT.html#af1818055f09ea6cc29068fc02a247fc0">BIOS::RUS::FISCAL_RESULT</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT__1__1.html#acb1308844ab1ffc7b322d25938f75785">BIOS::RUS::FISCAL_RESULT_1_1</a>
 </li>
+<li>read_buf
+: <a class="el" href="classFISGO__TEST__API.html#a152c6dbb832d0f717d4bc0b72e60ea36">FISGO_TEST_API</a>
+</li>
 <li>readable_model
 : <a class="el" href="structJSON_1_1JSON__REGISTER_1_1REQUEST.html#a37dc7f686961e819b598493a9fd558f2">JSON::JSON_REGISTER::REQUEST</a>
+</li>
+<li>readAnswerRc
+: <a class="el" href="classScalePos2.html#a87d53b91e0fe741a716330d4f400b2a9">ScalePos2</a>
 </li>
 <li>realAddress
 : <a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html#ab41e1d391b9ab316b1d2c372cdc6d719">JSON::JSON_OFD_REGISTER</a>
 , <a class="el" href="structJSONKKTRegInfoStr.html#a6fbb014830b114911a4cc4896eeb18a6">JSONKKTRegInfoStr</a>
+</li>
+<li>realization_total
+: <a class="el" href="structCounters_1_1COUNTERS.html#ad8160259441dbe18f3a8467c1f3d0a29">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#a8dcdc348c19abdeb5d47d8030599a7f4">Counters::COUNTERS_0</a>
+</li>
+<li>realization_total_abs
+: <a class="el" href="structCounters_1_1COUNTERS.html#ad5d16eb46a8e0173f52766db24e26151">Counters::COUNTERS</a>
 </li>
 <li>reason
 : <a class="el" href="structHttpsExchange_1_1EX__REG__RESULT.html#a53dadcbb9a93fddfc7bef52cc85a427c">HttpsExchange::EX_REG_RESULT</a>
@@ -129,6 +119,9 @@ $(function() {
 <li>RECEIPT_NUM
 : <a class="el" href="classReceipt__new.html#ac7d863a864d166fba3258a824821e48b">Receipt_new</a>
 </li>
+<li>receiptData
+: <a class="el" href="classHttpsExchange.html#a3ec89127d43dde48088d75f215d934f9">HttpsExchange</a>
+</li>
 <li>receipts
 : <a class="el" href="structJSON_1_1JSON__COUNTERS__REPORT_1_1REQUEST.html#af9a873568fe36e59c1b71185a0fa9450">JSON::JSON_COUNTERS_REPORT::REQUEST</a>
 </li>
@@ -152,7 +145,8 @@ $(function() {
 : <a class="el" href="classReceipt__new.html#a8b1e20bb6b83737e636f0f44384230a2">Receipt_new</a>
 </li>
 <li>reciept_num
-: <a class="el" href="structReceipt_1_1Fiscal__data.html#abe2cff5e12ee878c59ac42dff5fdaa44">Receipt::Fiscal_data</a>
+: <a class="el" href="classBIOS_1_1RUS.html#a58c5f0b4719209f8e96c89659ea8e3d1">BIOS::RUS</a>
+, <a class="el" href="structReceipt_1_1Fiscal__data.html#abe2cff5e12ee878c59ac42dff5fdaa44">Receipt::Fiscal_data</a>
 , <a class="el" href="classReceipt__new.html#af6264c41c1a9c6bfe2052d49fe34a149">Receipt_new</a>
 </li>
 <li>recPayTypes
@@ -161,6 +155,13 @@ $(function() {
 </li>
 <li>recSenderEmail
 : <a class="el" href="structConfig.html#ae2f5e56ab0143281307bd289e92c3696">Config</a>
+</li>
+<li>ref_stack
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a82a0e49479660b9903597e1ef55c6601">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aa7526e7ae7be7f63803a23fd8cf36e5d">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+</li>
+<li>reference_tokens
+: <a class="el" href="classnlohmann_1_1json__pointer.html#a07a990a6838de4f38ee9d881e7b9fd61">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>REFUND
 : <a class="el" href="classJSON.html#a79b4d5afdd9a1bce9057eb6d54e179e4">JSON</a>
@@ -173,6 +174,12 @@ $(function() {
 </li>
 <li>REG_DATA_CHANGE
 : <a class="el" href="classBIOS_1_1RUS.html#a88418bf22afbb20bb790a30b90d1ea74">BIOS::RUS</a>
+</li>
+<li>reg_data_change
+: <a class="el" href="classBIOS_1_1RUS.html#a120bb77c1ffeda44192530890f77ad50">BIOS::RUS</a>
+</li>
+<li>reg_docs_complite
+: <a class="el" href="classBIOS_1_1RUS.html#a9b21b8dde56ea040413a8815282e82fd">BIOS::RUS</a>
 </li>
 <li>REG_FINISH
 : <a class="el" href="classBIOS_1_1RUS.html#a50ec8ce23a88e8a1782059fa3ad7e216">BIOS::RUS</a>
@@ -249,6 +256,9 @@ $(function() {
 <li>REG_STEP_YA_CHOOSE_CAP
 : <a class="el" href="classMenu.html#a92dcb180afe39b51997211b2aede1bba">Menu</a>
 </li>
+<li>REG_UNAVAILABLE
+: <a class="el" href="classBIOS_1_1RUS.html#a5d22b76a9cfd73957422d510931ed413">BIOS::RUS</a>
+</li>
 <li>regFromHubMutex
 : <a class="el" href="classMenu.html#aaa7c9370b26b6e772715cd00191e3c48">Menu</a>
 </li>
@@ -279,6 +289,9 @@ $(function() {
 <li>registry_number
 : <a class="el" href="structJSON_1_1JSON__KKT__REGISTRATION__INFO.html#aa6e481477475f6221fcaf64a40c2b399">JSON::JSON_KKT_REGISTRATION_INFO</a>
 , <a class="el" href="structJSON_1_1JSON__OFD__REGISTRATION__STATUS.html#a7424be0dfa5dd22bf904b80641fec18d">JSON::JSON_OFD_REGISTRATION_STATUS</a>
+</li>
+<li>registryNumber
+: <a class="el" href="classHttpsExchange.html#aeea3909a5e848f853eb9299532f7c817">HttpsExchange</a>
 </li>
 <li>regNumber
 : <a class="el" href="structJSONKKTRegInfoStr.html#a43c3dfde4a912f4f3932c7fd363d9ed6">JSONKKTRegInfoStr</a>
@@ -312,8 +325,15 @@ $(function() {
 <li>REM_ID
 : <a class="el" href="classReceipt__new.html#a40c285562b91bdd3f62f6ea4263327af">Receipt_new</a>
 </li>
+<li>rem_json
+: <a class="el" href="classFISGO__TEST__API.html#a8b157376eb870dc67a519f2097c001fb">FISGO_TEST_API</a>
+</li>
 <li>remId
 : <a class="el" href="structDiscount.html#af971781c273536f6811aa615cb2172fc">Discount</a>
+</li>
+<li>report_cnt
+: <a class="el" href="structCounters_1_1COUNTERS.html#af9140f0696503895669e9c9837e28cb6">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#abbedc1fad61bc3f0bc0ca86db17aee94">Counters::COUNTERS_0</a>
 </li>
 <li>req
 : <a class="el" href="structBIOS_1_1BEL_1_1OPEN__DOC.html#a9076ae0594e35509c222b70636810d61">BIOS::BEL::OPEN_DOC</a>
@@ -327,6 +347,9 @@ $(function() {
 </li>
 <li>req_name_table
 : <a class="el" href="classRequisites.html#ae542124bbd08c9c102d8ff866a661c1a">Requisites</a>
+</li>
+<li>req_to_print
+: <a class="el" href="classPrinter.html#a9001e0a0b2d0c3f42eab8ddc884d3490">Printer</a>
 </li>
 <li>request
 : <a class="el" href="classHttpsExchangeTest_1_1MockHttpsExchange.html#a16a234fa9bd1e86cc0fcc824330a3884">HttpsExchangeTest::MockHttpsExchange</a>
@@ -360,8 +383,16 @@ $(function() {
 <li>res_exh_en
 : <a class="el" href="classBIOS_1_1RUS.html#a8feb512d32dbc384853bf6514de46e9c">BIOS::RUS</a>
 </li>
+<li>reserve
+: <a class="el" href="structCounters_1_1COUNTERS.html#a7c0a8fa147e6336141ff557b3eec08b6">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#ad7744bef6f76657167a48c229c4cf881">Counters::COUNTERS_0</a>
+</li>
 <li>RESERVE_
 : <a class="el" href="classFISGO__TEST__API.html#af546b93d1c3d3bc2837d8d637ad60fdb">FISGO_TEST_API</a>
+</li>
+<li>reserve_cnt
+: <a class="el" href="structCounters_1_1COUNTERS.html#a58284fcd62c5a3645f3621e9133d0121">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#af3e67e8dcfd583d449e420c66c97b28e">Counters::COUNTERS_0</a>
 </li>
 <li>RESERVE_CNT_
 : <a class="el" href="classFISGO__TEST__API.html#a10674d295fe8d4eafd4efa7b60d54fa5">FISGO_TEST_API</a>
@@ -376,7 +407,8 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#a87c54d107b4a410e5e1b2824684ca9af">BIOS::RUS</a>
 </li>
 <li>RESOURCES_EXHAUSTION
-: <a class="el" href="structReceipt_1_1Fiscal__data.html#a6870535660a0e6dd91e7b5a482188bcb">Receipt::Fiscal_data</a>
+: <a class="el" href="classBIOS_1_1RUS.html#a3bcfe35ac0a81d9df76b06845a5ccb32">BIOS::RUS</a>
+, <a class="el" href="structReceipt_1_1Fiscal__data.html#a6870535660a0e6dd91e7b5a482188bcb">Receipt::Fiscal_data</a>
 </li>
 <li>response
 : <a class="el" href="structJSON_1_1JSON__CASH__INFO__REPORT.html#abe497fc6e67d992459a54103d81680ca">JSON::JSON_CASH_INFO_REPORT</a>
@@ -422,6 +454,14 @@ $(function() {
 <li>RET_CNTS_
 : <a class="el" href="classFISGO__TEST__API.html#af462b040ebc7ca7a67d8a1e16419947a">FISGO_TEST_API</a>
 </li>
+<li>ret_consumption_card
+: <a class="el" href="structCounters_1_1COUNTERS.html#a2c38e0690de4d2a105b615d8edf23deb">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#a178bd91eae580c157985f04038cc0e3a">Counters::COUNTERS_0</a>
+</li>
+<li>ret_consumption_card_cnt
+: <a class="el" href="structCounters_1_1COUNTERS.html#a8cd51af8bb9cf7b31f3eb8dbd4886554">Counters::COUNTERS</a>
+, <a class="el" href="structCounters_1_1COUNTERS__0.html#ab387000f83f1d7869cd694711abf383d">Counters::COUNTERS_0</a>
+</li>
 <li>RET_PURCHASE
 : <a class="el" href="classPrinter.html#a3f49f6be0fbefed795fd527c090ed804">Printer</a>
 </li>
@@ -462,6 +502,13 @@ $(function() {
 : <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT.html#aec7b8abde40c755d4560502c679a9670">BIOS::RUS::FISCAL_RESULT</a>
 , <a class="el" href="structBIOS_1_1RUS_1_1FISCAL__RESULT__1__1.html#ad9eae852b8c64ac80eb9a790e07c6bc8">BIOS::RUS::FISCAL_RESULT_1_1</a>
 </li>
+<li>root
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a7b12037ca38be3ddec09c42bd71080cc">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#aef0477277389e399d7128898841b71c0">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+</li>
+<li>root_item
+: <a class="el" href="classMenuTree.html#abaa236b3d596d94218b752c5370a2fcf">MenuTree</a>
+</li>
 <li>router
 : <a class="el" href="structConfig.html#a97c65ebd2699712eb744767ee241872d">Config</a>
 , <a class="el" href="structNet__conf.html#a194f6ff8d65a6ddf164cc6b83045c84e">Net_conf</a>
@@ -473,6 +520,9 @@ $(function() {
 <li>RRN
 : <a class="el" href="structSlip.html#a9d4ce2a40c86f3285a88ff5060450006">Slip</a>
 </li>
+<li>rule
+: <a class="el" href="classMenuItem.html#ae8dd32daa276d29b2697663aa7db129e">MenuItem</a>
+</li>
 <li>rval
 : <a class="el" href="classTestMassaK.html#a6c3c360180a94b1ef61b2dd0a81fbadd">TestMassaK</a>
 , <a class="el" href="classTestPos2.html#a0045a0fa9e42be52b0827ab845b000b4">TestPos2</a>
@@ -481,7 +531,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

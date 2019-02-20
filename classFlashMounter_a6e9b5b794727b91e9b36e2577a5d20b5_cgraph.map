@@ -1,0 +1,5 @@
+<map id="FlashMounter::eventHandler" name="FlashMounter::eventHandler">
+<area shape="rect" id="node1" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node2" href="$classFlashMounter.html#a1fdf174486adf03846c0d136b0ce94c3" title="clearAll очистить данные" alt="" coords="263,5,415,32"/>
+<area shape="rect" id="node3" href="$classFlashMounter.html#a33f4cac9ab669913d78a9e311fe6c93d" title="findDevicePath поиск подключенных устройств" alt="" coords="240,56,439,83"/>
+</map>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
 <code>#include &lt;gmock/gmock.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="scaleProtocolPos2_8h_source.html">scaleProtocolPos2.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для testScaleProtocolPos2.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testScaleProtocolPos2.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testScaleProtocolPos2_8h__incl.png" border="0" usemap="#src_2tests_2include_2testScaleProtocolPos2_8h" alt=""/></div>
 <map name="src_2tests_2include_2testScaleProtocolPos2_8h" id="src_2tests_2include_2testScaleProtocolPos2_8h">
 <area shape="rect"  title=" " alt="" coords="247,5,425,47"/>
@@ -164,6 +143,15 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00060">60</a></p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    uint8_t answer[] = {6, 2, 25, 232, 0, 28, 0, 21, 253, 152, 58, 40, 0, 224, 46, 112, 23, 0, 0, 0, 0, 2, 5, 0, 0, 2, 19, 0, 48};</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    scalePos2-&gt;setAnswer(answer, <span class="keyword">sizeof</span>(answer));</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ASSERT_TRUE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">ScalePos2::PRECISION_1_1</a>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251">ScalePos2::SUCCESS</a>);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    answer[<a class="code" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1">ScalePos2::DATA_POWER_OF_TEN_OFFSET</a>] = 254;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    scalePos2-&gt;setAnswer(answer, <span class="keyword">sizeof</span>(answer));</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ASSERT_TRUE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScalePos2::PRECISION_1_10</a>);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251">ScalePos2::SUCCESS</a>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    answer[<a class="code" href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1">ScalePos2::DATA_POWER_OF_TEN_OFFSET</a>] = 252;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    scalePos2-&gt;setAnswer(answer, <span class="keyword">sizeof</span>(answer));</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ASSERT_TRUE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScalePos2::PRECISION_10_1</a>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251">ScalePos2::SUCCESS</a>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div><div class="ttc" id="classScaleProtocolPos2_html_ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251"><div class="ttname"><a href="classScaleProtocolPos2.html#ad92351ebddbd1a73ffc9ac8cb46708cba3e519f734c9040419b339d616f83e251">ScaleProtocolPos2::SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00048">scaleProtocolPos2.h:48</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScaleProtocolPos2::PRECISION_1_10</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00027">scaleProtocolPos2.h:27</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">ScaleProtocolPos2::PRECISION_1_1</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00028">scaleProtocolPos2.h:28</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1"><div class="ttname"><a href="classScaleProtocolPos2.html#a4f9106bea804cfdae613158283af9458ac39ff5ee01e7e82820b8b51b1f045fd1">ScaleProtocolPos2::DATA_POWER_OF_TEN_OFFSET</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00040">scaleProtocolPos2.h:40</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScaleProtocolPos2::PRECISION_10_1</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00029">scaleProtocolPos2.h:29</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocolPos2_8h_source.html#l00040">ScaleProtocolPos2::DATA_POWER_OF_TEN_OFFSET</a>, <a class="el" href="scaleProtocolPos2_8h_source.html#l00029">ScaleProtocolPos2::PRECISION_10_1</a>, <a class="el" href="scaleProtocolPos2_8h_source.html#l00028">ScaleProtocolPos2::PRECISION_1_1</a>, <a class="el" href="scaleProtocolPos2_8h_source.html#l00027">ScaleProtocolPos2::PRECISION_1_10</a> и <a class="el" href="scaleProtocolPos2_8h_source.html#l00048">ScaleProtocolPos2::SUCCESS</a>.</p>
+
 </div>
 </div>
 <a id="a13f6a91b3c14425010ef4a6450f5e9a8"></a>
@@ -191,6 +179,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00085">85</a></p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">false</span>);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ASSERT_FALSE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58">ScalePos2::ERRORS::PORT_NOT_OPENED</a>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errMsg, <span class="stringliteral">&quot;Error open port&quot;</span>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, -1);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div><div class="ttc" id="classScaleProtocolInterface_html_a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58"><div class="ttname"><a href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58">ScaleProtocolInterface::ERRORS::PORT_NOT_OPENED</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa967282e8a7bf8075bf2081afa5c84e58">ScaleProtocolInterface::PORT_NOT_OPENED</a>.</p>
 
 </div>
 </div>
@@ -220,6 +213,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00099">99</a></p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">false</span>);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    ASSERT_FALSE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456">ScalePos2::ERRORS::PACK_NOT_SENT</a>);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errMsg, <span class="stringliteral">&quot;Error write packet&quot;</span>);</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, -1);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div><div class="ttc" id="classScaleProtocolInterface_html_a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456"><div class="ttname"><a href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456">ScaleProtocolInterface::ERRORS::PACK_NOT_SENT</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fab47715e0015d4b83a67eb65e5a507456">ScaleProtocolInterface::PACK_NOT_SENT</a>.</p>
+
 </div>
 </div>
 <a id="aeb79ba30dc7af8a5682a3c9a53148f57"></a>
@@ -247,6 +245,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00113">113</a></p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">false</span>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    ASSERT_FALSE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449">ScalePos2::ERRORS::ANSW_NOT_READ</a>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errMsg, <span class="stringliteral">&quot;Error read answer&quot;</span>);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, -1);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div><div class="ttc" id="classScaleProtocolInterface_html_a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449"><div class="ttname"><a href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449">ScaleProtocolInterface::ERRORS::ANSW_NOT_READ</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa06c1a162ea55c0d32fd0f09c44cc7449">ScaleProtocolInterface::ANSW_NOT_READ</a>.</p>
 
 </div>
 </div>
@@ -276,6 +279,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00127">127</a></p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">false</span>);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    ASSERT_FALSE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errCode, (uint16_t)<a class="code" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c">ScalePos2::ERRORS::PORT_NOT_CLOSED</a>);</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleErr.errMsg, <span class="stringliteral">&quot;Error close port&quot;</span>);</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, -1);</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div><div class="ttc" id="classScaleProtocolInterface_html_a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c"><div class="ttname"><a href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c">ScaleProtocolInterface::ERRORS::PORT_NOT_CLOSED</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="classScaleProtocolInterface.html#a817ba8bf027929da0435a73516abfa8fa0b24e5840d24f5f5e6b417d01c227c5c">ScaleProtocolInterface::PORT_NOT_CLOSED</a>.</p>
+
 </div>
 </div>
 <a id="a055f531170baa6ded2ded4f823b293ed"></a>
@@ -304,6 +312,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00141">141</a></p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    ASSERT_TRUE(scalePos2);</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    scalePos2-&gt;setOpenPortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    scalePos2-&gt;setWriteCmdRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    scalePos2-&gt;setReadAnswerRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    scalePos2-&gt;setClosePortRc(<span class="keyword">true</span>);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    uint8_t answer[] = {};</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    scalePos2-&gt;setAnswer(answer, <span class="keyword">sizeof</span>(answer));</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    ASSERT_FALSE(scalePos2-&gt;cmdGetScaleParam());</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    EXPECT_EQ(scalePos2-&gt;scaleParam.precision, -1);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aaddaf7a60ba391074409466106112645"></a>
@@ -331,6 +341,13 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00155">155</a></p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">const</span> int32_t WEIGHT = 12345;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    scalePos2-&gt;scaleParam.precision = <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScalePos2::PRECISION_10_1</a>;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    EXPECT_EQ(scalePos2-&gt;convertToGrams(WEIGHT), WEIGHT / 10);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    scalePos2-&gt;scaleParam.precision = <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">ScalePos2::PRECISION_1_1</a>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    EXPECT_EQ(scalePos2-&gt;convertToGrams(WEIGHT), WEIGHT);</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    scalePos2-&gt;scaleParam.precision = <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScalePos2::PRECISION_1_10</a>;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    EXPECT_EQ(scalePos2-&gt;convertToGrams(WEIGHT), WEIGHT * 10);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div><div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScaleProtocolPos2::PRECISION_1_10</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00027">scaleProtocolPos2.h:27</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a74c77c50267a293b0e7c1763992842ca">ScaleProtocolPos2::PRECISION_1_1</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00028">scaleProtocolPos2.h:28</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScaleProtocolPos2::PRECISION_10_1</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00029">scaleProtocolPos2.h:29</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocolPos2_8h_source.html#l00029">ScaleProtocolPos2::PRECISION_10_1</a>, <a class="el" href="scaleProtocolPos2_8h_source.html#l00028">ScaleProtocolPos2::PRECISION_1_1</a> и <a class="el" href="scaleProtocolPos2_8h_source.html#l00027">ScaleProtocolPos2::PRECISION_1_10</a>.</p>
 
 </div>
 </div>
@@ -360,12 +377,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScaleProtocolPos2_8h_source.html">testScaleProtocolPos2.h</a> строка <a class="el" href="testScaleProtocolPos2_8h_source.html#l00167">167</a></p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">const</span> int32_t WEIGHT = 12345;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    scalePos2-&gt;scaleParam.precision = rand() + <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScalePos2::PRECISION_10_1</a> + 1;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    EXPECT_EQ(scalePos2-&gt;convertToGrams(WEIGHT), WEIGHT);</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    scalePos2-&gt;scaleParam.precision = rand() + <a class="code" href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScalePos2::PRECISION_1_10</a> - 1;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    EXPECT_EQ(scalePos2-&gt;convertToGrams(WEIGHT), WEIGHT);</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div><div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922ae409ff1be6ff1a0dd36ea1cda43e1a75">ScaleProtocolPos2::PRECISION_1_10</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00027">scaleProtocolPos2.h:27</a></div></div>
+<div class="ttc" id="classScaleProtocolPos2_html_a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb"><div class="ttname"><a href="classScaleProtocolPos2.html#a8a0055ad573e43d41286185f77cd5922a826c33e5a0886f4b7845db5cbe9520fb">ScaleProtocolPos2::PRECISION_10_1</a></div><div class="ttdef"><b>Definition:</b> <a href="scaleProtocolPos2_8h_source.html#l00029">scaleProtocolPos2.h:29</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="scaleProtocolPos2_8h_source.html#l00029">ScaleProtocolPos2::PRECISION_10_1</a> и <a class="el" href="scaleProtocolPos2_8h_source.html#l00027">ScaleProtocolPos2::PRECISION_1_10</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

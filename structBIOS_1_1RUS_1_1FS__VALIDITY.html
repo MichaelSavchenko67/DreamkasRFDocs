@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1RUS.html">RUS</a></li><li class="navelem"><a class="el" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html">FS_VALIDITY</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса BIOS::RUS::FS_VALIDITY:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса BIOS::RUS::FS_VALIDITY:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structBIOS_1_1RUS_1_1FS__VALIDITY__coll__graph.png" border="0" usemap="#BIOS_1_1RUS_1_1FS__VALIDITY_coll__map" alt="Collaboration graph"/></div>
 <map name="BIOS_1_1RUS_1_1FS__VALIDITY_coll__map" id="BIOS_1_1RUS_1_1FS__VALIDITY_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,188,112"/>
@@ -100,7 +79,10 @@ $(function() {
 <tr class="memitem:a4794b1f29f0a79acf3991604f4e6ddb4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a4794b1f29f0a79acf3991604f4e6ddb4">time_left</a></td></tr>
 <tr class="separator:a4794b1f29f0a79acf3991604f4e6ddb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00576">576</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a35f27acab32d795552a6256a23a39e47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35f27acab32d795552a6256a23a39e47">&#9670;&nbsp;</a></span>FS_VALIDITY()</h2>
 
@@ -116,6 +98,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00072">72</a></p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    memset( <a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">date</a>, 0x00, <span class="keyword">sizeof</span>(<a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">date</a>) );</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a4794b1f29f0a79acf3991604f4e6ddb4">time_left</a>                      = 0;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="ttc" id="structBIOS_1_1RUS_1_1FS__VALIDITY_html_a4794b1f29f0a79acf3991604f4e6ddb4"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a4794b1f29f0a79acf3991604f4e6ddb4">BIOS::RUS::FS_VALIDITY::time_left</a></div><div class="ttdeci">uint16_t time_left</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00581">FisGo_BIOS.h:581</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1FS__VALIDITY_html_a5130c0585ef12ab9c59874a9699747a0"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">BIOS::RUS::FS_VALIDITY::date</a></div><div class="ttdeci">unsigned char date[5]</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00580">FisGo_BIOS.h:580</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab02b31521aa577476e9bb48d49e36ae9"></a>
@@ -133,6 +119,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00078">78</a></p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    memset( <a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">date</a>, 0x00, <span class="keyword">sizeof</span>(<a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">date</a>) );</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a4794b1f29f0a79acf3991604f4e6ddb4">time_left</a>                      = 0;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div><div class="ttc" id="structBIOS_1_1RUS_1_1FS__VALIDITY_html_a4794b1f29f0a79acf3991604f4e6ddb4"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a4794b1f29f0a79acf3991604f4e6ddb4">BIOS::RUS::FS_VALIDITY::time_left</a></div><div class="ttdeci">uint16_t time_left</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00581">FisGo_BIOS.h:581</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1FS__VALIDITY_html_a5130c0585ef12ab9c59874a9699747a0"><div class="ttname"><a href="structBIOS_1_1RUS_1_1FS__VALIDITY.html#a5130c0585ef12ab9c59874a9699747a0">BIOS::RUS::FS_VALIDITY::date</a></div><div class="ttdeci">unsigned char date[5]</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00580">FisGo_BIOS.h:580</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -148,6 +138,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00580">580</a></p>
+
 </div>
 </div>
 <a id="a4794b1f29f0a79acf3991604f4e6ddb4"></a>
@@ -162,16 +154,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00581">581</a></p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a></li>
-<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></li>
+<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

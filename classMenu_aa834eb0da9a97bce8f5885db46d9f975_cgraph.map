@@ -1,4 +1,5 @@
 <map id="Menu::config_display" name="Menu::config_display">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$classJSON.html#a1040ea595ac320f48dc22eb509abe06e" title=" " alt="" coords="199,5,352,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,151,69"/>
+<area shape="rect" id="node2" href="$classMenu.html#a740d2d60a604deb5d102a559a36a18a3" title=" " alt="" coords="199,5,369,47"/>
+<area shape="rect" id="node3" href="$classJSON.html#a1040ea595ac320f48dc22eb509abe06e" title=" " alt="" coords="207,71,361,98"/>
 </map>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html">from_json_fn</a></li>  </ul>
@@ -69,6 +46,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
 <a href="structnlohmann_1_1detail_1_1from__json__fn-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Структура nlohmann::detail::from_json_fn</div>  </div>
@@ -76,22 +54,146 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::from_json_fn:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::from_json_fn:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structnlohmann_1_1detail_1_1from__json__fn__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1from__json__fn_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1from__json__fn_coll__map" id="nlohmann_1_1detail_1_1from__json__fn_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,156,97"/>
+<area shape="rect"  title=" " alt="" coords="5,5,156,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:a48e82ad9d244fdf249caa970a253e214"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
-<tr class="memitem:a48e82ad9d244fdf249caa970a253e214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a48e82ad9d244fdf249caa970a253e214">operator()</a> (const BasicJsonType &amp;j, T &amp;val) const noexcept(noexcept(std::declval&lt; <a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html">from_json_fn</a> &gt;().call(j, val, <a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 1 &gt; {})))</td></tr>
+<tr class="memitem:a48e82ad9d244fdf249caa970a253e214"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a48e82ad9d244fdf249caa970a253e214">operator()</a> (const BasicJsonType &amp;j, T &amp;val) const noexcept(noexcept(std::declval&lt; <a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html">from_json_fn</a> &gt;().<a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a2d6108c9d0f54e97134203984ed8d3a3">call</a>(j, val, <a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 1 &gt; {})))</td></tr>
 <tr class="separator:a48e82ad9d244fdf249caa970a253e214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a2d6108c9d0f54e97134203984ed8d3a3"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
+<tr class="memitem:a2d6108c9d0f54e97134203984ed8d3a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a2d6108c9d0f54e97134203984ed8d3a3">call</a> (const BasicJsonType &amp;j, T &amp;val, <a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 1 &gt;) const noexcept(noexcept(<a class="el" href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603">from_json</a>(j, val))) -&gt; decltype(<a class="el" href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603">from_json</a>(j, val), void())</td></tr>
+<tr class="separator:a2d6108c9d0f54e97134203984ed8d3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4949ab091885f0958ccff41dc5fa6725"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
+<tr class="memitem:a4949ab091885f0958ccff41dc5fa6725"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a4949ab091885f0958ccff41dc5fa6725">call</a> (const BasicJsonType &amp;, T &amp;, <a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 0 &gt;) const noexcept</td></tr>
+<tr class="separator:a4949ab091885f0958ccff41dc5fa6725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Методы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01300">1300</a></p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a2d6108c9d0f54e97134203984ed8d3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6108c9d0f54e97134203984ed8d3a3">&#9670;&nbsp;</a></span>call() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto nlohmann::detail::from_json_fn::call </td>
+          <td>(</td>
+          <td class="paramtype">const BasicJsonType &amp;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 1 &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const -&gt; decltype(<a class="el" href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603">from_json</a>(j, val), void())
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01304">1304</a></p>
+<div class="fragment"><div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    {</div><div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603">from_json</a>(j, val);</div><div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    }</div><div class="ttc" id="namespacenlohmann_1_1detail_html_a1f0395aad0fe853a4539288749d3a603"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603">nlohmann::detail::from_json</a></div><div class="ttdeci">void from_json(const BasicJsonType &amp;j, typename std::nullptr_t &amp;n)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00979">jsonParser.h:979</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00979">nlohmann::detail::from_json()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structnlohmann_1_1detail_1_1from__json__fn_a2d6108c9d0f54e97134203984ed8d3a3_cgraph.png" border="0" usemap="#structnlohmann_1_1detail_1_1from__json__fn_a2d6108c9d0f54e97134203984ed8d3a3_cgraph" alt=""/></div>
+<map name="structnlohmann_1_1detail_1_1from__json__fn_a2d6108c9d0f54e97134203984ed8d3a3_cgraph" id="structnlohmann_1_1detail_1_1from__json__fn_a2d6108c9d0f54e97134203984ed8d3a3_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,39,156,80"/>
+<area shape="rect"  href="namespacenlohmann_1_1detail.html#a1f0395aad0fe853a4539288749d3a603" title=" " alt="" coords="204,46,387,73"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="435,39,585,80"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="633,5,815,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="649,71,799,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4949ab091885f0958ccff41dc5fa6725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4949ab091885f0958ccff41dc5fa6725">&#9670;&nbsp;</a></span>call() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nlohmann::detail::from_json_fn::call </td>
+          <td>(</td>
+          <td class="paramtype">const BasicJsonType &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnlohmann_1_1detail_1_1priority__tag.html">priority_tag</a>&lt; 0 &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01312">1312</a></p>
+<div class="fragment"><div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    {</div><div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        static_assert(<span class="keyword">sizeof</span>(BasicJsonType) == 0,</div><div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;                      <span class="stringliteral">&quot;could not find from_json() method in T&#39;s namespace&quot;</span>);</div><div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div><div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        <span class="comment">// MSVC does not show a stacktrace for the above assert</span></div><div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        <span class="keyword">using</span> decayed = uncvref_t&lt;T&gt;;</div><div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        static_assert(<span class="keyword">sizeof</span>(<span class="keyword">typename</span> decayed::force_msvc_stacktrace) == 0,</div><div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                      <span class="stringliteral">&quot;forcing MSVC stacktrace to show which T we&#39;re talking about.&quot;</span>);</div><div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;    }</div></div><!-- fragment -->
+</div>
+</div>
 <a id="a48e82ad9d244fdf249caa970a253e214"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48e82ad9d244fdf249caa970a253e214">&#9670;&nbsp;</a></span>operator()()</h2>
 
@@ -128,6 +230,9 @@ template&lt;typename BasicJsonType , typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l01326">1326</a></p>
+<div class="fragment"><div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;                                                                              {})))</div><div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    {</div><div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structnlohmann_1_1detail_1_1from__json__fn.html#a2d6108c9d0f54e97134203984ed8d3a3">call</a>(j, val, priority_tag&lt;1&gt; {});</div><div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;    }</div><div class="ttc" id="structnlohmann_1_1detail_1_1from__json__fn_html_a2d6108c9d0f54e97134203984ed8d3a3"><div class="ttname"><a href="structnlohmann_1_1detail_1_1from__json__fn.html#a2d6108c9d0f54e97134203984ed8d3a3">nlohmann::detail::from_json_fn::call</a></div><div class="ttdeci">auto call(const BasicJsonType &amp;j, T &amp;val, priority_tag&lt; 1 &gt;) const noexcept(noexcept(from_json(j, val))) -&gt; decltype(from_json(j, val), void())</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l01304">jsonParser.h:1304</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -136,7 +241,7 @@ template&lt;typename BasicJsonType , typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

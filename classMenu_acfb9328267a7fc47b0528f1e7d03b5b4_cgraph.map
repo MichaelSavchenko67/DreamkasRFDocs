@@ -1,6 +1,6 @@
 <map id="Menu::nandTest" name="Menu::nandTest">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,121,83"/>
-<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="207,5,294,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="202,56,299,83"/>
-<area shape="rect" id="node4" href="$classFlashMounter.html#a882dacdff7441bcfb9ffbfd08787207b" title="testFlash тестирование флешки" alt="" coords="169,107,332,133"/>
+<area shape="rect" id="node2" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="202,5,299,32"/>
+<area shape="rect" id="node3" href="$classFlashMounter.html#a882dacdff7441bcfb9ffbfd08787207b" title="testFlash тестирование флешки" alt="" coords="169,56,332,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="207,107,294,133"/>
 </map>

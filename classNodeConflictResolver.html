@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,40 +29,23 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
 <a href="classNodeConflictResolver-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс NodeConflictResolver</div>  </div>
@@ -73,12 +53,14 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса NodeConflictResolver:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса NodeConflictResolver:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classNodeConflictResolver__coll__graph.png" border="0" usemap="#NodeConflictResolver_coll__map" alt="Collaboration graph"/></div>
 <map name="NodeConflictResolver_coll__map" id="NodeConflictResolver_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,156,127"/>
+<area shape="rect"  title=" " alt="" coords="5,5,241,332"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -95,8 +77,231 @@ $(function() {
 <tr class="separator:a6ea7fc4ab55c437f6502616769c15acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8768fdd7b539635b3bdd85ca957e2ae2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a8768fdd7b539635b3bdd85ca957e2ae2">releaseInstance</a> ()</td></tr>
 <tr class="separator:a8768fdd7b539635b3bdd85ca957e2ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a96c475e2c6062087f58cfa16c4016fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">createInfoFiles</a> ()</td></tr>
+<tr class="separator:a96c475e2c6062087f58cfa16c4016fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7b1cb80d89edeb2ff6738ceac19f1e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">getVendor</a> (string tty)</td></tr>
+<tr class="separator:afa7b1cb80d89edeb2ff6738ceac19f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a322ac29a9417d52b8d11191aea376a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a">NodeConflictResolver</a> ()</td></tr>
+<tr class="separator:a4a322ac29a9417d52b8d11191aea376a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0761f31e7d743e37529a4512250d7eb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a0761f31e7d743e37529a4512250d7eb7">~NodeConflictResolver</a> ()</td></tr>
+<tr class="separator:a0761f31e7d743e37529a4512250d7eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398083dbef51204f7bd4d75a9cd9e580"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a398083dbef51204f7bd4d75a9cd9e580">NodeConflictResolver</a> (<a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> const &amp;)=delete</td></tr>
+<tr class="separator:a398083dbef51204f7bd4d75a9cd9e580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd42a2f15838f9010ae15f7af175dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#afdd42a2f15838f9010ae15f7af175dd8">operator=</a> (<a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> const &amp;)=delete</td></tr>
+<tr class="separator:afdd42a2f15838f9010ae15f7af175dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:af7d4794f17614377120b6e252cf00383"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#af7d4794f17614377120b6e252cf00383">SCALE_VEND_CONST_SHTRIH</a> = &quot;1fc9&quot;</td></tr>
+<tr class="separator:af7d4794f17614377120b6e252cf00383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4619258157af880ff9caebfcc3d7eb88"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a4619258157af880ff9caebfcc3d7eb88">SCALE_VEND_CONST_MASSAK</a> = &quot;483&quot;</td></tr>
+<tr class="separator:a4619258157af880ff9caebfcc3d7eb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e78c5219fd5810556cb58ad7fb0d75b"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a4e78c5219fd5810556cb58ad7fb0d75b">VERIFONE_VEND_CONST</a> = &quot;11ca&quot;</td></tr>
+<tr class="separator:a4e78c5219fd5810556cb58ad7fb0d75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770ddce896f829aa0f61066c53fb3ea5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a770ddce896f829aa0f61066c53fb3ea5">CUSTOMER_VEND_CONST</a> = &quot;3eb&quot;</td></tr>
+<tr class="separator:a770ddce896f829aa0f61066c53fb3ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3451995946149e28ee4685deed69d583"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">OFFSET</a> = &quot;PRODUCT=&quot;</td></tr>
+<tr class="separator:a3451995946149e28ee4685deed69d583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd6915a7c9c1288ded218f4adc5abbb"><td class="memItemLeft" align="right" valign="top">ifstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a></td></tr>
+<tr class="separator:a2bd6915a7c9c1288ded218f4adc5abbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc8063c09234dcd037aab2cfc1573b1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">_scaner</a> = &quot;&quot;</td></tr>
+<tr class="separator:aafc8063c09234dcd037aab2cfc1573b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4faee6ee6e8457127cc18914bf171227"><td class="memItemLeft" align="right" valign="top">pair&lt; string, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a></td></tr>
+<tr class="separator:a4faee6ee6e8457127cc18914bf171227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561f64ffd2b3ff2dd4fa26433e3e8ac8"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a561f64ffd2b3ff2dd4fa26433e3e8ac8">_mutex</a></td></tr>
+<tr class="separator:a561f64ffd2b3ff2dd4fa26433e3e8ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a53be6183731f62b7f76d0101bf099533"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a> = nullptr</td></tr>
+<tr class="separator:a53be6183731f62b7f76d0101bf099533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00023">23</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a4a322ac29a9417d52b8d11191aea376a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a322ac29a9417d52b8d11191aea376a">&#9670;&nbsp;</a></span>NodeConflictResolver() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeConflictResolver::NodeConflictResolver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00032">32</a></p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00012">instance()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a4a322ac29a9417d52b8d11191aea376a_icgraph.png" border="0" usemap="#classNodeConflictResolver_a4a322ac29a9417d52b8d11191aea376a_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a4a322ac29a9417d52b8d11191aea376a_icgraph" id="classNodeConflictResolver_a4a322ac29a9417d52b8d11191aea376a_icgraph">
+<area shape="rect"  title=" " alt="" coords="1231,57,1389,98"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="1032,57,1183,98"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="800,5,984,32"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,57,983,98"/>
+<area shape="rect"  href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,123,963,149"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,43,752,69"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,43,505,69"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="238,43,289,69"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,119,331,145"/>
+<area shape="rect"  href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="593,144,748,171"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,119,148,145"/>
+<area shape="rect"  href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI ÑÑÐµÐ½Ð¸Ñ Ð²ÐµÑÐ°" alt="" coords="379,144,541,171"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0761f31e7d743e37529a4512250d7eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0761f31e7d743e37529a4512250d7eb7">&#9670;&nbsp;</a></span>~NodeConflictResolver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeConflictResolver::~NodeConflictResolver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00037">37</a></p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a398083dbef51204f7bd4d75a9cd9e580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398083dbef51204f7bd4d75a9cd9e580">&#9670;&nbsp;</a></span>NodeConflictResolver() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NodeConflictResolver::NodeConflictResolver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Методы</h2>
+<a id="a96c475e2c6062087f58cfa16c4016fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96c475e2c6062087f58cfa16c4016fc5">&#9670;&nbsp;</a></span>createInfoFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NodeConflictResolver::createInfoFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">69</a></p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">_scaner</a>.clear();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.first.clear();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.second = <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cab50339a10e1de285ac99d4c3990b8693">SCALE::NONE</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    vector&lt; pair&lt;string,string&gt; &gt; uevents;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    uevents.push_back( make_pair(<span class="stringliteral">&quot;ttyACM0&quot;</span>, <a class="code" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">getVendor</a>(<span class="stringliteral">&quot;ttyACM0&quot;</span>)) );</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    uevents.push_back( make_pair(<span class="stringliteral">&quot;ttyACM1&quot;</span>, <a class="code" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">getVendor</a>(<span class="stringliteral">&quot;ttyACM1&quot;</span>)) );</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    uevents.push_back( make_pair(<span class="stringliteral">&quot;ttyACM2&quot;</span>, <a class="code" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">getVendor</a>(<span class="stringliteral">&quot;ttyACM2&quot;</span>)) );</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    uevents.push_back( make_pair(<span class="stringliteral">&quot;ttyACM3&quot;</span>, <a class="code" href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">getVendor</a>(<span class="stringliteral">&quot;ttyACM3&quot;</span>)) );</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">for</span> ( pair&lt;string,string&gt; uevent : uevents )</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> ( uevent.second.empty() )</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> ( uevent.second.find(<a class="code" href="classNodeConflictResolver.html#af7d4794f17614377120b6e252cf00383">SCALE_VEND_CONST_SHTRIH</a>, <a class="code" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">OFFSET</a>.length()) != string::npos )</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.first = uevent.first;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.second = <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SCALE::SHTRIH</a>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> ( uevent.second.find(<a class="code" href="classNodeConflictResolver.html#a4619258157af880ff9caebfcc3d7eb88">SCALE_VEND_CONST_MASSAK</a>, <a class="code" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">OFFSET</a>.length()) != string::npos )</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.first = uevent.first;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>.second = <a class="code" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">SCALE::MASSAK</a>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> ( uevent.second.find(<a class="code" href="classNodeConflictResolver.html#a4e78c5219fd5810556cb58ad7fb0d75b">VERIFONE_VEND_CONST</a>, <a class="code" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">OFFSET</a>.length()) != string::npos )</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> ( uevent.second.find(<a class="code" href="classNodeConflictResolver.html#a770ddce896f829aa0f61066c53fb3ea5">CUSTOMER_VEND_CONST</a>, <a class="code" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">OFFSET</a>.length()) != string::npos )</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">_scaner</a> = <span class="stringliteral">&quot;/dev/&quot;</span> + uevent.first;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a4faee6ee6e8457127cc18914bf171227"><div class="ttname"><a href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">NodeConflictResolver::_scale</a></div><div class="ttdeci">pair&lt; string, SCALE &gt; _scale</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00037">NodeConflictResolver.h:37</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a770ddce896f829aa0f61066c53fb3ea5"><div class="ttname"><a href="classNodeConflictResolver.html#a770ddce896f829aa0f61066c53fb3ea5">NodeConflictResolver::CUSTOMER_VEND_CONST</a></div><div class="ttdeci">const string CUSTOMER_VEND_CONST</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00031">NodeConflictResolver.h:31</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a4619258157af880ff9caebfcc3d7eb88"><div class="ttname"><a href="classNodeConflictResolver.html#a4619258157af880ff9caebfcc3d7eb88">NodeConflictResolver::SCALE_VEND_CONST_MASSAK</a></div><div class="ttdeci">const string SCALE_VEND_CONST_MASSAK</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00029">NodeConflictResolver.h:29</a></div></div>
+<div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">SCALE::MASSAK</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_af7d4794f17614377120b6e252cf00383"><div class="ttname"><a href="classNodeConflictResolver.html#af7d4794f17614377120b6e252cf00383">NodeConflictResolver::SCALE_VEND_CONST_SHTRIH</a></div><div class="ttdeci">const string SCALE_VEND_CONST_SHTRIH</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00028">NodeConflictResolver.h:28</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_afa7b1cb80d89edeb2ff6738ceac19f1e"><div class="ttname"><a href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e">NodeConflictResolver::getVendor</a></div><div class="ttdeci">string getVendor(string tty)</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00043">NodeConflictResolver.cpp:43</a></div></div>
+<div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SCALE::SHTRIH</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a3451995946149e28ee4685deed69d583"><div class="ttname"><a href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">NodeConflictResolver::OFFSET</a></div><div class="ttdeci">const string OFFSET</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00032">NodeConflictResolver.h:32</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a4e78c5219fd5810556cb58ad7fb0d75b"><div class="ttname"><a href="classNodeConflictResolver.html#a4e78c5219fd5810556cb58ad7fb0d75b">NodeConflictResolver::VERIFONE_VEND_CONST</a></div><div class="ttdeci">const string VERIFONE_VEND_CONST</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00030">NodeConflictResolver.h:30</a></div></div>
+<div class="ttc" id="NodeConflictResolver_8h_html_a430cc0d7f88081fd4e0912642d2b1e6cab50339a10e1de285ac99d4c3990b8693"><div class="ttname"><a href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cab50339a10e1de285ac99d4c3990b8693">SCALE::NONE</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_aafc8063c09234dcd037aab2cfc1573b1"><div class="ttname"><a href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">NodeConflictResolver::_scaner</a></div><div class="ttdeci">string _scaner</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00036">NodeConflictResolver.h:36</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00037">_scale</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00036">_scaner</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00031">CUSTOMER_VEND_CONST</a>, <a class="el" href="NodeConflictResolver_8cpp_source.html#l00043">getVendor()</a>, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cad71d04ce7134ee0e4d2688287b939cf2">MASSAK</a>, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6cab50339a10e1de285ac99d4c3990b8693">NONE</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00032">OFFSET</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00029">SCALE_VEND_CONST_MASSAK</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00028">SCALE_VEND_CONST_SHTRIH</a>, <a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6ca3ffa5d098b8a1b1702e4dcf895f81745">SHTRIH</a> и <a class="el" href="NodeConflictResolver_8h_source.html#l00030">VERIFONE_VEND_CONST</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00125">getScaleNode()</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00116">getScanerNode()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_cgraph.png" border="0" usemap="#classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_cgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_cgraph" id="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="204,5,355,47"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_icgraph.png" border="0" usemap="#classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_icgraph" id="classNodeConflictResolver_a96c475e2c6062087f58cfa16c4016fc5_icgraph">
+<area shape="rect"  title=" " alt="" coords="1231,39,1381,80"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f" title=" " alt="" coords="1032,5,1183,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="1032,71,1183,112"/>
+<area shape="rect"  href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,13,963,39"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,19,331,46"/>
+<area shape="rect"  href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="593,38,748,65"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,19,148,46"/>
+<area shape="rect"  href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI ÑÑÐµÐ½Ð¸Ñ Ð²ÐµÑÐ°" alt="" coords="379,38,541,65"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="800,70,984,97"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,121,983,163"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,95,752,122"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,95,505,122"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="238,95,289,122"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a62f3cafb41f368abce8aa7136ef3a03f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62f3cafb41f368abce8aa7136ef3a03f">&#9670;&nbsp;</a></span>getScaleNode()</h2>
 
@@ -111,6 +316,42 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00125">125</a></p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    lock_guard&lt;mutex&gt; locker(<a class="code" href="classNodeConflictResolver.html#a561f64ffd2b3ff2dd4fa26433e3e8ac8">_mutex</a>);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">createInfoFiles</a>();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">_scale</a>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a4faee6ee6e8457127cc18914bf171227"><div class="ttname"><a href="classNodeConflictResolver.html#a4faee6ee6e8457127cc18914bf171227">NodeConflictResolver::_scale</a></div><div class="ttdeci">pair&lt; string, SCALE &gt; _scale</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00037">NodeConflictResolver.h:37</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a96c475e2c6062087f58cfa16c4016fc5"><div class="ttname"><a href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">NodeConflictResolver::createInfoFiles</a></div><div class="ttdeci">void createInfoFiles()</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00069">NodeConflictResolver.cpp:69</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a561f64ffd2b3ff2dd4fa26433e3e8ac8"><div class="ttname"><a href="classNodeConflictResolver.html#a561f64ffd2b3ff2dd4fa26433e3e8ac8">NodeConflictResolver::_mutex</a></div><div class="ttdeci">mutex _mutex</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00038">NodeConflictResolver.h:38</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00038">_mutex</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00037">_scale</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="scales_8cpp_source.html#l00013">Scales::isConnected()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_cgraph.png" border="0" usemap="#classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_cgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_cgraph" id="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="403,5,553,47"/>
+</map>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_icgraph.png" border="0" usemap="#classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_icgraph" id="classNodeConflictResolver_a62f3cafb41f368abce8aa7136ef3a03f_icgraph">
+<area shape="rect"  title=" " alt="" coords="983,5,1133,47"/>
+<area shape="rect"  href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="792,13,935,39"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,13,331,39"/>
+<area shape="rect"  href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="589,38,744,65"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,13,148,39"/>
+<area shape="rect"  href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI ÑÑÐµÐ½Ð¸Ñ Ð²ÐµÑÐ°" alt="" coords="379,38,541,65"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -128,6 +369,98 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00116">116</a></p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    lock_guard&lt;mutex&gt; locker(<a class="code" href="classNodeConflictResolver.html#a561f64ffd2b3ff2dd4fa26433e3e8ac8">_mutex</a>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">createInfoFiles</a>();</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">_scaner</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a96c475e2c6062087f58cfa16c4016fc5"><div class="ttname"><a href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5">NodeConflictResolver::createInfoFiles</a></div><div class="ttdeci">void createInfoFiles()</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00069">NodeConflictResolver.cpp:69</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a561f64ffd2b3ff2dd4fa26433e3e8ac8"><div class="ttname"><a href="classNodeConflictResolver.html#a561f64ffd2b3ff2dd4fa26433e3e8ac8">NodeConflictResolver::_mutex</a></div><div class="ttdeci">mutex _mutex</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00038">NodeConflictResolver.h:38</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_aafc8063c09234dcd037aab2cfc1573b1"><div class="ttname"><a href="classNodeConflictResolver.html#aafc8063c09234dcd037aab2cfc1573b1">NodeConflictResolver::_scaner</a></div><div class="ttdeci">string _scaner</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00036">NodeConflictResolver.h:36</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00038">_mutex</a>, <a class="el" href="NodeConflictResolver_8h_source.html#l00036">_scaner</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="barcodeScanner_8cpp_source.html#l00033">BarcodeScanner::identScan()</a> и <a class="el" href="barcodeScanner_8cpp_source.html#l00205">BarcodeScanner::readCodeString()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_cgraph.png" border="0" usemap="#classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_cgraph" alt=""/></div>
+<map name="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_cgraph" id="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="403,5,553,47"/>
+</map>
+</div>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_icgraph.png" border="0" usemap="#classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_icgraph" id="classNodeConflictResolver_ab58f641e9f5cb8f5c37291e6134c06d3_icgraph">
+<area shape="rect"  title=" " alt="" coords="684,27,835,69"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="452,5,636,32"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="453,57,635,98"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="241,35,404,61"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,35,193,61"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,35,56,61"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afa7b1cb80d89edeb2ff6738ceac19f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7b1cb80d89edeb2ff6738ceac19f1e">&#9670;&nbsp;</a></span>getVendor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NodeConflictResolver::getVendor </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>tty</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00043">43</a></p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">string</span> vendor = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">string</span> uevent = <span class="stringliteral">&quot;/sys/class/tty/&quot;</span> + tty + <span class="stringliteral">&quot;/device/uevent&quot;</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.open( uevent, ofstream::in );</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.is_open() )</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.seekg(0, ios_base::beg);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">while</span> ( !<a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.eof() )</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            getline(<a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>, vendor);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> ( vendor.find( <span class="stringliteral">&quot;PRODUCT=&quot;</span> ) != string::npos )</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.close();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">_fileDevice</a>.close();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> vendor;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a2bd6915a7c9c1288ded218f4adc5abbb"><div class="ttname"><a href="classNodeConflictResolver.html#a2bd6915a7c9c1288ded218f4adc5abbb">NodeConflictResolver::_fileDevice</a></div><div class="ttdeci">ifstream _fileDevice</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00033">NodeConflictResolver.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00033">_fileDevice</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_afa7b1cb80d89edeb2ff6738ceac19f1e_icgraph.png" border="0" usemap="#classNodeConflictResolver_afa7b1cb80d89edeb2ff6738ceac19f1e_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_afa7b1cb80d89edeb2ff6738ceac19f1e_icgraph" id="classNodeConflictResolver_afa7b1cb80d89edeb2ff6738ceac19f1e_icgraph">
+<area shape="rect"  title=" " alt="" coords="1429,39,1580,80"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="1231,39,1381,80"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a62f3cafb41f368abce8aa7136ef3a03f" title=" " alt="" coords="1032,5,1183,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="1032,71,1183,112"/>
+<area shape="rect"  href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,13,963,39"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,19,331,46"/>
+<area shape="rect"  href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="593,38,748,65"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,19,148,46"/>
+<area shape="rect"  href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI ÑÑÐµÐ½Ð¸Ñ Ð²ÐµÑÐ°" alt="" coords="379,38,541,65"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="800,70,984,97"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,121,983,163"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,95,752,122"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,95,505,122"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="238,95,289,122"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -150,6 +483,71 @@ $(function() {
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00012">12</a></p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a> == <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a> = <span class="keyword">new</span> <a class="code" href="classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a">NodeConflictResolver</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a53be6183731f62b7f76d0101bf099533"><div class="ttname"><a href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">NodeConflictResolver::_resolver</a></div><div class="ttdeci">static NodeConflictResolver * _resolver</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00025">NodeConflictResolver.h:25</a></div></div>
+<div class="ttc" id="classNodeConflictResolver_html_a4a322ac29a9417d52b8d11191aea376a"><div class="ttname"><a href="classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a">NodeConflictResolver::NodeConflictResolver</a></div><div class="ttdeci">NodeConflictResolver()</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8cpp_source.html#l00032">NodeConflictResolver.cpp:32</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00025">_resolver</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00032">NodeConflictResolver()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="barcodeScanner_8cpp_source.html#l00033">BarcodeScanner::identScan()</a>, <a class="el" href="scales_8cpp_source.html#l00013">Scales::isConnected()</a> и <a class="el" href="barcodeScanner_8cpp_source.html#l00205">BarcodeScanner::readCodeString()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_cgraph.png" border="0" usemap="#classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_cgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_cgraph" id="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect"  href="classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a" title=" " alt="" coords="204,5,363,47"/>
+</map>
+</div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_icgraph.png" border="0" usemap="#classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_icgraph" alt=""/></div>
+<map name="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_icgraph" id="classNodeConflictResolver_a6ea7fc4ab55c437f6502616769c15acd_icgraph">
+<area shape="rect"  title=" " alt="" coords="1032,57,1183,98"/>
+<area shape="rect"  href="classBarcodeScanner.html#a33d47f597af6546aadf87ad25f72f015" title=" " alt="" coords="800,5,984,32"/>
+<area shape="rect"  href="classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="821,123,963,149"/>
+<area shape="rect"  href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f" title=" " alt="" coords="801,57,983,98"/>
+<area shape="rect"  href="threads_8h.html#a89c7a2f63e7567a5603c82695ca2a844" title=" " alt="" coords="589,43,752,69"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="415,43,505,69"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="238,43,289,69"/>
+<area shape="rect"  href="classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,119,331,145"/>
+<area shape="rect"  href="classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; ÑÑÐµÐ½Ð¸Ðµ Ð²ÐµÑÐ°" alt="" coords="593,144,748,171"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,119,148,145"/>
+<area shape="rect"  href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI ÑÑÐµÐ½Ð¸Ñ Ð²ÐµÑÐ°" alt="" coords="379,144,541,171"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdd42a2f15838f9010ae15f7af175dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd42a2f15838f9010ae15f7af175dd8">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NodeConflictResolver::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -179,16 +577,282 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a> строка <a class="el" href="NodeConflictResolver_8cpp_source.html#l00022">22</a></p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a> != <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">_resolver</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="ttc" id="classNodeConflictResolver_html_a53be6183731f62b7f76d0101bf099533"><div class="ttname"><a href="classNodeConflictResolver.html#a53be6183731f62b7f76d0101bf099533">NodeConflictResolver::_resolver</a></div><div class="ttdeci">static NodeConflictResolver * _resolver</div><div class="ttdef"><b>Definition:</b> <a href="NodeConflictResolver_8h_source.html#l00025">NodeConflictResolver.h:25</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="NodeConflictResolver_8h_source.html#l00025">_resolver</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a2bd6915a7c9c1288ded218f4adc5abbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd6915a7c9c1288ded218f4adc5abbb">&#9670;&nbsp;</a></span>_fileDevice</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ifstream NodeConflictResolver::_fileDevice</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00033">33</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00043">getVendor()</a>.</p>
+
+</div>
+</div>
+<a id="a561f64ffd2b3ff2dd4fa26433e3e8ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561f64ffd2b3ff2dd4fa26433e3e8ac8">&#9670;&nbsp;</a></span>_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex NodeConflictResolver::_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00038">38</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00125">getScaleNode()</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00116">getScanerNode()</a>.</p>
+
+</div>
+</div>
+<a id="a53be6183731f62b7f76d0101bf099533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53be6183731f62b7f76d0101bf099533">&#9670;&nbsp;</a></span>_resolver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNodeConflictResolver.html">NodeConflictResolver</a> * NodeConflictResolver::_resolver = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00025">25</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00012">instance()</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00022">releaseInstance()</a>.</p>
+
+</div>
+</div>
+<a id="a4faee6ee6e8457127cc18914bf171227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4faee6ee6e8457127cc18914bf171227">&#9670;&nbsp;</a></span>_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt;string,<a class="el" href="NodeConflictResolver_8h.html#a430cc0d7f88081fd4e0912642d2b1e6c">SCALE</a>&gt; NodeConflictResolver::_scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00037">37</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00125">getScaleNode()</a>.</p>
+
+</div>
+</div>
+<a id="aafc8063c09234dcd037aab2cfc1573b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc8063c09234dcd037aab2cfc1573b1">&#9670;&nbsp;</a></span>_scaner</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string NodeConflictResolver::_scaner = &quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00036">36</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a> и <a class="el" href="NodeConflictResolver_8cpp_source.html#l00116">getScanerNode()</a>.</p>
+
+</div>
+</div>
+<a id="a770ddce896f829aa0f61066c53fb3ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770ddce896f829aa0f61066c53fb3ea5">&#9670;&nbsp;</a></span>CUSTOMER_VEND_CONST</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string NodeConflictResolver::CUSTOMER_VEND_CONST = &quot;3eb&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00031">31</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+</div>
+</div>
+<a id="a3451995946149e28ee4685deed69d583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3451995946149e28ee4685deed69d583">&#9670;&nbsp;</a></span>OFFSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string NodeConflictResolver::OFFSET = &quot;PRODUCT=&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00032">32</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+</div>
+</div>
+<a id="a4619258157af880ff9caebfcc3d7eb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4619258157af880ff9caebfcc3d7eb88">&#9670;&nbsp;</a></span>SCALE_VEND_CONST_MASSAK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string NodeConflictResolver::SCALE_VEND_CONST_MASSAK = &quot;483&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00029">29</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+</div>
+</div>
+<a id="af7d4794f17614377120b6e252cf00383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d4794f17614377120b6e252cf00383">&#9670;&nbsp;</a></span>SCALE_VEND_CONST_SHTRIH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string NodeConflictResolver::SCALE_VEND_CONST_SHTRIH = &quot;1fc9&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00028">28</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
+</div>
+</div>
+<a id="a4e78c5219fd5810556cb58ad7fb0d75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e78c5219fd5810556cb58ad7fb0d75b">&#9670;&nbsp;</a></span>VERIFONE_VEND_CONST</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string NodeConflictResolver::VERIFONE_VEND_CONST = &quot;11ca&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a> строка <a class="el" href="NodeConflictResolver_8h_source.html#l00030">30</a></p>
+
+<p class="reference">Используется в <a class="el" href="NodeConflictResolver_8cpp_source.html#l00069">createInfoFiles()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="NodeConflictResolver_8h_source.html">NodeConflictResolver.h</a></li>
-<li>src/appl/<a class="el" href="NodeConflictResolver_8cpp.html">NodeConflictResolver.cpp</a></li>
+<li>src/appl/<a class="el" href="NodeConflictResolver_8cpp_source.html">NodeConflictResolver.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,7 +1,7 @@
 <map id="Menu::reg_struct_init" name="Menu::reg_struct_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,149,57"/>
-<area shape="rect" id="node2" href="$classConvert.html#ae33ef0ae2a9129cdd82c5afd2dba221a" title=" " alt="" coords="215,5,354,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#aca966cfad68c6131500b8f65c8120cc8" title=" " alt="" coords="197,56,372,83"/>
-<area shape="rect" id="node4" href="$classConvert.html#a9e6122823cae3f484ad2df4f600cbb7d" title=" " alt="" coords="425,19,578,61"/>
-<area shape="rect" id="node5" href="$classConvert.html#a4b8ff1a399f2fcd85dde951479728adc" title=" " alt="" coords="420,85,583,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,60,149,87"/>
+<area shape="rect" id="node2" href="$classMenu.html#aca966cfad68c6131500b8f65c8120cc8" title=" " alt="" coords="197,35,372,61"/>
+<area shape="rect" id="node5" href="$classConvert.html#ae33ef0ae2a9129cdd82c5afd2dba221a" title=" " alt="" coords="215,85,354,112"/>
+<area shape="rect" id="node3" href="$classConvert.html#a4b8ff1a399f2fcd85dde951479728adc" title=" " alt="" coords="420,5,583,32"/>
+<area shape="rect" id="node4" href="$classConvert.html#a9e6122823cae3f484ad2df4f600cbb7d" title=" " alt="" coords="425,57,578,98"/>
 </map>

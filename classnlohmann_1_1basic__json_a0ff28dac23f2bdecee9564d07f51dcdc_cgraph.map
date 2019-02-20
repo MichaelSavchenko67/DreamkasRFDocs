@@ -1,0 +1,6 @@
+<map id="nlohmann::basic_json::begin" name="nlohmann::basic_json::begin">
+<area shape="rect" id="node1" title="returns an iterator to the first element" alt="" coords="5,39,153,80"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820" title="set the iterator to the first value" alt="" coords="201,39,344,80"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb" title="set iterator to a defined past the end" alt="" coords="392,5,567,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42" title="set iterator to a defined beginning" alt="" coords="392,71,567,112"/>
+</map>

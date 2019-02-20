@@ -1,6 +1,6 @@
 <map id="MenuTree::GoRight" name="MenuTree::GoRight">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,141,57"/>
-<area shape="rect" id="node2" href="$classMenuItem.html#a270767e329482ab3170b7800db3d857d" title=" " alt="" coords="189,31,364,57"/>
-<area shape="rect" id="node3" href="$classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="422,5,569,32"/>
-<area shape="rect" id="node4" href="$classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="412,68,579,95"/>
+<area shape="rect" id="node2" href="$classMenuItem.html#a8d669fe5badf04704c81343264ed92d4" title=" " alt="" coords="412,5,579,32"/>
+<area shape="rect" id="node3" href="$classMenuItem.html#a270767e329482ab3170b7800db3d857d" title=" " alt="" coords="189,31,364,57"/>
+<area shape="rect" id="node4" href="$classMenuItem.html#aa41b6a67fe6a896c8d1e87a4abd5bdcb" title=" " alt="" coords="422,68,569,95"/>
 </map>

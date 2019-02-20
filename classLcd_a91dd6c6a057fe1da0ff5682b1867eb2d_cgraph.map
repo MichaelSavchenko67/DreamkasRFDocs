@@ -1,26 +1,37 @@
 <map id="Lcd::draw_total_summ_for_card_payment" name="Lcd::draw_total_summ_for_card_payment">
-<area shape="rect" id="node1" title=" " alt="" coords="5,328,160,369"/>
-<area shape="rect" id="node2" href="$classLcd.html#ae4a210a6029dac5baf2a9fef777c1526" title=" " alt="" coords="220,255,396,296"/>
-<area shape="rect" id="node23" href="$classLcd.html#a0499cb23faf95c60e2dabf55922760e7" title=" " alt="" coords="208,401,408,443"/>
-<area shape="rect" id="node24" href="$classLcd.html#a0ae245aaf0c331d21063d1734c0e7297" title=" " alt="" coords="220,321,396,377"/>
-<area shape="rect" id="node3" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="495,283,599,310"/>
-<area shape="rect" id="node4" href="$classLcd.html#ac662d87892c04f11f5759c22427a19f1" title=" " alt="" coords="479,335,614,376"/>
-<area shape="rect" id="node5" href="$classLcd.html#ab08d9ce003e55dfd3728fdc3e4d1b2c3" title=" " alt="" coords="687,342,805,369"/>
-<area shape="rect" id="node13" href="$classLcd.html#a53d758242ebdea651702cff606fea6da" title=" " alt="" coords="491,401,602,427"/>
-<area shape="rect" id="node14" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="871,131,986,158"/>
-<area shape="rect" id="node20" href="$classLcd.html#acd0e39e1c63eb265b893574ba6e45ffa" title=" " alt="" coords="456,131,637,158"/>
-<area shape="rect" id="node6" href="$classLcd.html#a8c77b187ff766163d823d7a7ca19c06e" title=" " alt="" coords="855,293,1003,319"/>
-<area shape="rect" id="node10" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="865,343,993,370"/>
-<area shape="rect" id="node7" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="1051,294,1265,321"/>
-<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="1084,228,1232,269"/>
-<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="1313,228,1491,269"/>
-<area shape="rect" id="node11" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="1077,345,1239,371"/>
-<area shape="rect" id="node12" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="1383,345,1421,371"/>
-<area shape="rect" id="node15" href="$classLcd.html#a94308828134e6aa1c992f671ef788a41" title=" " alt="" coords="1085,127,1231,154"/>
-<area shape="rect" id="node16" href="$classLcd.html#a3ea6acaf7245c4a2bee97d57fc3c0fff" title=" " alt="" coords="1335,75,1469,102"/>
-<area shape="rect" id="node17" href="$classFilesFG.html#a5bc3ef87559df994e73cf99ebe6e2429" title=" " alt="" coords="1329,126,1475,153"/>
-<area shape="rect" id="node18" href="$classHttpsExchange.html#adb15ea1f255519add1a69f94c362e9b0" title="sendFile &#45; отправка файла по url" alt="" coords="1317,177,1487,203"/>
-<area shape="rect" id="node19" href="$classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="1539,177,1673,203"/>
-<area shape="rect" id="node21" href="$classLcd.html#ae4fc3dba0eeab85a6431684cf0717b2b" title=" " alt="" coords="695,30,797,57"/>
-<area shape="rect" id="node22" href="$classLcd.html#a29eff96196d592c39ce13ae5834312f2" title=" " alt="" coords="685,81,807,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,299,160,340"/>
+<area shape="rect" id="node2" href="$classLcd.html#a0499cb23faf95c60e2dabf55922760e7" title=" " alt="" coords="208,299,408,340"/>
+<area shape="rect" id="node31" href="$classLcd.html#ae4a210a6029dac5baf2a9fef777c1526" title=" " alt="" coords="220,228,396,270"/>
+<area shape="rect" id="node35" href="$classLcd.html#a0ae245aaf0c331d21063d1734c0e7297" title=" " alt="" coords="220,376,396,432"/>
+<area shape="rect" id="node3" href="$classLcd.html#a7d0bbb294583c0bde4932f14fd0ba955" title=" " alt="" coords="481,230,613,257"/>
+<area shape="rect" id="node4" href="$classLcd.html#a5dcdd29ddd1f7abec7ac22f60c35fed3" title=" " alt="" coords="495,332,599,358"/>
+<area shape="rect" id="node5" href="$classLcd.html#ac662d87892c04f11f5759c22427a19f1" title=" " alt="" coords="479,383,614,424"/>
+<area shape="rect" id="node6" href="$classLcd.html#ab08d9ce003e55dfd3728fdc3e4d1b2c3" title=" " alt="" coords="687,306,805,333"/>
+<area shape="rect" id="node24" href="$classLcd.html#a53d758242ebdea651702cff606fea6da" title=" " alt="" coords="491,449,602,476"/>
+<area shape="rect" id="node25" href="$classLcd.html#a4dcb87b3a74763946b61a351e81097d8" title=" " alt="" coords="871,102,986,129"/>
+<area shape="rect" id="node7" href="$classLcd.html#a8c77b187ff766163d823d7a7ca19c06e" title=" " alt="" coords="855,258,1003,285"/>
+<area shape="rect" id="node21" href="$classLcd.html#a57f0926b0d21d5768dbf5429a8d7e3d2" title=" " alt="" coords="865,309,993,336"/>
+<area shape="rect" id="node8" href="$classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3" title=" " alt="" coords="1051,270,1265,297"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663" title="serialization" alt="" coords="1084,200,1232,242"/>
+<area shape="rect" id="node9" href="$classEncodeConvertor.html#a446a3149c95493a817adcf5b6a7e5fca" title=" " alt="" coords="1323,270,1481,297"/>
+<area shape="rect" id="node10" href="$classEncodeConvertor.html#aec7e4a8301ba943d46155bdb1556a47f" title=" " alt="" coords="1540,321,1715,348"/>
+<area shape="rect" id="node11" href="$classConvert.html#a4b693c16383ba0f789f5a75f83f74b7e" title=" " alt="" coords="1543,270,1712,297"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b" title="internal implementation of the serialization function" alt="" coords="1313,200,1491,242"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1detail_1_1serializer.html#ac1f8d1165b44149bd8be397dce68ea05" title="dump escaped string" alt="" coords="1539,139,1716,180"/>
+<area shape="rect" id="node19" href="$classnlohmann_1_1detail_1_1serializer.html#a944f6dea8dbe2961da145d2f62fa2c2f" title="dump an integer" alt="" coords="1539,204,1716,246"/>
+<area shape="rect" id="node20" href="$classnlohmann_1_1detail_1_1serializer.html#a6d652a3bfa581cf1cd7790d6d11ea52f" title="dump a floating&#45;point number" alt="" coords="1539,74,1716,115"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1detail_1_1serializer.html#a1cc5cb2f6993cefedad087a6cef0e8fb" title="check whether a string is UTF&#45;8 encoded" alt="" coords="1764,107,1941,148"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="1777,172,1928,214"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="1989,139,2171,180"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="2005,204,2155,246"/>
+<area shape="rect" id="node22" href="$classLcd.html#afa3854dd0f2ec0fe57a1a2ba74bfd9b3" title=" " alt="" coords="1077,321,1239,348"/>
+<area shape="rect" id="node23" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="1383,321,1421,348"/>
+<area shape="rect" id="node26" href="$classLcd.html#a94308828134e6aa1c992f671ef788a41" title=" " alt="" coords="1085,97,1231,124"/>
+<area shape="rect" id="node27" href="$classLcd.html#a3ea6acaf7245c4a2bee97d57fc3c0fff" title=" " alt="" coords="1335,94,1469,121"/>
+<area shape="rect" id="node28" href="$classFilesFG.html#a5bc3ef87559df994e73cf99ebe6e2429" title=" " alt="" coords="1329,145,1475,172"/>
+<area shape="rect" id="node29" href="$classHttpsExchange.html#adb15ea1f255519add1a69f94c362e9b0" title="sendFile &#45; отправка файла по url" alt="" coords="1317,37,1487,64"/>
+<area shape="rect" id="node30" href="$classConvert.html#afcc16d4f5eb6e1281fe5745971a87275" title=" " alt="" coords="1560,22,1695,49"/>
+<area shape="rect" id="node32" href="$classLcd.html#acd0e39e1c63eb265b893574ba6e45ffa" title=" " alt="" coords="456,129,637,156"/>
+<area shape="rect" id="node33" href="$classLcd.html#ae4fc3dba0eeab85a6431684cf0717b2b" title=" " alt="" coords="695,104,797,130"/>
+<area shape="rect" id="node34" href="$classLcd.html#a29eff96196d592c39ce13ae5834312f2" title=" " alt="" coords="685,154,807,181"/>
 </map>

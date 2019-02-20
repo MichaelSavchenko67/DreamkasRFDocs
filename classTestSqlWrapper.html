@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,18 +50,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TestSqlWrapper:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TestSqlWrapper:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestSqlWrapper__inherit__graph.png" border="0" usemap="#TestSqlWrapper_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestSqlWrapper_inherit__map" id="TestSqlWrapper_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,149,237"/>
 <area shape="rect"  title=" " alt="" coords="53,5,101,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TestSqlWrapper:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TestSqlWrapper:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestSqlWrapper__coll__graph.png" border="0" usemap="#TestSqlWrapper_coll__map" alt="Collaboration graph"/></div>
 <map name="TestSqlWrapper_coll__map" id="TestSqlWrapper_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,131,149,237"/>
@@ -106,7 +87,10 @@ $(function() {
 <tr class="memitem:a17756e4003e2a0eed10e28a50ab9f602"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classSqlWrapperInterface.html">SqlWrapperInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestSqlWrapper.html#a17756e4003e2a0eed10e28a50ab9f602">sqlInterface</a></td></tr>
 <tr class="separator:a17756e4003e2a0eed10e28a50ab9f602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00053">53</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a3cbbd14d1f78bf5f73eb77d00b537736"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cbbd14d1f78bf5f73eb77d00b537736">&#9670;&nbsp;</a></span>TestSqlWrapper()</h2>
 
@@ -129,6 +113,14 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00057">57</a></p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                     {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classTestSqlWrapper.html#a848a9cd1e6044563925ba582725d2a01">sql</a>.reset(<span class="keyword">new</span> <a class="code" href="classsqlWrapper.html">sqlWrapper</a>());</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classTestSqlWrapper.html#a17756e4003e2a0eed10e28a50ab9f602">sqlInterface</a>.reset(<span class="keyword">new</span> <a class="code" href="classSqlWrapperInterface.html">SqlWrapperInterface</a>());</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="ttc" id="classSqlWrapperInterface_html"><div class="ttname"><a href="classSqlWrapperInterface.html">SqlWrapperInterface</a></div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00018">testSqlWrapper.h:18</a></div></div>
+<div class="ttc" id="classsqlWrapper_html"><div class="ttname"><a href="classsqlWrapper.html">sqlWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="sqlWrapper_8h_source.html#l00024">sqlWrapper.h:24</a></div></div>
+<div class="ttc" id="classTestSqlWrapper_html_a17756e4003e2a0eed10e28a50ab9f602"><div class="ttname"><a href="classTestSqlWrapper.html#a17756e4003e2a0eed10e28a50ab9f602">TestSqlWrapper::sqlInterface</a></div><div class="ttdeci">unique_ptr&lt; SqlWrapperInterface &gt; sqlInterface</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00075">testSqlWrapper.h:75</a></div></div>
+<div class="ttc" id="classTestSqlWrapper_html_a848a9cd1e6044563925ba582725d2a01"><div class="ttname"><a href="classTestSqlWrapper.html#a848a9cd1e6044563925ba582725d2a01">TestSqlWrapper::sql</a></div><div class="ttdeci">unique_ptr&lt; sqlWrapper &gt; sql</div><div class="ttdef"><b>Definition:</b> <a href="testSqlWrapper_8h_source.html#l00074">testSqlWrapper.h:74</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="testSqlWrapper_8h_source.html#l00074">sql</a> и <a class="el" href="testSqlWrapper_8h_source.html#l00075">sqlInterface</a>.</p>
 
 </div>
 </div>
@@ -155,6 +147,8 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00063">63</a></p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_open, sqlite3_open(_, _)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_exec, sqlite3_exec(_, _, _, 0, <span class="keyword">nullptr</span>)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_close, sqlite3_close(_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_db_release_memory, sqlite3_db_release_memory(_)).WillRepeatedly(Return(SQLITE_OK));</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        EXPECT_GLOBAL_CALL(sqlite3_errmsg, sqlite3_errmsg(_)).WillRepeatedly(Return(<span class="stringliteral">&quot;&quot;</span>));</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -170,6 +164,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00074">74</a></p>
+
+<p class="reference">Используется в <a class="el" href="testSqlWrapper_8h_source.html#l00057">TestSqlWrapper()</a>.</p>
+
 </div>
 </div>
 <a id="a17756e4003e2a0eed10e28a50ab9f602"></a>
@@ -184,6 +182,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testSqlWrapper_8h_source.html">testSqlWrapper.h</a> строка <a class="el" href="testSqlWrapper_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="testSqlWrapper_8h_source.html#l00057">TestSqlWrapper()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -192,7 +194,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса registrationStruct:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса registrationStruct:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structregistrationStruct__coll__graph.png" border="0" usemap="#registrationStruct_coll__map" alt="Collaboration graph"/></div>
 <map name="registrationStruct_coll__map" id="registrationStruct_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,147,317"/>
@@ -124,7 +103,10 @@ $(function() {
 <tr class="memitem:abc5119510a0f0b3934ecc76a6b932546"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structregistrationStruct.html#abc5119510a0f0b3934ecc76a6b932546">isAutomatic</a></td></tr>
 <tr class="separator:abc5119510a0f0b3934ecc76a6b932546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00073">73</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a3aa761007bd830308266ee50bf4c722d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3aa761007bd830308266ee50bf4c722d">&#9670;&nbsp;</a></span>registrationStruct()</h2>
 
@@ -148,6 +130,14 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00112">112</a></p>
+<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="structregistrationStruct.html#ac3d70008301ffd20c6f91cc009f93d89">systemTax</a>      =                      0x00;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="structregistrationStruct.html#ae0bc76ff99c861984a548a6a62dd93eb">type</a>           =                      0x00;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="structregistrationStruct.html#a58b540185b60d381d9584fb54867b860">rej</a>            =                      0x00;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="structregistrationStruct.html#abc5119510a0f0b3934ecc76a6b932546">isAutomatic</a>    =                     <span class="keyword">false</span>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="ttc" id="structregistrationStruct_html_ae0bc76ff99c861984a548a6a62dd93eb"><div class="ttname"><a href="structregistrationStruct.html#ae0bc76ff99c861984a548a6a62dd93eb">registrationStruct::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00075">FisGo_BIOS.h:75</a></div></div>
+<div class="ttc" id="structregistrationStruct_html_a58b540185b60d381d9584fb54867b860"><div class="ttname"><a href="structregistrationStruct.html#a58b540185b60d381d9584fb54867b860">registrationStruct::rej</a></div><div class="ttdeci">int rej</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00082">FisGo_BIOS.h:82</a></div></div>
+<div class="ttc" id="structregistrationStruct_html_abc5119510a0f0b3934ecc76a6b932546"><div class="ttname"><a href="structregistrationStruct.html#abc5119510a0f0b3934ecc76a6b932546">registrationStruct::isAutomatic</a></div><div class="ttdeci">bool isAutomatic</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00110">FisGo_BIOS.h:110</a></div></div>
+<div class="ttc" id="structregistrationStruct_html_ac3d70008301ffd20c6f91cc009f93d89"><div class="ttname"><a href="structregistrationStruct.html#ac3d70008301ffd20c6f91cc009f93d89">registrationStruct::systemTax</a></div><div class="ttdeci">int systemTax</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00078">FisGo_BIOS.h:78</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="FisGo__BIOS_8h_source.html#l00110">isAutomatic</a>, <a class="el" href="FisGo__BIOS_8h_source.html#l00082">rej</a>, <a class="el" href="FisGo__BIOS_8h_source.html#l00078">systemTax</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00075">type</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -163,6 +153,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00102">102</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="afa09a3b413bd0e2dee12ca2ec8ccce55"></a>
@@ -176,6 +170,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00103">103</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -191,6 +189,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00105">105</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="aad77b721ceeb3cdd8093eda25d8ea674"></a>
@@ -204,6 +206,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00099">99</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -219,6 +225,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00109">109</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="a539afdc7644e2ba099ac48cd447d7a65"></a>
@@ -232,6 +242,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00077">77</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -247,6 +261,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00110">110</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00112">registrationStruct()</a>.</p>
+
 </div>
 </div>
 <a id="aed075de23960c07920f963f3bf6ba0e0"></a>
@@ -260,6 +278,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00107">107</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -275,6 +297,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00106">106</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="a8acf3e6635ce921fe41850a92352b27c"></a>
@@ -288,6 +314,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00104">104</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -303,6 +333,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00076">76</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="a58b540185b60d381d9584fb54867b860"></a>
@@ -316,6 +350,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00082">82</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15196">Menu::ex_reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00112">registrationStruct()</a>.</p>
 
 </div>
 </div>
@@ -331,6 +369,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00108">108</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <a id="ac3d70008301ffd20c6f91cc009f93d89"></a>
@@ -344,6 +386,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00078">78</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00112">registrationStruct()</a>.</p>
 
 </div>
 </div>
@@ -359,6 +405,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15196">Menu::ex_reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a> и <a class="el" href="FisGo__BIOS_8h_source.html#l00112">registrationStruct()</a>.</p>
+
 </div>
 </div>
 <a id="a2f6e338f5cceb022df9013f407d11f1d"></a>
@@ -372,6 +422,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00100">100</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
 
 </div>
 </div>
@@ -387,6 +441,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00101">101</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -395,7 +453,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

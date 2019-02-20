@@ -1,22 +1,23 @@
 <map id="Menu::factory" name="Menu::factory">
-<area shape="rect" id="node1" title="factory &#45; производство" alt="" coords="5,233,108,260"/>
-<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="193,5,280,32"/>
-<area shape="rect" id="node3" href="$classGen__uuid.html#a73e0b33921bae6aa6cd8bdb3a11761c7" title=" " alt="" coords="170,56,303,83"/>
-<area shape="rect" id="node4" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="188,107,285,133"/>
-<area shape="rect" id="node5" href="$classMenu.html#a91bc4be9ed8aa0253b106a1987418af0" title=" " alt="" coords="157,157,317,184"/>
-<area shape="rect" id="node6" href="$classBIOS.html#ae5417f441bde9d68a003bb9000030cfc" title=" " alt="" coords="156,208,317,235"/>
-<area shape="rect" id="node9" href="$classBIOS.html#a680c60793a59d3d389a18f187bfb7992" title=" " alt="" coords="171,259,302,285"/>
-<area shape="rect" id="node11" href="$classConvert.html#a91213c555b36b8b58c1637c9a2b5ee24" title=" " alt="" coords="163,309,310,336"/>
-<area shape="rect" id="node12" href="$classBIOS.html#a09f235ba619aa7518df6ae7f9b84377b" title="restartKKT &#45; переинициализация БИОС без перезапуска" alt="" coords="174,360,299,387"/>
-<area shape="rect" id="node13" href="$classMenu.html#ac65592baa0393569cd13a91fc91f89a2" title="fabricationKey &#45; запрос и сохранение ключа активации при регистарции" alt="" coords="164,411,309,437"/>
-<area shape="rect" id="node15" href="$classMenu.html#a92bf4ed79817329bcf78c735a9ef6798" title=" " alt="" coords="159,487,314,513"/>
-<area shape="rect" id="node7" href="$classBIOS.html#a1effb47456b6982bf8a711624a305720" title=" " alt="" coords="379,183,530,209"/>
-<area shape="rect" id="node8" href="$classBIOS.html#ac97a57be897456bc15df30c7649e710a" title=" " alt="" coords="379,233,530,260"/>
-<area shape="rect" id="node10" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="381,309,529,336"/>
-<area shape="rect" id="node14" href="$classMenu.html#ae77d7ef2891da59b042113ad3a911aad" title=" " alt="" coords="365,385,544,412"/>
-<area shape="rect" id="node16" href="$classMenu.html#a350f1ba3a9be3938302396eacbe5a55d" title=" " alt="" coords="375,436,534,463"/>
-<area shape="rect" id="node17" href="$classMenu.html#acacf3588c6aa4dddf7f1ebb0bce5da88" title=" " alt="" coords="384,487,525,513"/>
-<area shape="rect" id="node19" href="$bsp__printer__keypad_8c.html#af85ee3cd1b6a3bf47d686162212824c2" title=" " alt="" coords="378,537,531,564"/>
-<area shape="rect" id="node20" href="$classNet.html#a65bdb6a1efba53dd77d73f6439820cdd" title=" " alt="" coords="383,588,526,615"/>
-<area shape="rect" id="node18" href="$bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="592,487,748,513"/>
+<area shape="rect" id="node1" title="factory &#45; производство" alt="" coords="5,259,108,285"/>
+<area shape="rect" id="node2" href="$classMenu.html#ac65592baa0393569cd13a91fc91f89a2" title="fabricationKey &#45; запрос и сохранение ключа активации при регистарции" alt="" coords="164,5,309,32"/>
+<area shape="rect" id="node4" href="$classGen__uuid.html#a73e0b33921bae6aa6cd8bdb3a11761c7" title=" " alt="" coords="170,56,303,83"/>
+<area shape="rect" id="node5" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="188,107,285,133"/>
+<area shape="rect" id="node6" href="$classMenu.html#a861b29cc972a9e63bd9547d5b84ca869" title=" " alt="" coords="187,157,286,184"/>
+<area shape="rect" id="node7" href="$classMenu.html#a91bc4be9ed8aa0253b106a1987418af0" title=" " alt="" coords="157,208,317,235"/>
+<area shape="rect" id="node8" href="$classBIOS.html#a09f235ba619aa7518df6ae7f9b84377b" title="restartKKT &#45; переинициализация БИОС без перезапуска" alt="" coords="174,309,299,336"/>
+<area shape="rect" id="node10" href="$classBIOS.html#ae5417f441bde9d68a003bb9000030cfc" title=" " alt="" coords="156,259,317,285"/>
+<area shape="rect" id="node13" href="$classConvert.html#a91213c555b36b8b58c1637c9a2b5ee24" title=" " alt="" coords="163,360,310,387"/>
+<area shape="rect" id="node14" href="$classMenu.html#a92bf4ed79817329bcf78c735a9ef6798" title=" " alt="" coords="159,461,314,488"/>
+<area shape="rect" id="node20" href="$classBIOS.html#a680c60793a59d3d389a18f187bfb7992" title=" " alt="" coords="171,411,302,437"/>
+<area shape="rect" id="node21" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="193,512,280,539"/>
+<area shape="rect" id="node3" href="$classMenu.html#ae77d7ef2891da59b042113ad3a911aad" title=" " alt="" coords="365,5,544,32"/>
+<area shape="rect" id="node9" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="381,328,529,355"/>
+<area shape="rect" id="node11" href="$classBIOS.html#a1effb47456b6982bf8a711624a305720" title=" " alt="" coords="379,215,530,241"/>
+<area shape="rect" id="node12" href="$classBIOS.html#ac97a57be897456bc15df30c7649e710a" title=" " alt="" coords="379,265,530,292"/>
+<area shape="rect" id="node15" href="$classMenu.html#a350f1ba3a9be3938302396eacbe5a55d" title=" " alt="" coords="375,385,534,412"/>
+<area shape="rect" id="node16" href="$classMenu.html#acacf3588c6aa4dddf7f1ebb0bce5da88" title=" " alt="" coords="384,436,525,463"/>
+<area shape="rect" id="node18" href="$bsp__printer__keypad_8c.html#af85ee3cd1b6a3bf47d686162212824c2" title=" " alt="" coords="378,487,531,513"/>
+<area shape="rect" id="node19" href="$classNet.html#a65bdb6a1efba53dd77d73f6439820cdd" title=" " alt="" coords="383,537,526,564"/>
+<area shape="rect" id="node17" href="$bsp__printer__keypad_8c.html#a9ff450ec3abf5db85acef825f15a0317" title=" " alt="" coords="592,436,748,463"/>
 </map>

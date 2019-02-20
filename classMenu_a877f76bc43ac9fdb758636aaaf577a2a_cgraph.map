@@ -1,9 +1,9 @@
 <map id="Menu::SetPosWeight" name="Menu::SetPosWeight">
-<area shape="rect" id="node1" title="SetPosWeight &#45; Назначение веса на тек позицию с пересчётом стоимости" alt="" coords="5,163,152,189"/>
-<area shape="rect" id="node2" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="201,5,386,32"/>
-<area shape="rect" id="node3" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="228,57,359,98"/>
-<area shape="rect" id="node4" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="228,122,359,163"/>
-<area shape="rect" id="node5" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="211,187,375,229"/>
-<area shape="rect" id="node6" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="200,253,387,280"/>
-<area shape="rect" id="node7" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="227,305,360,346"/>
+<area shape="rect" id="node1" title="SetPosWeight &#45; Назначение веса на тек позицию с пересчётом стоимости" alt="" coords="5,151,152,178"/>
+<area shape="rect" id="node2" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="228,5,359,47"/>
+<area shape="rect" id="node3" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="201,71,386,98"/>
+<area shape="rect" id="node4" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="200,122,387,149"/>
+<area shape="rect" id="node5" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="228,173,359,215"/>
+<area shape="rect" id="node6" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="211,239,375,280"/>
+<area shape="rect" id="node7" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="227,304,360,345"/>
 </map>

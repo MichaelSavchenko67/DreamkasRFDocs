@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,18 +50,22 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testScale_8h_source.html">testScale.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TestScales:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TestScales:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestScales__inherit__graph.png" border="0" usemap="#TestScales_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestScales_inherit__map" id="TestScales_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,125,252"/>
 <area shape="rect"  title=" " alt="" coords="18,5,113,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TestScales:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TestScales:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestScales__coll__graph.png" border="0" usemap="#TestScales_coll__map" alt="Collaboration graph"/></div>
 <map name="TestScales_coll__map" id="TestScales_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,131,125,252"/>
@@ -108,7 +89,10 @@ $(function() {
 <tr class="memitem:a1b85a48d88bdc0b95c92ebafdc0df81b"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classTestMassaK.html">TestMassaK</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestScales.html#a1b85a48d88bdc0b95c92ebafdc0df81b">scalesMassaK</a></td></tr>
 <tr class="separator:a1b85a48d88bdc0b95c92ebafdc0df81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00086">86</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a1eaf2e92ca4f120d52e4c2970d168ab2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1eaf2e92ca4f120d52e4c2970d168ab2">&#9670;&nbsp;</a></span>TestScales()</h2>
 
@@ -132,6 +116,16 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00095">95</a></p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classTestScales.html#adf248422f376c507e04307ee21c73dce">scalesPos2</a>.reset( <span class="keyword">new</span> <a class="code" href="classTestPos2.html">TestPos2</a>(<a class="code" href="classTestScales.html#a6976dc2b200da09e0893012c91e2a50d">testPortName</a>)  );</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classTestScales.html#adf248422f376c507e04307ee21c73dce">scalesPos2</a>-&gt;scaleFd = <a class="code" href="classTestScales.html#a1c16b6da5e8a7c50f03f7fe7da2e5431">testfdValue</a>;                  <span class="comment">// Дискриптор весов</span></div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classTestScales.html#a1b85a48d88bdc0b95c92ebafdc0df81b">scalesMassaK</a>.reset( <span class="keyword">new</span> <a class="code" href="classTestMassaK.html">TestMassaK</a>(<a class="code" href="classTestScales.html#a6976dc2b200da09e0893012c91e2a50d">testPortName</a>)  );</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="classTestScales.html#a1b85a48d88bdc0b95c92ebafdc0df81b">scalesMassaK</a>-&gt;scaleFd = <a class="code" href="classTestScales.html#a1c16b6da5e8a7c50f03f7fe7da2e5431">testfdValue</a>;                <span class="comment">// Дискриптор весов</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div><div class="ttc" id="classTestScales_html_a1b85a48d88bdc0b95c92ebafdc0df81b"><div class="ttname"><a href="classTestScales.html#a1b85a48d88bdc0b95c92ebafdc0df81b">TestScales::scalesMassaK</a></div><div class="ttdeci">unique_ptr&lt; TestMassaK &gt; scalesMassaK</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00093">testScale.h:93</a></div></div>
+<div class="ttc" id="classTestPos2_html"><div class="ttname"><a href="classTestPos2.html">TestPos2</a></div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00013">testScale.h:13</a></div></div>
+<div class="ttc" id="classTestScales_html_a6976dc2b200da09e0893012c91e2a50d"><div class="ttname"><a href="classTestScales.html#a6976dc2b200da09e0893012c91e2a50d">TestScales::testPortName</a></div><div class="ttdeci">const string testPortName</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00089">testScale.h:89</a></div></div>
+<div class="ttc" id="classTestMassaK_html"><div class="ttname"><a href="classTestMassaK.html">TestMassaK</a></div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00046">testScale.h:46</a></div></div>
+<div class="ttc" id="classTestScales_html_adf248422f376c507e04307ee21c73dce"><div class="ttname"><a href="classTestScales.html#adf248422f376c507e04307ee21c73dce">TestScales::scalesPos2</a></div><div class="ttdeci">unique_ptr&lt; TestPos2 &gt; scalesPos2</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00092">testScale.h:92</a></div></div>
+<div class="ttc" id="classTestScales_html_a1c16b6da5e8a7c50f03f7fe7da2e5431"><div class="ttname"><a href="classTestScales.html#a1c16b6da5e8a7c50f03f7fe7da2e5431">TestScales::testfdValue</a></div><div class="ttdeci">const int testfdValue</div><div class="ttdef"><b>Definition:</b> <a href="testScale_8h_source.html#l00090">testScale.h:90</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="testScale_8h_source.html#l00093">scalesMassaK</a>, <a class="el" href="testScale_8h_source.html#l00092">scalesPos2</a>, <a class="el" href="testScale_8h_source.html#l00090">testfdValue</a> и <a class="el" href="testScale_8h_source.html#l00089">testPortName</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -147,6 +141,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00093">93</a></p>
+
+<p class="reference">Используется в <a class="el" href="testScale_8h_source.html#l00095">TestScales()</a>.</p>
+
 </div>
 </div>
 <a id="adf248422f376c507e04307ee21c73dce"></a>
@@ -160,6 +158,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00092">92</a></p>
+
+<p class="reference">Используется в <a class="el" href="testScale_8h_source.html#l00095">TestScales()</a>.</p>
 
 </div>
 </div>
@@ -175,6 +177,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00090">90</a></p>
+
+<p class="reference">Используется в <a class="el" href="testScale_8h_source.html#l00095">TestScales()</a>.</p>
+
 </div>
 </div>
 <a id="a6976dc2b200da09e0893012c91e2a50d"></a>
@@ -189,6 +195,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testScale_8h_source.html">testScale.h</a> строка <a class="el" href="testScale_8h_source.html#l00089">89</a></p>
+
+<p class="reference">Используется в <a class="el" href="testScale_8h_source.html#l00095">TestScales()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -197,7 +207,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

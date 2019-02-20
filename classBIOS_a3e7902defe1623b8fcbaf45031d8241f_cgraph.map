@@ -1,6 +1,6 @@
 <map id="BIOS::getSignSettingsFromPirit" name="BIOS::getSignSettingsFromPirit">
 <area shape="rect" id="node1" title=" " alt="" coords="5,23,189,65"/>
-<area shape="rect" id="node2" href="$classBIOS.html#af0965557cb604aec64252c62d03e9f37" title=" " alt="" coords="237,5,408,32"/>
-<area shape="rect" id="node4" href="$classBIOS.html#a1f8d5cd68a1efbf2875d6ea07ae62d08" title=" " alt="" coords="239,56,406,83"/>
+<area shape="rect" id="node2" href="$classBIOS.html#a1f8d5cd68a1efbf2875d6ea07ae62d08" title=" " alt="" coords="239,5,406,32"/>
+<area shape="rect" id="node4" href="$classBIOS.html#af0965557cb604aec64252c62d03e9f37" title=" " alt="" coords="237,56,408,83"/>
 <area shape="rect" id="node3" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="456,31,604,57"/>
 </map>

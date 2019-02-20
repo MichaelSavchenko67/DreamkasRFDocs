@@ -1,0 +1,8 @@
+<map id="nlohmann::json_pointer::array_index" name="nlohmann::json_pointer::array_index">
+<area shape="rect" id="node1" title=" " alt="" coords="405,104,561,145"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1json__pointer.html#a583c726016f440ffe65553935c101ff5" title="create and return a reference to the pointed to value" alt="" coords="201,5,357,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1json__pointer.html#a366d68a67e40d86676d3bdb52e167294" title=" " alt="" coords="201,71,357,112"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1json__pointer.html#a577512ee6b7f030e8872b4d29fa5c3e5" title="return a reference to the pointed to value" alt="" coords="201,136,357,177"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="205,201,353,243"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="5,201,153,243"/>
+</map>

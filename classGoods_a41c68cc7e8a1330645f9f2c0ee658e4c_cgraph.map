@@ -1,28 +1,28 @@
 <map id="Goods::good_init" name="Goods::good_init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,601,125,627"/>
-<area shape="rect" id="node2" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="201,5,332,47"/>
-<area shape="rect" id="node3" href="$classPositions_1_1Position.html#a4d43ec3c3e48fbddc41f4b9d59da430c" title=" " alt="" coords="201,71,332,112"/>
-<area shape="rect" id="node4" href="$classPositions_1_1Position.html#a2ae828d2d78770d52e37310ccabda290" title=" " alt="" coords="201,136,332,177"/>
-<area shape="rect" id="node5" href="$classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="201,201,332,243"/>
-<area shape="rect" id="node6" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="185,267,349,308"/>
-<area shape="rect" id="node7" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="201,332,332,373"/>
-<area shape="rect" id="node8" href="$classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="201,397,332,439"/>
-<area shape="rect" id="node9" href="$classPositions_1_1Position.html#a8254e01b1c4e4c4d1eeb9e096e8b7190" title=" " alt="" coords="201,463,332,504"/>
-<area shape="rect" id="node10" href="$classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="185,528,349,569"/>
-<area shape="rect" id="node11" href="$classPositions.html#ad9874205eb0e1a8a3788f1b89e31cfac" title=" " alt="" coords="199,593,334,635"/>
-<area shape="rect" id="node12" href="$classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="199,659,334,700"/>
-<area shape="rect" id="node13" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="428,650,615,677"/>
-<area shape="rect" id="node14" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="455,701,588,743"/>
-<area shape="rect" id="node15" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="173,943,360,970"/>
-<area shape="rect" id="node16" href="$classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="200,995,333,1036"/>
-<area shape="rect" id="node17" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="174,1061,359,1087"/>
-<area shape="rect" id="node18" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="177,1111,356,1138"/>
-<area shape="rect" id="node19" href="$classPositions.html#a429501e87ab4455157ba5987fe791301" title=" " alt="" coords="197,877,337,919"/>
-<area shape="rect" id="node22" href="$classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="201,826,332,853"/>
-<area shape="rect" id="node20" href="$classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; перевод из double в uint64_t с арифметическим округлением" alt="" coords="408,1015,635,1056"/>
-<area shape="rect" id="node21" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="502,1081,541,1107"/>
-<area shape="rect" id="node23" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="453,767,589,794"/>
-<area shape="rect" id="node24" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="456,819,587,860"/>
-<area shape="rect" id="node25" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="456,884,587,925"/>
-<area shape="rect" id="node26" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="456,949,587,991"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,668,125,695"/>
+<area shape="rect" id="node2" href="$classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="177,68,356,95"/>
+<area shape="rect" id="node3" href="$classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="201,247,332,273"/>
+<area shape="rect" id="node6" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="428,371,615,397"/>
+<area shape="rect" id="node7" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="455,422,588,463"/>
+<area shape="rect" id="node11" href="$classPositions.html#a429501e87ab4455157ba5987fe791301" title=" " alt="" coords="197,119,337,161"/>
+<area shape="rect" id="node13" href="$classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="201,399,332,441"/>
+<area shape="rect" id="node14" href="$classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="201,465,332,506"/>
+<area shape="rect" id="node15" href="$classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="201,530,332,571"/>
+<area shape="rect" id="node16" href="$classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="185,595,349,637"/>
+<area shape="rect" id="node17" href="$classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="199,661,334,702"/>
+<area shape="rect" id="node18" href="$classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="174,727,359,753"/>
+<area shape="rect" id="node19" href="$classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="173,777,360,804"/>
+<area shape="rect" id="node20" href="$classPositions_1_1Position.html#a2ae828d2d78770d52e37310ccabda290" title=" " alt="" coords="201,829,332,870"/>
+<area shape="rect" id="node21" href="$classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="201,894,332,935"/>
+<area shape="rect" id="node22" href="$classPositions_1_1Position.html#a4d43ec3c3e48fbddc41f4b9d59da430c" title=" " alt="" coords="201,959,332,1001"/>
+<area shape="rect" id="node23" href="$classPositions_1_1Position.html#a8254e01b1c4e4c4d1eeb9e096e8b7190" title=" " alt="" coords="201,1025,332,1066"/>
+<area shape="rect" id="node24" href="$classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="185,1090,349,1131"/>
+<area shape="rect" id="node25" href="$classPositions.html#ad9874205eb0e1a8a3788f1b89e31cfac" title=" " alt="" coords="199,1155,334,1197"/>
+<area shape="rect" id="node26" href="$classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="200,1221,333,1262"/>
+<area shape="rect" id="node4" href="$classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; перевод из double в uint64_t с арифметическим округлением" alt="" coords="408,57,635,98"/>
+<area shape="rect" id="node5" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="453,123,589,149"/>
+<area shape="rect" id="node8" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="456,174,587,215"/>
+<area shape="rect" id="node9" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="456,239,587,281"/>
+<area shape="rect" id="node10" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="456,305,587,346"/>
+<area shape="rect" id="node12" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="502,5,541,32"/>
 </map>

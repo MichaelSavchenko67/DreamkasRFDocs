@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -186,6 +163,9 @@ $(function() {
 <li>CMD_ACK_ZERO
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aa0738b24a9bdf2436679a2798729ea165">ScaleProtocolMassak</a>
 </li>
+<li>CMD_DEVICE_TYPE_GET
+: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a7b2f698d66d1a2c239216c0be2747ca7">ScaleProtocolPos2</a>
+</li>
 <li>CMD_ERROR
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aa843b0c1ae80d4e48ec28c1bde23e59d7">ScaleProtocolMassak</a>
 </li>
@@ -213,6 +193,9 @@ $(function() {
 <li>CMD_GET_CAL_CODE
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aacf0a2e1dc65265ccdf1e7910059d164a">ScaleProtocolMassak</a>
 </li>
+<li>CMD_GET_CHANNEL_PROPERTIES
+: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a6492171e2850b5ed472be9b1d38da4f8">ScaleProtocolPos2</a>
+</li>
 <li>CMD_GET_MASSA
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aac48514639d5c6c8f8c051b751d1c56e7">ScaleProtocolMassak</a>
 </li>
@@ -224,6 +207,9 @@ $(function() {
 </li>
 <li>CMD_GET_TARE
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aaac8699beae8c451927c0b3c7748c4b40">ScaleProtocolMassak</a>
+</li>
+<li>CMD_GET_WEIGHT
+: <a class="el" href="classScaleProtocolPos2.html#a6c64096d9e04d985085ce54051bd3974a95a6274e2d0ea7ef5f3ccef4cb9dc1b3">ScaleProtocolPos2</a>
 </li>
 <li>CMD_GET_ZERO
 : <a class="el" href="classScaleProtocolMassak.html#a419a9d8fbb1c2b9e0f03af098daa374aacb54181614aa1c603119c0140808766a">ScaleProtocolMassak</a>
@@ -278,7 +264,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

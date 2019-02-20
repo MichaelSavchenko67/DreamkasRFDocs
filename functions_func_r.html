@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -84,14 +61,32 @@ $(function() {
 <li>read_from_file()
 : <a class="el" href="classMenu.html#ad89bd15eabb5d50fdc37837216370c15">Menu</a>
 </li>
+<li>readall()
+: <a class="el" href="classFISGO__TEST__API.html#ad83c6f2e22b872a1dec1fc6335356fd7">FISGO_TEST_API</a>
+</li>
 <li>readAnswer()
-: <a class="el" href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">ScaleProtocolInterface</a>
+: <a class="el" href="classScalePos2.html#a4151070730717013a7b7bba03f56f9e6">ScalePos2</a>
+, <a class="el" href="classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58">ScaleProtocolInterface</a>
+, <a class="el" href="classTestMassaK.html#a6742668dfa85d41141af29a5b1244b94">TestMassaK</a>
+, <a class="el" href="classTestPos2.html#a543a48b6bfa9bff27ffa569b77a93992">TestPos2</a>
+</li>
+<li>readCalCode()
+: <a class="el" href="classScales.html#a84b9afce724d4933d1949d1286fd619f">Scales</a>
+</li>
+<li>readCodeHID()
+: <a class="el" href="classBarcodeScanner.html#ad1dc13e1280e740b24c67ad0b8001674">BarcodeScanner</a>
 </li>
 <li>readCodeString()
 : <a class="el" href="classBarcodeScanner.html#ab513f0a1632bafd47ea271ba28246d2f">BarcodeScanner</a>
 </li>
 <li>readCurlCallback()
 : <a class="el" href="classFilesFG.html#ac2bfdbaa1d508651fcb08c40109410cc">FilesFG</a>
+</li>
+<li>readNameId()
+: <a class="el" href="classScales.html#a7b7f3fef5f8ca7f55a8b32ce599f036a">Scales</a>
+</li>
+<li>readParam()
+: <a class="el" href="classScales.html#a78537197169d44083dc25c05de3b1631">Scales</a>
 </li>
 <li>readPayType()
 : <a class="el" href="classBIOS_1_1BEL.html#a0a64581f3850d3e208b3dc95c4518d37">BIOS::BEL</a>
@@ -100,8 +95,14 @@ $(function() {
 : <a class="el" href="classBIOS_1_1BEL.html#a6a8f435c0321b21ed86db398f776929f">BIOS::BEL</a>
 , <a class="el" href="classBIOS_1_1RUS.html#ad130b7d3be9f5b42b0900e2999f37bf2">BIOS::RUS</a>
 </li>
+<li>readTare()
+: <a class="el" href="classScales.html#ada277e5b30d91967608d07dde9d98e5f">Scales</a>
+</li>
 <li>readTasksDb()
 : <a class="el" href="classReceiptsDb.html#a8650a73f40ee41c410640edafa0d35ea">ReceiptsDb</a>
+</li>
+<li>readWeight()
+: <a class="el" href="classScales.html#a2f2458ed508c9f91ae51ec0d586f2ccb">Scales</a>
 </li>
 <li>reboot()
 : <a class="el" href="classMenu.html#a861b29cc972a9e63bd9547d5b84ca869">Menu</a>
@@ -269,7 +270,10 @@ $(function() {
 : <a class="el" href="classReceiptsDb.html#a1da3f315ef2a303a5228d2602dd0e2b4">ReceiptsDb</a>
 </li>
 <li>rend()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a4f73d4cee67ea328d785979c22af0ae1">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#ac77aed0925d447744676725ab0b6d535">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>replace_substring()
+: <a class="el" href="classnlohmann_1_1json__pointer.html#aa7649d30da9fc10b0e20704a27aea2a9">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>replaceSymbols()
 : <a class="el" href="classConvert.html#a4b693c16383ba0f789f5a75f83f74b7e">Convert</a>
@@ -321,8 +325,12 @@ $(function() {
 </li>
 <li>reset()
 : <a class="el" href="classCounters.html#a67c67316fd2442250eb1d0d85112ae0a">Counters</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classScalePos2.html#a5539ae46b170dd7b48ba76a36dca4ccb">ScalePos2</a>
 , <a class="el" href="structScaleProtocolInterface_1_1Param.html#a37e4f96e18c78159803d551b69b3a162">ScaleProtocolInterface::Param</a>
+</li>
+<li>reset_server()
+: <a class="el" href="classFISGO__TEST__API.html#a4eb3d8d832149869fd52db7e9dfce118">FISGO_TEST_API</a>
 </li>
 <li>resetCmd()
 : <a class="el" href="classTestMassaK.html#a49388985cee908fae26c7080c5f3f694">TestMassaK</a>
@@ -363,6 +371,9 @@ $(function() {
 <li>rmGood()
 : <a class="el" href="classGoods__new.html#a71bfe7aa217447e1769b0650efb09644">Goods_new</a>
 </li>
+<li>ROTATE_LEFT()
+: <a class="el" href="classCMd5Sum.html#ad3c0b9bb38aab86ed69914b655740819">CMd5Sum</a>
+</li>
 <li>RUS()
 : <a class="el" href="classBIOS_1_1RUS.html#aa97fcdfa413f23f60b40557a8dc5321b">BIOS::RUS</a>
 </li>
@@ -370,7 +381,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

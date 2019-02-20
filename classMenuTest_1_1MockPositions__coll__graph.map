@@ -1,6 +1,6 @@
 <map id="MenuTest::MockPositions" name="MenuTest::MockPositions">
-<area shape="rect" id="node1" title=" " alt="" coords="87,2371,261,2463"/>
-<area shape="rect" id="node2" href="$classPositions.html" title=" " alt="" coords="75,1481,273,2321"/>
+<area shape="rect" id="node1" title=" " alt="" coords="87,2429,261,2521"/>
+<area shape="rect" id="node2" href="$classPositions.html" title=" " alt="" coords="75,1481,273,2380"/>
 <area shape="rect" id="node3" href="$classGoodsData.html" title=" " alt="" coords="81,263,224,604"/>
 <area shape="rect" id="node4" href="$classPositions_1_1Position.html" title=" " alt="" coords="190,667,366,1389"/>
 <area shape="rect" id="node5" href="$structAGENTS.html" title=" " alt="" coords="248,395,345,472"/>

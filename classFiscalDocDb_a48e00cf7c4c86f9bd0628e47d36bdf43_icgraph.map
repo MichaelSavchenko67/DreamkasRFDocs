@@ -1,0 +1,5 @@
+<map id="FiscalDocDb::fillMinMaxFD" name="FiscalDocDb::fillMinMaxFD">
+<area shape="rect" id="node1" title="fillMinMaxFD заполнить минимальный и максимальный номер ФД" alt="" coords="277,31,460,57"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#afcda40a0fdc26a891d24e7850f46bc5c" title="loadCountFiscalDoc загрузить из базы минимальный и максимальный номер ФД" alt="" coords="5,5,229,32"/>
+<area shape="rect" id="node3" href="$classFiscalDocDb.html#ab59ff2745ceaf6feed5b8ab8c24a367b" title="saveFiscalDoc сохранение фискального документа в БД" alt="" coords="21,56,214,83"/>
+</map>

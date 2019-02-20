@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -96,6 +73,7 @@ $(function() {
 , <a class="el" href="structJSON_1_1JSON__POSITION__EXTERNAL.html#a9a0d2adb6d369fd75c20addaeb37b9f9">JSON::JSON_POSITION_EXTERNAL</a>
 , <a class="el" href="structJSON_1_1JSON__UPSERT__DISCOUNT.html#ab6b3553d7c3166a6fc0f03271d898d18">JSON::JSON_UPSERT_DISCOUNT</a>
 , <a class="el" href="structLicense_1_1LicenseTag.html#ac8883a3d60d1a55a7961aa0bb667e599">License::LicenseTag</a>
+, <a class="el" href="classMenuItem.html#a50f3f29f3f401f68e39b8ed97fad7171">MenuItem</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#aa64b2729de6d708120cdc7613dd2c673">Receipt::Fiscal_data</a>
 , <a class="el" href="structReceipt_1_1requisites.html#a9b40f30d6dfbd791efc8681cdce93e8e">Receipt::requisites</a>
 , <a class="el" href="classRequisites_1_1Requisite.html#a59763cf07fe095dc0b1417b038782e3e">Requisites::Requisite</a>
@@ -167,6 +145,9 @@ $(function() {
 <li>nds_no
 : <a class="el" href="structJSON_1_1JSON__TAXES.html#a03ee40114aaa7e2e61b42f5c8dd0799e">JSON::JSON_TAXES</a>
 </li>
+<li>NDSS
+: <a class="el" href="classBIOS_1_1BEL.html#a8203c97672f0408a46abe81c65fe3499">BIOS::BEL</a>
+</li>
 <li>NEED_CFG_KKT
 : <a class="el" href="classBIOS_1_1RUS.html#abcccb6a2cf2c961d951d9d9654be4b30">BIOS::RUS</a>
 </li>
@@ -236,8 +217,17 @@ $(function() {
 <li>net_wifi_signal
 : <a class="el" href="structConfig.html#a4a8585ea2e30ee363d2771131e3bd62c">Config</a>
 </li>
+<li>new_receipt
+: <a class="el" href="classMenu.html#a60c963317eda33af5685f1cba0ed3999">Menu</a>
+</li>
+<li>new_revert
+: <a class="el" href="classMenu.html#ade8e5b0771b14289ae42c5cd93a1d480">Menu</a>
+</li>
 <li>NEXT_REC_NUM_
 : <a class="el" href="classFISGO__TEST__API.html#a41134c136a11eb62ba376ec68660050f">FISGO_TEST_API</a>
+</li>
+<li>next_unget
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ae8bedb97b907ba6347c5b2f2666ca01f">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>nomenclatureCode
 : <a class="el" href="structBarcodeScanner_1_1DATA__MATRIX.html#a657a5c7d7033c986c8205c1f80d862e0">BarcodeScanner::DATA_MATRIX</a>
@@ -266,6 +256,9 @@ $(function() {
 <li>NOTHING_TO_DELETE
 : <a class="el" href="classReceiptsDb.html#aff96bc4ac52062d0126f42a30bb2c0d9">ReceiptsDb</a>
 </li>
+<li>ntpService
+: <a class="el" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">TimeSync</a>
+</li>
 <li>null_str
 : <a class="el" href="classRequisites.html#a15228c4e479b3b0b2c4ea75fd431a3a5">Requisites</a>
 </li>
@@ -282,6 +275,19 @@ $(function() {
 , <a class="el" href="structJSON_1_1JSON__SHIFT.html#a0e0dcf2bf225717eefb390a54e213b2b">JSON::JSON_SHIFT</a>
 , <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a1d189d94fecf0707d05a80ed4c74c3c0">JSON::MONEY_DOCUMENT_REPORT</a>
 , <a class="el" href="structJSON_1_1SHIFTS.html#aaeeee0858877112516ff826096af465a">JSON::SHIFTS</a>
+, <a class="el" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE</a>
+</li>
+<li>number_buffer
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a1a9d8b344a6cb47728a3519693ec03d1">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+</li>
+<li>number_float
+: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#ad003495e39e78b8096e0b6fc690d146f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
+</li>
+<li>number_integer
+: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#afa3c414445aeffb56a7c6926f9420941">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
+</li>
+<li>number_unsigned
+: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#a0299a6aa3bc4d45d54130e52970f73d3">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
 </li>
 <li>numDepart
 : <a class="el" href="structBIOS_1_1BEL_1_1POSITION.html#a58987588d4ee4868ffe3c6672e0366bd">BIOS::BEL::POSITION</a>
@@ -298,7 +304,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

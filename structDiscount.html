@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="goods__new_8h_source.html">goods_new.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса Discount:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Discount:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structDiscount__coll__graph.png" border="0" usemap="#Discount_coll__map" alt="Collaboration graph"/></div>
 <map name="Discount_coll__map" id="Discount_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,116,215"/>
@@ -110,7 +89,10 @@ $(function() {
 <tr class="memitem:ac38cee490c16814b1cce28f9f3547534"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">finishOnDate</a> = 0</td></tr>
 <tr class="separator:ac38cee490c16814b1cce28f9f3547534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00099">99</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a88df656a4b474c288824e1b4cb369664"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88df656a4b474c288824e1b4cb369664">&#9670;&nbsp;</a></span>Discount() <span class="overload">[1/2]</span></h2>
 
@@ -134,6 +116,8 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00112">112</a></p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="aeee4f261c0d8c91a84705e55e93e0c21"></a>
@@ -159,6 +143,18 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00113">113</a></p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">id</span>    = disc.<a class="code" href="structDiscount.html#a8c17227a2ba5cde3c92cec5939668daa">id</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="structDiscount.html#af971781c273536f6811aa615cb2172fc">remId</a> = disc.<a class="code" href="structDiscount.html#af971781c273536f6811aa615cb2172fc">remId</a>;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">mode</a>  = disc.<a class="code" href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">mode</a>;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">name</a>  = disc.<a class="code" href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">name</a>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">type</a>  = disc.<a class="code" href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">type</a>;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="structDiscount.html#a575d691635448b29323112ff10fec988">value</a> = disc.<a class="code" href="structDiscount.html#a575d691635448b29323112ff10fec988">value</a>;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="structDiscount.html#ad848eda1df83214112f3438646369be5">startOnDate</a>  = disc.<a class="code" href="structDiscount.html#ad848eda1df83214112f3438646369be5">startOnDate</a>;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">finishOnDate</a> = disc.<a class="code" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">finishOnDate</a>;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div><div class="ttc" id="structDiscount_html_a575d691635448b29323112ff10fec988"><div class="ttname"><a href="structDiscount.html#a575d691635448b29323112ff10fec988">Discount::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00106">goods_new.h:106</a></div></div>
+<div class="ttc" id="structDiscount_html_a8c17227a2ba5cde3c92cec5939668daa"><div class="ttname"><a href="structDiscount.html#a8c17227a2ba5cde3c92cec5939668daa">Discount::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00101">goods_new.h:101</a></div></div>
+<div class="ttc" id="structDiscount_html_ad67d6bcec29a4be69ec133c3bcbf9aa8"><div class="ttname"><a href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">Discount::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00104">goods_new.h:104</a></div></div>
+<div class="ttc" id="structDiscount_html_ac38cee490c16814b1cce28f9f3547534"><div class="ttname"><a href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">Discount::finishOnDate</a></div><div class="ttdeci">time_t finishOnDate</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00110">goods_new.h:110</a></div></div>
+<div class="ttc" id="structDiscount_html_af971781c273536f6811aa615cb2172fc"><div class="ttname"><a href="structDiscount.html#af971781c273536f6811aa615cb2172fc">Discount::remId</a></div><div class="ttdeci">string remId</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00102">goods_new.h:102</a></div></div>
+<div class="ttc" id="structDiscount_html_a5073d8b748a0526c9b60706eb6af8509"><div class="ttname"><a href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">Discount::mode</a></div><div class="ttdeci">DISCOUNT_MODE mode</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00103">goods_new.h:103</a></div></div>
+<div class="ttc" id="structDiscount_html_ad848eda1df83214112f3438646369be5"><div class="ttname"><a href="structDiscount.html#ad848eda1df83214112f3438646369be5">Discount::startOnDate</a></div><div class="ttdeci">time_t startOnDate</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00109">goods_new.h:109</a></div></div>
+<div class="ttc" id="structDiscount_html_ac5fc9f52d587aebbe48c6d34393cb452"><div class="ttname"><a href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">Discount::type</a></div><div class="ttdeci">DISCOUNT_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00105">goods_new.h:105</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="goods__new_8h_source.html#l00110">finishOnDate</a>, <a class="el" href="goods__new_8h_source.html#l00101">id</a>, <a class="el" href="goods__new_8h_source.html#l00103">mode</a>, <a class="el" href="goods__new_8h_source.html#l00104">name</a>, <a class="el" href="goods__new_8h_source.html#l00102">remId</a>, <a class="el" href="goods__new_8h_source.html#l00109">startOnDate</a>, <a class="el" href="goods__new_8h_source.html#l00105">type</a> и <a class="el" href="goods__new_8h_source.html#l00106">value</a>.</p>
 
 </div>
 </div>
@@ -187,6 +183,18 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00125">125</a></p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> ( <span class="keyword">this</span> != &amp;disc )</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordtype">id</span>    = disc.<a class="code" href="structDiscount.html#a8c17227a2ba5cde3c92cec5939668daa">id</a>;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="structDiscount.html#af971781c273536f6811aa615cb2172fc">remId</a> = disc.<a class="code" href="structDiscount.html#af971781c273536f6811aa615cb2172fc">remId</a>;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">mode</a>  = disc.<a class="code" href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">mode</a>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">name</a>  = disc.<a class="code" href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">name</a>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">type</a>  = disc.<a class="code" href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">type</a>;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="structDiscount.html#a575d691635448b29323112ff10fec988">value</a> = disc.<a class="code" href="structDiscount.html#a575d691635448b29323112ff10fec988">value</a>;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="structDiscount.html#ad848eda1df83214112f3438646369be5">startOnDate</a>  = disc.<a class="code" href="structDiscount.html#ad848eda1df83214112f3438646369be5">startOnDate</a>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">finishOnDate</a> = disc.<a class="code" href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">finishOnDate</a>;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div><div class="ttc" id="structDiscount_html_a575d691635448b29323112ff10fec988"><div class="ttname"><a href="structDiscount.html#a575d691635448b29323112ff10fec988">Discount::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00106">goods_new.h:106</a></div></div>
+<div class="ttc" id="structDiscount_html_a8c17227a2ba5cde3c92cec5939668daa"><div class="ttname"><a href="structDiscount.html#a8c17227a2ba5cde3c92cec5939668daa">Discount::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00101">goods_new.h:101</a></div></div>
+<div class="ttc" id="structDiscount_html_ad67d6bcec29a4be69ec133c3bcbf9aa8"><div class="ttname"><a href="structDiscount.html#ad67d6bcec29a4be69ec133c3bcbf9aa8">Discount::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00104">goods_new.h:104</a></div></div>
+<div class="ttc" id="structDiscount_html_ac38cee490c16814b1cce28f9f3547534"><div class="ttname"><a href="structDiscount.html#ac38cee490c16814b1cce28f9f3547534">Discount::finishOnDate</a></div><div class="ttdeci">time_t finishOnDate</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00110">goods_new.h:110</a></div></div>
+<div class="ttc" id="structDiscount_html_af971781c273536f6811aa615cb2172fc"><div class="ttname"><a href="structDiscount.html#af971781c273536f6811aa615cb2172fc">Discount::remId</a></div><div class="ttdeci">string remId</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00102">goods_new.h:102</a></div></div>
+<div class="ttc" id="structDiscount_html_a5073d8b748a0526c9b60706eb6af8509"><div class="ttname"><a href="structDiscount.html#a5073d8b748a0526c9b60706eb6af8509">Discount::mode</a></div><div class="ttdeci">DISCOUNT_MODE mode</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00103">goods_new.h:103</a></div></div>
+<div class="ttc" id="structDiscount_html_ad848eda1df83214112f3438646369be5"><div class="ttname"><a href="structDiscount.html#ad848eda1df83214112f3438646369be5">Discount::startOnDate</a></div><div class="ttdeci">time_t startOnDate</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00109">goods_new.h:109</a></div></div>
+<div class="ttc" id="structDiscount_html_ac5fc9f52d587aebbe48c6d34393cb452"><div class="ttname"><a href="structDiscount.html#ac5fc9f52d587aebbe48c6d34393cb452">Discount::type</a></div><div class="ttdeci">DISCOUNT_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="goods__new_8h_source.html#l00105">goods_new.h:105</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="goods__new_8h_source.html#l00110">finishOnDate</a>, <a class="el" href="goods__new_8h_source.html#l00101">id</a>, <a class="el" href="goods__new_8h_source.html#l00103">mode</a>, <a class="el" href="goods__new_8h_source.html#l00104">name</a>, <a class="el" href="goods__new_8h_source.html#l00102">remId</a>, <a class="el" href="goods__new_8h_source.html#l00109">startOnDate</a>, <a class="el" href="goods__new_8h_source.html#l00105">type</a> и <a class="el" href="goods__new_8h_source.html#l00106">value</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -202,6 +210,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00110">110</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <a id="a8c17227a2ba5cde3c92cec5939668daa"></a>
@@ -215,6 +227,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00101">101</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="menu_8cpp_source.html#l28775">Menu::delDiscount()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a> и <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a>.</p>
 
 </div>
 </div>
@@ -230,6 +246,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00103">103</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <a id="ad67d6bcec29a4be69ec133c3bcbf9aa8"></a>
@@ -243,6 +263,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00104">104</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="menu_8cpp_source.html#l28775">Menu::delDiscount()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
 
 </div>
 </div>
@@ -258,6 +282,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00102">102</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l29169">Menu::addDiscountPosition()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <a id="ad848eda1df83214112f3438646369be5"></a>
@@ -271,6 +299,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00109">109</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
 
 </div>
 </div>
@@ -286,6 +318,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00105">105</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8cpp_source.html#l00701">Goods_new::clcDiscount()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <a id="a575d691635448b29323112ff10fec988"></a>
@@ -300,6 +336,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods__new_8h_source.html">goods_new.h</a> строка <a class="el" href="goods__new_8h_source.html#l00106">106</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods__new_8cpp_source.html#l00421">Goods_new::addDiscount()</a>, <a class="el" href="menu_8cpp_source.html#l28968">Menu::addDiscountPer()</a>, <a class="el" href="menu_8cpp_source.html#l29169">Menu::addDiscountPosition()</a>, <a class="el" href="menu_8cpp_source.html#l29092">Menu::addDiscountRub()</a>, <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="goods__new_8cpp_source.html#l00701">Goods_new::clcDiscount()</a>, <a class="el" href="goods__new_8h_source.html#l00113">Discount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00609">Goods_new::getBestAutoDiscount()</a>, <a class="el" href="goods__new_8cpp_source.html#l00509">Goods_new::getDiscounts()</a>, <a class="el" href="goods__new_8h_source.html#l00125">operator=()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -308,7 +348,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

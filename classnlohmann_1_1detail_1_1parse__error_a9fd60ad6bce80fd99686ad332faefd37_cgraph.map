@@ -1,4 +1,5 @@
 <map id="nlohmann::detail::parse_error::create" name="nlohmann::detail::parse_error::create">
-<area shape="rect" id="node1" title="create a parse error exception" alt="" coords="5,5,163,47"/>
+<area shape="rect" id="node1" title="create a parse error exception" alt="" coords="5,39,163,80"/>
 <area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="211,5,392,47"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="223,71,380,112"/>
 </map>

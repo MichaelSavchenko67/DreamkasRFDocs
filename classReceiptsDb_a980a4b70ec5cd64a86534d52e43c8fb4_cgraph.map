@@ -1,5 +1,7 @@
 <map id="ReceiptsDb::updateCanceledDoc" name="ReceiptsDb::updateCanceledDoc">
-<area shape="rect" id="node1" title=" " alt="" coords="5,42,223,69"/>
-<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="273,5,456,47"/>
-<area shape="rect" id="node3" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="271,71,459,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,60,223,87"/>
+<area shape="rect" id="node2" href="$classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f" title=" " alt="" coords="273,23,456,65"/>
+<area shape="rect" id="node5" href="$classReceiptsDb.html#a7c5687ffc2870628c7faf2fa20a18aec" title=" " alt="" coords="271,89,459,116"/>
+<area shape="rect" id="node3" href="$ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb" title=" " alt="" coords="507,5,629,32"/>
+<area shape="rect" id="node4" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="677,31,828,57"/>
 </map>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -71,9 +48,13 @@ $(function() {
 <p>Полный список членов класса <a class="el" href="classCabinetBase.html">CabinetBase</a>, включая наследуемые из базового класса</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#a2b98c65e7e39cff27d69e2305454fc56">CabinetBase</a>()</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCabinetBase.html#a8793ba1b6306cf6f42a48cfefcd100d7">convert</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#ab1d39708e5a75823afcd372c97856bed">createDb</a>()</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c">getLastDocument</a>(void *document, int docType)</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCabinetBase.html#af839411ffdfbf873f2653d6394700220">cabinetBaseMutex</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#aa45e6bb712bd68dae84bdfd8f4ba18e4">cabinetDb</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCabinetBase.html#adf7f9cbab848614770a15a992f4a9ff9">cabinetQuery</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#a8793ba1b6306cf6f42a48cfefcd100d7">convert</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCabinetBase.html#ab1d39708e5a75823afcd372c97856bed">createDb</a>()</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#ad9b9411d8bc77bd8f3ddca9c58f6bb8c">getLastDocument</a>(void *document, int docType)</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCabinetBase.html#a391039ce5179aebbd5e936f88c7e3fec">makeCabinetRequest</a>()</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#adf7618f5ba23a29a91c1c1484bbfef0a">MONEY_DOCUMENT</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classCabinetBase.html#adaccf3be8aa0bbdda752b3e76267efd3">prepareDb</a>()</td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCabinetBase.html#a98ffc0b194494d016ee12c58a6ba6438">PURCHASE_DOCUMENT</a></td><td class="entry"><a class="el" href="classCabinetBase.html">CabinetBase</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -84,7 +65,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

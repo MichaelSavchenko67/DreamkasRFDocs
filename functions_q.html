@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -96,14 +73,44 @@ $(function() {
 <li>quantityToString()
 : <a class="el" href="classConvert.html#ab7971a59f8ca1b69c0c193498acb5251">Convert</a>
 </li>
+<li>query
+: <a class="el" href="classGoods__new.html#a4bab8cf35510677de228da481210dc57">Goods_new</a>
+, <a class="el" href="classSlipsDB.html#a98b84d7051d8726265b5f29d444ee4f5">SlipsDB</a>
+</li>
+<li>queryConfigReady
+: <a class="el" href="classSqlWrapperInterface.html#a1887f032a9de35cc855b43f6d1430078">SqlWrapperInterface</a>
+</li>
+<li>queryNotSaveResult()
+: <a class="el" href="classGoods__new.html#abe09f75ff1821181f62a1a3d9ee50fc3">Goods_new</a>
+, <a class="el" href="classSlipsDB.html#a038d83e600b77059da7d4a68bc46f4f0">SlipsDB</a>
+</li>
 <li>querySaveResult()
-: <a class="el" href="classGoods__new.html#a9e4cdfedc34409ec41846cc7f13caa1f">Goods_new</a>
+: <a class="el" href="classGoods__new.html#a5767f844de7b473c7a6f20538830cc67">Goods_new</a>
+, <a class="el" href="classSlipsDB.html#af253e62d02100d6915e5a2ed923e0962">SlipsDB</a>
+</li>
+<li>QUEUE_PURCHASES_MAX_SIZE
+: <a class="el" href="classMenu.html#a13c7cd4e2a9acee38c066c345d2ee66d">Menu</a>
+</li>
+<li>queuePurchases
+: <a class="el" href="classMenu.html#af07605f514c938de13e4544fbe075cb3">Menu</a>
 </li>
 <li>queuePurchasesDown()
 : <a class="el" href="classMenu.html#ad555e20f19dd80572299fc43be53c844">Menu</a>
 </li>
+<li>queuePurchasesRoutine()
+: <a class="el" href="classMenu.html#af4106647d84a51e7f1e4a1fbbf69d313">Menu</a>
+</li>
 <li>queuePurchasesUp()
 : <a class="el" href="classMenu.html#aa14f1c2b6ef85fe02fa6f2291a1bd6b7">Menu</a>
+</li>
+<li>queuePurchasesWakeUp
+: <a class="el" href="classMenu.html#adcc21d6818531cc71d00fca39d5d6a6f">Menu</a>
+</li>
+<li>queuePurchasesWorking
+: <a class="el" href="classMenu.html#a26b6a566657c5175320ddedcf6aa45ac">Menu</a>
+</li>
+<li>queuePurchMutex
+: <a class="el" href="classMenu.html#a3627fb69f9ea0102d6abc861d6a8c77b">Menu</a>
 </li>
 <li>quittance
 : <a class="el" href="classBIOS_1_1RUS.html#ad1c397f3e11abd47e4966f156030eb01">BIOS::RUS</a>
@@ -115,7 +122,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

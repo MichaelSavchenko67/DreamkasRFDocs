@@ -1,0 +1,8 @@
+<map id="NodeConflictResolver::getScaleNode" name="NodeConflictResolver::getScaleNode">
+<area shape="rect" id="node1" title=" " alt="" coords="983,5,1133,47"/>
+<area shape="rect" id="node2" href="$classScales.html#a845bce2ac5ab0be57735bca14c79cd11" title=" " alt="" coords="792,13,935,39"/>
+<area shape="rect" id="node3" href="$classMenu.html#aadd64806e4d5a5d60ead445ff90888fc" title=" " alt="" coords="196,13,331,39"/>
+<area shape="rect" id="node5" href="$classMenu.html#aca55fa059a9b184b5a1a379188c4ca0e" title="getWeightScale &#45; чтение веса" alt="" coords="589,38,744,65"/>
+<area shape="rect" id="node4" href="$classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,13,148,39"/>
+<area shape="rect" id="node6" href="$classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763" title="weightFromScale &#45; UI чтения веса" alt="" coords="379,38,541,65"/>
+</map>

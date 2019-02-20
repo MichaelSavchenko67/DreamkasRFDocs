@@ -1,5 +1,9 @@
 <map id="BarcodeScanner::readCodeString" name="BarcodeScanner::readCodeString">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,188,80"/>
-<area shape="rect" id="node2" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="236,5,387,47"/>
-<area shape="rect" id="node3" href="$classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="236,71,387,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,188,112"/>
+<area shape="rect" id="node2" href="$classNodeConflictResolver.html#ab58f641e9f5cb8f5c37291e6134c06d3" title=" " alt="" coords="264,5,415,47"/>
+<area shape="rect" id="node5" href="$classNodeConflictResolver.html#a6ea7fc4ab55c437f6502616769c15acd" title=" " alt="" coords="264,71,415,112"/>
+<area shape="rect" id="node7" href="$classBarcodeScanner.html#ad1dc13e1280e740b24c67ad0b8001674" title=" " alt="" coords="236,137,443,163"/>
+<area shape="rect" id="node3" href="$classNodeConflictResolver.html#a96c475e2c6062087f58cfa16c4016fc5" title=" " alt="" coords="495,5,645,47"/>
+<area shape="rect" id="node4" href="$classNodeConflictResolver.html#afa7b1cb80d89edeb2ff6738ceac19f1e" title=" " alt="" coords="697,5,848,47"/>
+<area shape="rect" id="node6" href="$classNodeConflictResolver.html#a4a322ac29a9417d52b8d11191aea376a" title=" " alt="" coords="491,71,649,112"/>
 </map>

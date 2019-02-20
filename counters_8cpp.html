@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -68,6 +45,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#func-members">Функции</a> &#124;
 <a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Файл counters.cpp</div>  </div>
@@ -75,9 +53,11 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="counters_8h_source.html">counters.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="convert_8h_source.html">convert.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для counters.cpp:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для counters.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="counters_8cpp__incl.png" border="0" usemap="#src_2appl_2counters_8cpp" alt=""/></div>
 <map name="src_2appl_2counters_8cpp" id="src_2appl_2counters_8cpp">
 <area shape="rect"  title=" " alt="" coords="944,5,1091,32"/>
@@ -111,7 +91,14 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="847,155,948,181"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="counters_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a18466960a7958b39feef020903ae9908"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#a18466960a7958b39feef020903ae9908">callbackCounters</a> (void *data, <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> argc, char **argv, char **azColName)</td></tr>
+<tr class="separator:a18466960a7958b39feef020903ae9908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Переменные</h2></td></tr>
 <tr class="memitem:a78590182b7d84ecb193b4c5c4e080824"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#a78590182b7d84ecb193b4c5c4e080824">queryCountersRdy</a> = false</td></tr>
@@ -125,6 +112,103 @@ $(function() {
 <tr class="memitem:a3d4cef806c55b438f47832456bdec4f3"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8cpp.html#a3d4cef806c55b438f47832456bdec4f3">unloadedFields</a></td></tr>
 <tr class="separator:a3d4cef806c55b438f47832456bdec4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Функции</h2>
+<a id="a18466960a7958b39feef020903ae9908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18466960a7958b39feef020903ae9908">&#9670;&nbsp;</a></span>callbackCounters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> callbackCounters </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>azColName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00019">19</a></p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;CALLBACK COUNTERS!&quot;</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span>(i = 0; i &lt; argc; i++)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//logDBG(&quot;%s = %s&quot;, azColName[i], argv[i] ? argv[i] : &quot;NULL&quot;);</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">string</span> column = <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>((<span class="keywordtype">char</span> *) (azColName[i]));</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">//запрос размера базы счетчиков</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span>((<a class="code" href="counters_8cpp.html#a87d32401472121b35873fab726034406">flagCountersBaseSize</a> == <span class="keyword">true</span>) &amp;&amp; (column == <span class="stringliteral">&quot;COUNT(*)&quot;</span>))</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">string</span> value = <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>(</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    (<span class="keywordtype">char</span> *)(argv[i] ? argv[i] : <span class="stringliteral">&quot;NULL&quot;</span>));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span>(value != <span class="stringliteral">&quot;NULL&quot;</span>)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="counters_8cpp.html#a4ad28369ff90926d6ae68c6d3351ac98">countersBaseSizeInt</a> = atoi(value.c_str());</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="counters_8cpp.html#a4ad28369ff90926d6ae68c6d3351ac98">countersBaseSizeInt</a> = 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//выгрузка счетчиков из базы</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span>((<a class="code" href="counters_8cpp.html#aee5c3ecd0c1bca8b8a6900b1748b3951">opCountersUnload</a> == <span class="keyword">true</span>) &amp;&amp; (column != <span class="stringliteral">&quot;COUNT(*)&quot;</span>))</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">string</span> value = <a class="code" href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a>(</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    (<span class="keywordtype">char</span> *)(argv[i] ? argv[i] : <span class="stringliteral">&quot;NULL&quot;</span>));</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(value != <span class="stringliteral">&quot;NULL&quot;</span>)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;%s = %s&quot;</span>, azColName[i], argv[i] ? argv[i] : <span class="stringliteral">&quot;NULL&quot;</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="counters_8cpp.html#a3d4cef806c55b438f47832456bdec4f3">unloadedFields</a>.push_back(column);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="counters_8cpp.html#a3d4cef806c55b438f47832456bdec4f3">unloadedFields</a>.push_back(value);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="counters_8cpp.html#a78590182b7d84ecb193b4c5c4e080824">queryCountersRdy</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="counters_8cpp_html_a78590182b7d84ecb193b4c5c4e080824"><div class="ttname"><a href="counters_8cpp.html#a78590182b7d84ecb193b4c5c4e080824">queryCountersRdy</a></div><div class="ttdeci">volatile bool queryCountersRdy</div><div class="ttdef"><b>Definition:</b> <a href="counters_8cpp_source.html#l00014">counters.cpp:14</a></div></div>
+<div class="ttc" id="counters_8cpp_html_a3d4cef806c55b438f47832456bdec4f3"><div class="ttname"><a href="counters_8cpp.html#a3d4cef806c55b438f47832456bdec4f3">unloadedFields</a></div><div class="ttdeci">vector&lt; string &gt; unloadedFields</div><div class="ttdef"><b>Definition:</b> <a href="counters_8cpp_source.html#l00018">counters.cpp:18</a></div></div>
+<div class="ttc" id="counters_8cpp_html_a87d32401472121b35873fab726034406"><div class="ttname"><a href="counters_8cpp.html#a87d32401472121b35873fab726034406">flagCountersBaseSize</a></div><div class="ttdeci">volatile bool flagCountersBaseSize</div><div class="ttdef"><b>Definition:</b> <a href="counters_8cpp_source.html#l00015">counters.cpp:15</a></div></div>
+<div class="ttc" id="counters_8cpp_html_aee5c3ecd0c1bca8b8a6900b1748b3951"><div class="ttname"><a href="counters_8cpp.html#aee5c3ecd0c1bca8b8a6900b1748b3951">opCountersUnload</a></div><div class="ttdeci">volatile bool opCountersUnload</div><div class="ttdef"><b>Definition:</b> <a href="counters_8cpp_source.html#l00016">counters.cpp:16</a></div></div>
+<div class="ttc" id="classConvert_html_a9d413a4d0ae48dd4817751ed9cbce859"><div class="ttname"><a href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859">Convert::charToString</a></div><div class="ttdeci">static string charToString(const char *source)</div><div class="ttdef"><b>Definition:</b> <a href="convert_8cpp_source.html#l00204">convert.cpp:204</a></div></div>
+<div class="ttc" id="log_8h_html_ab00dd66449102a6d5f35f8c9687892f7"><div class="ttname"><a href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a></div><div class="ttdeci">#define logDBG( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
+<div class="ttc" id="counters_8cpp_html_a4ad28369ff90926d6ae68c6d3351ac98"><div class="ttname"><a href="counters_8cpp.html#a4ad28369ff90926d6ae68c6d3351ac98">countersBaseSizeInt</a></div><div class="ttdeci">volatile int countersBaseSizeInt</div><div class="ttdef"><b>Definition:</b> <a href="counters_8cpp_source.html#l00017">counters.cpp:17</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="convert_8cpp_source.html#l00204">Convert::charToString()</a>, <a class="el" href="counters_8cpp_source.html#l00017">countersBaseSizeInt</a>, <a class="el" href="counters_8cpp_source.html#l00015">flagCountersBaseSize</a>, <a class="el" href="log_8h_source.html#l00034">logDBG</a>, <a class="el" href="counters_8cpp_source.html#l00016">opCountersUnload</a>, <a class="el" href="counters_8cpp_source.html#l00014">queryCountersRdy</a> и <a class="el" href="counters_8cpp_source.html#l00018">unloadedFields</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l02195">Counters::makeCountersRequest()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="counters_8cpp_a18466960a7958b39feef020903ae9908_cgraph.png" border="0" usemap="#counters_8cpp_a18466960a7958b39feef020903ae9908_cgraph" alt=""/></div>
+<map name="counters_8cpp_a18466960a7958b39feef020903ae9908_cgraph" id="counters_8cpp_a18466960a7958b39feef020903ae9908_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect"  href="classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="176,5,327,32"/>
+</map>
+</div>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="counters_8cpp_a18466960a7958b39feef020903ae9908_icgraph.png" border="0" usemap="#counters_8cpp_a18466960a7958b39feef020903ae9908_icgraph" alt=""/></div>
+<map name="counters_8cpp_a18466960a7958b39feef020903ae9908_icgraph" id="counters_8cpp_a18466960a7958b39feef020903ae9908_icgraph">
+<area shape="rect"  title=" " alt="" coords="995,183,1117,209"/>
+<area shape="rect"  href="classCounters.html#afa3518ef6d03452cd0f344327665e6e9" title=" " alt="" coords="729,183,947,209"/>
+<area shape="rect"  href="classCounters.html#aae254f86db333187e0ec4fd0157a42f8" title=" " alt="" coords="509,56,648,83"/>
+<area shape="rect"  href="classCounters.html#ad3ee95fcf85b6344ce212acf482baa10" title=" " alt="" coords="518,107,639,133"/>
+<area shape="rect"  href="classCounters.html#ab1500f4d02c3dac413d7cec73e2dac0c" title=" " alt="" coords="225,208,428,235"/>
+<area shape="rect"  href="classCounters.html#abcb1b798e1fd2666bd7a8eb9bfbe5b29" title=" " alt="" coords="484,208,673,235"/>
+<area shape="rect"  href="classCounters.html#a1b07b7c38a75eb07ed7e0de8c27a3fd5" title=" " alt="" coords="476,259,681,285"/>
+<area shape="rect"  href="classCounters.html#a82b033696c0e478e06090aaf3453cbcb" title=" " alt="" coords="489,310,668,351"/>
+<area shape="rect"  href="classCounters.html#ad4caabed88ce591daa970d8b15f7e57e" title=" " alt="" coords="241,56,412,83"/>
+<area shape="rect"  href="classCounters.html#a9124d37fd8778ffe37a21ddef7de7f95" title=" " alt="" coords="265,107,388,133"/>
+<area shape="rect"  href="classCounters.html#a41c6b3ae8bc9f3a275544e99ad4ea8c6" title=" " alt="" coords="11,5,171,32"/>
+<area shape="rect"  href="classCounters.html#a0c9fe927e22e43131933dcd87301b604" title=" " alt="" coords="5,56,177,83"/>
+<area shape="rect"  href="classCounters.html#a80eca090936e3345d6c2d7c722d275ba" title=" " alt="" coords="10,107,173,133"/>
+<area shape="rect"  href="classCounters.html#ac9f0d8cc2d75a53b30c400aa835dcc2f" title=" " alt="" coords="20,157,163,184"/>
+<area shape="rect"  href="classPrinter.html#ae41e3180c75a7bf12c89360eed71dd45" title=" " alt="" coords="25,209,158,250"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Переменные</h2>
 <a id="a4ad28369ff90926d6ae68c6d3351ac98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ad28369ff90926d6ae68c6d3351ac98">&#9670;&nbsp;</a></span>countersBaseSizeInt</h2>
@@ -137,6 +221,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00017">17</a></p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l00019">callbackCounters()</a> и <a class="el" href="counters_8cpp_source.html#l02170">Counters::countersBaseSize()</a>.</p>
 
 </div>
 </div>
@@ -152,6 +240,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00015">15</a></p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l00019">callbackCounters()</a> и <a class="el" href="counters_8cpp_source.html#l02170">Counters::countersBaseSize()</a>.</p>
+
 </div>
 </div>
 <a id="aee5c3ecd0c1bca8b8a6900b1748b3951"></a>
@@ -165,6 +257,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00016">16</a></p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l00019">callbackCounters()</a> и <a class="el" href="counters_8cpp_source.html#l00263">Counters::unload()</a>.</p>
 
 </div>
 </div>
@@ -180,6 +276,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00014">14</a></p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l00019">callbackCounters()</a>, <a class="el" href="counters_8cpp_source.html#l02170">Counters::countersBaseSize()</a> и <a class="el" href="counters_8cpp_source.html#l00263">Counters::unload()</a>.</p>
+
 </div>
 </div>
 <a id="a3d4cef806c55b438f47832456bdec4f3"></a>
@@ -194,12 +294,16 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="counters_8cpp_source.html">counters.cpp</a> строка <a class="el" href="counters_8cpp_source.html#l00018">18</a></p>
+
+<p class="reference">Используется в <a class="el" href="counters_8cpp_source.html#l00019">callbackCounters()</a>, <a class="el" href="counters_8cpp_source.html#l02308">Counters::parseBaseAnswer()</a> и <a class="el" href="counters_8cpp_source.html#l00263">Counters::unload()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

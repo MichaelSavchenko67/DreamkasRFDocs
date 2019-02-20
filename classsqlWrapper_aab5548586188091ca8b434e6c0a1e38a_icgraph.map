@@ -1,0 +1,4 @@
+<map id="sqlWrapper::addImageTable" name="sqlWrapper::addImageTable">
+<area shape="rect" id="node1" title="addImageTable Сохранение в таблицу image_config uuid, article, kkt_plant_num" alt="" coords="231,13,416,39"/>
+<area shape="rect" id="node2" href="$classsqlWrapper.html#a5a19c715443cdb9cf3ae98ceb4060cf3" title="copyConfigToImage Копирование полей uuid, article, kkt_plant_num в IMAGE_CONFIG" alt="" coords="5,5,183,47"/>
+</map>

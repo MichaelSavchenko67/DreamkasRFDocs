@@ -1,4 +1,6 @@
 <map id="FlashMounter::isMounted" name="FlashMounter::isMounted">
-<area shape="rect" id="node1" title="isMounted получение флага смонтирована ли флешка" alt="" coords="5,5,175,32"/>
-<area shape="rect" id="node2" href="$classFlashMounter.html#a6e9b5b794727b91e9b36e2577a5d20b5" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="223,5,409,32"/>
+<area shape="rect" id="node1" title="isMounted получение флага смонтирована ли флешка" alt="" coords="5,31,175,57"/>
+<area shape="rect" id="node2" href="$classFlashMounter.html#a6e9b5b794727b91e9b36e2577a5d20b5" title="eventHandler хендлер, отслеживающий вставку/извлечение флешки" alt="" coords="223,31,409,57"/>
+<area shape="rect" id="node3" href="$classFlashMounter.html#a1fdf174486adf03846c0d136b0ce94c3" title="clearAll очистить данные" alt="" coords="481,5,633,32"/>
+<area shape="rect" id="node4" href="$classFlashMounter.html#a33f4cac9ab669913d78a9e311fe6c93d" title="findDevicePath поиск подключенных устройств" alt="" coords="457,56,656,83"/>
 </map>

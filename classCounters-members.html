@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -75,15 +52,25 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#afedee6a17d838a06067c715e5db75fbe">calculate</a>(string formula)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCounters.html#a6d83023bf5dece2147c82ad2b1906abd">Counters</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a6c85fbe6822481e09d4fa2917ac56c11">counters_file</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a06953bed05143aff885ebf6cbd32978d">Counters_list</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a0444456e4ba480dcda167aab2c8f884c">Counters_list_0</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a47afd42da56678fd0039e6cfd12f21c5">counters_mutex</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#ad82680e99e1401024fde248a90606b48">countersBaseMutex</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classCounters.html#abcb1b798e1fd2666bd7a8eb9bfbe5b29">countersBaseSize</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#ab1500f4d02c3dac413d7cec73e2dac0c">createCountersBase</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#a58af642146bd79be107c4c2c73ea1d97">display</a>(DYNAMIC_MASK &amp;what)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#aae254f86db333187e0ec4fd0157a42f8">download</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#a0341844e6983c34f7eb9fd9ded2d3acc">formula_parser</a>(string formula, vector&lt; int64_t &gt; &amp;result, vector&lt; unsigned char &gt; &amp;operators)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a445befd237bf6a05274811e3a8aa4a66">get</a>(DYNAMIC_MASK &amp;counter)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#a1e10d9f1b55e2c09dc92d60f521d229b">get_safely</a>(DYNAMIC_MASK &amp;counter)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a467afcee5ecb6a0cd251f9f8a128e8ec">MULTIPLY</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#ac9f0d8cc2d75a53b30c400aa835dcc2f">open_shift</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a0bd4b46dc532753ea058ed397389f9d2">countersDb</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a65c7278b618e030e5aaaf8980ca2be64">countersQuery</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a1b07b7c38a75eb07ed7e0de8c27a3fd5">createBlankCounters</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#ab1500f4d02c3dac413d7cec73e2dac0c">createCountersBase</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a58af642146bd79be107c4c2c73ea1d97">display</a>(DYNAMIC_MASK &amp;what)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#aae254f86db333187e0ec4fd0157a42f8">download</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a0341844e6983c34f7eb9fd9ded2d3acc">formula_parser</a>(string formula, vector&lt; int64_t &gt; &amp;result, vector&lt; unsigned char &gt; &amp;operators)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a445befd237bf6a05274811e3a8aa4a66">get</a>(DYNAMIC_MASK &amp;counter)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a1e10d9f1b55e2c09dc92d60f521d229b">get_safely</a>(DYNAMIC_MASK &amp;counter)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a1a57fbb83510f7e1b88170afda1baa03">getCounterVal</a>(string field)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#afa3518ef6d03452cd0f344327665e6e9">makeCountersRequest</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a467afcee5ecb6a0cd251f9f8a128e8ec">MULTIPLY</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#ac9f0d8cc2d75a53b30c400aa835dcc2f">open_shift</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a9866a9fe4d17e2ede89623a16d1d5035">parseBaseAnswer</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a67c67316fd2442250eb1d0d85112ae0a">reset</a>(DYNAMIC_MASK &amp;counters)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCounters.html#a0c9fe927e22e43131933dcd87301b604">revert_by_cash</a>(unsigned char type_doc, uint64_t tot_sum)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a41c6b3ae8bc9f3a275544e99ad4ea8c6">sale_by_card</a>(unsigned char type_doc, uint64_t tot_sum)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
@@ -99,15 +86,16 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#ad3ee95fcf85b6344ce212acf482baa10">unload</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classCounters.html#ad4caabed88ce591daa970d8b15f7e57e">unloadFromBin</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a9124d37fd8778ffe37a21ddef7de7f95">update</a>(DYNAMIC_MASK &amp;how)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#abed6da6badc629219c46f8a8290ede6b">vector_clc</a>(unsigned operation, vector&lt; int64_t &gt; &amp;operands, vector&lt; unsigned char &gt; &amp;operators)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a363bca978a8073bb04199a5b676c33fe">view_all</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#a872add2d8b973ecd6fe49c62ddf33493">X_REPORT</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a8ae291f6efe6a5c53f82eb00389656ac">Z_REPORT</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classCounters.html#ae3ca8c11cf67325d8ba0e514b4d69ab6">~Counters</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#ab2c15ef63cb47e9855cfbd955879446e">updateCounters</a>(string, string)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#abed6da6badc629219c46f8a8290ede6b">vector_clc</a>(unsigned operation, vector&lt; int64_t &gt; &amp;operands, vector&lt; unsigned char &gt; &amp;operators)</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a363bca978a8073bb04199a5b676c33fe">view_all</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#a872add2d8b973ecd6fe49c62ddf33493">X_REPORT</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classCounters.html#a8ae291f6efe6a5c53f82eb00389656ac">Z_REPORT</a></td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classCounters.html#ae3ca8c11cf67325d8ba0e514b4d69ab6">~Counters</a>()</td><td class="entry"><a class="el" href="classCounters.html">Counters</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

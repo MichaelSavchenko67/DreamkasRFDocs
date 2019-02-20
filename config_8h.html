@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
@@ -86,9 +63,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="agents_8h_source.html">agents.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="tax_8h_source.html">tax.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dynamic__mask_8h_source.html">dynamic_mask.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для config.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для config.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="config_8h__incl.png" border="0" usemap="#src_2appl_2include_2config_8h" alt=""/></div>
 <map name="src_2appl_2include_2config_8h" id="src_2appl_2include_2config_8h">
 <area shape="rect"  title=" " alt="" coords="325,5,487,32"/>
@@ -124,9 +103,11 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="1271,229,1325,256"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-Граф файлов, в которые включается этот файл:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф файлов, в которые включается этот файл:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="config_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2config_8hdep" alt=""/></div>
 <map name="src_2appl_2include_2config_8hdep" id="src_2appl_2include_2config_8hdep">
 <area shape="rect"  title=" " alt="" coords="1010,5,1173,32"/>
@@ -213,12 +194,98 @@ $(function() {
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Переменные</h2></td></tr>
+<tr class="memitem:af80efdbf1a16321cb0fbb1e695a114bf"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af80efdbf1a16321cb0fbb1e695a114bf">CONFIG_VERSION</a> = 17</td></tr>
+<tr class="separator:af80efdbf1a16321cb0fbb1e695a114bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bebfddcec80faca79d1b77dbec6ab8"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a68bebfddcec80faca79d1b77dbec6ab8">fisgo_cur_version</a> = &quot;1.20.2&quot;</td></tr>
+<tr class="separator:a68bebfddcec80faca79d1b77dbec6ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bb4fbb0e4030e599c3ccec96e5981c"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a07bb4fbb0e4030e599c3ccec96e5981c">kkt_reg_version</a> = &quot;001&quot;</td></tr>
+<tr class="separator:a07bb4fbb0e4030e599c3ccec96e5981c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c69ac0dff7ed58d186cb1717d709a38"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a7c69ac0dff7ed58d186cb1717d709a38">agents_file</a> = &quot;agents.bin&quot;</td></tr>
+<tr class="separator:a7c69ac0dff7ed58d186cb1717d709a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a107d0327dc16e2ca8b81455a8023d238"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a107d0327dc16e2ca8b81455a8023d238">VERSION_FOR_STAT</a> = &quot;100.6.1.3&quot;</td></tr>
+<tr class="separator:a107d0327dc16e2ca8b81455a8023d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17818b11fecae22c9cdb1c209d163edc"><td class="memItemLeft" align="right" valign="top">static const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a17818b11fecae22c9cdb1c209d163edc">TIMESTAMP_FILE</a> = &quot;timestamp&quot;</td></tr>
+<tr class="separator:a17818b11fecae22c9cdb1c209d163edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab944fa63f71e5aa29d91917e643a2532"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab944fa63f71e5aa29d91917e643a2532">modelName</a> = &quot;Kassa_RB&quot;</td></tr>
 <tr class="separator:ab944fa63f71e5aa29d91917e643a2532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a546279511b14d36a3dced74d9cbd0822"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a546279511b14d36a3dced74d9cbd0822">upModelName</a> = &quot;DREAMKAS_RB&quot;</td></tr>
 <tr class="separator:a546279511b14d36a3dced74d9cbd0822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af589d182cd9ee7b6ba7be5d5207c7baf"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af589d182cd9ee7b6ba7be5d5207c7baf">product</a> = &quot;dreamkasRB&quot;</td></tr>
 <tr class="separator:af589d182cd9ee7b6ba7be5d5207c7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c55e5bdfc108f6a3c21cbdcbd88eec8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a3c55e5bdfc108f6a3c21cbdcbd88eec8">SETTINGS_AGENTS_MASK</a> = <a class="el" href="dynamic__mask_8h.html#a43016d7adde3d1febd971856bd76d1fe">CURRENT_AGENT</a> | <a class="el" href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9">AGENT_MASK</a></td></tr>
+<tr class="separator:a3c55e5bdfc108f6a3c21cbdcbd88eec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709b1b4bd28c52e4765ec0e332b55bfe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a709b1b4bd28c52e4765ec0e332b55bfe">CABINET_CONNECT_MASK</a></td></tr>
+<tr class="separator:a709b1b4bd28c52e4765ec0e332b55bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcef9073382752a8e68bfb2027b0beb1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#afcef9073382752a8e68bfb2027b0beb1">SETTINGS_TAXS_MASK</a> = <a class="el" href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a> | <a class="el" href="dynamic__mask_8h.html#a70f5f4df2d5a722308d5b84c55d561df">CUR_TAX_SYSTEM</a></td></tr>
+<tr class="separator:afcef9073382752a8e68bfb2027b0beb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a82db3bff2b664e4cd39a64f6297a77"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a5a82db3bff2b664e4cd39a64f6297a77">ETHERNET_SETTINGS_MASK</a></td></tr>
+<tr class="separator:a5a82db3bff2b664e4cd39a64f6297a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ebff8846d5c52f02fdb1867317c925"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a03ebff8846d5c52f02fdb1867317c925">WI_FI_SETTINGS_MASK</a></td></tr>
+<tr class="separator:a03ebff8846d5c52f02fdb1867317c925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab351dbe3ffaf7208b3305cc87a402a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aab351dbe3ffaf7208b3305cc87a402a9">RECEIPT_CORRECTION_MASK</a> = <a class="el" href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a></td></tr>
+<tr class="separator:aab351dbe3ffaf7208b3305cc87a402a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8591bc79009816d7bc3737b08cee8367"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8591bc79009816d7bc3737b08cee8367">SETTINGS_ID_OFD_FS_DAMAGED</a></td></tr>
+<tr class="separator:a8591bc79009816d7bc3737b08cee8367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d2c3870d5d6624971bbd45849f73fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a01d2c3870d5d6624971bbd45849f73fc">FS_REPLACE_MASK</a> = <a class="el" href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></td></tr>
+<tr class="separator:a01d2c3870d5d6624971bbd45849f73fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab479051bf2a5e8dceae4828cddbb6681"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab479051bf2a5e8dceae4828cddbb6681">FS_CONFIG_MASK</a> = <a class="el" href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a> | <a class="el" href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a> | <a class="el" href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a></td></tr>
+<tr class="separator:ab479051bf2a5e8dceae4828cddbb6681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03152651f388e91f23fe2859add46a34"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a03152651f388e91f23fe2859add46a34">FABRICATION_MASK</a> = <a class="el" href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a> | <a class="el" href="dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567">ARTICLE</a> | <a class="el" href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a></td></tr>
+<tr class="separator:a03152651f388e91f23fe2859add46a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb3d9cad5240b0a4b8d2753e4595a1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8fb3d9cad5240b0a4b8d2753e4595a1b">REG_KKT_MASK</a></td></tr>
+<tr class="separator:a8fb3d9cad5240b0a4b8d2753e4595a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03cbcaa6ba68158e1c9eea973e01022"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae03cbcaa6ba68158e1c9eea973e01022">OFD_SETTINGS</a></td></tr>
+<tr class="separator:ae03cbcaa6ba68158e1c9eea973e01022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e871114d6f055f25111461eff61c109"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a0e871114d6f055f25111461eff61c109">CLOUD_REG_KKT</a></td></tr>
+<tr class="separator:a0e871114d6f055f25111461eff61c109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7096d5401aba1bd3215f8df6c930c9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#acb7096d5401aba1bd3215f8df6c930c9">CONFIG_FIELDS</a></td></tr>
+<tr class="separator:acb7096d5401aba1bd3215f8df6c930c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44adfa91d8d67eadf670fc6de0927692"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a44adfa91d8d67eadf670fc6de0927692">ALL_FIELDS_PREV</a> = <a class="el" href="dynamic__mask_8h.html#a148263cdb4aa96a3ff8e871b4aaba1cf">ALL_FIELDS</a> &amp; (~<a class="el" href="dynamic__mask_8h.html#a310f0d37da402f52f423c94125b79403">SOUND_BUTTON</a>)</td></tr>
+<tr class="separator:a44adfa91d8d67eadf670fc6de0927692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf11c0b492a2637857eff787dd8c8589"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#abf11c0b492a2637857eff787dd8c8589">NOT_CLOUD_REG</a> = 0</td></tr>
+<tr class="separator:abf11c0b492a2637857eff787dd8c8589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ae9c09340c98f4ff02505b7a46bf06"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ac4ae9c09340c98f4ff02505b7a46bf06">CLOUD_OFD_REGISTER</a> = 1</td></tr>
+<tr class="separator:ac4ae9c09340c98f4ff02505b7a46bf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c95a6cbf941363b91969536d6045457"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a5c95a6cbf941363b91969536d6045457">CLOUD_WAITING</a> = 2</td></tr>
+<tr class="separator:a5c95a6cbf941363b91969536d6045457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87c111f5707376af5c392e86a84d281"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#af87c111f5707376af5c392e86a84d281">CLOUD_NEED_SIGN</a> = 3</td></tr>
+<tr class="separator:af87c111f5707376af5c392e86a84d281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4975152829521f213cf72266058c85ef"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a4975152829521f213cf72266058c85ef">CLOUD_NEED_REPORT</a> = 4</td></tr>
+<tr class="separator:a4975152829521f213cf72266058c85ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a55bb24ce0de635ea6f729999ccdb3a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a0a55bb24ce0de635ea6f729999ccdb3a">CLOUD_REGISTERED</a> = 5</td></tr>
+<tr class="separator:a0a55bb24ce0de635ea6f729999ccdb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5143fe81368c494f125e6dd73570e3c"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ab5143fe81368c494f125e6dd73570e3c">DREAMKAS_OFD</a> = 0x60</td></tr>
+<tr class="separator:ab5143fe81368c494f125e6dd73570e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441e3257726be0be0ea75b2c302cbc0d"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a441e3257726be0be0ea75b2c302cbc0d">YANDEX</a> = 0x10</td></tr>
+<tr class="separator:a441e3257726be0be0ea75b2c302cbc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5f1c7734dc979d5c67db02fa9869c53"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ad5f1c7734dc979d5c67db02fa9869c53">FIRST_OFD</a> = 0x01</td></tr>
+<tr class="separator:ad5f1c7734dc979d5c67db02fa9869c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae513a0939d8ae3313f8a7701e3221bba"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae513a0939d8ae3313f8a7701e3221bba">TAXCOM</a> = 0x02</td></tr>
+<tr class="separator:ae513a0939d8ae3313f8a7701e3221bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa014742d5faa064f6810f7fcc7b0f3d0"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aa014742d5faa064f6810f7fcc7b0f3d0">OFD_YARUS</a> = 0x03</td></tr>
+<tr class="separator:aa014742d5faa064f6810f7fcc7b0f3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181e6845fe7d341ec9ab89c79bfd1bf4"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a181e6845fe7d341ec9ab89c79bfd1bf4">SBIS_OFD</a> = 0x04</td></tr>
+<tr class="separator:a181e6845fe7d341ec9ab89c79bfd1bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4654d02989546e792e95ec2561352f3"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae4654d02989546e792e95ec2561352f3">KALUGA_ASTRAL</a> = 0x05</td></tr>
+<tr class="separator:ae4654d02989546e792e95ec2561352f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5662632394983499671b5a0bb5cdca48"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a5662632394983499671b5a0bb5cdca48">KORUS</a> = 0x06</td></tr>
+<tr class="separator:a5662632394983499671b5a0bb5cdca48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8599de87b924a6c4ee0a4bf0aa3951a3"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8599de87b924a6c4ee0a4bf0aa3951a3">EXPRESS</a> = 0x07</td></tr>
+<tr class="separator:a8599de87b924a6c4ee0a4bf0aa3951a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566bdc948bbd9790af52bb9dea411e5a"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a566bdc948bbd9790af52bb9dea411e5a">EVOTOR</a> = 0x08</td></tr>
+<tr class="separator:a566bdc948bbd9790af52bb9dea411e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f271dbca23b956bc2430e7082826a5"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a71f271dbca23b956bc2430e7082826a5">KONTUR</a> = 0x09</td></tr>
+<tr class="separator:a71f271dbca23b956bc2430e7082826a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee00e0e7859e2f8ed4754911fab3d30"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a5ee00e0e7859e2f8ed4754911fab3d30">OFD_RU</a> = 0x40</td></tr>
+<tr class="separator:a5ee00e0e7859e2f8ed4754911fab3d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0455037ea49c8e78073aa03c2cd679"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aac0455037ea49c8e78073aa03c2cd679">MANUAL</a> = 0x20</td></tr>
+<tr class="separator:aac0455037ea49c8e78073aa03c2cd679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb64d540a3e4d81af93f29fba3f317a3"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#abb64d540a3e4d81af93f29fba3f317a3">SHIFT_TIMER_ON</a> = 0x01</td></tr>
+<tr class="separator:abb64d540a3e4d81af93f29fba3f317a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9aa7377c69af9a021dc6cc80630caf7"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ae9aa7377c69af9a021dc6cc80630caf7">SHIFT_TIMER_OFF</a> = 0x00</td></tr>
+<tr class="separator:ae9aa7377c69af9a021dc6cc80630caf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4459e8b3dc126081cd7864e55812ac20"><td class="memItemLeft" align="right" valign="top">static const unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a4459e8b3dc126081cd7864e55812ac20">FS_NUMBER_LEN</a> = 16</td></tr>
+<tr class="separator:a4459e8b3dc126081cd7864e55812ac20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Макросы</h2>
 <a id="af4cd26120851caa9a6286781a09a0ab9"></a>
@@ -232,6 +299,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00021">21</a></p>
 
 </div>
 </div>
@@ -247,6 +316,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00023">23</a></p>
+
 </div>
 </div>
 <a id="aa3a6b288dd0f19e16d2b31ba318d9597"></a>
@@ -260,6 +331,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00022">22</a></p>
 
 </div>
 </div>
@@ -280,6 +353,41 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00040">40</a></p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (config == NULL)</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;ERROR! config_clear() NULL POINTER!&quot;</span> );</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    config-&gt;config_version  =               0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    config-&gt;kkt_mode        =            0x00;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    config-&gt;terminal_mode   =            0x00;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    config-&gt;fs_replace_mode =            0x00;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    config-&gt;shift_timer     = <a class="code" href="config_8h.html#ae9aa7377c69af9a021dc6cc80630caf7">SHIFT_TIMER_OFF</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Версия ПО</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    config-&gt;fisgo_version.clear();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    config-&gt;kkt_reg_version.clear();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    config-&gt;article.clear();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    config-&gt;uuid.clear();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    config-&gt;eth_up = <span class="keyword">false</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    config-&gt;eth_manual = <span class="keyword">false</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    config-&gt;ip_adress.clear();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    config-&gt;mask.clear();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    config-&gt;router.clear();</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    config-&gt;dns_main.clear();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    config-&gt;dns_add.clear();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    config-&gt;wifi_up = <span class="keyword">false</span>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    config-&gt;net_wifi_name.clear();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    config-&gt;net_wifi_key = 0;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    config-&gt;net_wifi_signal = 0;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    config-&gt;net_pass.clear();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    config-&gt;fs_number.clear();</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    config-&gt;fs_number_count = 0;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    config-&gt;fs_numbers_table.clear();</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    config-&gt;cashier_inn.clear();</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    config-&gt;organization_name.clear();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    config-&gt;calculation_address.clear();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    config-&gt;calculation_place.clear();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    config-&gt;organization_inn.clear();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    config-&gt;organization_kpp.clear();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    config-&gt;kkt_reg_num.clear();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    config-&gt;kkt_plant_num.clear();</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    config-&gt;tax_systems    = 0x00;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    config-&gt;cur_tax_system = 0x00;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    config-&gt;cur_department = 0x00;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    config-&gt;encryption_sign = <span class="keyword">false</span>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    config-&gt;excisable_sign = <span class="keyword">false</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    config-&gt;clc_services_sign = <span class="keyword">false</span>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    config-&gt;gambling_sign = <span class="keyword">false</span>;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    config-&gt;lottery_sign =<span class="keyword">false</span>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    config-&gt;paying_agent_sign = <span class="keyword">false</span>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    config-&gt;ofd_choose = 0x00;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    config-&gt;ofd_inn.clear();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    config-&gt;ofd_server_address.clear();</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    config-&gt;ofd_name.clear();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    config-&gt;ofd_server_port = 0;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    config-&gt;check_receipt_address.clear();</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    config-&gt;ofd_server_ip.clear();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    config-&gt;open_shift_date.clear();</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    config-&gt;agent_mask = 0x00;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    config-&gt;current_agent = 0x00;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    config-&gt;logType = 0x03;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    config-&gt;isCabinetEnable = <span class="keyword">false</span>;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    config-&gt;startTime = 0;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    config-&gt;lastMsgOFD = 0;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    config-&gt;nds_free_price = <a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    config-&gt;scaleConfig.type = 0;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    memset( config-&gt;scaleConfig.options, 0x00, <span class="keyword">sizeof</span>(config-&gt;scaleConfig.options));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    config-&gt;scaleConfig.portName.clear();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    config-&gt;scaleConfig.speed = 0;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    config-&gt;scannerConfig.type = 0;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    memset( config-&gt;scannerConfig.options, 0x00, <span class="keyword">sizeof</span>(config-&gt;scannerConfig.options));</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    config-&gt;scannerConfig.portName.clear();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    config-&gt;scannerConfig.speed = 0;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    config-&gt;is_auto_cash_out = <span class="keyword">false</span>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    config-&gt;ffd_kkt_ver = 0x00;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    config-&gt;fs_ffd_ver = 0x00;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    config-&gt;fs_validity_date = 0;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    config-&gt;bso = <span class="keyword">false</span>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    config-&gt;kkt_signs = 0x00;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    config-&gt;add_kkt_signs = 0x00;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    config-&gt;automat_num.clear();</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    config-&gt;isAutoOpenShiftEnable = <span class="keyword">false</span>;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    config-&gt;internet_reciept = 0;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    config-&gt;connectTo = 0;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    config-&gt;cloud_kkt_fns_num.clear();</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    config-&gt;cloud_org_fns_num.clear();</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    config-&gt;cloud_tel.clear();</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    config-&gt;cloud_reg_status = 0x00;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    config-&gt;cloud_pin.clear();</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    config-&gt;time_zone = <a class="code" href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0">Convert::getTimeZone</a>();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    config-&gt;inc_pos      =     1;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    config-&gt;sound_button = <span class="keyword">false</span>;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> EXIT_SUCCESS;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div><div class="ttc" id="classConvert_html_aa5a254b23335ed91459732aafd5a5db0"><div class="ttname"><a href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0">Convert::getTimeZone</a></div><div class="ttdeci">static int32_t getTimeZone()</div><div class="ttdef"><b>Definition:</b> <a href="convert_8cpp_source.html#l00062">convert.cpp:62</a></div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075ba286179968ae394368ce824901e0da346">nds_no</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00033">tax.h:33</a></div></div>
+<div class="ttc" id="config_8h_html_ae9aa7377c69af9a021dc6cc80630caf7"><div class="ttname"><a href="config_8h.html#ae9aa7377c69af9a021dc6cc80630caf7">SHIFT_TIMER_OFF</a></div><div class="ttdeci">static const unsigned char SHIFT_TIMER_OFF</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00168">config.h:168</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="config_8h_source.html#l00249">Config::add_kkt_signs</a>, <a class="el" href="config_8h_source.html#l00234">Config::agent_mask</a>, <a class="el" href="config_8h_source.html#l00184">Config::article</a>, <a class="el" href="config_8h_source.html#l00250">Config::automat_num</a>, <a class="el" href="config_8h_source.html#l00247">Config::bso</a>, <a class="el" href="config_8h_source.html#l00206">Config::calculation_address</a>, <a class="el" href="config_8h_source.html#l00207">Config::calculation_place</a>, <a class="el" href="config_8h_source.html#l00204">Config::cashier_inn</a>, <a class="el" href="config_8h_source.html#l00229">Config::check_receipt_address</a>, <a class="el" href="config_8h_source.html#l00219">Config::clc_services_sign</a>, <a class="el" href="config_8h_source.html#l00262">Config::cloud_kkt_fns_num</a>, <a class="el" href="config_8h_source.html#l00261">Config::cloud_org_fns_num</a>, <a class="el" href="config_8h_source.html#l00260">Config::cloud_pin</a>, <a class="el" href="config_8h_source.html#l00258">Config::cloud_reg_status</a>, <a class="el" href="config_8h_source.html#l00259">Config::cloud_tel</a>, <a class="el" href="config_8h_source.html#l00175">Config::config_version</a>, <a class="el" href="config_8h_source.html#l00254">Config::connectTo</a>, <a class="el" href="config_8h_source.html#l00215">Config::cur_department</a>, <a class="el" href="config_8h_source.html#l00214">Config::cur_tax_system</a>, <a class="el" href="config_8h_source.html#l00235">Config::current_agent</a>, <a class="el" href="config_8h_source.html#l00194">Config::dns_add</a>, <a class="el" href="config_8h_source.html#l00193">Config::dns_main</a>, <a class="el" href="config_8h_source.html#l00217">Config::encryption_sign</a>, <a class="el" href="config_8h_source.html#l00189">Config::eth_manual</a>, <a class="el" href="config_8h_source.html#l00188">Config::eth_up</a>, <a class="el" href="config_8h_source.html#l00218">Config::excisable_sign</a>, <a class="el" href="config_8h_source.html#l00244">Config::ffd_kkt_ver</a>, <a class="el" href="config_8h_source.html#l00181">Config::fisgo_version</a>, <a class="el" href="config_8h_source.html#l00245">Config::fs_ffd_ver</a>, <a class="el" href="config_8h_source.html#l00201">Config::fs_number</a>, <a class="el" href="config_8h_source.html#l00202">Config::fs_number_count</a>, <a class="el" href="config_8h_source.html#l00203">Config::fs_numbers_table</a>, <a class="el" href="config_8h_source.html#l00178">Config::fs_replace_mode</a>, <a class="el" href="config_8h_source.html#l00246">Config::fs_validity_date</a>, <a class="el" href="config_8h_source.html#l00220">Config::gambling_sign</a>, <a class="el" href="convert_8cpp_source.html#l00062">Convert::getTimeZone()</a>, <a class="el" href="config_8h_source.html#l00256">Config::inc_pos</a>, <a class="el" href="config_8h_source.html#l00253">Config::internet_reciept</a>, <a class="el" href="config_8h_source.html#l00190">Config::ip_adress</a>, <a class="el" href="config_8h_source.html#l00243">Config::is_auto_cash_out</a>, <a class="el" href="config_8h_source.html#l00251">Config::isAutoOpenShiftEnable</a>, <a class="el" href="config_8h_source.html#l00237">Config::isCabinetEnable</a>, <a class="el" href="config_8h_source.html#l00176">Config::kkt_mode</a>, <a class="el" href="config_8h_source.html#l00211">Config::kkt_plant_num</a>, <a class="el" href="config_8h_source.html#l00210">Config::kkt_reg_num</a>, <a class="el" href="config_8h_source.html#l00182">Config::kkt_reg_version</a>, <a class="el" href="config_8h_source.html#l00248">Config::kkt_signs</a>, <a class="el" href="config_8h_source.html#l00239">Config::lastMsgOFD</a>, <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="config_8h_source.html#l00236">Config::logType</a>, <a class="el" href="config_8h_source.html#l00221">Config::lottery_sign</a>, <a class="el" href="config_8h_source.html#l00191">Config::mask</a>, <a class="el" href="config_8h_source.html#l00240">Config::nds_free_price</a>, <a class="el" href="tax_8h_source.html#l00033">nds_no</a>, <a class="el" href="config_8h_source.html#l00199">Config::net_pass</a>, <a class="el" href="config_8h_source.html#l00197">Config::net_wifi_key</a>, <a class="el" href="config_8h_source.html#l00196">Config::net_wifi_name</a>, <a class="el" href="config_8h_source.html#l00198">Config::net_wifi_signal</a>, <a class="el" href="config_8h_source.html#l00224">Config::ofd_choose</a>, <a class="el" href="config_8h_source.html#l00225">Config::ofd_inn</a>, <a class="el" href="config_8h_source.html#l00227">Config::ofd_name</a>, <a class="el" href="config_8h_source.html#l00226">Config::ofd_server_address</a>, <a class="el" href="config_8h_source.html#l00230">Config::ofd_server_ip</a>, <a class="el" href="config_8h_source.html#l00228">Config::ofd_server_port</a>, <a class="el" href="config_8h_source.html#l00232">Config::open_shift_date</a>, <a class="el" href="config_8h_source.html#l00164">ScaleConfig::options</a>, <a class="el" href="config_8h_source.html#l00208">Config::organization_inn</a>, <a class="el" href="config_8h_source.html#l00209">Config::organization_kpp</a>, <a class="el" href="config_8h_source.html#l00205">Config::organization_name</a>, <a class="el" href="config_8h_source.html#l00222">Config::paying_agent_sign</a>, <a class="el" href="config_8h_source.html#l00163">ScaleConfig::portName</a>, <a class="el" href="config_8h_source.html#l00192">Config::router</a>, <a class="el" href="config_8h_source.html#l00241">Config::scaleConfig</a>, <a class="el" href="config_8h_source.html#l00242">Config::scannerConfig</a>, <a class="el" href="config_8h_source.html#l00179">Config::shift_timer</a>, <a class="el" href="config_8h_source.html#l00168">SHIFT_TIMER_OFF</a>, <a class="el" href="config_8h_source.html#l00257">Config::sound_button</a>, <a class="el" href="config_8h_source.html#l00162">ScaleConfig::speed</a>, <a class="el" href="config_8h_source.html#l00238">Config::startTime</a>, <a class="el" href="config_8h_source.html#l00213">Config::tax_systems</a>, <a class="el" href="config_8h_source.html#l00177">Config::terminal_mode</a>, <a class="el" href="config_8h_source.html#l00267">Config::time_zone</a>, <a class="el" href="config_8h_source.html#l00159">ScaleConfig::type</a>, <a class="el" href="config_8h_source.html#l00186">Config::uuid</a> и <a class="el" href="config_8h_source.html#l00195">Config::wifi_up</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="config_8cpp_source.html#l00151">Config::Config()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a> и <a class="el" href="config_8cpp_source.html#l00155">Config::~Config()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="config_8h_a494b0e207424d08fce7a81e09d9a93bf_cgraph.png" border="0" usemap="#config_8h_a494b0e207424d08fce7a81e09d9a93bf_cgraph" alt=""/></div>
+<map name="config_8h_a494b0e207424d08fce7a81e09d9a93bf_cgraph" id="config_8h_a494b0e207424d08fce7a81e09d9a93bf_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,5,97,32"/>
+<area shape="rect"  href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0" title=" " alt="" coords="145,5,297,32"/>
+</map>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="config_8h_a494b0e207424d08fce7a81e09d9a93bf_icgraph.png" border="0" usemap="#config_8h_a494b0e207424d08fce7a81e09d9a93bf_icgraph" alt=""/></div>
+<map name="config_8h_a494b0e207424d08fce7a81e09d9a93bf_icgraph" id="config_8h_a494b0e207424d08fce7a81e09d9a93bf_icgraph">
+<area shape="rect"  title=" " alt="" coords="351,56,443,83"/>
+<area shape="rect"  href="structConfig.html#abd0c571c116924871e30444b192b792a" title=" " alt="" coords="172,5,279,32"/>
+<area shape="rect"  href="classMenu.html#a878fe39f0d874f428266ef8362d2dfc6" title=" " alt="" coords="148,56,303,83"/>
+<area shape="rect"  href="structConfig.html#a543dce59b66475c5108088ee4ce1cdfc" title=" " alt="" coords="168,107,283,133"/>
+<area shape="rect"  href="classMenu.html#ad466dd83355124a6ed958430450bfe94" title=" " alt="" coords="5,56,100,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac36e54fa6853489481ae23434b9e10ae"></a>
@@ -296,6 +404,28 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00008">8</a></p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(<span class="stringliteral">&quot;createBackupConfig() START&quot;</span>);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    system(<span class="stringliteral">&quot;rm -r ./Backup&quot;</span>);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    system(<span class="stringliteral">&quot;mkdir ./Backup&quot;</span>);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    system(<span class="stringliteral">&quot;cp configDb.db ./Backup/configDb.db&quot;</span>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    sync();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l03109">Menu::createBackup()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="config_8h_ac36e54fa6853489481ae23434b9e10ae_icgraph.png" border="0" usemap="#config_8h_ac36e54fa6853489481ae23434b9e10ae_icgraph" alt=""/></div>
+<map name="config_8h_ac36e54fa6853489481ae23434b9e10ae_icgraph" id="config_8h_ac36e54fa6853489481ae23434b9e10ae_icgraph">
+<area shape="rect"  title=" " alt="" coords="676,5,816,32"/>
+<area shape="rect"  href="classMenu.html#aa906d50dadf131d6160a0f7cfd4eba88" title=" " alt="" coords="485,5,628,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -314,6 +444,25 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00019">19</a></p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> res = system(<span class="stringliteral">&quot;cp ./Backup/configDb.db ./Backup/configDb1.db&quot;</span>);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span>(  res != 0 )</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    system(<span class="stringliteral">&quot;rm ./Backup/configDb1.db&quot;</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    sync();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l03109">Menu::createBackup()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="config_8h_a032090635af12e1f3af8ac2a39f28ef2_icgraph.png" border="0" usemap="#config_8h_a032090635af12e1f3af8ac2a39f28ef2_icgraph" alt=""/></div>
+<map name="config_8h_a032090635af12e1f3af8ac2a39f28ef2_icgraph" id="config_8h_a032090635af12e1f3af8ac2a39f28ef2_icgraph">
+<area shape="rect"  title=" " alt="" coords="676,5,820,32"/>
+<area shape="rect"  href="classMenu.html#aa906d50dadf131d6160a0f7cfd4eba88" title=" " alt="" coords="485,5,628,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ae04610d4e6693409b8ed97fb28290168"></a>
@@ -331,9 +480,787 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00033">33</a></p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(<span class="stringliteral">&quot;restoreConfig() START&quot;</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    system(<span class="stringliteral">&quot;cp ./Backup/configDb.db configDb.db&quot;</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    sync();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l03109">Menu::createBackup()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="config_8h_ae04610d4e6693409b8ed97fb28290168_icgraph.png" border="0" usemap="#config_8h_ae04610d4e6693409b8ed97fb28290168_icgraph" alt=""/></div>
+<map name="config_8h_ae04610d4e6693409b8ed97fb28290168_icgraph" id="config_8h_ae04610d4e6693409b8ed97fb28290168_icgraph">
+<area shape="rect"  title=" " alt="" coords="676,5,776,32"/>
+<area shape="rect"  href="classMenu.html#aa906d50dadf131d6160a0f7cfd4eba88" title=" " alt="" coords="485,5,628,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Переменные</h2>
+<a id="a7c69ac0dff7ed58d186cb1717d709a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c69ac0dff7ed58d186cb1717d709a38">&#9670;&nbsp;</a></span>agents_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string agents_file = &quot;agents.bin&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00031">31</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l26125">Menu::agents_data_get()</a>, <a class="el" href="menu_8cpp_source.html#l23293">Menu::read_from_file()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
+</div>
+</div>
+<a id="a44adfa91d8d67eadf670fc6de0927692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44adfa91d8d67eadf670fc6de0927692">&#9670;&nbsp;</a></span>ALL_FIELDS_PREV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> ALL_FIELDS_PREV = <a class="el" href="dynamic__mask_8h.html#a148263cdb4aa96a3ff8e871b4aaba1cf">ALL_FIELDS</a> &amp; (~<a class="el" href="dynamic__mask_8h.html#a310f0d37da402f52f423c94125b79403">SOUND_BUTTON</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00132">132</a></p>
+
+</div>
+</div>
+<a id="a709b1b4bd28c52e4765ec0e332b55bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709b1b4bd28c52e4765ec0e332b55bfe">&#9670;&nbsp;</a></span>CABINET_CONNECT_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> CABINET_CONNECT_MASK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a>                | <a class="code" href="dynamic__mask_8h.html#ad1f2dbd7a665455abef7fa36360d8a4c">FISGO_VERSION</a>         |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a></div><div class="ttc" id="dynamic__mask_8h_html_ace65563855d66386033f6a14b51d3b8a"><div class="ttname"><a href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a></div><div class="ttdeci">static DYNAMIC_MASK UUID(MASK_MAX_LEN, 8)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2c3ee9f4eae41188830cf90223c74cfb"><div class="ttname"><a href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a></div><div class="ttdeci">static DYNAMIC_MASK IS_CABINET_ENABLE(MASK_MAX_LEN, 48)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ad1f2dbd7a665455abef7fa36360d8a4c"><div class="ttname"><a href="dynamic__mask_8h.html#ad1f2dbd7a665455abef7fa36360d8a4c">FISGO_VERSION</a></div><div class="ttdeci">static DYNAMIC_MASK FISGO_VERSION(MASK_MAX_LEN, 5)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00063">63</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a>.</p>
+
+</div>
+</div>
+<a id="a4975152829521f213cf72266058c85ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4975152829521f213cf72266058c85ef">&#9670;&nbsp;</a></span>CLOUD_NEED_REPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CLOUD_NEED_REPORT = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00139">139</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24532">Menu::cloud_reg_status_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a> и <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="af87c111f5707376af5c392e86a84d281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87c111f5707376af5c392e86a84d281">&#9670;&nbsp;</a></span>CLOUD_NEED_SIGN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CLOUD_NEED_SIGN = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00138">138</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24532">Menu::cloud_reg_status_get()</a> и <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>.</p>
+
+</div>
+</div>
+<a id="ac4ae9c09340c98f4ff02505b7a46bf06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ae9c09340c98f4ff02505b7a46bf06">&#9670;&nbsp;</a></span>CLOUD_OFD_REGISTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CLOUD_OFD_REGISTER = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00136">136</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24532">Menu::cloud_reg_status_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l03605">Menu::menuCycle()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a> и <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a>.</p>
+
+</div>
+</div>
+<a id="a0e871114d6f055f25111461eff61c109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e871114d6f055f25111461eff61c109">&#9670;&nbsp;</a></span>CLOUD_REG_KKT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> CLOUD_REG_KKT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a>       | <a class="code" href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a>             |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a>              | <a class="code" href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a>      | <a class="code" href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a> |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a>       | <a class="code" href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a>    | <a class="code" href="config_8h.html#afcef9073382752a8e68bfb2027b0beb1">SETTINGS_TAXS_MASK</a>    |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a>          | <a class="code" href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a></div><div class="ttc" id="dynamic__mask_8h_html_a92185d122964478520d760579ffb0ffa"><div class="ttname"><a href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_ORG_FNS_NUM(MASK_MAX_LEN, 76)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aee0c1139f7c2b46ee28f0c02797734f2"><div class="ttname"><a href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_KKT_FNS_NUM(MASK_MAX_LEN, 77)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a380de845fb08bba6722f03aa1de09ac8"><div class="ttname"><a href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_REG_STATUS(MASK_MAX_LEN, 73)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a0803c3293bb1e38ce19c2ba503db0598"><div class="ttname"><a href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_NAME(MASK_MAX_LEN, 22)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6f600fec329d068e03b52dc82cfbe194"><div class="ttname"><a href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_TEL(MASK_MAX_LEN, 74)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ae5af371d84588a86e5c8a7e3f74bd4a1"><div class="ttname"><a href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK KKT_PLANT_NUM(MASK_MAX_LEN, 28)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6ad41ea4e99bbff3591d5692c0b57fa2"><div class="ttname"><a href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_INN(MASK_MAX_LEN, 25)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ab8afbd9b9aa651f3f0bfeceef48bc876"><div class="ttname"><a href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_ADDRESS(MASK_MAX_LEN, 23)</div></div>
+<div class="ttc" id="config_8h_html_afcef9073382752a8e68bfb2027b0beb1"><div class="ttname"><a href="config_8h.html#afcef9073382752a8e68bfb2027b0beb1">SETTINGS_TAXS_MASK</a></div><div class="ttdeci">static DYNAMIC_MASK SETTINGS_TAXS_MASK</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00066">config.h:66</a></div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2e5b770a10a75d25bcab52fa6958c432"><div class="ttname"><a href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_PLACE(MASK_MAX_LEN, 24)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af5707c6e1672bdaeec9226b89e92a7e2"><div class="ttname"><a href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_PIN(MASK_MAX_LEN, 75)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aa1a4f9233053027477621a8ac37de7f4"><div class="ttname"><a href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CHECK_RECEIPT_ADDRESS(MASK_MAX_LEN, 42)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00103">103</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>.</p>
+
+</div>
+</div>
+<a id="a0a55bb24ce0de635ea6f729999ccdb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a55bb24ce0de635ea6f729999ccdb3a">&#9670;&nbsp;</a></span>CLOUD_REGISTERED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CLOUD_REGISTERED = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00141">141</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24532">Menu::cloud_reg_status_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a> и <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="a5c95a6cbf941363b91969536d6045457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c95a6cbf941363b91969536d6045457">&#9670;&nbsp;</a></span>CLOUD_WAITING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CLOUD_WAITING = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00137">137</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24532">Menu::cloud_reg_status_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a> и <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="acb7096d5401aba1bd3215f8df6c930c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7096d5401aba1bd3215f8df6c930c9">&#9670;&nbsp;</a></span>CONFIG_FIELDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> CONFIG_FIELDS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6">CONFIG_VER</a>              | <a class="code" href="dynamic__mask_8h.html#a7cb9a1bca527b108a8dae2f0c0d7678a">TERMINAL_MODE</a>         | <a class="code" href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a>      |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2">SHIFT_TIMER</a>             | <a class="code" href="dynamic__mask_8h.html#ad1f2dbd7a665455abef7fa36360d8a4c">FISGO_VERSION</a>         | <a class="code" href="dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567">ARTICLE</a>              |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a>                    | <a class="code" href="dynamic__mask_8h.html#ac516b55371bc322d513083107b6605c7">ETH_UP</a>                | <a class="code" href="dynamic__mask_8h.html#a4a26de083f1939220d870a37810a7e0f">IP_ADDRESS</a>           |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a5b5d4ce22fa805ac6c1e2b884c175f8a">MASK</a>                    | <a class="code" href="dynamic__mask_8h.html#a0a536400bdc5ec9a90436d2e932d2f4a">ROUTER</a>                | <a class="code" href="dynamic__mask_8h.html#a7b79c49b5d776ab1415c527af610601c">WIFI_UP</a>              |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a5e2a82c720ee461e258fb4407216123a">NET_WIFI_NAME</a>           | <a class="code" href="dynamic__mask_8h.html#ac8e20068b11ff42bd709a9dfb45f521d">NET_WIFI_KEY</a>          | <a class="code" href="dynamic__mask_8h.html#afb15594bbbe6276cb5572d370f97f79d">NET_WIFI_SIGNAL</a>      |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a67b681d9f15f6855eda1623f85ca0dd0">NET_PASS</a>                | <a class="code" href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a>       | <a class="code" href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#af739b51418143306512c731ab708edc4">CASHIER_INN</a>             | <a class="code" href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a>     | <a class="code" href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a>  |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a>        | <a class="code" href="dynamic__mask_8h.html#af812fbba9f55651441a71e12df35134e">ORGANIZATION_KPP</a>      | <a class="code" href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a>|</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a>             | <a class="code" href="dynamic__mask_8h.html#a70f5f4df2d5a722308d5b84c55d561df">CUR_TAX_SYSTEM</a>        | <a class="code" href="dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97">OPEN_SHIFT_DATE</a>      |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9">AGENT_MASK</a>              | <a class="code" href="dynamic__mask_8h.html#a43016d7adde3d1febd971856bd76d1fe">CURRENT_AGENT</a>         | <a class="code" href="dynamic__mask_8h.html#a9792a7d8bccee267c319e212dd4013b4">LOG_TYPE</a>             |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a>       | <a class="code" href="dynamic__mask_8h.html#acb81763325adcaf21a94f89a5ed351c7">START_TIME</a>            | <a class="code" href="dynamic__mask_8h.html#a7bd205662dbf79f52ba667279c53e113">LAST_MSG_OFD</a>         |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a9b52689fcce7f30b80d3356e0fad755a">NDS_FREE_PRICE</a>          | <a class="code" href="dynamic__mask_8h.html#a48e78ffa9bd3344ca65d96b53d74d856">SCALE_TYPE</a>            | <a class="code" href="dynamic__mask_8h.html#a09b1566fcac3d43fe71159f9689bcd47">SCALE_SPEED</a>          |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ad2756bea7f89012e13b5a8527c68ac54">SCALE_PORT_NAME</a>         | <a class="code" href="dynamic__mask_8h.html#a13102b96a0b52a30b3fe77a011313827">SCALE_OPTIONS</a>         | <a class="code" href="dynamic__mask_8h.html#a82bae4b2162645b6a1669507e47a3089">SCANNER_TYPE</a>         |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ac7e16f763fbd215a23997ab48f221600">SCANNER_SPEED</a>           | <a class="code" href="dynamic__mask_8h.html#aa52d785bc164151c1c70b736a1f48769">SCANNER_PORT_NAME</a>     | <a class="code" href="dynamic__mask_8h.html#ab3ae08b7c46b77ea54e55e1006d3426c">SCANNER_OPTIONS</a>      |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a40422afedac7919f25c1d9da96314d6f">DNS_MAIN</a>                | <a class="code" href="dynamic__mask_8h.html#abd3ae7f6392d51ae34d16e16d16e21d7">DNS_ADD</a>               | <a class="code" href="dynamic__mask_8h.html#ae9fdf613a349083a3d8e1980dd749abb">ETH_MANUAL</a>           |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a8c577d3e91e5687e214179d4f8eb22fb">AUTO_CASH_OUT</a>           | <a class="code" href="dynamic__mask_8h.html#a989b17a1faad5d2c7c0224e72be6c925">AUTO_OPEN_SHIFT</a>       | <a class="code" href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a>                |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#afb57066e528b05f33a4d6341575d3003">INTERNET_RECIEPT</a>        | <a class="code" href="dynamic__mask_8h.html#a487f22b7f80c7080eb33530d494ef3b1">CONNECT_TO</a>            | <a class="code" href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a>               | <a class="code" href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a>             | <a class="code" href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a>    |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a>       | <a class="code" href="dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020">CABINET_REG_EMAIL</a>     | <a class="code" href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a>        |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a>       | <a class="code" href="dynamic__mask_8h.html#a921ed59afb72f6cd825dcba793a4aed1">CUR_DEPARTMENT</a>        | <a class="code" href="dynamic__mask_8h.html#a622fa781cad09d4c6148b3bc3beb7f64">REC_SENDER_EMAIL</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#abd761bfaa22693e13ada42e3e052cc72">INC_POS</a>                 | <a class="code" href="dynamic__mask_8h.html#a310f0d37da402f52f423c94125b79403">SOUND_BUTTON</a></div><div class="ttc" id="dynamic__mask_8h_html_a92185d122964478520d760579ffb0ffa"><div class="ttname"><a href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_ORG_FNS_NUM(MASK_MAX_LEN, 76)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a09b1566fcac3d43fe71159f9689bcd47"><div class="ttname"><a href="dynamic__mask_8h.html#a09b1566fcac3d43fe71159f9689bcd47">SCALE_SPEED</a></div><div class="ttdeci">static DYNAMIC_MASK SCALE_SPEED(MASK_MAX_LEN, 53)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_afc1cb63582d67492df3ed42944bcf8cf"><div class="ttname"><a href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a></div><div class="ttdeci">static DYNAMIC_MASK TAX_SYSTEMS(MASK_MAX_LEN, 29)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aee0c1139f7c2b46ee28f0c02797734f2"><div class="ttname"><a href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_KKT_FNS_NUM(MASK_MAX_LEN, 77)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a30707930b7b41aa954b89aeebe35fd97"><div class="ttname"><a href="dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97">OPEN_SHIFT_DATE</a></div><div class="ttdeci">static DYNAMIC_MASK OPEN_SHIFT_DATE(MASK_MAX_LEN, 44)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ac7e16f763fbd215a23997ab48f221600"><div class="ttname"><a href="dynamic__mask_8h.html#ac7e16f763fbd215a23997ab48f221600">SCANNER_SPEED</a></div><div class="ttdeci">static DYNAMIC_MASK SCANNER_SPEED(MASK_MAX_LEN, 57)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aa52d785bc164151c1c70b736a1f48769"><div class="ttname"><a href="dynamic__mask_8h.html#aa52d785bc164151c1c70b736a1f48769">SCANNER_PORT_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK SCANNER_PORT_NAME(MASK_MAX_LEN, 58)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a9b52689fcce7f30b80d3356e0fad755a"><div class="ttname"><a href="dynamic__mask_8h.html#a9b52689fcce7f30b80d3356e0fad755a">NDS_FREE_PRICE</a></div><div class="ttdeci">static DYNAMIC_MASK NDS_FREE_PRICE(MASK_MAX_LEN, 51)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a380de845fb08bba6722f03aa1de09ac8"><div class="ttname"><a href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_REG_STATUS(MASK_MAX_LEN, 73)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a0803c3293bb1e38ce19c2ba503db0598"><div class="ttname"><a href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_NAME(MASK_MAX_LEN, 22)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ace65563855d66386033f6a14b51d3b8a"><div class="ttname"><a href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a></div><div class="ttdeci">static DYNAMIC_MASK UUID(MASK_MAX_LEN, 8)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ab3ae08b7c46b77ea54e55e1006d3426c"><div class="ttname"><a href="dynamic__mask_8h.html#ab3ae08b7c46b77ea54e55e1006d3426c">SCANNER_OPTIONS</a></div><div class="ttdeci">static DYNAMIC_MASK SCANNER_OPTIONS(MASK_MAX_LEN, 59)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a48e78ffa9bd3344ca65d96b53d74d856"><div class="ttname"><a href="dynamic__mask_8h.html#a48e78ffa9bd3344ca65d96b53d74d856">SCALE_TYPE</a></div><div class="ttdeci">static DYNAMIC_MASK SCALE_TYPE(MASK_MAX_LEN, 52)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ac516b55371bc322d513083107b6605c7"><div class="ttname"><a href="dynamic__mask_8h.html#ac516b55371bc322d513083107b6605c7">ETH_UP</a></div><div class="ttdeci">static DYNAMIC_MASK ETH_UP(MASK_MAX_LEN, 9)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_acb81763325adcaf21a94f89a5ed351c7"><div class="ttname"><a href="dynamic__mask_8h.html#acb81763325adcaf21a94f89a5ed351c7">START_TIME</a></div><div class="ttdeci">static DYNAMIC_MASK START_TIME(MASK_MAX_LEN, 49)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6f600fec329d068e03b52dc82cfbe194"><div class="ttname"><a href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_TEL(MASK_MAX_LEN, 74)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ad2756bea7f89012e13b5a8527c68ac54"><div class="ttname"><a href="dynamic__mask_8h.html#ad2756bea7f89012e13b5a8527c68ac54">SCALE_PORT_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK SCALE_PORT_NAME(MASK_MAX_LEN, 54)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_afb15594bbbe6276cb5572d370f97f79d"><div class="ttname"><a href="dynamic__mask_8h.html#afb15594bbbe6276cb5572d370f97f79d">NET_WIFI_SIGNAL</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_SIGNAL(MASK_MAX_LEN, 16)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af736eb9079e5b4d81aff28a8301943c9"><div class="ttname"><a href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9">AGENT_MASK</a></div><div class="ttdeci">static DYNAMIC_MASK AGENT_MASK(MASK_MAX_LEN, 45)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a70f5f4df2d5a722308d5b84c55d561df"><div class="ttname"><a href="dynamic__mask_8h.html#a70f5f4df2d5a722308d5b84c55d561df">CUR_TAX_SYSTEM</a></div><div class="ttdeci">static DYNAMIC_MASK CUR_TAX_SYSTEM(MASK_MAX_LEN, 30)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a7cb9a1bca527b108a8dae2f0c0d7678a"><div class="ttname"><a href="dynamic__mask_8h.html#a7cb9a1bca527b108a8dae2f0c0d7678a">TERMINAL_MODE</a></div><div class="ttdeci">static DYNAMIC_MASK TERMINAL_MODE(MASK_MAX_LEN, 2)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af812fbba9f55651441a71e12df35134e"><div class="ttname"><a href="dynamic__mask_8h.html#af812fbba9f55651441a71e12df35134e">ORGANIZATION_KPP</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_KPP(MASK_MAX_LEN, 26)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a8ef6fcb61e791c4823d2b84f3096adf6"><div class="ttname"><a href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></div><div class="ttdeci">static DYNAMIC_MASK FS_REPLACE_MODE(MASK_MAX_LEN, 3)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6e00bcb2b08ae9ceeb0f0af13ac8e8c2"><div class="ttname"><a href="dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2">SHIFT_TIMER</a></div><div class="ttdeci">static DYNAMIC_MASK SHIFT_TIMER(MASK_MAX_LEN, 4)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a043c55d6b83d30b81c0d923e5dfa4cdd"><div class="ttname"><a href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a></div><div class="ttdeci">static DYNAMIC_MASK STAGE(MASK_MAX_LEN, 70)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ae5af371d84588a86e5c8a7e3f74bd4a1"><div class="ttname"><a href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK KKT_PLANT_NUM(MASK_MAX_LEN, 28)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a622fa781cad09d4c6148b3bc3beb7f64"><div class="ttname"><a href="dynamic__mask_8h.html#a622fa781cad09d4c6148b3bc3beb7f64">REC_SENDER_EMAIL</a></div><div class="ttdeci">static DYNAMIC_MASK REC_SENDER_EMAIL(MASK_MAX_LEN, 80)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5e2a82c720ee461e258fb4407216123a"><div class="ttname"><a href="dynamic__mask_8h.html#a5e2a82c720ee461e258fb4407216123a">NET_WIFI_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_NAME(MASK_MAX_LEN, 14)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6ad41ea4e99bbff3591d5692c0b57fa2"><div class="ttname"><a href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_INN(MASK_MAX_LEN, 25)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a43016d7adde3d1febd971856bd76d1fe"><div class="ttname"><a href="dynamic__mask_8h.html#a43016d7adde3d1febd971856bd76d1fe">CURRENT_AGENT</a></div><div class="ttdeci">static DYNAMIC_MASK CURRENT_AGENT(MASK_MAX_LEN, 46)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5b5d4ce22fa805ac6c1e2b884c175f8a"><div class="ttname"><a href="dynamic__mask_8h.html#a5b5d4ce22fa805ac6c1e2b884c175f8a">MASK</a></div><div class="ttdeci">static DYNAMIC_MASK MASK(MASK_MAX_LEN, 11)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ab8afbd9b9aa651f3f0bfeceef48bc876"><div class="ttname"><a href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_ADDRESS(MASK_MAX_LEN, 23)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2c3ee9f4eae41188830cf90223c74cfb"><div class="ttname"><a href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a></div><div class="ttdeci">static DYNAMIC_MASK IS_CABINET_ENABLE(MASK_MAX_LEN, 48)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a67b681d9f15f6855eda1623f85ca0dd0"><div class="ttname"><a href="dynamic__mask_8h.html#a67b681d9f15f6855eda1623f85ca0dd0">NET_PASS</a></div><div class="ttdeci">static DYNAMIC_MASK NET_PASS(MASK_MAX_LEN, 17)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a310f0d37da402f52f423c94125b79403"><div class="ttname"><a href="dynamic__mask_8h.html#a310f0d37da402f52f423c94125b79403">SOUND_BUTTON</a></div><div class="ttdeci">static DYNAMIC_MASK SOUND_BUTTON(MASK_MAX_LEN, 82)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_afb57066e528b05f33a4d6341575d3003"><div class="ttname"><a href="dynamic__mask_8h.html#afb57066e528b05f33a4d6341575d3003">INTERNET_RECIEPT</a></div><div class="ttdeci">static DYNAMIC_MASK INTERNET_RECIEPT(MASK_MAX_LEN, 71)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a13102b96a0b52a30b3fe77a011313827"><div class="ttname"><a href="dynamic__mask_8h.html#a13102b96a0b52a30b3fe77a011313827">SCALE_OPTIONS</a></div><div class="ttdeci">static DYNAMIC_MASK SCALE_OPTIONS(MASK_MAX_LEN, 55)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a7e936187e3a1d465143b3ea88eff1567"><div class="ttname"><a href="dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567">ARTICLE</a></div><div class="ttdeci">static DYNAMIC_MASK ARTICLE(MASK_MAX_LEN, 7)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_abd3ae7f6392d51ae34d16e16d16e21d7"><div class="ttname"><a href="dynamic__mask_8h.html#abd3ae7f6392d51ae34d16e16d16e21d7">DNS_ADD</a></div><div class="ttdeci">static DYNAMIC_MASK DNS_ADD(MASK_MAX_LEN, 61)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ace44e1a2da72d6b661e10ab7f7e25135"><div class="ttname"><a href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a></div><div class="ttdeci">static DYNAMIC_MASK FS_NUMBER_COUNT(MASK_MAX_LEN, 19)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a7b79c49b5d776ab1415c527af610601c"><div class="ttname"><a href="dynamic__mask_8h.html#a7b79c49b5d776ab1415c527af610601c">WIFI_UP</a></div><div class="ttdeci">static DYNAMIC_MASK WIFI_UP(MASK_MAX_LEN, 13)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_abd761bfaa22693e13ada42e3e052cc72"><div class="ttname"><a href="dynamic__mask_8h.html#abd761bfaa22693e13ada42e3e052cc72">INC_POS</a></div><div class="ttdeci">static DYNAMIC_MASK INC_POS(MASK_MAX_LEN, 81)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a487f22b7f80c7080eb33530d494ef3b1"><div class="ttname"><a href="dynamic__mask_8h.html#a487f22b7f80c7080eb33530d494ef3b1">CONNECT_TO</a></div><div class="ttdeci">static DYNAMIC_MASK CONNECT_TO(MASK_MAX_LEN, 72)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5b14fee3ff6b04a9244377367178c62e"><div class="ttname"><a href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a></div><div class="ttdeci">static DYNAMIC_MASK FS_NUMBERS_TABLE(MASK_MAX_LEN, 20)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a40422afedac7919f25c1d9da96314d6f"><div class="ttname"><a href="dynamic__mask_8h.html#a40422afedac7919f25c1d9da96314d6f">DNS_MAIN</a></div><div class="ttdeci">static DYNAMIC_MASK DNS_MAIN(MASK_MAX_LEN, 60)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a0a536400bdc5ec9a90436d2e932d2f4a"><div class="ttname"><a href="dynamic__mask_8h.html#a0a536400bdc5ec9a90436d2e932d2f4a">ROUTER</a></div><div class="ttdeci">static DYNAMIC_MASK ROUTER(MASK_MAX_LEN, 12)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2e5b770a10a75d25bcab52fa6958c432"><div class="ttname"><a href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_PLACE(MASK_MAX_LEN, 24)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_abb071b01fb42e5cb7a2b55c5f3187ac6"><div class="ttname"><a href="dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6">CONFIG_VER</a></div><div class="ttdeci">static DYNAMIC_MASK CONFIG_VER(MASK_MAX_LEN, 0)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a82bae4b2162645b6a1669507e47a3089"><div class="ttname"><a href="dynamic__mask_8h.html#a82bae4b2162645b6a1669507e47a3089">SCANNER_TYPE</a></div><div class="ttdeci">static DYNAMIC_MASK SCANNER_TYPE(MASK_MAX_LEN, 56)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af5707c6e1672bdaeec9226b89e92a7e2"><div class="ttname"><a href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_PIN(MASK_MAX_LEN, 75)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ac8e20068b11ff42bd709a9dfb45f521d"><div class="ttname"><a href="dynamic__mask_8h.html#ac8e20068b11ff42bd709a9dfb45f521d">NET_WIFI_KEY</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_KEY(MASK_MAX_LEN, 15)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a989b17a1faad5d2c7c0224e72be6c925"><div class="ttname"><a href="dynamic__mask_8h.html#a989b17a1faad5d2c7c0224e72be6c925">AUTO_OPEN_SHIFT</a></div><div class="ttdeci">static DYNAMIC_MASK AUTO_OPEN_SHIFT(MASK_MAX_LEN, 69)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a9b92c1b5fc39cf0d3913d01bfa62c020"><div class="ttname"><a href="dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020">CABINET_REG_EMAIL</a></div><div class="ttdeci">static DYNAMIC_MASK CABINET_REG_EMAIL(MASK_MAX_LEN, 78)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a4a26de083f1939220d870a37810a7e0f"><div class="ttname"><a href="dynamic__mask_8h.html#a4a26de083f1939220d870a37810a7e0f">IP_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK IP_ADDRESS(MASK_MAX_LEN, 10)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a921ed59afb72f6cd825dcba793a4aed1"><div class="ttname"><a href="dynamic__mask_8h.html#a921ed59afb72f6cd825dcba793a4aed1">CUR_DEPARTMENT</a></div><div class="ttdeci">static DYNAMIC_MASK CUR_DEPARTMENT(MASK_MAX_LEN, 79)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a9792a7d8bccee267c319e212dd4013b4"><div class="ttname"><a href="dynamic__mask_8h.html#a9792a7d8bccee267c319e212dd4013b4">LOG_TYPE</a></div><div class="ttdeci">static DYNAMIC_MASK LOG_TYPE(MASK_MAX_LEN, 47)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ae9fdf613a349083a3d8e1980dd749abb"><div class="ttname"><a href="dynamic__mask_8h.html#ae9fdf613a349083a3d8e1980dd749abb">ETH_MANUAL</a></div><div class="ttdeci">static DYNAMIC_MASK ETH_MANUAL(MASK_MAX_LEN, 62)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aa1a4f9233053027477621a8ac37de7f4"><div class="ttname"><a href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CHECK_RECEIPT_ADDRESS(MASK_MAX_LEN, 42)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a7bd205662dbf79f52ba667279c53e113"><div class="ttname"><a href="dynamic__mask_8h.html#a7bd205662dbf79f52ba667279c53e113">LAST_MSG_OFD</a></div><div class="ttdeci">static DYNAMIC_MASK LAST_MSG_OFD(MASK_MAX_LEN, 50)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a8c577d3e91e5687e214179d4f8eb22fb"><div class="ttname"><a href="dynamic__mask_8h.html#a8c577d3e91e5687e214179d4f8eb22fb">AUTO_CASH_OUT</a></div><div class="ttdeci">static DYNAMIC_MASK AUTO_CASH_OUT(MASK_MAX_LEN, 63)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ad1f2dbd7a665455abef7fa36360d8a4c"><div class="ttname"><a href="dynamic__mask_8h.html#ad1f2dbd7a665455abef7fa36360d8a4c">FISGO_VERSION</a></div><div class="ttdeci">static DYNAMIC_MASK FISGO_VERSION(MASK_MAX_LEN, 5)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af739b51418143306512c731ab708edc4"><div class="ttname"><a href="dynamic__mask_8h.html#af739b51418143306512c731ab708edc4">CASHIER_INN</a></div><div class="ttdeci">static DYNAMIC_MASK CASHIER_INN(MASK_MAX_LEN, 21)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00110">110</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25848">Menu::ext_registr()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l25727">Menu::image_update()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="menu_8cpp_source.html#l24073">Menu::versionUpdate()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
+</div>
+</div>
+<a id="af80efdbf1a16321cb0fbb1e695a114bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80efdbf1a16321cb0fbb1e695a114bf">&#9670;&nbsp;</a></span>CONFIG_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> CONFIG_VERSION = 17</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00025">25</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l01284">sqlWrapper::createBlankConfig()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
+</div>
+</div>
+<a id="ab5143fe81368c494f125e6dd73570e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5143fe81368c494f125e6dd73570e3c">&#9670;&nbsp;</a></span>DREAMKAS_OFD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char DREAMKAS_OFD = 0x60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00144">144</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a5a82db3bff2b664e4cd39a64f6297a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a82db3bff2b664e4cd39a64f6297a77">&#9670;&nbsp;</a></span>ETHERNET_SETTINGS_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> ETHERNET_SETTINGS_MASK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#ac516b55371bc322d513083107b6605c7">ETH_UP</a> | <a class="code" href="dynamic__mask_8h.html#a4a26de083f1939220d870a37810a7e0f">IP_ADDRESS</a> | <a class="code" href="dynamic__mask_8h.html#a5b5d4ce22fa805ac6c1e2b884c175f8a">MASK</a>                  |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a0a536400bdc5ec9a90436d2e932d2f4a">ROUTER</a> | <a class="code" href="dynamic__mask_8h.html#a40422afedac7919f25c1d9da96314d6f">DNS_MAIN</a>   | <a class="code" href="dynamic__mask_8h.html#abd3ae7f6392d51ae34d16e16d16e21d7">DNS_ADD</a>               |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ae9fdf613a349083a3d8e1980dd749abb">ETH_MANUAL</a></div><div class="ttc" id="dynamic__mask_8h_html_ac516b55371bc322d513083107b6605c7"><div class="ttname"><a href="dynamic__mask_8h.html#ac516b55371bc322d513083107b6605c7">ETH_UP</a></div><div class="ttdeci">static DYNAMIC_MASK ETH_UP(MASK_MAX_LEN, 9)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5b5d4ce22fa805ac6c1e2b884c175f8a"><div class="ttname"><a href="dynamic__mask_8h.html#a5b5d4ce22fa805ac6c1e2b884c175f8a">MASK</a></div><div class="ttdeci">static DYNAMIC_MASK MASK(MASK_MAX_LEN, 11)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_abd3ae7f6392d51ae34d16e16d16e21d7"><div class="ttname"><a href="dynamic__mask_8h.html#abd3ae7f6392d51ae34d16e16d16e21d7">DNS_ADD</a></div><div class="ttdeci">static DYNAMIC_MASK DNS_ADD(MASK_MAX_LEN, 61)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a40422afedac7919f25c1d9da96314d6f"><div class="ttname"><a href="dynamic__mask_8h.html#a40422afedac7919f25c1d9da96314d6f">DNS_MAIN</a></div><div class="ttdeci">static DYNAMIC_MASK DNS_MAIN(MASK_MAX_LEN, 60)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a0a536400bdc5ec9a90436d2e932d2f4a"><div class="ttname"><a href="dynamic__mask_8h.html#a0a536400bdc5ec9a90436d2e932d2f4a">ROUTER</a></div><div class="ttdeci">static DYNAMIC_MASK ROUTER(MASK_MAX_LEN, 12)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a4a26de083f1939220d870a37810a7e0f"><div class="ttname"><a href="dynamic__mask_8h.html#a4a26de083f1939220d870a37810a7e0f">IP_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK IP_ADDRESS(MASK_MAX_LEN, 10)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ae9fdf613a349083a3d8e1980dd749abb"><div class="ttname"><a href="dynamic__mask_8h.html#ae9fdf613a349083a3d8e1980dd749abb">ETH_MANUAL</a></div><div class="ttdeci">static DYNAMIC_MASK ETH_MANUAL(MASK_MAX_LEN, 62)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00068">68</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15497">Menu::eth_settings()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l15453">Menu::eth_state()</a> и <a class="el" href="menu_8cpp_source.html#l11717">Menu::nets_init()</a>.</p>
+
+</div>
+</div>
+<a id="a566bdc948bbd9790af52bb9dea411e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566bdc948bbd9790af52bb9dea411e5a">&#9670;&nbsp;</a></span>EVOTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char EVOTOR = 0x08</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00153">153</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a8599de87b924a6c4ee0a4bf0aa3951a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8599de87b924a6c4ee0a4bf0aa3951a3">&#9670;&nbsp;</a></span>EXPRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char EXPRESS = 0x07</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00152">152</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a03152651f388e91f23fe2859add46a34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03152651f388e91f23fe2859add46a34">&#9670;&nbsp;</a></span>FABRICATION_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> FABRICATION_MASK = <a class="el" href="dynamic__mask_8h.html#ace65563855d66386033f6a14b51d3b8a">UUID</a> | <a class="el" href="dynamic__mask_8h.html#a7e936187e3a1d465143b3ea88eff1567">ARTICLE</a> | <a class="el" href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00085">85</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l24790">Menu::factory()</a>.</p>
+
+</div>
+</div>
+<a id="ad5f1c7734dc979d5c67db02fa9869c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5f1c7734dc979d5c67db02fa9869c53">&#9670;&nbsp;</a></span>FIRST_OFD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char FIRST_OFD = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00146">146</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a68bebfddcec80faca79d1b77dbec6ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bebfddcec80faca79d1b77dbec6ab8">&#9670;&nbsp;</a></span>fisgo_cur_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string fisgo_cur_version = &quot;1.20.2&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00029">29</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l01284">sqlWrapper::createBlankConfig()</a>, <a class="el" href="menu_8cpp_source.html#l00928">Menu::data_init()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="main_8cpp_source.html#l00007">main()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="https__exchange_8cpp_source.html#l01293">HttpsExchange::sendUpdate()</a>, <a class="el" href="menu_8cpp_source.html#l24073">Menu::versionUpdate()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
+</div>
+</div>
+<a id="ab479051bf2a5e8dceae4828cddbb6681"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab479051bf2a5e8dceae4828cddbb6681">&#9670;&nbsp;</a></span>FS_CONFIG_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> FS_CONFIG_MASK = <a class="el" href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a> | <a class="el" href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a> | <a class="el" href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00083">83</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>.</p>
+
+</div>
+</div>
+<a id="a4459e8b3dc126081cd7864e55812ac20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4459e8b3dc126081cd7864e55812ac20">&#9670;&nbsp;</a></span>FS_NUMBER_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned FS_NUMBER_LEN = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00291">291</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>.</p>
+
+</div>
+</div>
+<a id="a01d2c3870d5d6624971bbd45849f73fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d2c3870d5d6624971bbd45849f73fc">&#9670;&nbsp;</a></span>FS_REPLACE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> FS_REPLACE_MASK = <a class="el" href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00081">81</a></p>
+
+</div>
+</div>
+<a id="ae4654d02989546e792e95ec2561352f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4654d02989546e792e95ec2561352f3">&#9670;&nbsp;</a></span>KALUGA_ASTRAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char KALUGA_ASTRAL = 0x05</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00150">150</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a07bb4fbb0e4030e599c3ccec96e5981c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bb4fbb0e4030e599c3ccec96e5981c">&#9670;&nbsp;</a></span>kkt_reg_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string kkt_reg_version = &quot;001&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00030">30</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>.</p>
+
+</div>
+</div>
+<a id="a71f271dbca23b956bc2430e7082826a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f271dbca23b956bc2430e7082826a5">&#9670;&nbsp;</a></span>KONTUR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char KONTUR = 0x09</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00154">154</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a5662632394983499671b5a0bb5cdca48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5662632394983499671b5a0bb5cdca48">&#9670;&nbsp;</a></span>KORUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char KORUS = 0x06</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00151">151</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="aac0455037ea49c8e78073aa03c2cd679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0455037ea49c8e78073aa03c2cd679">&#9670;&nbsp;</a></span>MANUAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char MANUAL = 0x20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00156">156</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
+
+</div>
+</div>
 <a id="ab944fa63f71e5aa29d91917e643a2532"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab944fa63f71e5aa29d91917e643a2532">&#9670;&nbsp;</a></span>modelName</h2>
 
@@ -345,6 +1272,119 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00048">48</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
+</div>
+</div>
+<a id="abf11c0b492a2637857eff787dd8c8589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf11c0b492a2637857eff787dd8c8589">&#9670;&nbsp;</a></span>NOT_CLOUD_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> NOT_CLOUD_REG = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00135">135</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l10526">Menu::draw_reg_step_ext()</a>, <a class="el" href="menu_8cpp_source.html#l25848">Menu::ext_registr()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a> и <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="a5ee00e0e7859e2f8ed4754911fab3d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee00e0e7859e2f8ed4754911fab3d30">&#9670;&nbsp;</a></span>OFD_RU</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char OFD_RU = 0x40</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00155">155</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="ae03cbcaa6ba68158e1c9eea973e01022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03cbcaa6ba68158e1c9eea973e01022">&#9670;&nbsp;</a></span>OFD_SETTINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> OFD_SETTINGS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#abae02553660415366388c61354630bf9">OFD_CHOOSE</a>         | <a class="code" href="dynamic__mask_8h.html#ac30de0559a48357c52395b153152fece">OFD_INN</a>               |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a5677119df919cf2198ed3ff02c7cc4de">OFD_SERVER_ADDRESS</a> | <a class="code" href="dynamic__mask_8h.html#a4f2cc2c944fd9866026088774992d941">OFD_NAME</a>              |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a15d2b36683a8de337d31d28561f56a3d">OFD_SERVER_PORT</a>    | <a class="code" href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a> |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a508fa2b32924e067effbf6cb026fa5ee">OFD_SERVER_IP</a></div><div class="ttc" id="dynamic__mask_8h_html_a4f2cc2c944fd9866026088774992d941"><div class="ttname"><a href="dynamic__mask_8h.html#a4f2cc2c944fd9866026088774992d941">OFD_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_NAME(MASK_MAX_LEN, 40)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5677119df919cf2198ed3ff02c7cc4de"><div class="ttname"><a href="dynamic__mask_8h.html#a5677119df919cf2198ed3ff02c7cc4de">OFD_SERVER_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_SERVER_ADDRESS(MASK_MAX_LEN, 39)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a15d2b36683a8de337d31d28561f56a3d"><div class="ttname"><a href="dynamic__mask_8h.html#a15d2b36683a8de337d31d28561f56a3d">OFD_SERVER_PORT</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_SERVER_PORT(MASK_MAX_LEN, 41)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ac30de0559a48357c52395b153152fece"><div class="ttname"><a href="dynamic__mask_8h.html#ac30de0559a48357c52395b153152fece">OFD_INN</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_INN(MASK_MAX_LEN, 38)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a508fa2b32924e067effbf6cb026fa5ee"><div class="ttname"><a href="dynamic__mask_8h.html#a508fa2b32924e067effbf6cb026fa5ee">OFD_SERVER_IP</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_SERVER_IP(MASK_MAX_LEN, 43)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aa1a4f9233053027477621a8ac37de7f4"><div class="ttname"><a href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CHECK_RECEIPT_ADDRESS(MASK_MAX_LEN, 42)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_abae02553660415366388c61354630bf9"><div class="ttname"><a href="dynamic__mask_8h.html#abae02553660415366388c61354630bf9">OFD_CHOOSE</a></div><div class="ttdeci">static DYNAMIC_MASK OFD_CHOOSE(MASK_MAX_LEN, 37)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00098">98</a></p>
+
+</div>
+</div>
+<a id="aa014742d5faa064f6810f7fcc7b0f3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa014742d5faa064f6810f7fcc7b0f3d0">&#9670;&nbsp;</a></span>OFD_YARUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char OFD_YARUS = 0x03</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00148">148</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
 
 </div>
 </div>
@@ -360,6 +1400,292 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00050">50</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01432">JSON::jsonSearchProductParser()</a>, <a class="el" href="json_8cpp_source.html#l02670">JSON::parseUpsertDiscount()</a>, <a class="el" href="json_8cpp_source.html#l00761">JSON::product_clear()</a>, <a class="el" href="json_8cpp_source.html#l00730">JSON::product_display()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="https__exchange_8cpp_source.html#l01329">HttpsExchange::sendSearchProduct()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>, <a class="el" href="testJSON_8h_source.html#l01611">TEST_F()</a> и <a class="el" href="https__exchange_8cpp_source.html#l03537">HttpsExchange::urlsInit()</a>.</p>
+
+</div>
+</div>
+<a id="aab351dbe3ffaf7208b3305cc87a402a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab351dbe3ffaf7208b3305cc87a402a9">&#9670;&nbsp;</a></span>RECEIPT_CORRECTION_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> RECEIPT_CORRECTION_MASK = <a class="el" href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00076">76</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15364">Menu::receipt_correction_mode()</a>.</p>
+
+</div>
+</div>
+<a id="a8fb3d9cad5240b0a4b8d2753e4595a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb3d9cad5240b0a4b8d2753e4595a1b">&#9670;&nbsp;</a></span>REG_KKT_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> REG_KKT_MASK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a>      | <a class="code" href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a>    | <a class="code" href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a>      |</div><div class="line">                                     <a class="code" href="config_8h.html#afcef9073382752a8e68bfb2027b0beb1">SETTINGS_TAXS_MASK</a>     | <a class="code" href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a> |</div><div class="line">                                     <a class="code" href="config_8h.html#a3c55e5bdfc108f6a3c21cbdcbd88eec8">SETTINGS_AGENTS_MASK</a>   | <a class="code" href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a>       |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a>        | <a class="code" href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a>      |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a>              | <a class="code" href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a>      | <a class="code" href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a>             |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a>       | <a class="code" href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a>                 |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a>          | <a class="code" href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a>     |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a622fa781cad09d4c6148b3bc3beb7f64">REC_SENDER_EMAIL</a></div><div class="ttc" id="dynamic__mask_8h_html_a92185d122964478520d760579ffb0ffa"><div class="ttname"><a href="dynamic__mask_8h.html#a92185d122964478520d760579ffb0ffa">CLOUD_ORG_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_ORG_FNS_NUM(MASK_MAX_LEN, 76)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aee0c1139f7c2b46ee28f0c02797734f2"><div class="ttname"><a href="dynamic__mask_8h.html#aee0c1139f7c2b46ee28f0c02797734f2">CLOUD_KKT_FNS_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_KKT_FNS_NUM(MASK_MAX_LEN, 77)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a380de845fb08bba6722f03aa1de09ac8"><div class="ttname"><a href="dynamic__mask_8h.html#a380de845fb08bba6722f03aa1de09ac8">CLOUD_REG_STATUS</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_REG_STATUS(MASK_MAX_LEN, 73)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a0803c3293bb1e38ce19c2ba503db0598"><div class="ttname"><a href="dynamic__mask_8h.html#a0803c3293bb1e38ce19c2ba503db0598">ORGANIZATION_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_NAME(MASK_MAX_LEN, 22)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6f600fec329d068e03b52dc82cfbe194"><div class="ttname"><a href="dynamic__mask_8h.html#a6f600fec329d068e03b52dc82cfbe194">CLOUD_TEL</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_TEL(MASK_MAX_LEN, 74)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a8ef6fcb61e791c4823d2b84f3096adf6"><div class="ttname"><a href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></div><div class="ttdeci">static DYNAMIC_MASK FS_REPLACE_MODE(MASK_MAX_LEN, 3)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a043c55d6b83d30b81c0d923e5dfa4cdd"><div class="ttname"><a href="dynamic__mask_8h.html#a043c55d6b83d30b81c0d923e5dfa4cdd">STAGE</a></div><div class="ttdeci">static DYNAMIC_MASK STAGE(MASK_MAX_LEN, 70)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ae5af371d84588a86e5c8a7e3f74bd4a1"><div class="ttname"><a href="dynamic__mask_8h.html#ae5af371d84588a86e5c8a7e3f74bd4a1">KKT_PLANT_NUM</a></div><div class="ttdeci">static DYNAMIC_MASK KKT_PLANT_NUM(MASK_MAX_LEN, 28)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a622fa781cad09d4c6148b3bc3beb7f64"><div class="ttname"><a href="dynamic__mask_8h.html#a622fa781cad09d4c6148b3bc3beb7f64">REC_SENDER_EMAIL</a></div><div class="ttdeci">static DYNAMIC_MASK REC_SENDER_EMAIL(MASK_MAX_LEN, 80)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6ad41ea4e99bbff3591d5692c0b57fa2"><div class="ttname"><a href="dynamic__mask_8h.html#a6ad41ea4e99bbff3591d5692c0b57fa2">ORGANIZATION_INN</a></div><div class="ttdeci">static DYNAMIC_MASK ORGANIZATION_INN(MASK_MAX_LEN, 25)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ab8afbd9b9aa651f3f0bfeceef48bc876"><div class="ttname"><a href="dynamic__mask_8h.html#ab8afbd9b9aa651f3f0bfeceef48bc876">CALCULATION_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_ADDRESS(MASK_MAX_LEN, 23)</div></div>
+<div class="ttc" id="config_8h_html_afcef9073382752a8e68bfb2027b0beb1"><div class="ttname"><a href="config_8h.html#afcef9073382752a8e68bfb2027b0beb1">SETTINGS_TAXS_MASK</a></div><div class="ttdeci">static DYNAMIC_MASK SETTINGS_TAXS_MASK</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00066">config.h:66</a></div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2c3ee9f4eae41188830cf90223c74cfb"><div class="ttname"><a href="dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb">IS_CABINET_ENABLE</a></div><div class="ttdeci">static DYNAMIC_MASK IS_CABINET_ENABLE(MASK_MAX_LEN, 48)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ace44e1a2da72d6b661e10ab7f7e25135"><div class="ttname"><a href="dynamic__mask_8h.html#ace44e1a2da72d6b661e10ab7f7e25135">FS_NUMBER_COUNT</a></div><div class="ttdeci">static DYNAMIC_MASK FS_NUMBER_COUNT(MASK_MAX_LEN, 19)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5b14fee3ff6b04a9244377367178c62e"><div class="ttname"><a href="dynamic__mask_8h.html#a5b14fee3ff6b04a9244377367178c62e">FS_NUMBERS_TABLE</a></div><div class="ttdeci">static DYNAMIC_MASK FS_NUMBERS_TABLE(MASK_MAX_LEN, 20)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a2e5b770a10a75d25bcab52fa6958c432"><div class="ttname"><a href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">CALCULATION_PLACE</a></div><div class="ttdeci">static DYNAMIC_MASK CALCULATION_PLACE(MASK_MAX_LEN, 24)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_af5707c6e1672bdaeec9226b89e92a7e2"><div class="ttname"><a href="dynamic__mask_8h.html#af5707c6e1672bdaeec9226b89e92a7e2">CLOUD_PIN</a></div><div class="ttdeci">static DYNAMIC_MASK CLOUD_PIN(MASK_MAX_LEN, 75)</div></div>
+<div class="ttc" id="config_8h_html_a3c55e5bdfc108f6a3c21cbdcbd88eec8"><div class="ttname"><a href="config_8h.html#a3c55e5bdfc108f6a3c21cbdcbd88eec8">SETTINGS_AGENTS_MASK</a></div><div class="ttdeci">static DYNAMIC_MASK SETTINGS_AGENTS_MASK</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00061">config.h:61</a></div></div>
+<div class="ttc" id="dynamic__mask_8h_html_aa1a4f9233053027477621a8ac37de7f4"><div class="ttname"><a href="dynamic__mask_8h.html#aa1a4f9233053027477621a8ac37de7f4">CHECK_RECEIPT_ADDRESS</a></div><div class="ttdeci">static DYNAMIC_MASK CHECK_RECEIPT_ADDRESS(MASK_MAX_LEN, 42)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00087">87</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15196">Menu::ex_reg_kkt()</a> и <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>.</p>
+
+</div>
+</div>
+<a id="a181e6845fe7d341ec9ab89c79bfd1bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a181e6845fe7d341ec9ab89c79bfd1bf4">&#9670;&nbsp;</a></span>SBIS_OFD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char SBIS_OFD = 0x04</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00149">149</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a3c55e5bdfc108f6a3c21cbdcbd88eec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c55e5bdfc108f6a3c21cbdcbd88eec8">&#9670;&nbsp;</a></span>SETTINGS_AGENTS_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> SETTINGS_AGENTS_MASK = <a class="el" href="dynamic__mask_8h.html#a43016d7adde3d1febd971856bd76d1fe">CURRENT_AGENT</a> | <a class="el" href="dynamic__mask_8h.html#af736eb9079e5b4d81aff28a8301943c9">AGENT_MASK</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00061">61</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="a8591bc79009816d7bc3737b08cee8367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8591bc79009816d7bc3737b08cee8367">&#9670;&nbsp;</a></span>SETTINGS_ID_OFD_FS_DAMAGED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> SETTINGS_ID_OFD_FS_DAMAGED</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2">SHIFT_TIMER</a>         | <a class="code" href="dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97">OPEN_SHIFT_DATE</a>       |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></div><div class="ttc" id="dynamic__mask_8h_html_a30707930b7b41aa954b89aeebe35fd97"><div class="ttname"><a href="dynamic__mask_8h.html#a30707930b7b41aa954b89aeebe35fd97">OPEN_SHIFT_DATE</a></div><div class="ttdeci">static DYNAMIC_MASK OPEN_SHIFT_DATE(MASK_MAX_LEN, 44)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a8ef6fcb61e791c4823d2b84f3096adf6"><div class="ttname"><a href="dynamic__mask_8h.html#a8ef6fcb61e791c4823d2b84f3096adf6">FS_REPLACE_MODE</a></div><div class="ttdeci">static DYNAMIC_MASK FS_REPLACE_MODE(MASK_MAX_LEN, 3)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a6e00bcb2b08ae9ceeb0f0af13ac8e8c2"><div class="ttname"><a href="dynamic__mask_8h.html#a6e00bcb2b08ae9ceeb0f0af13ac8e8c2">SHIFT_TIMER</a></div><div class="ttdeci">static DYNAMIC_MASK SHIFT_TIMER(MASK_MAX_LEN, 4)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00078">78</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="afcef9073382752a8e68bfb2027b0beb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcef9073382752a8e68bfb2027b0beb1">&#9670;&nbsp;</a></span>SETTINGS_TAXS_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> SETTINGS_TAXS_MASK = <a class="el" href="dynamic__mask_8h.html#afc1cb63582d67492df3ed42944bcf8cf">TAX_SYSTEMS</a> | <a class="el" href="dynamic__mask_8h.html#a70f5f4df2d5a722308d5b84c55d561df">CUR_TAX_SYSTEM</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00066">66</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="ae9aa7377c69af9a021dc6cc80630caf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9aa7377c69af9a021dc6cc80630caf7">&#9670;&nbsp;</a></span>SHIFT_TIMER_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char SHIFT_TIMER_OFF = 0x00</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00168">168</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l08839">Menu::action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l08934">Menu::external_action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a> и <a class="el" href="menu_8cpp_source.html#l03605">Menu::menuCycle()</a>.</p>
+
+</div>
+</div>
+<a id="abb64d540a3e4d81af93f29fba3f317a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb64d540a3e4d81af93f29fba3f317a3">&#9670;&nbsp;</a></span>SHIFT_TIMER_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char SHIFT_TIMER_ON = 0x01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00167">167</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02471">Menu::analyaze_cmd_result()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l02800">Menu::external_fn_shift_open_action()</a>, <a class="el" href="menu_8cpp_source.html#l05082">Menu::first_start()</a>, <a class="el" href="menu_8cpp_source.html#l02751">Menu::fn_shift_open_action()</a> и <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>.</p>
+
+</div>
+</div>
+<a id="ae513a0939d8ae3313f8a7701e3221bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae513a0939d8ae3313f8a7701e3221bba">&#9670;&nbsp;</a></span>TAXCOM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char TAXCOM = 0x02</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00147">147</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>.</p>
+
+</div>
+</div>
+<a id="a17818b11fecae22c9cdb1c209d163edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17818b11fecae22c9cdb1c209d163edc">&#9670;&nbsp;</a></span>TIMESTAMP_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TIMESTAMP_FILE = &quot;timestamp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00033">33</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l29840">Menu::checkDateTime()</a> и <a class="el" href="menu_8cpp_source.html#l23606">Menu::time_update_mode()</a>.</p>
+
 </div>
 </div>
 <a id="a546279511b14d36a3dced74d9cbd0822"></a>
@@ -374,12 +1700,99 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00049">49</a></p>
+
+<p class="reference">Используется в <a class="el" href="https__exchange_8cpp_source.html#l00039">HttpsExchange::getUpModelName()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01843">HttpsExchange::sendRequestWhoAmI()</a>.</p>
+
+</div>
+</div>
+<a id="a107d0327dc16e2ca8b81455a8023d238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a107d0327dc16e2ca8b81455a8023d238">&#9670;&nbsp;</a></span>VERSION_FOR_STAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string VERSION_FOR_STAT = &quot;100.6.1.3&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00032">32</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
+</div>
+</div>
+<a id="a03ebff8846d5c52f02fdb1867317c925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ebff8846d5c52f02fdb1867317c925">&#9670;&nbsp;</a></span>WI_FI_SETTINGS_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> WI_FI_SETTINGS_MASK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Инициализатор</b><div class="fragment"><div class="line">= <a class="code" href="dynamic__mask_8h.html#a7b79c49b5d776ab1415c527af610601c">WIFI_UP</a>             | <a class="code" href="dynamic__mask_8h.html#a5e2a82c720ee461e258fb4407216123a">NET_WIFI_NAME</a>         |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#ac8e20068b11ff42bd709a9dfb45f521d">NET_WIFI_KEY</a>        | <a class="code" href="dynamic__mask_8h.html#afb15594bbbe6276cb5572d370f97f79d">NET_WIFI_SIGNAL</a>       |</div><div class="line">                                     <a class="code" href="dynamic__mask_8h.html#a67b681d9f15f6855eda1623f85ca0dd0">NET_PASS</a></div><div class="ttc" id="dynamic__mask_8h_html_afb15594bbbe6276cb5572d370f97f79d"><div class="ttname"><a href="dynamic__mask_8h.html#afb15594bbbe6276cb5572d370f97f79d">NET_WIFI_SIGNAL</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_SIGNAL(MASK_MAX_LEN, 16)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a5e2a82c720ee461e258fb4407216123a"><div class="ttname"><a href="dynamic__mask_8h.html#a5e2a82c720ee461e258fb4407216123a">NET_WIFI_NAME</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_NAME(MASK_MAX_LEN, 14)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a67b681d9f15f6855eda1623f85ca0dd0"><div class="ttname"><a href="dynamic__mask_8h.html#a67b681d9f15f6855eda1623f85ca0dd0">NET_PASS</a></div><div class="ttdeci">static DYNAMIC_MASK NET_PASS(MASK_MAX_LEN, 17)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_a7b79c49b5d776ab1415c527af610601c"><div class="ttname"><a href="dynamic__mask_8h.html#a7b79c49b5d776ab1415c527af610601c">WIFI_UP</a></div><div class="ttdeci">static DYNAMIC_MASK WIFI_UP(MASK_MAX_LEN, 13)</div></div>
+<div class="ttc" id="dynamic__mask_8h_html_ac8e20068b11ff42bd709a9dfb45f521d"><div class="ttname"><a href="dynamic__mask_8h.html#ac8e20068b11ff42bd709a9dfb45f521d">NET_WIFI_KEY</a></div><div class="ttdeci">static DYNAMIC_MASK NET_WIFI_KEY(MASK_MAX_LEN, 15)</div></div>
+</div><!-- fragment -->
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00072">72</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11717">Menu::nets_init()</a> и <a class="el" href="menu_8cpp_source.html#l15610">Menu::wifi_settings()</a>.</p>
+
+</div>
+</div>
+<a id="a441e3257726be0be0ea75b2c302cbc0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441e3257726be0be0ea75b2c302cbc0d">&#9670;&nbsp;</a></span>YANDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned char YANDEX = 0x10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00145">145</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>, <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

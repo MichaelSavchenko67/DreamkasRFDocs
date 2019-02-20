@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="filesfg_8h_source.html">filesfg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log_8h_source.html">log.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для FisGo_BIOS.cpp:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для FisGo_BIOS.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="FisGo__BIOS_8cpp__incl.png" border="0" usemap="#src_2appl_2FisGo__BIOS_8cpp" alt=""/></div>
 <map name="src_2appl_2FisGo__BIOS_8cpp" id="src_2appl_2FisGo__BIOS_8cpp">
 <area shape="rect"  title=" " alt="" coords="1467,5,1638,32"/>
@@ -134,7 +113,9 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="2883,453,2963,480"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="FisGo__BIOS_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:ab59b4e9e01f2d970297519520f4fd3f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5">isCommandComplete</a> (<a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a> res, FB_OPERATION_CRITICAL_LEVEL op_lvl)</td></tr>
@@ -182,6 +163,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">561</a></p>
+<div class="fragment"><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;{</div><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="keywordtype">bool</span> isCriticalError = <span class="keyword">false</span>;</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    <span class="comment">// Если res == 0 :</span></div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">if</span>(res == 0) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="comment">// Если res != 0 :</span></div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    <span class="keywordtype">string</span> eMess;</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    isCriticalError = libIsErrorCritical(res, op_lvl, &amp;eMess);</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordflow">if</span>(isCriticalError)</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    {</div><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#a7c5a79435b435a2d34758a15d3809547">fb_wasErr</a>        =  <span class="keyword">true</span>;</div><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#a91235086abfde06b81e909e472776b36">fb_errMess</a>       = eMess;</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <a class="code" href="log_8h.html#a93729ebad0dbb9bcf713c09f19fce133">setLogDBcode_CP866</a>();</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>( <span class="stringliteral">&quot;isCommandComplete:: eMess = %s\nisCommandComplete:: fb_errMess = %s\n code = %d&quot;</span>,</div><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                                                                        eMess.c_str(),</div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                                                                    <a class="code" href="FisGo__BIOS_8cpp.html#a91235086abfde06b81e909e472776b36">fb_errMess</a>.c_str(),</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                                                                           <a class="code" href="FisGo__BIOS_8cpp.html#af912dff073c15bfcb0efe350af88191f">fb_errCode</a>);</div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;        <span class="comment">//setLogDBcode_UTF8();</span></div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#af912dff073c15bfcb0efe350af88191f">fb_errCode</a> =         res;</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    }</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    {</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#a45b7b1a69fb161ceafe505ca42059fc8">fb_wasWarning</a>    =  <span class="keyword">true</span>;</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#ac42ba6361a8169f1a1d1f41ad6e08ed9">fb_warnMess</a>      = eMess;</div><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <a class="code" href="FisGo__BIOS_8cpp.html#a1f5f77a68490fc0383f2902ca56835ff">fb_warnCode</a>      =   res;</div><div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    }</div><div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    <span class="keywordflow">return</span> !isCriticalError;</div><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;}</div><div class="ttc" id="FisGo__BIOS_8cpp_html_ac42ba6361a8169f1a1d1f41ad6e08ed9"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#ac42ba6361a8169f1a1d1f41ad6e08ed9">fb_warnMess</a></div><div class="ttdeci">string fb_warnMess</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00013">FisGo_BIOS.cpp:13</a></div></div>
+<div class="ttc" id="FisGo__BIOS_8cpp_html_af912dff073c15bfcb0efe350af88191f"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#af912dff073c15bfcb0efe350af88191f">fb_errCode</a></div><div class="ttdeci">int fb_errCode</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00011">FisGo_BIOS.cpp:11</a></div></div>
+<div class="ttc" id="FisGo__BIOS_8cpp_html_a1f5f77a68490fc0383f2902ca56835ff"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#a1f5f77a68490fc0383f2902ca56835ff">fb_warnCode</a></div><div class="ttdeci">int fb_warnCode</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00014">FisGo_BIOS.cpp:14</a></div></div>
+<div class="ttc" id="FisGo__BIOS_8cpp_html_a7c5a79435b435a2d34758a15d3809547"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#a7c5a79435b435a2d34758a15d3809547">fb_wasErr</a></div><div class="ttdeci">bool fb_wasErr</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00009">FisGo_BIOS.cpp:9</a></div></div>
+<div class="ttc" id="FisGo__BIOS_8cpp_html_a45b7b1a69fb161ceafe505ca42059fc8"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#a45b7b1a69fb161ceafe505ca42059fc8">fb_wasWarning</a></div><div class="ttdeci">bool fb_wasWarning</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00012">FisGo_BIOS.cpp:12</a></div></div>
+<div class="ttc" id="FisGo__BIOS_8cpp_html_a91235086abfde06b81e909e472776b36"><div class="ttname"><a href="FisGo__BIOS_8cpp.html#a91235086abfde06b81e909e472776b36">fb_errMess</a></div><div class="ttdeci">string fb_errMess</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8cpp_source.html#l00010">FisGo_BIOS.cpp:10</a></div></div>
+<div class="ttc" id="log_8h_html_a93729ebad0dbb9bcf713c09f19fce133"><div class="ttname"><a href="log_8h.html#a93729ebad0dbb9bcf713c09f19fce133">setLogDBcode_CP866</a></div><div class="ttdeci">#define setLogDBcode_CP866()</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00056">log.h:56</a></div></div>
+<div class="ttc" id="log_8h_html_ab00dd66449102a6d5f35f8c9687892f7"><div class="ttname"><a href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a></div><div class="ttdeci">#define logDBG( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="FisGo__BIOS_8cpp_source.html#l00011">fb_errCode</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00010">fb_errMess</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00014">fb_warnCode</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00013">fb_warnMess</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00009">fb_wasErr</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00012">fb_wasWarning</a>, <a class="el" href="log_8h_source.html#l00034">logDBG</a> и <a class="el" href="log_8h_source.html#l00056">setLogDBcode_CP866</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02892">BIOS::RUS::addDiscountRubles()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03011">BIOS::BEL::addDiscountRubles()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02925">BIOS::RUS::addMarginRubles()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03037">BIOS::BEL::addMarginRubles()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03066">BIOS::addPaymentToCheck()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02959">BIOS::BEL::addPositionToCheck()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02136">BIOS::RUS::calcStateReport()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02311">BIOS::RUS::cancelDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02333">BIOS::BEL::cancelDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02778">BIOS::BEL::cancelDocBel()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02271">BIOS::RUS::closeDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02295">BIOS::BEL::closeDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03574">BIOS::RUS::closeEmegencyFN()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03595">BIOS::RUS::closeEmegencyShift()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03546">BIOS::RUS::closeFN()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02253">BIOS::RUS::closeFS()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02728">BIOS::RUS::closeShift()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02759">BIOS::BEL::closeShift()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02809">BIOS::BEL::curShiftNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04646">BIOS::BEL::dep_name_read()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04618">BIOS::BEL::dep_name_write()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00342">BIOS::RUS::dreamkasKeyActivate()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00365">BIOS::RUS::dreamkasKeyGetServiceInfo()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00389">BIOS::RUS::dreamkasKeyGetServiceInfoList()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00420">BIOS::RUS::dreamkasKeyPrintAll()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02401">BIOS::RUS::fiscalDocBinUnload()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03318">BIOS::RUS::fs_number_ask()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03367">BIOS::RUS::fs_shift_param_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00461">BIOS::RUS::fs_status_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03505">BIOS::RUS::fsTypeGet()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01793">BIOS::getAutomatNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02081">BIOS::getBatteryVoltage()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03979">BIOS::RUS::getCalcMask()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01668">BIOS::getCalculationPlace()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01348">BIOS::getCashInDrawer()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03935">BIOS::getCounters_CorData()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03625">BIOS::getCounters_CurShiftNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03863">BIOS::getCounters_depRetSum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03845">BIOS::getCounters_depSaleSum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03771">BIOS::getCounters_DiscountSums()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03643">BIOS::getCounters_NextRecNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03734">BIOS::getCounters_RecCntsByType()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03881">BIOS::getCounters_RecCount()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03753">BIOS::getCounters_RecSumsByType()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03716">BIOS::getCounters_RetSaleCntByPay()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03697">BIOS::getCounters_RetSaleSumByPay()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03917">BIOS::getCounters_RetSumByType()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03679">BIOS::getCounters_SaleCntByPay()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03661">BIOS::getCounters_SaleSumByPay()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03899">BIOS::getCounters_SaleSumByType()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03808">BIOS::getCounters_TaxSumsRets()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03790">BIOS::getCounters_TaxSumsSale()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03826">BIOS::getCounters_XZ()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01489">BIOS::getDateFNValidBefore()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01467">BIOS::getDateLastRegistration()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02350">BIOS::RUS::getDateOfReg()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01436">BIOS::getDateTimeLastFiscalDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01514">BIOS::getDateTimeOpenShift()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02113">BIOS::getDocFromFN()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02445">BIOS::RUS::getFDandFPDofReg()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01808">BIOS::getFfdKktVer()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01901">BIOS::RUS::getFNDateTime()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03524">BIOS::RUS::getFNVer()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01831">BIOS::getFsFfdVer()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01770">BIOS::getFSValidityDate()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01366">BIOS::getKKTPlantNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01412">BIOS::getKKTRegNum()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01855">BIOS::getKktVer()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02380">BIOS::RUS::getNumFDofReg()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01740">BIOS::getOFDAddress()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01755">BIOS::getOFDINN()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01710">BIOS::getOFDName()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01725">BIOS::getOFDPort()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03953">BIOS::RUS::getOFDSettings()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01681">BIOS::getOFDStatus()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01617">BIOS::getOrganizationAddress()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01391">BIOS::getOrganizationINN()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01643">BIOS::getOrganizationName()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01594">BIOS::getPrinterMachine()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01547">BIOS::getSignAndAgents()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01233">BIOS::BEL::getSKNODateTime()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03396">BIOS::getStatusBIOS()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01571">BIOS::getTaxSystems()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00592">BIOS::initConnection()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04181">BIOS::BEL::kca_flgs_get()</a>, <a class="el" href="FisGo__BIOS_8h_source.html#l01241">BIOS::BEL::ksaInformationGet()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03343">BIOS::RUS::last_fd_num_ask()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00247">BIOS::RUS::ofd_disconnect_status()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01134">BIOS::RUS::openDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01163">BIOS::BEL::openDoc()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00665">BIOS::RUS::openShift()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01334">BIOS::BEL::print_report_ctrl_tape()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01292">BIOS::BEL::print_report_fixed_mem_unit()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03301">BIOS::printBIOSTechReport()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03231">BIOS::printFnDocs()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03291">BIOS::printLastFiscalReport()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03220">BIOS::printXReport()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04534">BIOS::BEL::readPayType()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01194">BIOS::RUS::rec_fis_data_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01273">BIOS::BEL::rec_fis_data_get()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04029">BIOS::RUS::registerKKT_BIOS()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02102">BIOS::restartKKT()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l04001">BIOS::RUS::setCalcMask()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03273">BIOS::setDateTimeToBIOS()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01875">BIOS::RUS::setFNDateTime()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03472">BIOS::RUS::setOFDSettings()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02424">BIOS::RUS::setPosAddReq()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02872">BIOS::RUS::subTotal()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l02991">BIOS::BEL::subTotal()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l03250">BIOS::techZeroing()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l04491">BIOS::BEL::writePayType()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Переменные</h2>
@@ -197,6 +192,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00011">11</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a>, <a class="el" href="threads_8h_source.html#l00199">fisgo_bios_()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a>.</p>
+
 </div>
 </div>
 <a id="a91235086abfde06b81e909e472776b36"></a>
@@ -210,6 +209,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00010">10</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a>, <a class="el" href="threads_8h_source.html#l00199">fisgo_bios_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00592">BIOS::initConnection()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a>.</p>
 
 </div>
 </div>
@@ -225,6 +228,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00014">14</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a>.</p>
+
 </div>
 </div>
 <a id="ac42ba6361a8169f1a1d1f41ad6e08ed9"></a>
@@ -238,6 +245,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00013">13</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a>.</p>
 
 </div>
 </div>
@@ -253,6 +264,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00009">9</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a>, <a class="el" href="threads_8h_source.html#l00199">fisgo_bios_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a> и <a class="el" href="menu_8cpp_source.html#l19041">Menu::print_report_mem_unit()</a>.</p>
+
 </div>
 </div>
 <a id="a45b7b1a69fb161ceafe505ca42059fc8"></a>
@@ -267,12 +282,16 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00012">12</a></p>
+
+<p class="reference">Используется в <a class="el" href="threads_8h_source.html#l00091">background_events_()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00021">BIOS::BIOS()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00561">isCommandComplete()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

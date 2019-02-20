@@ -1,0 +1,11 @@
+<map id="nlohmann::json_pointer::get_and_create" name="nlohmann::json_pointer::get_and_create">
+<area shape="rect" id="node1" title="create and return a reference to the pointed to value" alt="" coords="5,96,161,137"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="210,20,366,61"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="209,96,367,137"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="213,184,363,225"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="422,8,565,49"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="620,71,801,112"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="629,5,792,47"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="415,125,572,167"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="418,243,569,284"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="BarcodeScanner::ean13Gs1Clc" name="BarcodeScanner::ean13Gs1Clc">
+<area shape="rect" id="node1" title="ean13Gs1Clc &#45; расчёт КС EAN13" alt="" coords="677,13,883,39"/>
+<area shape="rect" id="node2" href="$classBarcodeScanner.html#a19ec048f46d75741f7a6e9ac35f46e75" title="isEan13 &#45; тест на валидность EAN13" alt="" coords="456,13,629,39"/>
+<area shape="rect" id="node3" href="$classBarcodeScanner.html#aed8b4c339d28d67d0a74eabb8c8b861a" title="weightBarcodeParse &#45; парс весового ШК" alt="" coords="196,5,408,47"/>
+<area shape="rect" id="node4" href="$classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,13,148,39"/>
+</map>

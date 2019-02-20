@@ -1,9 +1,9 @@
 <map id="BIOS::RUS::insRes" name="BIOS::RUS::insRes">
 <area shape="rect" id="node1" title=" " alt="" coords="5,81,145,108"/>
-<area shape="rect" id="node2" href="$classBIOS_1_1RUS.html#a80d78f66fa80e7361c081ab488f03daf" title=" " alt="" coords="193,5,383,32"/>
-<area shape="rect" id="node3" href="$classBIOS_1_1RUS.html#ab9fa203844c2e51fef93c01b575d1ebc" title=" " alt="" coords="207,56,369,83"/>
-<area shape="rect" id="node5" href="$classBIOS_1_1RUS.html#a68d2820a98b2f95e95476961a50673b9" title=" " alt="" coords="213,107,363,133"/>
-<area shape="rect" id="node6" href="$classBIOS_1_1RUS.html#a8aa57fbc1edfac6e9961b92df20779ea" title=" " alt="" coords="211,157,365,184"/>
-<area shape="rect" id="node4" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="434,107,582,133"/>
-<area shape="rect" id="node7" href="$classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="431,157,585,184"/>
+<area shape="rect" id="node2" href="$classBIOS_1_1RUS.html#ab9fa203844c2e51fef93c01b575d1ebc" title=" " alt="" coords="207,5,369,32"/>
+<area shape="rect" id="node4" href="$classBIOS_1_1RUS.html#a8aa57fbc1edfac6e9961b92df20779ea" title=" " alt="" coords="211,157,365,184"/>
+<area shape="rect" id="node6" href="$classBIOS_1_1RUS.html#a80d78f66fa80e7361c081ab488f03daf" title=" " alt="" coords="193,107,383,133"/>
+<area shape="rect" id="node7" href="$classBIOS_1_1RUS.html#a68d2820a98b2f95e95476961a50673b9" title=" " alt="" coords="213,56,363,83"/>
+<area shape="rect" id="node3" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="434,56,582,83"/>
+<area shape="rect" id="node5" href="$classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="431,157,585,184"/>
 </map>

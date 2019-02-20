@@ -1,0 +1,38 @@
+<map id="nlohmann::detail::iter_impl::set_end" name="nlohmann::detail::iter_impl::set_end">
+<area shape="rect" id="node1" title="set the iterator past the last value" alt="" coords="1564,316,1707,357"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a8dba7b7d2f38e6b0c614030aa43983f6" title="returns a const iterator to one past the last element" alt="" coords="1353,159,1501,200"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="1339,450,1516,477"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1basic__json.html#a83fe4a151b3a591f357527d5d9aa1b9f" title="access the last element" alt="" coords="1128,5,1276,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1basic__json.html#a1e0769d22d54573f294da0e5c6abc9de" title="returns a const reverse iterator to the last element" alt="" coords="1128,71,1276,112"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a1c15707055088cd5436ae91db72cbe67" title="returns a const iterator to one past the last element" alt="" coords="1113,137,1291,163"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1basic__json.html#ae625a0647486edf2bb38c849ca67f934" title="find an element in a JSON object" alt="" coords="1128,188,1276,229"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a1cfa9ae5e7c2434cab4cfe69bffffe11" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="1128,253,1276,295"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a515e7618392317dbf4b72d3e18bf2ab2" title="returns a const reverse iterator to the last element" alt="" coords="917,71,1065,112"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#a011397134847f36db0ed7d7a93753677" title="access the last element" alt="" coords="1128,319,1276,360"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="1128,384,1276,425"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="917,427,1065,468"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1basic__json.html#a89eb3928f57903677051c80534be9cb1" title="find an element in a JSON object" alt="" coords="1128,501,1276,543"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="917,517,1065,559"/>
+<area shape="rect" id="node36" href="$classnlohmann_1_1basic__json.html#a1ef93e2006dbe52667294f5ef38b0b10" title="returns an iterator to the reverse&#45;beginning" alt="" coords="1128,619,1276,660"/>
+<area shape="rect" id="node15" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="700,129,837,155"/>
+<area shape="rect" id="node20" href="$unionnlohmann_1_1basic__json_1_1json__value.html#a8f75abc358ee45b9bbdc601c974d6c91" title="constructor for strings" alt="" coords="687,180,850,221"/>
+<area shape="rect" id="node21" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="693,246,844,273"/>
+<area shape="rect" id="node22" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="682,297,855,323"/>
+<area shape="rect" id="node24" href="$classJSON.html#a953eaebf5c99a886ae4e32894c7a9ca4" title=" " alt="" coords="679,347,858,374"/>
+<area shape="rect" id="node25" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="684,398,853,425"/>
+<area shape="rect" id="node26" href="$classJSON.html#a0ad8255f5c5b17b96b53ab8ed4d5c084" title="parseDeleteDiscount &#45; парс таски на удаление скидки" alt="" coords="675,449,863,475"/>
+<area shape="rect" id="node27" href="$classJSON.html#ac857adf6f636e0608fae1c073f6a568e" title=" " alt="" coords="678,499,859,526"/>
+<area shape="rect" id="node28" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="668,550,869,577"/>
+<area shape="rect" id="node29" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="689,601,849,627"/>
+<area shape="rect" id="node30" href="$classJSON.html#a18d87845553bd111b9234f987ce4700f" title="parseUpsertDiscount &#45; парс таски на добавление скидки" alt="" coords="674,651,863,678"/>
+<area shape="rect" id="node31" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="677,702,860,729"/>
+<area shape="rect" id="node32" href="$classJSON.html#a2a0e43b55a3febb7e377c956e0659605" title="pushTags &#45; добавить тег в вектор тегов" alt="" coords="707,753,830,779"/>
+<area shape="rect" id="node33" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="675,803,862,830"/>
+<area shape="rect" id="node34" href="$testJSON_8h.html#a937e67a15400403d962da940dc859e70" title=" " alt="" coords="733,854,804,881"/>
+<area shape="rect" id="node35" href="$classnlohmann_1_1basic__json.html#ad6a18403e7fbac9c4efd06facc71fc88" title="overload for a default value of type const char*" alt="" coords="695,905,843,947"/>
+<area shape="rect" id="node16" href="$classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="440,129,597,155"/>
+<area shape="rect" id="node17" href="$threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="241,129,369,155"/>
+<area shape="rect" id="node18" href="$threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,129,193,155"/>
+<area shape="rect" id="node19" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,129,56,155"/>
+<area shape="rect" id="node23" href="$classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="417,289,620,331"/>
+</map>

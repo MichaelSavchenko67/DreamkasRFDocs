@@ -1,4 +1,7 @@
 <map id="FiscalDocDb::saveFiscalDoc" name="FiscalDocDb::saveFiscalDoc">
-<area shape="rect" id="node1" title="saveFiscalDoc сохранение фискального документа в БД" alt="" coords="5,5,199,32"/>
-<area shape="rect" id="node2" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="247,5,397,32"/>
+<area shape="rect" id="node1" title="saveFiscalDoc сохранение фискального документа в БД" alt="" coords="5,81,199,108"/>
+<area shape="rect" id="node2" href="$classConvert.html#a9d413a4d0ae48dd4817751ed9cbce859" title=" " alt="" coords="281,5,431,32"/>
+<area shape="rect" id="node3" href="$classFiscalDocDb.html#adc23a1b0262b6a1c5b693567b016f931" title="clearLastFiscalDoc очистка последней записи" alt="" coords="247,56,465,83"/>
+<area shape="rect" id="node4" href="$classFiscalDocDb.html#a48e00cf7c4c86f9bd0628e47d36bdf43" title="fillMinMaxFD заполнить минимальный и максимальный номер ФД" alt="" coords="265,107,447,133"/>
+<area shape="rect" id="node5" href="$classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83" title="makeRequestNotSave выполнить запрос без сохранения результата (не SELECT запрос)" alt="" coords="263,158,449,199"/>
 </map>

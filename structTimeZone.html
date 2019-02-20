@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="time__sync_8h_source.html">time_sync.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса TimeZone:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса TimeZone:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structTimeZone__coll__graph.png" border="0" usemap="#TimeZone_coll__map" alt="Collaboration graph"/></div>
 <map name="TimeZone_coll__map" id="TimeZone_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,105,127"/>
@@ -98,7 +77,10 @@ $(function() {
 <tr class="memitem:ab7e7d45a5b3ec94e72599e411be487d2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTimeZone.html#ab7e7d45a5b3ec94e72599e411be487d2">path</a> = &quot;&quot;</td></tr>
 <tr class="separator:ab7e7d45a5b3ec94e72599e411be487d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00014">14</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="acced76f0320a8b4192d6cd3d5a447827"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acced76f0320a8b4192d6cd3d5a447827">&#9670;&nbsp;</a></span>TimeZone() <span class="overload">[1/2]</span></h2>
 
@@ -164,6 +146,11 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00017">17</a></p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="structTimeZone.html#a205eec4f07d2a7b5c02f2bb49add57f9">shortName</a> = s;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="structTimeZone.html#a413752338bb43bbdb40a0456dbf03cd0">name</a>      = n;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="structTimeZone.html#ab7e7d45a5b3ec94e72599e411be487d2">path</a>      = p;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="ttc" id="structTimeZone_html_ab7e7d45a5b3ec94e72599e411be487d2"><div class="ttname"><a href="structTimeZone.html#ab7e7d45a5b3ec94e72599e411be487d2">TimeZone::path</a></div><div class="ttdeci">string path</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00026">time_sync.h:26</a></div></div>
+<div class="ttc" id="structTimeZone_html_a205eec4f07d2a7b5c02f2bb49add57f9"><div class="ttname"><a href="structTimeZone.html#a205eec4f07d2a7b5c02f2bb49add57f9">TimeZone::shortName</a></div><div class="ttdeci">string shortName</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00024">time_sync.h:24</a></div></div>
+<div class="ttc" id="structTimeZone_html_a413752338bb43bbdb40a0456dbf03cd0"><div class="ttname"><a href="structTimeZone.html#a413752338bb43bbdb40a0456dbf03cd0">TimeZone::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00025">time_sync.h:25</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -179,6 +166,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00025">25</a></p>
+
 </div>
 </div>
 <a id="ab7e7d45a5b3ec94e72599e411be487d2"></a>
@@ -192,6 +181,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00026">26</a></p>
 
 </div>
 </div>
@@ -207,6 +198,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00024">24</a></p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -215,7 +208,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

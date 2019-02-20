@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a class="el" href="dir_39df878ed8cce110a398cfdcea773c21.html">include</a></li>  </ul>
@@ -78,9 +55,11 @@ $(function() {
 <code>#include &lt;gmock/gmock.h&gt;</code><br />
 <code>#include &quot;gmock/gmock-global.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="printer_8h_source.html">printer.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для testPrinter.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для testPrinter.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="testPrinter_8h__incl.png" border="0" usemap="#src_2tests_2include_2testPrinter_8h" alt=""/></div>
 <map name="src_2tests_2include_2testPrinter_8h" id="src_2tests_2include_2testPrinter_8h">
 <area shape="rect"  title=" " alt="" coords="3355,5,3549,32"/>
@@ -181,6 +160,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00051">51</a></p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    EXPECT_CALL(mockLicense, isTagExistAndValid(<a class="code" href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">License::LICENSE_TAG_FFD_1_05</a>)).Times(2).WillRepeatedly(Return(<span class="keyword">false</span>));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(), <span class="stringliteral">&quot;Электронными&quot;</span>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(<span class="keyword">true</span>), <span class="stringliteral">&quot;ЭЛЕКТРОННЫМИ&quot;</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div><div class="ttc" id="classLicense_html_aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601"><div class="ttname"><a href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">License::LICENSE_TAG_FFD_1_05</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00023">license.h:23</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="license_8h_source.html#l00023">License::LICENSE_TAG_FFD_1_05</a>.</p>
+
 </div>
 </div>
 <a id="a9c214f1ea6a249afb3ebb89131396ab8"></a>
@@ -208,6 +192,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00058">58</a></p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    EXPECT_CALL(mockLicense, isTagExistAndValid(<a class="code" href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">License::LICENSE_TAG_FFD_1_05</a>)).Times(2).WillRepeatedly(Return(<span class="keyword">true</span>));</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(), <span class="stringliteral">&quot;Безналичными&quot;</span>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(<span class="keyword">true</span>), <span class="stringliteral">&quot;БЕЗНАЛИЧНЫМИ&quot;</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div><div class="ttc" id="classLicense_html_aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601"><div class="ttname"><a href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">License::LICENSE_TAG_FFD_1_05</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00023">license.h:23</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="license_8h_source.html#l00023">License::LICENSE_TAG_FFD_1_05</a>.</p>
 
 </div>
 </div>
@@ -237,12 +226,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testPrinter_8h_source.html">testPrinter.h</a> строка <a class="el" href="testPrinter_8h_source.html#l00065">65</a></p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    shared_ptr&lt;Taxes&gt; taxesNull;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    printer-&gt;setTaxes(taxesNull);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(), <span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    EXPECT_EQ(printer-&gt;getCashlessName(<span class="keyword">true</span>), <span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    printer-&gt;setTaxes(taxes);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    taxes.reset();</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

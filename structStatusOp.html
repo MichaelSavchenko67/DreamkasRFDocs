@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="slipsDB_8h_source.html">slipsDB.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса StatusOp:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса StatusOp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structStatusOp__coll__graph.png" border="0" usemap="#StatusOp_coll__map" alt="Collaboration graph"/></div>
 <map name="StatusOp_coll__map" id="StatusOp_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,96,112"/>
@@ -96,7 +75,10 @@ $(function() {
 <tr class="memitem:a8a49f7f852491be30b37e65bfbead352"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">status</a></td></tr>
 <tr class="separator:a8a49f7f852491be30b37e65bfbead352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Методы</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="slipsDB_8h_source.html">slipsDB.h</a> строка <a class="el" href="slipsDB_8h_source.html#l00034">34</a></p>
+</div><h2 class="groupheader">Методы</h2>
 <a id="a40c93fac39442d4e5f7dfd0033ccd45d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40c93fac39442d4e5f7dfd0033ccd45d">&#9670;&nbsp;</a></span>clean()</h2>
 
@@ -120,6 +102,11 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="slipsDB_8h_source.html">slipsDB.h</a> строка <a class="el" href="slipsDB_8h_source.html#l00040">40</a></p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="structStatusOp.html#a025e789e1424806c55d7373d5e75a1e2">authCode</a>.clear();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="structStatusOp.html#a1255af971f901e59a1d506b2fe3d83a3">amount</a>.clear();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">status</a> = <span class="stringliteral">&quot;0&quot;</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="ttc" id="structStatusOp_html_a1255af971f901e59a1d506b2fe3d83a3"><div class="ttname"><a href="structStatusOp.html#a1255af971f901e59a1d506b2fe3d83a3">StatusOp::amount</a></div><div class="ttdeci">string amount</div><div class="ttdef"><b>Definition:</b> <a href="slipsDB_8h_source.html#l00037">slipsDB.h:37</a></div></div>
+<div class="ttc" id="structStatusOp_html_a8a49f7f852491be30b37e65bfbead352"><div class="ttname"><a href="structStatusOp.html#a8a49f7f852491be30b37e65bfbead352">StatusOp::status</a></div><div class="ttdeci">string status</div><div class="ttdef"><b>Definition:</b> <a href="slipsDB_8h_source.html#l00038">slipsDB.h:38</a></div></div>
+<div class="ttc" id="structStatusOp_html_a025e789e1424806c55d7373d5e75a1e2"><div class="ttname"><a href="structStatusOp.html#a025e789e1424806c55d7373d5e75a1e2">StatusOp::authCode</a></div><div class="ttdeci">string authCode</div><div class="ttdef"><b>Definition:</b> <a href="slipsDB_8h_source.html#l00036">slipsDB.h:36</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -135,6 +122,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="slipsDB_8h_source.html">slipsDB.h</a> строка <a class="el" href="slipsDB_8h_source.html#l00037">37</a></p>
+
+<p class="reference">Используется в <a class="el" href="slipsDB_8cpp_source.html#l00388">SlipsDB::add()</a>, <a class="el" href="slipsDB_8cpp_source.html#l00129">SlipsDB::parseAnswer()</a> и <a class="el" href="menu_8cpp_source.html#l19983">Menu::pay_by_card_integ_term()</a>.</p>
+
 </div>
 </div>
 <a id="a025e789e1424806c55d7373d5e75a1e2"></a>
@@ -148,6 +139,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="slipsDB_8h_source.html">slipsDB.h</a> строка <a class="el" href="slipsDB_8h_source.html#l00036">36</a></p>
+
+<p class="reference">Используется в <a class="el" href="slipsDB_8cpp_source.html#l00388">SlipsDB::add()</a>, <a class="el" href="slipsDB_8cpp_source.html#l00129">SlipsDB::parseAnswer()</a> и <a class="el" href="menu_8cpp_source.html#l19983">Menu::pay_by_card_integ_term()</a>.</p>
 
 </div>
 </div>
@@ -163,6 +158,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="slipsDB_8h_source.html">slipsDB.h</a> строка <a class="el" href="slipsDB_8h_source.html#l00038">38</a></p>
+
+<p class="reference">Используется в <a class="el" href="slipsDB_8cpp_source.html#l00388">SlipsDB::add()</a>, <a class="el" href="slipsDB_8cpp_source.html#l00129">SlipsDB::parseAnswer()</a> и <a class="el" href="menu_8cpp_source.html#l19983">Menu::pay_by_card_integ_term()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -171,7 +170,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

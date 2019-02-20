@@ -1,0 +1,8 @@
+<map id="nlohmann::detail::lexer::scan_number" name="nlohmann::detail::lexer::scan_number">
+<area shape="rect" id="node1" title="scan a number literal" alt="" coords="5,107,159,149"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="207,5,389,32"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="209,56,387,83"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="221,107,375,149"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="221,173,375,214"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="221,238,375,279"/>
+</map>

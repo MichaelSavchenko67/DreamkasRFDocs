@@ -1,0 +1,5 @@
+<map id="ScaleProtocolMassak::isCorrectAnswerPacket" name="ScaleProtocolMassak::isCorrectAnswerPacket">
+<area shape="rect" id="node1" title="isCorrectAnswerPacket &#45; проверка принятого пакета" alt="" coords="400,5,568,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolMassak.html#a529ea11b2cf4febb69280000505ab593" title="weightParse &#45; парс веса из полученного пакета" alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,5,155,47"/>
+</map>

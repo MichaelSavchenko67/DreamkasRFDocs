@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1parser.html">parser</a></li>  </ul>
@@ -70,6 +47,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Открытые типы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-types">Закрытые типы</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classnlohmann_1_1detail_1_1parser-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса nlohmann::detail::parser&lt; BasicJsonType &gt;</div>  </div>
@@ -80,12 +60,14 @@ $(function() {
  <a href="classnlohmann_1_1detail_1_1parser.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::parser&lt; BasicJsonType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::parser&lt; BasicJsonType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1parser__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1parser_3_01BasicJsonType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1parser_3_01BasicJsonType_01_4_coll__map" id="nlohmann_1_1detail_1_1parser_3_01BasicJsonType_01_4_coll__map">
-<area shape="rect"  title="syntax analysis" alt="" coords="5,5,167,141"/>
+<area shape="rect"  title="syntax analysis" alt="" coords="5,5,167,229"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -119,6 +101,47 @@ $(function() {
 <tr class="memitem:a14e34931965064b26e118eb72cbd5e25"><td class="memTemplParams" colspan="2">template&lt;typename SAX &gt; </td></tr>
 <tr class="memitem:a14e34931965064b26e118eb72cbd5e25"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25">sax_parse</a> (SAX *sax, const bool strict=true)</td></tr>
 <tr class="separator:a14e34931965064b26e118eb72cbd5e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Закрытые типы</h2></td></tr>
+<tr class="memitem:aa0362897269e0a7e50ae07be05f42d8e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#aa0362897269e0a7e50ae07be05f42d8e">number_integer_t</a> = typename BasicJsonType::number_integer_t</td></tr>
+<tr class="separator:aa0362897269e0a7e50ae07be05f42d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3773ccef366c61da2e6a8c0eda36d0ec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a3773ccef366c61da2e6a8c0eda36d0ec">number_unsigned_t</a> = typename BasicJsonType::number_unsigned_t</td></tr>
+<tr class="separator:a3773ccef366c61da2e6a8c0eda36d0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca8e734da0632c2731fc3b9547dcf28"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a8ca8e734da0632c2731fc3b9547dcf28">number_float_t</a> = typename BasicJsonType::number_float_t</td></tr>
+<tr class="separator:a8ca8e734da0632c2731fc3b9547dcf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67b9b0405262c40be2b13adaab8b046"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#af67b9b0405262c40be2b13adaab8b046">string_t</a> = typename BasicJsonType::string_t</td></tr>
+<tr class="separator:af67b9b0405262c40be2b13adaab8b046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16030c5af158a94d1c799f82ff3a0147"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a16030c5af158a94d1c799f82ff3a0147">lexer_t</a> = <a class="el" href="classnlohmann_1_1detail_1_1lexer.html">lexer</a>&lt; BasicJsonType &gt;</td></tr>
+<tr class="separator:a16030c5af158a94d1c799f82ff3a0147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d247111b332785b7acf3f8e487d117"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a> = typename <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098">lexer_t::token_type</a></td></tr>
+<tr class="separator:a21d247111b332785b7acf3f8e487d117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ad256ac6f45b213d29096a04b5aa3c587"><td class="memTemplParams" colspan="2">template&lt;typename SAX &gt; </td></tr>
+<tr class="memitem:ad256ac6f45b213d29096a04b5aa3c587"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">sax_parse_internal</a> (SAX *sax)</td></tr>
+<tr class="separator:ad256ac6f45b213d29096a04b5aa3c587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f3859d0dd402445b5859070fd24bab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a> ()</td></tr>
+<tr class="memdesc:a33f3859d0dd402445b5859070fd24bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">get next token from lexer  <a href="#a33f3859d0dd402445b5859070fd24bab">Подробнее...</a><br /></td></tr>
+<tr class="separator:a33f3859d0dd402445b5859070fd24bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bff4f2392f740c45e539929874cd85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a> (const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a> expected)</td></tr>
+<tr class="separator:a19bff4f2392f740c45e539929874cd85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a7600d272ec605e3ffdc8512b3585f476"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">callback</a> = nullptr</td></tr>
+<tr class="memdesc:a7600d272ec605e3ffdc8512b3585f476"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback function  <a href="#a7600d272ec605e3ffdc8512b3585f476">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7600d272ec605e3ffdc8512b3585f476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932e49f6f4d291557846744319245994"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> = token_type::uninitialized</td></tr>
+<tr class="memdesc:a932e49f6f4d291557846744319245994"><td class="mdescLeft">&#160;</td><td class="mdescRight">the type of the last read token  <a href="#a932e49f6f4d291557846744319245994">Подробнее...</a><br /></td></tr>
+<tr class="separator:a932e49f6f4d291557846744319245994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dcc815551a4052b87797b34171b352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a16030c5af158a94d1c799f82ff3a0147">lexer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a></td></tr>
+<tr class="memdesc:a22dcc815551a4052b87797b34171b352"><td class="mdescLeft">&#160;</td><td class="mdescRight">the lexer  <a href="#a22dcc815551a4052b87797b34171b352">Подробнее...</a><br /></td></tr>
+<tr class="separator:a22dcc815551a4052b87797b34171b352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3de1ea054cfa606e79fa07741f081b5f"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">allow_exceptions</a> = true</td></tr>
+<tr class="memdesc:a3de1ea054cfa606e79fa07741f081b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether to throw exceptions in case of errors  <a href="#a3de1ea054cfa606e79fa07741f081b5f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3de1ea054cfa606e79fa07741f081b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><h3>template&lt;typename BasicJsonType&gt;<br />
@@ -126,7 +149,113 @@ class nlohmann::detail::parser&lt; BasicJsonType &gt;</h3>
 
 <p>syntax analysis </p>
 <p>This class implements a recursive decent parser. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04503">4503</a></p>
 </div><h2 class="groupheader">Определения типов</h2>
+<a id="a16030c5af158a94d1c799f82ff3a0147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16030c5af158a94d1c799f82ff3a0147">&#9670;&nbsp;</a></span>lexer_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#a16030c5af158a94d1c799f82ff3a0147">lexer_t</a> =  <a class="el" href="classnlohmann_1_1detail_1_1lexer.html">lexer</a>&lt;BasicJsonType&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04509">4509</a></p>
+
+</div>
+</div>
+<a id="a8ca8e734da0632c2731fc3b9547dcf28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca8e734da0632c2731fc3b9547dcf28">&#9670;&nbsp;</a></span>number_float_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#a8ca8e734da0632c2731fc3b9547dcf28">number_float_t</a> =  typename BasicJsonType::number_float_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04507">4507</a></p>
+
+</div>
+</div>
+<a id="aa0362897269e0a7e50ae07be05f42d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0362897269e0a7e50ae07be05f42d8e">&#9670;&nbsp;</a></span>number_integer_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#aa0362897269e0a7e50ae07be05f42d8e">number_integer_t</a> =  typename BasicJsonType::number_integer_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04505">4505</a></p>
+
+</div>
+</div>
+<a id="a3773ccef366c61da2e6a8c0eda36d0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3773ccef366c61da2e6a8c0eda36d0ec">&#9670;&nbsp;</a></span>number_unsigned_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#a3773ccef366c61da2e6a8c0eda36d0ec">number_unsigned_t</a> =  typename BasicJsonType::number_unsigned_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04506">4506</a></p>
+
+</div>
+</div>
 <a id="ad250ad4f2b4af4a497e727c963162ff1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad250ad4f2b4af4a497e727c963162ff1">&#9670;&nbsp;</a></span>parser_callback_t</h2>
 
@@ -140,6 +269,60 @@ template&lt;typename BasicJsonType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04530">4530</a></p>
+
+</div>
+</div>
+<a id="af67b9b0405262c40be2b13adaab8b046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67b9b0405262c40be2b13adaab8b046">&#9670;&nbsp;</a></span>string_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#af67b9b0405262c40be2b13adaab8b046">string_t</a> =  typename BasicJsonType::string_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04508">4508</a></p>
+
+</div>
+</div>
+<a id="a21d247111b332785b7acf3f8e487d117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d247111b332785b7acf3f8e487d117">&#9670;&nbsp;</a></span>token_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::<a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a> =  typename <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a3f313cdbe187cababfc5e06f0b69b098">lexer_t::token_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04510">4510</a></p>
 
 </div>
 </div>
@@ -180,6 +363,8 @@ template&lt;typename BasicJsonType &gt; </div>
 </td></tr>
 </table>
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04513">4513</a></p>
+<div class="fragment"><div class="line"><a name="l04513"></a><span class="lineno"> 4513</span>&#160;                             : uint8_t</div><div class="line"><a name="l04514"></a><span class="lineno"> 4514</span>&#160;    {</div><div class="line"><a name="l04516"></a><span class="lineno"> 4516</span>&#160;        object_start,</div><div class="line"><a name="l04518"></a><span class="lineno"> 4518</span>&#160;        object_end,</div><div class="line"><a name="l04520"></a><span class="lineno"> 4520</span>&#160;        array_start,</div><div class="line"><a name="l04522"></a><span class="lineno"> 4522</span>&#160;        array_end,</div><div class="line"><a name="l04524"></a><span class="lineno"> 4524</span>&#160;        key,</div><div class="line"><a name="l04526"></a><span class="lineno"> 4526</span>&#160;        value</div><div class="line"><a name="l04527"></a><span class="lineno"> 4527</span>&#160;    };</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Конструктор(ы)</h2>
@@ -227,6 +412,37 @@ template&lt;typename BasicJsonType &gt; </div>
 
 <p>a parser reading from an input adapter </p>
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04533">4533</a></p>
+<div class="fragment"><div class="line"><a name="l04536"></a><span class="lineno"> 4536</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">callback</a>(cb), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>(std::move(adapter)), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">allow_exceptions</a>(allow_exceptions_)</div><div class="line"><a name="l04537"></a><span class="lineno"> 4537</span>&#160;    {</div><div class="line"><a name="l04538"></a><span class="lineno"> 4538</span>&#160;        <span class="comment">// read first token</span></div><div class="line"><a name="l04539"></a><span class="lineno"> 4539</span>&#160;        <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>();</div><div class="line"><a name="l04540"></a><span class="lineno"> 4540</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a7600d272ec605e3ffdc8512b3585f476"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">nlohmann::detail::parser::callback</a></div><div class="ttdeci">const parser_callback_t callback</div><div class="ttdoc">callback function</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04950">jsonParser.h:4950</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a33f3859d0dd402445b5859070fd24bab"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">nlohmann::detail::parser::get_token</a></div><div class="ttdeci">token_type get_token()</div><div class="ttdoc">get next token from lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04922">jsonParser.h:4922</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a3de1ea054cfa606e79fa07741f081b5f"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">nlohmann::detail::parser::allow_exceptions</a></div><div class="ttdeci">const bool allow_exceptions</div><div class="ttdoc">whether to throw exceptions in case of errors</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04956">jsonParser.h:4956</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a1a2bd258b7e99f86b7e6a3c41373ba55_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a1a2bd258b7e99f86b7e6a3c41373ba55_cgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a1a2bd258b7e99f86b7e6a3c41373ba55_cgraph" id="classnlohmann_1_1detail_1_1parser_a1a2bd258b7e99f86b7e6a3c41373ba55_cgraph">
+<area shape="rect"  title="a parser reading from an input adapter" alt="" coords="5,188,167,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab" title="get next token from lexer" alt="" coords="215,188,376,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="424,188,577,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="1030,130,1209,156"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="625,72,779,113"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="625,393,779,434"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="625,188,779,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="625,540,779,581"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="1028,254,1211,280"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="827,305,980,346"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="827,422,980,464"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="827,540,980,581"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="827,122,980,164"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="827,188,980,229"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -264,17 +480,190 @@ template&lt;typename BasicJsonType &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>whether the input is a proper <a class="el" href="classJSON.html">JSON</a> text </dd></dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04611">4611</a></p>
+<div class="fragment"><div class="line"><a name="l04612"></a><span class="lineno"> 4612</span>&#160;    {</div><div class="line"><a name="l04613"></a><span class="lineno"> 4613</span>&#160;        json_sax_acceptor&lt;BasicJsonType&gt; sax_acceptor;</div><div class="line"><a name="l04614"></a><span class="lineno"> 4614</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25">sax_parse</a>(&amp;sax_acceptor, strict);</div><div class="line"><a name="l04615"></a><span class="lineno"> 4615</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a14e34931965064b26e118eb72cbd5e25"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25">nlohmann::detail::parser::sax_parse</a></div><div class="ttdeci">bool sax_parse(SAX *sax, const bool strict=true)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04618">jsonParser.h:4618</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04618">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1parser_a20997b42262856935b60fc91bf05bf3f_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a20997b42262856935b60fc91bf05bf3f_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1parser_a20997b42262856935b60fc91bf05bf3f_cgraph" id="classnlohmann_1_1detail_1_1parser_a20997b42262856935b60fc91bf05bf3f_cgraph">
-<area shape="rect"  title="public accept interface" alt="" coords="5,71,167,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,71,376,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="426,5,579,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="426,71,579,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="424,136,581,177"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="629,136,811,177"/>
+<area shape="rect"  title="public accept interface" alt="" coords="5,473,167,514"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,473,376,514"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="424,439,585,481"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab" title="get next token from lexer" alt="" coords="633,113,795,154"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="637,178,791,219"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="857,673,1010,714"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="635,570,793,611"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85" title=" " alt="" coords="633,738,795,779"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d" title="return current string value (implicitly resets the token; useful only once)" alt="" coords="637,439,791,481"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2" title="return floating&#45;point value" alt="" coords="637,505,791,546"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="643,243,785,285"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced" title="return integer value" alt="" coords="637,309,791,350"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6" title="return unsigned integer value" alt="" coords="635,374,793,415"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="857,113,1010,154"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="1477,188,1655,215"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="1072,30,1225,71"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="1072,214,1225,255"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="1072,445,1225,486"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="1072,113,1225,154"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="1475,547,1657,573"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="1273,357,1427,398"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="1273,239,1427,281"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="1273,122,1427,163"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="1273,474,1427,515"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="1273,539,1427,581"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="843,406,1024,447"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="855,570,1012,611"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86" title="return syntax error message" alt="" coords="857,738,1010,779"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8" title="return name of values of type token_type (only used for errors)" alt="" coords="857,803,1010,845"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="852,243,1015,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19bff4f2392f740c45e539929874cd85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bff4f2392f740c45e539929874cd85">&#9670;&nbsp;</a></span>exception_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::exception_message </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a>&#160;</td>
+          <td class="paramname"><em>expected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04927">4927</a></p>
+<div class="fragment"><div class="line"><a name="l04928"></a><span class="lineno"> 4928</span>&#160;    {</div><div class="line"><a name="l04929"></a><span class="lineno"> 4929</span>&#160;        <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a> error_msg = <span class="stringliteral">&quot;syntax error - &quot;</span>;</div><div class="line"><a name="l04930"></a><span class="lineno"> 4930</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> == token_type::parse_error)</div><div class="line"><a name="l04931"></a><span class="lineno"> 4931</span>&#160;        {</div><div class="line"><a name="l04932"></a><span class="lineno"> 4932</span>&#160;            error_msg += <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86">get_error_message</a>()) + <span class="stringliteral">&quot;; last read: &#39;&quot;</span> +</div><div class="line"><a name="l04933"></a><span class="lineno"> 4933</span>&#160;                         <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>() + <span class="stringliteral">&quot;&#39;&quot;</span>;</div><div class="line"><a name="l04934"></a><span class="lineno"> 4934</span>&#160;        }</div><div class="line"><a name="l04935"></a><span class="lineno"> 4935</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l04936"></a><span class="lineno"> 4936</span>&#160;        {</div><div class="line"><a name="l04937"></a><span class="lineno"> 4937</span>&#160;            error_msg += <span class="stringliteral">&quot;unexpected &quot;</span> + <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>(<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8">lexer_t::token_type_name</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a>));</div><div class="line"><a name="l04938"></a><span class="lineno"> 4938</span>&#160;        }</div><div class="line"><a name="l04939"></a><span class="lineno"> 4939</span>&#160;</div><div class="line"><a name="l04940"></a><span class="lineno"> 4940</span>&#160;        <span class="keywordflow">if</span> (expected != token_type::uninitialized)</div><div class="line"><a name="l04941"></a><span class="lineno"> 4941</span>&#160;        {</div><div class="line"><a name="l04942"></a><span class="lineno"> 4942</span>&#160;            error_msg += <span class="stringliteral">&quot;; expected &quot;</span> + <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">std::string</a>(<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8">lexer_t::token_type_name</a>(expected));</div><div class="line"><a name="l04943"></a><span class="lineno"> 4943</span>&#160;        }</div><div class="line"><a name="l04944"></a><span class="lineno"> 4944</span>&#160;</div><div class="line"><a name="l04945"></a><span class="lineno"> 4945</span>&#160;        <span class="keywordflow">return</span> error_msg;</div><div class="line"><a name="l04946"></a><span class="lineno"> 4946</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a53cebbc684ef97fa49651eb442d58f86"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86">nlohmann::detail::lexer::get_error_message</a></div><div class="ttdeci">constexpr const char * get_error_message() const noexcept</div><div class="ttdoc">return syntax error message</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03409">jsonParser.h:3409</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a932e49f6f4d291557846744319245994"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">nlohmann::detail::parser::last_token</a></div><div class="ttdeci">token_type last_token</div><div class="ttdoc">the type of the last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04952">jsonParser.h:4952</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_ae514e2005f0ce185f1ad366139e541e8"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8">nlohmann::detail::lexer::token_type_name</a></div><div class="ttdeci">static const char * token_type_name(const token_type t) noexcept</div><div class="ttdoc">return name of values of type token_type (only used for errors)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l02274">jsonParser.h:2274</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdoc">return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ...</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03385">jsonParser.h:3385</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l03409">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_error_message()</a>, <a class="el" href="jsonParser_8h_source.html#l03385">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_token_string()</a>, <a class="el" href="jsonParser_8h_source.html#l04952">nlohmann::detail::parser&lt; BasicJsonType &gt;::last_token</a>, <a class="el" href="jsonParser_8h_source.html#l04954">nlohmann::detail::parser&lt; BasicJsonType &gt;::m_lexer</a>, <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::string</a> и <a class="el" href="jsonParser_8h_source.html#l02274">nlohmann::detail::lexer&lt; BasicJsonType &gt;::token_type_name()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>, <a class="el" href="jsonParser_8h_source.html#l04618">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse()</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_cgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_cgraph" id="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,71,167,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86" title="return syntax error message" alt="" coords="215,5,368,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="215,71,368,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8" title="return name of values of type token_type (only used for errors)" alt="" coords="215,136,368,177"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_icgraph" id="classnlohmann_1_1detail_1_1parser_a19bff4f2392f740c45e539929874cd85_icgraph">
+<area shape="rect"  title=" " alt="" coords="633,51,795,92"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="215,5,376,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,84,376,125"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="424,51,585,92"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,84,167,125"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33f3859d0dd402445b5859070fd24bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f3859d0dd402445b5859070fd24bab">&#9670;&nbsp;</a></span>get_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a> <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::get_token </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get next token from lexer </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04922">4922</a></p>
+<div class="fragment"><div class="line"><a name="l04923"></a><span class="lineno"> 4923</span>&#160;    {</div><div class="line"><a name="l04924"></a><span class="lineno"> 4924</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> = <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9">scan</a>());</div><div class="line"><a name="l04925"></a><span class="lineno"> 4925</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_aac3041cd2b9291e64fee38db422863c9"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9">nlohmann::detail::lexer::scan</a></div><div class="ttdeci">token_type scan()</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03446">jsonParser.h:3446</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a932e49f6f4d291557846744319245994"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">nlohmann::detail::parser::last_token</a></div><div class="ttdeci">token_type last_token</div><div class="ttdoc">the type of the last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04952">jsonParser.h:4952</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04952">nlohmann::detail::parser&lt; BasicJsonType &gt;::last_token</a>, <a class="el" href="jsonParser_8h_source.html#l04954">nlohmann::detail::parser&lt; BasicJsonType &gt;::m_lexer</a> и <a class="el" href="jsonParser_8h_source.html#l03446">nlohmann::detail::lexer&lt; BasicJsonType &gt;::scan()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>, <a class="el" href="jsonParser_8h_source.html#l04533">nlohmann::detail::parser&lt; BasicJsonType &gt;::parser()</a>, <a class="el" href="jsonParser_8h_source.html#l04618">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse()</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_cgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_cgraph" id="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_cgraph">
+<area shape="rect"  title="get next token from lexer" alt="" coords="5,188,167,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="215,188,368,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="821,130,999,156"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="416,72,569,113"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="416,393,569,434"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="416,188,569,229"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="416,540,569,581"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="819,254,1001,280"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="617,305,771,346"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="617,422,771,464"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="617,540,771,581"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="617,122,771,164"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="617,188,771,229"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_icgraph" id="classnlohmann_1_1detail_1_1parser_a33f3859d0dd402445b5859070fd24bab_icgraph">
+<area shape="rect"  title="get next token from lexer" alt="" coords="633,62,795,103"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="215,14,376,55"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a1a2bd258b7e99f86b7e6a3c41373ba55" title="a parser reading from an input adapter" alt="" coords="424,28,585,70"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,123,376,164"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="424,94,585,135"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,123,167,164"/>
 </map>
 </div>
 
@@ -332,20 +721,60 @@ template&lt;typename BasicJsonType &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04552">4552</a></p>
+<div class="fragment"><div class="line"><a name="l04553"></a><span class="lineno"> 4553</span>&#160;    {</div><div class="line"><a name="l04554"></a><span class="lineno"> 4554</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">callback</a>)</div><div class="line"><a name="l04555"></a><span class="lineno"> 4555</span>&#160;        {</div><div class="line"><a name="l04556"></a><span class="lineno"> 4556</span>&#160;            json_sax_dom_callback_parser&lt;BasicJsonType&gt; sdp(result, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">callback</a>, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">allow_exceptions</a>);</div><div class="line"><a name="l04557"></a><span class="lineno"> 4557</span>&#160;            <a class="code" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">sax_parse_internal</a>(&amp;sdp);</div><div class="line"><a name="l04558"></a><span class="lineno"> 4558</span>&#160;            result.assert_invariant();</div><div class="line"><a name="l04559"></a><span class="lineno"> 4559</span>&#160;</div><div class="line"><a name="l04560"></a><span class="lineno"> 4560</span>&#160;            <span class="comment">// in strict mode, input must be completely read</span></div><div class="line"><a name="l04561"></a><span class="lineno"> 4561</span>&#160;            <span class="keywordflow">if</span> (strict and (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::end_of_input))</div><div class="line"><a name="l04562"></a><span class="lineno"> 4562</span>&#160;            {</div><div class="line"><a name="l04563"></a><span class="lineno"> 4563</span>&#160;                sdp.parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04564"></a><span class="lineno"> 4564</span>&#160;                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04565"></a><span class="lineno"> 4565</span>&#160;                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::end_of_input)));</div><div class="line"><a name="l04566"></a><span class="lineno"> 4566</span>&#160;            }</div><div class="line"><a name="l04567"></a><span class="lineno"> 4567</span>&#160;</div><div class="line"><a name="l04568"></a><span class="lineno"> 4568</span>&#160;            <span class="comment">// in case of an error, return discarded value</span></div><div class="line"><a name="l04569"></a><span class="lineno"> 4569</span>&#160;            <span class="keywordflow">if</span> (sdp.is_errored())</div><div class="line"><a name="l04570"></a><span class="lineno"> 4570</span>&#160;            {</div><div class="line"><a name="l04571"></a><span class="lineno"> 4571</span>&#160;                result = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46">value_t::discarded</a>;</div><div class="line"><a name="l04572"></a><span class="lineno"> 4572</span>&#160;                <span class="keywordflow">return</span>;</div><div class="line"><a name="l04573"></a><span class="lineno"> 4573</span>&#160;            }</div><div class="line"><a name="l04574"></a><span class="lineno"> 4574</span>&#160;</div><div class="line"><a name="l04575"></a><span class="lineno"> 4575</span>&#160;            <span class="comment">// set top-level value to null if it was discarded by the callback</span></div><div class="line"><a name="l04576"></a><span class="lineno"> 4576</span>&#160;            <span class="comment">// function</span></div><div class="line"><a name="l04577"></a><span class="lineno"> 4577</span>&#160;            <span class="keywordflow">if</span> (result.is_discarded())</div><div class="line"><a name="l04578"></a><span class="lineno"> 4578</span>&#160;            {</div><div class="line"><a name="l04579"></a><span class="lineno"> 4579</span>&#160;                result = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l04580"></a><span class="lineno"> 4580</span>&#160;            }</div><div class="line"><a name="l04581"></a><span class="lineno"> 4581</span>&#160;        }</div><div class="line"><a name="l04582"></a><span class="lineno"> 4582</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l04583"></a><span class="lineno"> 4583</span>&#160;        {</div><div class="line"><a name="l04584"></a><span class="lineno"> 4584</span>&#160;            json_sax_dom_parser&lt;BasicJsonType&gt; sdp(result, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">allow_exceptions</a>);</div><div class="line"><a name="l04585"></a><span class="lineno"> 4585</span>&#160;            <a class="code" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">sax_parse_internal</a>(&amp;sdp);</div><div class="line"><a name="l04586"></a><span class="lineno"> 4586</span>&#160;            result.assert_invariant();</div><div class="line"><a name="l04587"></a><span class="lineno"> 4587</span>&#160;</div><div class="line"><a name="l04588"></a><span class="lineno"> 4588</span>&#160;            <span class="comment">// in strict mode, input must be completely read</span></div><div class="line"><a name="l04589"></a><span class="lineno"> 4589</span>&#160;            <span class="keywordflow">if</span> (strict and (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::end_of_input))</div><div class="line"><a name="l04590"></a><span class="lineno"> 4590</span>&#160;            {</div><div class="line"><a name="l04591"></a><span class="lineno"> 4591</span>&#160;                sdp.parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04592"></a><span class="lineno"> 4592</span>&#160;                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04593"></a><span class="lineno"> 4593</span>&#160;                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::end_of_input)));</div><div class="line"><a name="l04594"></a><span class="lineno"> 4594</span>&#160;            }</div><div class="line"><a name="l04595"></a><span class="lineno"> 4595</span>&#160;</div><div class="line"><a name="l04596"></a><span class="lineno"> 4596</span>&#160;            <span class="comment">// in case of an error, return discarded value</span></div><div class="line"><a name="l04597"></a><span class="lineno"> 4597</span>&#160;            <span class="keywordflow">if</span> (sdp.is_errored())</div><div class="line"><a name="l04598"></a><span class="lineno"> 4598</span>&#160;            {</div><div class="line"><a name="l04599"></a><span class="lineno"> 4599</span>&#160;                result = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46">value_t::discarded</a>;</div><div class="line"><a name="l04600"></a><span class="lineno"> 4600</span>&#160;                <span class="keywordflow">return</span>;</div><div class="line"><a name="l04601"></a><span class="lineno"> 4601</span>&#160;            }</div><div class="line"><a name="l04602"></a><span class="lineno"> 4602</span>&#160;        }</div><div class="line"><a name="l04603"></a><span class="lineno"> 4603</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a7600d272ec605e3ffdc8512b3585f476"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a7600d272ec605e3ffdc8512b3585f476">nlohmann::detail::parser::callback</a></div><div class="ttdeci">const parser_callback_t callback</div><div class="ttdoc">callback function</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04950">jsonParser.h:4950</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a33f3859d0dd402445b5859070fd24bab"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">nlohmann::detail::parser::get_token</a></div><div class="ttdeci">token_type get_token()</div><div class="ttdoc">get next token from lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04922">jsonParser.h:4922</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a3de1ea054cfa606e79fa07741f081b5f"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a3de1ea054cfa606e79fa07741f081b5f">nlohmann::detail::parser::allow_exceptions</a></div><div class="ttdeci">const bool allow_exceptions</div><div class="ttdoc">whether to throw exceptions in case of errors</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04956">jsonParser.h:4956</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_ad256ac6f45b213d29096a04b5aa3c587"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">nlohmann::detail::parser::sax_parse_internal</a></div><div class="ttdeci">bool sax_parse_internal(SAX *sax)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04636">jsonParser.h:4636</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a19bff4f2392f740c45e539929874cd85"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">nlohmann::detail::parser::exception_message</a></div><div class="ttdeci">std::string exception_message(const token_type expected)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04927">jsonParser.h:4927</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a2a00465a3d5d70c84809cdb27658db79"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">nlohmann::detail::lexer::get_position</a></div><div class="ttdeci">constexpr std::size_t get_position() const noexcept</div><div class="ttdoc">return position of last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03377">jsonParser.h:3377</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdoc">return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ...</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03385">jsonParser.h:3385</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parse__error_html_a9fd60ad6bce80fd99686ad332faefd37"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error::create</a></div><div class="ttdeci">static parse_error create(int id_, std::size_t byte_, const std::string &amp;what_arg)</div><div class="ttdoc">create a parse error exception</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00659">jsonParser.h:659</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46">nlohmann::detail::value_t::discarded</a></div><div class="ttdoc">discarded by the the parser callback function</div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l04956">nlohmann::detail::parser&lt; BasicJsonType &gt;::allow_exceptions</a>, <a class="el" href="jsonParser_8h_source.html#l04950">nlohmann::detail::parser&lt; BasicJsonType &gt;::callback</a>, <a class="el" href="jsonParser_8h_source.html#l00659">nlohmann::detail::parse_error::create()</a>, <a class="el" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985a94708897ec9db8647dfe695714c98e46">nlohmann::detail::discarded</a>, <a class="el" href="jsonParser_8h_source.html#l04927">nlohmann::detail::parser&lt; BasicJsonType &gt;::exception_message()</a>, <a class="el" href="jsonParser_8h_source.html#l03377">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_position()</a>, <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a>, <a class="el" href="jsonParser_8h_source.html#l03385">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_token_string()</a>, <a class="el" href="jsonParser_8h_source.html#l04049">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::is_errored()</a>, <a class="el" href="jsonParser_8h_source.html#l04307">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::is_errored()</a>, <a class="el" href="jsonParser_8h_source.html#l04954">nlohmann::detail::parser&lt; BasicJsonType &gt;::m_lexer</a>, <a class="el" href="jsonParser_8h_source.html#l04021">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;::parse_error()</a>, <a class="el" href="jsonParser_8h_source.html#l04279">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;::parse_error()</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1parser_a14338d8f3174601c0b2b7ef28752ab17_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a14338d8f3174601c0b2b7ef28752ab17_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1parser_a14338d8f3174601c0b2b7ef28752ab17_cgraph" id="classnlohmann_1_1detail_1_1parser_a14338d8f3174601c0b2b7ef28752ab17_cgraph">
-<area shape="rect"  title="public parser interface" alt="" coords="5,217,167,258"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="224,5,404,61"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="237,86,391,127"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="237,151,391,193"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="235,217,393,258"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="224,283,404,339"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="215,363,413,405"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="219,429,409,470"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="461,217,643,258"/>
+<area shape="rect"  title="public parser interface" alt="" coords="5,372,167,413"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="463,157,621,199"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85" title=" " alt="" coords="461,92,623,133"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="685,5,838,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="465,549,619,591"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab" title="get next token from lexer" alt="" coords="461,615,623,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad1b9f3681fadbbb2e0127f5c8a99c662" title=" " alt="" coords="219,456,409,497"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a167fd9bf385d3d08bcbbba8a927c0eff" title=" " alt="" coords="224,522,404,578"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a7d3bf1f361ebb817c694ba45b3814fa6" title=" " alt="" coords="215,603,413,644"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6e64f0b59c9150cde974e182d5ecab" title=" " alt="" coords="224,669,404,725"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="233,288,395,329"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="671,299,852,340"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="683,201,840,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86" title="return syntax error message" alt="" coords="685,136,838,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8" title="return name of values of type token_type (only used for errors)" alt="" coords="685,71,838,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="685,615,838,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="1305,543,1483,570"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="900,511,1053,552"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="900,865,1053,907"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="900,615,1053,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="900,680,1053,721"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="1303,719,1485,746"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="1101,771,1255,812"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="1101,1004,1255,1045"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="1101,836,1255,877"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="1101,536,1255,577"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="1101,653,1255,695"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d" title="return current string value (implicitly resets the token; useful only once)" alt="" coords="465,223,619,264"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2" title="return floating&#45;point value" alt="" coords="465,288,619,329"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="471,419,613,460"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced" title="return integer value" alt="" coords="465,353,619,395"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6" title="return unsigned integer value" alt="" coords="463,484,621,525"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="680,419,843,460"/>
 </map>
 </div>
 
@@ -388,18 +817,289 @@ template&lt;typename SAX &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04618">4618</a></p>
+<div class="fragment"><div class="line"><a name="l04619"></a><span class="lineno"> 4619</span>&#160;    {</div><div class="line"><a name="l04620"></a><span class="lineno"> 4620</span>&#160;        (void)detail::is_sax_static_asserts&lt;SAX, BasicJsonType&gt; {};</div><div class="line"><a name="l04621"></a><span class="lineno"> 4621</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> result = <a class="code" href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">sax_parse_internal</a>(sax);</div><div class="line"><a name="l04622"></a><span class="lineno"> 4622</span>&#160;</div><div class="line"><a name="l04623"></a><span class="lineno"> 4623</span>&#160;        <span class="comment">// strict mode: next byte must be EOF</span></div><div class="line"><a name="l04624"></a><span class="lineno"> 4624</span>&#160;        <span class="keywordflow">if</span> (result and strict and (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::end_of_input))</div><div class="line"><a name="l04625"></a><span class="lineno"> 4625</span>&#160;        {</div><div class="line"><a name="l04626"></a><span class="lineno"> 4626</span>&#160;            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04627"></a><span class="lineno"> 4627</span>&#160;                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04628"></a><span class="lineno"> 4628</span>&#160;                                    <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::end_of_input)));</div><div class="line"><a name="l04629"></a><span class="lineno"> 4629</span>&#160;        }</div><div class="line"><a name="l04630"></a><span class="lineno"> 4630</span>&#160;</div><div class="line"><a name="l04631"></a><span class="lineno"> 4631</span>&#160;        <span class="keywordflow">return</span> result;</div><div class="line"><a name="l04632"></a><span class="lineno"> 4632</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a33f3859d0dd402445b5859070fd24bab"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">nlohmann::detail::parser::get_token</a></div><div class="ttdeci">token_type get_token()</div><div class="ttdoc">get next token from lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04922">jsonParser.h:4922</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_ad256ac6f45b213d29096a04b5aa3c587"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587">nlohmann::detail::parser::sax_parse_internal</a></div><div class="ttdeci">bool sax_parse_internal(SAX *sax)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04636">jsonParser.h:4636</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a19bff4f2392f740c45e539929874cd85"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">nlohmann::detail::parser::exception_message</a></div><div class="ttdeci">std::string exception_message(const token_type expected)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04927">jsonParser.h:4927</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a2a00465a3d5d70c84809cdb27658db79"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">nlohmann::detail::lexer::get_position</a></div><div class="ttdeci">constexpr std::size_t get_position() const noexcept</div><div class="ttdoc">return position of last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03377">jsonParser.h:3377</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdoc">return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ...</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03385">jsonParser.h:3385</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parse__error_html_a9fd60ad6bce80fd99686ad332faefd37"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error::create</a></div><div class="ttdeci">static parse_error create(int id_, std::size_t byte_, const std::string &amp;what_arg)</div><div class="ttdoc">create a parse error exception</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00659">jsonParser.h:659</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00659">nlohmann::detail::parse_error::create()</a>, <a class="el" href="jsonParser_8h_source.html#l04927">nlohmann::detail::parser&lt; BasicJsonType &gt;::exception_message()</a>, <a class="el" href="jsonParser_8h_source.html#l03377">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_position()</a>, <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a>, <a class="el" href="jsonParser_8h_source.html#l03385">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_token_string()</a>, <a class="el" href="jsonParser_8h_source.html#l04954">nlohmann::detail::parser&lt; BasicJsonType &gt;::m_lexer</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04611">nlohmann::detail::parser&lt; BasicJsonType &gt;::accept()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_cgraph" alt=""/></div>
 <map name="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_cgraph" id="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,71,167,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="217,5,370,47"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title=" " alt="" coords="217,71,370,112"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="215,136,372,177"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="420,136,601,177"/>
+<area shape="rect"  title=" " alt="" coords="5,223,167,264"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="426,157,583,199"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85" title=" " alt="" coords="424,92,585,133"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="647,5,801,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="428,549,581,591"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab" title="get next token from lexer" alt="" coords="424,615,585,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="215,288,376,329"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="633,299,815,340"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="645,201,803,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86" title="return syntax error message" alt="" coords="647,136,801,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8" title="return name of values of type token_type (only used for errors)" alt="" coords="647,71,801,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="647,615,801,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="1267,543,1446,570"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="863,511,1016,552"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="863,865,1016,907"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="863,615,1016,656"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="863,680,1016,721"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="1265,719,1448,746"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="1064,771,1217,812"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="1064,1004,1217,1045"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="1064,836,1217,877"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="1064,536,1217,577"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="1064,653,1217,695"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d" title="return current string value (implicitly resets the token; useful only once)" alt="" coords="428,223,581,264"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2" title="return floating&#45;point value" alt="" coords="428,288,581,329"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="433,419,576,460"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced" title="return integer value" alt="" coords="428,353,581,395"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6" title="return unsigned integer value" alt="" coords="426,484,583,525"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="643,419,805,460"/>
 </map>
 </div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_icgraph" id="classnlohmann_1_1detail_1_1parser_a14e34931965064b26e118eb72cbd5e25_icgraph">
+<area shape="rect"  title=" " alt="" coords="215,5,376,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,5,167,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad256ac6f45b213d29096a04b5aa3c587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad256ac6f45b213d29096a04b5aa3c587">&#9670;&nbsp;</a></span>sax_parse_internal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<div class="memtemplate">
+template&lt;typename SAX &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::sax_parse_internal </td>
+          <td>(</td>
+          <td class="paramtype">SAX *&#160;</td>
+          <td class="paramname"><em>sax</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04636">4636</a></p>
+<div class="fragment"><div class="line"><a name="l04637"></a><span class="lineno"> 4637</span>&#160;    {</div><div class="line"><a name="l04638"></a><span class="lineno"> 4638</span>&#160;        <span class="comment">// stack to remember the hieararchy of structured values we are parsing</span></div><div class="line"><a name="l04639"></a><span class="lineno"> 4639</span>&#160;        <span class="comment">// true = array; false = object</span></div><div class="line"><a name="l04640"></a><span class="lineno"> 4640</span>&#160;        std::vector&lt;bool&gt; states;</div><div class="line"><a name="l04641"></a><span class="lineno"> 4641</span>&#160;        <span class="comment">// value to avoid a goto (see comment where set to true)</span></div><div class="line"><a name="l04642"></a><span class="lineno"> 4642</span>&#160;        <span class="keywordtype">bool</span> skip_to_state_evaluation = <span class="keyword">false</span>;</div><div class="line"><a name="l04643"></a><span class="lineno"> 4643</span>&#160;</div><div class="line"><a name="l04644"></a><span class="lineno"> 4644</span>&#160;        <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div><div class="line"><a name="l04645"></a><span class="lineno"> 4645</span>&#160;        {</div><div class="line"><a name="l04646"></a><span class="lineno"> 4646</span>&#160;            <span class="keywordflow">if</span> (not skip_to_state_evaluation)</div><div class="line"><a name="l04647"></a><span class="lineno"> 4647</span>&#160;            {</div><div class="line"><a name="l04648"></a><span class="lineno"> 4648</span>&#160;                <span class="comment">// invariant: get_token() was called before each iteration</span></div><div class="line"><a name="l04649"></a><span class="lineno"> 4649</span>&#160;                <span class="keywordflow">switch</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a>)</div><div class="line"><a name="l04650"></a><span class="lineno"> 4650</span>&#160;                {</div><div class="line"><a name="l04651"></a><span class="lineno"> 4651</span>&#160;                    <span class="keywordflow">case</span> token_type::begin_object:</div><div class="line"><a name="l04652"></a><span class="lineno"> 4652</span>&#160;                    {</div><div class="line"><a name="l04653"></a><span class="lineno"> 4653</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;start_object(std::size_t(-1))))</div><div class="line"><a name="l04654"></a><span class="lineno"> 4654</span>&#160;                        {</div><div class="line"><a name="l04655"></a><span class="lineno"> 4655</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04656"></a><span class="lineno"> 4656</span>&#160;                        }</div><div class="line"><a name="l04657"></a><span class="lineno"> 4657</span>&#160;</div><div class="line"><a name="l04658"></a><span class="lineno"> 4658</span>&#160;                        <span class="comment">// closing } -&gt; we are done</span></div><div class="line"><a name="l04659"></a><span class="lineno"> 4659</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() == token_type::end_object)</div><div class="line"><a name="l04660"></a><span class="lineno"> 4660</span>&#160;                        {</div><div class="line"><a name="l04661"></a><span class="lineno"> 4661</span>&#160;                            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;end_object()))</div><div class="line"><a name="l04662"></a><span class="lineno"> 4662</span>&#160;                            {</div><div class="line"><a name="l04663"></a><span class="lineno"> 4663</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04664"></a><span class="lineno"> 4664</span>&#160;                            }</div><div class="line"><a name="l04665"></a><span class="lineno"> 4665</span>&#160;                            <span class="keywordflow">break</span>;</div><div class="line"><a name="l04666"></a><span class="lineno"> 4666</span>&#160;                        }</div><div class="line"><a name="l04667"></a><span class="lineno"> 4667</span>&#160;</div><div class="line"><a name="l04668"></a><span class="lineno"> 4668</span>&#160;                        <span class="comment">// parse key</span></div><div class="line"><a name="l04669"></a><span class="lineno"> 4669</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> != token_type::value_string))</div><div class="line"><a name="l04670"></a><span class="lineno"> 4670</span>&#160;                        {</div><div class="line"><a name="l04671"></a><span class="lineno"> 4671</span>&#160;                            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04672"></a><span class="lineno"> 4672</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04673"></a><span class="lineno"> 4673</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::value_string)));</div><div class="line"><a name="l04674"></a><span class="lineno"> 4674</span>&#160;                        }</div><div class="line"><a name="l04675"></a><span class="lineno"> 4675</span>&#160;                        <span class="keywordflow">else</span></div><div class="line"><a name="l04676"></a><span class="lineno"> 4676</span>&#160;                        {</div><div class="line"><a name="l04677"></a><span class="lineno"> 4677</span>&#160;                            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;key(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">get_string</a>())))</div><div class="line"><a name="l04678"></a><span class="lineno"> 4678</span>&#160;                            {</div><div class="line"><a name="l04679"></a><span class="lineno"> 4679</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04680"></a><span class="lineno"> 4680</span>&#160;                            }</div><div class="line"><a name="l04681"></a><span class="lineno"> 4681</span>&#160;                        }</div><div class="line"><a name="l04682"></a><span class="lineno"> 4682</span>&#160;</div><div class="line"><a name="l04683"></a><span class="lineno"> 4683</span>&#160;                        <span class="comment">// parse separator (:)</span></div><div class="line"><a name="l04684"></a><span class="lineno"> 4684</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::name_separator))</div><div class="line"><a name="l04685"></a><span class="lineno"> 4685</span>&#160;                        {</div><div class="line"><a name="l04686"></a><span class="lineno"> 4686</span>&#160;                            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04687"></a><span class="lineno"> 4687</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04688"></a><span class="lineno"> 4688</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::name_separator)));</div><div class="line"><a name="l04689"></a><span class="lineno"> 4689</span>&#160;                        }</div><div class="line"><a name="l04690"></a><span class="lineno"> 4690</span>&#160;</div><div class="line"><a name="l04691"></a><span class="lineno"> 4691</span>&#160;                        <span class="comment">// remember we are now inside an object</span></div><div class="line"><a name="l04692"></a><span class="lineno"> 4692</span>&#160;                        states.push_back(<span class="keyword">false</span>);</div><div class="line"><a name="l04693"></a><span class="lineno"> 4693</span>&#160;</div><div class="line"><a name="l04694"></a><span class="lineno"> 4694</span>&#160;                        <span class="comment">// parse values</span></div><div class="line"><a name="l04695"></a><span class="lineno"> 4695</span>&#160;                        <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>();</div><div class="line"><a name="l04696"></a><span class="lineno"> 4696</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04697"></a><span class="lineno"> 4697</span>&#160;                    }</div><div class="line"><a name="l04698"></a><span class="lineno"> 4698</span>&#160;</div><div class="line"><a name="l04699"></a><span class="lineno"> 4699</span>&#160;                    <span class="keywordflow">case</span> token_type::begin_array:</div><div class="line"><a name="l04700"></a><span class="lineno"> 4700</span>&#160;                    {</div><div class="line"><a name="l04701"></a><span class="lineno"> 4701</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;start_array(std::size_t(-1))))</div><div class="line"><a name="l04702"></a><span class="lineno"> 4702</span>&#160;                        {</div><div class="line"><a name="l04703"></a><span class="lineno"> 4703</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04704"></a><span class="lineno"> 4704</span>&#160;                        }</div><div class="line"><a name="l04705"></a><span class="lineno"> 4705</span>&#160;</div><div class="line"><a name="l04706"></a><span class="lineno"> 4706</span>&#160;                        <span class="comment">// closing ] -&gt; we are done</span></div><div class="line"><a name="l04707"></a><span class="lineno"> 4707</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() == token_type::end_array)</div><div class="line"><a name="l04708"></a><span class="lineno"> 4708</span>&#160;                        {</div><div class="line"><a name="l04709"></a><span class="lineno"> 4709</span>&#160;                            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;end_array()))</div><div class="line"><a name="l04710"></a><span class="lineno"> 4710</span>&#160;                            {</div><div class="line"><a name="l04711"></a><span class="lineno"> 4711</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04712"></a><span class="lineno"> 4712</span>&#160;                            }</div><div class="line"><a name="l04713"></a><span class="lineno"> 4713</span>&#160;                            <span class="keywordflow">break</span>;</div><div class="line"><a name="l04714"></a><span class="lineno"> 4714</span>&#160;                        }</div><div class="line"><a name="l04715"></a><span class="lineno"> 4715</span>&#160;</div><div class="line"><a name="l04716"></a><span class="lineno"> 4716</span>&#160;                        <span class="comment">// remember we are now inside an array</span></div><div class="line"><a name="l04717"></a><span class="lineno"> 4717</span>&#160;                        states.push_back(<span class="keyword">true</span>);</div><div class="line"><a name="l04718"></a><span class="lineno"> 4718</span>&#160;</div><div class="line"><a name="l04719"></a><span class="lineno"> 4719</span>&#160;                        <span class="comment">// parse values (no need to call get_token)</span></div><div class="line"><a name="l04720"></a><span class="lineno"> 4720</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04721"></a><span class="lineno"> 4721</span>&#160;                    }</div><div class="line"><a name="l04722"></a><span class="lineno"> 4722</span>&#160;</div><div class="line"><a name="l04723"></a><span class="lineno"> 4723</span>&#160;                    <span class="keywordflow">case</span> token_type::value_float:</div><div class="line"><a name="l04724"></a><span class="lineno"> 4724</span>&#160;                    {</div><div class="line"><a name="l04725"></a><span class="lineno"> 4725</span>&#160;                        <span class="keyword">const</span> <span class="keyword">auto</span> res = <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2">get_number_float</a>();</div><div class="line"><a name="l04726"></a><span class="lineno"> 4726</span>&#160;</div><div class="line"><a name="l04727"></a><span class="lineno"> 4727</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not std::isfinite(res)))</div><div class="line"><a name="l04728"></a><span class="lineno"> 4728</span>&#160;                        {</div><div class="line"><a name="l04729"></a><span class="lineno"> 4729</span>&#160;                            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04730"></a><span class="lineno"> 4730</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04731"></a><span class="lineno"> 4731</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">out_of_range::create</a>(406, <span class="stringliteral">&quot;number overflow parsing &#39;&quot;</span> + <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>() + <span class="stringliteral">&quot;&#39;&quot;</span>));</div><div class="line"><a name="l04732"></a><span class="lineno"> 4732</span>&#160;                        }</div><div class="line"><a name="l04733"></a><span class="lineno"> 4733</span>&#160;                        <span class="keywordflow">else</span></div><div class="line"><a name="l04734"></a><span class="lineno"> 4734</span>&#160;                        {</div><div class="line"><a name="l04735"></a><span class="lineno"> 4735</span>&#160;                            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;number_float(res, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">get_string</a>())))</div><div class="line"><a name="l04736"></a><span class="lineno"> 4736</span>&#160;                            {</div><div class="line"><a name="l04737"></a><span class="lineno"> 4737</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04738"></a><span class="lineno"> 4738</span>&#160;                            }</div><div class="line"><a name="l04739"></a><span class="lineno"> 4739</span>&#160;                            <span class="keywordflow">break</span>;</div><div class="line"><a name="l04740"></a><span class="lineno"> 4740</span>&#160;                        }</div><div class="line"><a name="l04741"></a><span class="lineno"> 4741</span>&#160;                    }</div><div class="line"><a name="l04742"></a><span class="lineno"> 4742</span>&#160;</div><div class="line"><a name="l04743"></a><span class="lineno"> 4743</span>&#160;                    <span class="keywordflow">case</span> token_type::literal_false:</div><div class="line"><a name="l04744"></a><span class="lineno"> 4744</span>&#160;                    {</div><div class="line"><a name="l04745"></a><span class="lineno"> 4745</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;boolean(<span class="keyword">false</span>)))</div><div class="line"><a name="l04746"></a><span class="lineno"> 4746</span>&#160;                        {</div><div class="line"><a name="l04747"></a><span class="lineno"> 4747</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04748"></a><span class="lineno"> 4748</span>&#160;                        }</div><div class="line"><a name="l04749"></a><span class="lineno"> 4749</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04750"></a><span class="lineno"> 4750</span>&#160;                    }</div><div class="line"><a name="l04751"></a><span class="lineno"> 4751</span>&#160;</div><div class="line"><a name="l04752"></a><span class="lineno"> 4752</span>&#160;                    <span class="keywordflow">case</span> token_type::literal_null:</div><div class="line"><a name="l04753"></a><span class="lineno"> 4753</span>&#160;                    {</div><div class="line"><a name="l04754"></a><span class="lineno"> 4754</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;null()))</div><div class="line"><a name="l04755"></a><span class="lineno"> 4755</span>&#160;                        {</div><div class="line"><a name="l04756"></a><span class="lineno"> 4756</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04757"></a><span class="lineno"> 4757</span>&#160;                        }</div><div class="line"><a name="l04758"></a><span class="lineno"> 4758</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04759"></a><span class="lineno"> 4759</span>&#160;                    }</div><div class="line"><a name="l04760"></a><span class="lineno"> 4760</span>&#160;</div><div class="line"><a name="l04761"></a><span class="lineno"> 4761</span>&#160;                    <span class="keywordflow">case</span> token_type::literal_true:</div><div class="line"><a name="l04762"></a><span class="lineno"> 4762</span>&#160;                    {</div><div class="line"><a name="l04763"></a><span class="lineno"> 4763</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;boolean(<span class="keyword">true</span>)))</div><div class="line"><a name="l04764"></a><span class="lineno"> 4764</span>&#160;                        {</div><div class="line"><a name="l04765"></a><span class="lineno"> 4765</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04766"></a><span class="lineno"> 4766</span>&#160;                        }</div><div class="line"><a name="l04767"></a><span class="lineno"> 4767</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04768"></a><span class="lineno"> 4768</span>&#160;                    }</div><div class="line"><a name="l04769"></a><span class="lineno"> 4769</span>&#160;</div><div class="line"><a name="l04770"></a><span class="lineno"> 4770</span>&#160;                    <span class="keywordflow">case</span> token_type::value_integer:</div><div class="line"><a name="l04771"></a><span class="lineno"> 4771</span>&#160;                    {</div><div class="line"><a name="l04772"></a><span class="lineno"> 4772</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;number_integer(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced">get_number_integer</a>())))</div><div class="line"><a name="l04773"></a><span class="lineno"> 4773</span>&#160;                        {</div><div class="line"><a name="l04774"></a><span class="lineno"> 4774</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04775"></a><span class="lineno"> 4775</span>&#160;                        }</div><div class="line"><a name="l04776"></a><span class="lineno"> 4776</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04777"></a><span class="lineno"> 4777</span>&#160;                    }</div><div class="line"><a name="l04778"></a><span class="lineno"> 4778</span>&#160;</div><div class="line"><a name="l04779"></a><span class="lineno"> 4779</span>&#160;                    <span class="keywordflow">case</span> token_type::value_string:</div><div class="line"><a name="l04780"></a><span class="lineno"> 4780</span>&#160;                    {</div><div class="line"><a name="l04781"></a><span class="lineno"> 4781</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;string(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">get_string</a>())))</div><div class="line"><a name="l04782"></a><span class="lineno"> 4782</span>&#160;                        {</div><div class="line"><a name="l04783"></a><span class="lineno"> 4783</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04784"></a><span class="lineno"> 4784</span>&#160;                        }</div><div class="line"><a name="l04785"></a><span class="lineno"> 4785</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04786"></a><span class="lineno"> 4786</span>&#160;                    }</div><div class="line"><a name="l04787"></a><span class="lineno"> 4787</span>&#160;</div><div class="line"><a name="l04788"></a><span class="lineno"> 4788</span>&#160;                    <span class="keywordflow">case</span> token_type::value_unsigned:</div><div class="line"><a name="l04789"></a><span class="lineno"> 4789</span>&#160;                    {</div><div class="line"><a name="l04790"></a><span class="lineno"> 4790</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;number_unsigned(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6">get_number_unsigned</a>())))</div><div class="line"><a name="l04791"></a><span class="lineno"> 4791</span>&#160;                        {</div><div class="line"><a name="l04792"></a><span class="lineno"> 4792</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04793"></a><span class="lineno"> 4793</span>&#160;                        }</div><div class="line"><a name="l04794"></a><span class="lineno"> 4794</span>&#160;                        <span class="keywordflow">break</span>;</div><div class="line"><a name="l04795"></a><span class="lineno"> 4795</span>&#160;                    }</div><div class="line"><a name="l04796"></a><span class="lineno"> 4796</span>&#160;</div><div class="line"><a name="l04797"></a><span class="lineno"> 4797</span>&#160;                    <span class="keywordflow">case</span> token_type::parse_error:</div><div class="line"><a name="l04798"></a><span class="lineno"> 4798</span>&#160;                    {</div><div class="line"><a name="l04799"></a><span class="lineno"> 4799</span>&#160;                        <span class="comment">// using &quot;uninitialized&quot; to avoid &quot;expected&quot; message</span></div><div class="line"><a name="l04800"></a><span class="lineno"> 4800</span>&#160;                        <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04801"></a><span class="lineno"> 4801</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04802"></a><span class="lineno"> 4802</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::uninitialized)));</div><div class="line"><a name="l04803"></a><span class="lineno"> 4803</span>&#160;                    }</div><div class="line"><a name="l04804"></a><span class="lineno"> 4804</span>&#160;</div><div class="line"><a name="l04805"></a><span class="lineno"> 4805</span>&#160;                    <span class="keywordflow">default</span>: <span class="comment">// the last token was unexpected</span></div><div class="line"><a name="l04806"></a><span class="lineno"> 4806</span>&#160;                    {</div><div class="line"><a name="l04807"></a><span class="lineno"> 4807</span>&#160;                        <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04808"></a><span class="lineno"> 4808</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04809"></a><span class="lineno"> 4809</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::literal_or_value)));</div><div class="line"><a name="l04810"></a><span class="lineno"> 4810</span>&#160;                    }</div><div class="line"><a name="l04811"></a><span class="lineno"> 4811</span>&#160;                }</div><div class="line"><a name="l04812"></a><span class="lineno"> 4812</span>&#160;            }</div><div class="line"><a name="l04813"></a><span class="lineno"> 4813</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l04814"></a><span class="lineno"> 4814</span>&#160;            {</div><div class="line"><a name="l04815"></a><span class="lineno"> 4815</span>&#160;                skip_to_state_evaluation = <span class="keyword">false</span>;</div><div class="line"><a name="l04816"></a><span class="lineno"> 4816</span>&#160;            }</div><div class="line"><a name="l04817"></a><span class="lineno"> 4817</span>&#160;</div><div class="line"><a name="l04818"></a><span class="lineno"> 4818</span>&#160;            <span class="comment">// we reached this line after we successfully parsed a value</span></div><div class="line"><a name="l04819"></a><span class="lineno"> 4819</span>&#160;            <span class="keywordflow">if</span> (states.empty())</div><div class="line"><a name="l04820"></a><span class="lineno"> 4820</span>&#160;            {</div><div class="line"><a name="l04821"></a><span class="lineno"> 4821</span>&#160;                <span class="comment">// empty stack: we reached the end of the hieararchy: done</span></div><div class="line"><a name="l04822"></a><span class="lineno"> 4822</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l04823"></a><span class="lineno"> 4823</span>&#160;            }</div><div class="line"><a name="l04824"></a><span class="lineno"> 4824</span>&#160;            <span class="keywordflow">else</span></div><div class="line"><a name="l04825"></a><span class="lineno"> 4825</span>&#160;            {</div><div class="line"><a name="l04826"></a><span class="lineno"> 4826</span>&#160;                <span class="keywordflow">if</span> (states.back())  <span class="comment">// array</span></div><div class="line"><a name="l04827"></a><span class="lineno"> 4827</span>&#160;                {</div><div class="line"><a name="l04828"></a><span class="lineno"> 4828</span>&#160;                    <span class="comment">// comma -&gt; next value</span></div><div class="line"><a name="l04829"></a><span class="lineno"> 4829</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() == token_type::value_separator)</div><div class="line"><a name="l04830"></a><span class="lineno"> 4830</span>&#160;                    {</div><div class="line"><a name="l04831"></a><span class="lineno"> 4831</span>&#160;                        <span class="comment">// parse a new value</span></div><div class="line"><a name="l04832"></a><span class="lineno"> 4832</span>&#160;                        <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>();</div><div class="line"><a name="l04833"></a><span class="lineno"> 4833</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04834"></a><span class="lineno"> 4834</span>&#160;                    }</div><div class="line"><a name="l04835"></a><span class="lineno"> 4835</span>&#160;</div><div class="line"><a name="l04836"></a><span class="lineno"> 4836</span>&#160;                    <span class="comment">// closing ]</span></div><div class="line"><a name="l04837"></a><span class="lineno"> 4837</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> == token_type::end_array))</div><div class="line"><a name="l04838"></a><span class="lineno"> 4838</span>&#160;                    {</div><div class="line"><a name="l04839"></a><span class="lineno"> 4839</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;end_array()))</div><div class="line"><a name="l04840"></a><span class="lineno"> 4840</span>&#160;                        {</div><div class="line"><a name="l04841"></a><span class="lineno"> 4841</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04842"></a><span class="lineno"> 4842</span>&#160;                        }</div><div class="line"><a name="l04843"></a><span class="lineno"> 4843</span>&#160;</div><div class="line"><a name="l04844"></a><span class="lineno"> 4844</span>&#160;                        <span class="comment">// We are done with this array. Before we can parse a</span></div><div class="line"><a name="l04845"></a><span class="lineno"> 4845</span>&#160;                        <span class="comment">// new value, we need to evaluate the new state first.</span></div><div class="line"><a name="l04846"></a><span class="lineno"> 4846</span>&#160;                        <span class="comment">// By setting skip_to_state_evaluation to false, we</span></div><div class="line"><a name="l04847"></a><span class="lineno"> 4847</span>&#160;                        <span class="comment">// are effectively jumping to the beginning of this if.</span></div><div class="line"><a name="l04848"></a><span class="lineno"> 4848</span>&#160;                        assert(not states.empty());</div><div class="line"><a name="l04849"></a><span class="lineno"> 4849</span>&#160;                        states.pop_back();</div><div class="line"><a name="l04850"></a><span class="lineno"> 4850</span>&#160;                        skip_to_state_evaluation = <span class="keyword">true</span>;</div><div class="line"><a name="l04851"></a><span class="lineno"> 4851</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04852"></a><span class="lineno"> 4852</span>&#160;                    }</div><div class="line"><a name="l04853"></a><span class="lineno"> 4853</span>&#160;                    <span class="keywordflow">else</span></div><div class="line"><a name="l04854"></a><span class="lineno"> 4854</span>&#160;                    {</div><div class="line"><a name="l04855"></a><span class="lineno"> 4855</span>&#160;                        <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04856"></a><span class="lineno"> 4856</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04857"></a><span class="lineno"> 4857</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::end_array)));</div><div class="line"><a name="l04858"></a><span class="lineno"> 4858</span>&#160;                    }</div><div class="line"><a name="l04859"></a><span class="lineno"> 4859</span>&#160;                }</div><div class="line"><a name="l04860"></a><span class="lineno"> 4860</span>&#160;                <span class="keywordflow">else</span>  <span class="comment">// object</span></div><div class="line"><a name="l04861"></a><span class="lineno"> 4861</span>&#160;                {</div><div class="line"><a name="l04862"></a><span class="lineno"> 4862</span>&#160;                    <span class="comment">// comma -&gt; next value</span></div><div class="line"><a name="l04863"></a><span class="lineno"> 4863</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() == token_type::value_separator)</div><div class="line"><a name="l04864"></a><span class="lineno"> 4864</span>&#160;                    {</div><div class="line"><a name="l04865"></a><span class="lineno"> 4865</span>&#160;                        <span class="comment">// parse key</span></div><div class="line"><a name="l04866"></a><span class="lineno"> 4866</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::value_string))</div><div class="line"><a name="l04867"></a><span class="lineno"> 4867</span>&#160;                        {</div><div class="line"><a name="l04868"></a><span class="lineno"> 4868</span>&#160;                            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04869"></a><span class="lineno"> 4869</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04870"></a><span class="lineno"> 4870</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::value_string)));</div><div class="line"><a name="l04871"></a><span class="lineno"> 4871</span>&#160;                        }</div><div class="line"><a name="l04872"></a><span class="lineno"> 4872</span>&#160;                        <span class="keywordflow">else</span></div><div class="line"><a name="l04873"></a><span class="lineno"> 4873</span>&#160;                        {</div><div class="line"><a name="l04874"></a><span class="lineno"> 4874</span>&#160;                            <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;key(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">get_string</a>())))</div><div class="line"><a name="l04875"></a><span class="lineno"> 4875</span>&#160;                            {</div><div class="line"><a name="l04876"></a><span class="lineno"> 4876</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04877"></a><span class="lineno"> 4877</span>&#160;                            }</div><div class="line"><a name="l04878"></a><span class="lineno"> 4878</span>&#160;                        }</div><div class="line"><a name="l04879"></a><span class="lineno"> 4879</span>&#160;</div><div class="line"><a name="l04880"></a><span class="lineno"> 4880</span>&#160;                        <span class="comment">// parse separator (:)</span></div><div class="line"><a name="l04881"></a><span class="lineno"> 4881</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>() != token_type::name_separator))</div><div class="line"><a name="l04882"></a><span class="lineno"> 4882</span>&#160;                        {</div><div class="line"><a name="l04883"></a><span class="lineno"> 4883</span>&#160;                            <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04884"></a><span class="lineno"> 4884</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04885"></a><span class="lineno"> 4885</span>&#160;                                                    <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::name_separator)));</div><div class="line"><a name="l04886"></a><span class="lineno"> 4886</span>&#160;                        }</div><div class="line"><a name="l04887"></a><span class="lineno"> 4887</span>&#160;</div><div class="line"><a name="l04888"></a><span class="lineno"> 4888</span>&#160;                        <span class="comment">// parse values</span></div><div class="line"><a name="l04889"></a><span class="lineno"> 4889</span>&#160;                        <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">get_token</a>();</div><div class="line"><a name="l04890"></a><span class="lineno"> 4890</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04891"></a><span class="lineno"> 4891</span>&#160;                    }</div><div class="line"><a name="l04892"></a><span class="lineno"> 4892</span>&#160;</div><div class="line"><a name="l04893"></a><span class="lineno"> 4893</span>&#160;                    <span class="comment">// closing }</span></div><div class="line"><a name="l04894"></a><span class="lineno"> 4894</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">last_token</a> == token_type::end_object))</div><div class="line"><a name="l04895"></a><span class="lineno"> 4895</span>&#160;                    {</div><div class="line"><a name="l04896"></a><span class="lineno"> 4896</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a>(not sax-&gt;end_object()))</div><div class="line"><a name="l04897"></a><span class="lineno"> 4897</span>&#160;                        {</div><div class="line"><a name="l04898"></a><span class="lineno"> 4898</span>&#160;                            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l04899"></a><span class="lineno"> 4899</span>&#160;                        }</div><div class="line"><a name="l04900"></a><span class="lineno"> 4900</span>&#160;</div><div class="line"><a name="l04901"></a><span class="lineno"> 4901</span>&#160;                        <span class="comment">// We are done with this object. Before we can parse a</span></div><div class="line"><a name="l04902"></a><span class="lineno"> 4902</span>&#160;                        <span class="comment">// new value, we need to evaluate the new state first.</span></div><div class="line"><a name="l04903"></a><span class="lineno"> 4903</span>&#160;                        <span class="comment">// By setting skip_to_state_evaluation to false, we</span></div><div class="line"><a name="l04904"></a><span class="lineno"> 4904</span>&#160;                        <span class="comment">// are effectively jumping to the beginning of this if.</span></div><div class="line"><a name="l04905"></a><span class="lineno"> 4905</span>&#160;                        assert(not states.empty());</div><div class="line"><a name="l04906"></a><span class="lineno"> 4906</span>&#160;                        states.pop_back();</div><div class="line"><a name="l04907"></a><span class="lineno"> 4907</span>&#160;                        skip_to_state_evaluation = <span class="keyword">true</span>;</div><div class="line"><a name="l04908"></a><span class="lineno"> 4908</span>&#160;                        <span class="keywordflow">continue</span>;</div><div class="line"><a name="l04909"></a><span class="lineno"> 4909</span>&#160;                    }</div><div class="line"><a name="l04910"></a><span class="lineno"> 4910</span>&#160;                    <span class="keywordflow">else</span></div><div class="line"><a name="l04911"></a><span class="lineno"> 4911</span>&#160;                    {</div><div class="line"><a name="l04912"></a><span class="lineno"> 4912</span>&#160;                        <span class="keywordflow">return</span> sax-&gt;parse_error(<a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(),</div><div class="line"><a name="l04913"></a><span class="lineno"> 4913</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">get_token_string</a>(),</div><div class="line"><a name="l04914"></a><span class="lineno"> 4914</span>&#160;                                                <a class="code" href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">parse_error::create</a>(101, <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">m_lexer</a>.<a class="code" href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">get_position</a>(), <a class="code" href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">exception_message</a>(token_type::end_object)));</div><div class="line"><a name="l04915"></a><span class="lineno"> 4915</span>&#160;                    }</div><div class="line"><a name="l04916"></a><span class="lineno"> 4916</span>&#160;                }</div><div class="line"><a name="l04917"></a><span class="lineno"> 4917</span>&#160;            }</div><div class="line"><a name="l04918"></a><span class="lineno"> 4918</span>&#160;        }</div><div class="line"><a name="l04919"></a><span class="lineno"> 4919</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a56640fb92293e0c17742ca3c814d74d6"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6">nlohmann::detail::lexer::get_number_unsigned</a></div><div class="ttdeci">constexpr number_unsigned_t get_number_unsigned() const noexcept</div><div class="ttdoc">return unsigned integer value</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03355">jsonParser.h:3355</a></div></div>
+<div class="ttc" id="jsonParser_8h_html_a41ecd1c4cf7c3d56477b9b685b5daa72"><div class="ttname"><a href="jsonParser_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a></div><div class="ttdeci">#define JSON_LIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00192">jsonParser.h:192</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a22dcc815551a4052b87797b34171b352"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a22dcc815551a4052b87797b34171b352">nlohmann::detail::parser::m_lexer</a></div><div class="ttdeci">lexer_t m_lexer</div><div class="ttdoc">the lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04954">jsonParser.h:4954</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a33f3859d0dd402445b5859070fd24bab"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab">nlohmann::detail::parser::get_token</a></div><div class="ttdeci">token_type get_token()</div><div class="ttdoc">get next token from lexer</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04922">jsonParser.h:4922</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a54aa290ff2f60218a8f35f1ebf81666d"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d">nlohmann::detail::lexer::get_string</a></div><div class="ttdeci">string_t &amp; get_string()</div><div class="ttdoc">return current string value (implicitly resets the token; useful only once)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03367">jsonParser.h:3367</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_afa338d17c0a7e834c73104258a2c8ced"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced">nlohmann::detail::lexer::get_number_integer</a></div><div class="ttdeci">constexpr number_integer_t get_number_integer() const noexcept</div><div class="ttdoc">return integer value</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03349">jsonParser.h:3349</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_ac013af35a21e9387993b19da5b3e0ae2"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2">nlohmann::detail::lexer::get_number_float</a></div><div class="ttdeci">constexpr number_float_t get_number_float() const noexcept</div><div class="ttdoc">return floating-point value</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03361">jsonParser.h:3361</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a19bff4f2392f740c45e539929874cd85"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85">nlohmann::detail::parser::exception_message</a></div><div class="ttdeci">std::string exception_message(const token_type expected)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04927">jsonParser.h:4927</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parser_html_a932e49f6f4d291557846744319245994"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parser.html#a932e49f6f4d291557846744319245994">nlohmann::detail::parser::last_token</a></div><div class="ttdeci">token_type last_token</div><div class="ttdoc">the type of the last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l04952">jsonParser.h:4952</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1out__of__range_html_a3f6d82a6f967c4728a1ec735a7867073"><div class="ttname"><a href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073">nlohmann::detail::out_of_range::create</a></div><div class="ttdeci">static out_of_range create(int id_, const std::string &amp;what_arg)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00820">jsonParser.h:820</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a2a00465a3d5d70c84809cdb27658db79"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79">nlohmann::detail::lexer::get_position</a></div><div class="ttdeci">constexpr std::size_t get_position() const noexcept</div><div class="ttdoc">return position of last read token</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03377">jsonParser.h:3377</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1lexer_html_a4aef7e72e539be04e139c34872421f2a"><div class="ttname"><a href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a">nlohmann::detail::lexer::get_token_string</a></div><div class="ttdeci">std::string get_token_string() const</div><div class="ttdoc">return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ...</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l03385">jsonParser.h:3385</a></div></div>
+<div class="ttc" id="classnlohmann_1_1detail_1_1parse__error_html_a9fd60ad6bce80fd99686ad332faefd37"><div class="ttname"><a href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37">nlohmann::detail::parse_error::create</a></div><div class="ttdeci">static parse_error create(int id_, std::size_t byte_, const std::string &amp;what_arg)</div><div class="ttdoc">create a parse error exception</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00659">jsonParser.h:659</a></div></div>
+<div class="ttc" id="jsonParser_8h_html_ab77582407c64944e7db1ea95ab520253"><div class="ttname"><a href="jsonParser_8h.html#ab77582407c64944e7db1ea95ab520253">JSON_UNLIKELY</a></div><div class="ttdeci">#define JSON_UNLIKELY(x)</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l00193">jsonParser.h:193</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l00659">nlohmann::detail::parse_error::create()</a>, <a class="el" href="jsonParser_8h_source.html#l00820">nlohmann::detail::out_of_range::create()</a>, <a class="el" href="jsonParser_8h_source.html#l04927">nlohmann::detail::parser&lt; BasicJsonType &gt;::exception_message()</a>, <a class="el" href="jsonParser_8h_source.html#l03361">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_number_float()</a>, <a class="el" href="jsonParser_8h_source.html#l03349">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_number_integer()</a>, <a class="el" href="jsonParser_8h_source.html#l03355">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_number_unsigned()</a>, <a class="el" href="jsonParser_8h_source.html#l03377">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_position()</a>, <a class="el" href="jsonParser_8h_source.html#l03367">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_string()</a>, <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a>, <a class="el" href="jsonParser_8h_source.html#l03385">nlohmann::detail::lexer&lt; BasicJsonType &gt;::get_token_string()</a>, <a class="el" href="jsonParser_8h_source.html#l00192">JSON_LIKELY</a>, <a class="el" href="jsonParser_8h_source.html#l00193">JSON_UNLIKELY</a>, <a class="el" href="jsonParser_8h_source.html#l04952">nlohmann::detail::parser&lt; BasicJsonType &gt;::last_token</a> и <a class="el" href="jsonParser_8h_source.html#l04954">nlohmann::detail::parser&lt; BasicJsonType &gt;::m_lexer</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a> и <a class="el" href="jsonParser_8h_source.html#l04618">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_cgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_cgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_cgraph" id="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_cgraph">
+<area shape="rect"  title=" " alt="" coords="5,384,167,425"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="217,136,374,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="224,71,367,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85" title=" " alt="" coords="215,233,376,275"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a4aef7e72e539be04e139c34872421f2a" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="438,332,591,373"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ac013af35a21e9387993b19da5b3e0ae2" title="return floating&#45;point value" alt="" coords="219,351,372,392"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#afa338d17c0a7e834c73104258a2c8ced" title="return integer value" alt="" coords="219,416,372,457"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a56640fb92293e0c17742ca3c814d74d6" title="return unsigned integer value" alt="" coords="217,481,374,523"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2a00465a3d5d70c84809cdb27658db79" title="return position of last read token" alt="" coords="219,547,372,588"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a54aa290ff2f60218a8f35f1ebf81666d" title="return current string value (implicitly resets the token; useful only once)" alt="" coords="219,612,372,653"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a33f3859d0dd402445b5859070fd24bab" title="get next token from lexer" alt="" coords="215,677,376,719"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="424,71,605,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="436,136,593,177"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="433,5,596,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a53cebbc684ef97fa49651eb442d58f86" title="return syntax error message" alt="" coords="438,201,591,243"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ae514e2005f0ce185f1ad366139e541e8" title="return name of values of type token_type (only used for errors)" alt="" coords="438,267,591,308"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="438,677,591,719"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="1058,619,1237,646"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="653,561,807,603"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="653,883,807,924"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="653,677,807,719"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="653,1029,807,1071"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="1056,743,1239,770"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="855,795,1008,836"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="855,912,1008,953"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="855,1029,1008,1071"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="855,612,1008,653"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="855,677,1008,719"/>
+</map>
+</div>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_icgraph.png" border="0" usemap="#classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_icgraph" alt=""/></div>
+<map name="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_icgraph" id="classnlohmann_1_1detail_1_1parser_ad256ac6f45b213d29096a04b5aa3c587_icgraph">
+<area shape="rect"  title=" " alt="" coords="424,39,585,80"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="215,5,376,47"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,71,376,112"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,71,167,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a3de1ea054cfa606e79fa07741f081b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3de1ea054cfa606e79fa07741f081b5f">&#9670;&nbsp;</a></span>allow_exceptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::allow_exceptions = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>whether to throw exceptions in case of errors </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04956">4956</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
+
+</div>
+</div>
+<a id="a7600d272ec605e3ffdc8512b3585f476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7600d272ec605e3ffdc8512b3585f476">&#9670;&nbsp;</a></span>callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">parser_callback_t</a> <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::callback = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>callback function </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04950">4950</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>.</p>
+
+</div>
+</div>
+<a id="a932e49f6f4d291557846744319245994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932e49f6f4d291557846744319245994">&#9670;&nbsp;</a></span>last_token</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">token_type</a> <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::last_token = token_type::uninitialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the type of the last read token </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04952">4952</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04927">nlohmann::detail::parser&lt; BasicJsonType &gt;::exception_message()</a>, <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
+
+</div>
+</div>
+<a id="a22dcc815551a4052b87797b34171b352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22dcc815551a4052b87797b34171b352">&#9670;&nbsp;</a></span>m_lexer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnlohmann_1_1detail_1_1parser.html#a16030c5af158a94d1c799f82ff3a0147">lexer_t</a> <a class="el" href="classnlohmann_1_1detail_1_1parser.html">nlohmann::detail::parser</a>&lt; BasicJsonType &gt;::m_lexer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>the lexer </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l04954">4954</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l04927">nlohmann::detail::parser&lt; BasicJsonType &gt;::exception_message()</a>, <a class="el" href="jsonParser_8h_source.html#l04922">nlohmann::detail::parser&lt; BasicJsonType &gt;::get_token()</a>, <a class="el" href="jsonParser_8h_source.html#l04552">nlohmann::detail::parser&lt; BasicJsonType &gt;::parse()</a>, <a class="el" href="jsonParser_8h_source.html#l04618">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse()</a> и <a class="el" href="jsonParser_8h_source.html#l04636">nlohmann::detail::parser&lt; BasicJsonType &gt;::sax_parse_internal()</a>.</p>
 
 </div>
 </div>
@@ -409,7 +1109,7 @@ template&lt;typename SAX &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

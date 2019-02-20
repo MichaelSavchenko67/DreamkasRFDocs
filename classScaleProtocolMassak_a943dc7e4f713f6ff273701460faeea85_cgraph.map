@@ -1,8 +1,19 @@
 <map id="ScaleProtocolMassak::cmdGetWeight" name="ScaleProtocolMassak::cmdGetWeight">
-<area shape="rect" id="node1" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,71,155,112"/>
-<area shape="rect" id="node2" href="$classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0" title="packetCreate &#45; создание пакета данных" alt="" coords="203,5,357,47"/>
-<area shape="rect" id="node4" href="$classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59" title="writeCmd &#45; отправить команду на весы" alt="" coords="203,71,357,112"/>
-<area shape="rect" id="node6" href="$classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58" title="readAnswer &#45; прочитать ответ от весов" alt="" coords="203,136,357,177"/>
-<area shape="rect" id="node3" href="$classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; создание CRC для подготовленного пакета" alt="" coords="405,5,560,47"/>
-<area shape="rect" id="node5" href="$classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="405,71,560,112"/>
+<area shape="rect" id="node1" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,253,155,295"/>
+<area shape="rect" id="node2" href="$classScaleProtocolMassak.html#a646e870aeddbac59c9b893c43fd356c1" title="closePort &#45; закрыть порт" alt="" coords="415,129,564,171"/>
+<area shape="rect" id="node3" href="$classScaleProtocolMassak.html#ae8cdcf000fbdfb11f0efa934700cec77" title="dataCreate &#45; создание массива данных" alt="" coords="205,5,355,47"/>
+<area shape="rect" id="node5" href="$classScaleProtocolMassak.html#a448026c215f85937e142181777d54106" title="makeCmd &#45; установить команду" alt="" coords="205,123,355,164"/>
+<area shape="rect" id="node6" href="$classScaleProtocolMassak.html#a85cb92215f2984b5202c7c839aeb08d3" title="openPort &#45; открыть порт" alt="" coords="205,188,355,229"/>
+<area shape="rect" id="node7" href="$classScaleProtocolInterface.html#aa227c153d403fe63dfd95630121986e0" title="packetCreate &#45; создание пакета данных" alt="" coords="203,253,357,295"/>
+<area shape="rect" id="node9" href="$classScaleProtocolInterface.html#aeadabdb0713427195224e4ad7e62ba58" title="readAnswer &#45; прочитать ответ от весов" alt="" coords="203,319,357,360"/>
+<area shape="rect" id="node10" href="$classScaleProtocolMassak.html#afac2187d6420584791a3372f6dd6bdf6" title="setScaleErr &#45; установить коды ошибок" alt="" coords="205,384,355,425"/>
+<area shape="rect" id="node12" href="$classScaleProtocolMassak.html#a529ea11b2cf4febb69280000505ab593" title="weightParse &#45; парс веса из полученного пакета" alt="" coords="205,449,355,491"/>
+<area shape="rect" id="node16" href="$classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59" title="writeCmd &#45; отправить команду на весы" alt="" coords="203,547,357,588"/>
+<area shape="rect" id="node4" href="$classScaleProtocolMassak.html#a7b7119733ce5e4261af9d9688205def4" title="makeDataLen &#45; заполнить длинну данных" alt="" coords="415,5,564,47"/>
+<area shape="rect" id="node8" href="$classScaleProtocolInterface.html#a7d192954b938a295399335e3d43ca782" title="crcPacketCreate &#45; создание CRC для подготовленного пакета" alt="" coords="412,253,567,295"/>
+<area shape="rect" id="node11" href="$classScaleProtocolMassak.html#a36258a7cd2078c931a77a2bd29fc8e63" title="parseErrorCode &#45; парс кода ошибки" alt="" coords="415,332,564,373"/>
+<area shape="rect" id="node13" href="$classScaleProtocolMassak.html#a1901b17b85c527d22d6938f36f853451" title="isCorrectAnswerPacket &#45; проверка принятого пакета" alt="" coords="405,515,573,556"/>
+<area shape="rect" id="node14" href="$classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03" title="parseIntegerValue &#45; парс целочисленного значения" alt="" coords="621,453,776,495"/>
+<area shape="rect" id="node15" href="$classScaleProtocolMassak.html#a13d9f06c18f1f4f4e75441d3ebd011ec" title="convertMassa &#45; преобразование веса с весов в граммы" alt="" coords="415,449,564,491"/>
+<area shape="rect" id="node17" href="$classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625" title=" " alt="" coords="412,580,567,621"/>
 </map>

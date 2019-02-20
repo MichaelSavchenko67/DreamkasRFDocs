@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li>  </ul>
@@ -68,7 +45,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Макросы</a>  </div>
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
 <div class="title">Файл https_exchange.cpp</div>  </div>
 </div><!--header-->
@@ -82,9 +60,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="filesfg_8h_source.html">filesfg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sqlWrapper_8h_source.html">sqlWrapper.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Md5Sum_8h_source.html">Md5Sum.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для https_exchange.cpp:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для https_exchange.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="https__exchange_8cpp__incl.png" border="0" usemap="#src_2appl_2https__exchange_8cpp" alt=""/></div>
 <map name="src_2appl_2https__exchange_8cpp" id="src_2appl_2https__exchange_8cpp">
 <area shape="rect"  title=" " alt="" coords="2182,5,2371,32"/>
@@ -139,11 +119,20 @@ $(function() {
 <area shape="rect"  href="users_8h.html" title=" " alt="" coords="2920,453,2985,480"/>
 </map>
 </div>
-</div><table class="memberdecls">
+</div>
+<p><a href="https__exchange_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Макросы</h2></td></tr>
 <tr class="memitem:a02b7e70458762aea8458d02eb487cd77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8cpp.html#a02b7e70458762aea8458d02eb487cd77">TIME_OUT_FOR_CURL</a>&#160;&#160;&#160;60</td></tr>
 <tr class="separator:a02b7e70458762aea8458d02eb487cd77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ab06cc29449826cf514b6d551b998b60a"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8cpp.html#ab06cc29449826cf514b6d551b998b60a">write_file</a> (char *ptr, size_t size, size_t nmemb, FILE *data)</td></tr>
+<tr class="separator:ab06cc29449826cf514b6d551b998b60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba6cc3dfcdc8446e66afde78743254b"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="https__exchange_8cpp.html#acba6cc3dfcdc8446e66afde78743254b">write_data</a> (char *ptr, size_t size, size_t nmemb, string *data)</td></tr>
+<tr class="separator:acba6cc3dfcdc8446e66afde78743254b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Макросы</h2>
 <a id="a02b7e70458762aea8458d02eb487cd77"></a>
@@ -158,12 +147,180 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="https__exchange_8cpp_source.html">https_exchange.cpp</a> строка <a class="el" href="https__exchange_8cpp_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="acba6cc3dfcdc8446e66afde78743254b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba6cc3dfcdc8446e66afde78743254b">&#9670;&nbsp;</a></span>write_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t write_data </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="https__exchange_8cpp_source.html">https_exchange.cpp</a> строка <a class="el" href="https__exchange_8cpp_source.html#l00064">64</a></p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (data)</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        data-&gt;append(ptr, size * nmemb);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> size * nmemb;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> 0;  <span class="comment">// будет ошибка</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="https__exchange_8cpp_source.html#l00167">HttpsExchange::sendData()</a> и <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="https__exchange_8cpp_acba6cc3dfcdc8446e66afde78743254b_icgraph.png" border="0" usemap="#https__exchange_8cpp_acba6cc3dfcdc8446e66afde78743254b_icgraph" alt=""/></div>
+<map name="https__exchange_8cpp_acba6cc3dfcdc8446e66afde78743254b_icgraph" id="https__exchange_8cpp_acba6cc3dfcdc8446e66afde78743254b_icgraph">
+<area shape="rect"  title=" " alt="" coords="792,458,875,485"/>
+<area shape="rect"  href="classHttpsExchange.html#a145cdf98aa0e70ac8622281ffd8bcbef" title=" " alt="" coords="557,166,733,193"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="547,691,744,718"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d11c809314dfe85283df6ae9ec596c1" title=" " alt="" coords="266,5,485,47"/>
+<area shape="rect"  href="classHttpsExchange.html#ab0babbd29470a4f28b93f04baf9fa50f" title=" " alt="" coords="279,71,472,112"/>
+<area shape="rect"  href="classHttpsExchange.html#a0e8127ecd317b1b5a5ee641517631145" title=" " alt="" coords="277,137,474,163"/>
+<area shape="rect"  href="classHttpsExchange.html#a22789e654b9265cca6904f8110252218" title=" " alt="" coords="277,188,474,229"/>
+<area shape="rect"  href="classHttpsExchange.html#a3c419991d6243a6537b0fd17a69597b3" title=" " alt="" coords="274,254,477,281"/>
+<area shape="rect"  href="classHttpsExchange.html#a81827897b03187b8bfc6ada6d8b630f1" title=" " alt="" coords="8,78,201,105"/>
+<area shape="rect"  href="classHttpsExchange.html#a4a3f9ba78e0ba86618fb6f376eafdbc5" title=" " alt="" coords="5,195,204,222"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="268,305,483,331"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="263,355,488,382"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="252,407,499,448"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="274,473,477,499"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="288,524,463,565"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="282,589,469,631"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="275,655,476,696"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="256,721,495,747"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="277,771,474,798"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="275,823,476,864"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="275,888,476,929"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="280,954,471,981"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="281,1005,470,1047"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="258,1071,493,1112"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="291,1137,460,1163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab06cc29449826cf514b6d551b998b60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06cc29449826cf514b6d551b998b60a">&#9670;&nbsp;</a></span>write_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t write_file </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="https__exchange_8cpp_source.html">https_exchange.cpp</a> строка <a class="el" href="https__exchange_8cpp_source.html#l00059">59</a></p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> fwrite(ptr, size, nmemb, data);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div></div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="https__exchange_8cpp_source.html#l02881">HttpsExchange::downloadInThread()</a> и <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="https__exchange_8cpp_ab06cc29449826cf514b6d551b998b60a_icgraph.png" border="0" usemap="#https__exchange_8cpp_ab06cc29449826cf514b6d551b998b60a_icgraph" alt=""/></div>
+<map name="https__exchange_8cpp_ab06cc29449826cf514b6d551b998b60a_icgraph" id="https__exchange_8cpp_ab06cc29449826cf514b6d551b998b60a_icgraph">
+<area shape="rect"  title=" " alt="" coords="545,392,620,419"/>
+<area shape="rect"  href="classHttpsExchange.html#a590f2850e16ab1594677a4566af99252" title=" " alt="" coords="305,355,492,397"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="300,421,497,448"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="21,5,236,32"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="16,56,241,83"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="5,107,252,149"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="27,173,230,200"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="41,225,216,266"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="35,290,222,331"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="28,355,229,397"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="9,421,248,448"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="30,472,227,499"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="28,523,229,565"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="28,589,229,630"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="33,655,224,681"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="34,706,223,747"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="11,771,246,813"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="44,837,213,864"/>
+</map>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

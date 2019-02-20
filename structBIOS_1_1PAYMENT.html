@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="structBIOS_1_1PAYMENT.html">PAYMENT</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса BIOS::PAYMENT:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса BIOS::PAYMENT:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structBIOS_1_1PAYMENT__coll__graph.png" border="0" usemap="#BIOS_1_1PAYMENT_coll__map" alt="Collaboration graph"/></div>
 <map name="BIOS_1_1PAYMENT_coll__map" id="BIOS_1_1PAYMENT_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,132,127"/>
@@ -102,7 +81,10 @@ $(function() {
 <tr class="memitem:a60cb5706b2cb32403d6fae8c995b63bc"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1PAYMENT.html#a60cb5706b2cb32403d6fae8c995b63bc">infoStr</a></td></tr>
 <tr class="separator:a60cb5706b2cb32403d6fae8c995b63bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00200">200</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="ac74799a5d4fc5b72ad1e25daf20ee158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac74799a5d4fc5b72ad1e25daf20ee158">&#9670;&nbsp;</a></span>PAYMENT()</h2>
 
@@ -118,6 +100,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00737">737</a></p>
+<div class="fragment"><div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;{</div><div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <a class="code" href="structBIOS_1_1PAYMENT.html#a9fb0d45292f07f3d63dcb406ed634532">typePayment</a> =                      0;</div><div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="structBIOS_1_1PAYMENT.html#a3b470eba0dcfeb65fd6886a5db7355ca">sum</a>         =                    0.0;</div><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <a class="code" href="structBIOS_1_1PAYMENT.html#a60cb5706b2cb32403d6fae8c995b63bc">infoStr</a>     = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;}</div><div class="ttc" id="structBIOS_1_1PAYMENT_html_a60cb5706b2cb32403d6fae8c995b63bc"><div class="ttname"><a href="structBIOS_1_1PAYMENT.html#a60cb5706b2cb32403d6fae8c995b63bc">BIOS::PAYMENT::infoStr</a></div><div class="ttdeci">string infoStr</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00206">FisGo_BIOS.h:206</a></div></div>
+<div class="ttc" id="structBIOS_1_1PAYMENT_html_a9fb0d45292f07f3d63dcb406ed634532"><div class="ttname"><a href="structBIOS_1_1PAYMENT.html#a9fb0d45292f07f3d63dcb406ed634532">BIOS::PAYMENT::typePayment</a></div><div class="ttdeci">unsigned char typePayment</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00204">FisGo_BIOS.h:204</a></div></div>
+<div class="ttc" id="structBIOS_1_1PAYMENT_html_a3b470eba0dcfeb65fd6886a5db7355ca"><div class="ttname"><a href="structBIOS_1_1PAYMENT.html#a3b470eba0dcfeb65fd6886a5db7355ca">BIOS::PAYMENT::sum</a></div><div class="ttdeci">double sum</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00205">FisGo_BIOS.h:205</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae36d9be565b0615d8df491a9fb74f50e"></a>
@@ -135,6 +122,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00743">743</a></p>
+<div class="fragment"><div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;{</div><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;</div><div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -150,6 +139,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00206">206</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03066">BIOS::addPaymentToCheck()</a>.</p>
+
 </div>
 </div>
 <a id="a3b470eba0dcfeb65fd6886a5db7355ca"></a>
@@ -163,6 +156,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00205">205</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03066">BIOS::addPaymentToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>, <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a> и <a class="el" href="FisGo__BIOS_8cpp_source.html#l00801">BIOS::receipt_send_rf_bios()</a>.</p>
 
 </div>
 </div>
@@ -178,16 +175,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00204">204</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03066">BIOS::addPaymentToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00960">BIOS::receipt_send_rb_bios()</a>, <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00801">BIOS::receipt_send_rf_bios()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a></li>
-<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></li>
+<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

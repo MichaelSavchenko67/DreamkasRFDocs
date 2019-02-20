@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classLicense.html">License</a></li><li class="navelem"><a class="el" href="structLicense_1_1LicenseTag.html">LicenseTag</a></li>  </ul>
@@ -80,9 +57,11 @@ $(function() {
  <a href="structLicense_1_1LicenseTag.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="license_8h_source.html">license.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса License::LicenseTag:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса License::LicenseTag:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structLicense_1_1LicenseTag__coll__graph.png" border="0" usemap="#License_1_1LicenseTag_coll__map" alt="Collaboration graph"/></div>
 <map name="License_1_1LicenseTag_coll__map" id="License_1_1LicenseTag_coll__map">
 <area shape="rect"  title="The LicenseTag struct &#45; ÑÑÑÑÐºÑÑÑÐ° Ð´Ð»Ñ Ð¾Ð´Ð½Ð¾Ð³Ð¾ ÑÑÐ³Ð°" alt="" coords="5,5,148,156"/>
@@ -111,6 +90,8 @@ $(function() {
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>The <a class="el" href="structLicense_1_1LicenseTag.html" title="The LicenseTag struct - структура для одного тэга">LicenseTag</a> struct - структура для одного тэга </p>
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00030">30</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a4ab465fc42570adb814506bde55de174"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ab465fc42570adb814506bde55de174">&#9670;&nbsp;</a></span>LicenseTag() <span class="overload">[1/2]</span></h2>
@@ -183,6 +164,12 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00034">34</a></p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="structLicense_1_1LicenseTag.html#a21f226eb55537cb09310036125f7936f">tagNum</a>     =     newTagNum;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="structLicense_1_1LicenseTag.html#a2e83949ec1cf16db9b17085103be5341">mask</a>       =       newMask;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="structLicense_1_1LicenseTag.html#ac8883a3d60d1a55a7961aa0bb667e599">name</a>       =       newName;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="structLicense_1_1LicenseTag.html#a84509dc7bbd8fcc54a7ffb52aad88b4c">expireDate</a> = newExpireDate;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div><div class="ttc" id="structLicense_1_1LicenseTag_html_a84509dc7bbd8fcc54a7ffb52aad88b4c"><div class="ttname"><a href="structLicense_1_1LicenseTag.html#a84509dc7bbd8fcc54a7ffb52aad88b4c">License::LicenseTag::expireDate</a></div><div class="ttdeci">string expireDate</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00048">license.h:48</a></div></div>
+<div class="ttc" id="structLicense_1_1LicenseTag_html_ac8883a3d60d1a55a7961aa0bb667e599"><div class="ttname"><a href="structLicense_1_1LicenseTag.html#ac8883a3d60d1a55a7961aa0bb667e599">License::LicenseTag::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00047">license.h:47</a></div></div>
+<div class="ttc" id="structLicense_1_1LicenseTag_html_a21f226eb55537cb09310036125f7936f"><div class="ttname"><a href="structLicense_1_1LicenseTag.html#a21f226eb55537cb09310036125f7936f">License::LicenseTag::tagNum</a></div><div class="ttdeci">int16_t tagNum</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00045">license.h:45</a></div></div>
+<div class="ttc" id="structLicense_1_1LicenseTag_html_a2e83949ec1cf16db9b17085103be5341"><div class="ttname"><a href="structLicense_1_1LicenseTag.html#a2e83949ec1cf16db9b17085103be5341">License::LicenseTag::mask</a></div><div class="ttdeci">int16_t mask</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00046">license.h:46</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -198,6 +185,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00048">48</a></p>
+
+<p class="reference">Используется в <a class="el" href="license_8h_source.html#l00196">License::daysLeft()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00365">BIOS::RUS::dreamkasKeyGetServiceInfo()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00389">BIOS::RUS::dreamkasKeyGetServiceInfoList()</a> и <a class="el" href="testLicense_8h_source.html#l00029">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a280a396ebbc77d2df20f129da7cc5122"></a>
@@ -211,6 +202,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00050">50</a></p>
+
+<p class="reference">Используется в <a class="el" href="license_8h_source.html#l00196">License::daysLeft()</a>.</p>
 
 </div>
 </div>
@@ -226,6 +221,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00046">46</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l00365">BIOS::RUS::dreamkasKeyGetServiceInfo()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00389">BIOS::RUS::dreamkasKeyGetServiceInfoList()</a> и <a class="el" href="testLicense_8h_source.html#l00029">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="ac8883a3d60d1a55a7961aa0bb667e599"></a>
@@ -239,6 +238,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00047">47</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l00365">BIOS::RUS::dreamkasKeyGetServiceInfo()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00389">BIOS::RUS::dreamkasKeyGetServiceInfoList()</a> и <a class="el" href="testLicense_8h_source.html#l00029">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -254,6 +257,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00045">45</a></p>
+
+<p class="reference">Используется в <a class="el" href="license_8h_source.html#l00125">License::addTag()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00365">BIOS::RUS::dreamkasKeyGetServiceInfo()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l00389">BIOS::RUS::dreamkasKeyGetServiceInfoList()</a> и <a class="el" href="testLicense_8h_source.html#l00029">TEST_F()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -262,7 +269,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

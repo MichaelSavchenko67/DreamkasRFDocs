@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1JSON__OFD__SIGN.html">JSON_OFD_SIGN</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::JSON_OFD_SIGN:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::JSON_OFD_SIGN:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1JSON__OFD__SIGN__coll__graph.png" border="0" usemap="#JSON_1_1JSON__OFD__SIGN_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1JSON__OFD__SIGN_coll__map" id="JSON_1_1JSON__OFD__SIGN_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,183,156"/>
@@ -106,7 +85,10 @@ $(function() {
 <tr class="memitem:aa4b640ebad4888d8352e236a7650e70b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__OFD__SIGN.html#aa4b640ebad4888d8352e236a7650e70b">error_message</a></td></tr>
 <tr class="separator:aa4b640ebad4888d8352e236a7650e70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01122">1122</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a30e12e9bef7742584278da877b960bd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30e12e9bef7742584278da877b960bd4">&#9670;&nbsp;</a></span>JSON_OFD_SIGN()</h2>
 
@@ -122,6 +104,13 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l00050">50</a></p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="structJSON_1_1JSON__OFD__SIGN.html#a9ceb982f8c8f76bdac71a78071a3e8a7">uuid</a>.clear();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="structJSON_1_1JSON__OFD__SIGN.html#afa142613d766001c5ef11418b52c7c20">code</a>.clear();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="structJSON_1_1JSON__OFD__SIGN.html#ae060a07d039391d71a995e06475c5690">HUB_result</a>.clear();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="structJSON_1_1JSON__OFD__SIGN.html#adea9dc28c6b60766c49a4d9235d0ea32">OFD_result</a>.clear();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="structJSON_1_1JSON__OFD__SIGN.html#aa4b640ebad4888d8352e236a7650e70b">error_message</a>.clear();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="ttc" id="structJSON_1_1JSON__OFD__SIGN_html_afa142613d766001c5ef11418b52c7c20"><div class="ttname"><a href="structJSON_1_1JSON__OFD__SIGN.html#afa142613d766001c5ef11418b52c7c20">JSON::JSON_OFD_SIGN::code</a></div><div class="ttdeci">string code</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01129">json.h:1129</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__OFD__SIGN_html_a9ceb982f8c8f76bdac71a78071a3e8a7"><div class="ttname"><a href="structJSON_1_1JSON__OFD__SIGN.html#a9ceb982f8c8f76bdac71a78071a3e8a7">JSON::JSON_OFD_SIGN::uuid</a></div><div class="ttdeci">string uuid</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01129">json.h:1129</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__OFD__SIGN_html_adea9dc28c6b60766c49a4d9235d0ea32"><div class="ttname"><a href="structJSON_1_1JSON__OFD__SIGN.html#adea9dc28c6b60766c49a4d9235d0ea32">JSON::JSON_OFD_SIGN::OFD_result</a></div><div class="ttdeci">string OFD_result</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01134">json.h:1134</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__OFD__SIGN_html_ae060a07d039391d71a995e06475c5690"><div class="ttname"><a href="structJSON_1_1JSON__OFD__SIGN.html#ae060a07d039391d71a995e06475c5690">JSON::JSON_OFD_SIGN::HUB_result</a></div><div class="ttdeci">string HUB_result</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01134">json.h:1134</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__OFD__SIGN_html_aa4b640ebad4888d8352e236a7650e70b"><div class="ttname"><a href="structJSON_1_1JSON__OFD__SIGN.html#aa4b640ebad4888d8352e236a7650e70b">JSON::JSON_OFD_SIGN::error_message</a></div><div class="ttdeci">string error_message</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l01134">json.h:1134</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9f953090153b9d84e7b9745f97dc99c3"></a>
@@ -139,6 +128,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l00059">59</a></p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -154,6 +145,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01129">1129</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01307">JSON::JSON_OFD_Sign()</a>, <a class="el" href="https__exchange_8cpp_source.html#l01870">HttpsExchange::sendRequest()</a> и <a class="el" href="menu_8cpp_source.html#l27895">Menu::sms_sign_get()</a>.</p>
+
 </div>
 </div>
 <a id="aa4b640ebad4888d8352e236a7650e70b"></a>
@@ -167,6 +162,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01134">1134</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01515">JSON::jsonOfdSignParser()</a>.</p>
 
 </div>
 </div>
@@ -182,6 +181,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01134">1134</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01515">JSON::jsonOfdSignParser()</a> и <a class="el" href="menu_8cpp_source.html#l24647">Menu::OFD_SIGN()</a>.</p>
+
 </div>
 </div>
 <a id="adea9dc28c6b60766c49a4d9235d0ea32"></a>
@@ -195,6 +198,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01134">1134</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01515">JSON::jsonOfdSignParser()</a> и <a class="el" href="menu_8cpp_source.html#l24647">Menu::OFD_SIGN()</a>.</p>
 
 </div>
 </div>
@@ -210,16 +217,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01129">1129</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01307">JSON::JSON_OFD_Sign()</a>, <a class="el" href="menu_8cpp_source.html#l24647">Menu::OFD_SIGN()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01870">HttpsExchange::sendRequest()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="json_8h_source.html">json.h</a></li>
-<li>src/appl/<a class="el" href="json_8cpp.html">json.cpp</a></li>
+<li>src/appl/<a class="el" href="json_8cpp_source.html">json.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

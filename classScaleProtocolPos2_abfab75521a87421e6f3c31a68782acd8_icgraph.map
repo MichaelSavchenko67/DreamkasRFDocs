@@ -1,0 +1,5 @@
+<map id="ScaleProtocolPos2::convertToGrams" name="ScaleProtocolPos2::convertToGrams">
+<area shape="rect" id="node1" title="convertToGrams &#45; перевод в граммы" alt="" coords="384,5,525,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolPos2.html#aa84ed522885f738635a9cf1e8f6281ce" title="weightParse &#45; парс веса" alt="" coords="195,5,336,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,5,147,47"/>
+</map>

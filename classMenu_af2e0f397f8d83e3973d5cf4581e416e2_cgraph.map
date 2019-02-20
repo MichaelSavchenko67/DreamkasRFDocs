@@ -1,7 +1,7 @@
 <map id="Menu::loadLicenseFromBIOS" name="Menu::loadLicenseFromBIOS">
 <area shape="rect" id="node1" title=" " alt="" coords="5,81,199,108"/>
-<area shape="rect" id="node2" href="$classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; очистка списка услуг" alt="" coords="271,5,373,32"/>
-<area shape="rect" id="node3" href="$classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; добавить тэг" alt="" coords="263,56,381,83"/>
+<area shape="rect" id="node2" href="$classLicense.html#a72d30ae5ff13769d8ba3f9d783e4c9ff" title="addTag &#45; добавить тэг" alt="" coords="263,5,381,32"/>
+<area shape="rect" id="node3" href="$classLicense.html#a347839f049599ef744c55f8e54f68993" title="clear &#45; очистка списка услуг" alt="" coords="271,56,373,83"/>
 <area shape="rect" id="node4" href="$classLicense.html#a256cdc19062818167eb290fd49317d77" title="showLicense &#45; вывод всех услуг в лог и консоль" alt="" coords="247,107,397,133"/>
 <area shape="rect" id="node5" href="$classLicense.html#ad0f037a7fe472c26db3e1e5e763c001c" title="size &#45; получить размер списка услуг" alt="" coords="273,157,371,184"/>
 </map>

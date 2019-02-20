@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 <div class="textblock">Список всех членов файлов со ссылками на файлы, к которым они принадлежат.</div>
 
@@ -78,6 +55,9 @@ $(function() {
 <li>OFD_NAME()
 : <a class="el" href="dynamic__mask_8h.html#a4f2cc2c944fd9866026088774992d941">dynamic_mask.h</a>
 </li>
+<li>OFD_RU
+: <a class="el" href="config_8h.html#a5ee00e0e7859e2f8ed4754911fab3d30">config.h</a>
+</li>
 <li>OFD_SERVER_ADDRESS()
 : <a class="el" href="dynamic__mask_8h.html#a5677119df919cf2198ed3ff02c7cc4de">dynamic_mask.h</a>
 </li>
@@ -86,6 +66,15 @@ $(function() {
 </li>
 <li>OFD_SERVER_PORT()
 : <a class="el" href="dynamic__mask_8h.html#a15d2b36683a8de337d31d28561f56a3d">dynamic_mask.h</a>
+</li>
+<li>OFD_SETTINGS
+: <a class="el" href="config_8h.html#ae03cbcaa6ba68158e1c9eea973e01022">config.h</a>
+</li>
+<li>OFD_YARUS
+: <a class="el" href="config_8h.html#aa014742d5faa064f6810f7fcc7b0f3d0">config.h</a>
+</li>
+<li>OFF
+: <a class="el" href="agents_8h.html#a58ff544fcb9284297e6a1957fb23b4db">agents.h</a>
 </li>
 <li>old_key1
 : <a class="el" href="keypad_8cpp.html#ad937d880913781e30c74fd116d481650">keypad.cpp</a>
@@ -170,7 +159,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,5 +1,5 @@
 <map id="Menu::choose_from_check_list" name="Menu::choose_from_check_list">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,208,57"/>
-<area shape="rect" id="node2" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="256,5,389,32"/>
-<area shape="rect" id="node3" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="303,56,342,83"/>
+<area shape="rect" id="node2" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="303,5,342,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="256,56,389,83"/>
 </map>

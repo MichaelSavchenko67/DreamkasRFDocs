@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html">internal_iterator</a></li>  </ul>
@@ -79,13 +56,15 @@ $(function() {
  <a href="structnlohmann_1_1detail_1_1internal__iterator.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structnlohmann_1_1detail_1_1internal__iterator__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1internal__iterator_3_01BasicJsonType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1internal__iterator_3_01BasicJsonType_01_4_coll__map" id="nlohmann_1_1detail_1_1internal__iterator_3_01BasicJsonType_01_4_coll__map">
-<area shape="rect"  title="an iterator value" alt="" coords="5,321,188,428"/>
-<area shape="rect"  href="classnlohmann_1_1detail_1_1primitive__iterator__t.html" title=" " alt="" coords="9,5,184,259"/>
+<area shape="rect"  title="an iterator value" alt="" coords="5,351,188,457"/>
+<area shape="rect"  href="classnlohmann_1_1detail_1_1primitive__iterator__t.html" title=" " alt="" coords="9,5,184,288"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -107,6 +86,8 @@ struct nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;</h3>
 
 <p>an iterator value </p>
 <dl class="section note"><dt>Заметки</dt><dd>This structure could easily be a union, but MSVC currently does not allow unions members with complex constructors, see <a href="https://github.com/nlohmann/json/pull/105">https://github.com/nlohmann/json/pull/105</a>. </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05099">5099</a></p>
 </div><h2 class="groupheader">Данные класса</h2>
 <a id="a8294a6e6f01b58e1cce8fbae66a50b5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8294a6e6f01b58e1cce8fbae66a50b5d">&#9670;&nbsp;</a></span>array_iterator</h2>
@@ -123,6 +104,10 @@ template&lt;typename BasicJsonType&gt; </div>
 </div><div class="memdoc">
 
 <p>iterator for <a class="el" href="classJSON.html">JSON</a> arrays </p>
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05104">5104</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l16074">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::insert()</a>, <a class="el" href="jsonParser_8h_source.html#l05204">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::iter_impl()</a>, <a class="el" href="jsonParser_8h_source.html#l05333">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator *()</a>, <a class="el" href="jsonParser_8h_source.html#l05415">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator++()</a>, <a class="el" href="jsonParser_8h_source.html#l05580">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator+=()</a>, <a class="el" href="jsonParser_8h_source.html#l05651">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-()</a>, <a class="el" href="jsonParser_8h_source.html#l05458">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator--()</a>, <a class="el" href="jsonParser_8h_source.html#l05370">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-&gt;()</a>, <a class="el" href="jsonParser_8h_source.html#l05526">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator&lt;()</a>, <a class="el" href="jsonParser_8h_source.html#l05490">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator==()</a>, <a class="el" href="jsonParser_8h_source.html#l05672">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator[]()</a>, <a class="el" href="jsonParser_8h_source.html#l05265">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_begin()</a> и <a class="el" href="jsonParser_8h_source.html#l05302">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_end()</a>.</p>
 
 </div>
 </div>
@@ -142,6 +127,10 @@ template&lt;typename BasicJsonType&gt; </div>
 
 <p>iterator for <a class="el" href="classJSON.html">JSON</a> objects </p>
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05102">5102</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l16278">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::insert()</a>, <a class="el" href="jsonParser_8h_source.html#l05204">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::iter_impl()</a>, <a class="el" href="jsonParser_8h_source.html#l05703">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::key()</a>, <a class="el" href="jsonParser_8h_source.html#l05333">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator *()</a>, <a class="el" href="jsonParser_8h_source.html#l05415">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator++()</a>, <a class="el" href="jsonParser_8h_source.html#l05458">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator--()</a>, <a class="el" href="jsonParser_8h_source.html#l05370">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-&gt;()</a>, <a class="el" href="jsonParser_8h_source.html#l05490">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator==()</a>, <a class="el" href="jsonParser_8h_source.html#l05265">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_begin()</a> и <a class="el" href="jsonParser_8h_source.html#l05302">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_end()</a>.</p>
+
 </div>
 </div>
 <a id="a2b3bb45f968210e42c282017eeeb63a8"></a>
@@ -160,6 +149,10 @@ template&lt;typename BasicJsonType&gt; </div>
 
 <p>generic iterator for all other types </p>
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05106">5106</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l05204">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::iter_impl()</a>, <a class="el" href="jsonParser_8h_source.html#l05333">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator *()</a>, <a class="el" href="jsonParser_8h_source.html#l05415">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator++()</a>, <a class="el" href="jsonParser_8h_source.html#l05580">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator+=()</a>, <a class="el" href="jsonParser_8h_source.html#l05651">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-()</a>, <a class="el" href="jsonParser_8h_source.html#l05458">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator--()</a>, <a class="el" href="jsonParser_8h_source.html#l05370">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator-&gt;()</a>, <a class="el" href="jsonParser_8h_source.html#l05526">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator&lt;()</a>, <a class="el" href="jsonParser_8h_source.html#l05490">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator==()</a>, <a class="el" href="jsonParser_8h_source.html#l05672">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::operator[]()</a>, <a class="el" href="jsonParser_8h_source.html#l05265">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_begin()</a> и <a class="el" href="jsonParser_8h_source.html#l05302">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;::set_end()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -168,7 +161,7 @@ template&lt;typename BasicJsonType&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

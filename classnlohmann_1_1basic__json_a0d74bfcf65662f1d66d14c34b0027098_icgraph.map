@@ -1,0 +1,8 @@
+<map id="nlohmann::basic_json::count" name="nlohmann::basic_json::count">
+<area shape="rect" id="node1" title="returns the number of occurrences of a key in a JSON object" alt="" coords="288,99,436,141"/>
+<area shape="rect" id="node2" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="47,5,198,32"/>
+<area shape="rect" id="node3" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="38,56,207,83"/>
+<area shape="rect" id="node4" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="22,107,223,133"/>
+<area shape="rect" id="node5" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="31,157,214,184"/>
+<area shape="rect" id="node6" href="$classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; запрос ключа активации при производстве" alt="" coords="5,209,240,250"/>
+</map>

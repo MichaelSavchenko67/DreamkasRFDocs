@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,61 +29,59 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>makeCabinetRequest()
+: <a class="el" href="classCabinetBase.html#a391039ce5179aebbd5e936f88c7e3fec">CabinetBase</a>
+</li>
 <li>makeCmd()
 : <a class="el" href="classScaleProtocolInterface.html#a73127f92c83cf9cef88be9df7bd9fea1">ScaleProtocolInterface</a>
+, <a class="el" href="classScaleProtocolMassak.html#a448026c215f85937e142181777d54106">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#a09d7d1bdc619f935d56b7e1bdb9b880e">ScaleProtocolPos2</a>
 </li>
 <li>makeConfigRequest()
 : <a class="el" href="classsqlWrapper.html#a025c73baa5706aef497d955fdf809ecf">sqlWrapper</a>
 , <a class="el" href="classSqlWrapperInterface.html#a2b713fe6cd1e02902ae6421be2b041d5">SqlWrapperInterface</a>
 </li>
+<li>makeCountersRequest()
+: <a class="el" href="classCounters.html#afa3518ef6d03452cd0f344327665e6e9">Counters</a>
+</li>
 <li>makeDataLen()
 : <a class="el" href="classScaleProtocolInterface.html#add128d8ba1370d36cadea79fe32c7144">ScaleProtocolInterface</a>
+, <a class="el" href="classScaleProtocolMassak.html#a7b7119733ce5e4261af9d9688205def4">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#abaf29477a5514bf97a9f57d3393271c0">ScaleProtocolPos2</a>
 </li>
 <li>makeGoodsDbReady()
 : <a class="el" href="classGoods__new.html#a5f7b9568106bd0cda846778f6423aa66">Goods_new</a>
 </li>
 <li>makeHeader()
 : <a class="el" href="classScaleProtocolInterface.html#a63568dc5d3479ad19f45677161fc1dfa">ScaleProtocolInterface</a>
+, <a class="el" href="classScaleProtocolMassak.html#adc8375f3f724edb437eb96f919923ff6">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#a0680e457fdb7dc34be5ba79b47b06341">ScaleProtocolPos2</a>
 </li>
 <li>makeHotkeyRequest()
 : <a class="el" href="classsqlWrapper.html#a5166c2898641177f9bb26258e2a70d7f">sqlWrapper</a>
 </li>
 <li>makeReceiptsRequest()
 : <a class="el" href="classReceiptsDb.html#aefc557d9d3d4f06e59227ae7455dad2f">ReceiptsDb</a>
+</li>
+<li>makeRequestNotSave()
+: <a class="el" href="classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83">FiscalDocDb</a>
+</li>
+<li>makeRequestSave()
+: <a class="el" href="classFiscalDocDb.html#af9d4a431972bc0bdf55d3d92a0515015">FiscalDocDb</a>
 </li>
 <li>makeTasksRequest()
 : <a class="el" href="classReceiptsDb.html#a0451ab1f30e3cc22a33908ef42fa617a">ReceiptsDb</a>
@@ -102,6 +97,24 @@ $(function() {
 </li>
 <li>max_size()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a2f47d3c6a441c57dd2be00449fbb88e1">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>MD5_init()
+: <a class="el" href="classCMd5Sum.html#a0d19617f60246c7f00fb0f9686192697">CMd5Sum</a>
+</li>
+<li>MD5_memcpy()
+: <a class="el" href="classCMd5Sum.html#aedca82e7fc66117f0c325f7b3c4eb576">CMd5Sum</a>
+</li>
+<li>MD5_memset()
+: <a class="el" href="classCMd5Sum.html#ac58f260a5d0b48ed7ff1e43c64f4cc61">CMd5Sum</a>
+</li>
+<li>MD5Final()
+: <a class="el" href="classCMd5Sum.html#a796d5643694802df96778876169d58fc">CMd5Sum</a>
+</li>
+<li>MD5Transform()
+: <a class="el" href="classCMd5Sum.html#a7eb58088c6a50f4fd25df82aff621ec8">CMd5Sum</a>
+</li>
+<li>MD5Update()
+: <a class="el" href="classCMd5Sum.html#a8bfe11df40b08e9874675aa04f3d860f">CMd5Sum</a>
 </li>
 <li>memory_overflow_get()
 : <a class="el" href="classBIOS_1_1RUS.html#a37c737e7d44fab1ec6c69a660048392a">BIOS::RUS</a>
@@ -136,6 +149,9 @@ $(function() {
 <li>meta_clear()
 : <a class="el" href="classJSON.html#ae1f1dbaaa1cb398c20a3287474b9222d">JSON</a>
 </li>
+<li>methodNameGet()
+: <a class="el" href="classHttpsExchange.html#a08fc8929852596ceb85b71fa1d85dcd7">HttpsExchange</a>
+</li>
 <li>min_fd()
 : <a class="el" href="classFiscalDocDb.html#ac4598f1738cb0af3c7a90a4cccf91cda">FiscalDocDb</a>
 </li>
@@ -147,15 +163,15 @@ $(function() {
 </li>
 <li>MOCK_METHOD0()
 : <a class="el" href="classMenuTest_1_1MockKeypad.html#ac27787e5d61608bfecf9443bcaff0185">MenuTest::MockKeypad</a>
-, <a class="el" href="classMenuTest_1_1MockLcd.html#a4c9ef82961a2a54b0f2fa8385b887fdb">MenuTest::MockLcd</a>
+, <a class="el" href="classMenuTest_1_1MockLcd.html#a6bbe720ce7a1127dcf0542fdf0d6e418">MenuTest::MockLcd</a>
 , <a class="el" href="classMenuTest_1_1MockPositions.html#a27efb35948b8bc9142e577be3f0cd04a">MenuTest::MockPositions</a>
 , <a class="el" href="classMenuTest_1_1MockRB.html#aeb7376b3dffb086aaa87ee93c1ead8f5">MenuTest::MockRB</a>
-, <a class="el" href="classMenuTest_1_1MockRF.html#a643fef6f6e4e8df91bf3c471268846e3">MenuTest::MockRF</a>
+, <a class="el" href="classMenuTest_1_1MockRF.html#ad04210b74c5f7221a6703a74fc3f5ab3">MenuTest::MockRF</a>
 , <a class="el" href="classTestJSON_1_1MockNet.html#a7ff30c34a49572a494cdb20d59cc22d1">TestJSON::MockNet</a>
 </li>
 <li>MOCK_METHOD1()
-: <a class="el" href="classMenuTest_1_1MockBIOS.html#a3ae47169de6a418d45f50e9ff538bacd">MenuTest::MockBIOS</a>
-, <a class="el" href="classMenuTest_1_1MockConvert.html#aa4d2f989ff1344fca389cc822b419e55">MenuTest::MockConvert</a>
+: <a class="el" href="classMenuTest_1_1MockBIOS.html#ac9cc5bc448c42439412ba85013a0939e">MenuTest::MockBIOS</a>
+, <a class="el" href="classMenuTest_1_1MockConvert.html#a2fda3cdfe9f7ab7378129c03a9f966ef">MenuTest::MockConvert</a>
 , <a class="el" href="classMenuTest_1_1MockFG.html#ac8d38d8970769e01f54ff2596675e540">MenuTest::MockFG</a>
 , <a class="el" href="classMenuTest_1_1MockHE.html#aaec9702f8876870836f64b29ddb1419f">MenuTest::MockHE</a>
 , <a class="el" href="classMenuTest_1_1MockKeypad.html#a0c1f9fee085cf7e52c79438aa884a40b">MenuTest::MockKeypad</a>
@@ -172,9 +188,9 @@ $(function() {
 , <a class="el" href="classMenuTest_1_1MockBIOS.html#a8fda9603589ea7012ebe210066bbf004">MenuTest::MockBIOS</a>
 , <a class="el" href="classMenuTest_1_1MockFG.html#a1dc3b4d9dad8a2e57585cf7a037b26b7">MenuTest::MockFG</a>
 , <a class="el" href="classMenuTest_1_1MockGoods__new.html#ab89080c0cdb6ed15eb041c5e925c611a">MenuTest::MockGoods_new</a>
-, <a class="el" href="classMenuTest_1_1MockHE.html#a1c1bfd26e31dba733d98f5e34629f770">MenuTest::MockHE</a>
+, <a class="el" href="classMenuTest_1_1MockHE.html#a096e07f956c6bd9fed5a5c42c63dd2c4">MenuTest::MockHE</a>
 , <a class="el" href="classMenuTest_1_1MockKeypad.html#a02a2f8746d29d14c68c282f1fb61bfbb">MenuTest::MockKeypad</a>
-, <a class="el" href="classMenuTest_1_1MockLcd.html#aa6aca44ae67622ce5eeac85faf28b769">MenuTest::MockLcd</a>
+, <a class="el" href="classMenuTest_1_1MockLcd.html#ac76931a841146d1ec0af53f130673ac2">MenuTest::MockLcd</a>
 , <a class="el" href="classMenuTest_1_1MockNet.html#a76065ed8d83258be41a19b2f4e18419e">MenuTest::MockNet</a>
 , <a class="el" href="classMenuTest_1_1MockReceiptDb.html#af968ac4c18bea7e623034f2ce20a611f">MenuTest::MockReceiptDb</a>
 , <a class="el" href="classTestJSON_1_1MockFg.html#a814463262bc446b34a6b6e9f4a5cf405">TestJSON::MockFg</a>
@@ -255,7 +271,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

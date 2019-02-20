@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -71,6 +48,7 @@ $(function() {
 </li>
 <li>array_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#ae095578e03df97c5b3991787f1056374">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aef02cf75b1cb199286fd2f666c60e38e">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 </ul>
 
@@ -78,6 +56,15 @@ $(function() {
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>base_iterator
 : <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a6b2ef1d632fe49bfcc22fbd1abd62395">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+</li>
+<li>basic_json_t
+: <a class="el" href="classnlohmann_1_1basic__json.html#afff7860310ae69f29f8158a77ec0ef13">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>binary_reader
+: <a class="el" href="classnlohmann_1_1basic__json.html#a7e06ed27ff517575ccb23fc23fca2b8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>binary_writer
+: <a class="el" href="classnlohmann_1_1basic__json.html#af32e8be561b513f946e3ca511e968d58">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>boolean_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a4c919102a9b4fe0d588af64801436082">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -108,7 +95,9 @@ $(function() {
 <li>difference_type
 : <a class="el" href="classnlohmann_1_1basic__json.html#afe7c1303357e19cea9527af4e9a31d8f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2f7ea9f7022850809c60fc3263775840">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a05fc153aa6d50409fc63ec68e54addb4">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a9ab55987c05ec6427ad36082e351cc45">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#af3db0d5c90de427d51645fe73a015553">nlohmann::detail::primitive_iterator_t</a>
 </li>
 </ul>
 
@@ -116,6 +105,10 @@ $(function() {
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>exception
 : <a class="el" href="classnlohmann_1_1basic__json.html#a9a0aced019cb1d65bb49703406c84970">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>exception_t
+: <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#a6efa516f35d544cc8ce9a954f849fed1">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#a34e1bc8ab7adbbab5f7d8c45a964020b">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 </li>
 </ul>
 
@@ -127,14 +120,24 @@ $(function() {
 <li>input_format_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a2ddbac818a4c84a7377b1bbd25363588">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
+<li>internal_iterator
+: <a class="el" href="classnlohmann_1_1basic__json.html#a3ce72c6254981a9d378ece3c9b15e96b">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>invalid_iterator
 : <a class="el" href="classnlohmann_1_1basic__json.html#ac13d32f7cbd02d616e71d8dc30dadcbf">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>iter_impl
+: <a class="el" href="classnlohmann_1_1basic__json.html#abfd677a136936c16adf01e335f6a7a72">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>iteration_proxy
+: <a class="el" href="classnlohmann_1_1basic__json.html#afb49d897bc58d6678f4471925bbfbb01">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>iterator
 : <a class="el" href="classnlohmann_1_1basic__json.html#a099316232c76c034030a38faa6e34dca">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>iterator_category
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad9e091f5c70b34b5b1abc1ab15fd9106">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a504cdd0e0700f17b0dac63f89e1ec7c6">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 </li>
 </ul>
 
@@ -143,8 +146,12 @@ $(function() {
 <li>json_pointer
 : <a class="el" href="classnlohmann_1_1basic__json.html#a6886a5001f5b449ad316101a311ce536">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
+<li>json_reverse_iterator
+: <a class="el" href="classnlohmann_1_1basic__json.html#a8d18136ac63e52780e9d7441981a2db4">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>json_sax_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#aa865c3eb68b6ebdd647173774d2b5cdb">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a43c5dc6a3219f64a7824d7ba9c7b14ae">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
 </li>
 <li>json_serializer
 : <a class="el" href="classnlohmann_1_1basic__json.html#a7768841baaaa7a21098a401c932efaff">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -152,26 +159,54 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>lexer
+: <a class="el" href="classnlohmann_1_1basic__json.html#a163540181fa07868de2902ecdb6df2ae">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>lexer_t
+: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a16030c5af158a94d1c799f82ff3a0147">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+</li>
+</ul>
+
+
 <h3><a id="index_n"></a>- n -</h3><ul>
 <li>number_float_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a88d6103cb3620410b35200ee8e313d97">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#af4488e5400da86636fd2f4d0171bbf53">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#a58d3205c8d3c7a01cc330374fa7976c5">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#a65d4be40c41ddc31fd2c3583d87d5faf">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a5502f483fc60a1bcd73e0e46b6ab36e4">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a914ea0555cea5290449fb791ae41c655">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#ad8da3aad0147b18b3cb76868480300fe">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#aa7f9e7b2bcd311fb86e2da43761a6619">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a8ca8e734da0632c2731fc3b9547dcf28">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a460c6794fbabbb2ae83380e987a6c030">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a390c209bffd8c4800c8f3076dc465a20">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 <li>number_integer_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a98e611d67b7bd75307de99c9358ab2dc">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aa093d9bce6c6ec715a049f2a26d7c4d5">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#aa9a29390ca9810cee149510f586f5573">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#a474adf99bf1eaa8292284fd3064c80fe">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a41876b17c0e8bdb55580eaf5e4e2ded8">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a3ba8fc7a8d83c5b0eeb3b543ad844b8d">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a3d5cd67d179aa7422ce90e54984a441e">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a9cd1b11cc67edbfb2613c788b5bd337c">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#aa0362897269e0a7e50ae07be05f42d8e">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#ae7b1df1c70bdec1371f297567726a198">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a0cef30121f02b7fee85e9708148ea0aa">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 <li>number_unsigned_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#ab906e29b5d83ac162e823ada2156b989">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a13bb5e2014c4cdf013d8715157cb456e">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#a655c9b8038e51e5b9211e2419118644d">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#af8733df7fcaebb25434285885db7f127">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#ae07454608ea6f3cfb765f95e3c850043">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a2406c5125f7128fb9c01921df2903001">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a90f19b272530a479db81db11be2ea15c">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a105d1dfeab414a572655895cdd96a52a">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a3773ccef366c61da2e6a8c0eda36d0ec">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a16c7b7a726a38ff0c06dce7ba7968391">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#a32028cc056ae0f43aaae331cdbbbf856">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 </ul>
@@ -183,12 +218,16 @@ $(function() {
 </li>
 <li>object_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5e48a7893520e1314bf0c9723e26ea2a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab9a9598052e83fa14a2288e56d5dda7c">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>other_error
 : <a class="el" href="classnlohmann_1_1basic__json.html#a3333a5a8714912adda33a35b369f7b3d">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>out_of_range
 : <a class="el" href="classnlohmann_1_1basic__json.html#a28f7c2f087274a0012eb7a2333ee1580">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>output_adapter_t
+: <a class="el" href="classnlohmann_1_1basic__json.html#a5f17a041e3338ea006eaac2d89446c0d">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 </ul>
 
@@ -201,14 +240,24 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#aaceba2e4cf75fc983bb75c78c8742e65">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#aac6d706967b2ecc2510e172577d8550b">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 </li>
+<li>parser
+: <a class="el" href="classnlohmann_1_1basic__json.html#aba9704e82d18f8954f9925e26cec7a51">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>parser_callback_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#ab4f78c5f9fd25172eeec84482e03f5b7">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a4f636086fa8e7cf26c35c8afd50903ce">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1parser.html#ad250ad4f2b4af4a497e727c963162ff1">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
 </li>
+<li>POINTER
+: <a class="el" href="classCMd5Sum.html#af4af7539a181ba448706a6fb735aa37c">CMd5Sum</a>
+</li>
 <li>pointer
 : <a class="el" href="classnlohmann_1_1basic__json.html#aefee1f777198c68724bd127e0c8abbe4">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a69e52f890ce8c556fd68ce109e24b360">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#af45c7d41037b5461d7547d6fb7f3b703">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
+</li>
+<li>primitive_iterator_t
+: <a class="el" href="classnlohmann_1_1basic__json.html#a2b38de408edf89649e8bd3abcfdff038">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 </ul>
 
@@ -220,6 +269,7 @@ $(function() {
 <li>reference
 : <a class="el" href="classnlohmann_1_1basic__json.html#ac6a5eddd156c776ac75ff54cfe54a5bc">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a5be8001be099c6b82310f4d387b953ce">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#aad9fdd6acd36da40c91433af96500b7a">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a42f51a69bac7b2aebb613b2164e457f1">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
 </li>
 <li>reverse_iterator
@@ -229,20 +279,32 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>serializer
+: <a class="el" href="classnlohmann_1_1basic__json.html#a68557c31b3bdf31c12e148baecec0d23">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>size_type
 : <a class="el" href="classnlohmann_1_1basic__json.html#a39f2cd0b58106097e0e67bf185cc519b">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>string_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a61f8566a1a85a424c7266fb531dca005">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#aa0b9729917ca7ee6ed01e3792341316e">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax.html#ad8e2e1427ff43536370b6db6ab83ae50">nlohmann::detail::is_sax&lt; SAX, BasicJsonType &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1is__sax__static__asserts.html#a067c98d2145bb54d862f4794ac1287bb">nlohmann::detail::is_sax_static_asserts&lt; SAX, BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__acceptor.html#a3a8078bbf865ec355106f6048241609a">nlohmann::detail::json_sax_acceptor&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a00e7d95d82d5d8a43421526a42a8eabc">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#afd4d961ab2a6b01cbe6e840f7fb90cdc">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#ab63d35c658887592a4b09ad26eb4c795">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1parser.html#af67b9b0405262c40be2b13adaab8b046">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#ad08aa54fac1dd0a453320c54137d45ba">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1json__sax.html#ae01977a9f3c5b3667b7a2929ed91061e">nlohmann::json_sax&lt; BasicJsonType &gt;</a>
 </li>
 </ul>
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>token_type
+: <a class="el" href="classnlohmann_1_1detail_1_1parser.html#a21d247111b332785b7acf3f8e487d117">nlohmann::detail::parser&lt; BasicJsonType &gt;</a>
+</li>
 <li>type
 : <a class="el" href="structnlohmann_1_1detail_1_1detector.html#a0cd69423587748bf3d3d702cc7b7c2ce">nlohmann::detail::detector&lt; Default, AlwaysVoid, Op, Args &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1detector_3_01Default_00_01void__t_3_01Op_3_01Args_8_8_8_01_4_01_4_00_01Op_00_01Args_8_8_8_01_4.html#a5afd6a40e94dde21d120ac646468c495">nlohmann::detail::detector&lt; Default, void_t&lt; Op&lt; Args... &gt; &gt;, Op, Args... &gt;</a>
@@ -250,6 +312,16 @@ $(function() {
 </li>
 <li>type_error
 : <a class="el" href="classnlohmann_1_1basic__json.html#a4010e8e268fefd86da773c10318f2902">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>UINT2
+: <a class="el" href="classCMd5Sum.html#a37093aebbb72bec99b2c4e4a01348498">CMd5Sum</a>
+</li>
+<li>UINT4
+: <a class="el" href="classCMd5Sum.html#a93bf047d51defbfbe1336dbebb98af7f">CMd5Sum</a>
 </li>
 </ul>
 
@@ -264,13 +336,14 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a2b3297873b70c080837e8eedc4fec32f">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1index__sequence.html#a2eca43d08fc1eb68bd5fa75b6714d21d">nlohmann::detail::index_sequence&lt; Ints &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab35586a44f2222272c5346baa3013f67">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a7bae027529a8a98fde8df2a70ba222ae">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a78d76cf288141049568c0d670ed670ef">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

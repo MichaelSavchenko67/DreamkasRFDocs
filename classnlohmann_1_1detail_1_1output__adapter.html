@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespacenlohmann.html">nlohmann</a></li><li class="navelem"><a class="el" href="namespacenlohmann_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html">output_adapter</a></li>  </ul>
@@ -69,6 +46,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classnlohmann_1_1detail_1_1output__adapter-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса nlohmann::detail::output_adapter&lt; CharType, StringType &gt;</div>  </div>
@@ -76,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="jsonParser_8h_source.html">jsonParser.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса nlohmann::detail::output_adapter&lt; CharType, StringType &gt;:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса nlohmann::detail::output_adapter&lt; CharType, StringType &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classnlohmann_1_1detail_1_1output__adapter__coll__graph.png" border="0" usemap="#nlohmann_1_1detail_1_1output__adapter_3_01CharType_00_01StringType_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="nlohmann_1_1detail_1_1output__adapter_3_01CharType_00_01StringType_01_4_coll__map" id="nlohmann_1_1detail_1_1output__adapter_3_01CharType_00_01StringType_01_4_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,229,156"/>
@@ -95,8 +75,19 @@ $(function() {
 <tr class="separator:a6ad59d1ec534383b430cd7ef8a518539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fdac7aec8ade2f4bb0b5df30550d90c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a5fdac7aec8ade2f4bb0b5df30550d90c">operator output_adapter_t&lt; CharType &gt;</a> ()</td></tr>
 <tr class="separator:a5fdac7aec8ade2f4bb0b5df30550d90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a323c18d74d6680faafec6dc3ace825e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacenlohmann_1_1detail.html#a9b680ddfb58f27eb53a67229447fc556">output_adapter_t</a>&lt; CharType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">oa</a> = nullptr</td></tr>
+<tr class="separator:a323c18d74d6680faafec6dc3ace825e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;typename CharType, typename StringType = std::basic_string&lt;CharType&gt;&gt;<br />
+class nlohmann::detail::output_adapter&lt; CharType, StringType &gt;</h3>
+
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05948">5948</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a05a30a77b568fd84676078d938cbd484"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05a30a77b568fd84676078d938cbd484">&#9670;&nbsp;</a></span>output_adapter() <span class="overload">[1/3]</span></h2>
 
@@ -123,6 +114,9 @@ template&lt;typename CharType, typename StringType = std::basic_string&lt;CharTy
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05951">5951</a></p>
+<div class="fragment"><div class="line"><a name="l05952"></a><span class="lineno"> 5952</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">oa</a>(std::make_shared&lt;output_vector_adapter&lt;CharType&gt;&gt;(vec)) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1output__adapter_html_a323c18d74d6680faafec6dc3ace825e2"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter::oa</a></div><div class="ttdeci">output_adapter_t&lt; CharType &gt; oa</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l05966">jsonParser.h:5966</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a43b3ba852e6a2c3f4d312543bb04c00d"></a>
@@ -151,6 +145,9 @@ template&lt;typename CharType, typename StringType = std::basic_string&lt;CharTy
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05954">5954</a></p>
+<div class="fragment"><div class="line"><a name="l05955"></a><span class="lineno"> 5955</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">oa</a>(std::make_shared&lt;output_stream_adapter&lt;CharType&gt;&gt;(s)) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1output__adapter_html_a323c18d74d6680faafec6dc3ace825e2"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter::oa</a></div><div class="ttdeci">output_adapter_t&lt; CharType &gt; oa</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l05966">jsonParser.h:5966</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6ad59d1ec534383b430cd7ef8a518539"></a>
@@ -179,6 +176,9 @@ template&lt;typename CharType, typename StringType = std::basic_string&lt;CharTy
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05957">5957</a></p>
+<div class="fragment"><div class="line"><a name="l05958"></a><span class="lineno"> 5958</span>&#160;        : <a class="code" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">oa</a>(std::make_shared&lt;output_string_adapter&lt;CharType, StringType&gt;&gt;(s)) {}</div><div class="ttc" id="classnlohmann_1_1detail_1_1output__adapter_html_a323c18d74d6680faafec6dc3ace825e2"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter::oa</a></div><div class="ttdeci">output_adapter_t&lt; CharType &gt; oa</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l05966">jsonParser.h:5966</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -207,6 +207,40 @@ template&lt;typename CharType, typename StringType = std::basic_string&lt;CharTy
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05960">5960</a></p>
+<div class="fragment"><div class="line"><a name="l05961"></a><span class="lineno"> 5961</span>&#160;    {</div><div class="line"><a name="l05962"></a><span class="lineno"> 5962</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">oa</a>;</div><div class="line"><a name="l05963"></a><span class="lineno"> 5963</span>&#160;    }</div><div class="ttc" id="classnlohmann_1_1detail_1_1output__adapter_html_a323c18d74d6680faafec6dc3ace825e2"><div class="ttname"><a href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter::oa</a></div><div class="ttdeci">output_adapter_t&lt; CharType &gt; oa</div><div class="ttdef"><b>Definition:</b> <a href="jsonParser_8h_source.html#l05966">jsonParser.h:5966</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="jsonParser_8h_source.html#l05966">nlohmann::detail::output_adapter&lt; CharType, StringType &gt;::oa</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a323c18d74d6680faafec6dc3ace825e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a323c18d74d6680faafec6dc3ace825e2">&#9670;&nbsp;</a></span>oa</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharType, typename StringType = std::basic_string&lt;CharType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacenlohmann_1_1detail.html#a9b680ddfb58f27eb53a67229447fc556">output_adapter_t</a>&lt;CharType&gt; <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html">nlohmann::detail::output_adapter</a>&lt; CharType, StringType &gt;::oa = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="jsonParser_8h_source.html">jsonParser.h</a> строка <a class="el" href="jsonParser_8h_source.html#l05966">5966</a></p>
+
+<p class="reference">Используется в <a class="el" href="jsonParser_8h_source.html#l05960">nlohmann::detail::output_adapter&lt; CharType, StringType &gt;::operator output_adapter_t&lt; CharType &gt;()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -215,7 +249,7 @@ template&lt;typename CharType, typename StringType = std::basic_string&lt;CharTy
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:46. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1JSON__TASK__RESULTS.html">JSON_TASK_RESULTS</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::JSON_TASK_RESULTS:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::JSON_TASK_RESULTS:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1JSON__TASK__RESULTS__coll__graph.png" border="0" usemap="#JSON_1_1JSON__TASK__RESULTS_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1JSON__TASK__RESULTS_coll__map" id="JSON_1_1JSON__TASK__RESULTS_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,219,112"/>
@@ -100,7 +79,10 @@ $(function() {
 <tr class="memitem:a83a0c384909a897eb70e9226ddcfe8db"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1JSON__TASK__RESULTS.html#a83a0c384909a897eb70e9226ddcfe8db">message</a></td></tr>
 <tr class="separator:a83a0c384909a897eb70e9226ddcfe8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00578">578</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a0ba6d5597285f787337b95ab7ba38e07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ba6d5597285f787337b95ab7ba38e07">&#9670;&nbsp;</a></span>JSON_TASK_RESULTS()</h2>
 
@@ -141,6 +123,11 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00580">580</a></p>
+<div class="fragment"><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        {</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            <a class="code" href="structJSON_1_1JSON__TASK__RESULTS.html#a929d307ef45f01f75d5707c4c8aa983c">task_id</a> = taskId_;</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            <a class="code" href="structJSON_1_1JSON__TASK__RESULTS.html#a3da5733716fbacbc26ce003ebc59c6d5">result</a>  = result_;</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            <a class="code" href="structJSON_1_1JSON__TASK__RESULTS.html#a83a0c384909a897eb70e9226ddcfe8db">message</a> = message_;</div><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        }</div><div class="ttc" id="structJSON_1_1JSON__TASK__RESULTS_html_a3da5733716fbacbc26ce003ebc59c6d5"><div class="ttname"><a href="structJSON_1_1JSON__TASK__RESULTS.html#a3da5733716fbacbc26ce003ebc59c6d5">JSON::JSON_TASK_RESULTS::result</a></div><div class="ttdeci">int result</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00587">json.h:587</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__TASK__RESULTS_html_a929d307ef45f01f75d5707c4c8aa983c"><div class="ttname"><a href="structJSON_1_1JSON__TASK__RESULTS.html#a929d307ef45f01f75d5707c4c8aa983c">JSON::JSON_TASK_RESULTS::task_id</a></div><div class="ttdeci">uint64_t task_id</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00586">json.h:586</a></div></div>
+<div class="ttc" id="structJSON_1_1JSON__TASK__RESULTS_html_a83a0c384909a897eb70e9226ddcfe8db"><div class="ttname"><a href="structJSON_1_1JSON__TASK__RESULTS.html#a83a0c384909a897eb70e9226ddcfe8db">JSON::JSON_TASK_RESULTS::message</a></div><div class="ttdeci">string message</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00588">json.h:588</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -156,6 +143,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00588">588</a></p>
+
+<p class="reference">Используется в <a class="el" href="ReceiptsDb_8cpp_source.html#l01923">ReceiptsDb::parseTasks()</a>, <a class="el" href="ReceiptsDb_8cpp_source.html#l01872">ReceiptsDb::saveTaskDb()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a> и <a class="el" href="json_8cpp_source.html#l00439">JSON::task_result_clear()</a>.</p>
+
 </div>
 </div>
 <a id="a3da5733716fbacbc26ce003ebc59c6d5"></a>
@@ -169,6 +160,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00587">587</a></p>
+
+<p class="reference">Используется в <a class="el" href="ReceiptsDb_8cpp_source.html#l01923">ReceiptsDb::parseTasks()</a>, <a class="el" href="ReceiptsDb_8cpp_source.html#l01872">ReceiptsDb::saveTaskDb()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a> и <a class="el" href="json_8cpp_source.html#l00439">JSON::task_result_clear()</a>.</p>
 
 </div>
 </div>
@@ -184,6 +179,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00586">586</a></p>
+
+<p class="reference">Используется в <a class="el" href="ReceiptsDb_8cpp_source.html#l01923">ReceiptsDb::parseTasks()</a>, <a class="el" href="ReceiptsDb_8cpp_source.html#l01872">ReceiptsDb::saveTaskDb()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a> и <a class="el" href="json_8cpp_source.html#l00439">JSON::task_result_clear()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -192,7 +191,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

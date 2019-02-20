@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -71,6 +48,8 @@ $(function() {
 </li>
 <li>dataCreate()
 : <a class="el" href="classScaleProtocolInterface.html#abc168b4863ed535f527c86cde480e9e3">ScaleProtocolInterface</a>
+, <a class="el" href="classScaleProtocolMassak.html#ae8cdcf000fbdfb11f0efa934700cec77">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#a5a4f81a77da8d19056825c2e0db1fc40">ScaleProtocolPos2</a>
 </li>
 <li>dataMatrixParse()
 : <a class="el" href="classBarcodeScanner.html#a4a6b7e3f267d225def12ac028e69c9b4">BarcodeScanner</a>
@@ -116,6 +95,12 @@ $(function() {
 </li>
 <li>daysLeft()
 : <a class="el" href="classLicense.html#a613066d94ecbf5a1ffba46bb1ff87886">License</a>
+</li>
+<li>Decode()
+: <a class="el" href="classCMd5Sum.html#ad3408792dc96dfa7a0df0092dd482c27">CMd5Sum</a>
+</li>
+<li>decode()
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a1cc5cb2f6993cefedad087a6cef0e8fb">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
 <li>del_position()
 : <a class="el" href="classReceipt__new.html#a9d9b0169ede65934448d81819eabf557">Receipt_new</a>
@@ -166,6 +151,14 @@ $(function() {
 <li>deps_read()
 : <a class="el" href="classBIOS_1_1BEL.html#a8f60de3302419c1de9d11c67cf8871da">BIOS::BEL</a>
 </li>
+<li>destroy()
+: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#ad54d0055a5cbb83b7ebe9c0950afd398">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
+</li>
+<li>detect()
+: <a class="el" href="structnlohmann_1_1detail_1_1has__from__json.html#a94e93c638429df773f948f5243fd304b">nlohmann::detail::has_from_json&lt; BasicJsonType, T &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1has__non__default__from__json.html#a87428058d4e01d8f034ec5b2574795a3">nlohmann::detail::has_non_default_from_json&lt; BasicJsonType, T &gt;</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1has__to__json.html#af087d9dfdab8443f2b95e8b6c8612742">nlohmann::detail::has_to_json&lt; BasicJsonType, T &gt;</a>
+</li>
 <li>diagnostic()
 : <a class="el" href="classMenu.html#ac5b1c7dbdba5818c28801576370d1f88">Menu</a>
 </li>
@@ -182,7 +175,7 @@ $(function() {
 : <a class="el" href="classReceiptsDb.html#a588f5cb311e4be3cd6d3c4d11498d750">ReceiptsDb</a>
 </li>
 <li>Discount()
-: <a class="el" href="structDiscount.html#aeee4f261c0d8c91a84705e55e93e0c21">Discount</a>
+: <a class="el" href="structDiscount.html#a88df656a4b474c288824e1b4cb369664">Discount</a>
 </li>
 <li>discountCheck()
 : <a class="el" href="classMenu.html#a7ff5fe7a10c9532318aa45735419952d">Menu</a>
@@ -199,7 +192,7 @@ $(function() {
 , <a class="el" href="classReceipt__new.html#a75349ba0f42d64767ac4e24201c7994d">Receipt_new</a>
 </li>
 <li>diyfp()
-: <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a332ba792e67dd40cd99a23f6dceb7792">nlohmann::detail::dtoa_impl::diyfp</a>
+: <a class="el" href="structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a23d25b3ad4527270a6e3f2a0bcca11e6">nlohmann::detail::dtoa_impl::diyfp</a>
 </li>
 <li>doc_name_search()
 : <a class="el" href="classRequisites.html#a2d6073bab5db9b7b3785641cf24e5060">Requisites</a>
@@ -280,6 +273,15 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5adea76fedba9898d404fef8598aa663">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a95460ebd1a535a543e5a0ec52e00f48b">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 </li>
+<li>dump_escaped()
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#ac1f8d1165b44149bd8be397dce68ea05">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+</li>
+<li>dump_float()
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a331dad892fc00313f928fdaa6bc8f849">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+</li>
+<li>dump_integer()
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a944f6dea8dbe2961da145d2f62fa2c2f">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+</li>
 <li>DYNAMIC_MASK()
 : <a class="el" href="structDYNAMIC__MASK.html#a3e05d66e0a79117a44f6469715498721">DYNAMIC_MASK</a>
 </li>
@@ -287,7 +289,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

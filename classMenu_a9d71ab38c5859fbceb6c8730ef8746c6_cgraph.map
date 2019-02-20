@@ -1,4 +1,6 @@
 <map id="Menu::showExpiredLicenseServices" name="Menu::showExpiredLicenseServices">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,188,47"/>
-<area shape="rect" id="node2" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="236,13,412,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,188,65"/>
+<area shape="rect" id="node2" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="236,5,412,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a1e798b0d7908d29bb32d351c01efa44f" title="showLicenseList &#45; вывод списка фич на экран с заголовком" alt="" coords="245,56,403,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a05da5743929b000b220fdac83a09da8a" title=" " alt="" coords="460,56,595,83"/>
 </map>

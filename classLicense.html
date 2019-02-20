@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -69,6 +46,7 @@ $(function() {
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
 <a href="#pub-static-attribs">Статические открытые данные</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classLicense-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс License</div>  </div>
@@ -79,22 +57,26 @@ $(function() {
  <a href="classLicense.html#details">Подробнее...</a></p>
 
 <p><code>#include &lt;<a class="el" href="license_8h_source.html">license.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:License:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:License:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classLicense__inherit__graph.png" border="0" usemap="#License_inherit__map" alt="Inheritance graph"/></div>
 <map name="License_inherit__map" id="License_inherit__map">
-<area shape="rect"  title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="77,5,297,259"/>
-<area shape="rect"  href="classTestJSON_1_1MockLicense.html" title=" " alt="" coords="5,307,175,384"/>
-<area shape="rect"  href="classTestPrinter_1_1mockLicense.html" title=" " alt="" coords="199,307,370,384"/>
+<area shape="rect"  title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="77,5,297,303"/>
+<area shape="rect"  href="classTestJSON_1_1MockLicense.html" title=" " alt="" coords="5,351,175,428"/>
+<area shape="rect"  href="classTestPrinter_1_1mockLicense.html" title=" " alt="" coords="199,351,370,428"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса License:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса License:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classLicense__coll__graph.png" border="0" usemap="#License_coll__map" alt="Collaboration graph"/></div>
 <map name="License_coll__map" id="License_coll__map">
-<area shape="rect"  title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="5,5,225,259"/>
+<area shape="rect"  title="The License class &#45; ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ Ð¾Ð±ÑÐ°Ð±Ð¾ÑÐºÐ¸ Ð¿Ð»Ð°ÑÐ½ÑÑ ÑÑÐ»ÑÐ³" alt="" coords="5,5,225,303"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -164,9 +146,20 @@ $(function() {
 Статические открытые данные</h2></td></tr>
 <tr class="memitem:a0abf070b8991f87f23b6f2493a7093a3"><td class="memItemLeft" align="right" valign="top">static const int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLicense.html#a0abf070b8991f87f23b6f2493a7093a3">ACTIVE</a> = 0x03</td></tr>
 <tr class="separator:a0abf070b8991f87f23b6f2493a7093a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a952f2fb457daf6a60af517cc335e14d7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLicense.html#a952f2fb457daf6a60af517cc335e14d7">_keyActivation</a></td></tr>
+<tr class="separator:a952f2fb457daf6a60af517cc335e14d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354a8ea4276aa8f2794fa0a1a81486a6"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structLicense_1_1LicenseTag.html">LicenseTag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a></td></tr>
+<tr class="separator:a354a8ea4276aa8f2794fa0a1a81486a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad699a28d13092b0e9f3de80e97d8c7d4"><td class="memItemLeft" align="right" valign="top">unique_ptr&lt; <a class="el" href="classConvert.html">Convert</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a></td></tr>
+<tr class="separator:ad699a28d13092b0e9f3de80e97d8c7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>The <a class="el" href="classLicense.html" title="The License class - класс для обработки платных услуг">License</a> class - класс для обработки платных услуг </p>
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00015">15</a></p>
 </div><h2 class="groupheader">Перечисления</h2>
 <a id="aefe70a2b6b86e5a90ac972c02d64d597"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefe70a2b6b86e5a90ac972c02d64d597">&#9670;&nbsp;</a></span>LICENSE_TAG</h2>
@@ -185,6 +178,11 @@ $(function() {
 <tr><td class="fieldname"><a id="aefe70a2b6b86e5a90ac972c02d64d597a8b77b641c1deae13bf7770c9f9b1c0b1"></a>LICENSE_TAG_TOBACCO&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00020">20</a></p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a59fad907668c722be937545c94f8035d">LICENSE_TAG_NDS_20_120</a> = 1,</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">LICENSE_TAG_FFD_1_05</a>   = 3,</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a8b77b641c1deae13bf7770c9f9b1c0b1">LICENSE_TAG_TOBACCO</a>    = 4</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div><div class="ttc" id="classLicense_html_aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601"><div class="ttname"><a href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597adc69bcd6e3fa5fbc51393d5d6b41b601">License::LICENSE_TAG_FFD_1_05</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00023">license.h:23</a></div></div>
+<div class="ttc" id="classLicense_html_aefe70a2b6b86e5a90ac972c02d64d597a8b77b641c1deae13bf7770c9f9b1c0b1"><div class="ttname"><a href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a8b77b641c1deae13bf7770c9f9b1c0b1">License::LICENSE_TAG_TOBACCO</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00024">license.h:24</a></div></div>
+<div class="ttc" id="classLicense_html_aefe70a2b6b86e5a90ac972c02d64d597a59fad907668c722be937545c94f8035d"><div class="ttname"><a href="classLicense.html#aefe70a2b6b86e5a90ac972c02d64d597a59fad907668c722be937545c94f8035d">License::LICENSE_TAG_NDS_20_120</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00022">license.h:22</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0bcec55fc672ee2d39536bed03e0db05"></a>
@@ -207,6 +205,12 @@ $(function() {
 <tr><td class="fieldname"><a id="a0bcec55fc672ee2d39536bed03e0db05a798bf75a1abef629477c7b6be899b7a6"></a>LICENSE_TAG_STATUS_EXPIRED&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00166">166</a></p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a7bb85eb7465d112ac456f1925cb6c5b8">LICENSE_TAG_STATUS_ERROR</a>   = -1,</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a11fb87483980de6bf6ffed51bf148a5c">LICENSE_TAG_STATUS_DISABLE</a> =  0,</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a9dd7bc04134ec13e4224707174fb0d70">LICENSE_TAG_STATUS_ENABLE</a>  =  3,</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a798bf75a1abef629477c7b6be899b7a6">LICENSE_TAG_STATUS_EXPIRED</a> =  1</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    };</div><div class="ttc" id="classLicense_html_a0bcec55fc672ee2d39536bed03e0db05a7bb85eb7465d112ac456f1925cb6c5b8"><div class="ttname"><a href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a7bb85eb7465d112ac456f1925cb6c5b8">License::LICENSE_TAG_STATUS_ERROR</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00168">license.h:168</a></div></div>
+<div class="ttc" id="classLicense_html_a0bcec55fc672ee2d39536bed03e0db05a9dd7bc04134ec13e4224707174fb0d70"><div class="ttname"><a href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a9dd7bc04134ec13e4224707174fb0d70">License::LICENSE_TAG_STATUS_ENABLE</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00170">license.h:170</a></div></div>
+<div class="ttc" id="classLicense_html_a0bcec55fc672ee2d39536bed03e0db05a798bf75a1abef629477c7b6be899b7a6"><div class="ttname"><a href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a798bf75a1abef629477c7b6be899b7a6">License::LICENSE_TAG_STATUS_EXPIRED</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00171">license.h:171</a></div></div>
+<div class="ttc" id="classLicense_html_a0bcec55fc672ee2d39536bed03e0db05a11fb87483980de6bf6ffed51bf148a5c"><div class="ttname"><a href="classLicense.html#a0bcec55fc672ee2d39536bed03e0db05a11fb87483980de6bf6ffed51bf148a5c">License::LICENSE_TAG_STATUS_DISABLE</a></div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00169">license.h:169</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Конструктор(ы)</h2>
@@ -233,6 +237,10 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00053">53</a></p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a>.reset(<span class="keyword">new</span> <a class="code" href="classConvert.html">Convert</a>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div><div class="ttc" id="classConvert_html"><div class="ttname"><a href="classConvert.html">Convert</a></div><div class="ttdef"><b>Definition:</b> <a href="convert_8h_source.html#l00026">convert.h:26</a></div></div>
+<div class="ttc" id="classLicense_html_ad699a28d13092b0e9f3de80e97d8c7d4"><div class="ttname"><a href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">License::_convert</a></div><div class="ttdeci">unique_ptr&lt; Convert &gt; _convert</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00220">license.h:220</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a20da1981f1ba1e230afbd62dfd826a58"></a>
@@ -258,6 +266,12 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00058">58</a></p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classLicense.html#a952f2fb457daf6a60af517cc335e14d7">_keyActivation</a> = obj.<a class="code" href="classLicense.html#a952f2fb457daf6a60af517cc335e14d7">_keyActivation</a>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>   = obj.<a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="classLicense_html_a952f2fb457daf6a60af517cc335e14d7"><div class="ttname"><a href="classLicense.html#a952f2fb457daf6a60af517cc335e14d7">License::_keyActivation</a></div><div class="ttdeci">string _keyActivation</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00218">license.h:218</a></div></div>
+<div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="license_8h_source.html#l00218">_keyActivation</a> и <a class="el" href="license_8h_source.html#l00219">_licenseList</a>.</p>
 
 </div>
 </div>
@@ -294,6 +308,42 @@ $(function() {
   </dd>
 </dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00125">125</a></p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; it : <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>)</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span>(it.tagNum == newLic.tagNum)</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">return</span>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>.push_back(newLic);</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="license_8h_source.html#l00045">License::LicenseTag::tagNum</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l00996">Menu::FisgoTestAction()</a> и <a class="el" href="menu_8cpp_source.html#l30257">Menu::loadLicenseFromBIOS()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_a72d30ae5ff13769d8ba3f9d783e4c9ff_icgraph.png" border="0" usemap="#classLicense_a72d30ae5ff13769d8ba3f9d783e4c9ff_icgraph" alt=""/></div>
+<map name="classLicense_a72d30ae5ff13769d8ba3f9d783e4c9ff_icgraph" id="classLicense_a72d30ae5ff13769d8ba3f9d783e4c9ff_icgraph">
+<area shape="rect"  title="addTag &#45; Ð´Ð¾Ð±Ð°Ð²Ð¸ÑÑ ÑÑÐ³" alt="" coords="1304,81,1423,108"/>
+<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="1081,31,1238,57"/>
+<area shape="rect"  href="classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="1063,107,1256,133"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="879,5,1007,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="255,56,344,83"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="63,56,114,83"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="676,107,767,133"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,208,1007,235"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,348,172,375"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,56,1015,83"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="471,107,528,133"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,259,801,285"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,309,823,336"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,259,572,285"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,208,343,235"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,259,379,285"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,183,147,209"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,310,572,351"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,321,347,348"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="427,56,571,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a347839f049599ef744c55f8e54f68993"></a>
@@ -321,6 +371,41 @@ $(function() {
 
 <p>clear - очистка списка услуг </p>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00067">67</a></p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{ <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>.clear(); }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l00996">Menu::FisgoTestAction()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a> и <a class="el" href="menu_8cpp_source.html#l30257">Menu::loadLicenseFromBIOS()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_a347839f049599ef744c55f8e54f68993_icgraph.png" border="0" usemap="#classLicense_a347839f049599ef744c55f8e54f68993_icgraph" alt=""/></div>
+<map name="classLicense_a347839f049599ef744c55f8e54f68993_icgraph" id="classLicense_a347839f049599ef744c55f8e54f68993_icgraph">
+<area shape="rect"  title="clear &#45; Ð¾ÑÐ¸ÑÑÐºÐ° ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="1304,64,1407,91"/>
+<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="1081,5,1238,32"/>
+<area shape="rect"  href="classHttpsExchangeTest.html#aa40698c799c327ee4e1363d94987e768" title=" " alt="" coords="1086,57,1233,98"/>
+<area shape="rect"  href="classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="1063,123,1256,149"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="879,5,1007,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="255,56,344,83"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="63,56,114,83"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="676,107,767,133"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,208,1007,235"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,348,172,375"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,60,1015,87"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="471,107,528,133"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,259,801,285"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,309,823,336"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,259,572,285"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,208,343,235"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,259,379,285"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,183,147,209"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,310,572,351"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,321,347,348"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="427,56,571,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a613066d94ecbf5a1ffba46bb1ff87886"></a>
@@ -346,6 +431,13 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00196">196</a></p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a>)</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s Null ptr!&quot;</span>, __PRETTY_FUNCTION__);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">string</span> strExpireDays = licenseTag.expireDate;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        strExpireDays.erase(remove(strExpireDays.begin(), strExpireDays.end(), <span class="charliteral">&#39;.&#39;</span>), strExpireDays.end());</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        strExpireDays += <span class="stringliteral">&quot;0000&quot;</span>;</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <a class="code" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a>-&gt;dateLessSelected(<a class="code" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a>-&gt;getStringCurTime(), strExpireDays, <a class="code" href="classLicense.html#a3bae6be768f609b7629ccd5a68c92bd2">DATE_OVERDUE_SERVICES</a>, licenseTag.expireDateSec);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s Expire date seconds : %lld&quot;</span>, __PRETTY_FUNCTION__, licenseTag.expireDateSec);</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">if</span>(licenseTag.expireDateSec &gt;= <a class="code" href="classLicense.html#a3bae6be768f609b7629ccd5a68c92bd2">DATE_OVERDUE_SERVICES</a>)</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        {</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;до &quot;</span> + licenseTag.expireDate;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">_convert</a>-&gt;getStringExpireDays(licenseTag.expireDateSec);</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div><div class="ttc" id="classLicense_html_a3bae6be768f609b7629ccd5a68c92bd2"><div class="ttname"><a href="classLicense.html#a3bae6be768f609b7629ccd5a68c92bd2">License::DATE_OVERDUE_SERVICES</a></div><div class="ttdeci">const int64_t DATE_OVERDUE_SERVICES</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00018">license.h:18</a></div></div>
+<div class="ttc" id="classLicense_html_ad699a28d13092b0e9f3de80e97d8c7d4"><div class="ttname"><a href="classLicense.html#ad699a28d13092b0e9f3de80e97d8c7d4">License::_convert</a></div><div class="ttdeci">unique_ptr&lt; Convert &gt; _convert</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00220">license.h:220</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="license_8h_source.html#l00048">License::LicenseTag::expireDate</a>, <a class="el" href="license_8h_source.html#l00050">License::LicenseTag::expireDateSec</a> и <a class="el" href="log_8h_source.html#l00033">logERR</a>.</p>
 
 </div>
 </div>
@@ -375,6 +467,9 @@ $(function() {
 <p>empty - проверка вектора на пустоту </p>
 <dl class="section return"><dt>Возвращает</dt><dd></dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00079">79</a></p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>.empty(); }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a11131246592e58f1e238b0c2ba2d3c1c"></a>
@@ -402,6 +497,62 @@ $(function() {
 
 <p>getLicList - получить копию списка тэгов </p>
 <dl class="section return"><dt>Возвращает</dt><dd>список тэгов </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00161">161</a></p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>; }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="Fisgo__Test__API_8cpp_source.html#l00759">FISGO_TEST_API::answer_create()</a>, <a class="el" href="menu_8cpp_source.html#l00996">Menu::FisgoTestAction()</a>, <a class="el" href="menu_8cpp_source.html#l30426">Menu::getLicenseLess()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_a11131246592e58f1e238b0c2ba2d3c1c_icgraph.png" border="0" usemap="#classLicense_a11131246592e58f1e238b0c2ba2d3c1c_icgraph" alt=""/></div>
+<map name="classLicense_a11131246592e58f1e238b0c2ba2d3c1c_icgraph" id="classLicense_a11131246592e58f1e238b0c2ba2d3c1c_icgraph">
+<area shape="rect"  title="getLicList &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÐºÐ¾Ð¿Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ³Ð¾Ð²" alt="" coords="2019,401,2149,428"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="1781,259,1963,300"/>
+<area shape="rect"  href="classMenu.html#a52b473c38919b89cab34e337525b62e6" title=" " alt="" coords="1793,376,1951,402"/>
+<area shape="rect"  href="classMenu.html#a3257176126f891cb8733153a6c127382" title="getLicenseLess &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÑÐ¿Ð¸ÑÐ¾Ðº ÑÐ¸Ñ, ÑÐºÐ¾Ñ Ð´ÐµÐ¹ÑÑÐ²Ð¸Ñ ÐºÐ¾ÑÐ¾ÑÑÑ Ð·Ð°ÐºÐ°Ð½ÑÐ¸Ð²Ð°ÐµÑÑÑ" alt="" coords="1795,325,1949,352"/>
+<area shape="rect"  href="classJSON.html#a24e7816e522110443326fd259568aa5a" title=" " alt="" coords="1797,477,1947,504"/>
+<area shape="rect"  href="classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="1773,850,1971,877"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="1257,426,1401,453"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a639ead2ba2cad720847e97cac076c072" title=" " alt="" coords="1493,266,1711,293"/>
+<area shape="rect"  href="classFISGO__TEST__API.html#a1d7ce286eaa6d25a5fd24e4c58f4d035" title=" " alt="" coords="1228,259,1431,300"/>
+<area shape="rect"  href="threads_8h.html#a015db014aa4df021bd54be5a4ad47a9a" title=" " alt="" coords="1033,376,1161,402"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,376,295,402"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,376,89,402"/>
+<area shape="rect"  href="classMenu.html#ae8300ea564716ac0a21f339086bb7998" title=" " alt="" coords="1489,325,1715,352"/>
+<area shape="rect"  href="classMenu.html#a32ea3fbe1094a2037dc2046a687c048b" title=" " alt="" coords="1247,325,1411,352"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="1013,114,1180,141"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="829,198,957,225"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,325,717,352"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,224,751,250"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,173,773,200"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,325,479,352"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,198,523,225"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,148,293,174"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,198,329,225"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,224,123,250"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,82,523,123"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,34,297,61"/>
+<area shape="rect"  href="classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="1501,1164,1703,1206"/>
+<area shape="rect"  href="classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="1501,1230,1703,1271"/>
+<area shape="rect"  href="classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="1501,1295,1703,1336"/>
+<area shape="rect"  href="classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="1495,477,1709,504"/>
+<area shape="rect"  href="classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; Ð·Ð°Ð¿ÑÐ¾Ñ ÐºÐ»ÑÑÐ° Ð°ÐºÑÐ¸Ð²Ð°ÑÐ¸Ð¸ Ð¿ÑÐ¸ Ð¿ÑÐ¾Ð¸Ð·Ð²Ð¾Ð´ÑÑÐ²Ðµ" alt="" coords="1485,528,1719,570"/>
+<area shape="rect"  href="classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="1483,594,1721,621"/>
+<area shape="rect"  href="classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="1517,645,1687,672"/>
+<area shape="rect"  href="classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="1509,696,1695,738"/>
+<area shape="rect"  href="classHttpsExchange.html#abd9b5014eec662cd39089ca4754d087e" title=" " alt="" coords="1489,762,1715,789"/>
+<area shape="rect"  href="classHttpsExchange.html#a4e92675e0963a669b3659cb8298a2d4b" title=" " alt="" coords="1479,814,1725,855"/>
+<area shape="rect"  href="classHttpsExchange.html#a5debbb56da27c03d198324832b51e01a" title=" " alt="" coords="1501,880,1703,906"/>
+<area shape="rect"  href="classHttpsExchange.html#aa98046777cc4c09375bc8aff1fa0b20d" title=" " alt="" coords="1503,930,1701,957"/>
+<area shape="rect"  href="classHttpsExchange.html#a4d1b76963ed817ab81e3980326a146d8" title=" " alt="" coords="1507,982,1697,1023"/>
+<area shape="rect"  href="classHttpsExchange.html#a803bdc45b1ea6374c7515219f839dd74" title=" " alt="" coords="1515,1047,1689,1088"/>
+<area shape="rect"  href="classHttpsExchange.html#a7bf31d898e3965c91284be04855891b4" title=" " alt="" coords="1507,1113,1697,1140"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="821,426,965,453"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -449,6 +600,12 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>true если тэг есть, иначе false </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00143">143</a></p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">for</span>(LicenseTag &amp;license : <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>)</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">if</span>(license.tagNum == tagNumber)</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            {</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                licenseTag = license;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:: Такого тега в структуре лицензии нет: №%d&quot;</span>, __PRETTY_FUNCTION__, tagNumber);</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00033">logERR</a>.</p>
+
 </div>
 </div>
 <a id="af1fca32f593ef008b5e50e6709469488"></a>
@@ -495,6 +652,47 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>true если вектор не пустой </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00181">181</a></p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        licenseTag.clear();</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> LicenseTag &amp;license : <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>)</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (license.mask == status)</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                licenseTag.push_back(license);</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> !(licenseTag.empty());</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l30537">Menu::isAnyLicenseServices()</a>, <a class="el" href="menu_8cpp_source.html#l30464">Menu::showActiveLicenseServices()</a>, <a class="el" href="menu_8cpp_source.html#l30480">Menu::showExpiredLicenseServices()</a> и <a class="el" href="menu_8cpp_source.html#l30495">Menu::showNotificationFfdAndNdsLicense()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_af1fca32f593ef008b5e50e6709469488_icgraph.png" border="0" usemap="#classLicense_af1fca32f593ef008b5e50e6709469488_icgraph" alt=""/></div>
+<map name="classLicense_af1fca32f593ef008b5e50e6709469488_icgraph" id="classLicense_af1fca32f593ef008b5e50e6709469488_icgraph">
+<area shape="rect"  title="ÐÐ¾Ð»ÑÑÐµÐ½Ð¸Ðµ ÑÐµÐ³Ð¾Ð² c Ð¾Ð¿ÑÐµÐ´ÐµÐ»ÐµÐ½Ð½ÑÐ¼ ÑÑÐ°ÑÑÑÐ¾Ð¼" alt="" coords="1851,544,2027,571"/>
+<area shape="rect"  href="classMenu.html#af04e0207644ee7559acd6e90b2853246" title=" " alt="" coords="1612,381,1803,408"/>
+<area shape="rect"  href="classMenu.html#a4d1d618d4e7334ab4b53c64ececfbaa9" title=" " alt="" coords="1337,631,1564,657"/>
+<area shape="rect"  href="classMenu.html#a9d71ab38c5859fbceb6c8730ef8746c6" title=" " alt="" coords="1107,509,1289,550"/>
+<area shape="rect"  href="classMenu.html#a15040ac3df50a2dc328b4da7350b41c6" title=" " alt="" coords="1618,566,1797,607"/>
+<area shape="rect"  href="classMenu.html#a5d7ccae1b201772ea525f602aca2f030" title=" " alt="" coords="1383,265,1518,306"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="912,145,1003,172"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="1134,297,1262,324"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="878,247,1037,273"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="492,297,579,324"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="856,399,1059,425"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="463,44,607,71"/>
+<area shape="rect"  href="classMenu.html#a96b8082e6ccce216452c41838b415b56" title=" " alt="" coords="1125,98,1271,139"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="296,145,353,172"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,95,193,121"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,95,56,121"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="663,247,808,273"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="456,247,615,273"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="266,247,383,273"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="241,476,408,503"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="663,399,808,441"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="488,436,583,463"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="253,44,397,71"/>
+<area shape="rect"  href="classMenu.html#a470a649d94e8dc05b3937ce4146e7b5f" title=" " alt="" coords="887,95,1027,121"/>
+<area shape="rect"  href="threads_8h.html#a3723d3ddd4c5b02c5e1f3c4933b3c136" title=" " alt="" coords="664,95,807,121"/>
+<area shape="rect"  href="classMenu.html#a06769dcaf4b9a6fd61c0303161a2f992" title="extOpenShift &#45; Ð²Ð½ÐµÑÐ½ÐµÐµ Ð¾ÑÐºÑÑÑÐ¸Ðµ ÑÐ¼ÐµÐ½Ñ" alt="" coords="666,44,805,71"/>
+<area shape="rect"  href="classMenu.html#a32ea3fbe1094a2037dc2046a687c048b" title=" " alt="" coords="1369,573,1533,600"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a760804fd30c6ef3e114e222bb6f700d8"></a>
@@ -530,6 +728,26 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>true если тэг найден, иначе false </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00086">86</a></p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;lic : <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>)</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span>(lic.tagNum == tagNumber) <span class="comment">// Такой тэг есть в активационном ключе</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span>(lic.mask != <a class="code" href="classLicense.html#a0abf070b8991f87f23b6f2493a7093a3">ACTIVE</a> )</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;%s:: Данная фича есть в ключе, но не активна! mask = %d&quot;</span>, __PRETTY_FUNCTION__, lic.mask);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+<div class="ttc" id="classLicense_html_a0abf070b8991f87f23b6f2493a7093a3"><div class="ttname"><a href="classLicense.html#a0abf070b8991f87f23b6f2493a7093a3">License::ACTIVE</a></div><div class="ttdeci">static const int16_t ACTIVE</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00026">license.h:26</a></div></div>
+<div class="ttc" id="log_8h_html_ab00dd66449102a6d5f35f8c9687892f7"><div class="ttname"><a href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a></div><div class="ttdeci">#define logDBG( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00034">logDBG</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l15791">Menu::search_goods()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_a760804fd30c6ef3e114e222bb6f700d8_icgraph.png" border="0" usemap="#classLicense_a760804fd30c6ef3e114e222bb6f700d8_icgraph" alt=""/></div>
+<map name="classLicense_a760804fd30c6ef3e114e222bb6f700d8_icgraph" id="classLicense_a760804fd30c6ef3e114e222bb6f700d8_icgraph">
+<area shape="rect"  title="isTagExistAndValid &#45; Ð¿ÑÐ¾Ð²ÐµÑÐºÐ° Ð½Ð°Ð»Ð¸ÑÐ¸Ñ ÑÑÐ³Ð° Ð² Ð²ÐµÐºÑÐ¾ÑÐµ" alt="" coords="196,5,385,32"/>
+<area shape="rect"  href="classMenu.html#af5888eac8b8c26f33c778e1360580950" title=" " alt="" coords="5,5,148,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a256cdc19062818167eb290fd49317d77"></a>
@@ -556,6 +774,41 @@ $(function() {
 </div><div class="memdoc">
 
 <p>showLicense - вывод всех услуг в лог и консоль </p>
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00106">106</a></p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;=========== Лицензия ===========&quot;</span>);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; it : <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>)</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordtype">string</span> date = it.expireDate.empty() ? <span class="stringliteral">&quot;Бессрочно&quot;</span> : it.expireDate;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%u)\t mask = %u,\t expire date = &#39;%s&#39;,\t name = &#39;%s&#39;&quot;</span>,</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    it.tagNum,</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    it.mask,</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    date   .c_str(),</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    it.name.c_str() );</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;================================&quot;</span>);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00033">logERR</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l30257">Menu::loadLicenseFromBIOS()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_a256cdc19062818167eb290fd49317d77_icgraph.png" border="0" usemap="#classLicense_a256cdc19062818167eb290fd49317d77_icgraph" alt=""/></div>
+<map name="classLicense_a256cdc19062818167eb290fd49317d77_icgraph" id="classLicense_a256cdc19062818167eb290fd49317d77_icgraph">
+<area shape="rect"  title="showLicense &#45; Ð²ÑÐ²Ð¾Ð´ Ð²ÑÐµÑ ÑÑÐ»ÑÐ³ Ð² Ð»Ð¾Ð³ Ð¸ ÐºÐ¾Ð½ÑÐ¾Ð»Ñ" alt="" coords="1304,132,1455,159"/>
+<area shape="rect"  href="classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="1063,132,1256,159"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="676,56,767,83"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,157,1007,184"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,297,172,324"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,19,1015,45"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="471,56,528,83"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="255,31,344,57"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="63,31,114,57"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,208,801,235"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,259,823,285"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,208,572,235"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,157,343,184"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,208,379,235"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,132,147,159"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,259,572,301"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,271,347,297"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="427,5,571,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -585,9 +838,117 @@ $(function() {
 <p>size - получить размер списка услуг </p>
 <dl class="section return"><dt>Возвращает</dt><dd>количество услуг </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00073">73</a></p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">_licenseList</a>.size(); }</div><div class="ttc" id="classLicense_html_a354a8ea4276aa8f2794fa0a1a81486a6"><div class="ttname"><a href="classLicense.html#a354a8ea4276aa8f2794fa0a1a81486a6">License::_licenseList</a></div><div class="ttdeci">vector&lt; LicenseTag &gt; _licenseList</div><div class="ttdef"><b>Definition:</b> <a href="license_8h_source.html#l00219">license.h:219</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l30257">Menu::loadLicenseFromBIOS()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classLicense_ad0f037a7fe472c26db3e1e5e763c001c_icgraph.png" border="0" usemap="#classLicense_ad0f037a7fe472c26db3e1e5e763c001c_icgraph" alt=""/></div>
+<map name="classLicense_ad0f037a7fe472c26db3e1e5e763c001c_icgraph" id="classLicense_ad0f037a7fe472c26db3e1e5e763c001c_icgraph">
+<area shape="rect"  title="size &#45; Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ ÑÐ°Ð·Ð¼ÐµÑ ÑÐ¿Ð¸ÑÐºÐ° ÑÑÐ»ÑÐ³" alt="" coords="1304,132,1403,159"/>
+<area shape="rect"  href="classMenu.html#af2e0f397f8d83e3973d5cf4581e416e2" title=" " alt="" coords="1063,132,1256,159"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="676,56,767,83"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="879,157,1007,184"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="5,297,172,324"/>
+<area shape="rect"  href="classMenu.html#a8b262e42c4625c83b6eadfc4450f9ec9" title=" " alt="" coords="871,19,1015,45"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="471,56,528,83"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="255,31,344,57"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="63,31,114,57"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="642,208,801,235"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="620,259,823,285"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="427,208,572,235"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="256,157,343,184"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="220,208,379,235"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="30,132,147,159"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="427,259,572,301"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="252,271,347,297"/>
+<area shape="rect"  href="threads_8h.html#accc5c8184e06fcc35fd84e028714a8b0" title=" " alt="" coords="427,5,571,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
+<a id="ad699a28d13092b0e9f3de80e97d8c7d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad699a28d13092b0e9f3de80e97d8c7d4">&#9670;&nbsp;</a></span>_convert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unique_ptr&lt;<a class="el" href="classConvert.html">Convert</a>&gt; License::_convert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00220">220</a></p>
+
+</div>
+</div>
+<a id="a952f2fb457daf6a60af517cc335e14d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952f2fb457daf6a60af517cc335e14d7">&#9670;&nbsp;</a></span>_keyActivation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string License::_keyActivation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00218">218</a></p>
+
+<p class="reference">Используется в <a class="el" href="license_8h_source.html#l00058">License()</a>.</p>
+
+</div>
+</div>
+<a id="a354a8ea4276aa8f2794fa0a1a81486a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a354a8ea4276aa8f2794fa0a1a81486a6">&#9670;&nbsp;</a></span>_licenseList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structLicense_1_1LicenseTag.html">LicenseTag</a>&gt; License::_licenseList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00219">219</a></p>
+
+<p class="reference">Используется в <a class="el" href="license_8h_source.html#l00058">License()</a>.</p>
+
+</div>
+</div>
 <a id="a0abf070b8991f87f23b6f2493a7093a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0abf070b8991f87f23b6f2493a7093a3">&#9670;&nbsp;</a></span>ACTIVE</h2>
 
@@ -608,6 +969,10 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00026">26</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a> и <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>.</p>
+
 </div>
 </div>
 <a id="a3bae6be768f609b7629ccd5a68c92bd2"></a>
@@ -622,6 +987,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="license_8h_source.html">license.h</a> строка <a class="el" href="license_8h_source.html#l00018">18</a></p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
@@ -630,7 +997,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

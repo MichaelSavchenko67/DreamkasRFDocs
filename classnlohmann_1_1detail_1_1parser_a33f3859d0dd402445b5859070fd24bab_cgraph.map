@@ -1,0 +1,15 @@
+<map id="nlohmann::detail::parser::get_token" name="nlohmann::detail::parser::get_token">
+<area shape="rect" id="node1" title="get next token from lexer" alt="" coords="5,188,167,229"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1lexer.html#aac3041cd2b9291e64fee38db422863c9" title=" " alt="" coords="215,188,368,229"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1lexer.html#a901e45a34e1fb1d97ab62350b0c3ef26" title=" " alt="" coords="821,130,999,156"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1lexer.html#a6f717deb553337736f27cdacccaee536" title=" " alt="" coords="416,72,569,113"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1lexer.html#a6bd7e6cdb0380a9df663f1c7f115f34f" title="scan a number literal" alt="" coords="416,393,569,434"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1lexer.html#ad271045d1c91df9d6a119482b4aeae7f" title="scan a string literal" alt="" coords="416,188,569,229"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1lexer.html#a709afd52def2e258dac0b8a67dc4ea26" title="skip the UTF&#45;8 byte order mark" alt="" coords="416,540,569,581"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1lexer.html#acec899d31af1fd647911e46e8535c283" title="add a character to token_buffer" alt="" coords="819,254,1001,280"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1lexer.html#acba34bc18af19f93186e682d02c3942d" title="reset token_buffer; current character is beginning of token" alt="" coords="617,305,771,346"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1lexer.html#a1a2d4cc5d9fed4783aa2a98497925511" title=" " alt="" coords="617,422,771,464"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db" title="unget current character (read it again on next get)" alt="" coords="617,540,771,581"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1lexer.html#a820b20e25ff255c3c791c37f2bf48380" title="get codepoint from 4 hex characters following u" alt="" coords="617,122,771,164"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1lexer.html#a2faa544ab5475523ead81f9cdef41a0a" title="check if the next byte(s) are inside a given range" alt="" coords="617,188,771,229"/>
+</map>

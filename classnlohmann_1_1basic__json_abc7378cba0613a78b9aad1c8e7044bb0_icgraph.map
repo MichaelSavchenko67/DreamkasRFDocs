@@ -1,0 +1,4 @@
+<map id="nlohmann::basic_json::is_number_unsigned" name="nlohmann::basic_json::is_number_unsigned">
+<area shape="rect" id="node1" title="return whether value is an unsigned integer number" alt="" coords="201,5,351,47"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#aa9aaed6b92909b263e04b5d25eba8d67" title="get a pointer to the value (unsigned number)" alt="" coords="5,5,153,47"/>
+</map>

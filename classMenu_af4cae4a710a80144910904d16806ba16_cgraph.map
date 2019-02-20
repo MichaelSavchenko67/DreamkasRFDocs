@@ -1,9 +1,9 @@
 <map id="Menu::verifyDateTime" name="Menu::verifyDateTime">
-<area shape="rect" id="node1" title=" " alt="" coords="5,115,156,141"/>
-<area shape="rect" id="node2" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="224,5,363,32"/>
-<area shape="rect" id="node4" href="$classTimeSync.html#a4002be2e1a3c74099fb0d7b642c09053" title="getZoneinfo вернуть список часовых поясов" alt="" coords="215,56,372,83"/>
-<area shape="rect" id="node5" href="$classTimeSync.html#ab1537a58169462da5b93e7536fc33ac7" title="getCurrentZoneIndex получить индекс текущего часового пояса" alt="" coords="204,107,383,149"/>
-<area shape="rect" id="node6" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="206,173,381,200"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,156,149"/>
+<area shape="rect" id="node2" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="206,5,381,32"/>
+<area shape="rect" id="node3" href="$classTimeSync.html#ab1537a58169462da5b93e7536fc33ac7" title="getCurrentZoneIndex получить индекс текущего часового пояса" alt="" coords="204,57,383,98"/>
+<area shape="rect" id="node4" href="$classTimeSync.html#a4002be2e1a3c74099fb0d7b642c09053" title="getZoneinfo вернуть список часовых поясов" alt="" coords="215,123,372,149"/>
+<area shape="rect" id="node5" href="$classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="224,173,363,200"/>
 <area shape="rect" id="node7" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="250,224,337,251"/>
-<area shape="rect" id="node3" href="$classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="431,5,579,32"/>
+<area shape="rect" id="node6" href="$classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="431,173,579,200"/>
 </map>

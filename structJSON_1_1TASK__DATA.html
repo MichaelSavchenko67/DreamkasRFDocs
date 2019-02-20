@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1TASK__DATA.html">TASK_DATA</a></li>  </ul>
@@ -76,9 +53,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::TASK_DATA:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::TASK_DATA:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1TASK__DATA__coll__graph.png" border="0" usemap="#JSON_1_1TASK__DATA_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1TASK__DATA_coll__map" id="JSON_1_1TASK__DATA_coll__map">
 <area shape="rect"  title=" " alt="" coords="108,631,255,811"/>
@@ -113,7 +92,10 @@ $(function() {
 <tr class="memitem:a3571ab70d01deaed53d560f4f40ac2ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSON_1_1JSON__KEY__ACTIVATION.html">JSON::JSON_KEY_ACTIVATION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TASK__DATA.html#a3571ab70d01deaed53d560f4f40ac2ee">key_activation</a></td></tr>
 <tr class="separator:a3571ab70d01deaed53d560f4f40ac2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Данные класса</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01146">1146</a></p>
+</div><h2 class="groupheader">Данные класса</h2>
 <a id="a673a6c2ca4139ea2ac8b48ab995972be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a673a6c2ca4139ea2ac8b48ab995972be">&#9670;&nbsp;</a></span>bind_products</h2>
 
@@ -125,6 +107,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01150">1150</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01037">JSON::all_tasks_display()</a> и <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a>.</p>
 
 </div>
 </div>
@@ -140,6 +126,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01154">1154</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a> и <a class="el" href="testJSON_8h_source.html#l01857">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a9feeedf54c9d7a12ddd6e0fc314604d3"></a>
@@ -153,6 +143,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01151">1151</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01037">JSON::all_tasks_display()</a>, <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
 
 </div>
 </div>
@@ -168,6 +162,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01155">1155</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01037">JSON::all_tasks_display()</a> и <a class="el" href="json_8cpp_source.html#l00400">JSON::task_data_clear()</a>.</p>
+
 </div>
 </div>
 <a id="a3af1b97a60b2c52fcfcbc23ac0e1954b"></a>
@@ -181,6 +179,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01156">1156</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a>, <a class="el" href="json_8cpp_source.html#l00400">JSON::task_data_clear()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
 
 </div>
 </div>
@@ -196,6 +198,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01158">1158</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <a id="acd827f2407cb548d00116388bf6a7e27"></a>
@@ -209,6 +215,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01157">1157</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a>, <a class="el" href="json_8cpp_source.html#l00400">JSON::task_data_clear()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
 
 </div>
 </div>
@@ -224,6 +234,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01148">1148</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01037">JSON::all_tasks_display()</a> и <a class="el" href="json_8cpp_source.html#l00400">JSON::task_data_clear()</a>.</p>
+
 </div>
 </div>
 <a id="a7252465698fd606992428c5b7f55e7c1"></a>
@@ -237,6 +251,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01153">1153</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a> и <a class="el" href="testJSON_8h_source.html#l01611">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -252,6 +270,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l01152">1152</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l01037">JSON::all_tasks_display()</a>, <a class="el" href="json_8cpp_source.html#l01581">JSON::jsonPollParser()</a> и <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -260,7 +282,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

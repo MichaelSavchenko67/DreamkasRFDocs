@@ -1,11 +1,11 @@
 <map id="ReceiptsDb::parseFromBaseFields" name="ReceiptsDb::parseFromBaseFields">
-<area shape="rect" id="node1" title=" " alt="" coords="5,221,196,263"/>
-<area shape="rect" id="node2" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="283,5,414,47"/>
-<area shape="rect" id="node3" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="283,71,414,112"/>
-<area shape="rect" id="node4" href="$classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="244,137,453,163"/>
-<area shape="rect" id="node5" href="$classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="255,188,442,229"/>
-<area shape="rect" id="node6" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="283,253,414,295"/>
-<area shape="rect" id="node7" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="255,319,442,346"/>
-<area shape="rect" id="node8" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="282,371,415,412"/>
-<area shape="rect" id="node9" href="$classPosition__new.html#ad564f96eb227c5eb67085d289f7e909d" title=" " alt="" coords="268,436,429,477"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,221,196,262"/>
+<area shape="rect" id="node2" href="$classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="255,5,442,32"/>
+<area shape="rect" id="node3" href="$classPosition__new.html#ad564f96eb227c5eb67085d289f7e909d" title=" " alt="" coords="268,57,429,98"/>
+<area shape="rect" id="node4" href="$classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="282,122,415,163"/>
+<area shape="rect" id="node5" href="$classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="283,187,414,229"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="283,253,414,294"/>
+<area shape="rect" id="node7" href="$classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="283,318,414,359"/>
+<area shape="rect" id="node8" href="$classReceipt__new.html#a352786c6d58cc009fac099dd3fc79c7b" title=" " alt="" coords="255,383,442,425"/>
+<area shape="rect" id="node9" href="$classReceipt__new.html#ab46c87dff97a324b0a5849f04d949526" title=" " alt="" coords="244,449,453,476"/>
 </map>

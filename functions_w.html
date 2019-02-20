@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
@@ -120,8 +97,15 @@ $(function() {
 <li>weightFromScale()
 : <a class="el" href="classMenu.html#a078aa685bdb2ac1f3061e54b2f59a763">Menu</a>
 </li>
+<li>weightParse()
+: <a class="el" href="classScaleProtocolMassak.html#a529ea11b2cf4febb69280000505ab593">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#aa84ed522885f738635a9cf1e8f6281ce">ScaleProtocolPos2</a>
+</li>
 <li>weightTare
 : <a class="el" href="classScaleProtocolInterface.html#a6f01d527a22c98950e9399908fad7eb1">ScaleProtocolInterface</a>
+</li>
+<li>weightTareParse()
+: <a class="el" href="classScaleProtocolPos2.html#af1aca79cde4398ab2c502ad0ca9f6bd4">ScaleProtocolPos2</a>
 </li>
 <li>WGR_SCALE_IS_DISCONNECTED
 : <a class="el" href="classMenu.html#ac71319d5ac90e04b6dcd153312b9d3f8a54528b9f0598c4ed6692ef3b56c48594">Menu</a>
@@ -223,6 +207,9 @@ $(function() {
 <li>write()
 : <a class="el" href="classFilesFG.html#adb019110bbb7ec23bb479dcbc3d42383">FilesFG</a>
 </li>
+<li>write_buf
+: <a class="el" href="classFISGO__TEST__API.html#a805191d53b51fefb156e825bf93b4d66">FISGO_TEST_API</a>
+</li>
 <li>write_buf_clear()
 : <a class="el" href="classFISGO__TEST__API.html#af3177fa6676f984df36ab7041cfd940e">FISGO_TEST_API</a>
 </li>
@@ -244,6 +231,12 @@ $(function() {
 <li>write_msgpack()
 : <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#ae4e0852b64102ce4b07d99f08f828b7c">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
 </li>
+<li>write_number()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a62cfd50a511371e718f37ad7bb29ae9d">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
+</li>
+<li>write_number_with_ubjson_prefix()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a0ea6745f944c0c61672146886b4ee90f">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
+</li>
 <li>WRITE_RECIEPT_TO_FS
 : <a class="el" href="classMenu.html#a2df1501f3eb89f1ff73f1b6072e96b66a9d7568eb5a0af4c97d2b480ee0a75e3d">Menu</a>
 </li>
@@ -251,7 +244,11 @@ $(function() {
 : <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a0f6c65053d859269f88eb4ebb0cd7060">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
 </li>
 <li>writeCmd()
-: <a class="el" href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59">ScaleProtocolInterface</a>
+: <a class="el" href="classScalePos2.html#acd8ffe2d3b137c1fc60273af4d0bf75e">ScalePos2</a>
+, <a class="el" href="classScaleProtocolInterface.html#aa188c5de7a9bd9ff8da40d623558cf59">ScaleProtocolInterface</a>
+</li>
+<li>writeCmdRc
+: <a class="el" href="classScalePos2.html#ac814ce1b4824677ba862501a9fbbbcaf">ScalePos2</a>
 </li>
 <li>WriteInScale()
 : <a class="el" href="classScaleProtocolInterface.html#a78b695ef0dc60b3980a36facebc30625">ScaleProtocolInterface</a>
@@ -260,6 +257,12 @@ $(function() {
 </li>
 <li>writePayType()
 : <a class="el" href="classBIOS_1_1BEL.html#a00cc04b6e32902591def65ebd2700d79">BIOS::BEL</a>
+</li>
+<li>writeTare()
+: <a class="el" href="classScales.html#a608a169a5c721a1f6f0ae3ee95306b14">Scales</a>
+</li>
+<li>writeZero()
+: <a class="el" href="classScales.html#a5759e417b12df06a987a93d363ffecbe">Scales</a>
 </li>
 <li>WRONG_BEP_SUM
 : <a class="el" href="classBIOS_1_1BEL.html#a184132d9a24aa1e8a064b7ba12df8091ab48cb1c70ec924ae35655042012358d0">BIOS::BEL</a>
@@ -286,7 +289,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,6 +1,8 @@
 <map id="Printer" name="Printer">
-<area shape="rect" id="node1" title=" " alt="" coords="321,1597,515,2643"/>
-<area shape="rect" id="node2" href="$classBIOS.html" title=" " alt="" coords="5,5,308,1535"/>
-<area shape="rect" id="node3" href="$structPrinter_1_1technical__report.html" title=" " alt="" coords="333,585,503,955"/>
-<area shape="rect" id="node4" href="$structReceipt_1_1Fiscal__data.html" title=" " alt="" coords="528,152,745,1388"/>
+<area shape="rect" id="node1" title=" " alt="" coords="459,2001,653,3179"/>
+<area shape="rect" id="node2" href="$classRequisites.html" title=" " alt="" coords="5,842,184,1447"/>
+<area shape="rect" id="node3" href="$classBIOS.html" title=" " alt="" coords="209,351,511,1939"/>
+<area shape="rect" id="node4" href="$structstatusBIOS.html" title=" " alt="" coords="276,5,444,288"/>
+<area shape="rect" id="node5" href="$structPrinter_1_1technical__report.html" title=" " alt="" coords="536,959,707,1330"/>
+<area shape="rect" id="node6" href="$structReceipt_1_1Fiscal__data.html" title=" " alt="" coords="731,527,949,1763"/>
 </map>

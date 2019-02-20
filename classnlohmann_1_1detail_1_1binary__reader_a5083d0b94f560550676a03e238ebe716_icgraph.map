@@ -1,0 +1,18 @@
+<map id="nlohmann::detail::binary_reader::get_string" name="nlohmann::detail::binary_reader::get_string">
+<area shape="rect" id="node1" title="create a string by reading characters from the input" alt="" coords="1163,117,1323,159"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1binary__reader.html#acca76844160000e1d8215cb5c7afbba1" title="reads a CBOR string" alt="" coords="938,25,1101,67"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5526ed98ca4c436cbae6f8a77ea207b8" title="reads a MessagePack string" alt="" coords="924,117,1115,159"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2e01eab458020d18c975e8df55b20eca" title="reads a UBJSON string" alt="" coords="932,243,1107,284"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2fcc776cd2c7bb52bbc511e97d36978a" title=" " alt="" coords="697,25,862,67"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1binary__reader.html#a2fc47768d484a22fcd04e20106da1399" title=" " alt="" coords="442,25,629,67"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256" title=" " alt="" coords="215,164,375,205"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1binary__reader.html#ac3dc99d36754aa0beac506b30604a8ed" title=" " alt="" coords="215,25,375,67"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="5,164,153,205"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1detail_1_1binary__reader.html#ad1190bb3499e243b0bbf795743a35563" title=" " alt="" coords="683,143,876,184"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1binary__reader.html#a81611d8a5faec1348d31f7e98fcd05ef" title=" " alt="" coords="453,91,618,147"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1binary__reader.html#a09d3eed7523da6f61e7ffa98823aae2b" title=" " alt="" coords="201,99,388,140"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5f425199a77f403e32f076ff8487f853" title=" " alt="" coords="692,243,867,284"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1detail_1_1binary__reader.html#ad0932dd568fcbbd2b4c2ccf9122544a5" title=" " alt="" coords="205,317,384,359"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1detail_1_1binary__reader.html#af60c6bba6f1301cb02e0186c99e25751" title=" " alt="" coords="436,172,635,213"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1detail_1_1binary__reader.html#a4e8ef9561d4403ea68e3c2712fd289e2" title=" " alt="" coords="209,243,381,284"/>
+</map>

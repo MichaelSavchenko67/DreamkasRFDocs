@@ -1,0 +1,12 @@
+<map id="ScaleProtocolInterface::parseIntegerValue" name="ScaleProtocolInterface::parseIntegerValue">
+<area shape="rect" id="node1" title="parseIntegerValue &#45; парс целочисленного значения" alt="" coords="616,156,771,197"/>
+<area shape="rect" id="node2" href="$classScaleProtocolMassak.html#a1901b17b85c527d22d6938f36f853451" title="isCorrectAnswerPacket &#45; проверка принятого пакета" alt="" coords="400,5,568,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolMassak.html#a529ea11b2cf4febb69280000505ab593" title="weightParse &#45; парс веса из полученного пакета" alt="" coords="203,47,352,88"/>
+<area shape="rect" id="node5" href="$classScaleProtocolPos2.html#aeb70fdf0739ef053256a65e44dd57425" title="scaleParamParse &#45; парс параметров канала весов" alt="" coords="413,123,555,164"/>
+<area shape="rect" id="node7" href="$classScaleProtocolPos2.html#a76f72420064803e277e6f381ace03c89" title="setScaleErr &#45; установить ошибки" alt="" coords="413,188,555,229"/>
+<area shape="rect" id="node9" href="$classScaleProtocolPos2.html#aa84ed522885f738635a9cf1e8f6281ce" title="weightParse &#45; парс веса" alt="" coords="413,253,555,295"/>
+<area shape="rect" id="node10" href="$classScaleProtocolPos2.html#af1aca79cde4398ab2c502ad0ca9f6bd4" title="weightTareParse &#45; парс веса тары" alt="" coords="413,319,555,360"/>
+<area shape="rect" id="node4" href="$classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,47,155,88"/>
+<area shape="rect" id="node6" href="$classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372" title="getScaleParam &#45; чтение параметров весов" alt="" coords="207,141,348,183"/>
+<area shape="rect" id="node8" href="$classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25" title="cmdGetWeight &#45; чтение веса" alt="" coords="207,253,348,295"/>
+</map>

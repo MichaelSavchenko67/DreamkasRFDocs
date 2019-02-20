@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,40 +29,23 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>ubjson_prefix()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a4c129249a5aee8e4ec8add6c6184e4f7">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
+</li>
 <li>uchar_le_to_int64_convert()
 : <a class="el" href="classPrinter.html#a71128d9942e620edc588c571a0bf9371">Printer</a>
 </li>
@@ -87,8 +67,18 @@ $(function() {
 <li>undelegated_docs_count_get()
 : <a class="el" href="classBIOS_1_1RUS.html#ada94711a1faf3cd6731bcd76c76c2ecc">BIOS::RUS</a>
 </li>
+<li>unescape()
+: <a class="el" href="classnlohmann_1_1json__pointer.html#ab85442d5fbcc289b79beeefc2175446f">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
+</li>
+<li>unexpect_eof()
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__reader.html#a607dda4be02684d89343b88da8d9b5c8">nlohmann::detail::binary_reader&lt; BasicJsonType, SAX &gt;</a>
+</li>
 <li>unflatten()
 : <a class="el" href="classnlohmann_1_1basic__json.html#a74fa3ab2003f2f6f2b69deaafed9126d">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1json__pointer.html#a920065221e3c81676c3211c100d024a7">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
+</li>
+<li>unget()
+: <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a626f145768762057dc68a4666eb577db">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 </li>
 <li>unload()
 : <a class="el" href="classCounters.html#ad3ee95fcf85b6344ce212acf482baa10">Counters</a>
@@ -110,6 +100,9 @@ $(function() {
 </li>
 <li>updateConfigTable()
 : <a class="el" href="classsqlWrapper.html#a3674a2ae0f86bed4a962b4948d47000c">sqlWrapper</a>
+</li>
+<li>updateCounters()
+: <a class="el" href="classCounters.html#ab2c15ef63cb47e9855cfbd955879446e">Counters</a>
 </li>
 <li>updateDocument()
 : <a class="el" href="classCabinetBase.html#ad3ec40a337cd35fb47ec294240db7293">CabinetBase</a>
@@ -140,6 +133,12 @@ $(function() {
 </li>
 <li>updateUser()
 : <a class="el" href="classsqlWrapper.html#a6cf2f9ed8e07c4da80a8c1c45e3335c4">sqlWrapper</a>
+</li>
+<li>updateZone()
+: <a class="el" href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">TimeSync</a>
+</li>
+<li>updateZoneDefault()
+: <a class="el" href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83">TimeSync</a>
 </li>
 <li>upsert_discount_clear()
 : <a class="el" href="classJSON.html#a365ba878c826dd82eaa66c8791a86f01">JSON</a>
@@ -203,13 +202,13 @@ $(function() {
 : <a class="el" href="classUsers.html#af1f5c371c3f1e7f9b14210ed0d3718bc">Users</a>
 </li>
 <li>UTF8toCP866()
-: <a class="el" href="classEncodeConvertor.html#a35a4f3d4b056d4a3ed3282b3e3a4c7fd">EncodeConvertor</a>
+: <a class="el" href="classEncodeConvertor.html#a89ca427f61ab1cdcd15904e26c70fdfd">EncodeConvertor</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

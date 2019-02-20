@@ -1,0 +1,6 @@
+<map id="ScaleProtocolInterface::readAnswer" name="ScaleProtocolInterface::readAnswer">
+<area shape="rect" id="node1" title="readAnswer &#45; прочитать ответ от весов" alt="" coords="203,71,357,112"/>
+<area shape="rect" id="node2" href="$classScaleProtocolPos2.html#a46eb30f72f82bf3fbed3f45e1f11a372" title="getScaleParam &#45; чтение параметров весов" alt="" coords="9,5,151,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25" title="cmdGetWeight &#45; чтение веса" alt="" coords="9,71,151,112"/>
+<area shape="rect" id="node4" href="$classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,136,155,177"/>
+</map>

@@ -1,7 +1,7 @@
 <map id="BIOS::RUS::registerKKT_BIOS" name="BIOS::RUS::registerKKT_BIOS">
 <area shape="rect" id="node1" title=" " alt="" coords="5,81,212,108"/>
-<area shape="rect" id="node2" href="$classBIOS_1_1RUS.html#a80d78f66fa80e7361c081ab488f03daf" title=" " alt="" coords="260,5,449,32"/>
-<area shape="rect" id="node3" href="$classBIOS_1_1RUS.html#ab9fa203844c2e51fef93c01b575d1ebc" title=" " alt="" coords="274,56,435,83"/>
-<area shape="rect" id="node4" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="497,81,645,108"/>
+<area shape="rect" id="node2" href="$classBIOS_1_1RUS.html#ab9fa203844c2e51fef93c01b575d1ebc" title=" " alt="" coords="274,5,435,32"/>
+<area shape="rect" id="node3" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="497,31,645,57"/>
+<area shape="rect" id="node4" href="$classBIOS_1_1RUS.html#a80d78f66fa80e7361c081ab488f03daf" title=" " alt="" coords="260,107,449,133"/>
 <area shape="rect" id="node5" href="$classBIOS.html#af89cb3f3654af30a0dab255d74ffb048" title=" " alt="" coords="277,157,432,184"/>
 </map>

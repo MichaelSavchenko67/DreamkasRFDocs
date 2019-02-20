@@ -1,0 +1,8 @@
+<map id="nlohmann::detail::lexer::get_token_string" name="nlohmann::detail::lexer::get_token_string">
+<area shape="rect" id="node1" title="return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not ..." alt="" coords="843,57,996,98"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a19bff4f2392f740c45e539929874cd85" title=" " alt="" coords="633,86,795,128"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="215,28,376,69"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,137,376,178"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="424,28,585,69"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,137,167,178"/>
+</map>

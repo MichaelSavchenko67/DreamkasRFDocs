@@ -1,0 +1,4 @@
+<map id="FiscalDocDb::clearLastFiscalDoc" name="FiscalDocDb::clearLastFiscalDoc">
+<area shape="rect" id="node1" title="clearLastFiscalDoc очистка последней записи" alt="" coords="247,5,465,32"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#ab59ff2745ceaf6feed5b8ab8c24a367b" title="saveFiscalDoc сохранение фискального документа в БД" alt="" coords="5,5,199,32"/>
+</map>

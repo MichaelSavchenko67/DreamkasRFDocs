@@ -1,0 +1,8 @@
+<map id="nlohmann::basic_json::get_impl" name="nlohmann::basic_json::get_impl">
+<area shape="rect" id="node1" title="get a boolean (explicit)" alt="" coords="5,103,153,144"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="201,37,352,79"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1basic__json.html#a943e8cb182d0f2365c76d64b42eaa6fd" title="return whether value is a boolean" alt="" coords="203,103,351,144"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="203,168,351,209"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="400,5,581,47"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="415,71,566,112"/>
+</map>

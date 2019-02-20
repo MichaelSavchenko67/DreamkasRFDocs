@@ -1,0 +1,5 @@
+<map id="FiscalDocDb::FiscalDocDb" name="FiscalDocDb::FiscalDocDb">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" id="node2" href="$classFiscalDocDb.html#ae385187f0caf76ce571b0b2547a4b389" title="createTable Создание таблицы, если ее нет" alt="" coords="236,13,411,39"/>
+<area shape="rect" id="node3" href="$classFiscalDocDb.html#a60feeef84d0eb73c183403fc5c661b83" title="makeRequestNotSave выполнить запрос без сохранения результата (не SELECT запрос)" alt="" coords="459,5,645,47"/>
+</map>

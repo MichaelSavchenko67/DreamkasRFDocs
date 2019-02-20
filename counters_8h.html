@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
@@ -68,7 +45,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
   <div class="headertitle">
 <div class="title">Файл counters.h</div>  </div>
 </div><!--header-->
@@ -83,9 +61,11 @@ $(function() {
 <code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="dynamic__mask_8h_source.html">dynamic_mask.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для counters.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для counters.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="counters_8h__incl.png" border="0" usemap="#src_2appl_2include_2counters_8h" alt=""/></div>
 <map name="src_2appl_2include_2counters_8h" id="src_2appl_2include_2counters_8h">
 <area shape="rect"  title=" " alt="" coords="328,5,507,32"/>
@@ -107,9 +87,11 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="612,155,719,181"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-Граф файлов, в которые включается этот файл:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф файлов, в которые включается этот файл:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="counters_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2counters_8hdep" alt=""/></div>
 <map name="src_2appl_2include_2counters_8hdep" id="src_2appl_2include_2counters_8hdep">
 <area shape="rect"  title=" " alt="" coords="415,5,593,32"/>
@@ -143,11 +125,45 @@ $(function() {
 Классы</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCounters.html">Counters</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCounters_1_1COUNTERS.html">Counters::COUNTERS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCounters_1_1COUNTERS__0.html">Counters::COUNTERS_0</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a35b052c85830bd59b03807448e664d64"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="counters_8h.html#a35b052c85830bd59b03807448e664d64">FIELDS_TO_CABINET</a> = <a class="el" href="dynamic__mask_8h.html#a95819ffeff28e00c1286edc4059fd005">CASH</a> | <a class="el" href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d">CARD</a> | <a class="el" href="dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46">CASH_IN_FINAL</a></td></tr>
+<tr class="separator:a35b052c85830bd59b03807448e664d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Переменные</h2>
+<a id="a35b052c85830bd59b03807448e664d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b052c85830bd59b03807448e664d64">&#9670;&nbsp;</a></span>FIELDS_TO_CABINET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structDYNAMIC__MASK.html">DYNAMIC_MASK</a> FIELDS_TO_CABINET = <a class="el" href="dynamic__mask_8h.html#a95819ffeff28e00c1286edc4059fd005">CASH</a> | <a class="el" href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d">CARD</a> | <a class="el" href="dynamic__mask_8h.html#a9567fea5abb160e26a8335df90b12c46">CASH_IN_FINAL</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="counters_8h_source.html">counters.h</a> строка <a class="el" href="counters_8h_source.html#l00025">25</a></p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

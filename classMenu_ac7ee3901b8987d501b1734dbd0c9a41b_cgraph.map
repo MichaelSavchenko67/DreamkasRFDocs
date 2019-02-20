@@ -1,7 +1,7 @@
 <map id="Menu::log_level_choose" name="Menu::log_level_choose">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a9792a7d8bccee267c319e212dd4013b4" title=" " alt="" coords="243,5,334,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a459826f760209377688c24160f4d1ca8" title=" " alt="" coords="226,56,351,83"/>
-<area shape="rect" id="node5" href="$classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4" title=" " alt="" coords="216,107,361,133"/>
-<area shape="rect" id="node4" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="409,56,543,83"/>
+<area shape="rect" id="node2" href="$classMenu.html#a459826f760209377688c24160f4d1ca8" title=" " alt="" coords="226,5,351,32"/>
+<area shape="rect" id="node4" href="$classLogServant.html#a39b38cc5dff66bbdfbc8c93105e105e4" title=" " alt="" coords="216,56,361,83"/>
+<area shape="rect" id="node5" href="$dynamic__mask_8h.html#a9792a7d8bccee267c319e212dd4013b4" title=" " alt="" coords="243,107,334,133"/>
+<area shape="rect" id="node3" href="$classMenu.html#ac200c6acceff148e6747591c02119254" title=" " alt="" coords="409,5,543,32"/>
 </map>

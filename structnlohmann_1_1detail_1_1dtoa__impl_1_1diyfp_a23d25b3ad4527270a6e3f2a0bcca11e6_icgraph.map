@@ -1,0 +1,12 @@
+<map id="nlohmann::detail::dtoa_impl::diyfp::diyfp" name="nlohmann::detail::dtoa_impl::diyfp::diyfp">
+<area shape="rect" id="node1" title=" " alt="" coords="1080,64,1231,105"/>
+<area shape="rect" id="node2" href="$structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#aa5f250d12ce89c81fdb08900c6a823e8" title="returns x * y" alt="" coords="661,64,811,105"/>
+<area shape="rect" id="node7" href="$structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#a6b6665e467ebabe0c0f7418d3fe4b118" title="normalize x such that the result has the exponent E" alt="" coords="861,5,1032,47"/>
+<area shape="rect" id="node9" href="$structnlohmann_1_1detail_1_1dtoa__impl_1_1diyfp.html#aeb26771af54ad73598c1a0430d65d884" title="returns x &#45; y" alt="" coords="871,125,1022,167"/>
+<area shape="rect" id="node3" href="$namespacenlohmann_1_1detail_1_1dtoa__impl.html#a05b681dcb8569b9784c6dccfadb01633" title=" " alt="" coords="445,71,595,112"/>
+<area shape="rect" id="node4" href="$namespacenlohmann_1_1detail_1_1dtoa__impl.html#aab7a9670a4f4704a5d0347ad7588576b" title=" " alt="" coords="231,5,381,47"/>
+<area shape="rect" id="node5" href="$namespacenlohmann_1_1detail.html#a6192f1eab05fbbc5c35edb8368c8fc57" title="generates a decimal representation of the floating&#45;point number value in [first, last)." alt="" coords="238,71,374,112"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1serializer.html#a24b0fe45dc774441237bde198a133d8a" title=" " alt="" coords="5,71,183,112"/>
+<area shape="rect" id="node8" href="$namespacenlohmann_1_1detail_1_1dtoa__impl.html#a22b6e37654ac93c6d0d9c06ec1bf5ded" title=" " alt="" coords="429,5,611,47"/>
+<area shape="rect" id="node10" href="$namespacenlohmann_1_1detail_1_1dtoa__impl.html#a9b899c72b0e1e3dd46d75c2b4e6bcdfb" title=" " alt="" coords="659,129,813,171"/>
+</map>

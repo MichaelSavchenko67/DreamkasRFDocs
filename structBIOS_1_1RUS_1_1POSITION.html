@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classBIOS.html">BIOS</a></li><li class="navelem"><a class="el" href="classBIOS_1_1RUS.html">RUS</a></li><li class="navelem"><a class="el" href="structBIOS_1_1RUS_1_1POSITION.html">POSITION</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса BIOS::RUS::POSITION:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса BIOS::RUS::POSITION:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structBIOS_1_1RUS_1_1POSITION__coll__graph.png" border="0" usemap="#BIOS_1_1RUS_1_1POSITION_coll__map" alt="Collaboration graph"/></div>
 <map name="BIOS_1_1RUS_1_1POSITION_coll__map" id="BIOS_1_1RUS_1_1POSITION_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,179,347"/>
@@ -132,7 +111,10 @@ $(function() {
 <tr class="memitem:a36cba00b3dc04cccc0094ccfdc23213e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBIOS_1_1RUS_1_1POSITION.html#a36cba00b3dc04cccc0094ccfdc23213e">productCode</a></td></tr>
 <tr class="separator:a36cba00b3dc04cccc0094ccfdc23213e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00851">851</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="af49d976086f4a4bed9ffa3c6b73e369a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af49d976086f4a4bed9ffa3c6b73e369a">&#9670;&nbsp;</a></span>POSITION()</h2>
 
@@ -147,6 +129,27 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00693">693</a></p>
+<div class="fragment"><div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;{</div><div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#ad21e6cb963a3f41dac6fe88042bbacc3">name</a>                   =        <span class="stringliteral">&quot;Товар не задан&quot;</span>;</div><div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a8e1e1decd78136223f9b3d5eb8867b00">barcode</a>                =    <span class="stringliteral">&quot;000000000000000000&quot;</span>;</div><div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#ab6264399df3df9c351f6398f999b30d4">quantity</a>               =                     0.0;</div><div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a53c59b4525c3e27f7fe90397de4c45d3">price</a>                  =                     0.0;</div><div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a36721864bcd8ffbc98c40977c5965752">taxNumber</a>              =                 SNO_OSN;</div><div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a418e614340cfbc4cff7fab2cba3f00e5">numGoodsPos</a>            =                       1;</div><div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#af3bc2ba313fe2adad299a48d6d97ff12">numDepart</a>              =                       1;</div><div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a2255825d7bae5bd4f4eab46fafa37b6a">coefType</a>               =                    0x00;</div><div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#ad3b31eaf86a3e11387a98c532710d633">coefName</a>                                .clear();</div><div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a96cdaf93703668f240e48bb643043b2a">coefValue</a>              =                     0.0;</div><div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#ac535014953ac0710313f42d83e77f49c">signMethodCalculation1</a> =                       4;</div><div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#aef79016e47ef66d3dac3a028ce681365">signCalculationObject</a>  =                       1;</div><div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div><div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a5224b8afeb4782003d11b06dd614b421">discountRubSum</a>         =                       0;</div><div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a10aeda8a022da9dfccd8ac089103c7b4">discountType</a>           = <a class="code" href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">DISCOUNT_TYPE_ABSOLUTE</a>;</div><div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#aa1dfc627ee4e2d7e5c4eb84a0b99cb86">marginRubSum</a>           =                       0;</div><div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <a class="code" href="structBIOS_1_1RUS_1_1POSITION.html#a36cba00b3dc04cccc0094ccfdc23213e">productCode</a>.clear();</div><div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div><div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a2255825d7bae5bd4f4eab46fafa37b6a"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a2255825d7bae5bd4f4eab46fafa37b6a">BIOS::RUS::POSITION::coefType</a></div><div class="ttdeci">unsigned char coefType</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00862">FisGo_BIOS.h:862</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_ad21e6cb963a3f41dac6fe88042bbacc3"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#ad21e6cb963a3f41dac6fe88042bbacc3">BIOS::RUS::POSITION::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00855">FisGo_BIOS.h:855</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a36721864bcd8ffbc98c40977c5965752"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a36721864bcd8ffbc98c40977c5965752">BIOS::RUS::POSITION::taxNumber</a></div><div class="ttdeci">unsigned char taxNumber</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00859">FisGo_BIOS.h:859</a></div></div>
+<div class="ttc" id="classBIOS_html_a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160"><div class="ttname"><a href="classBIOS.html#a101d481ad38060d65a7596d130b17e00af7a85daa71897d8b9731759d368fd160">BIOS::DISCOUNT_TYPE_ABSOLUTE</a></div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00306">FisGo_BIOS.h:306</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a53c59b4525c3e27f7fe90397de4c45d3"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a53c59b4525c3e27f7fe90397de4c45d3">BIOS::RUS::POSITION::price</a></div><div class="ttdeci">double price</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00858">FisGo_BIOS.h:858</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_aef79016e47ef66d3dac3a028ce681365"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#aef79016e47ef66d3dac3a028ce681365">BIOS::RUS::POSITION::signCalculationObject</a></div><div class="ttdeci">long signCalculationObject</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00866">FisGo_BIOS.h:866</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_aa1dfc627ee4e2d7e5c4eb84a0b99cb86"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#aa1dfc627ee4e2d7e5c4eb84a0b99cb86">BIOS::RUS::POSITION::marginRubSum</a></div><div class="ttdeci">double marginRubSum</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00873">FisGo_BIOS.h:873</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a10aeda8a022da9dfccd8ac089103c7b4"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a10aeda8a022da9dfccd8ac089103c7b4">BIOS::RUS::POSITION::discountType</a></div><div class="ttdeci">DISCOUNT_TYPE_BIOS discountType</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00870">FisGo_BIOS.h:870</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a5224b8afeb4782003d11b06dd614b421"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a5224b8afeb4782003d11b06dd614b421">BIOS::RUS::POSITION::discountRubSum</a></div><div class="ttdeci">double discountRubSum</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00869">FisGo_BIOS.h:869</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a418e614340cfbc4cff7fab2cba3f00e5"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a418e614340cfbc4cff7fab2cba3f00e5">BIOS::RUS::POSITION::numGoodsPos</a></div><div class="ttdeci">int numGoodsPos</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00860">FisGo_BIOS.h:860</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a96cdaf93703668f240e48bb643043b2a"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a96cdaf93703668f240e48bb643043b2a">BIOS::RUS::POSITION::coefValue</a></div><div class="ttdeci">double coefValue</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00864">FisGo_BIOS.h:864</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_ac535014953ac0710313f42d83e77f49c"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#ac535014953ac0710313f42d83e77f49c">BIOS::RUS::POSITION::signMethodCalculation1</a></div><div class="ttdeci">long signMethodCalculation1</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00865">FisGo_BIOS.h:865</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_ab6264399df3df9c351f6398f999b30d4"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#ab6264399df3df9c351f6398f999b30d4">BIOS::RUS::POSITION::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00857">FisGo_BIOS.h:857</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_ad3b31eaf86a3e11387a98c532710d633"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#ad3b31eaf86a3e11387a98c532710d633">BIOS::RUS::POSITION::coefName</a></div><div class="ttdeci">string coefName</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00863">FisGo_BIOS.h:863</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a8e1e1decd78136223f9b3d5eb8867b00"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a8e1e1decd78136223f9b3d5eb8867b00">BIOS::RUS::POSITION::barcode</a></div><div class="ttdeci">string barcode</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00856">FisGo_BIOS.h:856</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_a36cba00b3dc04cccc0094ccfdc23213e"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#a36cba00b3dc04cccc0094ccfdc23213e">BIOS::RUS::POSITION::productCode</a></div><div class="ttdeci">string productCode</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00874">FisGo_BIOS.h:874</a></div></div>
+<div class="ttc" id="structBIOS_1_1RUS_1_1POSITION_html_af3bc2ba313fe2adad299a48d6d97ff12"><div class="ttname"><a href="structBIOS_1_1RUS_1_1POSITION.html#af3bc2ba313fe2adad299a48d6d97ff12">BIOS::RUS::POSITION::numDepart</a></div><div class="ttdeci">unsigned char numDepart</div><div class="ttdef"><b>Definition:</b> <a href="FisGo__BIOS_8h_source.html#l00861">FisGo_BIOS.h:861</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="FisGo__BIOS_8h_source.html#l00306">BIOS::DISCOUNT_TYPE_ABSOLUTE</a>.</p>
 
 </div>
 </div>
@@ -165,6 +168,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a> строка <a class="el" href="FisGo__BIOS_8cpp_source.html#l00713">713</a></p>
+<div class="fragment"><div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;{</div><div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div><div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -180,6 +185,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00856">856</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <a id="ad3b31eaf86a3e11387a98c532710d633"></a>
@@ -193,6 +202,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00863">863</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>.</p>
 
 </div>
 </div>
@@ -208,6 +221,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00862">862</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>.</p>
+
 </div>
 </div>
 <a id="a96cdaf93703668f240e48bb643043b2a"></a>
@@ -221,6 +238,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00864">864</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>.</p>
 
 </div>
 </div>
@@ -236,6 +257,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00868">868</a></p>
+
 </div>
 </div>
 <a id="a5224b8afeb4782003d11b06dd614b421"></a>
@@ -249,6 +272,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00869">869</a></p>
 
 </div>
 </div>
@@ -264,6 +289,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00870">870</a></p>
+
 </div>
 </div>
 <a id="abf35fccf6a1555cf3cca03475dc10a3d"></a>
@@ -277,6 +304,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00872">872</a></p>
 
 </div>
 </div>
@@ -292,6 +321,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00873">873</a></p>
+
 </div>
 </div>
 <a id="ad21e6cb963a3f41dac6fe88042bbacc3"></a>
@@ -305,6 +336,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00855">855</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
 
 </div>
 </div>
@@ -320,6 +355,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00861">861</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>.</p>
+
 </div>
 </div>
 <a id="a418e614340cfbc4cff7fab2cba3f00e5"></a>
@@ -333,6 +372,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00860">860</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
 
 </div>
 </div>
@@ -348,6 +391,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00858">858</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <a id="a36cba00b3dc04cccc0094ccfdc23213e"></a>
@@ -361,6 +408,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00874">874</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a> и <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a>.</p>
 
 </div>
 </div>
@@ -376,6 +427,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00857">857</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <a id="aef79016e47ef66d3dac3a028ce681365"></a>
@@ -389,6 +444,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00866">866</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
 
 </div>
 </div>
@@ -404,6 +463,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00865">865</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <a id="a36721864bcd8ffbc98c40977c5965752"></a>
@@ -418,16 +481,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a> строка <a class="el" href="FisGo__BIOS_8h_source.html#l00859">859</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l02830">BIOS::RUS::addPositionToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a> и <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="FisGo__BIOS_8h_source.html">FisGo_BIOS.h</a></li>
-<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp.html">FisGo_BIOS.cpp</a></li>
+<li>src/appl/<a class="el" href="FisGo__BIOS_8cpp_source.html">FisGo_BIOS.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

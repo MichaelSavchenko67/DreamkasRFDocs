@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -70,6 +47,10 @@ $(function() {
 
 <p>Полный список членов класса <a class="el" href="classEncodeConvertor.html">EncodeConvertor</a>, включая наследуемые из базового класса</p>
 <table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classEncodeConvertor.html#a446a3149c95493a817adcf5b6a7e5fca">conv</a>(const char to[], const char from[], const string &amp;val, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEncodeConvertor.html#acdc51e7136e7fb4a94834fbcddd54c65">conv</a>(const char to[], const char from[], const char *val, const size_t size, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEncodeConvertor.html#aec7e4a8301ba943d46155bdb1556a47f">convert</a>(iconv_t cd, const string &amp;val, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEncodeConvertor.html#a5c30ad2ad2f736423f37a551d3a8781b">convert</a>(iconv_t cd, const char *val, const size_t size, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classEncodeConvertor.html#abc751a9512177eed813c00a8074197e3">CP866toUTF8</a>(const string &amp;val, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classEncodeConvertor.html#a7cdb450ab283afbc35fe9410576ce0c1">CP866toUTF8</a>(const char *val, const size_t size, int *err)</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classEncodeConvertor.html#a148f2f6eea76b412a07537f1d8c20fde">EncodeConvertor</a>()</td><td class="entry"><a class="el" href="classEncodeConvertor.html">EncodeConvertor</a></td><td class="entry"></td></tr>
@@ -79,7 +60,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

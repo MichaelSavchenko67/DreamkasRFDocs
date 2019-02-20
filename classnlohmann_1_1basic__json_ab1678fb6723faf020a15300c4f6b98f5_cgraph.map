@@ -1,0 +1,4 @@
+<map id="nlohmann::basic_json::get_impl_ptr" name="nlohmann::basic_json::get_impl_ptr">
+<area shape="rect" id="node1" title="get a pointer to the value (boolean)" alt="" coords="5,5,153,47"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a943e8cb182d0f2365c76d64b42eaa6fd" title="return whether value is a boolean" alt="" coords="201,5,349,47"/>
+</map>

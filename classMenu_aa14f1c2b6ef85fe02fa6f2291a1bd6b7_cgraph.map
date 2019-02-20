@@ -1,0 +1,10 @@
+<map id="Menu::queuePurchasesUp" name="Menu::queuePurchasesUp">
+<area shape="rect" id="node1" title="queuePurchasesUp &#45; старт потока очереди чеков в базу" alt="" coords="5,85,181,112"/>
+<area shape="rect" id="node2" href="$classMenu.html#af4106647d84a51e7f1e4a1fbbf69d313" title="queuePurchasesRoutine &#45; цикл сохранения чеков в базу" alt="" coords="229,85,433,112"/>
+<area shape="rect" id="node3" href="$classMenu.html#ac2a5cddce715e9a0f8fc1831787f3e8d" title=" " alt="" coords="481,85,644,112"/>
+<area shape="rect" id="node4" href="$classReceipt__new.html#a75349ba0f42d64767ac4e24201c7994d" title=" " alt="" coords="692,85,839,112"/>
+<area shape="rect" id="node5" href="$testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="973,5,1011,32"/>
+<area shape="rect" id="node6" href="$classReceipt__new.html#ae9305650181a5f64f2b841213bc4c3b9" title=" " alt="" coords="887,56,1097,83"/>
+<area shape="rect" id="node7" href="$classReceipt__new.html#ad2eeb6d3075c752ecb27c60b8162dce6" title=" " alt="" coords="899,107,1085,149"/>
+<area shape="rect" id="node8" href="$classReceipt__new.html#a840a16b46003bbfdba84320a4cd50946" title=" " alt="" coords="927,173,1057,214"/>
+</map>

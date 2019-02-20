@@ -1,0 +1,4 @@
+<map id="ScaleProtocolPos2::weightTareParse" name="ScaleProtocolPos2::weightTareParse">
+<area shape="rect" id="node1" title="weightTareParse &#45; парс веса тары" alt="" coords="195,5,336,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolPos2.html#a007beffa6384539defb42ab0c2366a25" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,5,147,47"/>
+</map>

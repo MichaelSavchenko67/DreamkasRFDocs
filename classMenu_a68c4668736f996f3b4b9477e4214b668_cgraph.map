@@ -1,7 +1,7 @@
 <map id="Menu::who_am_i" name="Menu::who_am_i">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,127,83"/>
-<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb" title=" " alt="" coords="191,5,352,32"/>
-<area shape="rect" id="node3" href="$dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020" title=" " alt="" coords="189,56,353,83"/>
-<area shape="rect" id="node4" href="$classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="175,107,368,133"/>
-<area shape="rect" id="node5" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="416,107,564,133"/>
+<area shape="rect" id="node2" href="$dynamic__mask_8h.html#a9b92c1b5fc39cf0d3913d01bfa62c020" title=" " alt="" coords="189,5,353,32"/>
+<area shape="rect" id="node3" href="$classBIOS.html#a1361316d039afc78c95c864d42f46823" title=" " alt="" coords="175,56,368,83"/>
+<area shape="rect" id="node5" href="$dynamic__mask_8h.html#a2c3ee9f4eae41188830cf90223c74cfb" title=" " alt="" coords="191,107,352,133"/>
+<area shape="rect" id="node4" href="$FisGo__BIOS_8cpp.html#ab59b4e9e01f2d970297519520f4fd3f5" title=" " alt="" coords="416,56,564,83"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="MenuTree" name="MenuTree">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,185,479"/>
+<area shape="rect" id="node1" title=" " alt="" coords="17,615,197,1088"/>
+<area shape="rect" id="node2" href="$classMenuItem.html" title=" " alt="" coords="5,5,208,537"/>
 </map>

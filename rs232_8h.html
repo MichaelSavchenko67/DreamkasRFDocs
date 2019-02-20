@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_76b35da2834f19780dcc0714860bf08b.html">appl</a></li><li class="navelem"><a class="el" href="dir_bb711a79b41aea710db94ca969b05ed5.html">include</a></li>  </ul>
@@ -76,9 +53,11 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;windows.h&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для rs232.h:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для rs232.h:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rs232_8h__incl.png" border="0" usemap="#src_2appl_2include_2rs232_8h" alt=""/></div>
 <map name="src_2appl_2include_2rs232_8h" id="src_2appl_2include_2rs232_8h">
 <area shape="rect"  title=" " alt="" coords="44,5,204,32"/>
@@ -87,9 +66,11 @@ $(function() {
 <area shape="rect"  title=" " alt="" coords="181,80,265,107"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-Граф файлов, в которые включается этот файл:</div>
-<div class="dyncontent">
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф файлов, в которые включается этот файл:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rs232_8h__dep__incl.png" border="0" usemap="#src_2appl_2include_2rs232_8hdep" alt=""/></div>
 <map name="src_2appl_2include_2rs232_8hdep" id="src_2appl_2include_2rs232_8hdep">
 <area shape="rect"  title=" " alt="" coords="5,5,165,32"/>
@@ -147,6 +128,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00625">625</a></p>
+<div class="fragment"><div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;{</div><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  CloseHandle(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number]);</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="a083e54a3f0258596eddb1d4fe5456bbf"></a>
@@ -174,9 +160,16 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00694">694</a></p>
+<div class="fragment"><div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;{</div><div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordflow">while</span>(*text != 0)   <a class="code" href="rs232_8cpp.html#ad8d4dbe7691e53e178360403228d650b">RS232_SendByte</a>(comport_number, *(text++));</div><div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_ad8d4dbe7691e53e178360403228d650b"><div class="ttname"><a href="rs232_8cpp.html#ad8d4dbe7691e53e178360403228d650b">RS232_SendByte</a></div><div class="ttdeci">int RS232_SendByte(int comport_number, unsigned char byte)</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00600">rs232.cpp:600</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00600">RS232_SendByte()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph.png" border="0" usemap="#rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph" alt=""/></div>
 <map name="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph" id="rs232_8h_a083e54a3f0258596eddb1d4fe5456bbf_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,107,32"/>
@@ -202,6 +195,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00673">673</a></p>
+<div class="fragment"><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;{</div><div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  EscapeCommFunction(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], CLRDTR);</div><div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="a18f1cbab5139262c31a83372855284eb"></a>
@@ -219,6 +217,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00685">685</a></p>
+<div class="fragment"><div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;{</div><div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  EscapeCommFunction(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], CLRRTS);</div><div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
 
 </div>
 </div>
@@ -238,6 +241,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00667">667</a></p>
+<div class="fragment"><div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;{</div><div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  EscapeCommFunction(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], SETDTR);</div><div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="af9a89830b8df7e54ec21560ac0508eff"></a>
@@ -255,6 +263,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00679">679</a></p>
+<div class="fragment"><div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;{</div><div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  EscapeCommFunction(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], SETRTS);</div><div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
 
 </div>
 </div>
@@ -274,6 +287,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00645">645</a></p>
+<div class="fragment"><div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;{</div><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;  <span class="keywordtype">int</span> status;</div><div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;</div><div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;  GetCommModemStatus(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], (LPDWORD)((<span class="keywordtype">void</span> *)&amp;status));</div><div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  <span class="keywordflow">if</span>(status&amp;MS_CTS_ON) <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="adc99514ae679150d22b9104b762a2c5d"></a>
@@ -292,6 +310,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00634">634</a></p>
+<div class="fragment"><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;{</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;  <span class="keywordtype">int</span> status;</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;</div><div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;  GetCommModemStatus(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], (LPDWORD)((<span class="keywordtype">void</span> *)&amp;status));</div><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div><div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;  <span class="keywordflow">if</span>(status&amp;MS_RLSD_ON) <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="a2a73a413a420cea0c9425be7129ed4a6"></a>
@@ -309,6 +332,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00656">656</a></p>
+<div class="fragment"><div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;{</div><div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;  <span class="keywordtype">int</span> status;</div><div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div><div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  GetCommModemStatus(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], (LPDWORD)((<span class="keywordtype">void</span> *)&amp;status));</div><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;  <span class="keywordflow">if</span>(status&amp;MS_DSR_ON) <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
 
 </div>
 </div>
@@ -344,6 +372,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00432">432</a></p>
+<div class="fragment"><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;{</div><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;  <span class="keywordflow">if</span> (comport_number == 0) <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;%s \n&quot;</span>, <a class="code" href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a>[0] );</div><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div><div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keywordflow">if</span>((comport_number&gt;15)||(comport_number&lt;0))</div><div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  {</div><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;illegal comport number\n&quot;</span>);</div><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  <span class="keywordflow">switch</span>(baudrate)</div><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  {</div><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordflow">case</span>     110 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=110&quot;</span>);</div><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">case</span>     300 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=300&quot;</span>);</div><div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordflow">case</span>     600 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=600&quot;</span>);</div><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">case</span>    1200 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=1200&quot;</span>);</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">case</span>    2400 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=2400&quot;</span>);</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">case</span>    4800 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=4800&quot;</span>);</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordflow">case</span>    9600 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=9600&quot;</span>);</div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="keywordflow">case</span>   19200 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=19200&quot;</span>);</div><div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordflow">case</span>   38400 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=38400&quot;</span>);</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">case</span>   57600 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=57600&quot;</span>);</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">case</span>  115200 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=115200&quot;</span>);</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordflow">case</span>  128000 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=128000&quot;</span>);</div><div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordflow">case</span>  256000 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=256000&quot;</span>);</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="keywordflow">case</span>  500000 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=500000&quot;</span>);</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">case</span> 1000000 : strcpy(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot;baud=1000000&quot;</span>);</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    default      : <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;invalid baudrate\n&quot;</span>);</div><div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                   <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                   <span class="keywordflow">break</span>;</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  }</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  <span class="keywordflow">if</span>(strlen(mode) != 3)</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  {</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;invalid mode \&quot;%s\&quot;\n&quot;</span>, mode);</div><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  }</div><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keywordflow">switch</span>(mode[0])</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  {</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;8&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; data=8&quot;</span>);</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;7&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; data=7&quot;</span>);</div><div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;6&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; data=6&quot;</span>);</div><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;5&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; data=5&quot;</span>);</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    default : <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;invalid number of data-bits &#39;%c&#39;\n&quot;</span>, mode[0]);</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;              <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  }</div><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="keywordflow">switch</span>(mode[1])</div><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  {</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;N&#39;</span>:</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; parity=n&quot;</span>);</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;E&#39;</span>:</div><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; parity=e&quot;</span>);</div><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;O&#39;</span>:</div><div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;o&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; parity=o&quot;</span>);</div><div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    default : <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;invalid parity &#39;%c&#39;\n&quot;</span>, mode[1]);</div><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;              <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  }</div><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keywordflow">switch</span>(mode[2])</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  {</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;1&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; stop=1&quot;</span>);</div><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    <span class="keywordflow">case</span> <span class="charliteral">&#39;2&#39;</span>: strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; stop=2&quot;</span>);</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    default : <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;invalid number of stop bits &#39;%c&#39;\n&quot;</span>, mode[2]);</div><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;              <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;              <span class="keywordflow">break</span>;</div><div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  }</div><div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;</div><div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  strcat(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, <span class="stringliteral">&quot; dtr=on rts=on&quot;</span>);</div><div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">http://msdn.microsoft.com/en-us/library/windows/desktop/aa363145%28v=vs.85%29.aspx</span></div><div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="comment"></span></div><div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="comment">http://technet.microsoft.com/en-us/library/cc732236.aspx</span></div><div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div><div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number] = CreateFileA(<a class="code" href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a>[comport_number],</div><div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;                      GENERIC_READ|GENERIC_WRITE,</div><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;                      0,                          <span class="comment">/* no share  */</span></div><div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                      NULL,                       <span class="comment">/* no security */</span></div><div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                      OPEN_EXISTING,</div><div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                      0,                          <span class="comment">/* no threads */</span></div><div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                      NULL);                      <span class="comment">/* no templates */</span></div><div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div><div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number]==INVALID_HANDLE_VALUE)</div><div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  {</div><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;unable to open comport\n&quot;</span>);</div><div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;  }</div><div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div><div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  DCB port_settings;</div><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  memset(&amp;port_settings, 0, <span class="keyword">sizeof</span>(port_settings));  <span class="comment">/* clear the new struct  */</span></div><div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  port_settings.DCBlength = <span class="keyword">sizeof</span>(port_settings);</div><div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div><div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;  <span class="keywordflow">if</span>(!BuildCommDCBA(<a class="code" href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a>, &amp;port_settings))</div><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  {</div><div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;unable to set comport dcb settings\n&quot;</span>);</div><div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    CloseHandle(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number]);</div><div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  }</div><div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div><div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  <span class="keywordflow">if</span>(!SetCommState(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], &amp;port_settings))</div><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  {</div><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;unable to set comport cfg settings\n&quot;</span>);</div><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    CloseHandle(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number]);</div><div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  }</div><div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  COMMTIMEOUTS Cptimeouts;</div><div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div><div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  Cptimeouts.ReadIntervalTimeout         = MAXDWORD;</div><div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  Cptimeouts.ReadTotalTimeoutMultiplier  = 0;</div><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  Cptimeouts.ReadTotalTimeoutConstant    = 0;</div><div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  Cptimeouts.WriteTotalTimeoutMultiplier = 0;</div><div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  Cptimeouts.WriteTotalTimeoutConstant   = 0;</div><div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keywordflow">if</span>(!SetCommTimeouts(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], &amp;Cptimeouts))</div><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  {</div><div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a>(<span class="stringliteral">&quot;unable to set comport time-out settings\n&quot;</span>);</div><div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    CloseHandle(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number]);</div><div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  }</div><div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;</div><div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_a125cac262bfd9637f5a25c903f3e8918"><div class="ttname"><a href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a></div><div class="ttdeci">char comports[16][MAX_NAME_LENGTH+1]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00414">rs232.cpp:414</a></div></div>
+<div class="ttc" id="rs232_8cpp_html_a8000f53f138489366a96b5dbb90b3599"><div class="ttname"><a href="rs232_8cpp.html#a8000f53f138489366a96b5dbb90b3599">mode_str</a></div><div class="ttdeci">char mode_str[128]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00420">rs232.cpp:420</a></div></div>
+<div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+<div class="ttc" id="log_8h_html_ab00dd66449102a6d5f35f8c9687892f7"><div class="ttname"><a href="log_8h.html#ab00dd66449102a6d5f35f8c9687892f7">logDBG</a></div><div class="ttdeci">#define logDBG( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00034">log.h:34</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00414">comports</a>, <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>, <a class="el" href="log_8h_source.html#l00034">logDBG</a> и <a class="el" href="rs232_8cpp_source.html#l00420">mode_str</a>.</p>
+
 </div>
 </div>
 <a id="ab204b323695fdcc87a0dd7f04e8adc97"></a>
@@ -377,6 +413,11 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00587">587</a></p>
+<div class="fragment"><div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;{</div><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordtype">int</span> n;</div><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div><div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="comment">/* added the void pointer cast, otherwise gcc will complain about */</span></div><div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="comment">/* &quot;warning: dereferencing type-punned pointer will break strict aliasing rules&quot; */</span></div><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;</div><div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  ReadFile(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], buf, size, (LPDWORD)((<span class="keywordtype">void</span> *)&amp;n), NULL);</div><div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;  <span class="keywordflow">return</span>(n);</div><div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
 
 </div>
 </div>
@@ -412,6 +453,11 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00612">612</a></p>
+<div class="fragment"><div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;{</div><div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordtype">int</span> n;</div><div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div><div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  <span class="keywordflow">if</span>(WriteFile(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], buf, size, (LPDWORD)((<span class="keywordtype">void</span> *)&amp;n), NULL))</div><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;  {</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keywordflow">return</span>(n);</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  }</div><div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div><div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;  <span class="keywordflow">return</span>(-1);</div><div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
 </div>
 </div>
 <a id="ad1e29ede1c8d5ed5f32c67a097d5bbe9"></a>
@@ -440,6 +486,24 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00600">600</a></p>
+<div class="fragment"><div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;{</div><div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;  <span class="keywordtype">int</span> n;</div><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;</div><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  WriteFile(<a class="code" href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a>[comport_number], &amp;<span class="keywordtype">byte</span>, 1, (LPDWORD)((<span class="keywordtype">void</span> *)&amp;n), NULL);</div><div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div><div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  <span class="keywordflow">if</span>(n&lt;0)  <span class="keywordflow">return</span>(1);</div><div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;  <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;}</div><div class="ttc" id="rs232_8cpp_html_aa220cb7c3b32ff4721c6b41ad7596113"><div class="ttname"><a href="rs232_8cpp.html#aa220cb7c3b32ff4721c6b41ad7596113">Cport</a></div><div class="ttdeci">HANDLE Cport[16]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00410">rs232.cpp:410</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00410">Cport</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="rs232_8cpp_source.html#l00694">RS232_cputs()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="rs232_8h_ad1e29ede1c8d5ed5f32c67a097d5bbe9_icgraph.png" border="0" usemap="#rs232_8h_ad1e29ede1c8d5ed5f32c67a097d5bbe9_icgraph" alt=""/></div>
+<map name="rs232_8h_ad1e29ede1c8d5ed5f32c67a097d5bbe9_icgraph" id="rs232_8h_ad1e29ede1c8d5ed5f32c67a097d5bbe9_icgraph">
+<area shape="rect"  title=" " alt="" coords="155,5,281,32"/>
+<area shape="rect"  href="rs232_8cpp.html#a179396991e5d9e3ef1be67e6f03038a6" title=" " alt="" coords="5,5,107,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ad03a4a934e2760922e73cdb941aa5529"></a>
@@ -458,12 +522,19 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="rs232_8cpp_source.html">rs232.cpp</a> строка <a class="el" href="rs232_8cpp_source.html#l00423">423</a></p>
+<div class="fragment"><div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;{</div><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordtype">int</span> i;</div><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordflow">for</span> (i = 0; i &lt; (<a class="code" href="rs232_8cpp.html#a0c397a708cec89c74029582574516b30">MAX_NAME_LENGTH</a> - <a class="code" href="rs232_8cpp.html#a237aea34885fe9586f44dcafadafecfb">NAME_PREFIX_LENGTH</a> - 1) &amp;&amp; name[i] != 0; i++)</div><div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <a class="code" href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a>[0][i + <a class="code" href="rs232_8cpp.html#a237aea34885fe9586f44dcafadafecfb">NAME_PREFIX_LENGTH</a>] = name[i];</div><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  i++;</div><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <a class="code" href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a>[0][i + <a class="code" href="rs232_8cpp.html#a237aea34885fe9586f44dcafadafecfb">NAME_PREFIX_LENGTH</a>] = 0;</div><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;};</div><div class="ttc" id="rs232_8cpp_html_a125cac262bfd9637f5a25c903f3e8918"><div class="ttname"><a href="rs232_8cpp.html#a125cac262bfd9637f5a25c903f3e8918">comports</a></div><div class="ttdeci">char comports[16][MAX_NAME_LENGTH+1]</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00414">rs232.cpp:414</a></div></div>
+<div class="ttc" id="rs232_8cpp_html_a237aea34885fe9586f44dcafadafecfb"><div class="ttname"><a href="rs232_8cpp.html#a237aea34885fe9586f44dcafadafecfb">NAME_PREFIX_LENGTH</a></div><div class="ttdeci">#define NAME_PREFIX_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00413">rs232.cpp:413</a></div></div>
+<div class="ttc" id="rs232_8cpp_html_a0c397a708cec89c74029582574516b30"><div class="ttname"><a href="rs232_8cpp.html#a0c397a708cec89c74029582574516b30">MAX_NAME_LENGTH</a></div><div class="ttdeci">#define MAX_NAME_LENGTH</div><div class="ttdef"><b>Definition:</b> <a href="rs232_8cpp_source.html#l00412">rs232.cpp:412</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="rs232_8cpp_source.html#l00414">comports</a>, <a class="el" href="rs232_8cpp_source.html#l00412">MAX_NAME_LENGTH</a> и <a class="el" href="rs232_8cpp_source.html#l00413">NAME_PREFIX_LENGTH</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:42. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

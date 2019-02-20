@@ -1,22 +1,32 @@
 <map id="nlohmann::basic_json::merge_patch" name="nlohmann::basic_json::merge_patch">
-<area shape="rect" id="node1" title="applies a JSON Merge Patch" alt="" coords="5,416,153,457"/>
-<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="201,91,349,132"/>
-<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="201,481,349,523"/>
-<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="201,547,349,588"/>
-<area shape="rect" id="node10" href="$classnlohmann_1_1basic__json.html#a0ff28dac23f2bdecee9564d07f51dcdc" title="returns an iterator to the first element" alt="" coords="201,612,349,653"/>
-<area shape="rect" id="node11" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="397,199,575,226"/>
-<area shape="rect" id="node12" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="201,333,349,375"/>
-<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#ac871e3b03fb2eeca9a8de4db2bea760f" title="access specified array element" alt="" coords="201,416,349,457"/>
-<area shape="rect" id="node3" href="$classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="408,32,564,73"/>
-<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="633,29,775,71"/>
-<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="625,95,783,136"/>
-<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1other__error.html#a87e8ab894e8c85c0d97a0919782d3683" title=" " alt="" coords="627,160,781,201"/>
-<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="833,160,1015,201"/>
-<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="623,232,785,273"/>
-<area shape="rect" id="node14" href="$classnlohmann_1_1basic__json.html#a69b596a4a6683b362095c9a139637396" title="return whether value is a string" alt="" coords="412,301,560,343"/>
-<area shape="rect" id="node15" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="411,367,561,408"/>
+<area shape="rect" id="node1" title="applies a JSON Merge Patch" alt="" coords="5,527,153,568"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a0ff28dac23f2bdecee9564d07f51dcdc" title="returns an iterator to the first element" alt="" coords="201,184,349,225"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a13e032a02a7fd8a93fdddc2fcbc4763c" title="returns an iterator to one past the last element" alt="" coords="397,67,575,94"/>
+<area shape="rect" id="node8" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="201,315,349,356"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c" title="return whether value is an object" alt="" coords="201,811,349,852"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada" title="explicitly create an object from an initializer list" alt="" coords="201,876,349,917"/>
+<area shape="rect" id="node19" href="$classnlohmann_1_1basic__json.html#ac871e3b03fb2eeca9a8de4db2bea760f" title="access specified array element" alt="" coords="201,527,349,568"/>
+<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#a81e0c41a4a9dff4df2f6973f7f8b2a83" title="applies a JSON patch" alt="" coords="201,745,349,787"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1iter__impl.html#a5d5f92c7f6848814bc82cf7e4e541820" title="set the iterator to the first value" alt="" coords="415,119,557,160"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26a823483846a12d890c3feed3097eb" title="set iterator to a defined past the end" alt="" coords="849,68,1023,109"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1primitive__iterator__t.html#a9d9b005906106e12aed738f97d7fee42" title="set iterator to a defined beginning" alt="" coords="623,71,797,112"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1iter__impl.html#a23e50ad4c13aa62d9ac7f60a123823ee" title="set the iterator past the last value" alt="" coords="639,5,781,47"/>
+<area shape="rect" id="node9" href="$classnlohmann_1_1basic__json.html#a4a82d3fb7a111641decf35c2fb707c7f" title="checks the class invariants" alt="" coords="636,497,784,539"/>
+<area shape="rect" id="node10" href="$classnlohmann_1_1detail_1_1invalid__iterator.html#a4e849260a3caa1b288c7e619130c6c09" title=" " alt="" coords="405,184,567,225"/>
+<area shape="rect" id="node13" href="$classnlohmann_1_1detail_1_1type__error.html#aecc083aea4b698c33d042670ba50c10f" title=" " alt="" coords="411,315,561,356"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#a69b596a4a6683b362095c9a139637396" title="return whether value is a string" alt="" coords="412,249,560,291"/>
 <area shape="rect" id="node16" href="$classnlohmann_1_1basic__json.html#a9d0a478571f82f0163b96b2424cd998f" title="return the type as string" alt="" coords="412,432,560,473"/>
-<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="412,497,560,539"/>
-<area shape="rect" id="node19" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="412,563,560,604"/>
-<area shape="rect" id="node20" href="$classnlohmann_1_1basic__json.html#aed115142bd0c6c66c864700e0467df55" title="create an empty value with a given type" alt="" coords="412,628,560,669"/>
+<area shape="rect" id="node11" href="$classnlohmann_1_1detail_1_1exception.html#abf41a7e9178356314082284e6cfea278" title=" " alt="" coords="845,660,1027,701"/>
+<area shape="rect" id="node12" href="$classnlohmann_1_1detail_1_1invalid__iterator.html#adf4a6697420f3bddb4addfc0b98f6ee2" title=" " alt="" coords="629,188,791,229"/>
+<area shape="rect" id="node14" href="$classnlohmann_1_1detail_1_1type__error.html#aa01edaa0bf18b853368f0b900e485cd7" title=" " alt="" coords="635,315,785,356"/>
+<area shape="rect" id="node20" href="$classnlohmann_1_1basic__json.html#a8faa039ca82427ed29c486ffd00600c3" title="return whether value is null" alt="" coords="412,615,560,656"/>
+<area shape="rect" id="node21" href="$classnlohmann_1_1basic__json.html#aef9ce5dd2381caee1f8ddcdb5bdd9c65" title="return whether value is an array" alt="" coords="412,680,560,721"/>
+<area shape="rect" id="node22" href="$classnlohmann_1_1basic__json.html#aed115142bd0c6c66c864700e0467df55" title="create an empty value with a given type" alt="" coords="412,497,560,539"/>
+<area shape="rect" id="node24" href="$classnlohmann_1_1json__pointer.html#ac53f5b79dd91da78743c437832f57ce4" title=" " alt="" coords="408,876,564,917"/>
+<area shape="rect" id="node25" href="$classnlohmann_1_1detail_1_1out__of__range.html#a3f6d82a6f967c4728a1ec735a7867073" title=" " alt="" coords="639,901,781,943"/>
+<area shape="rect" id="node27" href="$classnlohmann_1_1detail_1_1parse__error.html#a9fd60ad6bce80fd99686ad332faefd37" title="create a parse error exception" alt="" coords="407,811,565,852"/>
+<area shape="rect" id="node29" href="$classnlohmann_1_1detail_1_1other__error.html#a87e8ab894e8c85c0d97a0919782d3683" title=" " alt="" coords="409,745,563,787"/>
+<area shape="rect" id="node26" href="$classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731" title=" " alt="" coords="855,901,1017,943"/>
+<area shape="rect" id="node28" href="$classnlohmann_1_1detail_1_1parse__error.html#a0ea816ea3521d7109407948cb1b850f7" title=" " alt="" coords="631,784,789,825"/>
+<area shape="rect" id="node30" href="$classnlohmann_1_1detail_1_1other__error.html#adf9227d6ca5161508f6a598a0dc6e7cd" title=" " alt="" coords="633,719,787,760"/>
 </map>

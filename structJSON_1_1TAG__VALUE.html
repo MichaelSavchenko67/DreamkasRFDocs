@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1TAG__VALUE.html">TAG_VALUE</a></li>  </ul>
@@ -70,6 +47,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Открытые типы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="structJSON_1_1TAG__VALUE-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Структура JSON::TAG_VALUE</div>  </div>
@@ -77,12 +55,14 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::TAG_VALUE:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::TAG_VALUE:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1TAG__VALUE__coll__graph.png" border="0" usemap="#JSON_1_1TAG__VALUE_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1TAG__VALUE_coll__map" id="JSON_1_1TAG__VALUE_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,149,200"/>
+<area shape="rect"  title=" " alt="" coords="5,5,149,244"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -115,8 +95,22 @@ $(function() {
 <tr class="separator:a50210a9421829dcf7af28b081ba27c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f3e58a94543a5501d0c7682852f8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744ee">TAG_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html#ac8f3e58a94543a5501d0c7682852f8d6">getType</a> () const</td></tr>
 <tr class="separator:ac8f3e58a94543a5501d0c7682852f8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ae739aff16523767830d7a847a6160ccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744ee">TAG_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a></td></tr>
+<tr class="separator:ae739aff16523767830d7a847a6160ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457da2ca333adb48ecdee092a8762bbe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a></td></tr>
+<tr class="separator:a457da2ca333adb48ecdee092a8762bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4a72e02aa2c025bde99444ce4f1d30"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a></td></tr>
+<tr class="separator:a1e4a72e02aa2c025bde99444ce4f1d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12efd54c55b6a73834d67dbeb6fcf564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1TAG__VALUE.html#a12efd54c55b6a73834d67dbeb6fcf564">boolean</a></td></tr>
+<tr class="separator:a12efd54c55b6a73834d67dbeb6fcf564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Перечисления</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00450">450</a></p>
+</div><h2 class="groupheader">Перечисления</h2>
 <a id="ac1eb8fa1eb20eec9524ac12d198744ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1eb8fa1eb20eec9524ac12d198744ee">&#9670;&nbsp;</a></span>TAG_TYPE</h2>
 
@@ -135,6 +129,12 @@ $(function() {
 <tr><td class="fieldname"><a id="ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2"></a>TAG_TYPE_MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00452">452</a></p>
+<div class="fragment"><div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        {</div><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139">TAG_TYPE_NUMBER</a>,</div><div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0">TAG_TYPE_STRING</a>,</div><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739">TAG_TYPE_BOOLEAN</a>,</div><div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2">TAG_TYPE_MAX</a></div><div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        };</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0">JSON::TAG_VALUE::TAG_TYPE_STRING</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00455">json.h:455</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139">JSON::TAG_VALUE::TAG_TYPE_NUMBER</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00454">json.h:454</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2">JSON::TAG_VALUE::TAG_TYPE_MAX</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00457">json.h:457</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739">JSON::TAG_VALUE::TAG_TYPE_BOOLEAN</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00456">json.h:456</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Конструктор(ы)</h2>
@@ -161,6 +161,13 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00460">460</a></p>
+<div class="fragment"><div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        {</div><div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a> = <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2">TAG_TYPE_MAX</a>;</div><div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a> = uint64_t();</div><div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a> = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>();</div><div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="keywordtype">boolean</span> = bool();</div><div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_a457da2ca333adb48ecdee092a8762bbe"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00508">json.h:508</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eeae4cf825c526e17c83b10c68a81945ee2">JSON::TAG_VALUE::TAG_TYPE_MAX</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00457">json.h:457</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a1e4a72e02aa2c025bde99444ce4f1d30"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE::str</a></div><div class="ttdeci">string str</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00509">json.h:509</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ae739aff16523767830d7a847a6160ccc"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE::type</a></div><div class="ttdeci">TAG_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00507">json.h:507</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a41a794aed9e5750be218b1a30fbb5724"></a>
@@ -187,6 +194,13 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00468">468</a></p>
+<div class="fragment"><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        {</div><div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a> = <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139">TAG_TYPE_NUMBER</a>;</div><div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a> = n;</div><div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a> = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>();</div><div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="keywordtype">boolean</span> = bool();</div><div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea899b931e1659fa8a791a43239eb88139">JSON::TAG_VALUE::TAG_TYPE_NUMBER</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00454">json.h:454</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a457da2ca333adb48ecdee092a8762bbe"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00508">json.h:508</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a1e4a72e02aa2c025bde99444ce4f1d30"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE::str</a></div><div class="ttdeci">string str</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00509">json.h:509</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ae739aff16523767830d7a847a6160ccc"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE::type</a></div><div class="ttdeci">TAG_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00507">json.h:507</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaef06492faf41aca17cca708453a1b3a"></a>
@@ -213,6 +227,12 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00476">476</a></p>
+<div class="fragment"><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        {</div><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a> = <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0">TAG_TYPE_STRING</a>;</div><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a> = uint64_t();</div><div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a> = s;</div><div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            <span class="keywordtype">boolean</span> = bool();</div><div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea7f69676e682d923be43a9290247b6eb0">JSON::TAG_VALUE::TAG_TYPE_STRING</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00455">json.h:455</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a457da2ca333adb48ecdee092a8762bbe"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00508">json.h:508</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a1e4a72e02aa2c025bde99444ce4f1d30"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE::str</a></div><div class="ttdeci">string str</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00509">json.h:509</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ae739aff16523767830d7a847a6160ccc"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE::type</a></div><div class="ttdeci">TAG_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00507">json.h:507</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9f48666761bfc5a48d51c91982d29701"></a>
@@ -239,6 +259,13 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00484">484</a></p>
+<div class="fragment"><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        {</div><div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a> = <a class="code" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739">TAG_TYPE_BOOLEAN</a>;</div><div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a> = uint64_t();</div><div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <a class="code" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a> = <a class="code" href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">string</a>();</div><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <span class="keywordtype">boolean</span> = b;</div><div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_a457da2ca333adb48ecdee092a8762bbe"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00508">json.h:508</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744eea939d0ed2e0185e8782a8f9e964eda739">JSON::TAG_VALUE::TAG_TYPE_BOOLEAN</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00456">json.h:456</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a1e4a72e02aa2c025bde99444ce4f1d30"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE::str</a></div><div class="ttdeci">string str</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00509">json.h:509</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_ae739aff16523767830d7a847a6160ccc"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE::type</a></div><div class="ttdeci">TAG_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00507">json.h:507</a></div></div>
+<div class="ttc" id="namespacenlohmann_1_1detail_html_a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21"><div class="ttname"><a href="namespacenlohmann_1_1detail.html#a1ed8fc6239da25abcaf681d30ace4985ab45cffe084dd3d20d928bee85e7b0f21">nlohmann::detail::value_t::string</a></div><div class="ttdoc">string value</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -265,6 +292,22 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00503">503</a></p>
+<div class="fragment"><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structJSON_1_1TAG__VALUE.html#a12efd54c55b6a73834d67dbeb6fcf564">boolean</a>; }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_a12efd54c55b6a73834d67dbeb6fcf564"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a12efd54c55b6a73834d67dbeb6fcf564">JSON::TAG_VALUE::boolean</a></div><div class="ttdeci">bool boolean</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00510">json.h:510</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="json_8h_source.html#l00492">operator==()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structJSON_1_1TAG__VALUE_a50210a9421829dcf7af28b081ba27c1a_icgraph.png" border="0" usemap="#structJSON_1_1TAG__VALUE_a50210a9421829dcf7af28b081ba27c1a_icgraph" alt=""/></div>
+<map name="structJSON_1_1TAG__VALUE_a50210a9421829dcf7af28b081ba27c1a_icgraph" id="structJSON_1_1TAG__VALUE_a50210a9421829dcf7af28b081ba27c1a_icgraph">
+<area shape="rect"  title=" " alt="" coords="268,5,485,32"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a51b811841b70369a7a2145dfabf06a89" title=" " alt="" coords="5,5,220,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a94df919561bf098f581f5292ce503a29"></a>
@@ -289,6 +332,22 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00501">501</a></p>
+<div class="fragment"><div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">number</a>; }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_a457da2ca333adb48ecdee092a8762bbe"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a457da2ca333adb48ecdee092a8762bbe">JSON::TAG_VALUE::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00508">json.h:508</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="json_8h_source.html#l00492">operator==()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structJSON_1_1TAG__VALUE_a94df919561bf098f581f5292ce503a29_icgraph.png" border="0" usemap="#structJSON_1_1TAG__VALUE_a94df919561bf098f581f5292ce503a29_icgraph" alt=""/></div>
+<map name="structJSON_1_1TAG__VALUE_a94df919561bf098f581f5292ce503a29_icgraph" id="structJSON_1_1TAG__VALUE_a94df919561bf098f581f5292ce503a29_icgraph">
+<area shape="rect"  title=" " alt="" coords="268,5,484,32"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a51b811841b70369a7a2145dfabf06a89" title=" " alt="" coords="5,5,220,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -315,6 +374,22 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00502">502</a></p>
+<div class="fragment"><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">str</a>; }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_a1e4a72e02aa2c025bde99444ce4f1d30"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a1e4a72e02aa2c025bde99444ce4f1d30">JSON::TAG_VALUE::str</a></div><div class="ttdeci">string str</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00509">json.h:509</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="json_8h_source.html#l00492">operator==()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structJSON_1_1TAG__VALUE_a0b224e06f6b4aa14e7577cf14987b8b9_icgraph.png" border="0" usemap="#structJSON_1_1TAG__VALUE_a0b224e06f6b4aa14e7577cf14987b8b9_icgraph" alt=""/></div>
+<map name="structJSON_1_1TAG__VALUE_a0b224e06f6b4aa14e7577cf14987b8b9_icgraph" id="structJSON_1_1TAG__VALUE_a0b224e06f6b4aa14e7577cf14987b8b9_icgraph">
+<area shape="rect"  title=" " alt="" coords="268,5,472,32"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a51b811841b70369a7a2145dfabf06a89" title=" " alt="" coords="5,5,220,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac8f3e58a94543a5501d0c7682852f8d6"></a>
@@ -339,6 +414,22 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00504">504</a></p>
+<div class="fragment"><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">type</a>; }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_ae739aff16523767830d7a847a6160ccc"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ae739aff16523767830d7a847a6160ccc">JSON::TAG_VALUE::type</a></div><div class="ttdeci">TAG_TYPE type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00507">json.h:507</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="json_8h_source.html#l00492">operator==()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="structJSON_1_1TAG__VALUE_ac8f3e58a94543a5501d0c7682852f8d6_icgraph.png" border="0" usemap="#structJSON_1_1TAG__VALUE_ac8f3e58a94543a5501d0c7682852f8d6_icgraph" alt=""/></div>
+<map name="structJSON_1_1TAG__VALUE_ac8f3e58a94543a5501d0c7682852f8d6_icgraph" id="structJSON_1_1TAG__VALUE_ac8f3e58a94543a5501d0c7682852f8d6_icgraph">
+<area shape="rect"  title=" " alt="" coords="268,5,467,32"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a51b811841b70369a7a2145dfabf06a89" title=" " alt="" coords="5,5,220,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -365,18 +456,125 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00492">492</a></p>
+<div class="fragment"><div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        {</div><div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            <span class="keywordtype">bool</span> result = (<a class="code" href="structJSON_1_1TAG__VALUE.html#ac8f3e58a94543a5501d0c7682852f8d6">getType</a>() == other.getType());</div><div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            result = result &amp;&amp; (<a class="code" href="structJSON_1_1TAG__VALUE.html#a94df919561bf098f581f5292ce503a29">getNumber</a>() == other.getNumber());</div><div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            result = result &amp;&amp; (<a class="code" href="structJSON_1_1TAG__VALUE.html#a0b224e06f6b4aa14e7577cf14987b8b9">getString</a>() == other.getString());</div><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            result = result &amp;&amp; (<a class="code" href="structJSON_1_1TAG__VALUE.html#a50210a9421829dcf7af28b081ba27c1a">getBoolean</a>() == other.getBoolean());</div><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        }</div><div class="ttc" id="structJSON_1_1TAG__VALUE_html_ac8f3e58a94543a5501d0c7682852f8d6"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#ac8f3e58a94543a5501d0c7682852f8d6">JSON::TAG_VALUE::getType</a></div><div class="ttdeci">TAG_TYPE getType() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00504">json.h:504</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a94df919561bf098f581f5292ce503a29"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a94df919561bf098f581f5292ce503a29">JSON::TAG_VALUE::getNumber</a></div><div class="ttdeci">uint64_t getNumber() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00501">json.h:501</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a0b224e06f6b4aa14e7577cf14987b8b9"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a0b224e06f6b4aa14e7577cf14987b8b9">JSON::TAG_VALUE::getString</a></div><div class="ttdeci">string getString() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00502">json.h:502</a></div></div>
+<div class="ttc" id="structJSON_1_1TAG__VALUE_html_a50210a9421829dcf7af28b081ba27c1a"><div class="ttname"><a href="structJSON_1_1TAG__VALUE.html#a50210a9421829dcf7af28b081ba27c1a">JSON::TAG_VALUE::getBoolean</a></div><div class="ttdeci">bool getBoolean() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00503">json.h:503</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="json_8h_source.html#l00503">getBoolean()</a>, <a class="el" href="json_8h_source.html#l00501">getNumber()</a>, <a class="el" href="json_8h_source.html#l00502">getString()</a> и <a class="el" href="json_8h_source.html#l00504">getType()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1TAG__VALUE_a51b811841b70369a7a2145dfabf06a89_cgraph.png" border="0" usemap="#structJSON_1_1TAG__VALUE_a51b811841b70369a7a2145dfabf06a89_cgraph" alt=""/></div>
 <map name="structJSON_1_1TAG__VALUE_a51b811841b70369a7a2145dfabf06a89_cgraph" id="structJSON_1_1TAG__VALUE_a51b811841b70369a7a2145dfabf06a89_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,81,220,108"/>
-<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#ac8f3e58a94543a5501d0c7682852f8d6" title=" " alt="" coords="277,5,476,32"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a50210a9421829dcf7af28b081ba27c1a" title=" " alt="" coords="268,5,485,32"/>
 <area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a94df919561bf098f581f5292ce503a29" title=" " alt="" coords="269,56,485,83"/>
 <area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a0b224e06f6b4aa14e7577cf14987b8b9" title=" " alt="" coords="275,107,479,133"/>
-<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#a50210a9421829dcf7af28b081ba27c1a" title=" " alt="" coords="268,157,485,184"/>
+<area shape="rect"  href="structJSON_1_1TAG__VALUE.html#ac8f3e58a94543a5501d0c7682852f8d6" title=" " alt="" coords="277,157,476,184"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a12efd54c55b6a73834d67dbeb6fcf564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12efd54c55b6a73834d67dbeb6fcf564">&#9670;&nbsp;</a></span>boolean</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JSON::TAG_VALUE::boolean</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00510">510</a></p>
+
+</div>
+</div>
+<a id="a457da2ca333adb48ecdee092a8762bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457da2ca333adb48ecdee092a8762bbe">&#9670;&nbsp;</a></span>number</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t JSON::TAG_VALUE::number</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00508">508</a></p>
+
+</div>
+</div>
+<a id="a1e4a72e02aa2c025bde99444ce4f1d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4a72e02aa2c025bde99444ce4f1d30">&#9670;&nbsp;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string JSON::TAG_VALUE::str</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00509">509</a></p>
+
+</div>
+</div>
+<a id="ae739aff16523767830d7a847a6160ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae739aff16523767830d7a847a6160ccc">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJSON_1_1TAG__VALUE.html#ac1eb8fa1eb20eec9524ac12d198744ee">TAG_TYPE</a> JSON::TAG_VALUE::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00507">507</a></p>
 
 </div>
 </div>
@@ -386,7 +584,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

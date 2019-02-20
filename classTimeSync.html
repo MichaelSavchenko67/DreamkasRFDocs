@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,41 +29,24 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-static-methods">Открытые статические члены</a> &#124;
 <a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
 <a href="classTimeSync-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс TimeSync</div>  </div>
@@ -74,21 +54,25 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="time__sync_8h_source.html">time_sync.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TimeSync:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TimeSync:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTimeSync__inherit__graph.png" border="0" usemap="#TimeSync_inherit__map" alt="Inheritance graph"/></div>
 <map name="TimeSync_inherit__map" id="TimeSync_inherit__map">
-<area shape="rect"  title=" " alt="" coords="5,5,169,229"/>
-<area shape="rect"  href="classTestTimeSync.html" title=" " alt="" coords="20,277,155,369"/>
+<area shape="rect"  title=" " alt="" coords="5,5,169,420"/>
+<area shape="rect"  href="classTestTimeSync.html" title=" " alt="" coords="20,468,155,560"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TimeSync:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TimeSync:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTimeSync__coll__graph.png" border="0" usemap="#TimeSync_coll__map" alt="Collaboration graph"/></div>
 <map name="TimeSync_coll__map" id="TimeSync_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,5,169,229"/>
+<area shape="rect"  title=" " alt="" coords="5,5,169,405"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -129,10 +113,78 @@ $(function() {
 <tr class="separator:ac5ef72858cd13f42bb25af72c2523863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8dc55cad76024232f962dbc7f2b541e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#ab8dc55cad76024232f962dbc7f2b541e">~TimeSync</a> ()</td></tr>
 <tr class="separator:ab8dc55cad76024232f962dbc7f2b541e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a8dca60d829d18fccd86aab64e01854f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a8dca60d829d18fccd86aab64e01854f6">TimeSync</a> (<a class="el" href="classTimeSync.html">TimeSync</a> const &amp;)=delete</td></tr>
+<tr class="separator:a8dca60d829d18fccd86aab64e01854f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49156308dcc934ac240a99b112ed2b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#ab49156308dcc934ac240a99b112ed2b8">operator=</a> (<a class="el" href="classTimeSync.html">TimeSync</a> const &amp;)=delete</td></tr>
+<tr class="separator:ab49156308dcc934ac240a99b112ed2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833f7e7f8d2c05fbfff3533fcec88447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">updateZone</a> (string newZone)</td></tr>
+<tr class="memdesc:a833f7e7f8d2c05fbfff3533fcec88447"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateZone обновление ссылки на часовой пояс  <a href="#a833f7e7f8d2c05fbfff3533fcec88447">Подробнее...</a><br /></td></tr>
+<tr class="separator:a833f7e7f8d2c05fbfff3533fcec88447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe94b9496cdc125fe594b6b057826d83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83">updateZoneDefault</a> ()</td></tr>
+<tr class="memdesc:afe94b9496cdc125fe594b6b057826d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">updateZoneDefault обновить ссылка на стандартный часовой пояс  <a href="#afe94b9496cdc125fe594b6b057826d83">Подробнее...</a><br /></td></tr>
+<tr class="separator:afe94b9496cdc125fe594b6b057826d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a118a468207b8e4388abf411459cc8c0c"><td class="memItemLeft" align="right" valign="top">mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a118a468207b8e4388abf411459cc8c0c">_mutex</a></td></tr>
+<tr class="separator:a118a468207b8e4388abf411459cc8c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4ac83317b0188e65481b93f9d4bd42"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structTimeZone.html">TimeZone</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a></td></tr>
+<tr class="separator:a9a4ac83317b0188e65481b93f9d4bd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af52323f74ce061e44276016c7fd69208"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#af52323f74ce061e44276016c7fd69208">fileTZ</a> = &quot;/etc/TZ&quot;</td></tr>
+<tr class="separator:af52323f74ce061e44276016c7fd69208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1d2888762eaae20d3798408f364047"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a> = &quot;/etc/localtime&quot;</td></tr>
+<tr class="separator:a6f1d2888762eaae20d3798408f364047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb98670b8d4de7c7567455480566d8c4"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">ntpService</a> = &quot;/etc/init.d/S49ntp&quot;</td></tr>
+<tr class="separator:afb98670b8d4de7c7567455480566d8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8e9006172ddd241c5c446b07160442"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Asia/&quot;</td></tr>
+<tr class="separator:aee8e9006172ddd241c5c446b07160442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46040391fb635eca6d921cfbb555655"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#aa46040391fb635eca6d921cfbb555655">zinfoEu</a> = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/&quot;</td></tr>
+<tr class="separator:aa46040391fb635eca6d921cfbb555655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ca8b2ebcd470887bb0380c32e9da06e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a2ca8b2ebcd470887bb0380c32e9da06e">defZoneBy</a> = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/Minsk&quot;</td></tr>
+<tr class="separator:a2ca8b2ebcd470887bb0380c32e9da06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be06f6137b1d312d13c7414801d0ba4"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a1be06f6137b1d312d13c7414801d0ba4">defZone</a> = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/Moscow&quot;</td></tr>
+<tr class="separator:a1be06f6137b1d312d13c7414801d0ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a7a0c05f7086aa58ab7dc66be63cc6c12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTimeSync.html">TimeSync</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a> = nullptr</td></tr>
+<tr class="separator:a7a0c05f7086aa58ab7dc66be63cc6c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00029">29</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a8dca60d829d18fccd86aab64e01854f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dca60d829d18fccd86aab64e01854f6">&#9670;&nbsp;</a></span>TimeSync() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSync::TimeSync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTimeSync.html">TimeSync</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac5ef72858cd13f42bb25af72c2523863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ef72858cd13f42bb25af72c2523863">&#9670;&nbsp;</a></span>TimeSync()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ef72858cd13f42bb25af72c2523863">&#9670;&nbsp;</a></span>TimeSync() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,6 +205,44 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00027">27</a></p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+2&quot;</span>,  <span class="stringliteral">&quot;Калининград&quot;</span>,            <a class="code" href="classTimeSync.html#aa46040391fb635eca6d921cfbb555655">zinfoEu</a> + <span class="stringliteral">&quot;Kaliningrad&quot;</span>  });</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+3&quot;</span>,  <span class="stringliteral">&quot;Москва&quot;</span>,                 <a class="code" href="classTimeSync.html#aa46040391fb635eca6d921cfbb555655">zinfoEu</a> + <span class="stringliteral">&quot;Moscow&quot;</span>       });</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+4&quot;</span>,  <span class="stringliteral">&quot;Самара&quot;</span>,                 <a class="code" href="classTimeSync.html#aa46040391fb635eca6d921cfbb555655">zinfoEu</a> + <span class="stringliteral">&quot;Samara&quot;</span>       });</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+5&quot;</span>,  <span class="stringliteral">&quot;Екатеринбург&quot;</span>,           <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Yekaterinburg&quot;</span>});</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+6&quot;</span>,  <span class="stringliteral">&quot;Омск&quot;</span>,                   <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Omsk&quot;</span>         });</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+7&quot;</span>,  <span class="stringliteral">&quot;Красноярск&quot;</span>,             <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Krasnoyarsk&quot;</span>  });</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+8&quot;</span>,  <span class="stringliteral">&quot;Иркутск&quot;</span>,                <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Irkutsk&quot;</span>      });</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+9&quot;</span>,  <span class="stringliteral">&quot;Якутск&quot;</span>,                 <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Yakutsk&quot;</span>      });</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+10&quot;</span>, <span class="stringliteral">&quot;Владивосток&quot;</span>,            <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Vladivostok&quot;</span>  });</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+11&quot;</span>, <span class="stringliteral">&quot;Магадан&quot;</span>,                <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Magadan&quot;</span>      });</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.push_back( {<span class="stringliteral">&quot;GMT+12&quot;</span>, <span class="stringliteral">&quot;Петропавловск-Камчатск&quot;</span>, <a class="code" href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">zinfoAs</a> + <span class="stringliteral">&quot;Kamchatka&quot;</span>    });</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="classTimeSync_html_aa46040391fb635eca6d921cfbb555655"><div class="ttname"><a href="classTimeSync.html#aa46040391fb635eca6d921cfbb555655">TimeSync::zinfoEu</a></div><div class="ttdeci">const string zinfoEu</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00060">time_sync.h:60</a></div></div>
+<div class="ttc" id="classTimeSync_html_a9a4ac83317b0188e65481b93f9d4bd42"><div class="ttname"><a href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">TimeSync::zoneinfo</a></div><div class="ttdeci">vector&lt; TimeZone &gt; zoneinfo</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00055">time_sync.h:55</a></div></div>
+<div class="ttc" id="classTimeSync_html_aee8e9006172ddd241c5c446b07160442"><div class="ttname"><a href="classTimeSync.html#aee8e9006172ddd241c5c446b07160442">TimeSync::zinfoAs</a></div><div class="ttdeci">const string zinfoAs</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00059">time_sync.h:59</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00059">zinfoAs</a>, <a class="el" href="time__sync_8h_source.html#l00060">zinfoEu</a> и <a class="el" href="time__sync_8h_source.html#l00055">zoneinfo</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00007">instance()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_ac5ef72858cd13f42bb25af72c2523863_icgraph.png" border="0" usemap="#classTimeSync_ac5ef72858cd13f42bb25af72c2523863_icgraph" alt=""/></div>
+<map name="classTimeSync_ac5ef72858cd13f42bb25af72c2523863_icgraph" id="classTimeSync_ac5ef72858cd13f42bb25af72c2523863_icgraph">
+<area shape="rect"  title=" " alt="" coords="1615,107,1763,133"/>
+<area shape="rect"  href="classTimeSync.html#a5bddf36dcd0a1f68b25e37bf8000f3d2" title=" " alt="" coords="1428,107,1567,133"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,157,717,184"/>
+<area shape="rect"  href="classMenu.html#af4cae4a710a80144910904d16806ba16" title=" " alt="" coords="1221,5,1371,32"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,107,1158,133"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1212,208,1380,235"/>
+<area shape="rect"  href="classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title=" " alt="" coords="1221,56,1371,83"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,157,479,184"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,157,295,184"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,157,89,184"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,263,1164,289"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,291,949,317"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,372,751,399"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,317,773,344"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,376,523,403"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,376,329,403"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,427,293,453"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,343,123,369"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,310,523,351"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,208,297,235"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -179,6 +269,8 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00042">42</a></p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -207,6 +299,54 @@ $(function() {
 </dl>
 <dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00106">106</a></p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> ( (index &gt;= <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.size()) || <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.empty() )</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:%d %s&quot;</span>, __PRETTY_FUNCTION__, __LINE__, <span class="stringliteral">&quot;incorrect index&quot;</span>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">updateZone</a>( <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.at(index).path );</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a833f7e7f8d2c05fbfff3533fcec88447"><div class="ttname"><a href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">TimeSync::updateZone</a></div><div class="ttdeci">bool updateZone(string newZone)</div><div class="ttdoc">updateZone обновление ссылки на часовой пояс</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8cpp_source.html#l00047">time_sync.cpp:47</a></div></div>
+<div class="ttc" id="classTimeSync_html_a9a4ac83317b0188e65481b93f9d4bd42"><div class="ttname"><a href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">TimeSync::zoneinfo</a></div><div class="ttdeci">vector&lt; TimeZone &gt; zoneinfo</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00055">time_sync.h:55</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a> и <a class="el" href="time__sync_8h_source.html#l00055">zoneinfo</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="testTimeSync_8h_source.html#l00021">TEST()</a> и <a class="el" href="menu_8cpp_source.html#l23806">Menu::time_zone_update()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_cgraph.png" border="0" usemap="#classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_cgraph" alt=""/></div>
+<map name="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_cgraph" id="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_cgraph">
+<area shape="rect"  title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="5,5,195,32"/>
+<area shape="rect"  href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447" title="updateZone Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ»ÐºÐ¸ Ð½Ð° ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="243,5,400,32"/>
+<area shape="rect"  href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83" title="updateZoneDefault Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ ÑÑÑÐ»ÐºÐ° Ð½Ð° ÑÑÐ°Ð½Ð´Ð°ÑÑÐ½ÑÐ¹ ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="448,5,647,32"/>
+</map>
+</div>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_icgraph.png" border="0" usemap="#classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_icgraph" alt=""/></div>
+<map name="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_icgraph" id="classTimeSync_a9649aa1ed3ad4d6f1d86714d55c28d52_icgraph">
+<area shape="rect"  title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="1455,47,1644,73"/>
+<area shape="rect"  href="testTimeSync_8h.html#a38557e5461a42872e3403c4ecb6800a9" title=" " alt="" coords="1295,21,1351,48"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1239,72,1407,99"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="821,5,976,32"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="1024,97,1191,124"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,5,717,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,5,479,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,5,295,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,5,89,32"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="835,152,963,179"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,220,751,247"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,165,773,192"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,224,523,251"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,224,329,251"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,275,293,301"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,191,123,217"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,158,523,199"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,56,297,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a6618d6ffafd921e876326c8368a65768"></a>
@@ -226,6 +366,42 @@ $(function() {
 
 <p>changeTimeZoneBy обновление часового пояса для РБ </p>
 <dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00139">139</a></p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;{</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">updateZone</a>( <a class="code" href="classTimeSync.html#a2ca8b2ebcd470887bb0380c32e9da06e">defZoneBy</a> );</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a2ca8b2ebcd470887bb0380c32e9da06e"><div class="ttname"><a href="classTimeSync.html#a2ca8b2ebcd470887bb0380c32e9da06e">TimeSync::defZoneBy</a></div><div class="ttdeci">const string defZoneBy</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00061">time_sync.h:61</a></div></div>
+<div class="ttc" id="classTimeSync_html_a833f7e7f8d2c05fbfff3533fcec88447"><div class="ttname"><a href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447">TimeSync::updateZone</a></div><div class="ttdeci">bool updateZone(string newZone)</div><div class="ttdoc">updateZone обновление ссылки на часовой пояс</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8cpp_source.html#l00047">time_sync.cpp:47</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00061">defZoneBy</a> и <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l29840">Menu::checkDateTime()</a>, <a class="el" href="testTimeSync_8h_source.html#l00072">TEST()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a6618d6ffafd921e876326c8368a65768_cgraph.png" border="0" usemap="#classTimeSync_a6618d6ffafd921e876326c8368a65768_cgraph" alt=""/></div>
+<map name="classTimeSync_a6618d6ffafd921e876326c8368a65768_cgraph" id="classTimeSync_a6618d6ffafd921e876326c8368a65768_cgraph">
+<area shape="rect"  title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="5,5,211,32"/>
+<area shape="rect"  href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447" title="updateZone Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ»ÐºÐ¸ Ð½Ð° ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="259,5,416,32"/>
+<area shape="rect"  href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83" title="updateZoneDefault Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ ÑÑÑÐ»ÐºÐ° Ð½Ð° ÑÑÐ°Ð½Ð´Ð°ÑÑÐ½ÑÐ¹ ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="464,5,663,32"/>
+</map>
+</div>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a6618d6ffafd921e876326c8368a65768_icgraph.png" border="0" usemap="#classTimeSync_a6618d6ffafd921e876326c8368a65768_icgraph" alt=""/></div>
+<map name="classTimeSync_a6618d6ffafd921e876326c8368a65768_icgraph" id="classTimeSync_a6618d6ffafd921e876326c8368a65768_icgraph">
+<area shape="rect"  title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="688,56,893,83"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="485,5,640,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,31,437,57"/>
+<area shape="rect"  href="testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8" title=" " alt="" coords="535,107,591,133"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,31,299,57"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,31,193,57"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,31,56,57"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -247,6 +423,41 @@ $(function() {
 <p>getCurrentZoneIndex получить индекс текущего часового пояса </p>
 <dl class="section return"><dt>Возвращает</dt><dd>index для zoneinfo </dd></dl>
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00144">144</a></p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">char</span> buf[MAXPATHLEN];</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    memset(buf, 0, <span class="keyword">sizeof</span>(buf));</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    uint32_t rv = 0;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">string</span> file = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span> ( realpath(<a class="code" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a>.c_str(), buf) != <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        file = buf;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> ( uint32_t i = 0; i &lt; <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.size(); ++i )</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>.at(i).path.compare(file) == 0 )</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            rv = i;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">break</span>;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> rv;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a9a4ac83317b0188e65481b93f9d4bd42"><div class="ttname"><a href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">TimeSync::zoneinfo</a></div><div class="ttdeci">vector&lt; TimeZone &gt; zoneinfo</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00055">time_sync.h:55</a></div></div>
+<div class="ttc" id="classTimeSync_html_a6f1d2888762eaae20d3798408f364047"><div class="ttname"><a href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">TimeSync::fileTime</a></div><div class="ttdeci">const string fileTime</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00057">time_sync.h:57</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00057">fileTime</a> и <a class="el" href="time__sync_8h_source.html#l00055">zoneinfo</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l23806">Menu::time_zone_update()</a> и <a class="el" href="menu_8cpp_source.html#l23540">Menu::verifyDateTime()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_ab1537a58169462da5b93e7536fc33ac7_icgraph.png" border="0" usemap="#classTimeSync_ab1537a58169462da5b93e7536fc33ac7_icgraph" alt=""/></div>
+<map name="classTimeSync_ab1537a58169462da5b93e7536fc33ac7_icgraph" id="classTimeSync_ab1537a58169462da5b93e7536fc33ac7_icgraph">
+<area shape="rect"  title="getCurrentZoneIndex Ð¿Ð¾Ð»ÑÑÐ¸ÑÑ Ð¸Ð½Ð´ÐµÐºÑ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ°" alt="" coords="1428,38,1607,79"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1212,71,1380,97"/>
+<area shape="rect"  href="classMenu.html#af4cae4a710a80144910904d16806ba16" title=" " alt="" coords="1221,20,1371,47"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,20,1158,47"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,97,1164,124"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,5,717,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,5,479,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,5,295,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,5,89,32"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,152,949,179"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,220,751,247"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,165,773,192"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,224,523,251"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,224,329,251"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,275,293,301"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,191,123,217"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,158,523,199"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,56,297,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a4002be2e1a3c74099fb0d7b642c09053"></a>
@@ -266,6 +477,40 @@ $(function() {
 
 <p>getZoneinfo вернуть список часовых поясов </p>
 <dl class="section return"><dt>Возвращает</dt><dd>zoneinfo </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00101">101</a></p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a9a4ac83317b0188e65481b93f9d4bd42"><div class="ttname"><a href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">TimeSync::zoneinfo</a></div><div class="ttdeci">vector&lt; TimeZone &gt; zoneinfo</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00055">time_sync.h:55</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00055">zoneinfo</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l23806">Menu::time_zone_update()</a> и <a class="el" href="menu_8cpp_source.html#l23540">Menu::verifyDateTime()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a4002be2e1a3c74099fb0d7b642c09053_icgraph.png" border="0" usemap="#classTimeSync_a4002be2e1a3c74099fb0d7b642c09053_icgraph" alt=""/></div>
+<map name="classTimeSync_a4002be2e1a3c74099fb0d7b642c09053_icgraph" id="classTimeSync_a4002be2e1a3c74099fb0d7b642c09053_icgraph">
+<area shape="rect"  title="getZoneinfo Ð²ÐµÑÐ½ÑÑÑ ÑÐ¿Ð¸ÑÐ¾Ðº ÑÐ°ÑÐ¾Ð²ÑÑ Ð¿Ð¾ÑÑÐ¾Ð²" alt="" coords="1428,45,1585,72"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1212,71,1380,97"/>
+<area shape="rect"  href="classMenu.html#af4cae4a710a80144910904d16806ba16" title=" " alt="" coords="1221,20,1371,47"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,20,1158,47"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,97,1164,124"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,5,717,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,5,479,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,5,295,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,5,89,32"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,152,949,179"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,220,751,247"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,165,773,192"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,224,523,251"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,224,329,251"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,275,293,301"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,191,123,217"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,158,523,199"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,56,297,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -291,15 +536,79 @@ $(function() {
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00007">7</a></p>
+<div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a> == <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a> = <span class="keyword">new</span> <a class="code" href="classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863">TimeSync</a>();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div><div class="ttc" id="classTimeSync_html_ac5ef72858cd13f42bb25af72c2523863"><div class="ttname"><a href="classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863">TimeSync::TimeSync</a></div><div class="ttdeci">TimeSync()</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8cpp_source.html#l00027">time_sync.cpp:27</a></div></div>
+<div class="ttc" id="classTimeSync_html_a7a0c05f7086aa58ab7dc66be63cc6c12"><div class="ttname"><a href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">TimeSync::_timeSync</a></div><div class="ttdeci">static TimeSync * _timeSync</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00031">time_sync.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00031">_timeSync</a> и <a class="el" href="time__sync_8cpp_source.html#l00027">TimeSync()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l29840">Menu::checkDateTime()</a>, <a class="el" href="menu_8cpp_source.html#l23806">Menu::time_zone_update()</a>, <a class="el" href="menu_8cpp_source.html#l30057">Menu::timeSyncForce()</a>, <a class="el" href="menu_8cpp_source.html#l23540">Menu::verifyDateTime()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_cgraph.png" border="0" usemap="#classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_cgraph" alt=""/></div>
 <map name="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_cgraph" id="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,144,32"/>
 <area shape="rect"  href="classTimeSync.html#ac5ef72858cd13f42bb25af72c2523863" title=" " alt="" coords="192,5,340,32"/>
 </map>
 </div>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_icgraph.png" border="0" usemap="#classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_icgraph" alt=""/></div>
+<map name="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_icgraph" id="classTimeSync_a5bddf36dcd0a1f68b25e37bf8000f3d2_icgraph">
+<area shape="rect"  title=" " alt="" coords="1428,107,1567,133"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,107,1158,133"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,157,717,184"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1212,208,1380,235"/>
+<area shape="rect"  href="classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title=" " alt="" coords="1221,5,1371,32"/>
+<area shape="rect"  href="classMenu.html#af4cae4a710a80144910904d16806ba16" title=" " alt="" coords="1221,56,1371,83"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,157,479,184"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,157,295,184"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,157,89,184"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,263,1164,289"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,291,949,317"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,372,751,399"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,317,773,344"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,376,523,403"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,376,329,403"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,427,293,453"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,343,123,369"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,310,523,351"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,208,297,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab49156308dcc934ac240a99b112ed2b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49156308dcc934ac240a99b112ed2b8">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimeSync::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classTimeSync.html">TimeSync</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -326,6 +635,11 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00017">17</a></p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> ( <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a> != <span class="keyword">nullptr</span> )</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">_timeSync</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a7a0c05f7086aa58ab7dc66be63cc6c12"><div class="ttname"><a href="classTimeSync.html#a7a0c05f7086aa58ab7dc66be63cc6c12">TimeSync::_timeSync</a></div><div class="ttdeci">static TimeSync * _timeSync</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00031">time_sync.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00031">_timeSync</a>.</p>
+
 </div>
 </div>
 <a id="a51a6bcfd68709439e0a41932e2f314ab"></a>
@@ -344,6 +658,12 @@ $(function() {
 </div><div class="memdoc">
 
 <p>restartNtpd перезапуск сервиса синхронизации времени </p>
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00117">117</a></p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">string</span> restart = <a class="code" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">ntpService</a> + <span class="stringliteral">&quot; restart &gt;&gt; /dev/null&quot;</span>;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    system( restart.c_str() );</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div><div class="ttc" id="classTimeSync_html_afb98670b8d4de7c7567455480566d8c4"><div class="ttname"><a href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">TimeSync::ntpService</a></div><div class="ttdeci">const string ntpService</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00058">time_sync.h:58</a></div></div>
+<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a> и <a class="el" href="time__sync_8h_source.html#l00058">ntpService</a>.</p>
 
 </div>
 </div>
@@ -364,6 +684,30 @@ $(function() {
 
 <p>startNtpd старт сервиса синхронизации времени </p>
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00132">132</a></p>
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">string</span> start = <a class="code" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">ntpService</a> + <span class="stringliteral">&quot; start &gt;&gt; /dev/null&quot;</span>;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    system( start.c_str() );</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div><div class="ttc" id="classTimeSync_html_afb98670b8d4de7c7567455480566d8c4"><div class="ttname"><a href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">TimeSync::ntpService</a></div><div class="ttdeci">const string ntpService</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00058">time_sync.h:58</a></div></div>
+<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a> и <a class="el" href="time__sync_8h_source.html#l00058">ntpService</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l30057">Menu::timeSyncForce()</a>.</p>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a58dfa241d02264b9cf1c5794d2d72386_icgraph.png" border="0" usemap="#classTimeSync_a58dfa241d02264b9cf1c5794d2d72386_icgraph" alt=""/></div>
+<map name="classTimeSync_a58dfa241d02264b9cf1c5794d2d72386_icgraph" id="classTimeSync_a58dfa241d02264b9cf1c5794d2d72386_icgraph">
+<area shape="rect"  title="startNtpd ÑÑÐ°ÑÑ ÑÐµÑÐ²Ð¸ÑÐ° ÑÐ¸Ð½ÑÑÐ¾Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð²ÑÐµÐ¼ÐµÐ½Ð¸" alt="" coords="887,5,1029,32"/>
+<area shape="rect"  href="classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title=" " alt="" coords="688,5,839,32"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="485,5,640,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a3d40a1c60279db3ffef8b61467e7467c"></a>
@@ -383,16 +727,448 @@ $(function() {
 
 <p>stopNtpd остановка сервиса синхронизации времени </p>
 
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00124">124</a></p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;%s&quot;</span>, __PRETTY_FUNCTION__ );</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">string</span> stop = <a class="code" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">ntpService</a> + <span class="stringliteral">&quot; stop &gt;&gt; /dev/null&quot;</span>;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    system( stop.c_str() );</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    sleep(2);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div><div class="ttc" id="classTimeSync_html_afb98670b8d4de7c7567455480566d8c4"><div class="ttname"><a href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">TimeSync::ntpService</a></div><div class="ttdeci">const string ntpService</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00058">time_sync.h:58</a></div></div>
+<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a> и <a class="el" href="time__sync_8h_source.html#l00058">ntpService</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l30057">Menu::timeSyncForce()</a>.</p>
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a3d40a1c60279db3ffef8b61467e7467c_icgraph.png" border="0" usemap="#classTimeSync_a3d40a1c60279db3ffef8b61467e7467c_icgraph" alt=""/></div>
+<map name="classTimeSync_a3d40a1c60279db3ffef8b61467e7467c_icgraph" id="classTimeSync_a3d40a1c60279db3ffef8b61467e7467c_icgraph">
+<area shape="rect"  title="stopNtpd Ð¾ÑÑÐ°Ð½Ð¾Ð²ÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ° ÑÐ¸Ð½ÑÑÐ¾Ð½Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð²ÑÐµÐ¼ÐµÐ½Ð¸" alt="" coords="887,5,1029,32"/>
+<area shape="rect"  href="classMenu.html#a0bbefd459dc0118aeba551ba5719fbfc" title=" " alt="" coords="688,5,839,32"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="485,5,640,32"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="347,5,437,32"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="241,5,299,32"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="104,5,193,32"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a833f7e7f8d2c05fbfff3533fcec88447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833f7e7f8d2c05fbfff3533fcec88447">&#9670;&nbsp;</a></span>updateZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TimeSync::updateZone </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>newZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>updateZone обновление ссылки на часовой пояс </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00047">47</a></p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    lock_guard&lt;mutex&gt; locker(<a class="code" href="classTimeSync.html#a118a468207b8e4388abf411459cc8c0c">_mutex</a>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> ( newZone.empty() )</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>( <span class="stringliteral">&quot;%s:: newZone is empty!&quot;</span>, __FUNCTION__ );</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    errno = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (  remove(<a class="code" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a>.c_str()) != 0 )</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span> ( errno != ENOENT )</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:%d %s&quot;</span>, __PRETTY_FUNCTION__, __LINE__, strerror(errno));</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> ( symlink(newZone.c_str(), <a class="code" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a>.c_str()) != 0 )</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:%d %s&quot;</span>, __PRETTY_FUNCTION__, __LINE__, <span class="stringliteral">&quot;failed create symlink&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83">updateZoneDefault</a>();</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">string</span> restart = <a class="code" href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">ntpService</a> + <span class="stringliteral">&quot; restart &gt;&gt; /dev/null&quot;</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    system( restart.c_str() );</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div><div class="ttc" id="classTimeSync_html_afb98670b8d4de7c7567455480566d8c4"><div class="ttname"><a href="classTimeSync.html#afb98670b8d4de7c7567455480566d8c4">TimeSync::ntpService</a></div><div class="ttdeci">const string ntpService</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00058">time_sync.h:58</a></div></div>
+<div class="ttc" id="classTimeSync_html_a118a468207b8e4388abf411459cc8c0c"><div class="ttname"><a href="classTimeSync.html#a118a468207b8e4388abf411459cc8c0c">TimeSync::_mutex</a></div><div class="ttdeci">mutex _mutex</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00054">time_sync.h:54</a></div></div>
+<div class="ttc" id="classTimeSync_html_a6f1d2888762eaae20d3798408f364047"><div class="ttname"><a href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">TimeSync::fileTime</a></div><div class="ttdeci">const string fileTime</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00057">time_sync.h:57</a></div></div>
+<div class="ttc" id="classTimeSync_html_afe94b9496cdc125fe594b6b057826d83"><div class="ttname"><a href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83">TimeSync::updateZoneDefault</a></div><div class="ttdeci">bool updateZoneDefault()</div><div class="ttdoc">updateZoneDefault обновить ссылка на стандартный часовой пояс</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8cpp_source.html#l00080">time_sync.cpp:80</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00054">_mutex</a>, <a class="el" href="time__sync_8h_source.html#l00057">fileTime</a>, <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="time__sync_8h_source.html#l00058">ntpService</a> и <a class="el" href="time__sync_8cpp_source.html#l00080">updateZoneDefault()</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00106">changeTimeZone()</a> и <a class="el" href="time__sync_8cpp_source.html#l00139">changeTimeZoneBy()</a>.</p>
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_cgraph.png" border="0" usemap="#classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_cgraph" alt=""/></div>
+<map name="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_cgraph" id="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_cgraph">
+<area shape="rect"  title="updateZone Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ»ÐºÐ¸ Ð½Ð° ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="5,5,163,32"/>
+<area shape="rect"  href="classTimeSync.html#afe94b9496cdc125fe594b6b057826d83" title="updateZoneDefault Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ ÑÑÑÐ»ÐºÐ° Ð½Ð° ÑÑÐ°Ð½Ð´Ð°ÑÑÐ½ÑÐ¹ ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="211,5,409,32"/>
+</map>
+</div>
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_icgraph.png" border="0" usemap="#classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_icgraph" alt=""/></div>
+<map name="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_icgraph" id="classTimeSync_a833f7e7f8d2c05fbfff3533fcec88447_icgraph">
+<area shape="rect"  title="updateZone Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ»ÐºÐ¸ Ð½Ð° ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="1703,351,1860,377"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="1465,325,1655,352"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="1212,376,1417,403"/>
+<area shape="rect"  href="testTimeSync_8h.html#a38557e5461a42872e3403c4ecb6800a9" title=" " alt="" coords="1287,325,1343,352"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1231,275,1399,301"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,325,1158,352"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,236,1164,263"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,325,717,352"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,325,479,352"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,325,295,352"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,325,89,352"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,199,949,225"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,173,751,200"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,123,773,149"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,173,523,200"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,173,329,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,224,293,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,140,123,167"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,107,523,149"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,5,297,32"/>
+<area shape="rect"  href="testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8" title=" " alt="" coords="1053,427,1109,453"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe94b9496cdc125fe594b6b057826d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe94b9496cdc125fe594b6b057826d83">&#9670;&nbsp;</a></span>updateZoneDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TimeSync::updateZoneDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>updateZoneDefault обновить ссылка на стандартный часовой пояс </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true в случае успеха, иначе false </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a> строка <a class="el" href="time__sync_8cpp_source.html#l00080">80</a></p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    errno = 0;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> ( remove(<a class="code" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a>.c_str()) != 0 )</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> ( errno != ENOENT )</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:%d %s&quot;</span>, __PRETTY_FUNCTION__, __LINE__, strerror(errno));</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> ( symlink(<a class="code" href="classTimeSync.html#a1be06f6137b1d312d13c7414801d0ba4">defZone</a>.c_str(), <a class="code" href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">fileTime</a>.c_str()) != 0 )</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s:%d %s&quot;</span>, __PRETTY_FUNCTION__, __LINE__, <span class="stringliteral">&quot;failed create symlink&quot;</span>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div><div class="ttc" id="classTimeSync_html_a6f1d2888762eaae20d3798408f364047"><div class="ttname"><a href="classTimeSync.html#a6f1d2888762eaae20d3798408f364047">TimeSync::fileTime</a></div><div class="ttdeci">const string fileTime</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00057">time_sync.h:57</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+<div class="ttc" id="classTimeSync_html_a1be06f6137b1d312d13c7414801d0ba4"><div class="ttname"><a href="classTimeSync.html#a1be06f6137b1d312d13c7414801d0ba4">TimeSync::defZone</a></div><div class="ttdeci">const string defZone</div><div class="ttdef"><b>Definition:</b> <a href="time__sync_8h_source.html#l00062">time_sync.h:62</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="time__sync_8h_source.html#l00062">defZone</a>, <a class="el" href="time__sync_8h_source.html#l00057">fileTime</a> и <a class="el" href="log_8h_source.html#l00033">logERR</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a>.</p>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Граф вызова функции:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classTimeSync_afe94b9496cdc125fe594b6b057826d83_icgraph.png" border="0" usemap="#classTimeSync_afe94b9496cdc125fe594b6b057826d83_icgraph" alt=""/></div>
+<map name="classTimeSync_afe94b9496cdc125fe594b6b057826d83_icgraph" id="classTimeSync_afe94b9496cdc125fe594b6b057826d83_icgraph">
+<area shape="rect"  title="updateZoneDefault Ð¾Ð±Ð½Ð¾Ð²Ð¸ÑÑ ÑÑÑÐ»ÐºÐ° Ð½Ð° ÑÑÐ°Ð½Ð´Ð°ÑÑÐ½ÑÐ¹ ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="1908,351,2107,377"/>
+<area shape="rect"  href="classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447" title="updateZone Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÑÐ»ÐºÐ¸ Ð½Ð° ÑÐ°ÑÐ¾Ð²Ð¾Ð¹ Ð¿Ð¾ÑÑ" alt="" coords="1703,351,1860,377"/>
+<area shape="rect"  href="classTimeSync.html#a9649aa1ed3ad4d6f1d86714d55c28d52" title="changeTimeZone Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ðµ ÑÐµÐºÑÑÐµÐ³Ð¾ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð²ÑÐµÐ¼Ñ Ð²ÑÐ¿Ð¾Ð»Ð½ÐµÐ¸Ð½Ñ 5 ÑÐµÐº + Ð²ÑÐµÐ¼Ñ Ð¿ÐµÑÐµÐ·Ð°Ð¿ÑÑÐºÐ° ÑÐµÑÐ²Ð¸ÑÐ°" alt="" coords="1465,325,1655,352"/>
+<area shape="rect"  href="classTimeSync.html#a6618d6ffafd921e876326c8368a65768" title="changeTimeZoneBy Ð¾Ð±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÐ°ÑÐ¾Ð²Ð¾Ð³Ð¾ Ð¿Ð¾ÑÑÐ° Ð´Ð»Ñ Ð Ð" alt="" coords="1212,376,1417,403"/>
+<area shape="rect"  href="testTimeSync_8h.html#a38557e5461a42872e3403c4ecb6800a9" title=" " alt="" coords="1287,325,1343,352"/>
+<area shape="rect"  href="classMenu.html#a384c65faa88386caa2fb635c700f462a" title=" " alt="" coords="1231,275,1399,301"/>
+<area shape="rect"  href="classMenu.html#a0a5f0e72ea7b5ef4eb956ac0fec53ffe" title=" " alt="" coords="1003,325,1158,352"/>
+<area shape="rect"  href="classMenu.html#aaf564aff906d20f2abbac39ed2681c6c" title=" " alt="" coords="997,236,1164,263"/>
+<area shape="rect"  href="classMenu.html#a6f709ec88a4000f25187659baefff026" title=" " alt="" coords="627,325,717,352"/>
+<area shape="rect"  href="threads_8h.html#a61ef808e1c6af6891f4ab64fd9504c8a" title=" " alt="" coords="421,325,479,352"/>
+<area shape="rect"  href="threads_8h.html#a86a3a06d15ddac5702d1c79f9bac7c7a" title=" " alt="" coords="205,325,295,352"/>
+<area shape="rect"  href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="39,325,89,352"/>
+<area shape="rect"  href="classMenu.html#aabae6f664c6a7901ad084f28c8818704" title=" " alt="" coords="821,199,949,225"/>
+<area shape="rect"  href="classMenu.html#a9acd6cfd0a7102ec2607101f60b36d0c" title=" " alt="" coords="593,173,751,200"/>
+<area shape="rect"  href="classMenu.html#a178388971a2fcded644b2c347228aaf2" title=" " alt="" coords="571,123,773,149"/>
+<area shape="rect"  href="classMenu.html#aa0fb278ce8a8a922390ef15a6863c2b8" title=" " alt="" coords="377,173,523,200"/>
+<area shape="rect"  href="classMenu.html#a780ecdfd8265eb3eb873d1ea0aebf4ed" title=" " alt="" coords="171,173,329,200"/>
+<area shape="rect"  href="classMenu.html#a6ac2240c66cd56a36954f4797bca7b24" title=" " alt="" coords="207,224,293,251"/>
+<area shape="rect"  href="classMenu.html#affcd5fb30a33900370d96e9b8526889f" title=" " alt="" coords="5,140,123,167"/>
+<area shape="rect"  href="classMenu.html#ae064477b883a70585755071d05b5ba75" title=" " alt="" coords="377,107,523,149"/>
+<area shape="rect"  href="classMenu.html#a31a6b474add9e3307ecdfc187704d0ec" title=" " alt="" coords="203,5,297,32"/>
+<area shape="rect"  href="testTimeSync_8h.html#af93f12d3a06adb78a44b4a172681d7f8" title=" " alt="" coords="1053,427,1109,453"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a118a468207b8e4388abf411459cc8c0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a118a468207b8e4388abf411459cc8c0c">&#9670;&nbsp;</a></span>_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mutex TimeSync::_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00054">54</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a>.</p>
+
+</div>
+</div>
+<a id="a7a0c05f7086aa58ab7dc66be63cc6c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0c05f7086aa58ab7dc66be63cc6c12">&#9670;&nbsp;</a></span>_timeSync</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTimeSync.html">TimeSync</a> * TimeSync::_timeSync = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00031">31</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00007">instance()</a> и <a class="el" href="time__sync_8cpp_source.html#l00017">releaseInstance()</a>.</p>
+
+</div>
+</div>
+<a id="a1be06f6137b1d312d13c7414801d0ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be06f6137b1d312d13c7414801d0ba4">&#9670;&nbsp;</a></span>defZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::defZone = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/Moscow&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00062">62</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00080">updateZoneDefault()</a>.</p>
+
+</div>
+</div>
+<a id="a2ca8b2ebcd470887bb0380c32e9da06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ca8b2ebcd470887bb0380c32e9da06e">&#9670;&nbsp;</a></span>defZoneBy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::defZoneBy = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/Minsk&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00061">61</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00139">changeTimeZoneBy()</a>.</p>
+
+</div>
+</div>
+<a id="a6f1d2888762eaae20d3798408f364047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1d2888762eaae20d3798408f364047">&#9670;&nbsp;</a></span>fileTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::fileTime = &quot;/etc/localtime&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00057">57</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00144">getCurrentZoneIndex()</a>, <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a> и <a class="el" href="time__sync_8cpp_source.html#l00080">updateZoneDefault()</a>.</p>
+
+</div>
+</div>
+<a id="af52323f74ce061e44276016c7fd69208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52323f74ce061e44276016c7fd69208">&#9670;&nbsp;</a></span>fileTZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::fileTZ = &quot;/etc/TZ&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00056">56</a></p>
+
+</div>
+</div>
+<a id="afb98670b8d4de7c7567455480566d8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb98670b8d4de7c7567455480566d8c4">&#9670;&nbsp;</a></span>ntpService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::ntpService = &quot;/etc/init.d/S49ntp&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00058">58</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00117">restartNtpd()</a>, <a class="el" href="time__sync_8cpp_source.html#l00132">startNtpd()</a>, <a class="el" href="time__sync_8cpp_source.html#l00124">stopNtpd()</a> и <a class="el" href="time__sync_8cpp_source.html#l00047">updateZone()</a>.</p>
+
+</div>
+</div>
+<a id="aee8e9006172ddd241c5c446b07160442"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8e9006172ddd241c5c446b07160442">&#9670;&nbsp;</a></span>zinfoAs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::zinfoAs = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Asia/&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00059">59</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00027">TimeSync()</a>.</p>
+
+</div>
+</div>
+<a id="aa46040391fb635eca6d921cfbb555655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46040391fb635eca6d921cfbb555655">&#9670;&nbsp;</a></span>zinfoEu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string TimeSync::zinfoEu = &quot;/usr/share/<a class="el" href="classTimeSync.html#a9a4ac83317b0188e65481b93f9d4bd42">zoneinfo</a>/posix/Europe/&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00060">60</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00027">TimeSync()</a>.</p>
+
+</div>
+</div>
+<a id="a9a4ac83317b0188e65481b93f9d4bd42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4ac83317b0188e65481b93f9d4bd42">&#9670;&nbsp;</a></span>zoneinfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;<a class="el" href="structTimeZone.html">TimeZone</a>&gt; TimeSync::zoneinfo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="time__sync_8h_source.html">time_sync.h</a> строка <a class="el" href="time__sync_8h_source.html#l00055">55</a></p>
+
+<p class="reference">Используется в <a class="el" href="time__sync_8cpp_source.html#l00106">changeTimeZone()</a>, <a class="el" href="time__sync_8cpp_source.html#l00144">getCurrentZoneIndex()</a>, <a class="el" href="time__sync_8cpp_source.html#l00101">getZoneinfo()</a> и <a class="el" href="time__sync_8cpp_source.html#l00027">TimeSync()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="time__sync_8h_source.html">time_sync.h</a></li>
-<li>src/appl/<a class="el" href="time__sync_8cpp.html">time_sync.cpp</a></li>
+<li>src/appl/<a class="el" href="time__sync_8cpp_source.html">time_sync.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

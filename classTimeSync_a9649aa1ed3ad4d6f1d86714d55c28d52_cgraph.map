@@ -1,0 +1,5 @@
+<map id="TimeSync::changeTimeZone" name="TimeSync::changeTimeZone">
+<area shape="rect" id="node1" title="changeTimeZone изменение текущего часового пояса время выполнеиня 5 сек + время перезапуска сервиса" alt="" coords="5,5,195,32"/>
+<area shape="rect" id="node2" href="$classTimeSync.html#a833f7e7f8d2c05fbfff3533fcec88447" title="updateZone обновление ссылки на часовой пояс" alt="" coords="243,5,400,32"/>
+<area shape="rect" id="node3" href="$classTimeSync.html#afe94b9496cdc125fe594b6b057826d83" title="updateZoneDefault обновить ссылка на стандартный часовой пояс" alt="" coords="448,5,647,32"/>
+</map>

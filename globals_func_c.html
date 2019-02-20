@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,36 +29,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -77,6 +54,27 @@ $(function() {
 </li>
 <li>CALCULATION_PLACE()
 : <a class="el" href="dynamic__mask_8h.html#a2e5b770a10a75d25bcab52fa6958c432">dynamic_mask.h</a>
+</li>
+<li>callbackCabinet()
+: <a class="el" href="CabinetBase_8cpp.html#a8f06885ff88b85a906d1809ce505debe">CabinetBase.cpp</a>
+</li>
+<li>callbackConfig()
+: <a class="el" href="sqlWrapper_8cpp.html#a9bace992b4fda03ebe91d5e5ff539d8b">sqlWrapper.cpp</a>
+</li>
+<li>callbackCounters()
+: <a class="el" href="counters_8cpp.html#a18466960a7958b39feef020903ae9908">counters.cpp</a>
+</li>
+<li>callbackHotkey()
+: <a class="el" href="sqlWrapper_8cpp.html#ad14f400bb54c4854bc544903769fb226">sqlWrapper.cpp</a>
+</li>
+<li>callbackReceipts()
+: <a class="el" href="ReceiptsDb_8cpp.html#a0602091388df02df9c19c2d2a6fb25fb">ReceiptsDb.cpp</a>
+</li>
+<li>callbackTasks()
+: <a class="el" href="ReceiptsDb_8cpp.html#aa6e928b81fcae281aa1a118ef7720ee1">ReceiptsDb.cpp</a>
+</li>
+<li>callbackUsers()
+: <a class="el" href="sqlWrapper_8cpp.html#aa9efa3e0097a9e415b1bac337d27942d">sqlWrapper.cpp</a>
 </li>
 <li>CARD()
 : <a class="el" href="dynamic__mask_8h.html#ac804b0bdd566b6dece0ae67cb1beae5d">dynamic_mask.h</a>
@@ -128,6 +126,9 @@ $(function() {
 : <a class="el" href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config.cpp</a>
 , <a class="el" href="config_8h.html#a494b0e207424d08fce7a81e09d9a93bf">config.h</a>
 </li>
+<li>CONFIG_VER()
+: <a class="el" href="dynamic__mask_8h.html#abb071b01fb42e5cb7a2b55c5f3187ac6">dynamic_mask.h</a>
+</li>
 <li>CONNECT_TO()
 : <a class="el" href="dynamic__mask_8h.html#a487f22b7f80c7080eb33530d494ef3b1">dynamic_mask.h</a>
 </li>
@@ -162,8 +163,8 @@ $(function() {
 : <a class="el" href="dynamic__mask_8h.html#abcc540ec034ca4f96349d8e35fcd724a">dynamic_mask.h</a>
 </li>
 <li>createBackupConfig()
-: <a class="el" href="config_8h.html#ac36e54fa6853489481ae23434b9e10ae">config.h</a>
-, <a class="el" href="config_8cpp.html#ac36e54fa6853489481ae23434b9e10ae">config.cpp</a>
+: <a class="el" href="config_8cpp.html#ac36e54fa6853489481ae23434b9e10ae">config.cpp</a>
+, <a class="el" href="config_8h.html#ac36e54fa6853489481ae23434b9e10ae">config.h</a>
 </li>
 <li>CUR_DEPARTMENT()
 : <a class="el" href="dynamic__mask_8h.html#a921ed59afb72f6cd825dcba793a4aed1">dynamic_mask.h</a>
@@ -184,7 +185,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

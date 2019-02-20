@@ -1,0 +1,9 @@
+<map id="nlohmann::detail::binary_reader::get_ubjson_size_type" name="nlohmann::detail::binary_reader::get_ubjson_size_type">
+<area shape="rect" id="node1" title="determine the type and size for a container" alt="" coords="1117,108,1316,149"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1binary__reader.html#a4e8ef9561d4403ea68e3c2712fd289e2" title=" " alt="" coords="897,76,1069,117"/>
+<area shape="rect" id="node7" href="$classnlohmann_1_1detail_1_1binary__reader.html#ad0932dd568fcbbd2b4c2ccf9122544a5" title=" " alt="" coords="201,76,380,117"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1binary__reader.html#a5f425199a77f403e32f076ff8487f853" title=" " alt="" coords="675,76,849,117"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1binary__reader.html#af60c6bba6f1301cb02e0186c99e25751" title=" " alt="" coords="428,5,627,47"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1binary__reader.html#ab94a54d6e595c2620b07589cf4116256" title=" " alt="" coords="211,5,371,47"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1basic__json.html#a8a3dd150c2d1f0df3502d937de0871db" title="generate SAX events" alt="" coords="5,5,153,47"/>
+</map>

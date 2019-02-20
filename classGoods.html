@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,40 +29,21 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="classGoods-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс Goods</div>  </div>
@@ -73,12 +51,14 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="goods_8h_source.html">goods.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса Goods:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Goods:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classGoods__coll__graph.png" border="0" usemap="#Goods_coll__map" alt="Collaboration graph"/></div>
 <map name="Goods_coll__map" id="Goods_coll__map">
-<area shape="rect"  title=" " alt="" coords="5,409,156,619"/>
+<area shape="rect"  title=" " alt="" coords="5,409,156,633"/>
 <area shape="rect"  href="classGoodsData.html" title=" " alt="" coords="9,5,152,347"/>
 </map>
 </div>
@@ -112,8 +92,16 @@ $(function() {
 <tr class="separator:a62e42e9f892856db4aefb261ee954904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa16062527df573298f13406c1cfdd635"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoods.html#aa16062527df573298f13406c1cfdd635">size_of_goods_data</a> = 264</td></tr>
 <tr class="separator:aa16062527df573298f13406c1cfdd635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a31b71fc2c803cc0bca04b845d08c73b3"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classTaxes.html">Taxes</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a></td></tr>
+<tr class="separator:a31b71fc2c803cc0bca04b845d08c73b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00025">25</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a11ec1c9d1cf7df8c07419e3cbec4ccf3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11ec1c9d1cf7df8c07419e3cbec4ccf3">&#9670;&nbsp;</a></span>Goods()</h2>
 
@@ -128,6 +116,15 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00011">11</a></p>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a>.reset(<span class="keyword">new</span> <a class="code" href="classTaxes.html">Taxes</a>);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.reset( <span class="keyword">new</span> <a class="code" href="classPositions.html">Positions</a>() );</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>-&gt;cur_pos.goods.goods_type = <a class="code" href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149">GoodsData::GOODS</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div><div class="ttc" id="classGoods_html_a31b71fc2c803cc0bca04b845d08c73b3"><div class="ttname"><a href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">Goods::_taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; _taxes</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00045">goods.h:45</a></div></div>
+<div class="ttc" id="classTaxes_html"><div class="ttname"><a href="classTaxes.html">Taxes</a></div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00050">tax.h:50</a></div></div>
+<div class="ttc" id="classPositions_html"><div class="ttname"><a href="classPositions.html">Positions</a></div><div class="ttdef"><b>Definition:</b> <a href="positions_8h_source.html#l00022">positions.h:22</a></div></div>
+<div class="ttc" id="classGoods_html_a1a00461b97163fe40417ff43a3410b21"><div class="ttname"><a href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">Goods::p</a></div><div class="ttdeci">unique_ptr&lt; Positions &gt; p</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00039">goods.h:39</a></div></div>
+<div class="ttc" id="classGoodsData_html_a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149"><div class="ttname"><a href="classGoodsData.html#a455d1b07e5fe41057dce0a127b5d01f5a4ef41bdc631f9cf38cccc74b1c269149">GoodsData::GOODS</a></div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00041">goods_data.h:41</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="goods__data_8h_source.html#l00041">GoodsData::GOODS</a>.</p>
 
 </div>
 </div>
@@ -146,6 +143,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00018">18</a></p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Методы</h2>
@@ -186,37 +185,61 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00076">76</a></p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a>)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a>(<span class="stringliteral">&quot;%s Null ptr!&quot;</span>, __PRETTY_FUNCTION__);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.goods.unit_price =  unit_price;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.set_pos_price( unit_price );</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.set_quantity( 1 );</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.quantityFree = 0;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.discount = 0;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.discountUnit = 0;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.set_pos_num(  <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_pos_num() + 1 );</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.set_total_sum_position(  <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_pos_price()</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                     * <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_quantity());</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.set_tax_sum( <a class="code" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a>-&gt;calc_tax_sum((<a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075b">E_TAXES</a>)<a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.goods.tax_number, <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_total_sum_position()));</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.set_total_sum_receipt(  <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.get_total_sum_receipt() + <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_total_sum_position());</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#a501ca3252970add07a7e61aaf2e7eebe">unit_price</a> = unit_price;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39">pos_cost_set</a>( unit_price );</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#a5dfa37d6bd3f0bfa00ae14cb793bb326">quantity</a> = 1;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#aedf3901b762540615a22decfacfe51ff">quantityFree</a> = 0;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#a40bbb7455b95a319a9e1c2f84f7ff330">discount</a> = 0;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#ab4609efd44fb8a00754cb767639576a8">discountUnit</a> = 0;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779">total_pos_sum_set</a>( pos_new-&gt;<a class="code" href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3">pos_cost_get</a>() *  pos_new-&gt;<a class="code" href="classPosition__new.html#a5dfa37d6bd3f0bfa00ae14cb793bb326">quantity</a> );</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    pos_new-&gt;<a class="code" href="classPosition__new.html#a3e8d3c60f81e6633b571d5d18a95126e">tax_sum</a> = <a class="code" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a>-&gt;calc_tax_sum((<a class="code" href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075b">E_TAXES</a>)pos_new-&gt;<a class="code" href="classPosition__new.html#aae115972268026742fa2fa9e2b94f58a">tax_number</a>, pos_new-&gt;<a class="code" href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb">total_pos_sum_get</a>());</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8">GoodsData::isGoodsWeight</a>(<a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.goods.goods_type) != <span class="keyword">true</span>)</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.weight = 0;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.positions_list.push_back( <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos );</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        rec_new-&gt;<a class="code" href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20">add_position</a>( pos_new );</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.calc_total_sum_receipt(  <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_pos_num() );</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    rec_new-&gt;<a class="code" href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088">calc</a>( <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.cur_pos.get_pos_num() );</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">unsigned</span> num = 0;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.positions_list.begin(); it != <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.positions_list.end(); ++it)</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        (*it).set_pos_num( ++num );</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div><div class="ttc" id="classPosition__new_html_a40bbb7455b95a319a9e1c2f84f7ff330"><div class="ttname"><a href="classPosition__new.html#a40bbb7455b95a319a9e1c2f84f7ff330">Position_new::discount</a></div><div class="ttdeci">uint64_t discount</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00103">positions_new.h:103</a></div></div>
+<div class="ttc" id="classGoods_html_a31b71fc2c803cc0bca04b845d08c73b3"><div class="ttname"><a href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">Goods::_taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; _taxes</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00045">goods.h:45</a></div></div>
+<div class="ttc" id="classPosition__new_html_a8a327bff622716cc7808ec7f592d0779"><div class="ttname"><a href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779">Position_new::total_pos_sum_set</a></div><div class="ttdeci">void total_pos_sum_set(uint64_t sum)</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00159">positions_new.h:159</a></div></div>
+<div class="ttc" id="classPosition__new_html_a10e2d4733c599579d7ddd6a2caa82ceb"><div class="ttname"><a href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb">Position_new::total_pos_sum_get</a></div><div class="ttdeci">uint64_t total_pos_sum_get() const</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00153">positions_new.h:153</a></div></div>
+<div class="ttc" id="classPosition__new_html_aae115972268026742fa2fa9e2b94f58a"><div class="ttname"><a href="classPosition__new.html#aae115972268026742fa2fa9e2b94f58a">Position_new::tax_number</a></div><div class="ttdeci">unsigned char tax_number</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00090">positions_new.h:90</a></div></div>
+<div class="ttc" id="classGoods_html_a1a00461b97163fe40417ff43a3410b21"><div class="ttname"><a href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">Goods::p</a></div><div class="ttdeci">unique_ptr&lt; Positions &gt; p</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00039">goods.h:39</a></div></div>
+<div class="ttc" id="classPosition__new_html_ab4609efd44fb8a00754cb767639576a8"><div class="ttname"><a href="classPosition__new.html#ab4609efd44fb8a00754cb767639576a8">Position_new::discountUnit</a></div><div class="ttdeci">uint64_t discountUnit</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00103">positions_new.h:103</a></div></div>
+<div class="ttc" id="classReceipt__new_html_a645bf3a52ef73c56b1ee8e8c7e928088"><div class="ttname"><a href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088">Receipt_new::calc</a></div><div class="ttdeci">void calc(unsigned int cur_pos)</div><div class="ttdef"><b>Definition:</b> <a href="receipt__new_8cpp_source.html#l01090">receipt_new.cpp:1090</a></div></div>
+<div class="ttc" id="classPosition__new_html_a23928b1370e71b3a02fbeb4c9b4b0fd3"><div class="ttname"><a href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3">Position_new::pos_cost_get</a></div><div class="ttdeci">uint64_t pos_cost_get() const</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00152">positions_new.h:152</a></div></div>
+<div class="ttc" id="classPosition__new_html_aedf3901b762540615a22decfacfe51ff"><div class="ttname"><a href="classPosition__new.html#aedf3901b762540615a22decfacfe51ff">Position_new::quantityFree</a></div><div class="ttdeci">uint64_t quantityFree</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00103">positions_new.h:103</a></div></div>
+<div class="ttc" id="classPosition__new_html_a501ca3252970add07a7e61aaf2e7eebe"><div class="ttname"><a href="classPosition__new.html#a501ca3252970add07a7e61aaf2e7eebe">Position_new::unit_price</a></div><div class="ttdeci">uint64_t unit_price</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00084">positions_new.h:84</a></div></div>
+<div class="ttc" id="classPosition__new_html_a3e8d3c60f81e6633b571d5d18a95126e"><div class="ttname"><a href="classPosition__new.html#a3e8d3c60f81e6633b571d5d18a95126e">Position_new::tax_sum</a></div><div class="ttdeci">uint64_t tax_sum</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00118">positions_new.h:118</a></div></div>
+<div class="ttc" id="classPosition__new_html_a5dfa37d6bd3f0bfa00ae14cb793bb326"><div class="ttname"><a href="classPosition__new.html#a5dfa37d6bd3f0bfa00ae14cb793bb326">Position_new::quantity</a></div><div class="ttdeci">uint64_t quantity</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00103">positions_new.h:103</a></div></div>
+<div class="ttc" id="classPosition__new_html_ae11f0304d73fbcbb16c72c4e57189f39"><div class="ttname"><a href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39">Position_new::pos_cost_set</a></div><div class="ttdeci">void pos_cost_set(uint64_t cost)</div><div class="ttdef"><b>Definition:</b> <a href="positions__new_8h_source.html#l00158">positions_new.h:158</a></div></div>
+<div class="ttc" id="tax_8h_html_a05ed64162cb5b06c1b617b7f4a23075b"><div class="ttname"><a href="tax_8h.html#a05ed64162cb5b06c1b617b7f4a23075b">E_TAXES</a></div><div class="ttdeci">E_TAXES</div><div class="ttdef"><b>Definition:</b> <a href="tax_8h_source.html#l00025">tax.h:25</a></div></div>
+<div class="ttc" id="classReceipt__new_html_af2b431ce590ad4f2aa578286bef4da20"><div class="ttname"><a href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20">Receipt_new::add_position</a></div><div class="ttdeci">int add_position(Position_new *pos)</div><div class="ttdef"><b>Definition:</b> <a href="receipt__new_8cpp_source.html#l00981">receipt_new.cpp:981</a></div></div>
+<div class="ttc" id="log_8h_html_a5cc587e7c622e9e5d18ec948255c1b11"><div class="ttname"><a href="log_8h.html#a5cc587e7c622e9e5d18ec948255c1b11">logERR</a></div><div class="ttdeci">#define logERR( fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00033">log.h:33</a></div></div>
+<div class="ttc" id="classGoodsData_html_a1819631227f976a67f2da842bb0785a8"><div class="ttname"><a href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8">GoodsData::isGoodsWeight</a></div><div class="ttdeci">static bool isGoodsWeight(uint32_t goods_type)</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8cpp_source.html#l00058">goods_data.cpp:58</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="receipt__new_8cpp_source.html#l00981">Receipt_new::add_position()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01090">Receipt_new::calc()</a>, <a class="el" href="positions_8cpp_source.html#l00234">Positions::calc_total_sum_receipt()</a>, <a class="el" href="positions_8h_source.html#l00158">Positions::cur_pos</a>, <a class="el" href="positions_8h_source.html#l00071">Positions::Position::discount</a>, <a class="el" href="positions__new_8h_source.html#l00103">Position_new::discount</a>, <a class="el" href="positions_8h_source.html#l00072">Positions::Position::discountUnit</a>, <a class="el" href="positions__new_8h_source.html#l00103">Position_new::discountUnit</a>, <a class="el" href="positions_8h_source.html#l00123">Positions::Position::get_pos_num()</a>, <a class="el" href="positions_8h_source.html#l00125">Positions::Position::get_pos_price()</a>, <a class="el" href="positions_8h_source.html#l00124">Positions::Position::get_quantity()</a>, <a class="el" href="positions_8h_source.html#l00126">Positions::Position::get_total_sum_position()</a>, <a class="el" href="positions_8h_source.html#l00164">Positions::get_total_sum_receipt()</a>, <a class="el" href="positions_8h_source.html#l00112">Positions::Position::goods</a>, <a class="el" href="goods__data_8h_source.html#l00035">GoodsData::goods_type</a>, <a class="el" href="goods__data_8cpp_source.html#l00058">GoodsData::isGoodsWeight()</a>, <a class="el" href="log_8h_source.html#l00033">logERR</a>, <a class="el" href="positions__new_8h_source.html#l00152">Position_new::pos_cost_get()</a>, <a class="el" href="positions__new_8h_source.html#l00158">Position_new::pos_cost_set()</a>, <a class="el" href="positions_8h_source.html#l00156">Positions::positions_list</a>, <a class="el" href="positions__new_8h_source.html#l00103">Position_new::quantity</a>, <a class="el" href="positions_8h_source.html#l00070">Positions::Position::quantityFree</a>, <a class="el" href="positions__new_8h_source.html#l00103">Position_new::quantityFree</a>, <a class="el" href="positions_8h_source.html#l00116">Positions::Position::set_pos_num()</a>, <a class="el" href="positions_8h_source.html#l00118">Positions::Position::set_pos_price()</a>, <a class="el" href="positions_8h_source.html#l00117">Positions::Position::set_quantity()</a>, <a class="el" href="positions_8h_source.html#l00120">Positions::Position::set_tax_sum()</a>, <a class="el" href="positions_8h_source.html#l00119">Positions::Position::set_total_sum_position()</a>, <a class="el" href="positions_8h_source.html#l00162">Positions::set_total_sum_receipt()</a>, <a class="el" href="goods__data_8h_source.html#l00062">GoodsData::tax_number</a>, <a class="el" href="positions__new_8h_source.html#l00090">Position_new::tax_number</a>, <a class="el" href="positions__new_8h_source.html#l00118">Position_new::tax_sum</a>, <a class="el" href="positions__new_8h_source.html#l00153">Position_new::total_pos_sum_get()</a>, <a class="el" href="positions__new_8h_source.html#l00159">Position_new::total_pos_sum_set()</a>, <a class="el" href="goods__data_8h_source.html#l00061">GoodsData::unit_price</a>, <a class="el" href="positions__new_8h_source.html#l00084">Position_new::unit_price</a> и <a class="el" href="positions_8h_source.html#l00079">Positions::Position::weight</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classGoods_a41c68cc7e8a1330645f9f2c0ee658e4c_cgraph.png" border="0" usemap="#classGoods_a41c68cc7e8a1330645f9f2c0ee658e4c_cgraph" alt=""/></div>
 <map name="classGoods_a41c68cc7e8a1330645f9f2c0ee658e4c_cgraph" id="classGoods_a41c68cc7e8a1330645f9f2c0ee658e4c_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,601,125,627"/>
-<area shape="rect"  href="classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="201,5,332,47"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a4d43ec3c3e48fbddc41f4b9d59da430c" title=" " alt="" coords="201,71,332,112"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a2ae828d2d78770d52e37310ccabda290" title=" " alt="" coords="201,136,332,177"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="201,201,332,243"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="185,267,349,308"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="201,332,332,373"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="201,397,332,439"/>
-<area shape="rect"  href="classPositions_1_1Position.html#a8254e01b1c4e4c4d1eeb9e096e8b7190" title=" " alt="" coords="201,463,332,504"/>
-<area shape="rect"  href="classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="185,528,349,569"/>
-<area shape="rect"  href="classPositions.html#ad9874205eb0e1a8a3788f1b89e31cfac" title=" " alt="" coords="199,593,334,635"/>
-<area shape="rect"  href="classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="199,659,334,700"/>
-<area shape="rect"  href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="428,650,615,677"/>
-<area shape="rect"  href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="455,701,588,743"/>
-<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="173,943,360,970"/>
-<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="200,995,333,1036"/>
-<area shape="rect"  href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="174,1061,359,1087"/>
-<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="177,1111,356,1138"/>
-<area shape="rect"  href="classPositions.html#a429501e87ab4455157ba5987fe791301" title=" " alt="" coords="197,877,337,919"/>
-<area shape="rect"  href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="201,826,332,853"/>
-<area shape="rect"  href="classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; Ð¿ÐµÑÐµÐ²Ð¾Ð´ Ð¸Ð· double Ð² uint64_t Ñ Ð°ÑÐ¸ÑÐ¼ÐµÑÐ¸ÑÐµÑÐºÐ¸Ð¼ Ð¾ÐºÑÑÐ³Ð»ÐµÐ½Ð¸ÐµÐ¼" alt="" coords="408,1015,635,1056"/>
-<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="502,1081,541,1107"/>
-<area shape="rect"  href="classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="453,767,589,794"/>
-<area shape="rect"  href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="456,819,587,860"/>
-<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="456,884,587,925"/>
-<area shape="rect"  href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="456,949,587,991"/>
+<area shape="rect"  title=" " alt="" coords="5,668,125,695"/>
+<area shape="rect"  href="classReceipt__new.html#af2b431ce590ad4f2aa578286bef4da20" title=" " alt="" coords="177,68,356,95"/>
+<area shape="rect"  href="classReceipt__new.html#a645bf3a52ef73c56b1ee8e8c7e928088" title=" " alt="" coords="201,247,332,273"/>
+<area shape="rect"  href="classPosition__new.html#ae11f0304d73fbcbb16c72c4e57189f39" title=" " alt="" coords="428,371,615,397"/>
+<area shape="rect"  href="classPosition__new.html#a8a327bff622716cc7808ec7f592d0779" title=" " alt="" coords="455,422,588,463"/>
+<area shape="rect"  href="classPositions.html#a429501e87ab4455157ba5987fe791301" title=" " alt="" coords="197,119,337,161"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a74ba145f20e7529048d7da2b7a45dfb3" title=" " alt="" coords="201,399,332,441"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a3731859eab25ceb0bdddbef948279bbb" title=" " alt="" coords="201,465,332,506"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a4aa615bfb0ccd7bfa0a7f11714597478" title=" " alt="" coords="201,530,332,571"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af654e3ecd815f4cd9e6f9f6fede8ccbf" title=" " alt="" coords="185,595,349,637"/>
+<area shape="rect"  href="classPositions.html#a96a288607c38e5c01e2bedcccc46aebb" title=" " alt="" coords="199,661,334,702"/>
+<area shape="rect"  href="classGoodsData.html#a1819631227f976a67f2da842bb0785a8" title=" " alt="" coords="174,727,359,753"/>
+<area shape="rect"  href="classPosition__new.html#a23928b1370e71b3a02fbeb4c9b4b0fd3" title=" " alt="" coords="173,777,360,804"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a2ae828d2d78770d52e37310ccabda290" title=" " alt="" coords="201,829,332,870"/>
+<area shape="rect"  href="classPositions_1_1Position.html#af221f15084f91bf70e14394ded08129e" title=" " alt="" coords="201,894,332,935"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a4d43ec3c3e48fbddc41f4b9d59da430c" title=" " alt="" coords="201,959,332,1001"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a8254e01b1c4e4c4d1eeb9e096e8b7190" title=" " alt="" coords="201,1025,332,1066"/>
+<area shape="rect"  href="classPositions_1_1Position.html#a826e599880077da095a01f4a25dc0c91" title=" " alt="" coords="185,1090,349,1131"/>
+<area shape="rect"  href="classPositions.html#ad9874205eb0e1a8a3788f1b89e31cfac" title=" " alt="" coords="199,1155,334,1197"/>
+<area shape="rect"  href="classPosition__new.html#a10e2d4733c599579d7ddd6a2caa82ceb" title=" " alt="" coords="200,1221,333,1262"/>
+<area shape="rect"  href="classConvert.html#afd43f1b22b8e39db091a37a689cbd716" title="doubleToUint64ArithmeticRound &#45; Ð¿ÐµÑÐµÐ²Ð¾Ð´ Ð¸Ð· double Ð² uint64_t Ñ Ð°ÑÐ¸ÑÐ¼ÐµÑÐ¸ÑÐµÑÐºÐ¸Ð¼ Ð¾ÐºÑÑÐ³Ð»ÐµÐ½Ð¸ÐµÐ¼" alt="" coords="408,57,635,98"/>
+<area shape="rect"  href="classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="453,123,589,149"/>
+<area shape="rect"  href="classReceipt__new.html#ad33a133347089525f51eae7b1ec1197b" title=" " alt="" coords="456,174,587,215"/>
+<area shape="rect"  href="classReceipt__new.html#aad73ea006bd33febb6d9163700d075b4" title=" " alt="" coords="456,239,587,281"/>
+<area shape="rect"  href="classReceipt__new.html#a888391e56fc7e8beb347fcf62352e4ec" title=" " alt="" coords="456,305,587,346"/>
+<area shape="rect"  href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c" title=" " alt="" coords="502,5,541,32"/>
 </map>
 </div>
 
@@ -236,6 +259,23 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00033">33</a></p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>( <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a> ) != <a class="code" href="classGoods.html#aa16062527df573298f13406c1cfdd635">size_of_goods_data</a>)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(  <span class="stringliteral">&quot;goods_clean error!&quot;</span> );</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//goods_data.goods_name.clear();</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a11857d742ae4bb6fdcf462e0aa8c334e">unit_price</a> = 0;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a2408e9d6cdb1b701cdd9a1ea17f182d7">tax_number</a> = 0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a163e10238c52ed71a617f23897d5552d">goods_name</a>.clear();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a995a11adc6d46602a296eebc1e2eb7e5">unit_name</a>.clear();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#ae1255b007f7e60a75ac54dd2b6c3054c">directory_code</a>.clear();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#aab51ef3b681e4cfc2bb2dfd0ec4cb5fb">goods_group_code</a>.clear();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a21eb399f687826212aad5228530eb7a4">id_goods_group</a>.clear();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#ad17fc236b07c990e883a41e5dc54bcb4">goods_code</a>.clear();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a12230310b2babe8fe5455a5788c01f5f">goods_id</a>.clear();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>.<a class="code" href="classGoodsData.html#a4b8f17efa8f7a7c03ee19b9498a34d28">barcode</a>.clear();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>(  <span class="stringliteral">&quot;goods_clean ok!&quot;</span> );</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div><div class="ttc" id="classGoodsData_html_a163e10238c52ed71a617f23897d5552d"><div class="ttname"><a href="classGoodsData.html#a163e10238c52ed71a617f23897d5552d">GoodsData::goods_name</a></div><div class="ttdeci">string goods_name</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00027">goods_data.h:27</a></div></div>
+<div class="ttc" id="classGoodsData_html_a11857d742ae4bb6fdcf462e0aa8c334e"><div class="ttname"><a href="classGoodsData.html#a11857d742ae4bb6fdcf462e0aa8c334e">GoodsData::unit_price</a></div><div class="ttdeci">int64_t unit_price</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00061">goods_data.h:61</a></div></div>
+<div class="ttc" id="classGoods_html_aa16062527df573298f13406c1cfdd635"><div class="ttname"><a href="classGoods.html#aa16062527df573298f13406c1cfdd635">Goods::size_of_goods_data</a></div><div class="ttdeci">const int size_of_goods_data</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00041">goods.h:41</a></div></div>
+<div class="ttc" id="classGoodsData_html_aab51ef3b681e4cfc2bb2dfd0ec4cb5fb"><div class="ttname"><a href="classGoodsData.html#aab51ef3b681e4cfc2bb2dfd0ec4cb5fb">GoodsData::goods_group_code</a></div><div class="ttdeci">string goods_group_code</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00030">goods_data.h:30</a></div></div>
+<div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+<div class="ttc" id="classGoodsData_html_a21eb399f687826212aad5228530eb7a4"><div class="ttname"><a href="classGoodsData.html#a21eb399f687826212aad5228530eb7a4">GoodsData::id_goods_group</a></div><div class="ttdeci">string id_goods_group</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00031">goods_data.h:31</a></div></div>
+<div class="ttc" id="classGoods_html_a62e42e9f892856db4aefb261ee954904"><div class="ttname"><a href="classGoods.html#a62e42e9f892856db4aefb261ee954904">Goods::goods_data</a></div><div class="ttdeci">GoodsData goods_data</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00040">goods.h:40</a></div></div>
+<div class="ttc" id="classGoodsData_html_a2408e9d6cdb1b701cdd9a1ea17f182d7"><div class="ttname"><a href="classGoodsData.html#a2408e9d6cdb1b701cdd9a1ea17f182d7">GoodsData::tax_number</a></div><div class="ttdeci">unsigned char tax_number</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00062">goods_data.h:62</a></div></div>
+<div class="ttc" id="classGoodsData_html_a12230310b2babe8fe5455a5788c01f5f"><div class="ttname"><a href="classGoodsData.html#a12230310b2babe8fe5455a5788c01f5f">GoodsData::goods_id</a></div><div class="ttdeci">string goods_id</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00033">goods_data.h:33</a></div></div>
+<div class="ttc" id="classGoodsData_html_a4b8f17efa8f7a7c03ee19b9498a34d28"><div class="ttname"><a href="classGoodsData.html#a4b8f17efa8f7a7c03ee19b9498a34d28">GoodsData::barcode</a></div><div class="ttdeci">string barcode</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00073">goods_data.h:73</a></div></div>
+<div class="ttc" id="classGoodsData_html_ae1255b007f7e60a75ac54dd2b6c3054c"><div class="ttname"><a href="classGoodsData.html#ae1255b007f7e60a75ac54dd2b6c3054c">GoodsData::directory_code</a></div><div class="ttdeci">string directory_code</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00029">goods_data.h:29</a></div></div>
+<div class="ttc" id="classGoodsData_html_a995a11adc6d46602a296eebc1e2eb7e5"><div class="ttname"><a href="classGoodsData.html#a995a11adc6d46602a296eebc1e2eb7e5">GoodsData::unit_name</a></div><div class="ttdeci">string unit_name</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00028">goods_data.h:28</a></div></div>
+<div class="ttc" id="classGoodsData_html_ad17fc236b07c990e883a41e5dc54bcb4"><div class="ttname"><a href="classGoodsData.html#ad17fc236b07c990e883a41e5dc54bcb4">GoodsData::goods_code</a></div><div class="ttdeci">string goods_code</div><div class="ttdef"><b>Definition:</b> <a href="goods__data_8h_source.html#l00032">goods_data.h:32</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a>.</p>
 
 </div>
 </div>
@@ -262,6 +302,9 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00038">38</a></p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>;}</div><div class="ttc" id="classGoods_html_a62e42e9f892856db4aefb261ee954904"><div class="ttname"><a href="classGoods.html#a62e42e9f892856db4aefb261ee954904">Goods::goods_data</a></div><div class="ttdeci">GoodsData goods_data</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00040">goods.h:40</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0d1eddfd59cf73d9209ae4a5ff82a092"></a>
@@ -279,6 +322,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00064">64</a></p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Тест на наличие товарной базы</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> result;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    (fopen( <span class="stringliteral">&quot;goods.dat&quot;</span>, <span class="stringliteral">&quot;rb&quot;</span> ) == NULL) ?</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        result =  <span class="keyword">false</span> :</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        result =  <span class="keyword">true</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a9b736722c02d09888c6279ec6c9aaffd"></a>
@@ -297,6 +342,13 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00022">22</a></p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> ( <span class="keyword">this</span> != &amp;other )</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {       </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>.reset( <span class="keyword">new</span> <a class="code" href="classPositions.html">Positions</a>(  *other.<a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a> ));</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a> = other.<a class="code" href="classGoods.html#a62e42e9f892856db4aefb261ee954904">goods_data</a>;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="ttc" id="classPositions_html"><div class="ttname"><a href="classPositions.html">Positions</a></div><div class="ttdef"><b>Definition:</b> <a href="positions_8h_source.html#l00022">positions.h:22</a></div></div>
+<div class="ttc" id="classGoods_html_a1a00461b97163fe40417ff43a3410b21"><div class="ttname"><a href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">Goods::p</a></div><div class="ttdeci">unique_ptr&lt; Positions &gt; p</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00039">goods.h:39</a></div></div>
+<div class="ttc" id="classGoods_html_a62e42e9f892856db4aefb261ee954904"><div class="ttname"><a href="classGoods.html#a62e42e9f892856db4aefb261ee954904">Goods::goods_data</a></div><div class="ttdeci">GoodsData goods_data</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00040">goods.h:40</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="goods_8h_source.html#l00040">goods_data</a> и <a class="el" href="goods_8h_source.html#l00039">p</a>.</p>
+
 </div>
 </div>
 <a id="acf06505a515ee936fc29fcefde76c0ba"></a>
@@ -313,6 +365,12 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00057">57</a></p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span>(vector&lt;Positions::Position&gt;::iterator it=<a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>-&gt;positions_list.begin(); it != <a class="code" href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">p</a>-&gt;positions_list.end(); ++it)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a>( <span class="stringliteral">&quot;Pos_num: %d ,name: %s ,sum_pos: %d ,sum_receipt: %d \n&quot;</span>, it-&gt;get_pos_num(), it-&gt;goods.goods_name.c_str(),</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                           it-&gt;get_pos_price(), it-&gt;get_total_sum_position() );</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="log_8h_html_a76f60bb8ab2ee2d0aa0df1b0e26e060b"><div class="ttname"><a href="log_8h.html#a76f60bb8ab2ee2d0aa0df1b0e26e060b">logINFO</a></div><div class="ttdeci">#define logINFO(fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00031">log.h:31</a></div></div>
+<div class="ttc" id="classGoods_html_a1a00461b97163fe40417ff43a3410b21"><div class="ttname"><a href="classGoods.html#a1a00461b97163fe40417ff43a3410b21">Goods::p</a></div><div class="ttdeci">unique_ptr&lt; Positions &gt; p</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00039">goods.h:39</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="log_8h_source.html#l00031">logINFO</a>.</p>
 
 </div>
 </div>
@@ -332,9 +390,36 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8cpp_source.html">goods.cpp</a> строка <a class="el" href="goods_8cpp_source.html#l00128">128</a></p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">_taxes</a> = taxes;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div><div class="ttc" id="classGoods_html_a31b71fc2c803cc0bca04b845d08c73b3"><div class="ttname"><a href="classGoods.html#a31b71fc2c803cc0bca04b845d08c73b3">Goods::_taxes</a></div><div class="ttdeci">shared_ptr&lt; Taxes &gt; _taxes</div><div class="ttdef"><b>Definition:</b> <a href="goods_8h_source.html#l00045">goods.h:45</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
+<a id="a31b71fc2c803cc0bca04b845d08c73b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b71fc2c803cc0bca04b845d08c73b3">&#9670;&nbsp;</a></span>_taxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classTaxes.html">Taxes</a>&gt; Goods::_taxes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00045">45</a></p>
+
+</div>
+</div>
 <a id="a62e42e9f892856db4aefb261ee954904"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62e42e9f892856db4aefb261ee954904">&#9670;&nbsp;</a></span>goods_data</h2>
 
@@ -346,6 +431,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00040">40</a></p>
+
+<p class="reference">Используется в <a class="el" href="goods_8cpp_source.html#l00022">operator=()</a>.</p>
 
 </div>
 </div>
@@ -361,6 +450,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00039">39</a></p>
+
+<p class="reference">Используется в <a class="el" href="testMenu_8h_source.html#l00255">MenuTest::MockGoods_new::findGood()</a>, <a class="el" href="goods_8cpp_source.html#l00022">operator=()</a>, <a class="el" href="goods__new_8cpp_source.html#l01708">Goods_new::parseGoodsAnswer()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01329">HttpsExchange::sendSearchProduct()</a>.</p>
+
 </div>
 </div>
 <a id="aa16062527df573298f13406c1cfdd635"></a>
@@ -375,16 +468,18 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="goods_8h_source.html">goods.h</a> строка <a class="el" href="goods_8h_source.html#l00041">41</a></p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="goods_8h_source.html">goods.h</a></li>
-<li>src/appl/<a class="el" href="goods_8cpp.html">goods.cpp</a></li>
+<li>src/appl/<a class="el" href="goods_8cpp_source.html">goods.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

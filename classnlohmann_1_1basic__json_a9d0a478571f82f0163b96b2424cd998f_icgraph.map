@@ -1,0 +1,52 @@
+<map id="nlohmann::basic_json::type_name" name="nlohmann::basic_json::type_name">
+<area shape="rect" id="node1" title="return the type as string" alt="" coords="1001,1350,1149,1391"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1basic__json.html#a73ae333487310e3302135189ce8ff5d8" title="access specified array element with bounds checking" alt="" coords="787,796,953,823"/>
+<area shape="rect" id="node15" href="$classnlohmann_1_1basic__json.html#a5338e282d1d02bed389d852dd670d98d" title="add an object to an object if key does not exist" alt="" coords="796,1285,944,1326"/>
+<area shape="rect" id="node16" href="$classnlohmann_1_1basic__json.html#aacf5eed15a8b66fb1e88910707a5e229" title="add an object to an array" alt="" coords="796,1350,944,1391"/>
+<area shape="rect" id="node17" href="$classnlohmann_1_1basic__json.html#a068a16e76be178e83da6a192916923ed" title="remove element given an iterator" alt="" coords="796,1415,944,1457"/>
+<area shape="rect" id="node19" href="$classnlohmann_1_1basic__json.html#ac686d87a2261f85f1df97035b14a6e3a" title="get a boolean (explicit)" alt="" coords="796,1546,944,1587"/>
+<area shape="rect" id="node20" href="$classnlohmann_1_1basic__json.html#a0136728f5db69d4051c77b94307abd6c" title="inserts element" alt="" coords="796,906,944,947"/>
+<area shape="rect" id="node23" href="$classnlohmann_1_1basic__json.html#ac871e3b03fb2eeca9a8de4db2bea760f" title="access specified array element" alt="" coords="796,1481,944,1522"/>
+<area shape="rect" id="node24" href="$classnlohmann_1_1basic__json.html#ac8e523ddc8c2dd7e5d2daf0d49a9c0d7" title="add an object to an array" alt="" coords="796,1219,944,1261"/>
+<area shape="rect" id="node35" href="$classnlohmann_1_1basic__json.html#a65b0a24e1361a030ad0a661de22f6c8e" title="exchanges the values" alt="" coords="796,1611,944,1653"/>
+<area shape="rect" id="node36" href="$classnlohmann_1_1basic__json.html#a1cfa9ae5e7c2434cab4cfe69bffffe11" title="updates a JSON object from another object, overwriting existing keys" alt="" coords="796,1677,944,1718"/>
+<area shape="rect" id="node37" href="$classnlohmann_1_1basic__json.html#adcf8ca5079f5db993820bf50036bf45d" title="access specified object element with default value" alt="" coords="796,426,944,467"/>
+<area shape="rect" id="node3" href="$classJSON.html#a24e7816e522110443326fd259568aa5a" title=" " alt="" coords="563,964,713,991"/>
+<area shape="rect" id="node4" href="$classJSON.html#ad26a10a3e2d492554c393987eb6ebcdb" title=" " alt="" coords="553,695,723,721"/>
+<area shape="rect" id="node5" href="$classJSON.html#a22e71154079ea28e339d3b9404e840ad" title=" " alt="" coords="547,745,729,772"/>
+<area shape="rect" id="node6" href="$classHttpsExchange.html#ae5f8b6383a2e073c16af74977cb84fef" title=" " alt="" coords="292,1227,489,1253"/>
+<area shape="rect" id="node7" href="$classHttpsExchange.html#a16defd3132aa58e602c16209ed686b99" title=" " alt="" coords="24,1001,225,1042"/>
+<area shape="rect" id="node8" href="$classHttpsExchange.html#af7f81dd35d1ba0b5ae7c741bbde94366" title=" " alt="" coords="24,1066,225,1107"/>
+<area shape="rect" id="node9" href="$classHttpsExchange.html#a503815d1da47069f0aa2b3dba8232f11" title=" " alt="" coords="24,1131,225,1173"/>
+<area shape="rect" id="node10" href="$classHttpsExchange.html#ad04247827ef119bbc72f4824464cec72" title=" " alt="" coords="17,1197,232,1224"/>
+<area shape="rect" id="node11" href="$classHttpsExchange.html#a2d6cf8d092f388481aa8e882c575db8e" title="sendKeyFabricationRequest &#45; запрос ключа активации при производстве" alt="" coords="7,1249,242,1290"/>
+<area shape="rect" id="node12" href="$classHttpsExchange.html#ab6796cad9e4324c334f1d6467404e054" title=" " alt="" coords="5,1315,244,1341"/>
+<area shape="rect" id="node13" href="$classHttpsExchange.html#a98b92b57007c6098aa0276a2b41ecc18" title=" " alt="" coords="40,1365,209,1392"/>
+<area shape="rect" id="node14" href="$classHttpsExchange.html#a8b386cf41bcdcc73a59d4528c79bfbaf" title=" " alt="" coords="31,1417,218,1458"/>
+<area shape="rect" id="node18" href="$classnlohmann_1_1basic__json.html#a0ec0cd19cce42ae6071f3cc6870ea295" title="applies a JSON Merge Patch" alt="" coords="564,1665,712,1706"/>
+<area shape="rect" id="node21" href="$classMenu.html#a454ad3ecfa2e5e099f1fcd0026559886" title=" " alt="" coords="569,913,707,940"/>
+<area shape="rect" id="node22" href="$classnlohmann_1_1basic__json.html#a1ecce113ff11dd294689ee4d45cbb855" title="inserts element" alt="" coords="564,847,712,889"/>
+<area shape="rect" id="node25" href="$classFISGO__TEST__API.html#afd218b2791ff47d267225239e1ce7281" title=" " alt="" coords="299,1570,482,1611"/>
+<area shape="rect" id="node26" href="$classHttpsExchange.html#a772770150cfe9935afc2e7c0be4df621" title=" " alt="" coords="549,1015,727,1041"/>
+<area shape="rect" id="node27" href="$classHttpsExchange.html#abbccfb1938ad029a17a488f70c1404d9" title=" " alt="" coords="541,1066,735,1107"/>
+<area shape="rect" id="node28" href="$classHttpsExchange.html#a5d9e567a272d6078f0959c89b54017a8" title=" " alt="" coords="537,1431,739,1473"/>
+<area shape="rect" id="node29" href="$classnlohmann_1_1basic__json.html#aea1085f2d35cc0e1ce119cf0110119e6" title="add an object to an array" alt="" coords="564,1131,712,1173"/>
+<area shape="rect" id="node30" href="$classPrinter.html#a66f92637fb23edc67d247b9953004da9" title="Printer::print_buffer печать буфера" alt="" coords="571,1197,705,1224"/>
+<area shape="rect" id="node31" href="$classFISGO__TEST__API.html#aae335f4e9361159513edac7d0bd070f2" title=" " alt="" coords="541,1599,735,1641"/>
+<area shape="rect" id="node32" href="$classnlohmann_1_1basic__json.html#a1be31ef2d2934d37a818083a4af44f99" title="add an object to an object" alt="" coords="564,1249,712,1290"/>
+<area shape="rect" id="node33" href="$classHttpsExchange.html#ab0babbd29470a4f28b93f04baf9fa50f" title=" " alt="" coords="541,1314,735,1355"/>
+<area shape="rect" id="node34" href="$testJSON_8h.html#a5ffa365adffde765ab4ed5e3319de45e" title=" " alt="" coords="603,1380,673,1407"/>
+<area shape="rect" id="node38" href="$classFISGO__TEST__API.html#ab1221da344e11a4e850875ad8c6c88ea" title=" " alt="" coords="551,259,725,285"/>
+<area shape="rect" id="node39" href="$classHttpsExchange.html#a8769fe018dc4dcddeb93ca71b4c1eccf" title=" " alt="" coords="545,309,731,336"/>
+<area shape="rect" id="node40" href="$unionnlohmann_1_1basic__json_1_1json__value.html#a8f75abc358ee45b9bbdc601c974d6c91" title="constructor for strings" alt="" coords="557,361,719,402"/>
+<area shape="rect" id="node41" href="$classnlohmann_1_1basic__json.html#ad6a18403e7fbac9c4efd06facc71fc88" title="overload for a default value of type const char*" alt="" coords="564,426,712,467"/>
+<area shape="rect" id="node42" href="$classJSON.html#ac31c3d2ab223fc73a8d1ae1815f6ff15" title=" " alt="" coords="563,492,713,519"/>
+<area shape="rect" id="node43" href="$classJSON.html#ac857adf6f636e0608fae1c073f6a568e" title=" " alt="" coords="547,543,729,569"/>
+<area shape="rect" id="node44" href="$classJSON.html#a953eaebf5c99a886ae4e32894c7a9ca4" title=" " alt="" coords="549,593,727,620"/>
+<area shape="rect" id="node45" href="$classJSON.html#a18d87845553bd111b9234f987ce4700f" title="parseUpsertDiscount &#45; парс таски на добавление скидки" alt="" coords="543,644,733,671"/>
+<area shape="rect" id="node46" href="$classJSON.html#a0ad8255f5c5b17b96b53ab8ed4d5c084" title="parseDeleteDiscount &#45; парс таски на удаление скидки" alt="" coords="544,5,732,32"/>
+<area shape="rect" id="node47" href="$classJSON.html#a7a3d25198251a4c3fa5519189b2fcf1f" title="парс таски на внешний чек" alt="" coords="537,56,739,83"/>
+<area shape="rect" id="node48" href="$classJSON.html#ae85b9979727902275289b724f1b50aec" title="parseKktRegistr &#45; парс ответа на заппрос регистрации" alt="" coords="558,107,718,133"/>
+<area shape="rect" id="node49" href="$classJSON.html#a2a0e43b55a3febb7e377c956e0659605" title="pushTags &#45; добавить тег в вектор тегов" alt="" coords="577,157,699,184"/>
+<area shape="rect" id="node50" href="$testJSON_8h.html#a937e67a15400403d962da940dc859e70" title=" " alt="" coords="603,208,673,235"/>
+</map>

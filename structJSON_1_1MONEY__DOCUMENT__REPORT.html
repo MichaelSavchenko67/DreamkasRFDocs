@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html">MONEY_DOCUMENT_REPORT</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::MONEY_DOCUMENT_REPORT:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::MONEY_DOCUMENT_REPORT:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1MONEY__DOCUMENT__REPORT__coll__graph.png" border="0" usemap="#JSON_1_1MONEY__DOCUMENT__REPORT_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1MONEY__DOCUMENT__REPORT_coll__map" id="JSON_1_1MONEY__DOCUMENT__REPORT_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,252,185"/>
@@ -108,7 +87,10 @@ $(function() {
 <tr class="memitem:a4ac6aa3b559bf8543dcc38e692d7fdbe"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a4ac6aa3b559bf8543dcc38e692d7fdbe">cashier_name</a></td></tr>
 <tr class="separator:a4ac6aa3b559bf8543dcc38e692d7fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00190">190</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a12bc5966f14a266f37cd1193f6f0a706"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12bc5966f14a266f37cd1193f6f0a706">&#9670;&nbsp;</a></span>MONEY_DOCUMENT_REPORT()</h2>
 
@@ -124,6 +106,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02168">2168</a></p>
+<div class="fragment"><div class="line"><a name="l02169"></a><span class="lineno"> 2169</span>&#160;{</div><div class="line"><a name="l02170"></a><span class="lineno"> 2170</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#acc60194f8a19654c7c6648b1570a9d33">shift</a>            = 0;</div><div class="line"><a name="l02171"></a><span class="lineno"> 2171</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a1d189d94fecf0707d05a80ed4c74c3c0">number</a>           = 0;</div><div class="line"><a name="l02172"></a><span class="lineno"> 2172</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#aa0d27be2702e5856b8fccd6780d189ad">date</a>.        clear();</div><div class="line"><a name="l02173"></a><span class="lineno"> 2173</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">doc_type</a>.    clear();</div><div class="line"><a name="l02174"></a><span class="lineno"> 2174</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a2c0fcc981f7fe3b0aad1f04e945f4b21">sum</a>              = 0;</div><div class="line"><a name="l02175"></a><span class="lineno"> 2175</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a4ac6aa3b559bf8543dcc38e692d7fdbe">cashier_name</a>.clear();</div><div class="line"><a name="l02176"></a><span class="lineno"> 2176</span>&#160;}</div><div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_acc60194f8a19654c7c6648b1570a9d33"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#acc60194f8a19654c7c6648b1570a9d33">JSON::MONEY_DOCUMENT_REPORT::shift</a></div><div class="ttdeci">uint64_t shift</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00194">json.h:194</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a1d189d94fecf0707d05a80ed4c74c3c0"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a1d189d94fecf0707d05a80ed4c74c3c0">JSON::MONEY_DOCUMENT_REPORT::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00194">json.h:194</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a4ac6aa3b559bf8543dcc38e692d7fdbe"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a4ac6aa3b559bf8543dcc38e692d7fdbe">JSON::MONEY_DOCUMENT_REPORT::cashier_name</a></div><div class="ttdeci">string cashier_name</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00199">json.h:199</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a3766bdd32a8614b93d2ea078ee630f04"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT::doc_type</a></div><div class="ttdeci">string doc_type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00196">json.h:196</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a2c0fcc981f7fe3b0aad1f04e945f4b21"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a2c0fcc981f7fe3b0aad1f04e945f4b21">JSON::MONEY_DOCUMENT_REPORT::sum</a></div><div class="ttdeci">uint64_t sum</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00198">json.h:198</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_aa0d27be2702e5856b8fccd6780d189ad"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#aa0d27be2702e5856b8fccd6780d189ad">JSON::MONEY_DOCUMENT_REPORT::date</a></div><div class="ttdeci">string date</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00196">json.h:196</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad3239fa2a0c46f60256a7c436d2073a1"></a>
@@ -141,6 +131,14 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02178">2178</a></p>
+<div class="fragment"><div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;{</div><div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#acc60194f8a19654c7c6648b1570a9d33">shift</a>            = 0;</div><div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a1d189d94fecf0707d05a80ed4c74c3c0">number</a>           = 0;</div><div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#aa0d27be2702e5856b8fccd6780d189ad">date</a>.        clear();</div><div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">doc_type</a>.    clear();</div><div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a2c0fcc981f7fe3b0aad1f04e945f4b21">sum</a>              = 0;</div><div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a4ac6aa3b559bf8543dcc38e692d7fdbe">cashier_name</a>.clear();</div><div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;}</div><div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_acc60194f8a19654c7c6648b1570a9d33"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#acc60194f8a19654c7c6648b1570a9d33">JSON::MONEY_DOCUMENT_REPORT::shift</a></div><div class="ttdeci">uint64_t shift</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00194">json.h:194</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a1d189d94fecf0707d05a80ed4c74c3c0"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a1d189d94fecf0707d05a80ed4c74c3c0">JSON::MONEY_DOCUMENT_REPORT::number</a></div><div class="ttdeci">uint64_t number</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00194">json.h:194</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a4ac6aa3b559bf8543dcc38e692d7fdbe"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a4ac6aa3b559bf8543dcc38e692d7fdbe">JSON::MONEY_DOCUMENT_REPORT::cashier_name</a></div><div class="ttdeci">string cashier_name</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00199">json.h:199</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a3766bdd32a8614b93d2ea078ee630f04"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a3766bdd32a8614b93d2ea078ee630f04">JSON::MONEY_DOCUMENT_REPORT::doc_type</a></div><div class="ttdeci">string doc_type</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00196">json.h:196</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_a2c0fcc981f7fe3b0aad1f04e945f4b21"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#a2c0fcc981f7fe3b0aad1f04e945f4b21">JSON::MONEY_DOCUMENT_REPORT::sum</a></div><div class="ttdeci">uint64_t sum</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00198">json.h:198</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT_html_aa0d27be2702e5856b8fccd6780d189ad"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT.html#aa0d27be2702e5856b8fccd6780d189ad">JSON::MONEY_DOCUMENT_REPORT::date</a></div><div class="ttdeci">string date</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00196">json.h:196</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -156,6 +154,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00199">199</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
+
 </div>
 </div>
 <a id="aa0d27be2702e5856b8fccd6780d189ad"></a>
@@ -169,6 +171,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00196">196</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
 
 </div>
 </div>
@@ -184,6 +190,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00196">196</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
+
 </div>
 </div>
 <a id="a1d189d94fecf0707d05a80ed4c74c3c0"></a>
@@ -197,6 +207,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00194">194</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
 
 </div>
 </div>
@@ -212,6 +226,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00194">194</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
+
 </div>
 </div>
 <a id="a2c0fcc981f7fe3b0aad1f04e945f4b21"></a>
@@ -226,16 +244,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00198">198</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="json_8h_source.html">json.h</a></li>
-<li>src/appl/<a class="el" href="json_8cpp.html">json.cpp</a></li>
+<li>src/appl/<a class="el" href="json_8cpp_source.html">json.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

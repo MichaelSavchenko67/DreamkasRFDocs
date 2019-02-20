@@ -1,18 +1,5 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" title=" " alt="" coords="5,360,53,387"/>
-<area shape="rect" id="node2" href="$classHttpsExchangeTest.html" title="The HttpsExchangeTest class &#45; тесты для HttpsExchange." alt="" coords="111,5,250,32"/>
-<area shape="rect" id="node3" href="$classMenuTest.html" title=" " alt="" coords="141,56,221,83"/>
-<area shape="rect" id="node4" href="$classTestBarcodeScanner.html" title=" " alt="" coords="109,107,253,133"/>
-<area shape="rect" id="node5" href="$classTestConvert.html" title=" " alt="" coords="133,157,228,184"/>
-<area shape="rect" id="node6" href="$classTestFilesFG.html" title=" " alt="" coords="133,208,228,235"/>
-<area shape="rect" id="node7" href="$classTestJSON.html" title=" " alt="" coords="139,259,223,285"/>
-<area shape="rect" id="node8" href="$classTestLcd.html" title=" " alt="" coords="146,309,215,336"/>
-<area shape="rect" id="node9" href="$classTestLicense.html" title=" " alt="" coords="134,360,227,387"/>
-<area shape="rect" id="node10" href="$classTestPiritLib.html" title=" " alt="" coords="137,411,225,437"/>
-<area shape="rect" id="node11" href="$classTestPositionsNew.html" title=" " alt="" coords="116,461,245,488"/>
-<area shape="rect" id="node12" href="$classTestPrinter.html" title=" " alt="" coords="137,512,224,539"/>
-<area shape="rect" id="node13" href="$classTestReceiptsDb.html" title=" " alt="" coords="122,563,239,589"/>
-<area shape="rect" id="node14" href="$classTestScaleProtocolPos2.html" title=" " alt="" coords="101,613,260,640"/>
-<area shape="rect" id="node15" href="$classTestScales.html" title=" " alt="" coords="137,664,225,691"/>
-<area shape="rect" id="node16" href="$classTestSqlWrapper.html" title=" " alt="" coords="123,715,239,741"/>
+<area shape="rect" id="node1" href="$classHttpsExchange.html" title=" " alt="" coords="5,42,117,69"/>
+<area shape="rect" id="node2" href="$classHttpsExchangeTest_1_1MockHttpsExchange.html" title="The MockHttpsExchange class &#45; mock HttpsExchange." alt="" coords="165,5,312,47"/>
+<area shape="rect" id="node3" href="$classMenuTest_1_1MockHE.html" title=" " alt="" coords="169,71,308,98"/>
 </map>

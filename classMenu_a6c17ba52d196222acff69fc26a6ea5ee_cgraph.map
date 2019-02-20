@@ -1,10 +1,10 @@
 <map id="Menu::goodsFromCloud" name="Menu::goodsFromCloud">
 <area shape="rect" id="node1" title="goodsFromCloud &#45; поиск товара в облаке" alt="" coords="5,81,167,108"/>
-<area shape="rect" id="node2" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="259,5,345,32"/>
-<area shape="rect" id="node3" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="253,56,351,83"/>
-<area shape="rect" id="node4" href="$classMenu.html#a59bab4de785a0e0f8570fd045fdab872" title=" " alt="" coords="231,107,373,133"/>
-<area shape="rect" id="node6" href="$classMenu.html#acec880a0f9cdbb0cf02d06f54c6c6101" title=" " alt="" coords="215,161,389,188"/>
-<area shape="rect" id="node5" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="450,95,583,137"/>
-<area shape="rect" id="node7" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="449,161,585,188"/>
-<area shape="rect" id="node8" href="$classMenu.html#a340702e5bbf34abb4d2d2208608becf4" title=" " alt="" coords="437,213,596,254"/>
+<area shape="rect" id="node2" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="253,5,351,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a59bab4de785a0e0f8570fd045fdab872" title=" " alt="" coords="231,56,373,83"/>
+<area shape="rect" id="node5" href="$classMenu.html#acec880a0f9cdbb0cf02d06f54c6c6101" title=" " alt="" coords="215,107,389,133"/>
+<area shape="rect" id="node8" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="259,157,345,184"/>
+<area shape="rect" id="node4" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="450,41,583,82"/>
+<area shape="rect" id="node6" href="$classPosition__new.html#a7d56a241fdfdacdbb1e2bac0ad5cb0fe" title=" " alt="" coords="449,107,585,133"/>
+<area shape="rect" id="node7" href="$classMenu.html#a340702e5bbf34abb4d2d2208608becf4" title=" " alt="" coords="437,158,596,199"/>
 </map>

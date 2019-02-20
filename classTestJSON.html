@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -74,39 +51,44 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="testJSON_8h_source.html">testJSON.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:TestJSON:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:TestJSON:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestJSON__inherit__graph.png" border="0" usemap="#TestJSON_inherit__map" alt="Inheritance graph"/></div>
 <map name="TestJSON_inherit__map" id="TestJSON_inherit__map">
 <area shape="rect"  title=" " alt="" coords="5,131,117,325"/>
 <area shape="rect"  title=" " alt="" coords="37,5,85,83"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса TestJSON:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса TestJSON:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="classTestJSON__coll__graph.png" border="0" usemap="#TestJSON_coll__map" alt="Collaboration graph"/></div>
 <map name="TestJSON_coll__map" id="TestJSON_coll__map">
-<area shape="rect"  title=" " alt="" coords="510,5055,622,5161"/>
-<area shape="rect"  title=" " alt="" coords="46,3507,94,3584"/>
-<area shape="rect"  href="classTestJSON_1_1MockConvert.html" title=" " alt="" coords="118,3492,288,3599"/>
-<area shape="rect"  href="classConvert.html" title=" " alt="" coords="96,873,310,2036"/>
-<area shape="rect"  href="classEncodeConvertor.html" title=" " alt="" coords="313,3470,464,3621"/>
-<area shape="rect"  href="classTestJSON_1_1MockNet.html" title=" " alt="" coords="488,3499,643,3591"/>
-<area shape="rect"  href="classNet.html" title=" " alt="" coords="472,1328,630,1581"/>
-<area shape="rect"  href="classTestJSON_1_1MockFg.html" title=" " alt="" coords="667,3492,822,3599"/>
-<area shape="rect"  href="classFilesFG.html" title=" " alt="" coords="655,1277,812,1633"/>
-<area shape="rect"  href="structJSON_1_1JSON__POLL__.html" title=" " alt="" coords="864,3507,1014,3584"/>
-<area shape="rect"  href="structJSON_1_1JSON__POLL___1_1REQUEST.html" title=" " alt="" coords="837,1409,1060,1501"/>
-<area shape="rect"  href="structJSON_1_1JSON__POLL___1_1RESPONSE.html" title=" " alt="" coords="1084,1409,1316,1501"/>
-<area shape="rect"  href="structJSON_1_1TASK__DATA.html" title=" " alt="" coords="1127,631,1274,811"/>
-<area shape="rect"  href="structJSON_1_1JSON__KEY__ACTIVATION.html" title=" " alt="" coords="1024,417,1248,524"/>
-<area shape="rect"  href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html" title=" " alt="" coords="1273,373,1453,568"/>
-<area shape="rect"  href="structJSON_1_1JSON__ATTRIBUTES.html" title=" " alt="" coords="1193,219,1386,311"/>
-<area shape="rect"  href="structJSON_1_1JSON__TOTAL.html" title=" " alt="" coords="1410,226,1561,303"/>
-<area shape="rect"  href="structJSON_1_1JSON__TAXES.html" title=" " alt="" coords="1409,5,1562,156"/>
-<area shape="rect"  href="classnlohmann_1_1basic__json.html" title="a class to store JSON values" alt="" coords="1038,2099,1293,4992"/>
+<area shape="rect"  title=" " alt="" coords="518,5319,630,5425"/>
+<area shape="rect"  title=" " alt="" coords="54,3639,102,3716"/>
+<area shape="rect"  href="classTestJSON_1_1MockConvert.html" title=" " alt="" coords="126,3624,296,3731"/>
+<area shape="rect"  href="classConvert.html" title=" " alt="" coords="104,873,318,2036"/>
+<area shape="rect"  href="classEncodeConvertor.html" title=" " alt="" coords="321,3573,472,3782"/>
+<area shape="rect"  href="classTestJSON_1_1MockNet.html" title=" " alt="" coords="496,3631,651,3723"/>
+<area shape="rect"  href="classNet.html" title=" " alt="" coords="470,1328,629,1581"/>
+<area shape="rect"  href="classTestJSON_1_1MockFg.html" title=" " alt="" coords="675,3624,830,3731"/>
+<area shape="rect"  href="classFilesFG.html" title=" " alt="" coords="654,1277,811,1633"/>
+<area shape="rect"  href="structJSON_1_1JSON__POLL__.html" title=" " alt="" coords="872,3639,1022,3716"/>
+<area shape="rect"  href="structJSON_1_1JSON__POLL___1_1REQUEST.html" title=" " alt="" coords="836,1409,1058,1501"/>
+<area shape="rect"  href="structJSON_1_1JSON__POLL___1_1RESPONSE.html" title=" " alt="" coords="1083,1409,1315,1501"/>
+<area shape="rect"  href="structJSON_1_1TASK__DATA.html" title=" " alt="" coords="1126,631,1272,811"/>
+<area shape="rect"  href="structJSON_1_1JSON__KEY__ACTIVATION.html" title=" " alt="" coords="1023,417,1247,524"/>
+<area shape="rect"  href="structJSON_1_1JSON__EXTERNAL__PURCHASE.html" title=" " alt="" coords="1272,373,1452,568"/>
+<area shape="rect"  href="structJSON_1_1JSON__ATTRIBUTES.html" title=" " alt="" coords="1192,219,1385,311"/>
+<area shape="rect"  href="structJSON_1_1JSON__TOTAL.html" title=" " alt="" coords="1409,226,1560,303"/>
+<area shape="rect"  href="structJSON_1_1JSON__TAXES.html" title=" " alt="" coords="1408,5,1561,156"/>
+<area shape="rect"  href="classnlohmann_1_1basic__json.html" title="a class to store JSON values" alt="" coords="1216,2099,1470,5256"/>
+<area shape="rect"  href="unionnlohmann_1_1basic__json_1_1json__value.html" title="a JSON value" alt="" coords="1340,1247,1594,1662"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -149,7 +131,10 @@ $(function() {
 <tr class="memitem:a2260e0902930d99bd0e380963e436eb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="testGlobalFuncMock_8h.html#a882197d618d1823462b68dc16270232c">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestJSON.html#a2260e0902930d99bd0e380963e436eb3">errP</a></td></tr>
 <tr class="separator:a2260e0902930d99bd0e380963e436eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00025">25</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a1470408971960deada428f7b86d7dbbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1470408971960deada428f7b86d7dbbe">&#9670;&nbsp;</a></span>TestJSON()</h2>
 
@@ -173,6 +158,13 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00028">28</a></p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>.reset(<span class="keyword">new</span> MockJson);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;convert.reset(&amp;<a class="code" href="classTestJSON.html#a61ff8d40d25c2b57ead7161890c1907f">mockConvert</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;fg.reset(&amp;<a class="code" href="classTestJSON.html#a870a0ad1708d2ad09b130a403df574de">mockFg</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;net.reset(&amp;<a class="code" href="classTestJSON.html#a5fd3951cd31cccc5f924b50a13e1f5b6">mockNet</a>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classTestJSON.html#a2260e0902930d99bd0e380963e436eb3">errP</a> = 0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div><div class="ttc" id="classTestJSON_html_a870a0ad1708d2ad09b130a403df574de"><div class="ttname"><a href="classTestJSON.html#a870a0ad1708d2ad09b130a403df574de">TestJSON::mockFg</a></div><div class="ttdeci">TestJSON::MockFg mockFg</div></div>
+<div class="ttc" id="classTestJSON_html_ab4cb93ed2cb9594e3d1994b968fe6a45"><div class="ttname"><a href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">TestJSON::jsonTest</a></div><div class="ttdeci">unique_ptr&lt; MockJson &gt; jsonTest</div><div class="ttdef"><b>Definition:</b> <a href="testJSON_8h_source.html#l00127">testJSON.h:127</a></div></div>
+<div class="ttc" id="classTestJSON_html_a61ff8d40d25c2b57ead7161890c1907f"><div class="ttname"><a href="classTestJSON.html#a61ff8d40d25c2b57ead7161890c1907f">TestJSON::mockConvert</a></div><div class="ttdeci">TestJSON::MockConvert mockConvert</div></div>
+<div class="ttc" id="classTestJSON_html_a2260e0902930d99bd0e380963e436eb3"><div class="ttname"><a href="classTestJSON.html#a2260e0902930d99bd0e380963e436eb3">TestJSON::errP</a></div><div class="ttdeci">int errP</div><div class="ttdef"><b>Definition:</b> <a href="testJSON_8h_source.html#l00131">testJSON.h:131</a></div></div>
+<div class="ttc" id="classTestJSON_html_a5fd3951cd31cccc5f924b50a13e1f5b6"><div class="ttname"><a href="classTestJSON.html#a5fd3951cd31cccc5f924b50a13e1f5b6">TestJSON::mockNet</a></div><div class="ttdeci">TestJSON::MockNet mockNet</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1d8efd7651ca7fa8b777f46903508562"></a>
@@ -198,6 +190,9 @@ $(function() {
 </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00036">36</a></p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;convert.release();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;fg.release();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">jsonTest</a>-&gt;net.release();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="ttc" id="classTestJSON_html_ab4cb93ed2cb9594e3d1994b968fe6a45"><div class="ttname"><a href="classTestJSON.html#ab4cb93ed2cb9594e3d1994b968fe6a45">TestJSON::jsonTest</a></div><div class="ttdeci">unique_ptr&lt; MockJson &gt; jsonTest</div><div class="ttdef"><b>Definition:</b> <a href="testJSON_8h_source.html#l00127">testJSON.h:127</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -213,6 +208,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00130">130</a></p>
+
 </div>
 </div>
 <a id="a2260e0902930d99bd0e380963e436eb3"></a>
@@ -226,6 +223,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00131">131</a></p>
 
 </div>
 </div>
@@ -241,6 +240,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00129">129</a></p>
+
 </div>
 </div>
 <a id="a56f2ef58745e72fc2c78c46cf5166893"></a>
@@ -255,6 +256,8 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00128">128</a></p>
+
 </div>
 </div>
 <a id="ab4cb93ed2cb9594e3d1994b968fe6a45"></a>
@@ -268,6 +271,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="testJSON_8h_source.html">testJSON.h</a> строка <a class="el" href="testJSON_8h_source.html#l00127">127</a></p>
 
 </div>
 </div>
@@ -319,7 +324,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:45. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -1,4 +1,6 @@
 <map id="Menu::showActiveLicenseServices" name="Menu::showActiveLicenseServices">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,232,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,232,57"/>
 <area shape="rect" id="node2" href="$classLicense.html#af1fca32f593ef008b5e50e6709469488" title="Получение тегов c определенным статусом" alt="" coords="280,5,456,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a1e798b0d7908d29bb32d351c01efa44f" title="showLicenseList &#45; вывод списка фич на экран с заголовком" alt="" coords="289,56,447,83"/>
+<area shape="rect" id="node4" href="$classMenu.html#a05da5743929b000b220fdac83a09da8a" title=" " alt="" coords="504,56,639,83"/>
 </map>

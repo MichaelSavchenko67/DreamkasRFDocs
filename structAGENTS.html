@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="agents_8h_source.html">agents.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса AGENTS:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса AGENTS:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structAGENTS__coll__graph.png" border="0" usemap="#AGENTS_coll__map" alt="Collaboration graph"/></div>
 <map name="AGENTS_coll__map" id="AGENTS_coll__map">
 <area shape="rect"  title=" " alt="" coords="248,263,345,340"/>
@@ -107,7 +86,10 @@ $(function() {
 <tr class="memitem:a564857bf15058af52bfc06b4a5cacdf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSPEC__AGENT.html">SPEC_AGENT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAGENTS.html#a564857bf15058af52bfc06b4a5cacdf1">agent</a></td></tr>
 <tr class="separator:a564857bf15058af52bfc06b4a5cacdf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00095">95</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a4ccce5cb39fd7597e25f2de0bec5d6d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ccce5cb39fd7597e25f2de0bec5d6d5">&#9670;&nbsp;</a></span>AGENTS()</h2>
 
@@ -146,6 +128,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00114">114</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
+
 </div>
 </div>
 <a id="a9e399e3cf6b9c7117107ce0f32bcc655"></a>
@@ -159,6 +145,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00114">114</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
 
 </div>
 </div>
@@ -174,6 +164,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00108">108</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
+
 </div>
 </div>
 <a id="a367ec7e3730218f7184307f28b6a71d2"></a>
@@ -187,6 +181,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00108">108</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
 
 </div>
 </div>
@@ -202,6 +200,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00114">114</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
+
 </div>
 </div>
 <a id="a8bfee53b47f2ff3d27d6dfecd291f03b"></a>
@@ -215,6 +217,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00102">102</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
 
 </div>
 </div>
@@ -230,6 +236,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="agents_8h_source.html">agents.h</a> строка <a class="el" href="agents_8h_source.html#l00102">102</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l25318">Menu::agent_init()</a>, <a class="el" href="menu_8cpp_source.html#l26043">Menu::agent_req_init()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="json_8cpp_source.html#l00248">JSON::agents_get()</a> и <a class="el" href="json_8cpp_source.html#l00147">JSON::agents_JSON_create()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структуры находятся в файле:<ul>
@@ -238,7 +248,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="classJSON.html">JSON</a></li><li class="navelem"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html">MONEY_DOCUMENT_REPORT_JSON</a></li>  </ul>
@@ -77,9 +54,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="json_8h_source.html">json.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса JSON::MONEY_DOCUMENT_REPORT_JSON:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса JSON::MONEY_DOCUMENT_REPORT_JSON:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON__coll__graph.png" border="0" usemap="#JSON_1_1MONEY__DOCUMENT__REPORT__JSON_coll__map" alt="Collaboration graph"/></div>
 <map name="JSON_1_1MONEY__DOCUMENT__REPORT__JSON_coll__map" id="JSON_1_1MONEY__DOCUMENT__REPORT__JSON_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,5,296,127"/>
@@ -100,7 +79,10 @@ $(function() {
 <tr class="memitem:a807898991199cd9db8dadfacde14fea8"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT.html">MONEY_DOCUMENT_REPORT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a807898991199cd9db8dadfacde14fea8">documents</a></td></tr>
 <tr class="separator:a807898991199cd9db8dadfacde14fea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00201">201</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="a6143e53672bb3be5f7238ffc4b4f2de6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6143e53672bb3be5f7238ffc4b4f2de6">&#9670;&nbsp;</a></span>MONEY_DOCUMENT_REPORT_JSON()</h2>
 
@@ -116,6 +98,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02188">2188</a></p>
+<div class="fragment"><div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;{</div><div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a96e68787edf03864063ff12512c43430">uuid</a>.     clear();</div><div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a807898991199cd9db8dadfacde14fea8">documents</a>.clear();</div><div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;}</div><div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON_html_a96e68787edf03864063ff12512c43430"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a96e68787edf03864063ff12512c43430">JSON::MONEY_DOCUMENT_REPORT_JSON::uuid</a></div><div class="ttdeci">string uuid</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00205">json.h:205</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON_html_a807898991199cd9db8dadfacde14fea8"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a807898991199cd9db8dadfacde14fea8">JSON::MONEY_DOCUMENT_REPORT_JSON::documents</a></div><div class="ttdeci">vector&lt; MONEY_DOCUMENT_REPORT &gt; documents</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00206">json.h:206</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a70fd8757a5bb8298a506a6f7099b26c8"></a>
@@ -133,6 +119,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8cpp_source.html">json.cpp</a> строка <a class="el" href="json_8cpp_source.html#l02194">2194</a></p>
+<div class="fragment"><div class="line"><a name="l02195"></a><span class="lineno"> 2195</span>&#160;{</div><div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a96e68787edf03864063ff12512c43430">uuid</a>.     clear();</div><div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;    <a class="code" href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a807898991199cd9db8dadfacde14fea8">documents</a>.clear();</div><div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;}</div><div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON_html_a96e68787edf03864063ff12512c43430"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a96e68787edf03864063ff12512c43430">JSON::MONEY_DOCUMENT_REPORT_JSON::uuid</a></div><div class="ttdeci">string uuid</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00205">json.h:205</a></div></div>
+<div class="ttc" id="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON_html_a807898991199cd9db8dadfacde14fea8"><div class="ttname"><a href="structJSON_1_1MONEY__DOCUMENT__REPORT__JSON.html#a807898991199cd9db8dadfacde14fea8">JSON::MONEY_DOCUMENT_REPORT_JSON::documents</a></div><div class="ttdeci">vector&lt; MONEY_DOCUMENT_REPORT &gt; documents</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00206">json.h:206</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Данные класса</h2>
@@ -148,6 +138,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00206">206</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02268">JSON::money_doc_rep_clear()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01902">HttpsExchange::sendRequest()</a>.</p>
+
 </div>
 </div>
 <a id="a96e68787edf03864063ff12512c43430"></a>
@@ -162,16 +156,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="json_8h_source.html">json.h</a> строка <a class="el" href="json_8h_source.html#l00205">205</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02268">JSON::money_doc_rep_clear()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a> и <a class="el" href="https__exchange_8cpp_source.html#l01902">HttpsExchange::sendRequest()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="json_8h_source.html">json.h</a></li>
-<li>src/appl/<a class="el" href="json_8cpp.html">json.cpp</a></li>
+<li>src/appl/<a class="el" href="json_8cpp_source.html">json.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

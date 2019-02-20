@@ -1,0 +1,11 @@
+<map id="Menu::wifi_settings" name="Menu::wifi_settings">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,140,163"/>
+<area shape="rect" id="node2" href="$classMenu.html#a394cad128b19873bb99159d946f664a5" title=" " alt="" coords="188,136,355,163"/>
+<area shape="rect" id="node3" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="433,5,531,32"/>
+<area shape="rect" id="node4" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="439,56,525,83"/>
+<area shape="rect" id="node5" href="$classNet.html#aa18ce0755d29b41045ad451a8b8ed115" title=" " alt="" coords="420,107,544,133"/>
+<area shape="rect" id="node6" href="$classMenu.html#a15935c2531dc2e756cbb2a40c41dedfd" title=" " alt="" coords="415,158,549,199"/>
+<area shape="rect" id="node7" href="$classMenu.html#a463fd46ee68fe3d818ccda9e54584a28" title=" " alt="" coords="403,224,561,251"/>
+<area shape="rect" id="node9" href="$classBIOS.html#ac2f06e17a23d7f7962edb4a34e588032" title=" " alt="" coords="421,275,543,301"/>
+<area shape="rect" id="node8" href="$keypad_8h.html#ac85f201ccbbd56dc4118497264be0fe3" title=" " alt="" coords="609,224,737,251"/>
+</map>

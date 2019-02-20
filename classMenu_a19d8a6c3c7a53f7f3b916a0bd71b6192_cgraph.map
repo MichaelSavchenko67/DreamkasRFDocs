@@ -1,6 +1,8 @@
 <map id="Menu::time_update_mode" name="Menu::time_update_mode">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,177,83"/>
-<area shape="rect" id="node2" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="264,5,361,32"/>
-<area shape="rect" id="node3" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="225,56,400,83"/>
-<area shape="rect" id="node4" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="269,107,356,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,177,133"/>
+<area shape="rect" id="node2" href="$classConvert.html#a826295fc5c1d1b0f9a94bfde51d4750a" title=" " alt="" coords="225,5,400,32"/>
+<area shape="rect" id="node3" href="$classBIOS.html#aa5a40d792986dcbad2db5a0dfd7a1036" title=" " alt="" coords="233,56,393,83"/>
+<area shape="rect" id="node4" href="$classBIOS.html#a3b45144f8533af7c25c11619d4dbf5e6" title=" " alt="" coords="253,107,373,133"/>
+<area shape="rect" id="node5" href="$classMenu.html#a4e7740205c4cf2eae9090acff7d7fd1d" title=" " alt="" coords="264,157,361,184"/>
+<area shape="rect" id="node6" href="$classMenu.html#a653f32e7cdce21925ef63be6e2762f54" title=" " alt="" coords="269,208,356,235"/>
 </map>

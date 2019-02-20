@@ -1,0 +1,4 @@
+<map id="ScaleProtocolMassak::isCorrectAnswerPacket" name="ScaleProtocolMassak::isCorrectAnswerPacket">
+<area shape="rect" id="node1" title="isCorrectAnswerPacket &#45; проверка принятого пакета" alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03" title="parseIntegerValue &#45; парс целочисленного значения" alt="" coords="221,5,376,47"/>
+</map>

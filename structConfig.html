@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -73,9 +50,11 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="config_8h_source.html">config.h</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса Config:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф связей класса Config:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structConfig__coll__graph.png" border="0" usemap="#Config_coll__map" alt="Collaboration graph"/></div>
 <map name="Config_coll__map" id="Config_coll__map">
 <area shape="rect"  title=" " alt="" coords="5,204,175,1543"/>
@@ -269,7 +248,10 @@ $(function() {
 <tr class="memitem:a5be85e829db44ba593f4323d4902d099"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfig.html#a5be85e829db44ba593f4323d4902d099">fnRegistered</a> = false</td></tr>
 <tr class="separator:a5be85e829db44ba593f4323d4902d099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Конструктор(ы)</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00170">170</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
 <a id="abd0c571c116924871e30444b192b792a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd0c571c116924871e30444b192b792a">&#9670;&nbsp;</a></span>Config()</h2>
 
@@ -284,13 +266,21 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00151">151</a></p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config_clear</a>( <span class="keyword">this</span> );</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div><div class="ttc" id="config_8cpp_html_a71c1d4149cf167468e75ff740d1a996a"><div class="ttname"><a href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config_clear</a></div><div class="ttdeci">int config_clear(Config *config)</div><div class="ttdef"><b>Definition:</b> <a href="config_8cpp_source.html#l00040">config.cpp:40</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structConfig_abd0c571c116924871e30444b192b792a_cgraph.png" border="0" usemap="#structConfig_abd0c571c116924871e30444b192b792a_cgraph" alt=""/></div>
 <map name="structConfig_abd0c571c116924871e30444b192b792a_cgraph" id="structConfig_abd0c571c116924871e30444b192b792a_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,112,32"/>
 <area shape="rect"  href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a" title=" " alt="" coords="160,5,252,32"/>
+<area shape="rect"  href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0" title=" " alt="" coords="300,5,452,32"/>
 </map>
 </div>
 
@@ -310,13 +300,21 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8cpp_source.html">config.cpp</a> строка <a class="el" href="config_8cpp_source.html#l00155">155</a></p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;{</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config_clear</a>( <span class="keyword">this</span> );</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div><div class="ttc" id="config_8cpp_html_a71c1d4149cf167468e75ff740d1a996a"><div class="ttname"><a href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a">config_clear</a></div><div class="ttdeci">int config_clear(Config *config)</div><div class="ttdef"><b>Definition:</b> <a href="config_8cpp_source.html#l00040">config.cpp:40</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Граф вызовов:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="structConfig_a543dce59b66475c5108088ee4ce1cdfc_cgraph.png" border="0" usemap="#structConfig_a543dce59b66475c5108088ee4ce1cdfc_cgraph" alt=""/></div>
 <map name="structConfig_a543dce59b66475c5108088ee4ce1cdfc_cgraph" id="structConfig_a543dce59b66475c5108088ee4ce1cdfc_cgraph">
 <area shape="rect"  title=" " alt="" coords="5,5,120,32"/>
 <area shape="rect"  href="config_8cpp.html#a71c1d4149cf167468e75ff740d1a996a" title=" " alt="" coords="168,5,260,32"/>
+<area shape="rect"  href="classConvert.html#aa5a254b23335ed91459732aafd5a5db0" title=" " alt="" coords="308,5,460,32"/>
 </map>
 </div>
 
@@ -335,6 +333,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00249">249</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="printer_8cpp_source.html#l02935">Printer::fs_change_kkt_mode_print()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="abbc8b1cf04dc0c20513618333f44fb2f"></a>
@@ -348,6 +350,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00234">234</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l13158">Menu::agent_choose()</a>, <a class="el" href="menu_8cpp_source.html#l13334">Menu::agent_choose_for_good()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12745">Menu::choose_agents_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="https__exchange_8cpp_source.html#l01616">HttpsExchange::RegistrationReportJsonCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -363,6 +369,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00184">184</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l02362">sqlWrapper::addImageTable()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l24790">Menu::factory()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l02383">sqlWrapper::getImageTable()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l24256">Menu::registerInFactory()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="testHttpsExchange_8h_source.html#l00296">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a8e5a2e07e643e5cac53b721180fe685f"></a>
@@ -376,6 +386,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00250">250</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="printer_8cpp_source.html#l01617">Printer::fiscal_receipt_print()</a>, <a class="el" href="printer_8cpp_source.html#l02935">Printer::fs_change_kkt_mode_print()</a>, <a class="el" href="menu_8cpp_source.html#l09007">Menu::get_data_int()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
 
 </div>
 </div>
@@ -391,6 +405,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00277">277</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l30085">Menu::updateBatteryVoltage()</a>.</p>
+
 </div>
 </div>
 <a id="a91e4b915dbee1727cc7ffd43fc37fcb7"></a>
@@ -404,6 +422,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00247">247</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l27935">Menu::bso_choose()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="printer_8cpp_source.html#l01264">Printer::fiscal_receipt_print()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -419,6 +441,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00264">264</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a> и <a class="el" href="menu_8cpp_source.html#l25800">Menu::who_am_i()</a>.</p>
+
 </div>
 </div>
 <a id="ab56cd072586ca8dcb0fe28078e5f6139"></a>
@@ -432,6 +458,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00206">206</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="printer_8cpp_source.html#l00982">Printer::insert_res_report()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
 
 </div>
 </div>
@@ -447,6 +477,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00207">207</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a2aeb3a10ddea4680889201fef07c5df4"></a>
@@ -460,6 +494,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00204">204</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -475,6 +513,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00229">229</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a155f6c9c8f1ae625f607c0db65bccbe2"></a>
@@ -488,6 +530,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00219">219</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -503,6 +549,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00262">262</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09007">Menu::get_data_int()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="af437ed4cb61dcf2c0343c3fc5783bc4e"></a>
@@ -516,6 +566,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00261">261</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09007">Menu::get_data_int()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>.</p>
 
 </div>
 </div>
@@ -531,6 +585,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00260">260</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09007">Menu::get_data_int()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a0c8cee484b79b866acff15a7a8ad5746"></a>
@@ -544,6 +602,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00258">258</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l10526">Menu::draw_reg_step_ext()</a>, <a class="el" href="menu_8cpp_source.html#l25848">Menu::ext_registr()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l03605">Menu::menuCycle()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a> и <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a>.</p>
 
 </div>
 </div>
@@ -559,6 +621,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00259">259</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a> и <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>.</p>
+
 </div>
 </div>
 <a id="ad037cf025dcd58d88a0681bc2a945f7d"></a>
@@ -572,6 +638,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00175">175</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -587,6 +657,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00254">254</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="aa76fc0ae50318cc3094b55beda1e9cc1"></a>
@@ -600,6 +674,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00215">215</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l28541">Menu::dep_choose()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>.</p>
 
 </div>
 </div>
@@ -615,6 +693,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00214">214</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12874">Menu::choose_tax_system()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l04476">Menu::ExternalReceiptFiscal()</a>, <a class="el" href="printer_8cpp_source.html#l01264">Printer::fiscal_receipt_print()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l15683">Menu::isGoodsAvailable()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l28657">Menu::nds_choose_rb()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l17875">Menu::receipt_send_rb()</a>, <a class="el" href="menu_8cpp_source.html#l18366">Menu::receipt_send_rb_ext()</a>, <a class="el" href="menu_8cpp_source.html#l18064">Menu::receipt_send_rf()</a>, <a class="el" href="menu_8cpp_source.html#l18573">Menu::receipt_send_rf_ext()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l27616">Menu::res_insert()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="af5a221eb6227e941629847e72c7734ac"></a>
@@ -628,6 +710,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00235">235</a></p>
+
+<p class="reference">Используется в <a class="el" href="FisGo__BIOS_8cpp_source.html#l03094">BIOS::addAgentsToCheck()</a>, <a class="el" href="menu_8cpp_source.html#l13158">Menu::agent_choose()</a>, <a class="el" href="menu_8cpp_source.html#l22996">Menu::agents_display()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12745">Menu::choose_agents_mode()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -643,6 +729,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00194">194</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="net_8cpp_source.html#l00030">Net::NetCfgReset()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a010ba5d9f64a330b27d7aa179452c875"></a>
@@ -656,6 +746,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00193">193</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="net_8cpp_source.html#l00030">Net::NetCfgReset()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -671,6 +765,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00217">217</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l14039">Menu::choose_offline_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="a1567bdf657e69db97a492f4117733480"></a>
@@ -684,6 +782,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00189">189</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -699,6 +801,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00188">188</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l15453">Menu::eth_state()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>.</p>
+
 </div>
 </div>
 <a id="af6c1b0eeaea2bb76e1a5264fb505772b"></a>
@@ -712,6 +818,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00218">218</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l17824">Menu::isGoodsTypeValid()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -727,6 +837,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00244">244</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l02800">Menu::external_fn_shift_open_action()</a>, <a class="el" href="menu_8cpp_source.html#l02751">Menu::fn_shift_open_action()</a>, <a class="el" href="printer_8cpp_source.html#l02935">Printer::fs_change_kkt_mode_print()</a>, <a class="el" href="menu_8cpp_source.html#l08380">Menu::fs_close_mode()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="ab4bf46965e210ca83f6416ce330e0744"></a>
@@ -740,6 +854,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00181">181</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00251">HttpsExchange::sendHandshake()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -755,6 +873,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00283">283</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25559">Menu::first_start_mode()</a>, <a class="el" href="menu_8cpp_source.html#l08380">Menu::fs_close_mode()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l24199">Menu::registerInCabinet()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>, <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a>, <a class="el" href="menu_8cpp_source.html#l25800">Menu::who_am_i()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="aa0dc29f64eb9c1b6f5b947b483fa0d6f"></a>
@@ -768,6 +890,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00245">245</a></p>
+
+<p class="reference">Используется в <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -783,6 +909,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00201">201</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l15196">Menu::ex_reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l23436">Menu::fs_valid_test()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="ac77f465d0966fb0b7bf65aa51556958c"></a>
@@ -796,6 +926,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00202">202</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l23339">Menu::fs_num_read_from_table()</a>, <a class="el" href="menu_8cpp_source.html#l23330">Menu::fs_num_wite_in_table()</a>, <a class="el" href="menu_8cpp_source.html#l23436">Menu::fs_valid_test()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l25684">Menu::is_first_start()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -811,6 +945,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00203">203</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23339">Menu::fs_num_read_from_table()</a>, <a class="el" href="menu_8cpp_source.html#l23330">Menu::fs_num_wite_in_table()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="ab646a37d2085c71428d5c770a7a6d812"></a>
@@ -824,6 +962,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00178">178</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l14967">Menu::fsCloseFromHub()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l15041">Menu::regFromHub()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -839,6 +981,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00269">269</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25559">Menu::first_start_mode()</a>, <a class="el" href="menu_8cpp_source.html#l08380">Menu::fs_close_mode()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l24199">Menu::registerInCabinet()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="menu_8cpp_source.html#l04069">Menu::sendStatistics()</a>, <a class="el" href="menu_8cpp_source.html#l04516">Menu::task_manager()</a>, <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l25800">Menu::who_am_i()</a>.</p>
+
 </div>
 </div>
 <a id="a974cb5f3aa01b746d576dc63b627dcf1"></a>
@@ -852,6 +998,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00246">246</a></p>
+
+<p class="reference">Используется в <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -867,6 +1017,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00220">220</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l17824">Menu::isGoodsTypeValid()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="a19902f19088f43ad1c64fccd94678570"></a>
@@ -880,6 +1034,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00273">273</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l04069">Menu::sendStatistics()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -895,6 +1053,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00275">275</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l04069">Menu::sendStatistics()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="ae47b124b9ef7f098d8b337f06fe9b674"></a>
@@ -908,6 +1070,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00256">256</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l16318">Menu::isIncreaseCount()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -923,6 +1089,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00253">253</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="a1cd77376c194945537d41a14b8a852de"></a>
@@ -936,6 +1106,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00190">190</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="net_8cpp_source.html#l00030">Net::NetCfgReset()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a> и <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>.</p>
 
 </div>
 </div>
@@ -951,6 +1125,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00243">243</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02471">Menu::analyaze_cmd_result()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l14103">Menu::choose_auto_reserve()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a4a276e104fbfaf2ae702ade51ff4ead8"></a>
@@ -964,6 +1142,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00251">251</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -979,6 +1161,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00237">237</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l25848">Menu::ext_registr()</a>, <a class="el" href="menu_8cpp_source.html#l15714">Menu::goodsFromCloud()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="threads_8h_source.html#l00059">receipts_query_()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="menu_8cpp_source.html#l04094">Menu::terminal_cab()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l25800">Menu::who_am_i()</a>.</p>
+
 </div>
 </div>
 <a id="a4ddfba20ad52d3dffa295813571576db"></a>
@@ -992,6 +1178,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00176">176</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l14039">Menu::choose_offline_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l25848">Menu::ext_registr()</a>, <a class="el" href="printer_8cpp_source.html#l01264">Printer::fiscal_receipt_print()</a>, <a class="el" href="menu_8cpp_source.html#l00893">Menu::flags_init()</a>, <a class="el" href="menu_8cpp_source.html#l08380">Menu::fs_close_mode()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="threads_8h_source.html#l00347">ofd_disconnect_()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="menu_8cpp_source.html#l13861">Menu::technical_report()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1007,6 +1197,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00211">211</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l02362">sqlWrapper::addImageTable()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l16970">Menu::counters_auth()</a>, <a class="el" href="menu_8cpp_source.html#l24790">Menu::factory()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l02383">sqlWrapper::getImageTable()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l12468">Menu::reg_num_valid_test()</a>, <a class="el" href="menu_8cpp_source.html#l24256">Menu::registerInFactory()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00296">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="aade36dbfbf4a388ed3d7c0a4e727f204"></a>
@@ -1020,6 +1214,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00210">210</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l25684">Menu::is_first_start()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l12468">Menu::reg_num_valid_test()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
 
 </div>
 </div>
@@ -1035,6 +1233,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00182">182</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="ab632e228b5c6aa2f1fb8e8d955fc53f0"></a>
@@ -1048,6 +1250,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00248">248</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l14039">Menu::choose_offline_mode()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="printer_8cpp_source.html#l01617">Printer::fiscal_receipt_print()</a>, <a class="el" href="printer_8cpp_source.html#l02935">Printer::fs_change_kkt_mode_print()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1063,6 +1269,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00239">239</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a81608e39deaa1381fb134cbf5cf6fb3a"></a>
@@ -1076,6 +1286,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00236">236</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l27182">Menu::log_level_choose()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1091,6 +1305,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00221">221</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l17824">Menu::isGoodsTypeValid()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="aa5224f263befc7d647040021fad7b31f"></a>
@@ -1104,6 +1322,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00191">191</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="net_8cpp_source.html#l00030">Net::NetCfgReset()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1119,6 +1341,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00240">240</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l26310">Menu::free_price()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l28657">Menu::nds_choose_rb()</a>, <a class="el" href="menu_8cpp_source.html#l26215">Menu::nds_free_price()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a1a9142af8ec3576aa83a4ac27b441360"></a>
@@ -1132,6 +1358,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00199">199</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -1147,6 +1377,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00197">197</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+
 </div>
 </div>
 <a id="afa8569a34ae9dcd6bba874a4205d860c"></a>
@@ -1160,6 +1394,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00196">196</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
 
 </div>
 </div>
@@ -1175,6 +1413,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00198">198</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l11330">Menu::wifi_settings_step()</a>.</p>
+
 </div>
 </div>
 <a id="a43ba3b45479d2045dbca18cf0823131c"></a>
@@ -1188,6 +1430,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00224">224</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
 
 </div>
 </div>
@@ -1203,6 +1449,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00225">225</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a4a5bc11c5a426221555fe5d057b3c86d"></a>
@@ -1216,6 +1466,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00227">227</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l11873">Menu::chose_ofd_system()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1231,6 +1485,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00226">226</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="menu_8cpp_source.html#l10296">Menu::setOFDsettings()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a558f7a56c1ffaac49d890a601b792f8b"></a>
@@ -1244,6 +1502,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00230">230</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l13775">Menu::ofd_manual_mode()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1259,6 +1521,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00228">228</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="menu_8cpp_source.html#l10296">Menu::setOFDsettings()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a1397351ba2cc9796bfbe77a74401a241"></a>
@@ -1272,6 +1538,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00232">232</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1287,6 +1557,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00208">208</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l12468">Menu::reg_num_valid_test()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="aadfa6a1312083faeebdfca63d0443bd3"></a>
@@ -1300,6 +1574,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00209">209</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1315,6 +1593,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00205">205</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="printer_8cpp_source.html#l00982">Printer::insert_res_report()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="receipt__new_8cpp_source.html#l01328">Receipt_new::requisites_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="aa8db03cef27efcc1d50bb41acbed3bdd"></a>
@@ -1328,6 +1610,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00222">222</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12510">Menu::chose_signs()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01979">BIOS::getSignSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="printer_8cpp_source.html#l02054">Printer::test_cloud_receipt_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>, <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1343,6 +1629,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00268">268</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="printer_8cpp_source.html#l01617">Printer::fiscal_receipt_print()</a>, <a class="el" href="printer_8cpp_source.html#l02935">Printer::fs_change_kkt_mode_print()</a>, <a class="el" href="menu_8cpp_source.html#l09007">Menu::get_data_int()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a> и <a class="el" href="printer_8cpp_source.html#l02326">Printer::test_receipt_print()</a>.</p>
+
 </div>
 </div>
 <a id="a56a0ef2689ed1a61128a7a0856a30ed1"></a>
@@ -1356,6 +1646,8 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00266">266</a></p>
 
 </div>
 </div>
@@ -1371,6 +1663,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00282">282</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l25921">Menu::regRep()</a> и <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>.</p>
+
 </div>
 </div>
 <a id="a97c65ebd2699712eb744767ee241872d"></a>
@@ -1384,6 +1680,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00192">192</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l11133">Menu::eth_settings_step()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="net_8cpp_source.html#l00030">Net::NetCfgReset()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1399,6 +1699,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00241">241</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a> и <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>.</p>
+
 </div>
 </div>
 <a id="a74fe40a34fce482a44c75535613848bc"></a>
@@ -1412,6 +1716,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00242">242</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a> и <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>.</p>
 
 </div>
 </div>
@@ -1427,6 +1735,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00179">179</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l08839">Menu::action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02471">Menu::analyaze_cmd_result()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l08934">Menu::external_action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02800">Menu::external_fn_shift_open_action()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l05082">Menu::first_start()</a>, <a class="el" href="menu_8cpp_source.html#l02751">Menu::fn_shift_open_action()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l03605">Menu::menuCycle()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
+
 </div>
 </div>
 <a id="a2e47ff9c3b060cfd95468d1942d5d290"></a>
@@ -1440,6 +1752,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00257">257</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1455,6 +1771,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00252">252</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l08839">Menu::action_close_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02830">Menu::action_open_shift()</a>, <a class="el" href="menu_8cpp_source.html#l02471">Menu::analyaze_cmd_result()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l24426">Menu::cloud_reg_status_set()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l08537">Menu::crytical_errors_draw()</a>, <a class="el" href="menu_8cpp_source.html#l15196">Menu::ex_reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l02654">Menu::fill_chech_data_struct()</a>, <a class="el" href="menu_8cpp_source.html#l05082">Menu::first_start()</a>, <a class="el" href="menu_8cpp_source.html#l00945">Menu::fiscal_data_init()</a>, <a class="el" href="printer_8cpp_source.html#l01264">Printer::fiscal_receipt_print()</a>, <a class="el" href="menu_8cpp_source.html#l27118">Menu::fn_connect_status()</a>, <a class="el" href="menu_8cpp_source.html#l02962">Menu::fn_connection_error()</a>, <a class="el" href="menu_8cpp_source.html#l09613">Menu::get_reg_data_ext()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="printer_8cpp_source.html#l00982">Printer::insert_res_report()</a>, <a class="el" href="menu_8cpp_source.html#l15683">Menu::isGoodsAvailable()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l03605">Menu::menuCycle()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>, <a class="el" href="menu_8cpp_source.html#l28259">Menu::ofd_settings()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l19846">Menu::pay_by_card()</a>, <a class="el" href="menu_8cpp_source.html#l19983">Menu::pay_by_card_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19914">Menu::pay_by_card_revert()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l19295">Menu::pay_by_cash_con_sale()</a>, <a class="el" href="menu_8cpp_source.html#l19367">Menu::pay_by_cash_revert()</a>, <a class="el" href="menu_8cpp_source.html#l10685">Menu::receipt_correction_step()</a>, <a class="el" href="menu_8cpp_source.html#l15321">Menu::reg_kkt()</a>, <a class="el" href="menu_8cpp_source.html#l14557">Menu::reinitRegStep()</a>, <a class="el" href="menu_8cpp_source.html#l27616">Menu::res_insert()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="menu_8cpp_source.html#l04037">Menu::sendCounters()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="printer_8cpp_source.html#l00523">Printer::shift_report_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="a339c7727e9223be46e67b1c3a46ce4fa"></a>
@@ -1468,6 +1788,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00238">238</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
 
 </div>
 </div>
@@ -1483,6 +1807,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00213">213</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l12874">Menu::choose_tax_system()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l04476">Menu::ExternalReceiptFiscal()</a>, <a class="el" href="FisGo__BIOS_8cpp_source.html#l01942">BIOS::getSettingsFromPirit()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="menu_8cpp_source.html#l05442">Menu::item_action_by_id()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l14759">Menu::reg_data_view()</a>, <a class="el" href="menu_8cpp_source.html#l14805">Menu::reg_json_get()</a>, <a class="el" href="menu_8cpp_source.html#l10315">Menu::reg_struct_init()</a>, <a class="el" href="menu_8cpp_source.html#l23361">Menu::requisites_data_update()</a>, <a class="el" href="menu_8cpp_source.html#l27987">Menu::reRegCodeClc()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="menu_8cpp_source.html#l13457">Menu::tax_sys_cor_rec()</a>, <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="ab77107001b942ae4ce29658d06abf5c3"></a>
@@ -1496,6 +1824,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00177">177</a></p>
+
+<p class="reference">Используется в <a class="el" href="menu_8cpp_source.html#l08839">Menu::action_close_shift()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="menu_8cpp_source.html#l14165">Menu::choose_terminal_mode()</a>, <a class="el" href="menu_8cpp_source.html#l14228">Menu::choose_terminal_state()</a>, <a class="el" href="menu_8cpp_source.html#l14342">Menu::choose_terminal_type()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l00456">Menu::Correct_tree_visibility()</a>, <a class="el" href="menu_8cpp_source.html#l20337">Menu::emergency_cancel()</a>, <a class="el" href="menu_8cpp_source.html#l20504">Menu::error_handler()</a>, <a class="el" href="menu_8cpp_source.html#l22376">Menu::goods_display_revert()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l19983">Menu::pay_by_card_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l21805">Menu::pay_by_card_main()</a>, <a class="el" href="menu_8cpp_source.html#l20142">Menu::pay_by_card_revert_integ_term()</a>, <a class="el" href="menu_8cpp_source.html#l17539">Menu::payment_type_get()</a>, <a class="el" href="menu_8cpp_source.html#l20312">Menu::recon_total()</a>, <a class="el" href="menu_8cpp_source.html#l14437">Menu::term_ad_operations()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1511,6 +1843,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00267">267</a></p>
+
+<p class="reference">Используется в <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>.</p>
+
 </div>
 </div>
 <a id="a56670c2e92852f180868559fff34a972"></a>
@@ -1524,6 +1860,10 @@ $(function() {
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00274">274</a></p>
+
+<p class="reference">Используется в <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l04069">Menu::sendStatistics()</a> и <a class="el" href="testJSON_8h_source.html#l00581">TEST_F()</a>.</p>
 
 </div>
 </div>
@@ -1539,6 +1879,10 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00186">186</a></p>
+
+<p class="reference">Используется в <a class="el" href="sqlWrapper_8cpp_source.html#l02362">sqlWrapper::addImageTable()</a>, <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l24790">Menu::factory()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l02383">sqlWrapper::getImageTable()</a>, <a class="el" href="testHttpsExchange_8h_source.html#l00041">HttpsExchangeTest::initCashInfoReport()</a>, <a class="el" href="json_8cpp_source.html#l01307">JSON::JSON_OFD_Sign()</a>, <a class="el" href="json_8cpp_source.html#l01131">JSON::JSON_OFDRegisterCreate()</a>, <a class="el" href="json_8cpp_source.html#l01230">JSON::JSON_OFDRegistrationStatusCreate()</a>, <a class="el" href="json_8cpp_source.html#l02325">JSON::jsonCfgCreate()</a>, <a class="el" href="menu_8cpp_source.html#l27551">Menu::money_rep_send_to_cab()</a>, <a class="el" href="menu_8cpp_source.html#l24647">Menu::OFD_SIGN()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l24256">Menu::registerInFactory()</a>, <a class="el" href="menu_8cpp_source.html#l24593">Menu::REGISTRATION_STATUS()</a>, <a class="el" href="menu_8cpp_source.html#l30955">Menu::resetKkt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00472">HttpsExchange::sendCashInfoReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00779">HttpsExchange::sendCountersReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00734">HttpsExchange::sendCountersReport_bios()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00251">HttpsExchange::sendHandshake()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00651">HttpsExchange::sendKKTRegistrInfo()</a>, <a class="el" href="https__exchange_8cpp_source.html#l03398">HttpsExchange::sendLog()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00691">HttpsExchange::sendPollNew()</a>, <a class="el" href="https__exchange_8cpp_source.html#l01254">HttpsExchange::sendReceipt()</a>, <a class="el" href="https__exchange_8cpp_source.html#l00531">HttpsExchange::sendRegistrationReport()</a>, <a class="el" href="https__exchange_8cpp_source.html#l02272">HttpsExchange::sendRequest()</a>, <a class="el" href="menu_8cpp_source.html#l27425">Menu::shift_rep_send_to_cab()</a>, <a class="el" href="printer_8cpp_source.html#l00317">Printer::tech_report_print()</a>, <a class="el" href="testJSON_8h_source.html#l00558">TEST_F()</a>, <a class="el" href="menu_8cpp_source.html#l25800">Menu::who_am_i()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <a id="ae8b98c94e18bc085116fd8624567689b"></a>
@@ -1553,16 +1897,20 @@ $(function() {
       </table>
 </div><div class="memdoc">
 
+<p class="definition">См. определение в файле <a class="el" href="config_8h_source.html">config.h</a> строка <a class="el" href="config_8h_source.html#l00195">195</a></p>
+
+<p class="reference">Используется в <a class="el" href="filesfg_8cpp_source.html#l00104">FilesFG::cfg_data_copy()</a>, <a class="el" href="menu_8cpp_source.html#l01764">Menu::cfg_mask_get()</a>, <a class="el" href="config_8cpp_source.html#l00040">config_clear()</a>, <a class="el" href="menu_8cpp_source.html#l23135">Menu::config_display()</a>, <a class="el" href="menu_8cpp_source.html#l22935">Menu::init_start_config()</a>, <a class="el" href="menu_8cpp_source.html#l23399">Menu::net_data_update()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01568">sqlWrapper::parseSelectedValue()</a>, <a class="el" href="sqlWrapper_8cpp_source.html#l01877">sqlWrapper::parseUpdateValue()</a>, <a class="el" href="menu_8cpp_source.html#l15554">Menu::wifi_state()</a> и <a class="el" href="menu_8cpp_source.html#l03166">Menu::work()</a>.</p>
+
 </div>
 </div>
 <hr/>Объявления и описания членов структур находятся в файлах:<ul>
 <li>src/appl/include/<a class="el" href="config_8h_source.html">config.h</a></li>
-<li>src/appl/<a class="el" href="config_8cpp.html">config.cpp</a></li>
+<li>src/appl/<a class="el" href="config_8cpp_source.html">config.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

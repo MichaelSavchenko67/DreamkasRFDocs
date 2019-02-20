@@ -1,0 +1,5 @@
+<map id="ScaleProtocolMassak::parseErrorCode" name="ScaleProtocolMassak::parseErrorCode">
+<area shape="rect" id="node1" title="parseErrorCode &#45; парс кода ошибки" alt="" coords="400,5,549,47"/>
+<area shape="rect" id="node2" href="$classScaleProtocolMassak.html#afac2187d6420584791a3372f6dd6bdf6" title="setScaleErr &#45; установить коды ошибок" alt="" coords="203,5,352,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolMassak.html#a943dc7e4f713f6ff273701460faeea85" title="cmdGetWeight &#45; чтение веса" alt="" coords="5,5,155,47"/>
+</map>

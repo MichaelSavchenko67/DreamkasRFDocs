@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -32,51 +29,44 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.15 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 <div class="textblock">Список всех членов классов со ссылками на классы, к которым они принадлежат.</div>
 
 <h3><a id="index_o"></a>- o -</h3><ul>
-<li>object()
-: <a class="el" href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+<li>o
+: <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#acf3c88660d3cbc65fc71c4d84f2a9f59">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+</li>
+<li>oa
+: <a class="el" href="classnlohmann_1_1detail_1_1binary__writer.html#a6f15b782a7900f50ef37d123008e601b">nlohmann::detail::binary_writer&lt; BasicJsonType, CharType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a323c18d74d6680faafec6dc3ace825e2">nlohmann::detail::output_adapter&lt; CharType, StringType &gt;</a>
+</li>
+<li>object
+: <a class="el" href="unionnlohmann_1_1basic__json_1_1json__value.html#a4a2209bb26e7088cd36bf24824ab5521">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>object_comparator_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#abed9e77c5fcfc925fcdd489911069c3b">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>object_element
+: <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__callback__parser.html#a2a8adecd936ba6ec187f1216241b508f">nlohmann::detail::json_sax_dom_callback_parser&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__sax__dom__parser.html#a9c03c76d3a8e89c8928097ba0b92c2db">nlohmann::detail::json_sax_dom_parser&lt; BasicJsonType &gt;</a>
 </li>
 <li>object_iterator
 : <a class="el" href="structnlohmann_1_1detail_1_1internal__iterator.html#a8cb0af3498061426c1d0a65ad6220408">nlohmann::detail::internal_iterator&lt; BasicJsonType &gt;</a>
 </li>
 <li>object_t
 : <a class="el" href="classnlohmann_1_1basic__json.html#a5e48a7893520e1314bf0c9723e26ea2a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ab9a9598052e83fa14a2288e56d5dda7c">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>OBSOLENCE_TIME_IN_DAYS
 : <a class="el" href="classReceiptsDb.html#ad02fe7a34f7e068c625a5a409b325019">ReceiptsDb</a>
@@ -93,6 +83,9 @@ $(function() {
 <li>OFD_CLOSE
 : <a class="el" href="classBIOS_1_1RUS.html#a770788b5560085d02eb90926abac2718">BIOS::RUS</a>
 </li>
+<li>ofd_data_change
+: <a class="el" href="classBIOS_1_1RUS.html#a206367236aa85f8d400c8a74c61617fd">BIOS::RUS</a>
+</li>
 <li>ofd_data_change_get()
 : <a class="el" href="classBIOS_1_1RUS.html#ae9dd1f7f2480344a55b4fb06a37f3a49">BIOS::RUS</a>
 </li>
@@ -103,7 +96,8 @@ $(function() {
 : <a class="el" href="classBIOS_1_1RUS.html#ad92c8387d63dc4ba3c69f6515d7dd5a5">BIOS::RUS</a>
 </li>
 <li>OFD_DISCONNECT_05D
-: <a class="el" href="structReceipt_1_1Fiscal__data.html#a67ad89ac49f6ac4ba0d21cc300240e49">Receipt::Fiscal_data</a>
+: <a class="el" href="classBIOS_1_1RUS.html#a3f507308ed75b1b7127269bbc7752153">BIOS::RUS</a>
+, <a class="el" href="structReceipt_1_1Fiscal__data.html#a67ad89ac49f6ac4ba0d21cc300240e49">Receipt::Fiscal_data</a>
 </li>
 <li>OFD_DISCONNECT_05D_FLG
 : <a class="el" href="classBIOS_1_1RUS.html#a7d382064155ea987a44178cf04f637e7ac49b7871aa4ceb744f724b9c4fe9f8bd">BIOS::RUS</a>
@@ -114,6 +108,9 @@ $(function() {
 <li>ofd_disconnect_05d_set()
 : <a class="el" href="classBIOS_1_1RUS.html#a632a43193234d0b4467657e22d53b32d">BIOS::RUS</a>
 </li>
+<li>OFD_DISCONNECT_20D
+: <a class="el" href="classBIOS_1_1RUS.html#ac47aade3f9ea668328d8d5c3ff17bd25">BIOS::RUS</a>
+</li>
 <li>OFD_DISCONNECT_20D_FLG
 : <a class="el" href="classBIOS_1_1RUS.html#a7d382064155ea987a44178cf04f637e7abd61e2a2afb1ddbf351cd7d60f10219e">BIOS::RUS</a>
 </li>
@@ -122,6 +119,9 @@ $(function() {
 </li>
 <li>ofd_disconnect_20d_set()
 : <a class="el" href="classBIOS_1_1RUS.html#a31a22432cca1ca75695fdce6a26cc7ae">BIOS::RUS</a>
+</li>
+<li>OFD_DISCONNECT_30D
+: <a class="el" href="classBIOS_1_1RUS.html#a4662870489ff68d91720f1d2fe893fb0">BIOS::RUS</a>
 </li>
 <li>OFD_DISCONNECT_30D_FLG
 : <a class="el" href="classBIOS_1_1RUS.html#a7d382064155ea987a44178cf04f637e7acca7f398f3c011ecc9872bad893b7406">BIOS::RUS</a>
@@ -146,15 +146,11 @@ $(function() {
 , <a class="el" href="structConfig.html#ab7f4d3810d01262bdd4c0d04130e2373">Config</a>
 , <a class="el" href="structJSONKKTRegInfo.html#a6deebc74622331f243e696a0df8fc146">JSONKKTRegInfo</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a14292855e43586a45c3f024d535d1664">Receipt::Fiscal_data</a>
+, <a class="el" href="classReceipt__new.html#a8dc25a58211012f093f022f99ff4afbf">Receipt_new</a>
 </li>
 <li>OFD_INN
 : <a class="el" href="classReceipt__new.html#ad869ea7b6c65edb5f0ee923b375084b8">Receipt_new</a>
-</li>
-<li>ofd_inn
-: <a class="el" href="classReceipt__new.html#a8dc25a58211012f093f022f99ff4afbf">Receipt_new</a>
-</li>
-<li>OFD_INN
-: <a class="el" href="structregistrationStruct.html#aed075de23960c07920f963f3bf6ba0e0">registrationStruct</a>
+, <a class="el" href="structregistrationStruct.html#aed075de23960c07920f963f3bf6ba0e0">registrationStruct</a>
 </li>
 <li>OFD_INN_MAX_SIZE
 : <a class="el" href="classBIOS_1_1RUS.html#a6adfa9f618abf40455d78c570fcccdd3a0cd4357f882d153626cf9ba33d992070">BIOS::RUS</a>
@@ -206,12 +202,10 @@ $(function() {
 <li>ofd_server_ip
 : <a class="el" href="structConfig.html#a558f7a56c1ffaac49d890a601b792f8b">Config</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a604171168461f2e0409e5b56110b7b6b">Receipt::Fiscal_data</a>
+, <a class="el" href="classReceipt__new.html#a73756cfe9a02f3c624dc3b763c25f91e">Receipt_new</a>
 </li>
 <li>OFD_SERVER_IP
 : <a class="el" href="classReceipt__new.html#a7dece05995a0955148742e8f9c2686b3">Receipt_new</a>
-</li>
-<li>ofd_server_ip
-: <a class="el" href="classReceipt__new.html#a73756cfe9a02f3c624dc3b763c25f91e">Receipt_new</a>
 </li>
 <li>ofd_server_port
 : <a class="el" href="structConfig.html#a03ce181a5a572f5ecdac8b78d9f66a9a">Config</a>
@@ -232,20 +226,29 @@ $(function() {
 <li>OFD_template
 : <a class="el" href="classMenu.html#aaf134a5298dd6fd3dfe0a1c0cedc7bb5">Menu</a>
 </li>
+<li>ofdCheckUrl
+: <a class="el" href="classHttpsExchange.html#a78e65f8aac129c5173f4da778e1c7994">HttpsExchange</a>
+</li>
 <li>ofdInn
-: <a class="el" href="structJSONKKTRegInfoStr.html#a95b621d2c4c2441dc81a610ed3c4a78c">JSONKKTRegInfoStr</a>
+: <a class="el" href="classHttpsExchange.html#a5b2b3a0466815dff5e7c3ed203f3cdbe">HttpsExchange</a>
+, <a class="el" href="structJSONKKTRegInfoStr.html#a95b621d2c4c2441dc81a610ed3c4a78c">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdName
-: <a class="el" href="structJSONKKTRegInfoStr.html#a63b9e4e5dc470cbe8206e17fe36afb5f">JSONKKTRegInfoStr</a>
+: <a class="el" href="classHttpsExchange.html#a8416c88a0bf1b43d71a59a1e3470f712">HttpsExchange</a>
+, <a class="el" href="structJSONKKTRegInfoStr.html#a63b9e4e5dc470cbe8206e17fe36afb5f">JSONKKTRegInfoStr</a>
 </li>
 <li>OFDName
 : <a class="el" href="structregistrationStruct.html#af6b061a92d19c5ea26bb7b6b52c66e44">registrationStruct</a>
+</li>
+<li>ofdServerAddress
+: <a class="el" href="classHttpsExchange.html#a701877abe1db49835561a3a5e8c3d250">HttpsExchange</a>
 </li>
 <li>ofdServerHost
 : <a class="el" href="structJSONKKTRegInfoStr.html#a775469d7ef53a1be3041022fbad16af0">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdServerPort
-: <a class="el" href="structJSONKKTRegInfoStr.html#a92c4d7de97a758cf14066e62b6109f87">JSONKKTRegInfoStr</a>
+: <a class="el" href="classHttpsExchange.html#a1ebd38f4b6cb3dd11b253db69df6f8b0">HttpsExchange</a>
+, <a class="el" href="structJSONKKTRegInfoStr.html#a92c4d7de97a758cf14066e62b6109f87">JSONKKTRegInfoStr</a>
 </li>
 <li>ofdUrl
 : <a class="el" href="structJSONKKTRegInfoStr.html#a011d9e3717c85a33a7faac6947574b44">JSONKKTRegInfoStr</a>
@@ -261,6 +264,9 @@ $(function() {
 </li>
 <li>offline_mode
 : <a class="el" href="classReceipt__new.html#a0ce9ccebfb19d4e30138363c4e723333">Receipt_new</a>
+</li>
+<li>OFFSET
+: <a class="el" href="classNodeConflictResolver.html#a3451995946149e28ee4685deed69d583">NodeConflictResolver</a>
 </li>
 <li>OFFSET_CAL_CODE
 : <a class="el" href="classScaleProtocolMassak.html#a16d34fb93b56fe885576712eac24411ea2cf80f71c46c95b7d1509a8db3dee8cc">ScaleProtocolMassak</a>
@@ -373,7 +379,15 @@ $(function() {
 , <a class="el" href="classBIOS_1_1RUS.html#a68d2820a98b2f95e95476961a50673b9">BIOS::RUS</a>
 </li>
 <li>openPort()
-: <a class="el" href="classScaleProtocolInterface.html#a4a9cb8cb47b469f62f4c871a7f03e975">ScaleProtocolInterface</a>
+: <a class="el" href="classScalePos2.html#aa4b42814a9e58804be5977d041c33406">ScalePos2</a>
+, <a class="el" href="classScaleProtocolInterface.html#a4a9cb8cb47b469f62f4c871a7f03e975">ScaleProtocolInterface</a>
+, <a class="el" href="classScaleProtocolMassak.html#a85cb92215f2984b5202c7c839aeb08d3">ScaleProtocolMassak</a>
+, <a class="el" href="classScaleProtocolPos2.html#a4dc9af0ebdf96829d77c327da90bc417">ScaleProtocolPos2</a>
+, <a class="el" href="classTestMassaK.html#a90dd798824898014338d697330fa16fa">TestMassaK</a>
+, <a class="el" href="classTestPos2.html#a3fe64c2fc1b638c815930222aa2eda12">TestPos2</a>
+</li>
+<li>openPortRc
+: <a class="el" href="classScalePos2.html#a7d9d8a6765055450ebf702f4d2cb79c1">ScalePos2</a>
 </li>
 <li>openShift()
 : <a class="el" href="classBIOS_1_1BEL.html#ae8a3f76a4a033461e4a7010e8c6ed364">BIOS::BEL</a>
@@ -397,6 +411,7 @@ $(function() {
 </li>
 <li>operator *()
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ad6f85e5945429bbdb5a6bef8d3e99d5b">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#acb4945264f0d8137080241ae829d9241">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#af96699d7e27c3b1f9d778fe142f8bb41">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator input_adapter_t()
@@ -418,8 +433,9 @@ $(function() {
 : <a class="el" href="structDYNAMIC__MASK.html#a6a8c8fc21a6c5aaa6dd7820390df0cd9">DYNAMIC_MASK</a>
 </li>
 <li>operator!=
-: <a class="el" href="classnlohmann_1_1basic__json.html#a6e2e21da48f5d9471716cd868a068327">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#ab0e886db6e9fa91ff9fd853333fed05b">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aeab0e2b5da70b3bdebecd5b1a6ee66a6">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#ad96488c5cb13952a183324f9f34598d1">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1json__pointer.html#a6779edcf28e6f018a3bbb29c0b4b5e1e">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator()()
@@ -435,8 +451,9 @@ $(function() {
 </li>
 <li>operator++()
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7d2397773b2dce42f30f0375a6a1d850">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a54a98e7cb1f015cc38dd69205f4651c0">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#aada9d2b320002ef870c5283cda2c1e9d">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#aa011863621357b3cf891670bf63a48b1">nlohmann::detail::primitive_iterator_t</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26511012fc88f3ec5d9e1cb708732fd">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>operator+=()
 : <a class="el" href="classnlohmann_1_1basic__json.html#aea1085f2d35cc0e1ce119cf0110119e6">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
@@ -446,13 +463,13 @@ $(function() {
 </li>
 <li>operator-()
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a0dd9c415b94a02ff2aa25da75e52da30">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#aaaa6c0b1d74e74e35e5f7b56dfd6c5d1">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a549c6eb10b6434eaf772f71d129a6d79">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ac6d902d6ec9a02dabed5452d3ae78f7e">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>operator--()
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a1fc43e764467b8ea4a4cdd01f629d757">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a2c170f51371538da2c8f4094305da3d3">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
-, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#abecbf0c73c7fe963a699738065177bc3">nlohmann::detail::primitive_iterator_t</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a2488d6a902103610943920ac49d12a04">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#aef3b5dfeb2cb04dc9d0a024fc1898b98">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>operator-=()
 : <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abcc9d51bc52f2e8483bbe4018f05e978">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
@@ -478,6 +495,7 @@ $(function() {
 <li>operator=()
 : <a class="el" href="structDiscount.html#af9a3d6f8565a1b484d80880363e6e28d">Discount</a>
 , <a class="el" href="structDYNAMIC__MASK.html#a5cf704ede9480334dfade8f27c412d4a">DYNAMIC_MASK</a>
+, <a class="el" href="classFiscalDocDb.html#a01fad544b6532245b37c26f9a2fc2102">FiscalDocDb</a>
 , <a class="el" href="classGoods.html#a9b736722c02d09888c6279ec6c9aaffd">Goods</a>
 , <a class="el" href="structGoods__new_1_1CLC__DISCOUNT__DATA.html#a6c94256095e553d9ad5619bcdcbb1fb9">Goods_new::CLC_DISCOUNT_DATA</a>
 , <a class="el" href="classGoodsData.html#ab043f711712296b3043007c6a30adaf2">GoodsData</a>
@@ -487,38 +505,42 @@ $(function() {
 , <a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a0871125057d993684ba8e45fb2b8a76b">nlohmann::detail::input_buffer_adapter</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#aeac5048221929b8f7558d1698dd0fb3a">nlohmann::detail::input_stream_adapter</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7159ed1cfe7c423a2baef8bea0c94509">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a59cfeaf88454161cd88accea555429be">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a98956ba676b1ae16b62346f9c4fb752e">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a33e97dee7c5faf1b36aff5b74a6c8f55">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="structnlohmann_1_1detail_1_1nonesuch.html#add6ef84c52a851e391cef514c85f2ffe">nlohmann::detail::nonesuch</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a5f14c33012477b9f9876dc54d97009a0">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classNodeConflictResolver.html#afdd42a2f15838f9010ae15f7af175dd8">NodeConflictResolver</a>
 , <a class="el" href="classPosition__new.html#a1fe4d118af14c717ede70f77159f8256">Position_new</a>
 , <a class="el" href="classPositions.html#a22419399361c4ba60a45df58b8142b2d">Positions</a>
 , <a class="el" href="classPositions_1_1Position.html#a052e9ba2ed8f11a6e9f5741489e40332">Positions::Position</a>
 , <a class="el" href="classReceipt__new.html#a24d040f15326e5670a0de99b44662edf">Receipt_new</a>
 , <a class="el" href="classRequisites_1_1REQ__NAME.html#aab315fa383ae03d5088923e2e23c9d5d">Requisites::REQ_NAME</a>
 , <a class="el" href="classRequisites_1_1Requisite.html#aec6cbf0234c40754328ef1b86858cc9a">Requisites::Requisite</a>
+, <a class="el" href="classTimeSync.html#ab49156308dcc934ac240a99b112ed2b8">TimeSync</a>
 </li>
 <li>operator==()
 : <a class="el" href="structDYNAMIC__MASK.html#afecee0c157a9d7e2224d62db8d66d41c">DYNAMIC_MASK</a>
 , <a class="el" href="structJSON_1_1TAG__VALUE.html#a51b811841b70369a7a2145dfabf06a89">JSON::TAG_VALUE</a>
 , <a class="el" href="classnlohmann_1_1basic__json.html#a122640e7e2db1814fc7bbb3c122ec76e">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a2b592605b63ae7f5401996ffa3b14393">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a9e5bb00dce5f10a96782b57ae66fb364">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#aae1e1e2ec0e229d1291d69de57d76bbe">nlohmann::detail::primitive_iterator_t</a>
 , <a class="el" href="classnlohmann_1_1json__pointer.html#a4667ef558c8c3f8a646bfda0c6654653">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator&gt;
-: <a class="el" href="classnlohmann_1_1basic__json.html#a412895af9a582869a4d369a64fb1b6d6">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a124c319566198d9f092c5bebea46ce77">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aaf3620b8dfa4bed8a9ac2b51dd55dbd7">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator&gt;=
-: <a class="el" href="classnlohmann_1_1basic__json.html#a68e3a92b3d9be1faa05c92d096299189">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a5ee0e3e8afc7cbd932d6ed66418fa80a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a634f85da575cb60b012a687efa26e11a">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator&gt;&gt;
-: <a class="el" href="classnlohmann_1_1basic__json.html#aaf363408931d76472ded14017e59c9e8">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a9e06deabe69262c3ffc5533d32856983">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classnlohmann_1_1basic__json.html#a26554213cbb1722accc460ce348c860a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+: <a class="el" href="classnlohmann_1_1basic__json.html#a233b02b0839ef798942dd46157cc0fe6">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ac0b9276f1102ed4b9cd3f5f56287e3ce">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a8ed9e445e03c49c46612eb7f7d55bb61">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
 </li>
@@ -537,12 +559,10 @@ $(function() {
 , <a class="el" href="structJSON_1_1JSON__OFD__REGISTER.html#a90e1ca629b92426acd59bfedc5e00696">JSON::JSON_OFD_REGISTER</a>
 , <a class="el" href="structJSONKKTRegInfo.html#ae64cf8ee0b0f56e21b316fdf9cadc57c">JSONKKTRegInfo</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#a44971785a52cff4288e1d1324671bb1e">Receipt::Fiscal_data</a>
+, <a class="el" href="classReceipt__new.html#a5031a4e4d8fe0c1044eaaf5ce339e247">Receipt_new</a>
 </li>
 <li>ORGANIZATION_INN
 : <a class="el" href="classReceipt__new.html#a6fff632c3fc792a2870c32b00bd3ed2d">Receipt_new</a>
-</li>
-<li>organization_inn
-: <a class="el" href="classReceipt__new.html#a5031a4e4d8fe0c1044eaaf5ce339e247">Receipt_new</a>
 </li>
 <li>organization_kpp
 : <a class="el" href="structConfig.html#aadfa6a1312083faeebdfca63d0443bd3">Config</a>
@@ -551,13 +571,16 @@ $(function() {
 : <a class="el" href="structConfig.html#aefaf1cb312b63d2c0514f7e8ad743a0d">Config</a>
 , <a class="el" href="structJSONKKTRegInfo.html#aaab8842c21ead4df0d0c61ffd40ef258">JSONKKTRegInfo</a>
 , <a class="el" href="structReceipt_1_1Fiscal__data.html#aece405aaae1e4ff5a3a93dced927d1ed">Receipt::Fiscal_data</a>
-, <a class="el" href="classReceipt__new.html#afda662f42e005fa3fe37392e7e7f82ab">Receipt_new</a>
 </li>
 <li>ORGANIZATION_NAME
 : <a class="el" href="classReceipt__new.html#a6b8d3405ad0e693f4c539082d7e60f50">Receipt_new</a>
 </li>
+<li>organization_name
+: <a class="el" href="classReceipt__new.html#afda662f42e005fa3fe37392e7e7f82ab">Receipt_new</a>
+</li>
 <li>organizationName
-: <a class="el" href="structJSONKKTRegInfoStr.html#ac9a35166e11959a62ebe3a93a2adfd4f">JSONKKTRegInfoStr</a>
+: <a class="el" href="classHttpsExchange.html#a904fec5fe71a84d2364b48143afa3cf6">HttpsExchange</a>
+, <a class="el" href="structJSONKKTRegInfoStr.html#ac9a35166e11959a62ebe3a93a2adfd4f">JSONKKTRegInfoStr</a>
 </li>
 <li>otdel
 : <a class="el" href="structBIOS_1_1BEL_1_1OPEN__DOC.html#a8c4882e119b9674368553f786de512ca">BIOS::BEL::OPEN_DOC</a>
@@ -565,12 +588,14 @@ $(function() {
 </li>
 <li>other_error
 : <a class="el" href="classnlohmann_1_1basic__json.html#a3333a5a8714912adda33a35b369f7b3d">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1other__error.html#adf9227d6ca5161508f6a598a0dc6e7cd">nlohmann::detail::other_error</a>
 </li>
 <li>out
 : <a class="el" href="structJSON_1_1JSON__HANDSHAKE_1_1REQUEST.html#aa317e7132c75c22fbcb8b33bbba4a1c1">JSON::JSON_HANDSHAKE::REQUEST</a>
 </li>
 <li>out_of_range
 : <a class="el" href="classnlohmann_1_1basic__json.html#a28f7c2f087274a0012eb7a2333ee1580">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731">nlohmann::detail::out_of_range</a>
 </li>
 <li>OUTFLOW
 : <a class="el" href="classJSON.html#ad254807b5d886b08cdf45de780ea4101">JSON</a>
@@ -584,6 +609,9 @@ $(function() {
 <li>output_adapter()
 : <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a05a30a77b568fd84676078d938cbd484">nlohmann::detail::output_adapter&lt; CharType, StringType &gt;</a>
 </li>
+<li>output_adapter_t
+: <a class="el" href="classnlohmann_1_1basic__json.html#a5f17a041e3338ea006eaac2d89446c0d">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
 <li>output_stream_adapter()
 : <a class="el" href="classnlohmann_1_1detail_1_1output__stream__adapter.html#a4e78a9bd19cbf3a4191adc62d14f0055">nlohmann::detail::output_stream_adapter&lt; CharType &gt;</a>
 </li>
@@ -596,6 +624,9 @@ $(function() {
 <li>overlining
 : <a class="el" href="classLcd.html#aafb4c1cd320bf1b0a8d492e82a093515">Lcd</a>
 </li>
+<li>owned_value
+: <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a5d7bd67a5ab713d9be1e248cf9d509cd">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
+</li>
 <li>owner
 : <a class="el" href="structJSON_1_1JSON__REGISTER_1_1RESPONSE.html#a622073b0e5e4a9fafb7d24c0e1b58e25">JSON::JSON_REGISTER::RESPONSE</a>
 </li>
@@ -603,7 +634,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по Fiscat. Последние изменения: Ср 20 Фев 2019 10:18:50. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

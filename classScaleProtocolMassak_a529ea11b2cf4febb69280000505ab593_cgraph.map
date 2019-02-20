@@ -1,0 +1,6 @@
+<map id="ScaleProtocolMassak::weightParse" name="ScaleProtocolMassak::weightParse">
+<area shape="rect" id="node1" title="weightParse &#45; парс веса из полученного пакета" alt="" coords="5,71,155,112"/>
+<area shape="rect" id="node2" href="$classScaleProtocolMassak.html#a13d9f06c18f1f4f4e75441d3ebd011ec" title="convertMassa &#45; преобразование веса с весов в граммы" alt="" coords="212,5,361,47"/>
+<area shape="rect" id="node3" href="$classScaleProtocolMassak.html#a1901b17b85c527d22d6938f36f853451" title="isCorrectAnswerPacket &#45; проверка принятого пакета" alt="" coords="203,71,371,112"/>
+<area shape="rect" id="node4" href="$classScaleProtocolInterface.html#a1e10a3b16ad32c41b46aa2b4778e9e03" title="parseIntegerValue &#45; парс целочисленного значения" alt="" coords="419,100,573,141"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="nlohmann::detail::parser::get_token" name="nlohmann::detail::parser::get_token">
+<area shape="rect" id="node1" title="get next token from lexer" alt="" coords="633,62,795,103"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1parser.html#a14338d8f3174601c0b2b7ef28752ab17" title="public parser interface" alt="" coords="215,14,376,55"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1parser.html#a1a2bd258b7e99f86b7e6a3c41373ba55" title="a parser reading from an input adapter" alt="" coords="424,28,585,70"/>
+<area shape="rect" id="node4" href="$classnlohmann_1_1detail_1_1parser.html#a14e34931965064b26e118eb72cbd5e25" title=" " alt="" coords="215,123,376,164"/>
+<area shape="rect" id="node6" href="$classnlohmann_1_1detail_1_1parser.html#ad256ac6f45b213d29096a04b5aa3c587" title=" " alt="" coords="424,94,585,135"/>
+<area shape="rect" id="node5" href="$classnlohmann_1_1detail_1_1parser.html#a20997b42262856935b60fc91bf05bf3f" title="public accept interface" alt="" coords="5,123,167,164"/>
+</map>

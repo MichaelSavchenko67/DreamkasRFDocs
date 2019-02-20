@@ -1,0 +1,5 @@
+<map id="nlohmann::detail::wide_string_input_adapter::get_character" name="nlohmann::detail::wide_string_input_adapter::get_character">
+<area shape="rect" id="node1" title="get a character [0,255] or std::char_traits&lt;char&gt;::eof()." alt="" coords="5,45,157,101"/>
+<area shape="rect" id="node2" href="$classnlohmann_1_1detail_1_1wide__string__input__adapter.html#a1432ab0e61bd32c1ff0259b12e782ad2" title=" " alt="" coords="205,5,357,61"/>
+<area shape="rect" id="node3" href="$classnlohmann_1_1detail_1_1wide__string__input__adapter.html#af36747c9ba308ba0203354c36c10dac5" title=" " alt="" coords="205,85,357,141"/>
+</map>
